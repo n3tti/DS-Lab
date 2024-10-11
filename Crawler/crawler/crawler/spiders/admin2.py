@@ -57,3 +57,6 @@ class AdminChSpider(scrapy.Spider):
         le = LinkExtractor(allow_domains=self.allowed_domains)
         for link in le.extract_links(response):
             yield scrapy.Request(link.url, callback=self.parse, meta={'parent_url': response.url})
+
+# scrapy crawl admin_ch2 -a max_pages=10 -O output2.json
+# Format json: cat file.json | jq > newfile.json
