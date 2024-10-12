@@ -26,3 +26,4 @@ class CrawlingSpider(CrawlSpider):
         for link in response.css('a::attr(href)').getall(): # url will be any type of page
             child_url = response.urljoin(link)
             yield {'parent_url': parent_url, 'child_url' : child_url}
+            

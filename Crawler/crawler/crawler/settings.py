@@ -62,8 +62,13 @@ ROBOTSTXT_OBEY = False
 
 # Configure item pipelines
 # See https://docs.scrapy.org/en/latest/topics/item-pipeline.html
+
 ITEM_PIPELINES = {
-     'crawler.pipelines.CsvPipeline': 300,
+     'crawler.pipelines.CsvPipeline': 50,
+     'crawler.pipelines.DuplicatesPipeline': 100,
+     'crawler.pipelines.IDAssignmentPipeline': 200,
+     'crawler.pipelines.MetadataPipeline': 300,
+     'crawler.pipelines.DownloadContentPipeline': 400
 }
 
 # Enable and configure the AutoThrottle extension (disabled by default)

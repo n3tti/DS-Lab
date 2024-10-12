@@ -10,10 +10,29 @@ import csv
 import uuid
 
 
-class CrawlerPipeline:
+class DuplicatesPipeline:
     def process_item(self, item, spider):
+        ## TODO, maybe with the hash thing
         return item
 
+class IDAssignmentPipeline:
+    def process_item(self, item, spider):
+        ## TODO
+        return item
+    
+class MetadataPipeline:
+    def process_item(self, item, spider):
+        ## TODO
+        return item
+    
+class DownloadContentPipeline:
+    def process_item(self, item, spider):
+        ## TODO
+        return item
+
+
+
+###-------------------------------------------------
 class CsvPipeline:
     def __init__(self):
         self.seen_urls = {}
@@ -73,3 +92,5 @@ class CsvPipeline:
 
     def get_next_id(self):
         return str(uuid.uuid1())  
+
+
