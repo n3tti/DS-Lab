@@ -6,7 +6,18 @@
 import scrapy
 
 
-class CrawlerItem(scrapy.Item):
-    # define the fields for your item here like:
-    # name = scrapy.Field()
-    pass
+class PageItem(scrapy.Item):
+
+    id = scrapy.Field()
+    status = scrapy.Field()
+    depth = scrapy.Field()
+    url = scrapy.Field()
+    cousin_urls = scrapy.Field()
+    child_urls = scrapy.Field()
+    content_type = scrapy.Field()
+    content_length = scrapy.Field()
+    content_encoding = scrapy.Field()
+    content_body = scrapy.Field()
+    last_modified = scrapy.Field()
+    date = scrapy.Field()
+    
