@@ -14,7 +14,6 @@ import json
 
 
 
-parents_urls = {}
 
 class FilterURLPipeline():
     
@@ -53,36 +52,28 @@ class IDAssignmentPipeline:
     def get_next_id(self):
         return str(uuid.uuid1())  
 
-# class ParentPipeline:
+class ParentsPipeline:
+    def __init__(self):
+        self.parents = {}
+    
+    def open_spider(self, spider):
+        self.file = open('parents.json', 'w')
 
-#     def process_item(slef, item, spider):
-#         for child_id in item["child_urls"].values():
-#             if child_id not in parents_urls.keys():
+    def close_spider(self, spider):
+        for child_id, parents_set in self.parents.items():
+            dic = {"id" : child_id, "parents" : list(parents_set)}
+            line = json.dumps(dic) + "\n"
+            self.file.write(line)
+        self.file.close()
 
-#         if not child_url or not self.interesting_url(child_url):
-#         if not parent_url or not self.interesting_url(parent_url):
-#             return item
-        
-#         child_id = None
-#         if child_url not in self.seen_urls.keys():
-#             child_id = self.get_next_id()
-#             self.seen_urls[child_url] = child_id
-#         else:
-#             child_id = self.seen_urls[child_url]
-        
-#         parent_id = None
-#         if parent_url not in self.seen_urls.keys():
-#             parent_id = self.get_next_id()
-#             self.seen_urls[parent_url] = parent_id
-#         else:
-#             parent_id = self.seen_urls[parent_url]
+    def process_item(self, item, spider):
+        for child_id in item["child_urls"].values():
+            if child_id not in self.parents.keys():
+                self.parents[child_id] = set(item["id"])
+            else:
+                self.parents[child_id].add(item["id"])      
+        return item
 
-#         if child_id not in self.parents_urls.keys():
-#             self.parents_urls[child_id] = set([parent_id])
-#         else:
-#             self.parents_urls[child_id].add(parent_id)
-
-#         return item
 
 class DuplicatesPipeline:
     def process_item(self, item, spider):
@@ -100,7 +91,7 @@ class MetadataPipeline:
 
     def process_item(self, item, spider):
         dic = {"id": item["id"], "depth" : item["depth"], "url" : item["url"], "type" : item["content_type"], "length" : item["content_length"], \
-               "encoding" : item["content_encoding"], "last_modified" : item["last_modified"], "date" : item["date"], "children" : list(item["child_urls"].values())}
+               "encoding" : item["content_encoding"], "last_modified" : item["last_modified"], "date" : item["date"]}
         line = json.dumps(dic) + "\n"
         self.file.write(line)
         return item

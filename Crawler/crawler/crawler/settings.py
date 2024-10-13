@@ -67,6 +67,7 @@ ITEM_PIPELINES = {
      #'crawler.pipelines.CsvPipeline': 50,
      'crawler.pipelines.FilterURLPipeline': 50,
      'crawler.pipelines.IDAssignmentPipeline': 100,
+     'crawler.pipelines.ParentsPipeline': 150,
      'crawler.pipelines.DuplicatesPipeline': 200,
      'crawler.pipelines.MetadataPipeline': 300,
      'crawler.pipelines.DownloadContentPipeline': 400
