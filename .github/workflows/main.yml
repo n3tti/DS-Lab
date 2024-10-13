@@ -20,4 +20,4 @@ jobs:
 
     - name: Run script
       run: |
-        python crawling_spider.py scrapy crawl mycrawler -a max_pages=2 -o test.json  # Replace with the command to run your script
+        python Crawler/crawler/crawler/spiders/crawling_spider.py scrapy crawl mycrawler -a max_pages=2 -o test.json  
