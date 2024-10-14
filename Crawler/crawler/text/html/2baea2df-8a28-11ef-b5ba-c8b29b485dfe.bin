@@ -1,0 +1,2848 @@
+
+<!DOCTYPE HTML>
+<!--[if lt IE 7 ]> <html lang="it" class="no-js ie6 oldie"> <![endif]-->
+<!--[if IE 7 ]> <html lang="it" class="no-js ie7 oldie"> <![endif]-->
+<!--[if IE 8 ]> <html lang="it" class="no-js ie8 oldie"> <![endif]-->
+<!--[if IE 9 ]> <html lang="it" class="no-js ie9"> <![endif]-->
+<!--[if gt IE 9 ]><!--><html lang="it" class="no-js no-ie"> <!--<![endif]-->
+
+
+    
+<head>
+    
+    
+
+
+	
+	
+		<title>Pagina iniziale</title>
+	
+	
+
+
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta http-equiv="cleartype" content="on" />
+
+
+	<meta name="msapplication-TileColor" content="#ffffff"/>
+	<meta name="msapplication-TileImage" content="/etc/designs/core/frontend/guidelines/img/ico/mstile-144x144.png"/>
+	<meta name="msapplication-config" content="/etc/designs/core/frontend/guidelines/img/ico/browserconfig.xml"/>
+
+
+
+	
+		<meta name="description" content="Ultime decisioni del Governo svizzero, conferenze stampa del Consiglio federale." />
+	
+	
+
+
+
+
+	<meta name="google-site-verification" content="_KMXCj6xrBYMPuUE4UMltyFjFOTsYbPI5aCSxncV6HM" />
+
+
+<meta name="language" content="it" />
+<meta name="author" content="Il Consiglio federale" />
+
+
+
+
+	<!-- current page in other languages -->
+	
+		<link rel="alternate" type="text/html" href="/gov/de/start.html" hreflang="de" lang="de"/>
+	
+		<link rel="alternate" type="text/html" href="/gov/en/start.html" hreflang="en" lang="en"/>
+	
+		<link rel="alternate" type="text/html" href="/gov/it/pagina-iniziale.html" hreflang="it" lang="it"/>
+	
+		<link rel="alternate" type="text/html" href="/gov/rm/pagina-iniziala.html" hreflang="rm" lang="rm"/>
+	
+		<link rel="alternate" type="text/html" href="/gov/fr/accueil.html" hreflang="fr" lang="fr"/>
+	
+
+
+
+
+	<meta name="twitter:card" content="summary"/>
+	
+		<meta name="twitter:site" content="@br_sprecher"/>
+	
+	
+		<meta property="og:url" content="https://www.admin.ch/gov/it/start.html"/>
+	
+	<meta property="og:type" content="article"/>
+	
+		<meta property="og:title" content="Pagina iniziale"/>
+	
+	
+	
+		<meta property="og:image" content="https://www.admin.ch/gov/it/_jcr_content/socialshareimage.imagespooler.jpg/1712920809129/teaser_bundesrat_gruppenbild_2024_588x331_web.jpg"/>
+	
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+	<!--style type="text/css" id="antiClickjack">body{display:none !important;}</style-->
+	<script type="text/javascript">
+
+		var styleElement = document.createElement('STYLE');
+		styleElement.setAttribute('id', 'antiClickjack');
+		styleElement.setAttribute('type', 'text/css');
+		styleElement.innerHTML = 'body {display:none !important;}';
+		document.getElementsByTagName('HEAD')[0].appendChild(styleElement);
+
+		if (self === top) {
+			var antiClickjack = document.getElementById("antiClickjack");
+			antiClickjack.parentNode.removeChild(antiClickjack);
+		} else {
+			top.location = self.location;
+		}
+	</script>
+
+
+
+
+<script src="/etc.clientlibs/clientlibs/granite/jquery.min.js"></script>
+<script src="/etc.clientlibs/clientlibs/granite/utils.min.js"></script>
+
+
+
+	<script>
+		Granite.I18n.init({
+			locale: "it",
+			urlPrefix: "/libs/cq/i18n/dict."
+		});
+	</script>
+
+
+
+	<link rel="stylesheet" href="/etc/designs/core/frontend/guidelines.min.css" type="text/css">
+
+	<link rel="stylesheet" href="/etc/designs/core/frontend/modules.min.css" type="text/css">
+
+	
+	<link rel="shortcut icon" href="/etc/designs/core/frontend/guidelines/img/ico/favicon.ico">
+	<link rel="apple-touch-icon" sizes="57x57" href="/etc/designs/core/frontend/guidelines/img/ico/apple-touch-icon-57x57.png"/>
+	<link rel="apple-touch-icon" sizes="114x114" href="/etc/designs/core/frontend/guidelines/img/ico/apple-touch-icon-114x114.png"/>
+	<link rel="apple-touch-icon" sizes="72x72" href="/etc/designs/core/frontend/guidelines/img/ico/apple-touch-icon-72x72.png"/>
+	<link rel="apple-touch-icon" sizes="144x144" href="/etc/designs/core/frontend/guidelines/img/ico/apple-touch-icon-144x144.png"/>
+	<link rel="apple-touch-icon" sizes="60x60" href="/etc/designs/core/frontend/guidelines/img/ico/apple-touch-icon-60x60.png"/>
+	<link rel="apple-touch-icon" sizes="120x120" href="/etc/designs/core/frontend/guidelines/img/ico/apple-touch-icon-120x120.png"/>
+	<link rel="apple-touch-icon" sizes="76x76" href="/etc/designs/core/frontend/guidelines/img/ico/apple-touch-icon-76x76.png"/>
+	<link rel="icon" type="image/png" href="/etc/designs/core/frontend/guidelines/img/ico/favicon-96x96.png" sizes="96x96"/>
+	<link rel="icon" type="image/png" href="/etc/designs/core/frontend/guidelines/img/ico/favicon-16x16.png" sizes="16x16"/>
+	<link rel="icon" type="image/png" href="/etc/designs/core/frontend/guidelines/img/ico/favicon-32x32.png" sizes="32x32"/>
+
+
+
+
+
+	
+	
+		<link rel="stylesheet" type="text/css" href="/etc/designs/gov-frontend/modules.css"/>
+	
+	
+	
+
+
+
+	<!--[if lt IE 9]>
+		<script src="https://cdnjs.cloudflare.com/polyfill/v2/polyfill.js?version=4.8.0"></script>
+	<![endif]-->
+
+
+
+    
+
+
+
+    
+        
+
+	
+
+    
+
+</head>
+
+
+    
+
+<body class="mod mod-layout   skin-layout-template-homepage" data-glossary="/gov/it/pagina-iniziale.glossaryjs.json">
+
+<div class="mod mod-homepage">
+<ul class="access-keys" role="navigation">
+    <li><a href="/gov/it/pagina-iniziale.html" accesskey="0">Homepage</a></li>
+    
+    <li><a href="#main-navigation" accesskey="1">Main navigation</a></li>
+    
+    
+    <li><a href="#content" accesskey="2">Content area</a></li>
+    
+    
+    <li><a href="#site-map" accesskey="3">Sitemap</a></li>
+    
+    
+    <li><a href="#search-field" accesskey="4">Search</a></li>
+    
+</ul>
+</div>
+
+<!-- begin: container -->
+<div class="container container-main">
+
+    
+
+
+<header style="background-size: cover; background-image:" role="banner">
+	
+
+	<div class="clearfix">
+		
+			
+
+
+	
+
+
+
+	<nav class="navbar treecrumb pull-left">
+
+		
+		
+
+		
+			
+				<ul class="nav navbar-nav">
+				
+
+						
+
+						
+						<li class="dropdown">
+							
+							
+								
+									<a id="federalAdministration-dropdown" href="#" aria-label="Il Consiglio federale" class="dropdown-toggle" data-toggle="dropdown"><span class="icon icon--right"></span> Il Consiglio federale</a>
+								
+								
+							
+
+							
+								
+								<ul class="dropdown-menu" role="menu" aria-labelledby="federalAdministration-dropdown">
+									
+										
+										<li class="dropdown-header">
+											
+												
+													<a href="/gov/it/pagina-iniziale.html" aria-label="Il Consiglio federale admin.ch" data-skipextcss="true" target="_self">Il Consiglio federale admin.ch</a>
+												
+												
+											
+
+											
+											
+												
+													<ul>
+														<li>
+															
+																
+																
+																
+																	<a href="https://www.bk.admin.ch/bk/it/home.html" aria-label="Cancelleria federale (Caf)" target="_blank" title=""> Cancelleria federale (Caf)</a>
+																
+															
+														</li>
+													</ul>
+												
+											
+												
+													<ul>
+														<li>
+															
+																
+																
+																
+																	<a href="http://www.eda.admin.ch/eda/it/home.html" aria-label="Dipartimento federale degli affari esteri (DFAE)" target="_blank" title=""> Dipartimento federale degli affari esteri (DFAE)</a>
+																
+															
+														</li>
+													</ul>
+												
+											
+												
+													<ul>
+														<li>
+															
+																
+																
+																
+																	<a href="https://www.edi.admin.ch/edi/it/home.html" aria-label="Dipartimento federale dell&#39;interno (DFI)" target="_blank" title=""> Dipartimento federale dell&#39;interno (DFI)</a>
+																
+															
+														</li>
+													</ul>
+												
+											
+												
+													<ul>
+														<li>
+															
+																
+																
+																
+																	<a href="http://www.ejpd.admin.ch/ejpd/it/home.html" aria-label="Dipartimento federale di giustizia e polizia (DFGP)" target="_blank" title=""> Dipartimento federale di giustizia e polizia (DFGP)</a>
+																
+															
+														</li>
+													</ul>
+												
+											
+												
+													<ul>
+														<li>
+															
+																
+																
+																
+																	<a href="https://www.vbs.admin.ch/it" aria-label="Dipartimento federale della difesa, della protezione della popolazione e dello sport (DDPS)" target="_blank" title=""> Dipartimento federale della difesa, della protezione della popolazione e dello sport (DDPS)</a>
+																
+															
+														</li>
+													</ul>
+												
+											
+												
+													<ul>
+														<li>
+															
+																
+																
+																
+																	<a href="https://www.efd.admin.ch/efd/it/home.html" aria-label="Dipartimento federale delle finanze (DFF)" target="_blank" title=""> Dipartimento federale delle finanze (DFF)</a>
+																
+															
+														</li>
+													</ul>
+												
+											
+												
+													<ul>
+														<li>
+															
+																
+																
+																
+																	<a href="https://www.wbf.admin.ch/wbf/it/home.html" aria-label="Dipartimento federale dell&#39;economia, della formazione e della ricerca (DEFR)" target="_blank" title=""> Dipartimento federale dell&#39;economia, della formazione e della ricerca (DEFR)</a>
+																
+															
+														</li>
+													</ul>
+												
+											
+												
+													<ul>
+														<li>
+															
+																
+																
+																
+																	<a href="https://www.uvek.admin.ch/uvek/it/home.html" aria-label="Dipartimento federale dell&#39;ambiente, dei trasporti, dell&#39;energia e delle comunicazioni (DATEC)" target="_blank" title=""> Dipartimento federale dell&#39;ambiente, dei trasporti, dell&#39;energia e delle comunicazioni (DATEC)</a>
+																
+															
+														</li>
+													</ul>
+												
+											
+										</li>
+									
+								</ul>
+							
+						</li>
+					
+				</ul>
+			
+			
+		
+	</nav>
+
+
+
+
+		
+
+		
+<!-- begin: metanav -->
+<section class="nav-services clearfix">
+	
+	
+		
+
+
+	
+	<h2>Pagina iniziale</h2>
+
+	
+
+		
+		
+
+		<nav class="nav-lang">
+			<ul>
+				
+					<li>
+						
+							
+							
+								<a href="/gov/de/start.html" lang="de" title="tedesco" aria-label="tedesco">DE</a>
+							
+							
+						
+					</li>
+				
+					<li>
+						
+							
+							
+								<a href="/gov/fr/accueil.html" lang="fr" title="francese" aria-label="francese">FR</a>
+							
+							
+						
+					</li>
+				
+					<li>
+						
+							
+								<a class="active" lang="it" title="italiano selected" aria-label="italiano selected">IT</a>
+							
+							
+							
+						
+					</li>
+				
+					<li>
+						
+							
+							
+								<a href="/gov/rm/pagina-iniziala.html" lang="rm" title="romancio" aria-label="romancio">RM</a>
+							
+							
+						
+					</li>
+				
+					<li>
+						
+							
+							
+								<a href="/gov/en/start.html" lang="en" title="inglese" aria-label="inglese">EN</a>
+							
+							
+						
+					</li>
+				
+			</ul>
+		</nav>
+
+	
+
+
+		
+		
+
+    
+        
+            
+            
+
+                
+                <h2 class="sr-only">Service navigation</h2>
+
+                <nav class="nav-service">
+                    <ul>
+                        
+                        
+                            <li><a href="/gov/it/pagina-iniziale/service/contatto.html" target="_self" title="Contatto" aria-label="Contatto" data-skipextcss="true">Contatto</a></li>
+                        
+                    </ul>
+                </nav>
+
+            
+        
+    
+
+
+	
+	
+</section>
+<!-- end: metanav -->
+
+	</div>
+
+	
+		
+
+	
+	
+		
+<div class="mod mod-logo">
+    
+        
+        
+            
+                <a href="/gov/it/pagina-iniziale.html" class="brand  hidden-xs" id="logo" title="Pagina iniziale" aria-label="Pagina iniziale">
+                    
+                        
+                            <img src="/gov/it/_jcr_content/logo/image.imagespooler.png/1443434095646/Logo Schweizerische Eidgenossenschaft.png" alt="Logo della Confederazione Svizzera - alla pagina iniziale"/>
+                        
+                        
+                    
+                    <h2 id="logo-desktop-departement">Il Consiglio federale<br/>Il portale del Governo svizzero
+                    </h2>
+                </a>
+                
+            
+        
+    
+</div>
+
+	
+
+
+	
+
+ 	
+		
+
+
+	
+
+
+
+	
+	
+		
+
+<div class="mod mod-searchfield">
+
+	
+		
+
+		
+			
+
+			<!-- begin: sitesearch desktop-->
+			<div class="mod mod-searchfield global-search global-search-standard">
+				<form action="/gov/it/pagina-iniziale/ricerca.html" class="form-horizontal form-search pull-right">
+					<h2 class="sr-only">Ricerca</h2>
+					<label for="search-field" class="sr-only">Ricerca</label>
+					<input id="search-field" name="query" class="form-control search-field" type="text" placeholder="Cercare"/>
+                    <button class="icon icon--search icon--before" tabindex="0" role="button">
+                        <span class="sr-only">Ricerca</span>
+                    </button>
+                    <button class="icon icon--close icon--after search-reset" tabindex="0" role="button"><span class="sr-only"></span></button>
+					<div class="search-results">
+						<div class="search-results-list"></div>
+					</div>
+				</form>
+			</div>
+			<!-- end: sitesearch desktop-->
+
+		
+	
+
+</div>
+
+	
+
+
+
+	
+
+	
+		
+
+
+	
+
+<div class="mod mod-themes">
+	
+
+		<nav class="navbar yamm yamm--select ddl-to-modal">
+			<h2 class="sr-only">Tema A-Z</h2>
+			<ul>
+				<!-- Init dropdown with the `pull-right` class if you want to have your Topics select on the right -->
+				<li class="dropdown pull-right">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+						Tema A-Z <span class="icon icon--bottom"></span>
+					</a>
+					<!-- begin: flyout -->
+					<ul class="dropdown-menu">
+						<li>
+							<!-- The `yamm-content` can contain any kind of content like tab, table, list, article... -->
+							<div class="yamm-content container-fluid">
+
+								
+								<div class="row">
+									<div class="col-sm-12">
+										<button class="yamm-close btn btn-link icon icon--after icon--close pull-right">
+											Chiudere
+										</button>
+									</div>
+								</div>
+
+								
+				                <ul class="nav nav-tabs">
+				                	
+				                	
+				                		<li><a href="#mf_keywords_tab" data-toggle="tab" data-url="/gov/it/_jcr_content/themes.keywordsinit.html">A-Z</a></li>
+				                	
+				                	
+				                </ul>
+
+				                
+				                <div class="tab-content">
+								
+
+								
+								
+									<div class="tab-pane" id="mf_keywords_tab"></div>
+									<h2 class="sr-only visible-print-block">A-Z</h2>
+								
+
+								
+								
+								</div>
+							</div>
+						</li>
+					</ul>
+				</li>
+			</ul>
+		</nav>
+
+
+</div>
+
+
+
+
+
+
+	
+
+ 	
+
+
+</header>
+
+
+
+    
+
+
+	
+	
+		
+
+<div class="mod mod-mainnavigation">
+
+	<!-- begin: mainnav -->
+	<div class="nav-main yamm navbar" id="main-navigation">
+
+		<h2 class="sr-only">
+			Navigazione principale
+		</h2>
+
+		
+			
+
+
+<!-- mobile mainnav buttonbar -->
+ <section class="nav-mobile">
+	<div class="table-row">
+		<div class="nav-mobile-header">
+			<div class="table-row">
+				<span class="nav-mobile-logo">
+					
+						
+						
+							<img src="/etc/designs/core/frontend/guidelines/img/swiss.svg" onerror="this.onerror=null; this.src='/etc/designs/core/frontend/guidelines/img/swiss.png'" alt="Il Consiglio federale"/>
+						
+					
+				</span>
+				<h2>
+					<a href="/gov/it/pagina-iniziale.html" title="Pagina iniziale" aria-label="Pagina iniziale">Il Consiglio federale</a>
+				</h2>
+			</div>
+		</div>
+		<div class="table-cell dropdown">
+			<a href="#" class="nav-mobile-menu dropdown-toggle" data-toggle="dropdown">
+				<span class="icon icon--menu"></span>
+			</a>
+			<div class="drilldown dropdown-menu" role="menu">
+				<div class="drilldown-container">
+					<nav class="nav-page-list">
+						
+							<ul aria-controls="submenu">
+								
+									
+									
+										<li>
+											
+												
+												
+													<a href="/gov/it/pagina-iniziale/consiglio-federale.html">Consiglio federale</a>
+												
+											
+										</li>
+									
+								
+							</ul>
+						
+							<ul aria-controls="submenu">
+								
+									
+									
+										<li>
+											
+												
+												
+													<a href="/gov/it/pagina-iniziale/presidenza-della-confederazione.html">Presidenza della Confederazione</a>
+												
+											
+										</li>
+									
+								
+							</ul>
+						
+							<ul aria-controls="submenu">
+								
+									
+									
+										<li>
+											
+												
+												
+													<a href="/gov/it/pagina-iniziale/dipartimenti.html">Dipartimenti</a>
+												
+											
+										</li>
+									
+								
+							</ul>
+						
+							<ul aria-controls="submenu">
+								
+									
+									
+										<li>
+											
+												
+												
+													<a href="/gov/it/pagina-iniziale/cancelleria-federale.html">Cancelleria federale</a>
+												
+											
+										</li>
+									
+								
+							</ul>
+						
+							<ul aria-controls="submenu">
+								
+									
+										<li class="list-sub">
+											<a href="#" aria-label="Diritto federale">Diritto federale</a>
+
+											<nav class="drilldown-sub" aria-expanded="false">
+												<a href="#" class="icon icon--before icon--less drilldown-back" aria-hidden="true">Diritto federale</a>
+
+												
+													<ul aria-controls="submenu">
+														<li class="list-emphasis">
+															<a href="/gov/it/pagina-iniziale/diritto-federale/raccolta-sistematica.html">Raccolta sistematica</a>
+														</li>
+													</ul>
+												
+													<ul aria-controls="submenu">
+														<li class="list-emphasis">
+															<a href="/gov/it/pagina-iniziale/diritto-federale/raccolta-ufficiale.html">Raccolta ufficiale</a>
+														</li>
+													</ul>
+												
+													<ul aria-controls="submenu">
+														<li class="list-emphasis">
+															<a href="/gov/it/pagina-iniziale/diritto-federale/foglio-federale.html">Foglio federale</a>
+														</li>
+													</ul>
+												
+													<ul aria-controls="submenu">
+														<li class="list-emphasis">
+															<a href="/gov/it/pagina-iniziale/diritto-federale/procedure-consultazione.html">Procedure di consultazione</a>
+														</li>
+													</ul>
+												
+													<ul aria-controls="submenu">
+														<li class="list-emphasis">
+															<a href="/gov/it/pagina-iniziale/diritto-federale/giurisprudenza-autorita-amministrative-confederazione.html">Giurisprudenza delle autorità amministrative della Confederazione</a>
+														</li>
+													</ul>
+												
+
+											</nav>
+										</li>
+									
+									
+								
+							</ul>
+						
+							<ul aria-controls="submenu">
+								
+									
+									
+										<li>
+											
+												
+												
+													<a href="/gov/it/pagina-iniziale/documentazione.html">Documentazione</a>
+												
+											
+										</li>
+									
+								
+							</ul>
+						
+
+						<button class="yamm-close-bottom" aria-label="Chiudere">
+							<span class="icon icon--top" aria-hidden="true"></span>
+						</button>
+					</nav>
+				</div>
+			</div>
+		</div>
+		<div class="table-cell dropdown">
+			<a href="#" class="nav-mobile-menu dropdown-toggle" data-toggle="dropdown">
+				<span class="icon icon--search"></span>
+			</a>
+			<div class="dropdown-menu" role="menu">
+				
+				
+
+
+
+	
+		
+
+
+<div class="mod mod-searchfield">
+
+    
+        <div class="mod mod-searchfield global-search global-search-mobile">
+            <form action="/gov/it/pagina-iniziale/ricerca.html" class="form  mod-searchfield-mobile" role="form">
+                <h2 class="sr-only">Ricerca</h2>
+                <label for="search-field-phone" class="sr-only">
+                    Ricerca
+                </label>
+                <input id="search-field-phone" name="query" class="search-input form-control" type="text" placeholder="Cercare"/>
+                <button class="icon icon--search icon--before" tabindex="0" role="button">
+                    <span class="sr-only">Ricerca</span>
+                </button>
+                <button class="icon icon--close icon--after search-reset" tabindex="0" role="button"><span class="sr-only"></span></button>
+
+                <div class="search-results">
+                    <div class="search-results-list"></div>
+                </div>
+            </form>
+        </div>
+    
+
+</div>
+
+	
+	
+
+
+				
+			</div>
+		</div>
+	</div>
+</section>
+
+		
+
+		
+		<ul class="nav navbar-nav" aria-controls="submenu">
+
+			
+			
+
+				
+                
+				
+
+				<li class="dropdown yamm-fw  ">
+					
+						
+			      		
+							<a href="/gov/it/pagina-iniziale/consiglio-federale.html" aria-label="Consiglio federale" class="dropdown-toggle" data-toggle="dropdown" data-url="/gov/it/start/bundesrat/_jcr_content/par.html">Consiglio federale</a>
+							
+							<ul class="dropdown-menu" role="menu" aria-controls="submenu">
+								<li>
+									<div class="yamm-content container-fluid">
+										<div class="row">
+											<div class="col-sm-12">
+												<button class="yamm-close btn btn-link icon icon--after icon--close pull-right">Chiudere</button>
+											</div>
+										</div>
+										<div class="row">
+											<div class="col-md-12 main-column">
+
+											</div>
+										</div>
+										<br><br><br>
+										<button class="yamm-close-bottom" aria-label="Chiudere"><span class="icon icon--top"></span></button>
+									</div>
+								</li>
+							</ul>
+						
+					
+				</li>
+			
+
+				
+                
+				
+
+				<li class="dropdown yamm-fw  ">
+					
+						
+			      		
+							<a href="/gov/it/pagina-iniziale/presidenza-della-confederazione.html" aria-label="Presidenza della Confederazione" class="dropdown-toggle" data-toggle="dropdown" data-url="/gov/it/start/bundespraesidium/_jcr_content/par.html">Presidenza della Confederazione</a>
+							
+							<ul class="dropdown-menu" role="menu" aria-controls="submenu">
+								<li>
+									<div class="yamm-content container-fluid">
+										<div class="row">
+											<div class="col-sm-12">
+												<button class="yamm-close btn btn-link icon icon--after icon--close pull-right">Chiudere</button>
+											</div>
+										</div>
+										<div class="row">
+											<div class="col-md-12 main-column">
+
+											</div>
+										</div>
+										<br><br><br>
+										<button class="yamm-close-bottom" aria-label="Chiudere"><span class="icon icon--top"></span></button>
+									</div>
+								</li>
+							</ul>
+						
+					
+				</li>
+			
+
+				
+                
+				
+
+				<li class="dropdown yamm-fw  ">
+					
+						
+			      		
+							<a href="/gov/it/pagina-iniziale/dipartimenti.html" aria-label="Dipartimenti" class="dropdown-toggle" data-toggle="dropdown" data-url="/gov/it/start/departemente/_jcr_content/par.html">Dipartimenti</a>
+							
+							<ul class="dropdown-menu" role="menu" aria-controls="submenu">
+								<li>
+									<div class="yamm-content container-fluid">
+										<div class="row">
+											<div class="col-sm-12">
+												<button class="yamm-close btn btn-link icon icon--after icon--close pull-right">Chiudere</button>
+											</div>
+										</div>
+										<div class="row">
+											<div class="col-md-12 main-column">
+
+											</div>
+										</div>
+										<br><br><br>
+										<button class="yamm-close-bottom" aria-label="Chiudere"><span class="icon icon--top"></span></button>
+									</div>
+								</li>
+							</ul>
+						
+					
+				</li>
+			
+
+				
+                
+				
+
+				<li class="dropdown yamm-fw  ">
+					
+						
+			      		
+							<a href="/gov/it/pagina-iniziale/cancelleria-federale.html" aria-label="Cancelleria federale" class="dropdown-toggle" data-toggle="dropdown" data-url="/gov/it/start/bundeskanzlei/_jcr_content/par.html">Cancelleria federale</a>
+							
+							<ul class="dropdown-menu" role="menu" aria-controls="submenu">
+								<li>
+									<div class="yamm-content container-fluid">
+										<div class="row">
+											<div class="col-sm-12">
+												<button class="yamm-close btn btn-link icon icon--after icon--close pull-right">Chiudere</button>
+											</div>
+										</div>
+										<div class="row">
+											<div class="col-md-12 main-column">
+
+											</div>
+										</div>
+										<br><br><br>
+										<button class="yamm-close-bottom" aria-label="Chiudere"><span class="icon icon--top"></span></button>
+									</div>
+								</li>
+							</ul>
+						
+					
+				</li>
+			
+
+				
+                
+				
+
+				<li class="dropdown yamm-fw  ">
+					
+						
+							<a href="https://www.fedlex.admin.ch/it/home" aria-label="Diritto federale" class="dropdown-toggle icon icon--after icon--external" target="_blank" title="">Diritto federale</a>
+			      		
+			      		
+					
+				</li>
+			
+
+				
+                
+				
+
+				<li class="dropdown yamm-fw  ">
+					
+						
+			      		
+							<a href="/gov/it/pagina-iniziale/documentazione.html" aria-label="Documentazione" class="dropdown-toggle" data-toggle="dropdown" data-url="/gov/it/start/dokumentation/_jcr_content/par.html">Documentazione</a>
+							
+							<ul class="dropdown-menu" role="menu" aria-controls="submenu">
+								<li>
+									<div class="yamm-content container-fluid">
+										<div class="row">
+											<div class="col-sm-12">
+												<button class="yamm-close btn btn-link icon icon--after icon--close pull-right">Chiudere</button>
+											</div>
+										</div>
+										<div class="row">
+											<div class="col-md-12 main-column">
+
+											</div>
+										</div>
+										<br><br><br>
+										<button class="yamm-close-bottom" aria-label="Chiudere"><span class="icon icon--top"></span></button>
+									</div>
+								</li>
+							</ul>
+						
+					
+				</li>
+			
+		</ul>
+	</div>
+</div>
+
+	
+
+
+
+    
+
+<!-- begin: main -->
+<div class="container-fluid hidden-xs">
+	<div class="row">
+		<div class="col-sm-12">
+			
+		</div>
+	</div>
+</div>
+
+
+
+	
+	
+		<div class="container-fluid">
+			
+
+<div class="row">
+ 	<div class="col-md-12 js-glossary-context" id="content">
+    	
+
+
+
+
+<div class="mod mod-imagesbundesrat">
+	
+		
+		
+			<a class="js-mobile-landingpage" href="/gov/de/start/bundesrat/mitglieder-des-bundesrates.html">
+				<ul class="img-wrapper js-image-wrapper js-phone img-count-7 clearfix" data-mobile-url="/content/gov/de/start/bundesrat/mitglieder-des-bundesrates.html">
+					
+						<li>
+							<figure>
+								<img id="imagesbundesrat-dimg1" src="/gov/it/pagina-iniziale/_jcr_content/par/imagesbundesrat/items/guy_parmelin/image.imagespooler.jpg/1704024236952/258.1000/header_elisabeth_baume-schneider_386x391.png" alt="" data-url="/gov/it/pagina-iniziale/dipartimenti/dipartimento-interno-dfi.html"><figcaption id="imagesbundesrat-dimg1">Elisabeth Baume-Schneider</figcaption>
+							</figure>
+						</li>
+					
+						<li>
+							<figure>
+								<img id="imagesbundesrat-dimg2" src="/gov/it/pagina-iniziale/_jcr_content/par/imagesbundesrat/items/johann_n_schneider_a/image.imagespooler.jpg/1704024243772/258.1000/header_ignazio_cassis_386x391.png" alt="" data-url="/gov/it/pagina-iniziale/dipartimenti/dipartimento-affari-esteri.html"><figcaption id="imagesbundesrat-dimg2">Ignazio Cassis<br />
+</figcaption>
+							</figure>
+						</li>
+					
+						<li>
+							<figure>
+								<img id="imagesbundesrat-dimg3" src="/gov/it/pagina-iniziale/_jcr_content/par/imagesbundesrat/items/44_1451401239396/image.imagespooler.jpg/1704024258456/258.1000/header_keller_sutter_386x391.png" alt="" data-url="/gov/it/pagina-iniziale/dipartimenti/dipartimento-finanze-dff.html"><figcaption id="imagesbundesrat-dimg3">Karin Keller-Sutter</figcaption>
+							</figure>
+						</li>
+					
+						<li>
+							<figure>
+								<img id="imagesbundesrat-dimg4" src="/gov/it/pagina-iniziale/_jcr_content/par/imagesbundesrat/items/doris_leuthard/image.imagespooler.jpg/1704024278052/258.1000/header_viola_amherd_386x391.png" alt="" data-url="/gov/it/pagina-iniziale/dipartimenti/dipartimento-difesa-protezione-popolazione-sport-ddps.html"><figcaption id="imagesbundesrat-dimg4">Viola Amherd<br />
+Presidente della Confederazione</figcaption>
+							</figure>
+						</li>
+					
+						<li>
+							<figure>
+								<img id="imagesbundesrat-dimg5" src="/gov/it/pagina-iniziale/_jcr_content/par/imagesbundesrat/items/simonetta_sommaruga/image.imagespooler.jpg/1704024290134/258.1000/header_guy_parmelin_386x391.png" alt="" data-url="/gov/it/pagina-iniziale/dipartimenti/dipartimento-economia-formazione-ricerca-defr.html"><figcaption id="imagesbundesrat-dimg5">Guy Parmelin<br />
+</figcaption>
+							</figure>
+						</li>
+					
+						<li>
+							<figure>
+								<img id="imagesbundesrat-dimg6" src="/gov/it/pagina-iniziale/_jcr_content/par/imagesbundesrat/items/ueli_maurer/image.imagespooler.jpg/1704024297948/258.1000/header_albert_roesti_386x391.png" alt="" data-url="/gov/it/pagina-iniziale/dipartimenti/dipartimento-ambiente-trasporti-energia-comunicazioni-datec.html"><figcaption id="imagesbundesrat-dimg6">Albert Rösti</figcaption>
+							</figure>
+						</li>
+					
+						<li>
+							<figure>
+								<img id="imagesbundesrat-dimg7" src="/gov/it/pagina-iniziale/_jcr_content/par/imagesbundesrat/items/43_1451401227318/image.imagespooler.jpg/1704024314372/258.1000/header_beat_jans_386x391.png" alt="" data-url="/gov/it/pagina-iniziale/dipartimenti/dipartimento-giustizia-polizia-dfgp.html"><figcaption id="imagesbundesrat-dimg7">Beat Jans<br />
+</figcaption>
+							</figure>
+						</li>
+					
+				</ul>
+			</a>
+		
+	
+</div>
+
+
+
+<div class="mod mod-teaserfocus">
+	
+	
+		
+		
+			
+				
+				
+					<div class="js-tab-equalheight" data-equal-height-elements="true">
+
+							
+						
+							<ul class="nav nav-tabs nav-tabs-focus nav-justified tabs-4">
+
+									
+								
+
+								
+
+									
+
+									
+									
+									
+									
+
+									<li class="active">
+										<a href="#tab_aiuto_alle_vittime_d_1795964766" data-toggle="tab">Aiuto alle vittime di reati</a>
+									</li>
+								
+
+									
+
+									
+									
+									
+									
+
+									<li >
+										<a href="#tab_finanziamento_dell_a_776274474" data-toggle="tab">Finanziamento dell&#39;AVS</a>
+									</li>
+								
+
+									
+
+									
+									
+									
+									
+
+									<li >
+										<a href="#tab_sminamento_in_ucrain_1390849672" data-toggle="tab">Sminamento in Ucraina</a>
+									</li>
+								
+
+									
+
+									
+									
+									
+									
+
+									<li >
+										<a href="#tab_votazione_popolare_d_612167826_500839086" data-toggle="tab">Votazione popolare del 24 novembre 2024</a>
+									</li>
+								
+							</ul>
+						
+
+						<div class="tab-content tab-border tab-focus tabs-4" data-interval="7000">
+							<button class="tab-focus-control btn btn-sm hidden"><span class="icon icon--play"></span></button>
+							
+
+								
+
+								
+
+								<div class="tab-pane active js-equalheight-element" id="tab_aiuto_alle_vittime_d_1795964766">
+									<h2 class="sr-only visible-print-block">Aiuto alle vittime di reati</h2>
+									<div class="row">
+										
+										
+
+
+<div class="mod mod-teaser">
+
+
+
+    
+    
+        
+            
+            
+                <div class="col-sm-7">
+                    <a href="https://www.admin.ch/gov/it/pagina-iniziale/documentazione/comunicati-stampa/comunicati-stampa-consiglio-federale.msg-id-102711.html" target="_blank" title=""><img src="/gov/it/pagina-iniziale/_jcr_content/par/teaserfocus/items/aiuto_alle_vittime_d/teaserfocuspar/teaser/image.imagespooler.jpg/1728478946675/241009-5-Opferhilfe-Teaser-RZ01.jpg" alt=""/></a>
+                </div>
+                <div class="col-sm-5 nopadding-left">
+                    
+                    
+                        
+                            <h4>
+                                <a href="https://www.admin.ch/gov/it/pagina-iniziale/documentazione/comunicati-stampa/comunicati-stampa-consiglio-federale.msg-id-102711.html" target="_blank" title="">Assistenza medico-legale per le vittime di violenza</a>
+                            </h4>
+                        
+                        
+                    
+                    <p>Il Consiglio federale intende ampliare l'offerta di aiuto per le vittime di violenza domestica e sessuale. In particolare, va migliorato l'accesso all'assistenza medico-legale. La relativa modifica legislativa è posta in consultazione fino al 25 gennaio del 2025.&nbsp;&nbsp;<br>
+</p>
+<ul>
+<li><a href="https://youtube.com/live/YwmR46ZWS8s" target="_blank" class="icon icon--after icon--external" title="">Aiuto alle vittime: conferenza</a></li>
+<li><a href="https://www.admin.ch/gov/it/pagina-iniziale/documentazione/comunicati-stampa/comunicati-stampa-consiglio-federale.msg-id-102711.html" target="_blank" class="icon icon--after icon--external" title="">Aiuto alle vittime: comunicato</a></li>
+</ul>
+
+                    
+                </div>
+            
+
+            
+            
+        
+    
+
+</div>
+
+
+
+    
+        
+    
+
+
+
+									</div>
+								</div>
+							
+
+								
+
+								
+
+								<div class="tab-pane  js-equalheight-element" id="tab_finanziamento_dell_a_776274474">
+									<h2 class="sr-only visible-print-block">Finanziamento dell'AVS</h2>
+									<div class="row">
+										
+										
+
+
+<div class="mod mod-teaser">
+
+
+
+    
+    
+        
+            
+            
+                <div class="col-sm-7">
+                    <a href="https://www.admin.ch/gov/it/pagina-iniziale/documentazione/comunicati-stampa/comunicati-stampa-consiglio-federale.msg-id-102717.html" target="_blank" title=""><img src="/gov/it/pagina-iniziale/_jcr_content/par/teaserfocus/items/finanziamento_dell_a/teaserfocuspar/teaser/image.imagespooler.jpg/1728465473056/241009-7-Finanzmarkttransaktionssteuer-Teaser-RZ01.jpg" alt=""/></a>
+                </div>
+                <div class="col-sm-5 nopadding-left">
+                    
+                    
+                        
+                            <h4>
+                                <a href="https://www.admin.ch/gov/it/pagina-iniziale/documentazione/comunicati-stampa/comunicati-stampa-consiglio-federale.msg-id-102717.html" target="_blank" title="">Finanziamento dell'AVS</a>
+                            </h4>
+                        
+                        
+                    
+                    <p>In un rapporto, il Consiglio federale ritiene che le tasse sulle transazioni finanziarie non si prestano a un finanziamento stabile dell'AVS. Queste tasse sono meno efficaci rispetto ad altre imposte e il loro potenziale in termine di entrate supplementari è limitato.</p>
+<ul>
+<li><a href="https://www.admin.ch/gov/it/pagina-iniziale/documentazione/comunicati-stampa/comunicati-stampa-consiglio-federale.msg-id-102717.html" target="_blank" class="icon icon--after icon--external" title="">Finanziamento dell'AVS: comunicato</a></li>
+</ul>
+
+                    
+                </div>
+            
+
+            
+            
+        
+    
+
+</div>
+
+
+
+    
+        
+    
+
+
+
+									</div>
+								</div>
+							
+
+								
+
+								
+
+								<div class="tab-pane  js-equalheight-element" id="tab_sminamento_in_ucrain_1390849672">
+									<h2 class="sr-only visible-print-block">Sminamento in Ucraina</h2>
+									<div class="row">
+										
+										
+
+
+<div class="mod mod-teaser">
+
+
+
+    
+    
+        
+            
+            
+                <div class="col-sm-7">
+                    <a href="https://www.admin.ch/gov/it/pagina-iniziale/documentazione/comunicati-stampa.msg-id-102724.html" target="_blank" title=""><img src="/gov/it/pagina-iniziale/_jcr_content/par/teaserfocus/items/sminamento_in_ucrain/teaserfocuspar/teaser/image.imagespooler.jpg/1728467670434/241009-3-Fondation-Deminage-Teaser-RZ01.jpg" alt=""/></a>
+                </div>
+                <div class="col-sm-5 nopadding-left">
+                    
+                    
+                        
+                            <h4>
+                                <a href="https://www.admin.ch/gov/it/pagina-iniziale/documentazione/comunicati-stampa.msg-id-102724.html" target="_blank" title="">Sminamento umanitario in Ucraina</a>
+                            </h4>
+                        
+                        
+                    
+                    <p>Il Consiglio federale rafforza la collaborazione con la Fondazione svizzera per lo sminamento. Ha approvato un contributo di 30 milioni di franchi fino al 2027 per sostenere lo sminamento umanitario in Ucraina.&nbsp;<br>
+</p>
+<ul>
+<li><a href="https://www.admin.ch/gov/it/pagina-iniziale/documentazione/comunicati-stampa.msg-id-102724.html" target="_blank" class="icon icon--after icon--external" title="">Sminamento in Ucraina: comunicato</a></li>
+</ul>
+
+                    
+                </div>
+            
+
+            
+            
+        
+    
+
+</div>
+
+
+
+    
+        
+    
+
+
+
+									</div>
+								</div>
+							
+
+								
+
+								
+
+								<div class="tab-pane  js-equalheight-element" id="tab_votazione_popolare_d_612167826_500839086">
+									<h2 class="sr-only visible-print-block">Votazione popolare del 24 novembre 2024</h2>
+									<div class="row">
+										
+										
+
+
+<div class="mod mod-teaser">
+
+
+
+    
+    
+        
+            
+            
+                <div class="col-sm-7">
+                    <a href="/gov/it/pagina-iniziale/documentazione/votazioni/20241124.html" data-skipextcss="true"><img src="/gov/it/pagina-iniziale/_jcr_content/par/teaserfocus/items/votazione_popolare_d_612167826/teaserfocuspar/teaser/image.imagespooler.jpg/1727684152633/240626-November-Abstimmungen-Vorankuendigung-Teaser-RZ01.jpg" alt=""/></a>
+                </div>
+                <div class="col-sm-5 nopadding-left">
+                    
+                    
+                        
+                            <h4>
+                                <a href="/gov/it/pagina-iniziale/documentazione/votazioni/20241124.html" title="Le spiegazioni del Consiglio federale sugli oggetti in votazione il 24 novembre 2024" data-skipextcss="true">Le spiegazioni del Consiglio federale sugli oggetti in votazione il 24 novembre 2024</a>
+                            </h4>
+                        
+                        
+                    
+                    <p>Le spiegazioni ufficiali di voto sono ora disponibili online e sull'app VoteInfo.</p>
+<ul>
+<li><a href="/gov/it/pagina-iniziale/documentazione/votazioni/20241124/potenziamento-delle-strade-nazionali.html">Potenziamento delle strade nazionali</a></li>
+<li><a href="/gov/it/pagina-iniziale/documentazione/votazioni/20241124/sublocazione.html">Diritto di locazione: sublocazione</a></li>
+<li><a href="/gov/it/pagina-iniziale/documentazione/votazioni/20241124/disdetta-per-bisogno-personale.html">Diritto di locazione: disdetta per bisogno personale</a></li>
+<li><a href="/gov/it/pagina-iniziale/documentazione/votazioni/20241124/fnanziamento-delle-prestazioni-sanitarie.html">Finanziamento delle prestazioni sanitarie</a></li>
+</ul>
+
+                    
+                </div>
+            
+
+            
+            
+        
+    
+
+</div>
+
+
+
+    
+        
+    
+
+
+
+									</div>
+								</div>
+							
+						</div>
+					</div>
+				
+			
+		
+	
+</div>
+
+<div class="mod mod-separator">
+	<hr/>
+</div>
+<div class="mod mod-columncontrols">
+		
+			
+			
+				
+					
+					
+						<div class="row">
+							
+								<div class="col-md-6 col-sm-8">
+									
+<div class="mod mod-headline">
+	
+		
+		
+			<div class="list-group">
+				<div class="list-group-header">
+					<h2 class="pull-left">Conferenze stampa</h2>
+					<a href="/gov/it/pagina-iniziale/documentazione/conferenze-media/archivio-conferenze-media.html" class="pull-right icon icon--before icon--list" title="Tutti" aria-label="Tutti">
+						Tutti
+					</a>
+				</div>
+			</div>
+		
+		
+	
+</div>
+
+<div class="mod mod-video">
+
+	
+
+	
+		
+		
+
+			
+
+				
+				
+
+				
+				
+					
+
+					
+
+					
+
+					<div>
+						<div class="clearfix  ">
+							
+							
+								
+								
+									<iframe width="1140" height="641" src="https://www.youtube.com/embed/videoseries?wmode=transparent&amp;list=PLEnHzNShzOwYkw0paTCPfYSkqnw0U7yZs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen wmode="Opaque"></iframe>
+								
+							
+
+							
+							
+								
+								
+									
+								
+							
+							
+							
+						</div>
+					</div>
+
+				
+
+			
+		
+	
+
+
+
+</div>
+
+<div class="mod mod-text">
+    
+        
+        
+            <article class="clearfix">
+                
+                    <p><a href="https://youtube.com/playlist?list=PLEnHzNShzOwYkw0paTCPfYSkqnw0U7yZs&amp;si=5cDbaDSZKsakgPov" target="_blank" class="icon icon--after icon--external" title=""><b>Ultime conferenze stampa</b></a></p>
+
+                
+                
+            </article>
+        
+    
+</div>
+
+
+    
+        
+    
+
+
+
+								</div>
+							
+								<div class="col-md-6 col-sm-4">
+									
+
+
+	
+
+	
+		
+		
+			<div class="list-group news-feed">
+				
+					
+						
+					
+					
+				
+
+				
+					
+						<div class="list-group">
+							<div class="list-group-header">
+								<h3 class="pull-left">Ultime notizie</h3>
+								<a href="/gov/it/pagina-iniziale/documentazione/comunicati-stampa.html" title="Tutti" class="pull-right icon icon--before icon--list">
+									Tutti
+								</a>
+							</div>
+						</div>
+					
+					
+				
+
+				
+
+
+				
+				
+
+				
+
+
+				<div class="scroll-y mod mod-dynamic js-equalheight" data-equalheight-line="true" data-url="/gov/it/pagina-iniziale/_jcr_content/par/columncontrols_898860438/items/1/column/nsbnewslist.entries.html" aria-live="off" aria-atomic="true" aria-relevant="all" data-connectors="dynamicNewsList">
+					<div class="nojs">
+						<p>
+							<p>Per visualizzare i comunicati stampa è necessaria Java Script.</p>
+
+						</p>
+						
+							<p>
+								<a href="https://www.newsd.admin.ch/newsd/feeds/rss?lang=it&org-nr=1&topic=&keyword=&offer-nr=&catalogueElement=&kind=M&start_date=2022-01-01&end_index=19" target="_blank" class="icon icon--after icon--external" title=""></a>
+							</p>
+						
+					</div>
+				</div>
+
+			</div>
+		
+
+	
+
+
+
+
+    
+        
+    
+
+
+
+								</div>
+							
+						</div>
+					
+				
+			
+		
+</div>
+
+
+<div class="mod mod-twitterstream">
+	
+		
+		
+            
+            	<div class="list-group">
+	                <div class="list-group-header">
+	                    <h2 class="pull-left">
+							Tweets del portavoce
+	                    </h2>
+	                </div>
+                </div>
+            
+
+			<a href="">
+				
+			</a>
+
+            <ul class="twitter-timeline js-twitter-timeline" data-url="/gov/it/pagina-iniziale/_jcr_content/par/twitterstream.tweets.html?username=BR_Sprecher" data-time-interval="300000" aria-live="polite" aria-atomic="true">
+            </ul>
+			
+				<a href="https://twitter.com/BR_Sprecher" class="twitter-follow-button" data-show-count="false" data-align="left" data-show-screen-name="true" data-size="medium" data-dnt="true"></a><script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+			
+        
+    
+</div>
+
+
+
+    
+        
+    
+
+
+
+    </div>
+</div>
+
+		</div>
+	
+
+<!-- end: main -->
+
+
+    <span class="visible-print">https://www.admin.ch/content/gov/it/pagina-iniziale.html</span>
+
+    
+<footer role="contentinfo">
+	<h2 class="sr-only">Footer</h2>
+
+  
+
+  
+	<a name="context-sidebar"></a>
+  
+
+  
+  
+
+  	
+
+    
+        
+            <div class="container-fluid footer-service">
+                <h3>Il Consiglio federale</h3>
+                <nav>
+                    <ul>
+                        
+                        
+                            <li><a href="/gov/it/pagina-iniziale/service/contatto.html" target="_self" title="Contatto" aria-label="Contatto">Contatto</a></li>
+                        
+                    </ul>
+                </nav>
+            </div>
+        
+    
+
+
+
+	
+
+    	
+			
+			
+				
+					
+<div class="site-map">
+	<h2 class="sr-only">Footer</h2>
+
+	<a href="#site-map" data-target="#site-map" data-toggle="collapse" class="site-map-toggle collapsed">Sitemap</a>
+
+	<div class="container-fluid" id="site-map">
+		<div class="col-sm-6 col-md-3">
+			
+
+
+<div class="mod mod-linklist">
+	
+	
+
+
+
+	
+		
+		
+			
+				
+					
+						
+					
+					
+				
+
+				
+					
+					
+						<h3>Consiglio federale</h3>
+					
+				
+
+			
+			
+			
+				
+				
+					<ul >
+						
+							<li>
+								
+									
+										<a href="/gov/it/pagina-iniziale/consiglio-federale/membri-del-consiglio-federale.html" title="Membri del Consiglio federale" aria-label="Membri del Consiglio federale" data-skipextcss="true">Membri del Consiglio federale</a>
+									
+									
+								
+							</li>
+						
+							<li>
+								
+									
+										<a href="/gov/it/pagina-iniziale/consiglio-federale/compiti.html" title="Compiti" aria-label="Compiti" data-skipextcss="true">Compiti</a>
+									
+									
+								
+							</li>
+						
+							<li>
+								
+									
+										<a href="/gov/it/pagina-iniziale/consiglio-federale/storia-del-consiglio-federale.html" title="Storia del Consiglio federale" aria-label="Storia del Consiglio federale" data-skipextcss="true">Storia del Consiglio federale</a>
+									
+									
+								
+							</li>
+						
+							<li>
+								
+									
+										<a href="/gov/it/pagina-iniziale/consiglio-federale/foto-e-discorsi-del-consiglio-federale.html" title="Foto e discorsi del Consiglio federale" aria-label="Foto e discorsi del Consiglio federale" data-skipextcss="true">Foto e discorsi del Consiglio federale</a>
+									
+									
+								
+							</li>
+						
+							<li>
+								
+									
+										<a href="/gov/it/pagina-iniziale/consiglio-federale/dove-lavora-il-governo.html" title="Dove lavora il Governo?" aria-label="Dove lavora il Governo?" data-skipextcss="true">Dove lavora il Governo?</a>
+									
+									
+								
+							</li>
+						
+							<li>
+								
+									
+										<a href="/gov/it/pagina-iniziale/consiglio-federale/elezione-del-consiglio-federale.html" title="Elezione del Consiglio federale" aria-label="Elezione del Consiglio federale" data-skipextcss="true">Elezione del Consiglio federale</a>
+									
+									
+								
+							</li>
+						
+							<li>
+								
+									
+										<a href="/gov/it/pagina-iniziale/consiglio-federale/legislatura.html" title="Programma di legislatura 2023&ndash;2027" aria-label="Programma di legislatura 2023&ndash;2027" data-skipextcss="true">Programma di legislatura 2023&ndash;2027</a>
+									
+									
+								
+							</li>
+						
+					</ul>
+				
+			
+			
+		
+	
+
+
+
+	
+</div>
+
+		</div>
+		<div class="col-sm-6 col-md-3">
+			
+
+
+<div class="mod mod-linklist">
+	
+	
+
+
+
+	
+		
+		
+			
+				
+					
+						
+					
+					
+				
+
+				
+					
+					
+						<h3>Presidenza della Confederazione</h3>
+					
+				
+
+			
+			
+			
+				
+				
+					<ul >
+						
+							<li>
+								
+									
+										<a href="/gov/it/pagina-iniziale/presidenza-della-confederazione/anno-presidenziale-2024.html" title="Anno di presidenza 2024" aria-label="Anno di presidenza 2024" data-skipextcss="true">Anno di presidenza 2024</a>
+									
+									
+								
+							</li>
+						
+							<li>
+								
+									
+										<a href="/gov/it/pagina-iniziale/presidenza-della-confederazione/carica-di-presidente-della-confederazione.html" title="La carica di presidente della Confederazione" aria-label="La carica di presidente della Confederazione" data-skipextcss="true">La carica di presidente della Confederazione</a>
+									
+									
+								
+							</li>
+						
+							<li>
+								
+									
+										<a href="/gov/it/pagina-iniziale/presidenza-della-confederazione/storia-della-presidenza-della-confederazione.html" title="Storia della presidenza della Confederazione" aria-label="Storia della presidenza della Confederazione" data-skipextcss="true">Storia della presidenza della Confederazione</a>
+									
+									
+								
+							</li>
+						
+					</ul>
+				
+			
+			
+		
+	
+
+
+
+	
+</div>
+
+		</div>
+		<div class="col-sm-6 col-md-3">
+			
+
+
+<div class="mod mod-linklist">
+	
+	
+
+
+
+	
+		
+		
+			
+				
+					
+						
+					
+					
+				
+
+				
+					
+					
+						<h3>La Cancelleria federale</h3>
+					
+				
+
+			
+			
+			
+				
+				
+					<ul >
+						
+							<li>
+								
+									
+										<a href="/gov/it/pagina-iniziale/cancelleria-federale/cancelliere-della-confederazione.html" title="Il cancelliere della Confederazione" aria-label="Il cancelliere della Confederazione" data-skipextcss="true">Il cancelliere della Confederazione</a>
+									
+									
+								
+							</li>
+						
+							<li>
+								
+									
+										<a href="/gov/it/pagina-iniziale/cancelleria-federale/vizekanzler_in.html" title="Vicecancelliera Rachel Salzmann" aria-label="Vicecancelliera Rachel Salzmann" data-skipextcss="true">Vicecancelliera Rachel Salzmann</a>
+									
+									
+								
+							</li>
+						
+							<li>
+								
+									
+										<a href="/gov/it/pagina-iniziale/cancelleria-federale/vizekanzler_brsprecher.html" title="Vicecancelliere Andrea Arcidiacono" aria-label="Vicecancelliere Andrea Arcidiacono" data-skipextcss="true">Vicecancelliere Andrea Arcidiacono</a>
+									
+									
+								
+							</li>
+						
+							<li>
+								
+									
+										<a href="/gov/it/pagina-iniziale/cancelleria-federale/compiti-della-cancelleria-federale.html" title="La Cancelleria federale" aria-label="La Cancelleria federale" data-skipextcss="true">La Cancelleria federale</a>
+									
+									
+								
+							</li>
+						
+					</ul>
+				
+			
+			
+		
+	
+
+
+
+	
+</div>
+
+		</div>
+		<div class="col-sm-6 col-md-3">
+			
+
+
+<div class="mod mod-linklist">
+	
+	
+
+
+
+	
+		
+		
+			
+				
+					
+						
+					
+					
+				
+
+				
+					
+					
+						<h3>Altre informazioni</h3>
+					
+				
+
+			
+			
+			
+				
+				
+					<ul >
+						
+							<li>
+								
+									
+										<a href="http://www.parlament.ch/i/Pagine/default.aspx" aria-label="Parlamento" target="_blank" title="">Parlamento</a>
+									
+									
+								
+							</li>
+						
+							<li>
+								
+									
+										<a href="http://www.eidgenoessischegerichte.ch/it/" aria-label="I tribunali della Confederazione Svizzera" target="_blank" title="">I tribunali della Confederazione Svizzera</a>
+									
+									
+								
+							</li>
+						
+							<li>
+								
+									
+										<a href="https://www.staatskalender.admin.ch/home" aria-label="Annuario federale della Confederazione Svizzera" target="_blank" title="">Annuario federale della Confederazione Svizzera</a>
+									
+									
+								
+							</li>
+						
+							<li>
+								
+									
+										<a href="https://www.stelle.admin.ch/stelle/it/home.html" aria-label="Posti vacanti alla Confederazione" target="_blank" title="">Posti vacanti alla Confederazione</a>
+									
+									
+								
+							</li>
+						
+							<li>
+								
+									
+										<a href="https://www.ch.ch/it/democrazia/" aria-label="Il sistema politico svizzero" target="_blank" title="">Il sistema politico svizzero</a>
+									
+									
+								
+							</li>
+						
+					</ul>
+				
+			
+			
+		
+	
+
+
+
+	
+</div>
+
+		</div>
+		<div class="col-sm-6 col-md-3">
+			
+
+
+<div class="mod mod-linklist">
+	
+	
+
+
+
+	
+		
+		
+			
+				
+					
+						
+					
+					
+				
+
+				
+					
+					
+						<h3>Diritto federale</h3>
+					
+				
+
+			
+			
+			
+				
+				
+					<ul >
+						
+							<li>
+								
+									
+										<a href="/gov/it/pagina-iniziale/diritto-federale/raccolta-sistematica.html" title="Raccolta sistematica" aria-label="Raccolta sistematica" data-skipextcss="true">Raccolta sistematica</a>
+									
+									
+								
+							</li>
+						
+							<li>
+								
+									
+										<a href="/gov/it/pagina-iniziale/diritto-federale/raccolta-ufficiale.html" title="Raccolta ufficiale" aria-label="Raccolta ufficiale" data-skipextcss="true">Raccolta ufficiale</a>
+									
+									
+								
+							</li>
+						
+							<li>
+								
+									
+										<a href="/gov/it/pagina-iniziale/diritto-federale/foglio-federale.html" title="Foglio federale" aria-label="Foglio federale" data-skipextcss="true">Foglio federale</a>
+									
+									
+								
+							</li>
+						
+							<li>
+								
+									
+										<a href="/gov/it/pagina-iniziale/diritto-federale/procedure-consultazione.html" title="Procedure di consultazione" aria-label="Procedure di consultazione" data-skipextcss="true">Procedure di consultazione</a>
+									
+									
+								
+							</li>
+						
+							<li>
+								
+									
+										<a href="/gov/it/pagina-iniziale/diritto-federale/giurisprudenza-autorita-amministrative-confederazione.html" title="Giurisprudenza delle autorit&agrave; amministrative della Confederazione" aria-label="Giurisprudenza delle autorit&agrave; amministrative della Confederazione" data-skipextcss="true">Giurisprudenza delle autorit&agrave; amministrative della Confederazione</a>
+									
+									
+								
+							</li>
+						
+							<li>
+								
+									
+										<a href="/gov/it/pagina-iniziale/diritto-federale/commissioni-extraparlamentari.html" title="Commissioni extraparlamentari" aria-label="Commissioni extraparlamentari" data-skipextcss="true">Commissioni extraparlamentari</a>
+									
+									
+								
+							</li>
+						
+							<li>
+								
+									
+										<a href="/gov/it/pagina-iniziale/diritto-federale/10-jahre-behig.html" title="I diritti delle persone con disabilit&agrave; in formati accessibili" aria-label="I diritti delle persone con disabilit&agrave; in formati accessibili" data-skipextcss="true">I diritti delle persone con disabilit&agrave; in formati accessibili</a>
+									
+									
+								
+							</li>
+						
+					</ul>
+				
+			
+			
+		
+	
+
+
+
+	
+</div>
+
+		</div>
+		<div class="col-sm-6 col-md-3">
+			
+
+
+<div class="mod mod-linklist">
+	
+	
+
+
+
+	
+		
+		
+			
+				
+					
+						
+					
+					
+				
+
+				
+					
+					
+						<h3>Documentazione</h3>
+					
+				
+
+			
+			
+			
+				
+				
+					<ul >
+						
+							<li>
+								
+									
+										<a href="/gov/it/pagina-iniziale/documentazione/comunicati-stampa.html" title="Comunicati stampa" aria-label="Comunicati stampa" data-skipextcss="true">Comunicati stampa</a>
+									
+									
+								
+							</li>
+						
+							<li>
+								
+									
+										<a href="/gov/it/pagina-iniziale/documentazione/conferenze-media.html" title="Conferenze stampa" aria-label="Conferenze stampa" data-skipextcss="true">Conferenze stampa</a>
+									
+									
+								
+							</li>
+						
+							<li>
+								
+									
+										<a href="/gov/it/pagina-iniziale/documentazione/votazioni.html" title="Votazioni popolari" aria-label="Votazioni popolari" data-skipextcss="true">Votazioni popolari</a>
+									
+									
+								
+							</li>
+						
+							<li>
+								
+									
+										<a href="/gov/it/pagina-iniziale/documentazione/discorsi.html" title="Discorsi" aria-label="Discorsi" data-skipextcss="true">Discorsi</a>
+									
+									
+								
+							</li>
+						
+							<li>
+								
+									
+										<a href="/gov/it/pagina-iniziale/documentazione/eventi.html" title="Eventi del Consiglio federale" aria-label="Eventi del Consiglio federale" data-skipextcss="true">Eventi del Consiglio federale</a>
+									
+									
+								
+							</li>
+						
+							<li>
+								
+									
+										<a href="/gov/it/pagina-iniziale/documentazione/accesso-documenti-ufficiali.html" title="Accesso a documenti ufficiali" aria-label="Accesso a documenti ufficiali" data-skipextcss="true">Accesso a documenti ufficiali</a>
+									
+									
+								
+							</li>
+						
+							<li>
+								
+									
+										<a href="/gov/it/pagina-iniziale/documentazione/studi.html" title="Studi" aria-label="Studi" data-skipextcss="true">Studi</a>
+									
+									
+								
+							</li>
+						
+							<li>
+								
+									
+										<a href="/gov/it/pagina-iniziale/documentazione/se-ne-parla.html" title="Dossier" aria-label="Dossier" data-skipextcss="true">Dossier</a>
+									
+									
+								
+							</li>
+						
+							<li>
+								
+									
+										<a href="/gov/it/pagina-iniziale/documentazione/impressum.html" title="Impressum" aria-label="Impressum" data-skipextcss="true">Impressum</a>
+									
+									
+								
+							</li>
+						
+							<li>
+								
+									
+										<a href="/gov/it/pagina-iniziale/documentazione/prese-di-posizione-del-vicecancelliere.html" title="Prese di posizione del vicecancelliere" aria-label="Prese di posizione del vicecancelliere" data-skipextcss="true">Prese di posizione del vicecancelliere</a>
+									
+									
+								
+							</li>
+						
+							<li>
+								
+									
+										<a href="/gov/it/pagina-iniziale/documentazione/entscheid-bundesrat.html" title="Decisioni del Consiglio federale" aria-label="Decisioni del Consiglio federale" data-skipextcss="true">Decisioni del Consiglio federale</a>
+									
+									
+								
+							</li>
+						
+							<li>
+								
+									
+										<a href="/gov/it/pagina-iniziale/documentazione/commissioni-extraparlamentari.html" title="Commissioni extraparlamentari" aria-label="Commissioni extraparlamentari" data-skipextcss="true">Commissioni extraparlamentari</a>
+									
+									
+								
+							</li>
+						
+							<li>
+								
+									
+										<a href="/gov/it/pagina-iniziale/documentazione/communicaziun-a-las-medias.html" title="Communicaziuns a las medias" aria-label="Communicaziuns a las medias" data-skipextcss="true">Communicaziuns a las medias</a>
+									
+									
+								
+							</li>
+						
+							<li>
+								
+									
+										<a href="/gov/it/pagina-iniziale/documentazione/netiquette.html" title="Netiquette" aria-label="Netiquette" data-skipextcss="true">Netiquette</a>
+									
+									
+								
+							</li>
+						
+					</ul>
+				
+			
+			
+		
+	
+
+
+
+	
+</div>
+
+		</div>
+		<div class="col-sm-6 col-md-3">
+			
+
+
+<div class="mod mod-linklist">
+	
+	
+
+
+
+	
+		
+		
+			
+				
+					
+						
+					
+					
+				
+
+				
+					
+					
+						<h3>Dipartimenti</h3>
+					
+				
+
+			
+			
+			
+				
+				
+					<ul >
+						
+							<li>
+								
+									
+										<a href="/gov/it/pagina-iniziale/dipartimenti/dipartimento-affari-esteri.html" title="Dipartimento degli affari esteri (DFAE)" aria-label="Dipartimento degli affari esteri (DFAE)" data-skipextcss="true">Dipartimento degli affari esteri (DFAE)</a>
+									
+									
+								
+							</li>
+						
+							<li>
+								
+									
+										<a href="/gov/it/pagina-iniziale/dipartimenti/dipartimento-interno-dfi.html" title="Dipartimento dell&rsquo;interno (DFI)" aria-label="Dipartimento dell&rsquo;interno (DFI)" data-skipextcss="true">Dipartimento dell&rsquo;interno (DFI)</a>
+									
+									
+								
+							</li>
+						
+							<li>
+								
+									
+										<a href="/gov/it/pagina-iniziale/dipartimenti/dipartimento-giustizia-polizia-dfgp.html" title="Dipartimento di giustizia e polizia (DFGP)" aria-label="Dipartimento di giustizia e polizia (DFGP)" data-skipextcss="true">Dipartimento di giustizia e polizia (DFGP)</a>
+									
+									
+								
+							</li>
+						
+							<li>
+								
+									
+										<a href="/gov/it/pagina-iniziale/dipartimenti/dipartimento-difesa-protezione-popolazione-sport-ddps.html" title="Dipartimento della difesa, della protezione della popolazione e dello sport (DDPS)" aria-label="Dipartimento della difesa, della protezione della popolazione e dello sport (DDPS)" data-skipextcss="true">Dipartimento della difesa, della protezione della popolazione e dello sport (DDPS)</a>
+									
+									
+								
+							</li>
+						
+							<li>
+								
+									
+										<a href="/gov/it/pagina-iniziale/dipartimenti/dipartimento-finanze-dff.html" title="Dipartimento delle finanze (DFF)" aria-label="Dipartimento delle finanze (DFF)" data-skipextcss="true">Dipartimento delle finanze (DFF)</a>
+									
+									
+								
+							</li>
+						
+							<li>
+								
+									
+										<a href="/gov/it/pagina-iniziale/dipartimenti/dipartimento-economia-formazione-ricerca-defr.html" title="Dipartimento dell&rsquo;economia, della formazione e della ricerca (DEFR)" aria-label="Dipartimento dell&rsquo;economia, della formazione e della ricerca (DEFR)" data-skipextcss="true">Dipartimento dell&rsquo;economia, della formazione e della ricerca (DEFR)</a>
+									
+									
+								
+							</li>
+						
+							<li>
+								
+									
+										<a href="/gov/it/pagina-iniziale/dipartimenti/dipartimento-ambiente-trasporti-energia-comunicazioni-datec.html" title="Dipartimento dell&rsquo;ambiente, dei trasporti, dell&rsquo;energia e delle comunicazioni (DATEC)" aria-label="Dipartimento dell&rsquo;ambiente, dei trasporti, dell&rsquo;energia e delle comunicazioni (DATEC)" data-skipextcss="true">Dipartimento dell&rsquo;ambiente, dei trasporti, dell&rsquo;energia e delle comunicazioni (DATEC)</a>
+									
+									
+								
+							</li>
+						
+					</ul>
+				
+			
+			
+		
+	
+
+
+
+	
+</div>
+
+		</div>
+		<div class="col-sm-6 col-md-3">
+			
+
+
+<div class="mod mod-linklist">
+	
+	
+
+
+
+	
+		
+		
+			
+				
+					
+						
+					
+					
+				
+
+				
+					
+					
+						<h3>Risposte alle domande dei cittadini</h3>
+					
+				
+
+			
+			
+			
+				
+				
+					<ul >
+						
+							<li>
+								
+									
+										<a href="https://www.ch.ch/it" aria-label="Portale ch.ch - Tutti i temi" target="_blank" title="">Portale ch.ch - Tutti i temi</a>
+									
+									
+								
+							</li>
+						
+							<li>
+								
+									
+										<a href="https://www.ch.ch/it/viaggiare-e-emigrare/vacanze-in-svizzera/comportamento-nel-traffico/codice-stradale-svizzero-e-multe-disciplinari" aria-label="Codice stradale" target="_blank" title="">Codice stradale</a>
+									
+									
+								
+							</li>
+						
+							<li>
+								
+									
+										<a href="https://www.ch.ch/it/documenti-e-estratti/permesso-di-soggiorno/" aria-label="Soggiorno in Svizzera" target="_blank" title="">Soggiorno in Svizzera</a>
+									
+									
+								
+							</li>
+						
+							<li>
+								
+									
+										<a href="https://www.ch.ch/it/abitazioni/trasloco/lista-di-controllo-per-il-trasloco/" aria-label="Lista di controllo per il trasloco" target="_blank" title="">Lista di controllo per il trasloco</a>
+									
+									
+								
+							</li>
+						
+							<li>
+								
+									
+										<a href="https://www.ch.ch/it/votazioni-e-elezioni/votazioni/come-compilare-correttamente-la-scheda-di-voto/" aria-label="Come compilare correttamente la scheda di voto" target="_blank" title="">Come compilare correttamente la scheda di voto</a>
+									
+									
+								
+							</li>
+						
+							<li>
+								
+									
+										<a href="https://www.ch.ch/it/imposte-e-finanze/tipi-d-imposta/imposta-sul-valore-aggiunto--iva-" aria-label="Imposta sul valore aggiunto" target="_blank" title="">Imposta sul valore aggiunto</a>
+									
+									
+								
+							</li>
+						
+					</ul>
+				
+			
+			
+		
+	
+
+
+
+	
+</div>
+
+		</div>
+	</div>
+</div>
+				
+			
+		
+    
+
+
+  	<div class="container-fluid">
+  		
+	
+
+
+	
+		
+			
+				<h3> Sempre informati</h3>
+			
+
+			<nav class="links-social" aria-labelledby="social_media">
+				<label id="social_media" class="sr-only">Social media links</label>
+				<ul>
+					
+						<li><a href="https://twitter.com/BR_Sprecher" class="icon icon--before  icon icon--before icon--twitter" target="_blank" title="@BR_Sprecher" aria-label="@BR_Sprecher">@BR_Sprecher</a></li>
+					
+						<li><a href="/gov/it/pagina-iniziale/documentazione/comunicati-stampa/abbonarsi-comunicati-stampa.html" class="icon icon--before  icon icon--before icon--message" target="_blank" title="News" aria-label="News">News</a></li>
+					
+						<li><a href="/gov/it/pagina-iniziale/documentazione/comunicati-stampa/feed-rss.html" class="icon icon--before  icon icon--before icon--rss" target="_blank" title="RSS Feed" aria-label="RSS Feed">RSS Feed</a></li>
+					
+						<li><a href="https://www.youtube.com/derschweizerischebundesratleconseilfederalsuisseilconsigliofederalesvizzero" class="icon icon--before  icon icon--before fa fa-youtube" target="_blank" aria-label="Il canale video" title="">Il canale video</a></li>
+					
+						<li><a href="https://www.instagram.com/gov.ch/" class="icon icon--before  icon icon--before fa fa-instagram" title="gov.ch" aria-label="gov.ch">gov.ch</a></li>
+					
+						<li><a href="https://twitter.com/SwissGov" class="icon icon--before  icon icon--before icon--twitter" title="@SwissGov" aria-label="@SwissGov">@SwissGov</a></li>
+					
+				</ul>
+			</nav>
+		
+		
+	
+
+
+
+		
+	
+
+<div class="mod mod-cobranding">
+    
+        
+        
+            <div class="mod mod-cobranding">
+                
+                <div class="row">
+                    
+                        <div class="col-xs-4 col-sm-3 col-md-2">
+                            <div class="thumbnail-wrapper">
+                                <a href="https://itunes.apple.com/ch/app/id1434819062" class="thumbnail" target="_blank" title="">
+                                    <figure><img src="/gov/it/_jcr_content/cobranding/logos/20_1547478158691/image.imagespooler.png/1547478158692/2000.200/voteinfo_appstore.png" alt="VoteInfo - AppStore"/><figcaption>
+                                        <span></span>
+                                    </figcaption></figure></a>
+                            </div>
+                        </div>
+                    
+                        <div class="col-xs-4 col-sm-3 col-md-2">
+                            <div class="thumbnail-wrapper">
+                                <a href="https://play.google.com/store/apps/details?id=ch.bk.voteinfo" class="thumbnail" target="_blank" title="">
+                                    <figure><img src="/gov/it/_jcr_content/cobranding/logos/21_1547478201950/image.imagespooler.png/1547478201951/2000.200/voteinfo_googleplay.png" alt="VoteInfo - GooglePlay"/><figcaption>
+                                        <span></span>
+                                    </figcaption></figure></a>
+                            </div>
+                        </div>
+                    
+                </div>
+            </div>
+        
+    
+</div>
+
+
+
+
+  		<!-- begin: logo phone -->
+		
+			
+			
+
+	
+		
+<div class="mod mod-logo">
+	
+	
+		
+			<hr class="footer-line visible-xs">
+			<img src="/gov/it/_jcr_content/logo/image.imagespooler.png/1443434095646/Logo Schweizerische Eidgenossenschaft.png" class="visible-xs" alt="Logo della Confederazione Svizzera - alla pagina iniziale"/>
+		
+		
+	
+	
+</div>
+	
+	
+
+
+			
+		
+	 	<!-- end: logo phone -->
+  	</div>
+
+    
+
+<div class="footer-address">
+	
+
+	<span class="hidden-xs">Il Consiglio federale</span>
+
+
+	
+
+	
+		
+			<nav class="pull-right">
+				<ul>
+					
+						<li><a href="https://www.admin.ch/gov/it/pagina-iniziale/basi-legali.html" target="_blank" aria-label="Basi legali" title="">Basi legali</a></li>
+					
+						<li><a href="/gov/it/pagina-iniziale/documentazione/impressum.html" target="_self" title="Impressum" aria-label="Impressum" data-skipextcss="true">Impressum</a></li>
+					
+						<li><a href="/gov/it/pagina-iniziale/documentazione/netiquette.html" title="Netiquette" aria-label="Netiquette" data-skipextcss="true">Netiquette</a></li>
+					
+				</ul>
+			</nav>
+		
+		
+	
+
+
+</div>
+
+
+  
+  
+
+</footer>        
+
+
+    <div class="modal" id="nav_modal_rnd">
+        <!-- modal -->
+    </div>
+
+</div>
+<!-- end: container -->
+
+
+
+<script src="/etc.clientlibs/clientlibs/granite/jquery/granite/csrf.min.js"></script>
+<script src="/etc/clientlibs/granite/jquery/granite/csrf.min.js"></script>
+
+
+
+	<script type="text/javascript" src="/etc/designs/core/frontend/modules.js"></script>
+
+
+
+	
+	
+	
+		<script src="/etc/designs/gov-frontend/modules.js"></script>
+	
+	
+
+
+
+	
+
+
+
+
+
+
+	<!-- bdefYz1rsWOis5wjBZfTnaOt73r5t4wzNqCBjQEgFvCCmGXM2MPfov63aHaJyHEmSIcYRSXVH6LTgEj3HPqXtUxneTkU9Vg9a88TJlJkhzalWsCzo54c0BUFw3hYNsfsOlrU7dRYGEpC5robyosekzzwxlUu0WRf0LmC2YdyLBLKXuxnVGzDzeNc24d3XVEmo8wzDxDsg3KwvXr3yRC7OSKJotGdep35q76PTLHo9Npi5SCKFFeGzvrD2Vnz7gAJ0xBn0EoJfVaf7v82KtPQ4XtOfsw48Gx0A10HSkNSD1NIz435dEAIQQjxqxXcGVfQ5H0HujRmhIAuPvQEsUSiAcGC6tXQFhttby0ygNu1HrLNJU5n8zQSi8C3KvXRFvwqYMeqLH9TV7J5inP4CPtJeZmWaKWK0Eodj5Ou0Q2dYkKi5tjTlXWpTVQWjt6jPs9tIS3FXkBARu3TgYyH8oyxWMFhK9xepHgOjTwK9toMwUhWWa5j6l9YHndj26F0drGICFLj1NjkAHLkf0xlIZxphLu7hMT9xAenygNAcoTRasw8Jum0E7D4UGAxMiMZlSD2cj2VqMphutuwirVBD2HKxI16wR5UfLvcBD7dLwmSjNz0mVXPYT6PIJEYZTqgrLxqlsAdGphxdyacRblg3b7z7looYFaCVUONolVjBGln5J9NS5twzeihKAcuMwSPLNPRrAUJ1bYk2yIgH1y8DyqAjHQ4XocMTf65MqGh3oFpZtx5zHevf3poxZtxY4xqRHfiWXrsnY36YLJ5cgUJlcX3EDqrQrDBkaGjy7turQZlYMflOXMElDEukb3KdTkRNjTk1pd8G9rIWA88xsS981VgsJUCKTvvNMSH3bu804VSZzU4jtjIKitxVMRD4QNdW9JksIPz9zVgjCT7MS3spFybFKzPJDcP6pdpkZ7CE6BC7EGyjp65UsVaIS2jXh4NA3ALdoxXjSTa6ZHcYqrlZsSYYOQBZw39aQ1em0lybAa9wPKu4vRKgZuX5yNADQOd7iVmvrgorCGzAnb7AhkcX7oRHOPOE3Ie7z1AMGw16WdTLVFcoNUuUKjeR1p1PpvUojlUQnAKV7jDf86YkaR1hZpowwpWvXEn80dw1GZICalTHAHTzFUI9iyI833JgQtJlkR7QiSqvjp1JT4AnaIjHqKf32gfaEwCB4J2Y4cLq7DvxwV1XCTBxZBIsQClf3 -->
+
+
+
+
+
+ 
+	
+
+
+
+
+	<!-- Matomo -->
+<script type="text/javascript">
+  var _paq = window._paq || [];
+  /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="https://analytics.bit.admin.ch/";
+    _paq.push(['setTrackerUrl', u+'matomo.php']);
+    _paq.push(['setSiteId', '29']);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<!-- End Matomo Code -->
+
+
+
+
+
+</body>
+
+    
+
+</html>

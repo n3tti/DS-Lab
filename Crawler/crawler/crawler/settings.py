@@ -64,7 +64,6 @@ ROBOTSTXT_OBEY = False
 # See https://docs.scrapy.org/en/latest/topics/item-pipeline.html
 
 ITEM_PIPELINES = {
-     #'crawler.pipelines.CsvPipeline': 50,
      'crawler.pipelines.FilterURLPipeline': 50,
      'crawler.pipelines.IDAssignmentPipeline': 100,
      'crawler.pipelines.ParentsPipeline': 150,

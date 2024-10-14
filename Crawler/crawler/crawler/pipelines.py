@@ -11,6 +11,8 @@ from scrapy.exceptions import DropItem
 import csv
 import uuid
 import json
+import os
+import shutil
 
 
 
@@ -18,11 +20,12 @@ import json
 class FilterURLPipeline():
     
     def __init__(self):
-        self.allowed_content_type = {None, "text/html", "application/pdf", "image/png"}
+        self.allowed_content_type = {"text/html", "application/pdf", "image/png"}
 
     def process_item(self, item, spider):
-        if item["status"] != 200:
+        if item["status"] != 200 or item["content_type"] == None:
             DropItem()
+        item["content_type"] = item["content_type"].split(";")[0]
         if item["content_type"] not in self.allowed_content_type:
             DropItem()
         return item
@@ -47,6 +50,15 @@ class IDAssignmentPipeline:
                 self.seen_urls[child_url] = id
             else:
                 item["child_urls"][child_url] = self.seen_urls[child_url]
+        
+        for lang, cousin_url in item["cousin_urls"].items():
+            if cousin_url not in self.seen_urls.keys():
+                id = self.get_next_id()
+                item["cousin_urls"][lang] = id
+                self.seen_urls[cousin_url] = id
+            else:
+                item["cousin_urls"][lang] = self.seen_urls[cousin_url]
+
         return item
     
     def get_next_id(self):
@@ -69,7 +81,8 @@ class ParentsPipeline:
     def process_item(self, item, spider):
         for child_id in item["child_urls"].values():
             if child_id not in self.parents.keys():
-                self.parents[child_id] = set(item["id"])
+                self.parents[child_id] = set()
+                self.parents[child_id].add(item["id"])
             else:
                 self.parents[child_id].add(item["id"])      
         return item
@@ -91,79 +104,38 @@ class MetadataPipeline:
 
     def process_item(self, item, spider):
         dic = {"id": item["id"], "depth" : item["depth"], "url" : item["url"], "type" : item["content_type"], "length" : item["content_length"], \
-               "encoding" : item["content_encoding"], "last_modified" : item["last_modified"], "date" : item["date"]}
+               "encoding" : item["content_encoding"], "last_modified" : item["last_modified"], "date" : item["date"], "cousin_urls" : item["cousin_urls"]}
         line = json.dumps(dic) + "\n"
         self.file.write(line)
         return item
   
     
 class DownloadContentPipeline:
+    def __init__(self):
+        self.folders = ["text/html", "image/png", "application/pdf"]
+
     def process_item(self, item, spider):
-        ## TODO depending on the content type (pdf, png, html...) put the "raw" content i.e item[body] in a special data folder
-        # with e.g. name of the file = id and a folder for each content type. 
+        if item["content_type"] == None:
+            return item
+        content_type = item["content_type"].split(";")[0]
+        file = open("{}/{}.bin".format(content_type, item["id"]), "wb")
+        file.write(item["content_body"])
+        file.close()
         return item
 
+    def open_spider(self, spider):
+        self.clean_folders()
 
-
-# ###-------------------------------------------------
-# class CsvPipeline:
-#     def __init__(self):
-#         self.seen_urls = {}
-#         self.parents_urls = {}
-
-#     def process_item(self, item, spider):
-#         parent_url = item.get('parent_url')
-#         child_url = item.get('child_url')
-
-#         if not child_url or not self.interesting_url(child_url):
-#             return item
-#         if not parent_url or not self.interesting_url(parent_url):
-#             return item
-        
-#         child_id = None
-#         if child_url not in self.seen_urls.keys():
-#             child_id = self.get_next_id()
-#             self.seen_urls[child_url] = child_id
-#         else:
-#             child_id = self.seen_urls[child_url]
-        
-#         parent_id = None
-#         if parent_url not in self.seen_urls.keys():
-#             parent_id = self.get_next_id()
-#             self.seen_urls[parent_url] = parent_id
-#         else:
-#             parent_id = self.seen_urls[parent_url]
-
-#         if child_id not in self.parents_urls.keys():
-#             self.parents_urls[child_id] = set([parent_id])
-#         else:
-#             self.parents_urls[child_id].add(parent_id)
-
-#         return item
-
-#     def close_spider(self, spider):
-#         self.file = open("urls.csv", "w", newline="", encoding="utf-8")
-#         self.csv_writer = csv.writer(self.file)
-#         self.csv_writer.writerow(["url_id", "url"])
-#         for id in self.seen_urls.keys():
-#             self.csv_writer.writerow([id, self.seen_urls[id]])
-#         self.file.close()
-
-#         self.file = open("parents.csv", "w", newline="", encoding="utf-8")
-#         self.csv_writer = csv.writer(self.file)
-#         self.csv_writer.writerow(["child","parents"])
-#         for id in self.parents_urls.keys():
-#             self.csv_writer.writerow([id, ','.join(self.parents_urls[id])])
-#         self.file.close()
-
-    
-#     def interesting_url(self, url):
-#         if url.startswith("mailto:") or url.endswith(".csv") or url.endswith(".jpg")\
-#             or url.endswith(".png"):
-#             return False
-#         return True
-
-#     def get_next_id(self):
-#         return str(uuid.uuid1())  
-
-
+    def clean_folders(self):
+        for folder in self.folders:
+            path = "./{}".format(folder)
+            if os.path.exists(path):
+                for filename in os.listdir(path):
+                    file_path = os.path.join(path, filename)
+                    try:
+                        if os.path.isfile(file_path) or os.path.islink(file_path):
+                            os.unlink(file_path) 
+                    except Exception as e:
+                        print(f"Failed to delete {file_path}. Reason: {e}")
+            else:
+                os.makedirs(path)

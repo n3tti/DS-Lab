@@ -17,7 +17,12 @@ class CrawlingSpider(CrawlSpider):
     }
     
     rules = (
-        Rule(LinkExtractor(allow=(), deny=(r'\.docx$', r'\.xlsx$', r'^mailto:', r'\.jpg$', r'\.png$')), callback='parse_item', follow=True),
+        Rule(LinkExtractor(allow=(), deny=(
+            r'\.docx$', r'\.xlsx$', r'\.pptx$', r'\.zip$', r'\.tar$', r'\.gz$', r'\.jpg$', 
+            r'\.jpeg$', r'\.gif$', r'\.svg$', r'\.mp3$', r'\.mp4$', r'\.avi$', r'\.mov$', 
+            r'\.wmv$', r'\.txt$', r'\.json$', r'\.csv$', r'\.xml$', r'^mailto:', r'\.js$', 
+            r'\.css$', r'\.exe$', r'\.bin$'
+        )), callback='parse_item', follow=True),
     )
 
 
@@ -37,15 +42,14 @@ class CrawlingSpider(CrawlSpider):
         item["content_body"] = response.body
         item["last_modified"] = response.headers.get("Last-Modified").decode('utf-8') if response.headers.get('Last-Modified') else None
         item["date"] = response.headers.get('Date').decode('utf-8') if response.headers.get('Date') else None
-        
+
         alternate_links = response.xpath('//link[@rel="alternate"]')
         languages_dict = {}
-
         for link in alternate_links:
             lang = link.xpath('@lang').get()
             href = link.xpath('@href').get()
             if lang and href:
-                languages_dict[lang] = href
+                languages_dict[lang] = response.urljoin(href)
         item['cousin_urls'] = languages_dict
 
         for link in response.css('a::attr(href)').getall():

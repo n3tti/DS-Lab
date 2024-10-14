@@ -1,0 +1,2948 @@
+
+<!DOCTYPE HTML>
+<!--[if lt IE 7 ]> <html lang="en" class="no-js ie6 oldie"> <![endif]-->
+<!--[if IE 7 ]> <html lang="en" class="no-js ie7 oldie"> <![endif]-->
+<!--[if IE 8 ]> <html lang="en" class="no-js ie8 oldie"> <![endif]-->
+<!--[if IE 9 ]> <html lang="en" class="no-js ie9"> <![endif]-->
+<!--[if gt IE 9 ]><!--><html lang="en" class="no-js no-ie"> <!--<![endif]-->
+
+
+    
+<head>
+    
+    
+
+
+	
+	
+		<title>Swiss government - Homepage</title>
+	
+	
+
+
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta http-equiv="cleartype" content="on" />
+
+
+	<meta name="msapplication-TileColor" content="#ffffff"/>
+	<meta name="msapplication-TileImage" content="/etc/designs/core/frontend/guidelines/img/ico/mstile-144x144.png"/>
+	<meta name="msapplication-config" content="/etc/designs/core/frontend/guidelines/img/ico/browserconfig.xml"/>
+
+
+
+	
+		<meta name="description" content="Swiss government news and information" />
+	
+	
+
+
+
+
+	<meta name="google-site-verification" content="_KMXCj6xrBYMPuUE4UMltyFjFOTsYbPI5aCSxncV6HM" />
+
+
+<meta name="language" content="en" />
+<meta name="author" content="The Federal Council" />
+
+
+
+
+	<!-- current page in other languages -->
+	
+		<link rel="alternate" type="text/html" href="/gov/de/start.html" hreflang="de" lang="de"/>
+	
+		<link rel="alternate" type="text/html" href="/gov/en/start.html" hreflang="en" lang="en"/>
+	
+		<link rel="alternate" type="text/html" href="/gov/it/pagina-iniziale.html" hreflang="it" lang="it"/>
+	
+		<link rel="alternate" type="text/html" href="/gov/rm/pagina-iniziala.html" hreflang="rm" lang="rm"/>
+	
+		<link rel="alternate" type="text/html" href="/gov/fr/accueil.html" hreflang="fr" lang="fr"/>
+	
+
+
+
+
+	<meta name="twitter:card" content="summary"/>
+	
+		<meta name="twitter:site" content="@SwissGov"/>
+	
+	
+		<meta property="og:url" content="https://www.admin.ch/gov/en/start.html"/>
+	
+	<meta property="og:type" content="article"/>
+	
+		<meta property="og:title" content="Swiss government - Homepage"/>
+	
+	
+	
+		<meta property="og:image" content="https://www.admin.ch/gov/en/_jcr_content/socialshareimage.imagespooler.jpg/1704698821667/teaser_bundesrat_gruppenbild_2024_588x331_web.jpg"/>
+	
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+	<!--style type="text/css" id="antiClickjack">body{display:none !important;}</style-->
+	<script type="text/javascript">
+
+		var styleElement = document.createElement('STYLE');
+		styleElement.setAttribute('id', 'antiClickjack');
+		styleElement.setAttribute('type', 'text/css');
+		styleElement.innerHTML = 'body {display:none !important;}';
+		document.getElementsByTagName('HEAD')[0].appendChild(styleElement);
+
+		if (self === top) {
+			var antiClickjack = document.getElementById("antiClickjack");
+			antiClickjack.parentNode.removeChild(antiClickjack);
+		} else {
+			top.location = self.location;
+		}
+	</script>
+
+
+
+
+<script src="/etc.clientlibs/clientlibs/granite/jquery.min.js"></script>
+<script src="/etc.clientlibs/clientlibs/granite/utils.min.js"></script>
+
+
+
+	<script>
+		Granite.I18n.init({
+			locale: "en",
+			urlPrefix: "/libs/cq/i18n/dict."
+		});
+	</script>
+
+
+
+	<link rel="stylesheet" href="/etc/designs/core/frontend/guidelines.min.css" type="text/css">
+
+	<link rel="stylesheet" href="/etc/designs/core/frontend/modules.min.css" type="text/css">
+
+	
+	<link rel="shortcut icon" href="/etc/designs/core/frontend/guidelines/img/ico/favicon.ico">
+	<link rel="apple-touch-icon" sizes="57x57" href="/etc/designs/core/frontend/guidelines/img/ico/apple-touch-icon-57x57.png"/>
+	<link rel="apple-touch-icon" sizes="114x114" href="/etc/designs/core/frontend/guidelines/img/ico/apple-touch-icon-114x114.png"/>
+	<link rel="apple-touch-icon" sizes="72x72" href="/etc/designs/core/frontend/guidelines/img/ico/apple-touch-icon-72x72.png"/>
+	<link rel="apple-touch-icon" sizes="144x144" href="/etc/designs/core/frontend/guidelines/img/ico/apple-touch-icon-144x144.png"/>
+	<link rel="apple-touch-icon" sizes="60x60" href="/etc/designs/core/frontend/guidelines/img/ico/apple-touch-icon-60x60.png"/>
+	<link rel="apple-touch-icon" sizes="120x120" href="/etc/designs/core/frontend/guidelines/img/ico/apple-touch-icon-120x120.png"/>
+	<link rel="apple-touch-icon" sizes="76x76" href="/etc/designs/core/frontend/guidelines/img/ico/apple-touch-icon-76x76.png"/>
+	<link rel="icon" type="image/png" href="/etc/designs/core/frontend/guidelines/img/ico/favicon-96x96.png" sizes="96x96"/>
+	<link rel="icon" type="image/png" href="/etc/designs/core/frontend/guidelines/img/ico/favicon-16x16.png" sizes="16x16"/>
+	<link rel="icon" type="image/png" href="/etc/designs/core/frontend/guidelines/img/ico/favicon-32x32.png" sizes="32x32"/>
+
+
+
+
+
+	
+	
+		<link rel="stylesheet" type="text/css" href="/etc/designs/gov-frontend/modules.css"/>
+	
+	
+	
+
+
+
+	<!--[if lt IE 9]>
+		<script src="https://cdnjs.cloudflare.com/polyfill/v2/polyfill.js?version=4.8.0"></script>
+	<![endif]-->
+
+
+
+    
+
+
+
+    
+        
+
+	
+
+    
+
+</head>
+
+
+    
+
+<body class="mod mod-layout   skin-layout-template-homepage" data-glossary="/gov/en/start.glossaryjs.json">
+
+<div class="mod mod-homepage">
+<ul class="access-keys" role="navigation">
+    <li><a href="/gov/en/start.html" accesskey="0">Homepage</a></li>
+    
+    <li><a href="#main-navigation" accesskey="1">Main navigation</a></li>
+    
+    
+    <li><a href="#content" accesskey="2">Content area</a></li>
+    
+    
+    <li><a href="#site-map" accesskey="3">Sitemap</a></li>
+    
+    
+    <li><a href="#search-field" accesskey="4">Search</a></li>
+    
+</ul>
+</div>
+
+<!-- begin: container -->
+<div class="container container-main">
+
+    
+
+
+<header style="background-size: cover; background-image:" role="banner">
+	
+
+	<div class="clearfix">
+		
+			
+
+
+	
+
+
+
+	<nav class="navbar treecrumb pull-left">
+
+		
+		
+
+		
+			
+				<ul class="nav navbar-nav">
+				
+
+						
+
+						
+						<li class="dropdown">
+							
+							
+								
+									<a id="federalAdministration-dropdown" href="#" aria-label="The Federal Council" class="dropdown-toggle" data-toggle="dropdown"><span class="icon icon--right"></span> The Federal Council</a>
+								
+								
+							
+
+							
+								
+								<ul class="dropdown-menu" role="menu" aria-labelledby="federalAdministration-dropdown">
+									
+										
+										<li class="dropdown-header">
+											
+												
+													<a href="/gov/en/start.html" aria-label="The Federal Council admin.ch" data-skipextcss="true" target="_self">The Federal Council admin.ch</a>
+												
+												
+											
+
+											
+											
+												
+													<ul>
+														<li>
+															
+																
+																
+																
+																	<a href="https://www.bk.admin.ch/bk/en/home.html" aria-label="Federal Chancellery (FCh)" target="_blank" title=""> Federal Chancellery (FCh)</a>
+																
+															
+														</li>
+													</ul>
+												
+											
+												
+													<ul>
+														<li>
+															
+																
+																
+																
+																	<a href="http://www.eda.admin.ch/eda/en/home.html" aria-label="Federal Department of Foreign Affairs (FDFA)" target="_blank" title=""> Federal Department of Foreign Affairs (FDFA)</a>
+																
+															
+														</li>
+													</ul>
+												
+											
+												
+													<ul>
+														<li>
+															
+																
+																
+																
+																	<a href="https://www.edi.admin.ch/edi/de/home.html" aria-label="Federal Department of Home Affairs (FDHA) " target="_blank" title=""> Federal Department of Home Affairs (FDHA) </a>
+																
+															
+														</li>
+													</ul>
+												
+											
+												
+													<ul>
+														<li>
+															
+																
+																
+																
+																	<a href="http://www.ejpd.admin.ch/ejpd/en/home.html" aria-label="Federal Department of Justice and Police (FDJP)" target="_blank" title=""> Federal Department of Justice and Police (FDJP)</a>
+																
+															
+														</li>
+													</ul>
+												
+											
+												
+													<ul>
+														<li>
+															
+																
+																
+																
+																	<a href="https://www.vbs.admin.ch/en" aria-label="Federal Department of Defence, Civil Protection and Sport (DDPS)" target="_blank" title=""> Federal Department of Defence, Civil Protection and Sport (DDPS)</a>
+																
+															
+														</li>
+													</ul>
+												
+											
+												
+													<ul>
+														<li>
+															
+																
+																
+																
+																	<a href="https://www.efd.admin.ch/efd/en/home.html" aria-label="Federal Department of Finance (FDF)" target="_blank" title=""> Federal Department of Finance (FDF)</a>
+																
+															
+														</li>
+													</ul>
+												
+											
+												
+													<ul>
+														<li>
+															
+																
+																
+																
+																	<a href="https://www.wbf.admin.ch/" aria-label="Federal Department of Economic Affairs, Education and Research (EAER)" target="_blank" title=""> Federal Department of Economic Affairs, Education and Research (EAER)</a>
+																
+															
+														</li>
+													</ul>
+												
+											
+												
+													<ul>
+														<li>
+															
+																
+																
+																
+																	<a href="https://www.uvek.admin.ch/uvek/en/home.html" aria-label=" Federal Department of the Environment, Transport, Energy and Communications (DETEC)" target="_blank" title="">  Federal Department of the Environment, Transport, Energy and Communications (DETEC)</a>
+																
+															
+														</li>
+													</ul>
+												
+											
+										</li>
+									
+								</ul>
+							
+						</li>
+					
+				</ul>
+			
+			
+		
+	</nav>
+
+
+
+
+		
+
+		
+<!-- begin: metanav -->
+<section class="nav-services clearfix">
+	
+	
+		
+
+
+	
+	<h2>Swiss government - Homepage</h2>
+
+	
+
+		
+		
+
+		<nav class="nav-lang">
+			<ul>
+				
+					<li>
+						
+							
+							
+								<a href="/gov/de/start.html" lang="de" title="German" aria-label="German">DE</a>
+							
+							
+						
+					</li>
+				
+					<li>
+						
+							
+							
+								<a href="/gov/fr/accueil.html" lang="fr" title="French" aria-label="French">FR</a>
+							
+							
+						
+					</li>
+				
+					<li>
+						
+							
+							
+								<a href="/gov/it/pagina-iniziale.html" lang="it" title="Italian" aria-label="Italian">IT</a>
+							
+							
+						
+					</li>
+				
+					<li>
+						
+							
+							
+								<a href="/gov/rm/pagina-iniziala.html" lang="rm" title="Romansh" aria-label="Romansh">RM</a>
+							
+							
+						
+					</li>
+				
+					<li>
+						
+							
+								<a class="active" lang="en" title="English selected" aria-label="English selected">EN</a>
+							
+							
+							
+						
+					</li>
+				
+			</ul>
+		</nav>
+
+	
+
+
+		
+		
+
+    
+        
+            
+            
+
+                
+                <h2 class="sr-only">Service navigation</h2>
+
+                <nav class="nav-service">
+                    <ul>
+                        
+                        
+                            <li><a href="/gov/en/start/contact/contact-form.html" target="_self" title="Contact" aria-label="Contact" data-skipextcss="true">Contact</a></li>
+                        
+                    </ul>
+                </nav>
+
+            
+        
+    
+
+
+	
+	
+</section>
+<!-- end: metanav -->
+
+	</div>
+
+	
+		
+
+	
+	
+		
+<div class="mod mod-logo">
+    
+        
+        
+            
+                <a href="/gov/en/start.html" class="brand  hidden-xs" id="logo" title="Swiss government - Homepage" aria-label="Swiss government - Homepage">
+                    
+                        
+                            <img src="/gov/en/_jcr_content/logo/image.imagespooler.png/1443434079006/Logo Schweizerische Eidgenossenschaft.png" alt="Logo of the Swiss Confederation - to the homepage"/>
+                        
+                        
+                    
+                    <h2 id="logo-desktop-departement">The Federal Council<br/>The portal of the Swiss government
+                    </h2>
+                </a>
+                
+            
+        
+    
+</div>
+
+	
+
+
+	
+
+ 	
+		
+
+
+	
+
+
+
+	
+	
+		
+
+<div class="mod mod-searchfield">
+
+	
+		
+
+		
+			
+
+			<!-- begin: sitesearch desktop-->
+			<div class="mod mod-searchfield global-search global-search-standard">
+				<form action="/gov/en/start/search.html" class="form-horizontal form-search pull-right">
+					<h2 class="sr-only">Search</h2>
+					<label for="search-field" class="sr-only">Search</label>
+					<input id="search-field" name="query" class="form-control search-field" type="text" placeholder="Search"/>
+                    <button class="icon icon--search icon--before" tabindex="0" role="button">
+                        <span class="sr-only">Search</span>
+                    </button>
+                    <button class="icon icon--close icon--after search-reset" tabindex="0" role="button"><span class="sr-only"></span></button>
+					<div class="search-results">
+						<div class="search-results-list"></div>
+					</div>
+				</form>
+			</div>
+			<!-- end: sitesearch desktop-->
+
+		
+	
+
+</div>
+
+	
+
+
+
+	
+
+	
+		
+
+
+	
+
+<div class="mod mod-themes">
+	
+
+		<nav class="navbar yamm yamm--select ddl-to-modal">
+			<h2 class="sr-only">Themes A-Z</h2>
+			<ul>
+				<!-- Init dropdown with the `pull-right` class if you want to have your Topics select on the right -->
+				<li class="dropdown pull-right">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+						Themes A-Z <span class="icon icon--bottom"></span>
+					</a>
+					<!-- begin: flyout -->
+					<ul class="dropdown-menu">
+						<li>
+							<!-- The `yamm-content` can contain any kind of content like tab, table, list, article... -->
+							<div class="yamm-content container-fluid">
+
+								
+								<div class="row">
+									<div class="col-sm-12">
+										<button class="yamm-close btn btn-link icon icon--after icon--close pull-right">
+											Close
+										</button>
+									</div>
+								</div>
+
+								
+				                <ul class="nav nav-tabs">
+				                	
+				                	
+				                		<li><a href="#mf_keywords_tab" data-toggle="tab" data-url="/gov/en/_jcr_content/themes.keywordsinit.html">A-Z</a></li>
+				                	
+				                	
+				                </ul>
+
+				                
+				                <div class="tab-content">
+								
+
+								
+								
+									<div class="tab-pane" id="mf_keywords_tab"></div>
+									<h2 class="sr-only visible-print-block">A-Z</h2>
+								
+
+								
+								
+								</div>
+							</div>
+						</li>
+					</ul>
+				</li>
+			</ul>
+		</nav>
+
+
+</div>
+
+
+
+
+
+
+	
+
+ 	
+
+
+</header>
+
+
+
+    
+
+
+	
+	
+		
+
+<div class="mod mod-mainnavigation">
+
+	<!-- begin: mainnav -->
+	<div class="nav-main yamm navbar" id="main-navigation">
+
+		<h2 class="sr-only">
+			Main Navigation
+		</h2>
+
+		
+			
+
+
+<!-- mobile mainnav buttonbar -->
+ <section class="nav-mobile">
+	<div class="table-row">
+		<div class="nav-mobile-header">
+			<div class="table-row">
+				<span class="nav-mobile-logo">
+					
+						
+						
+							<img src="/etc/designs/core/frontend/guidelines/img/swiss.svg" onerror="this.onerror=null; this.src='/etc/designs/core/frontend/guidelines/img/swiss.png'" alt="The Federal Council"/>
+						
+					
+				</span>
+				<h2>
+					<a href="/gov/en/start.html" title="Swiss government - Homepage" aria-label="Swiss government - Homepage">The Federal Council</a>
+				</h2>
+			</div>
+		</div>
+		<div class="table-cell dropdown">
+			<a href="#" class="nav-mobile-menu dropdown-toggle" data-toggle="dropdown">
+				<span class="icon icon--menu"></span>
+			</a>
+			<div class="drilldown dropdown-menu" role="menu">
+				<div class="drilldown-container">
+					<nav class="nav-page-list">
+						
+							<ul aria-controls="submenu">
+								
+									
+									
+										<li>
+											
+												
+												
+													<a href="/gov/en/start/federal-council.html">Federal Council</a>
+												
+											
+										</li>
+									
+								
+							</ul>
+						
+							<ul aria-controls="submenu">
+								
+									
+									
+										<li>
+											
+												
+												
+													<a href="/gov/en/start/federal-presidency.html">Federal Presidency</a>
+												
+											
+										</li>
+									
+								
+							</ul>
+						
+							<ul aria-controls="submenu">
+								
+									
+									
+										<li>
+											
+												
+												
+													<a href="/gov/en/start/departments.html">Departments</a>
+												
+											
+										</li>
+									
+								
+							</ul>
+						
+							<ul aria-controls="submenu">
+								
+									
+									
+										<li>
+											
+												
+												
+													<a href="/gov/en/start/federal-chancellery.html">Federal Chancellery</a>
+												
+											
+										</li>
+									
+								
+							</ul>
+						
+							<ul aria-controls="submenu">
+								
+									
+										<li class="list-sub">
+											<a href="#" aria-label="Federal law">Federal law</a>
+
+											<nav class="drilldown-sub" aria-expanded="false">
+												<a href="#" class="icon icon--before icon--less drilldown-back" aria-hidden="true">Federal law</a>
+
+												
+													<ul aria-controls="submenu">
+														<li class="list-emphasis">
+															<a href="/gov/en/start/bundesrecht/suche-und-neuigkeiten.html">Search</a>
+														</li>
+													</ul>
+												
+													<ul aria-controls="submenu">
+														<li class="list-emphasis">
+															<a href="/gov/en/start/bundesrecht/classified-compilation.html">Classified compilation</a>
+														</li>
+													</ul>
+												
+
+											</nav>
+										</li>
+									
+									
+								
+							</ul>
+						
+							<ul aria-controls="submenu">
+								
+									
+									
+										<li>
+											
+												
+												
+													<a href="/gov/en/start/documentation.html">Documentation</a>
+												
+											
+										</li>
+									
+								
+							</ul>
+						
+
+						<button class="yamm-close-bottom" aria-label="Close">
+							<span class="icon icon--top" aria-hidden="true"></span>
+						</button>
+					</nav>
+				</div>
+			</div>
+		</div>
+		<div class="table-cell dropdown">
+			<a href="#" class="nav-mobile-menu dropdown-toggle" data-toggle="dropdown">
+				<span class="icon icon--search"></span>
+			</a>
+			<div class="dropdown-menu" role="menu">
+				
+				
+
+
+
+	
+		
+
+
+<div class="mod mod-searchfield">
+
+    
+        <div class="mod mod-searchfield global-search global-search-mobile">
+            <form action="/gov/en/start/search.html" class="form  mod-searchfield-mobile" role="form">
+                <h2 class="sr-only">Search</h2>
+                <label for="search-field-phone" class="sr-only">
+                    Search
+                </label>
+                <input id="search-field-phone" name="query" class="search-input form-control" type="text" placeholder="Search"/>
+                <button class="icon icon--search icon--before" tabindex="0" role="button">
+                    <span class="sr-only">Search</span>
+                </button>
+                <button class="icon icon--close icon--after search-reset" tabindex="0" role="button"><span class="sr-only"></span></button>
+
+                <div class="search-results">
+                    <div class="search-results-list"></div>
+                </div>
+            </form>
+        </div>
+    
+
+</div>
+
+	
+	
+
+
+				
+			</div>
+		</div>
+	</div>
+</section>
+
+		
+
+		
+		<ul class="nav navbar-nav" aria-controls="submenu">
+
+			
+			
+
+				
+                
+				
+
+				<li class="dropdown yamm-fw  ">
+					
+						
+			      		
+							<a href="/gov/en/start/federal-council.html" aria-label="Federal Council" class="dropdown-toggle" data-toggle="dropdown" data-url="/gov/en/start/bundesrat/_jcr_content/par.html">Federal Council</a>
+							
+							<ul class="dropdown-menu" role="menu" aria-controls="submenu">
+								<li>
+									<div class="yamm-content container-fluid">
+										<div class="row">
+											<div class="col-sm-12">
+												<button class="yamm-close btn btn-link icon icon--after icon--close pull-right">Close</button>
+											</div>
+										</div>
+										<div class="row">
+											<div class="col-md-12 main-column">
+
+											</div>
+										</div>
+										<br><br><br>
+										<button class="yamm-close-bottom" aria-label="Close"><span class="icon icon--top"></span></button>
+									</div>
+								</li>
+							</ul>
+						
+					
+				</li>
+			
+
+				
+                
+				
+
+				<li class="dropdown yamm-fw  ">
+					
+						
+			      		
+							<a href="/gov/en/start/federal-presidency.html" aria-label="Federal Presidency" class="dropdown-toggle" data-toggle="dropdown" data-url="/gov/en/start/bundespraesidium/_jcr_content/par.html">Federal Presidency</a>
+							
+							<ul class="dropdown-menu" role="menu" aria-controls="submenu">
+								<li>
+									<div class="yamm-content container-fluid">
+										<div class="row">
+											<div class="col-sm-12">
+												<button class="yamm-close btn btn-link icon icon--after icon--close pull-right">Close</button>
+											</div>
+										</div>
+										<div class="row">
+											<div class="col-md-12 main-column">
+
+											</div>
+										</div>
+										<br><br><br>
+										<button class="yamm-close-bottom" aria-label="Close"><span class="icon icon--top"></span></button>
+									</div>
+								</li>
+							</ul>
+						
+					
+				</li>
+			
+
+				
+                
+				
+
+				<li class="dropdown yamm-fw  ">
+					
+						
+			      		
+							<a href="/gov/en/start/departments.html" aria-label="Departments" class="dropdown-toggle" data-toggle="dropdown" data-url="/gov/en/start/departemente/_jcr_content/par.html">Departments</a>
+							
+							<ul class="dropdown-menu" role="menu" aria-controls="submenu">
+								<li>
+									<div class="yamm-content container-fluid">
+										<div class="row">
+											<div class="col-sm-12">
+												<button class="yamm-close btn btn-link icon icon--after icon--close pull-right">Close</button>
+											</div>
+										</div>
+										<div class="row">
+											<div class="col-md-12 main-column">
+
+											</div>
+										</div>
+										<br><br><br>
+										<button class="yamm-close-bottom" aria-label="Close"><span class="icon icon--top"></span></button>
+									</div>
+								</li>
+							</ul>
+						
+					
+				</li>
+			
+
+				
+                
+				
+
+				<li class="dropdown yamm-fw  ">
+					
+						
+			      		
+							<a href="/gov/en/start/federal-chancellery.html" aria-label="Federal Chancellery" class="dropdown-toggle" data-toggle="dropdown" data-url="/gov/en/start/bundeskanzlei/_jcr_content/par.html">Federal Chancellery</a>
+							
+							<ul class="dropdown-menu" role="menu" aria-controls="submenu">
+								<li>
+									<div class="yamm-content container-fluid">
+										<div class="row">
+											<div class="col-sm-12">
+												<button class="yamm-close btn btn-link icon icon--after icon--close pull-right">Close</button>
+											</div>
+										</div>
+										<div class="row">
+											<div class="col-md-12 main-column">
+
+											</div>
+										</div>
+										<br><br><br>
+										<button class="yamm-close-bottom" aria-label="Close"><span class="icon icon--top"></span></button>
+									</div>
+								</li>
+							</ul>
+						
+					
+				</li>
+			
+
+				
+                
+				
+
+				<li class="dropdown yamm-fw  ">
+					
+						
+							<a href="https://www.fedlex.admin.ch/en/home" aria-label="Federal law" class="dropdown-toggle icon icon--after icon--external" target="_blank" title="">Federal law</a>
+			      		
+			      		
+					
+				</li>
+			
+
+				
+                
+				
+
+				<li class="dropdown yamm-fw  ">
+					
+						
+			      		
+							<a href="/gov/en/start/documentation.html" aria-label="Documentation" class="dropdown-toggle" data-toggle="dropdown" data-url="/gov/en/start/dokumentation/_jcr_content/par.html">Documentation</a>
+							
+							<ul class="dropdown-menu" role="menu" aria-controls="submenu">
+								<li>
+									<div class="yamm-content container-fluid">
+										<div class="row">
+											<div class="col-sm-12">
+												<button class="yamm-close btn btn-link icon icon--after icon--close pull-right">Close</button>
+											</div>
+										</div>
+										<div class="row">
+											<div class="col-md-12 main-column">
+
+											</div>
+										</div>
+										<br><br><br>
+										<button class="yamm-close-bottom" aria-label="Close"><span class="icon icon--top"></span></button>
+									</div>
+								</li>
+							</ul>
+						
+					
+				</li>
+			
+		</ul>
+	</div>
+</div>
+
+	
+
+
+
+    
+
+<!-- begin: main -->
+<div class="container-fluid hidden-xs">
+	<div class="row">
+		<div class="col-sm-12">
+			
+		</div>
+	</div>
+</div>
+
+
+
+	
+	
+		<div class="container-fluid">
+			
+
+<div class="row">
+ 	<div class="col-md-12 js-glossary-context" id="content">
+    	
+
+
+
+
+<div class="mod mod-imagesbundesrat">
+	
+		
+		
+			<a class="js-mobile-landingpage" href="/gov/de/start/bundesrat/mitglieder-des-bundesrates.html">
+				<ul class="img-wrapper js-image-wrapper js-phone img-count-7 clearfix" data-mobile-url="/content/gov/de/start/bundesrat/mitglieder-des-bundesrates.html">
+					
+						<li>
+							<figure>
+								<img id="imagesbundesrat-dimg1" src="/gov/en/start/_jcr_content/par/imagesbundesrat_527208271/items/43_1451401227318/image.imagespooler.jpg/1704023677708/258.1000/header_elisabeth_baume-schneider_386x391.png" alt="" data-url="/gov/en/start/departments/department-home-affairs-fdha.html"><figcaption id="imagesbundesrat-dimg1">Elisabeth Baume-Schneider<br />
+</figcaption>
+							</figure>
+						</li>
+					
+						<li>
+							<figure>
+								<img id="imagesbundesrat-dimg2" src="/gov/en/start/_jcr_content/par/imagesbundesrat_527208271/items/johann_n_schneider_a/image.imagespooler.jpg/1704023689836/258.1000/header_ignazio_cassis_386x391.png" alt="" data-url="/gov/en/start/departments/department-foreign-affairs-fdfa.html"><figcaption id="imagesbundesrat-dimg2">Ignazio Cassis<br />
+</figcaption>
+							</figure>
+						</li>
+					
+						<li>
+							<figure>
+								<img id="imagesbundesrat-dimg3" src="/gov/en/start/_jcr_content/par/imagesbundesrat_527208271/items/guy_parmelin/image.imagespooler.jpg/1704023771850/258.1000/header_keller_sutter_386x391.png" alt="" data-url="/gov/en/start/departments/department-of-finance-fdf.html"><figcaption id="imagesbundesrat-dimg3">Karin Keller-Sutter</figcaption>
+							</figure>
+						</li>
+					
+						<li>
+							<figure>
+								<img id="imagesbundesrat-dimg4" src="/gov/en/start/_jcr_content/par/imagesbundesrat_527208271/items/doris_leuthard/image.imagespooler.jpg/1704024084266/258.1000/header_viola_amherd_386x391.png" alt="" data-url="/gov/en/start/departments/department-of-defence-civil-protection-sport-ddps.html"><figcaption id="imagesbundesrat-dimg4">Viola Amherd <br />
+President of the Swiss Confederation<br />
+</figcaption>
+							</figure>
+						</li>
+					
+						<li>
+							<figure>
+								<img id="imagesbundesrat-dimg5" src="/gov/en/start/_jcr_content/par/imagesbundesrat_527208271/items/simonetta_sommaruga/image.imagespooler.jpg/1704023811052/258.1000/header_guy_parmelin_386x391.png" alt="" data-url="/gov/en/start/departments/department-of-economic-affairs-education-research-eaer.html"><figcaption id="imagesbundesrat-dimg5">Guy Parmelin<br />
+</figcaption>
+							</figure>
+						</li>
+					
+						<li>
+							<figure>
+								<img id="imagesbundesrat-dimg6" src="/gov/en/start/_jcr_content/par/imagesbundesrat_527208271/items/44_1451401239396/image.imagespooler.jpg/1704023834702/258.1000/header_albert_roesti_386x391.png" alt="" data-url="/gov/en/start/departments/department-of-environment-transport-energy-communications-detec.html"><figcaption id="imagesbundesrat-dimg6">Albert Rösti</figcaption>
+							</figure>
+						</li>
+					
+						<li>
+							<figure>
+								<img id="imagesbundesrat-dimg7" src="/gov/en/start/_jcr_content/par/imagesbundesrat_527208271/items/ueli_maurer/image.imagespooler.jpg/1704023848921/258.1000/header_beat_jans_386x391.png" alt="" data-url="/gov/en/start/departments/department-justice-and-police-fdjp.html"><figcaption id="imagesbundesrat-dimg7">Beat Jans</figcaption>
+							</figure>
+						</li>
+					
+				</ul>
+			</a>
+		
+	
+</div>
+
+
+
+<div class="mod mod-teaserfocus">
+	
+	
+		
+		
+			
+				
+				
+					<div class="js-tab-equalheight" data-equal-height-elements="true">
+
+							
+						
+							<ul class="nav nav-tabs nav-tabs-focus nav-justified tabs-4">
+
+									
+								
+
+								
+
+									
+
+									
+									
+									
+									
+
+									<li class="active">
+										<a href="#tab_ukraine_1804292717_1805737271" data-toggle="tab">Ukraine</a>
+									</li>
+								
+
+									
+
+									
+									
+									
+									
+
+									<li >
+										<a href="#tab_swiss_law_1140024728" data-toggle="tab">Popular vote on 24.11.2024</a>
+									</li>
+								
+
+									
+
+									
+									
+									
+									
+
+									<li >
+										<a href="#tab_asylum_policy_1836690974" data-toggle="tab">Asylum policy</a>
+									</li>
+								
+
+									
+
+									
+									
+									
+									
+
+									<li >
+										<a href="#tab_eu_586059710" data-toggle="tab">European Union</a>
+									</li>
+								
+							</ul>
+						
+
+						<div class="tab-content tab-border tab-focus tabs-4" data-interval="7000">
+							<button class="tab-focus-control btn btn-sm hidden"><span class="icon icon--play"></span></button>
+							
+
+								
+
+								
+
+								<div class="tab-pane active js-equalheight-element" id="tab_ukraine_1804292717_1805737271">
+									<h2 class="sr-only visible-print-block">Ukraine</h2>
+									<div class="row">
+										
+										
+
+
+<div class="mod mod-teaser">
+
+
+
+    
+    
+        
+            
+            
+                <div class="col-sm-7">
+                    <a href="https://www.admin.ch/gov/en/start/documentation/media-releases/media-releases-federal-council.msg-id-102724.html" target="_blank" title=""><img src="/gov/en/start/_jcr_content/par/teaserfocus/items/ukraine_1804292717/teaserfocuspar/teaser/image.imagespooler.jpg/1728470212992/241009-3-Fondation-Deminage-Teaser-RZ01.jpg" alt=""/></a>
+                </div>
+                <div class="col-sm-5 nopadding-left">
+                    
+                    
+                        
+                            <h4>
+                                <a href="https://www.admin.ch/gov/en/start/documentation/media-releases/media-releases-federal-council.msg-id-102724.html" target="_blank" title="">Mine clearance in Ukraine</a>
+                            </h4>
+                        
+                        
+                    
+                    <p>Switzerland is strengthening its collaboration with <i>Fondation suisse de déminage</i>, the Swiss demining foundation. Between now and 2027, Switzerland will contribute CHF 30 million to support humanitarian demining in Ukraine.<br>
+</p>
+<ul>
+<li><a href="https://www.admin.ch/gov/en/start/documentation/media-releases/media-releases-federal-council.msg-id-102724.html" target="_blank" class="icon icon--after icon--external" title="">Press release on demining in Ukraine</a></li>
+</ul>
+<ul>
+<li><a href="https://www.eda.admin.ch/eda/en/fdfa/fdfa/aktuell/dossiers/krieg-gegen-ukraine/umac2024.html" target="_blank" class="icon icon--after icon--external" title="">17-18 October: Ukraine Mine Action Conference in Lausanne</a></li>
+</ul>
+
+                    
+                </div>
+            
+
+            
+            
+        
+    
+
+</div>
+
+
+
+    
+        
+    
+
+
+
+									</div>
+								</div>
+							
+
+								
+
+								
+
+								<div class="tab-pane  js-equalheight-element" id="tab_swiss_law_1140024728">
+									<h2 class="sr-only visible-print-block">Popular vote on 24.11.2024</h2>
+									<div class="row">
+										
+										
+
+
+<div class="mod mod-teaser">
+
+
+
+    
+    
+        
+            
+            
+                <div class="col-sm-7">
+                    <a href="https://www.admin.ch/gov/en/start/documentation/votes/20241124.html" target="_blank" title=""><img src="/gov/en/start/_jcr_content/par/teaserfocus/items/swiss_law/teaserfocuspar/teaser_1849638161/image.imagespooler.jpg/1728468955803/votations_en.jpg" alt=""/></a>
+                </div>
+                <div class="col-sm-5 nopadding-left">
+                    
+                    
+                        
+                            <h4>
+                                <a href="https://www.admin.ch/gov/en/start/documentation/votes/20241124.html" target="_blank" title="">Popular vote</a>
+                            </h4>
+                        
+                        
+                    
+                    <p>On 24 November 2024, Swiss voters will have their say on four national issues:<br>
+</p>
+<ul>
+<li><a href="/gov/en/start/documentation/votes/20241124/expansion-programme-for-the-national-highways.html">Highway expansion</a></li>
+<li><a href="/gov/en/start/documentation/votes/20241124/subletting.html">Tenancy law: subletting</a></li>
+<li><a href="/gov/en/start/documentation/votes/20241124/tenancy-law-termination-to-permit-personal-use.html">Tenancy law: termination</a></li>
+<li><a href="/gov/en/start/documentation/votes/20241124/health-insurance-act-standardised-financing-of-benefits.html">Health insurance benefits</a></li>
+</ul>
+<p>You can find the official Federal Council <a href="https://www.admin.ch/gov/en/start/documentation/votes/20241124.html" target="_blank" class="icon icon--after icon--external" title="">explanations online</a> as well as via the VoteInfo app.</p>
+
+                    
+                </div>
+            
+
+            
+            
+        
+    
+
+</div>
+
+
+
+    
+        
+    
+
+
+
+									</div>
+								</div>
+							
+
+								
+
+								
+
+								<div class="tab-pane  js-equalheight-element" id="tab_asylum_policy_1836690974">
+									<h2 class="sr-only visible-print-block">Asylum policy</h2>
+									<div class="row">
+										
+										
+
+
+<div class="mod mod-teaser">
+
+
+
+    
+    
+        
+            
+            
+                <div class="col-sm-7">
+                    <a href="https://www.admin.ch/gov/en/start/documentation/media-releases.msg-id-102056.html" target="_blank" title=""><img src="/gov/en/start/_jcr_content/par/teaserfocus/items/asylum_policy/teaserfocuspar/teaser/image.imagespooler.jpg/1723648621585/240814-6-Migrations-und-Asylpakt-Teaser-RZ01.jpg" alt=""/></a>
+                </div>
+                <div class="col-sm-5 nopadding-left">
+                    
+                    
+                        
+                            <h4>
+                                <a href="https://www.admin.ch/gov/en/start/documentation/media-releases.msg-id-102056.html" target="_blank" title="">EU Pact on Migration and Asylum</a>
+                            </h4>
+                        
+                        
+                    
+                    <p>The European asylum system should be more efficient, resilient and fair. As an associated Schengen/Dublin state, Switzerland will participate in the EU Pact on Migration and Asylum – voluntarily and selectively.&nbsp;<br>
+</p>
+<ul>
+<li><a href="https://www.admin.ch/gov/en/start/documentation/media-releases.msg-id-102056.html" target="_blank" class="icon icon--after icon--external" title="">Asylum policy: press release</a></li>
+<li><a href="https://www.sem.admin.ch/sem/en/home/international-rueckkehr/kollab-eu-efta/eu-migrations-asylpakt.html" target="_blank" class="icon icon--after icon--external" title="">EU Pact on Migration and Asylum: FAQ</a></li>
+</ul>
+
+                    
+                </div>
+            
+
+            
+            
+        
+    
+
+</div>
+
+
+
+    
+        
+    
+
+
+
+									</div>
+								</div>
+							
+
+								
+
+								
+
+								<div class="tab-pane  js-equalheight-element" id="tab_eu_586059710">
+									<h2 class="sr-only visible-print-block">European Union</h2>
+									<div class="row">
+										
+										
+
+
+<div class="mod mod-teaser">
+
+
+
+    
+    
+        
+            
+            
+                <div class="col-sm-7">
+                    <a href="https://www.admin.ch/gov/en/start/documentation/swisseurelations.html" target="_blank" title=""><img src="/gov/en/start/_jcr_content/par/teaserfocus/items/eu/teaserfocuspar/teaser/image.imagespooler.jpg/1719471187768/231108-BR-EU-Teaser-RZ01.jpg" alt=""/></a>
+                </div>
+                <div class="col-sm-5 nopadding-left">
+                    
+                    
+                        
+                            <h4>
+                                <a href="https://www.admin.ch/gov/en/start/documentation/swisseurelations.html" target="_blank" title="">Switzerland and the European Union</a>
+                            </h4>
+                        
+                        
+                    
+                    <p>The Federal Council’s primary objective is to consolidate and further develop the bilateral path with the EU via a package of new and revised cooperation and market access agreements. At its meeting on 26 June 2024, the <a href="https://www.admin.ch/gov/en/start/documentation/media-releases.msg-id-101654.html" target="_blank" class="icon icon--after icon--external" title="">Federal Council took stock</a> of the current negotiations.</p>
+<ul>
+<li>For background information, consult our&nbsp;<a href="https://www.admin.ch/gov/en/start/documentation/swisseurelations.html" target="_blank" class="icon icon--after icon--external" title="">dossier on Swiss-EU relations</a>.</li>
+</ul>
+
+                    
+                </div>
+            
+
+            
+            
+        
+    
+
+</div>
+
+
+
+    
+        
+    
+
+
+
+									</div>
+								</div>
+							
+						</div>
+					</div>
+				
+			
+		
+	
+</div>
+
+<div class="mod mod-separator">
+	<hr/>
+</div>
+<div class="mod mod-separator">
+	<hr/>
+</div>
+<div class="mod mod-columncontrols">
+		
+			
+			
+				
+					
+					
+						<div class="row">
+							
+								<div class="col-sm-4">
+									
+<div class="mod mod-separator">
+	<hr/>
+</div>
+
+
+<div class="mod mod-teaser">
+
+
+
+    
+    
+        
+            
+            
+
+            
+            
+                
+
+                
+                
+                <div>
+                    <div class="clearfix  ">
+                        
+                        
+                            
+                            
+                                <img src="/gov/en/start/_jcr_content/par/columncontrols_620246848/items/0/column/teaser/image.imagespooler.jpg/1706801515931/Admin-Welcome-Teaser-Twitter-RZ01.jpg" alt=""/>
+                            
+                        
+                        
+                        
+                        
+                            
+                            
+                                <h4>Welcome to the official website of the Swiss government</h4>
+                            
+                        
+                        <p>On our English website, you will find a selection of information from the Swiss government and its administration. For more information, please choose&nbsp;<a href="https://www.admin.ch/gov/de/start.html" target="_blank" class="icon icon--after icon--external" title="">German</a>,&nbsp;<a href="https://www.admin.ch/gov/fr/accueil.html" target="_blank" class="icon icon--after icon--external" title="">French</a>&nbsp;or&nbsp;<a href="https://www.admin.ch/gov/it/pagina-iniziale.html" target="_blank" class="icon icon--after icon--external" title="">Italian</a>.</p>
+
+                        
+                    </div>
+                </div>
+            
+        
+    
+
+</div>
+
+<div class="mod mod-separator">
+	<hr/>
+</div>
+
+
+	
+
+	
+		
+		
+			<div class="list-group news-feed">
+				
+					
+						
+					
+					
+				
+
+				
+					
+						<div class="list-group">
+							<div class="list-group-header">
+								<h2 class="pull-left">Press releases</h2>
+								<a href="/gov/en/start/documentation/media-releases.html" title="all" class="pull-right icon icon--before icon--list">
+									all
+								</a>
+							</div>
+						</div>
+					
+					
+				
+
+				
+
+
+				
+				
+
+				
+
+
+				<div class="scroll-y mod mod-dynamic js-equalheight" data-equalheight-line="true" data-url="/gov/en/start/_jcr_content/par/columncontrols_620246848/items/0/column/nsbnewslist.entries.html" aria-live="off" aria-atomic="true" aria-relevant="all" data-connectors="dynamicNewsList">
+					<div class="nojs">
+						<p>
+							<p>Java script is required to display press releases.&nbsp;</p>
+
+						</p>
+						
+							<p>
+								<a href="https://www.newsd.admin.ch/newsd/feeds/rss?lang=en&org-nr=1&topic=&keyword=&offer-nr=&catalogueElement=&kind=M&start_date=2022-01-31&end_index=14" target="_blank" class="icon icon--after icon--external" title=""></a>
+							</p>
+						
+					</div>
+				</div>
+
+			</div>
+		
+
+	
+
+
+<div class="mod mod-separator">
+	<hr/>
+</div>
+
+
+    
+        
+    
+
+
+
+								</div>
+							
+								<div class="col-sm-4">
+									
+<div class="mod mod-separator">
+	<hr/>
+</div>
+<div class="mod mod-html">
+	
+		
+		
+			<blockquote class="twitter-tweet"><p lang="en" dir="ltr">In view of the humanitarian impact of the escalating violence in the Middle East, the Federal Council has decided to allocate an additional CHF 7 million in aid for Lebanon and Syria. <a href="https://t.co/tzKIwREDRs">https://t.co/tzKIwREDRs</a> <a href="https://twitter.com/SwissDevCoop?ref_src=twsrc%5Etfw">@SwissDevCoop</a> <a href="https://twitter.com/SwissMFA?ref_src=twsrc%5Etfw">@SwissMFA</a></p>&mdash; Swiss Federal Government (@SwissGov) <a href="https://twitter.com/SwissGov/status/1843950285544411144?ref_src=twsrc%5Etfw">October 9, 2024</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+		
+	
+</div>
+<div class="mod mod-headline">
+	
+		
+		
+			<div class="list-group">
+				<div class="list-group-header">
+					<h2 class="pull-left">Press conferences</h2>
+					<a href="/gov/en/start/documentation/press-conferences.html" class="pull-right icon icon--before icon--list" title="all" aria-label="all">
+						all
+					</a>
+				</div>
+			</div>
+		
+		
+	
+</div>
+
+<div class="mod mod-text">
+    
+        
+        
+            <article class="clearfix">
+                
+                    <p><b>Press conferences are generally held in German, French and/or Italian. All are published on <a href="https://www.youtube.com/@gov-ch" target="_blank" class="icon icon--after icon--external" title="">our YouTube channel</a>.</b><br>
+</p>
+
+                
+                
+            </article>
+        
+    
+</div>
+<div class="mod mod-video">
+
+	
+
+	
+		
+		
+
+			
+
+				
+				
+
+				
+				
+					
+
+					
+
+					
+
+					<div>
+						<div class="clearfix  ">
+							
+							
+								
+								
+									<iframe width="1140" height="641" src="https://www.youtube.com/embed/videoseries?wmode=transparent&amp;si=Jd2UQO_u0al0QILD&amp;list=PLEnHzNShzOwYkw0paTCPfYSkqnw0U7yZs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen wmode="Opaque"></iframe>
+								
+							
+
+							
+							
+								
+								
+									
+								
+							
+							
+							
+						</div>
+					</div>
+
+				
+
+			
+		
+	
+
+
+
+</div>
+
+
+
+    
+        
+    
+
+
+
+								</div>
+							
+								<div class="col-sm-4">
+									
+<div class="mod mod-separator">
+	<hr/>
+</div>
+<div class="mod mod-headline">
+	
+		
+		
+			<div class="list-group">
+				<div class="list-group-header">
+					<h2 class="pull-left">The Swiss Confederation – a brief guide</h2>
+					<a href="https://www.bk.admin.ch/bk/en/home/dokumentation/Swiss-Confederation-brief-guide.html" class="pull-right icon icon--before icon--list" aria-label="all" target="_blank" title="">
+						all
+					</a>
+				</div>
+			</div>
+		
+		
+	
+</div>
+
+<div class="mod mod-image">
+	
+		
+		
+			
+				
+				
+				
+				
+					<figure class="">
+						<img src="/gov/en/start/_jcr_content/par/columncontrols_620246848/items/2/column/image/image.imagespooler.jpg/1709134850021/240222-BUKU-Tweet-RZ01-VA.jpg" alt=""/>
+					</figure>
+				
+			
+		
+	
+</div>
+<div class="mod mod-text">
+    
+        
+        
+            <article class="clearfix">
+                
+                    <p><a href="https://www.bk.admin.ch/bk/en/home/dokumentation/Swiss-Confederation-brief-guide.html" target="_blank" class="icon icon--after icon--external" title="">“The Swiss Confederation – a brief guide 2024”</a> provides insight into Switzerland's political system and the activities of the Federal Administration. It is available in print, online, and as an app.</p>
+
+                
+                
+            </article>
+        
+    
+</div>
+<div class="mod mod-separator">
+	<hr/>
+</div>
+<div class="mod mod-headline">
+	
+		
+		
+			<div class="list-group">
+				<div class="list-group-header">
+					<h2 class="pull-left">The Federal Council – a video guide</h2>
+					<a href="https://www.youtube.com/playlist?list=PLEnHzNShzOwYAznw78soSdR4ATLhZKVIr" class="pull-right icon icon--before icon--list" aria-label="all" target="_blank" title="">
+						all
+					</a>
+				</div>
+			</div>
+		
+		
+	
+</div>
+
+<div class="mod mod-text">
+    
+        
+        
+            <article class="clearfix">
+                
+                    <p><b>Our <a href="https://www.youtube.com/playlist?list=PLEnHzNShzOwYAznw78soSdR4ATLhZKVIr" target="_blank" class="icon icon--after icon--external" title="">seven-part video series</a> introduces you to the workings of the Swiss government.</b></p>
+
+                
+                
+            </article>
+        
+    
+</div>
+<div class="mod mod-video">
+
+	
+
+	
+		
+		
+
+			
+
+				
+				
+
+				
+				
+					
+
+					
+
+					
+
+					<div>
+						<div class="clearfix  ">
+							
+							
+								
+								
+									<iframe width="1140" height="641" src="https://www.youtube.com/embed/NwXyKw3trGw?wmode=transparent&amp;si=g6IWn8770cwWtnho" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen wmode="Opaque"></iframe>
+								
+							
+
+							
+							
+								
+								
+									
+								
+							
+							
+							
+						</div>
+					</div>
+
+				
+
+			
+		
+	
+
+
+
+</div>
+
+<div class="mod mod-separator">
+	<hr/>
+</div>
+<div class="mod mod-textimage">
+    
+<div class="clearfix">
+    
+        
+        
+
+            
+                
+                    
+                
+                
+            
+            
+            
+                
+                    
+                    
+                        <figure class="pull-left" style="max-width:180px"><img src="/gov/en/start/_jcr_content/par/columncontrols_620246848/items/2/column/textimage/image.imagespooler.png/1707731049801/180.1000/ch.ch logo.png" alt=""/></figure>
+                    
+                
+            
+            <p>The pentalingual portal ch.ch covers a wealth of topics about life in Switzerland, including work, migration, and the political system.</p>
+
+            
+                <a href="https://www.ch.ch/en" aria-label="www.ch.ch" target="_blank" class="icon icon--after icon--external" title="">www.ch.ch</a>
+            
+        
+    
+</div>
+
+</div>
+
+
+
+    
+        
+    
+
+
+
+								</div>
+							
+						</div>
+					
+				
+			
+		
+</div>
+
+
+
+
+    
+        
+    
+
+
+
+    </div>
+</div>
+
+		</div>
+	
+
+<!-- end: main -->
+
+
+    <span class="visible-print">https://www.admin.ch/content/gov/en/start.html</span>
+
+    
+<footer role="contentinfo">
+	<h2 class="sr-only">Footer</h2>
+
+  
+
+  
+	<a name="context-sidebar"></a>
+  
+
+  
+  
+
+  	
+
+    
+        
+            <div class="container-fluid footer-service">
+                <h3>The Federal Council</h3>
+                <nav>
+                    <ul>
+                        
+                        
+                            <li><a href="/gov/en/start/contact/contact-form.html" target="_self" title="Contact" aria-label="Contact">Contact</a></li>
+                        
+                    </ul>
+                </nav>
+            </div>
+        
+    
+
+
+
+	
+
+    	
+			
+			
+				
+					
+<div class="site-map">
+	<h2 class="sr-only">Footer</h2>
+
+	<a href="#site-map" data-target="#site-map" data-toggle="collapse" class="site-map-toggle collapsed">Sitemap</a>
+
+	<div class="container-fluid" id="site-map">
+		<div class="col-sm-6 col-md-3">
+			
+
+
+<div class="mod mod-linklist">
+	
+	
+
+
+
+	
+		
+		
+			
+				
+					
+						
+					
+					
+				
+
+				
+					
+					
+						<h3>Federal Council</h3>
+					
+				
+
+			
+			
+			
+				
+				
+					<ul >
+						
+							<li>
+								
+									
+										<a href="/gov/en/start/federal-council/members-of-the-federal-council.html" title="Members of the Federal Council" aria-label="Members of the Federal Council" data-skipextcss="true">Members of the Federal Council</a>
+									
+									
+								
+							</li>
+						
+							<li>
+								
+									
+										<a href="/gov/en/start/federal-council/election-federal-council.html" title="Federal Council election" aria-label="Federal Council election" data-skipextcss="true">Federal Council election</a>
+									
+									
+								
+							</li>
+						
+							<li>
+								
+									
+										<a href="/gov/en/start/federal-council/tasks.html" title="Tasks" aria-label="Tasks" data-skipextcss="true">Tasks</a>
+									
+									
+								
+							</li>
+						
+							<li>
+								
+									
+										<a href="/gov/en/start/federal-council/history-of-the-federal-council.html" title="History of the Federal Council" aria-label="History of the Federal Council" data-skipextcss="true">History of the Federal Council</a>
+									
+									
+								
+							</li>
+						
+							<li>
+								
+									
+										<a href="/gov/en/start/federal-council/photographs-and-speeches-of-the-federal-council.html" title="Photographs and speeches of the Federal Council" aria-label="Photographs and speeches of the Federal Council" data-skipextcss="true">Photographs and speeches of the Federal Council</a>
+									
+									
+								
+							</li>
+						
+							<li>
+								
+									
+										<a href="/gov/en/start/federal-council/where-does-government-business-take-place.html" title="Where does government business take place?" aria-label="Where does government business take place?" data-skipextcss="true">Where does government business take place?</a>
+									
+									
+								
+							</li>
+						
+					</ul>
+				
+			
+			
+		
+	
+
+
+
+	
+</div>
+
+		</div>
+		<div class="col-sm-6 col-md-3">
+			
+
+
+<div class="mod mod-linklist">
+	
+	
+
+
+
+	
+		
+		
+			
+				
+					
+						
+					
+					
+				
+
+				
+					
+					
+						<h3>Federal Presidency</h3>
+					
+				
+
+			
+			
+			
+				
+				
+					<ul >
+						
+							<li>
+								
+									
+										<a href="/gov/en/start/federal-presidency/presidential-year-2024.html" title="Presidential year 2024" aria-label="Presidential year 2024" data-skipextcss="true">Presidential year 2024</a>
+									
+									
+								
+							</li>
+						
+							<li>
+								
+									
+										<a href="/gov/en/start/federal-presidency/tasks-federal-presidency.html" title="Tasks of the Federal Presidency" aria-label="Tasks of the Federal Presidency" data-skipextcss="true">Tasks of the Federal Presidency</a>
+									
+									
+								
+							</li>
+						
+							<li>
+								
+									
+										<a href="/gov/en/start/federal-presidency/history-federal-presidency.html" title="History of the Federal Presidency " aria-label="History of the Federal Presidency " data-skipextcss="true">History of the Federal Presidency </a>
+									
+									
+								
+							</li>
+						
+					</ul>
+				
+			
+			
+		
+	
+
+
+
+	
+</div>
+
+		</div>
+		<div class="col-sm-6 col-md-3">
+			
+
+
+<div class="mod mod-linklist">
+	
+	
+
+
+
+	
+		
+		
+			
+				
+					
+						
+					
+					
+				
+
+				
+					
+					
+						<h3>Federal Chancellery</h3>
+					
+				
+
+			
+			
+			
+				
+				
+					<ul >
+						
+							<li>
+								
+									
+										<a href="/gov/en/start/federal-chancellery/federal-chancellor.html" title="The Federal Chancellor " aria-label="The Federal Chancellor " data-skipextcss="true">The Federal Chancellor </a>
+									
+									
+								
+							</li>
+						
+							<li>
+								
+									
+										<a href="/gov/en/start/federal-chancellery/vizekanzler_in.html" title="Vice Chancellor Rachel Salzmann" aria-label="Vice Chancellor Rachel Salzmann" data-skipextcss="true">Vice Chancellor Rachel Salzmann</a>
+									
+									
+								
+							</li>
+						
+							<li>
+								
+									
+										<a href="/gov/en/start/federal-chancellery/vizekanzler_brsprecher.html" title="Vice Chancellor Andrea Arcidiacono" aria-label="Vice Chancellor Andrea Arcidiacono" data-skipextcss="true">Vice Chancellor Andrea Arcidiacono</a>
+									
+									
+								
+							</li>
+						
+							<li>
+								
+									
+										<a href="/gov/en/start/federal-chancellery/tasks.html" title="Tasks of the Federal Chancellery" aria-label="Tasks of the Federal Chancellery" data-skipextcss="true">Tasks of the Federal Chancellery</a>
+									
+									
+								
+							</li>
+						
+					</ul>
+				
+			
+			
+		
+	
+
+
+
+	
+</div>
+
+		</div>
+		<div class="col-sm-6 col-md-3">
+			
+
+
+<div class="mod mod-linklist">
+	
+	
+
+
+
+	
+		
+		
+			
+				
+					
+						
+					
+					
+				
+
+				
+					
+					
+						<h3>Go to</h3>
+					
+				
+
+			
+			
+			
+				
+				
+					<ul >
+						
+							<li>
+								
+									
+										<a href="http://www.parlament.ch/e/Pages/default.aspx" aria-label="Parliament" target="_blank" title="">Parliament</a>
+									
+									
+								
+							</li>
+						
+							<li>
+								
+									
+										<a href="https://www.ch.ch/en/political-system/" aria-label="The Swiss political system" target="_blank" title="">The Swiss political system</a>
+									
+									
+								
+							</li>
+						
+					</ul>
+				
+			
+			
+		
+	
+
+
+
+	
+</div>
+
+		</div>
+		<div class="col-sm-6 col-md-3">
+			
+
+
+<div class="mod mod-linklist">
+	
+	
+
+
+
+	
+		
+		
+			
+				
+					
+						
+					
+					
+				
+
+				
+					
+					
+						<h3>Federal law</h3>
+					
+				
+
+			
+			
+			
+				
+				
+					<ul >
+						
+							<li>
+								
+									
+										<a href="/gov/en/start/bundesrecht/suche-und-neuigkeiten.html" title="Search" aria-label="Search" data-skipextcss="true">Search</a>
+									
+									
+								
+							</li>
+						
+							<li>
+								
+									
+										<a href="/gov/en/start/bundesrecht/classified-compilation.html" title="Classified compilation" aria-label="Classified compilation" data-skipextcss="true">Classified compilation</a>
+									
+									
+								
+							</li>
+						
+					</ul>
+				
+			
+			
+		
+	
+
+
+
+	
+</div>
+
+		</div>
+		<div class="col-sm-6 col-md-3">
+			
+
+
+<div class="mod mod-linklist">
+	
+	
+
+
+
+	
+		
+		
+			
+				
+					
+						
+					
+					
+				
+
+				
+					
+					
+						<h3>Documentation</h3>
+					
+				
+
+			
+			
+			
+				
+				
+					<ul >
+						
+							<li>
+								
+									
+										<a href="/gov/en/start/documentation/media-releases.html" title="Press releases" aria-label="Press releases" data-skipextcss="true">Press releases</a>
+									
+									
+								
+							</li>
+						
+							<li>
+								
+									
+										<a href="/gov/en/start/documentation/press-conferences.html" title="Press conferences" aria-label="Press conferences" data-skipextcss="true">Press conferences</a>
+									
+									
+								
+							</li>
+						
+							<li>
+								
+									
+										<a href="/gov/en/start/documentation/votes.html" title="Popular votes" aria-label="Popular votes" data-skipextcss="true">Popular votes</a>
+									
+									
+								
+							</li>
+						
+							<li>
+								
+									
+										<a href="/gov/en/start/documentation/speeches.html" title="Speeches" aria-label="Speeches" data-skipextcss="true">Speeches</a>
+									
+									
+								
+							</li>
+						
+							<li>
+								
+									
+										<a href="/gov/en/start/documentation/events.html" title="Events" aria-label="Events" data-skipextcss="true">Events</a>
+									
+									
+								
+							</li>
+						
+							<li>
+								
+									
+										<a href="/gov/en/start/documentation/access-to-official-documents.html" title="Access to official documents" aria-label="Access to official documents" data-skipextcss="true">Access to official documents</a>
+									
+									
+								
+							</li>
+						
+							<li>
+								
+									
+										<a href="/gov/en/start/documentation/studien.html" title="Studies" aria-label="Studies" data-skipextcss="true">Studies</a>
+									
+									
+								
+							</li>
+						
+							<li>
+								
+									
+										<a href="/gov/en/start/documentation/dossiers.html" title="Dossiers" aria-label="Dossiers" data-skipextcss="true">Dossiers</a>
+									
+									
+								
+							</li>
+						
+							<li>
+								
+									
+										<a href="/gov/en/start/documentation/impressum.html" title="Impressum" aria-label="Impressum" data-skipextcss="true">Impressum</a>
+									
+									
+								
+							</li>
+						
+							<li>
+								
+									
+										<a href="/gov/en/start/documentation/officialphotos.html" title="Official photos" aria-label="Official photos" data-skipextcss="true">Official photos</a>
+									
+									
+								
+							</li>
+						
+							<li>
+								
+									
+										<a href="/gov/en/start/documentation/swisseurelations.html" title="Swiss-EU relations" aria-label="Swiss-EU relations" data-skipextcss="true">Swiss-EU relations</a>
+									
+									
+								
+							</li>
+						
+							<li>
+								
+									
+										<a href="/gov/en/start/documentation/good_offices.html" title="Good offices" aria-label="Good offices" data-skipextcss="true">Good offices</a>
+									
+									
+								
+							</li>
+						
+							<li>
+								
+									
+										<a href="/gov/en/start/documentation/netiquette.html" title="Netiquette" aria-label="Netiquette" data-skipextcss="true">Netiquette</a>
+									
+									
+								
+							</li>
+						
+					</ul>
+				
+			
+			
+		
+	
+
+
+
+	
+</div>
+
+		</div>
+		<div class="col-sm-6 col-md-3">
+			
+
+
+<div class="mod mod-linklist">
+	
+	
+
+
+
+	
+		
+		
+			
+				
+					
+						
+					
+					
+				
+
+				
+					
+					
+						<h3>Departments</h3>
+					
+				
+
+			
+			
+			
+				
+				
+					<ul >
+						
+							<li>
+								
+									
+										<a href="/gov/en/start/departments/department-foreign-affairs-fdfa.html" title="Department of Foreign Affairs (FDFA)" aria-label="Department of Foreign Affairs (FDFA)" data-skipextcss="true">Department of Foreign Affairs (FDFA)</a>
+									
+									
+								
+							</li>
+						
+							<li>
+								
+									
+										<a href="/gov/en/start/departments/department-home-affairs-fdha.html" title="Department of Home Affairs (FDHA)" aria-label="Department of Home Affairs (FDHA)" data-skipextcss="true">Department of Home Affairs (FDHA)</a>
+									
+									
+								
+							</li>
+						
+							<li>
+								
+									
+										<a href="/gov/en/start/departments/department-justice-and-police-fdjp.html" title="Department of Justice and Police (FDJP) " aria-label="Department of Justice and Police (FDJP) " data-skipextcss="true">Department of Justice and Police (FDJP) </a>
+									
+									
+								
+							</li>
+						
+							<li>
+								
+									
+										<a href="/gov/en/start/departments/department-of-defence-civil-protection-sport-ddps.html" title="Department of Defence, Civil Protection and Sport (DDPS) " aria-label="Department of Defence, Civil Protection and Sport (DDPS) " data-skipextcss="true">Department of Defence, Civil Protection and Sport (DDPS) </a>
+									
+									
+								
+							</li>
+						
+							<li>
+								
+									
+										<a href="/gov/en/start/departments/department-of-finance-fdf.html" title="Department of Finance (FDF)" aria-label="Department of Finance (FDF)" data-skipextcss="true">Department of Finance (FDF)</a>
+									
+									
+								
+							</li>
+						
+							<li>
+								
+									
+										<a href="/gov/en/start/departments/department-of-economic-affairs-education-research-eaer.html" title="Department of Economic Affairs, Education and Research (EAER)" aria-label="Department of Economic Affairs, Education and Research (EAER)" data-skipextcss="true">Department of Economic Affairs, Education and Research (EAER)</a>
+									
+									
+								
+							</li>
+						
+							<li>
+								
+									
+										<a href="/gov/en/start/departments/department-of-environment-transport-energy-communications-detec.html" title="Department of the Environment, Transport, Energy and Communications (DETEC)" aria-label="Department of the Environment, Transport, Energy and Communications (DETEC)" data-skipextcss="true">Department of the Environment, Transport, Energy and Communications (DETEC)</a>
+									
+									
+								
+							</li>
+						
+					</ul>
+				
+			
+			
+		
+	
+
+
+
+	
+</div>
+
+		</div>
+		<div class="col-sm-6 col-md-3">
+			
+
+
+<div class="mod mod-linklist">
+	
+	
+
+
+
+	
+		
+		
+			
+				
+					
+						
+					
+					
+				
+
+				
+					
+					
+						<h3>Answers to questions from the public</h3>
+					
+				
+
+			
+			
+			
+				
+				
+					<ul >
+						
+							<li>
+								
+									
+										<a href="https://www.ch.ch/en" aria-label="Portal ch.ch - all themes" target="_blank" title="">Portal ch.ch - all themes</a>
+									
+									
+								
+							</li>
+						
+							<li>
+								
+									
+										<a href="https://www.ch.ch/en/vehicles-and-traffic/how-to-behave-in-road-traffic/traffic-regulations/traffic-regulations-and-fines-in-switzerland" aria-label="Traffic regulations" target="_blank" title="">Traffic regulations</a>
+									
+									
+								
+							</li>
+						
+							<li>
+								
+									
+										<a href="https://www.ch.ch/en/documents-and-register-extracts/permits-for-living-in-switzerland/" aria-label="Stay in Switzerland" target="_blank" title="">Stay in Switzerland</a>
+									
+									
+								
+							</li>
+						
+							<li>
+								
+									
+										<a href="https://www.ch.ch/en/housing/moving/checklist-for-moving-home/" aria-label="Checklist for moving house" target="_blank" title="">Checklist for moving house</a>
+									
+									
+								
+							</li>
+						
+							<li>
+								
+									
+										<a href="https://www.ch.ch/en/votes-and-elections/votes/how-to-complete-a-ballot-paper-correctly/" aria-label="How to complete a ballot paper correctly" target="_blank" title="">How to complete a ballot paper correctly</a>
+									
+									
+								
+							</li>
+						
+							<li>
+								
+									
+										<a href="https://www.ch.ch/en/taxes-and-finances/types-of-taxation/value-added-tax--vat-/" aria-label="Value-added tax (VAT)" target="_blank" title="">Value-added tax (VAT)</a>
+									
+									
+								
+							</li>
+						
+					</ul>
+				
+			
+			
+		
+	
+
+
+
+	
+</div>
+
+		</div>
+	</div>
+</div>
+				
+			
+		
+    
+
+
+  	<div class="container-fluid">
+  		
+	
+
+
+	
+		
+			
+				<h3>Stay informed</h3>
+			
+
+			<nav class="links-social" aria-labelledby="social_media">
+				<label id="social_media" class="sr-only">Social media links</label>
+				<ul>
+					
+						<li><a href="https://twitter.com/SwissGov" class="icon icon--before  icon icon--before icon--twitter" target="_blank" title="@SwissGov" aria-label="@SwissGov">@SwissGov</a></li>
+					
+						<li><a href="https://twitter.com/BR_Sprecher" class="icon icon--before  icon icon--before icon--twitter" target="_blank" aria-label="@BR_Sprecher" title="">@BR_Sprecher</a></li>
+					
+						<li><a href="/gov/en/start/documentation/media-releases/news-subscription.html" class="icon icon--before  icon icon--before icon--message" title="News" aria-label="News">News</a></li>
+					
+						<li><a href="https://www.youtube.com/derschweizerischebundesratleconseilfederalsuisseilconsigliofederalesvizzero" class="icon icon--before  icon icon--before fa fa-youtube" target="_blank" aria-label="Swiss government: video channel" title="">Swiss government: video channel</a></li>
+					
+						<li><a href="https://www.instagram.com/gov.ch/" class="icon icon--before  icon icon--before fa fa-instagram" target="_blank" title="gov.ch" aria-label="gov.ch">gov.ch</a></li>
+					
+				</ul>
+			</nav>
+		
+		
+	
+
+
+
+		
+	
+
+<div class="mod mod-cobranding">
+    
+        
+            
+        
+        
+    
+</div>
+
+
+
+
+  		<!-- begin: logo phone -->
+		
+			
+			
+
+	
+		
+<div class="mod mod-logo">
+	
+	
+		
+			<hr class="footer-line visible-xs">
+			<img src="/gov/en/_jcr_content/logo/image.imagespooler.png/1443434079006/Logo Schweizerische Eidgenossenschaft.png" class="visible-xs" alt="Logo of the Swiss Confederation - to the homepage"/>
+		
+		
+	
+	
+</div>
+	
+	
+
+
+			
+		
+	 	<!-- end: logo phone -->
+  	</div>
+
+    
+
+<div class="footer-address">
+	
+
+	<span class="hidden-xs">The Federal Council</span>
+
+
+	
+
+	
+		
+			<nav class="pull-right">
+				<ul>
+					
+						<li><a href="http://www.disclaimer.admin.ch/terms_and_conditions.html" aria-label="Legal framework" target="_blank" title="">Legal framework</a></li>
+					
+						<li><a href="/gov/en/start/documentation/impressum.html" title="Impressum" aria-label="Impressum" data-skipextcss="true">Impressum</a></li>
+					
+				</ul>
+			</nav>
+		
+		
+	
+
+
+</div>
+
+
+  
+  
+
+</footer>        
+
+
+    <div class="modal" id="nav_modal_rnd">
+        <!-- modal -->
+    </div>
+
+</div>
+<!-- end: container -->
+
+
+
+<script src="/etc.clientlibs/clientlibs/granite/jquery/granite/csrf.min.js"></script>
+<script src="/etc/clientlibs/granite/jquery/granite/csrf.min.js"></script>
+
+
+
+	<script type="text/javascript" src="/etc/designs/core/frontend/modules.js"></script>
+
+
+
+	
+	
+	
+		<script src="/etc/designs/gov-frontend/modules.js"></script>
+	
+	
+
+
+
+	
+
+
+
+
+
+
+	<!-- bdefekoHh8J76ol1CyjGgIe9Le6ktWB763E50zrXsxeRkc533ATMPYmgqBAVMfpFHjZXwaPB2ZnbSapR6HKnNAg8jQ4UShzIYOA4VHFAKXZnFyq5knWKZwBdNAmFK23n0mb45Nc5wwgYJU2R8nVTowsCCeHrzUw1Qxy7nFRLGFxV7SIr50lJ1YmF3KT56AocvmVmnTFepH4NqipByonVXjvrPBvr0SZXk00LLkvg9XtpERK8cxVzspa4h4jShoJSmxs9saKZc6DTCHuqfZxpOX5ltJ4w3Qy13YvwSILUWwRegoaXT23haeFInH2dxAxaEcRIdIfTuMwySOSnWcPQ0Ao2MFGmQQP9mFM8sBlNTvox48XrdspvfpCFrJNXYCb8nMXMK0H4SG3AdjUGJnPoIgXk08KGATio0pQNhacW0wkU2AoHdKutmx2rzERU9aEdi8Y4mSAkYl5Q0LhjfYPmmfVwQG6XZVmVg2yZbave6WA9KpKbfd3jcZaUZ6076gayea6ZWOo8GzxBBw6ogBgg388NMWQfyXsT4WSUHYk8caH74CtLFfYGFMgDSusT7nkWSCPAFTzEGQjyiowLWKUvFQgMuSnLrRY2RHMnG1NjplMK8LpDDKT6S7RJh38st7LF0weh3IiryU8eiSQCzn9R1F4VeH4fLFkngw0dFYNnUNarRg5fcIFmvyvNuJJxWVr8KROohasgWVpVHdxsGlNkyMhIfbDBzEz5FWmrboJxPqCReFdXL6QoXgNQ3mcd5EGcZ5V6hrRBd9n5SldpzWXLYqMwNtuQR3m1AuZ9W4v0NdEn2 -->
+
+
+
+
+
+ 
+	
+
+
+
+
+	<!-- Matomo -->
+<script type="text/javascript">
+  var _paq = window._paq || [];
+  /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="https://analytics.bit.admin.ch/";
+    _paq.push(['setTrackerUrl', u+'matomo.php']);
+    _paq.push(['setSiteId', '29']);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<!-- End Matomo Code -->
+
+
+
+
+
+</body>
+
+    
+
+</html>
