@@ -203,5 +203,5 @@ poetry.toml
 pyrightconfig.json
 
 # End of https://www.toptal.com/developers/gitignore/api/python,jupyternotebooks,data
-Crawler/crawler/crawler/spiders/text/html/*
-Crawler/crawler/crawler/text/html/*
+/Crawler/crawler/crawler/spiders/text/html/**
+/Crawler/crawler/crawler/text/html/**
