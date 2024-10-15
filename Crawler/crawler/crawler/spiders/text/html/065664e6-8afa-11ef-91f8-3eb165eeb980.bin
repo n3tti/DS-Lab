@@ -1,0 +1,2597 @@
+
+<!DOCTYPE HTML>
+<!--[if lt IE 7 ]> <html lang="rm" class="no-js ie6 oldie"> <![endif]-->
+<!--[if IE 7 ]> <html lang="rm" class="no-js ie7 oldie"> <![endif]-->
+<!--[if IE 8 ]> <html lang="rm" class="no-js ie8 oldie"> <![endif]-->
+<!--[if IE 9 ]> <html lang="rm" class="no-js ie9"> <![endif]-->
+<!--[if gt IE 9 ]><!--><html lang="rm" class="no-js no-ie"> <!--<![endif]-->
+
+
+    
+<head>
+    
+    
+
+
+	
+	
+		<title>Pagina iniziala</title>
+	
+	
+
+
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta http-equiv="cleartype" content="on" />
+
+
+	<meta name="msapplication-TileColor" content="#ffffff"/>
+	<meta name="msapplication-TileImage" content="/etc/designs/core/frontend/guidelines/img/ico/mstile-144x144.png"/>
+	<meta name="msapplication-config" content="/etc/designs/core/frontend/guidelines/img/ico/browserconfig.xml"/>
+
+
+
+	
+		<meta name="description" content="Qua chattais Vus infurmaziuns davart la regenza, l’administraziun e davart las votaziuns federalas en rumantsch." />
+	
+	
+
+
+
+
+	<meta name="google-site-verification" content="_KMXCj6xrBYMPuUE4UMltyFjFOTsYbPI5aCSxncV6HM" />
+
+
+<meta name="language" content="rm" />
+<meta name="author" content="Il Cussegl federal" />
+
+
+
+
+	<!-- current page in other languages -->
+	
+		<link rel="alternate" type="text/html" href="/gov/de/start.html" hreflang="de" lang="de"/>
+	
+		<link rel="alternate" type="text/html" href="/gov/en/start.html" hreflang="en" lang="en"/>
+	
+		<link rel="alternate" type="text/html" href="/gov/it/pagina-iniziale.html" hreflang="it" lang="it"/>
+	
+		<link rel="alternate" type="text/html" href="/gov/rm/pagina-iniziala.html" hreflang="rm" lang="rm"/>
+	
+		<link rel="alternate" type="text/html" href="/gov/fr/accueil.html" hreflang="fr" lang="fr"/>
+	
+
+
+
+
+	<meta name="twitter:card" content="summary"/>
+	
+	
+		<meta property="og:url" content="https://www.admin.ch/gov/rm/start.html"/>
+	
+	<meta property="og:type" content="article"/>
+	
+		<meta property="og:title" content="Pagina iniziala"/>
+	
+	
+		<meta property="og:description" content="Qua chattais Vus infurmaziuns davart la regenza, l’administraziun e davart las votaziuns federalas en rumantsch."/>
+	
+	
+		<meta property="og:image" content="https://www.admin.ch/gov/rm/_jcr_content/socialshareimage.imagespooler.jpg/1704277444421/teaser_bundesrat_gruppenbild_2024_588x331_web.jpg"/>
+	
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+	<!--style type="text/css" id="antiClickjack">body{display:none !important;}</style-->
+	<script type="text/javascript">
+
+		var styleElement = document.createElement('STYLE');
+		styleElement.setAttribute('id', 'antiClickjack');
+		styleElement.setAttribute('type', 'text/css');
+		styleElement.innerHTML = 'body {display:none !important;}';
+		document.getElementsByTagName('HEAD')[0].appendChild(styleElement);
+
+		if (self === top) {
+			var antiClickjack = document.getElementById("antiClickjack");
+			antiClickjack.parentNode.removeChild(antiClickjack);
+		} else {
+			top.location = self.location;
+		}
+	</script>
+
+
+
+
+<script src="/etc.clientlibs/clientlibs/granite/jquery.min.js"></script>
+<script src="/etc.clientlibs/clientlibs/granite/utils.min.js"></script>
+
+
+
+	<script>
+		Granite.I18n.init({
+			locale: "rm",
+			urlPrefix: "/libs/cq/i18n/dict."
+		});
+	</script>
+
+
+
+	<link rel="stylesheet" href="/etc/designs/core/frontend/guidelines.min.css" type="text/css">
+
+	<link rel="stylesheet" href="/etc/designs/core/frontend/modules.min.css" type="text/css">
+
+	
+	<link rel="shortcut icon" href="/etc/designs/core/frontend/guidelines/img/ico/favicon.ico">
+	<link rel="apple-touch-icon" sizes="57x57" href="/etc/designs/core/frontend/guidelines/img/ico/apple-touch-icon-57x57.png"/>
+	<link rel="apple-touch-icon" sizes="114x114" href="/etc/designs/core/frontend/guidelines/img/ico/apple-touch-icon-114x114.png"/>
+	<link rel="apple-touch-icon" sizes="72x72" href="/etc/designs/core/frontend/guidelines/img/ico/apple-touch-icon-72x72.png"/>
+	<link rel="apple-touch-icon" sizes="144x144" href="/etc/designs/core/frontend/guidelines/img/ico/apple-touch-icon-144x144.png"/>
+	<link rel="apple-touch-icon" sizes="60x60" href="/etc/designs/core/frontend/guidelines/img/ico/apple-touch-icon-60x60.png"/>
+	<link rel="apple-touch-icon" sizes="120x120" href="/etc/designs/core/frontend/guidelines/img/ico/apple-touch-icon-120x120.png"/>
+	<link rel="apple-touch-icon" sizes="76x76" href="/etc/designs/core/frontend/guidelines/img/ico/apple-touch-icon-76x76.png"/>
+	<link rel="icon" type="image/png" href="/etc/designs/core/frontend/guidelines/img/ico/favicon-96x96.png" sizes="96x96"/>
+	<link rel="icon" type="image/png" href="/etc/designs/core/frontend/guidelines/img/ico/favicon-16x16.png" sizes="16x16"/>
+	<link rel="icon" type="image/png" href="/etc/designs/core/frontend/guidelines/img/ico/favicon-32x32.png" sizes="32x32"/>
+
+
+
+
+
+	
+	
+		<link rel="stylesheet" type="text/css" href="/etc/designs/gov-frontend/modules.css"/>
+	
+	
+	
+
+
+
+	<!--[if lt IE 9]>
+		<script src="https://cdnjs.cloudflare.com/polyfill/v2/polyfill.js?version=4.8.0"></script>
+	<![endif]-->
+
+
+
+    
+
+
+
+    
+        
+
+	
+
+    
+
+</head>
+
+
+    
+
+<body class="mod mod-layout   skin-layout-template-homepage" data-glossary="/gov/rm/pagina-iniziala.glossaryjs.json">
+
+<div class="mod mod-contentpagefull">
+<ul class="access-keys" role="navigation">
+    <li><a href="/gov/rm/pagina-iniziala.html" accesskey="0">Homepage</a></li>
+    
+    <li><a href="#main-navigation" accesskey="1">Main navigation</a></li>
+    
+    
+    <li><a href="#content" accesskey="2">Content area</a></li>
+    
+    
+    <li><a href="#site-map" accesskey="3">Sitemap</a></li>
+    
+    
+    <li><a href="#search-field" accesskey="4">Search</a></li>
+    
+</ul>
+</div>
+
+<!-- begin: container -->
+<div class="container container-main">
+
+    
+
+
+<header style="background-size: cover; background-image:" role="banner">
+	
+
+	<div class="clearfix">
+		
+			
+
+
+	
+
+
+
+	<nav class="navbar treecrumb pull-left">
+
+		
+		
+
+		
+			
+				<ul class="nav navbar-nav">
+				
+
+						
+
+						
+						<li class="dropdown">
+							
+							
+								
+									<a id="federalAdministration-dropdown" href="#" aria-label="Il Cussegl federal" class="dropdown-toggle" data-toggle="dropdown"><span class="icon icon--right"></span> Il Cussegl federal</a>
+								
+								
+							
+
+							
+								
+								<ul class="dropdown-menu" role="menu" aria-labelledby="federalAdministration-dropdown">
+									
+										
+										<li class="dropdown-header">
+											
+												
+													<a href="/gov/rm/pagina-iniziala.html" aria-label="Il Cussegl federal admin.ch" data-skipextcss="true" target="_self">Il Cussegl federal admin.ch</a>
+												
+												
+											
+
+											
+											
+												
+													<ul>
+														<li>
+															
+																
+																
+																
+																	<a href="https://www.bk.admin.ch/bk/rm/home.html" aria-label="Chanzlia federala (ChF)" target="_blank" title=""> Chanzlia federala (ChF)</a>
+																
+															
+														</li>
+													</ul>
+												
+											
+												
+													<ul>
+														<li>
+															
+																
+																
+																
+																	<a href="http://www.eda.admin.ch/eda/de/home.html" aria-label="Departament federal d’affars exteriurs (DFAE) " target="_blank" title=""> Departament federal d’affars exteriurs (DFAE) </a>
+																
+															
+														</li>
+													</ul>
+												
+											
+												
+													<ul>
+														<li>
+															
+																
+																
+																
+																	<a href="https://www.edi.admin.ch/edi/de/home.html" aria-label="Departament federal da l’intern (DFI)" target="_blank" title=""> Departament federal da l’intern (DFI)</a>
+																
+															
+														</li>
+													</ul>
+												
+											
+												
+													<ul>
+														<li>
+															
+																
+																
+																
+																	<a href="http://www.ejpd.admin.ch/ejpd/de/home.html" aria-label="Departament federal de giustia e polizia (DFGP)" target="_blank" title=""> Departament federal de giustia e polizia (DFGP)</a>
+																
+															
+														</li>
+													</ul>
+												
+											
+												
+													<ul>
+														<li>
+															
+																
+																
+																
+																	<a href="https://www.vbs.admin.ch/de" aria-label="Departament federal da defensiun, protecziun da la populaziun e sport (DDPS)" target="_blank" title=""> Departament federal da defensiun, protecziun da la populaziun e sport (DDPS)</a>
+																
+															
+														</li>
+													</ul>
+												
+											
+												
+													<ul>
+														<li>
+															
+																
+																
+																
+																	<a href="https://www.efd.admin.ch/efd/rm/home.html" aria-label="Departement federal da finanzas (DFF)" target="_blank" title=""> Departement federal da finanzas (DFF)</a>
+																
+															
+														</li>
+													</ul>
+												
+											
+												
+													<ul>
+														<li>
+															
+																
+																
+																
+																	<a href="http://www.wbf.admin.ch/" aria-label="Departament federal d’economia, furmaziun e retschertga (DEFR)" target="_blank" title=""> Departament federal d’economia, furmaziun e retschertga (DEFR)</a>
+																
+															
+														</li>
+													</ul>
+												
+											
+												
+													<ul>
+														<li>
+															
+																
+																
+																
+																	<a href="https://www.uvek.admin.ch/uvek/rm/home.html" aria-label="Departament federal per ambient, traffic, energia e communicaziun (DATEC)" target="_blank" title=""> Departament federal per ambient, traffic, energia e communicaziun (DATEC)</a>
+																
+															
+														</li>
+													</ul>
+												
+											
+										</li>
+									
+								</ul>
+							
+						</li>
+					
+				</ul>
+			
+			
+		
+	</nav>
+
+
+
+
+		
+
+		
+<!-- begin: metanav -->
+<section class="nav-services clearfix">
+	
+	
+		
+
+
+	
+	<h2>Pagina iniziala</h2>
+
+	
+
+		
+		
+
+		<nav class="nav-lang">
+			<ul>
+				
+					<li>
+						
+							
+							
+								<a href="/gov/de/start.html" lang="de" title="tudestg" aria-label="tudestg">DE</a>
+							
+							
+						
+					</li>
+				
+					<li>
+						
+							
+							
+								<a href="/gov/fr/accueil.html" lang="fr" title="franzos" aria-label="franzos">FR</a>
+							
+							
+						
+					</li>
+				
+					<li>
+						
+							
+							
+								<a href="/gov/it/pagina-iniziale.html" lang="it" title="talian" aria-label="talian">IT</a>
+							
+							
+						
+					</li>
+				
+					<li>
+						
+							
+								<a class="active" lang="rm" title="rumantsch selected" aria-label="rumantsch selected">RM</a>
+							
+							
+							
+						
+					</li>
+				
+					<li>
+						
+							
+							
+								<a href="/gov/en/start.html" lang="en" title="englais" aria-label="englais">EN</a>
+							
+							
+						
+					</li>
+				
+			</ul>
+		</nav>
+
+	
+
+
+		
+		
+
+    
+        
+            
+            
+
+                
+                <h2 class="sr-only">Service navigation</h2>
+
+                <nav class="nav-service">
+                    <ul>
+                        
+                        
+                            <li><a href="/gov/rm/pagina-iniziala/contact/contact.html" target="_self" title="Contact" aria-label="Contact" data-skipextcss="true">Contact</a></li>
+                        
+                    </ul>
+                </nav>
+
+            
+        
+    
+
+
+	
+	
+</section>
+<!-- end: metanav -->
+
+	</div>
+
+	
+		
+
+	
+	
+		
+<div class="mod mod-logo">
+    
+        
+        
+            
+                <a href="/gov/rm/pagina-iniziala.html" class="brand  hidden-xs" id="logo" title="Pagina iniziala" aria-label="Pagina iniziala">
+                    
+                        
+                            <img src="/gov/rm/_jcr_content/logo/image.imagespooler.png/1573197683467/Logo Schweizerische Eidgenossenschaft.png" alt="Logo Confederaziun svizra - turnar a la pagina iniziala"/>
+                        
+                        
+                    
+                    <h2 id="logo-desktop-departement">Il Cussegl federal<br/>Il portal da la regenza svizra
+                    </h2>
+                </a>
+                
+            
+        
+    
+</div>
+
+	
+
+
+	
+
+ 	
+		
+
+
+	
+
+
+
+	
+	
+		
+
+<div class="mod mod-searchfield">
+
+	
+		
+
+		
+			
+
+			<!-- begin: sitesearch desktop-->
+			<div class="mod mod-searchfield global-search global-search-standard">
+				<form action="/gov/rm/pagina-iniziala/tschertga.html" class="form-horizontal form-search pull-right">
+					<h2 class="sr-only">Tschertga</h2>
+					<label for="search-field" class="sr-only">Tschertga</label>
+					<input id="search-field" name="query" class="form-control search-field" type="text" placeholder="Tschertgar"/>
+                    <button class="icon icon--search icon--before" tabindex="0" role="button">
+                        <span class="sr-only">Tschertga</span>
+                    </button>
+                    <button class="icon icon--close icon--after search-reset" tabindex="0" role="button"><span class="sr-only"></span></button>
+					<div class="search-results">
+						<div class="search-results-list"></div>
+					</div>
+				</form>
+			</div>
+			<!-- end: sitesearch desktop-->
+
+		
+	
+
+</div>
+
+	
+
+
+
+	
+
+	
+		
+
+
+	
+
+<div class="mod mod-themes">
+	
+
+		<nav class="navbar yamm yamm--select ddl-to-modal">
+			<h2 class="sr-only">Tematicas A-Z</h2>
+			<ul>
+				<!-- Init dropdown with the `pull-right` class if you want to have your Topics select on the right -->
+				<li class="dropdown pull-right">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+						Tematicas A-Z <span class="icon icon--bottom"></span>
+					</a>
+					<!-- begin: flyout -->
+					<ul class="dropdown-menu">
+						<li>
+							<!-- The `yamm-content` can contain any kind of content like tab, table, list, article... -->
+							<div class="yamm-content container-fluid">
+
+								
+								<div class="row">
+									<div class="col-sm-12">
+										<button class="yamm-close btn btn-link icon icon--after icon--close pull-right">
+											Serrar
+										</button>
+									</div>
+								</div>
+
+								
+				                <ul class="nav nav-tabs">
+				                	
+				                	
+				                		<li><a href="#mf_keywords_tab" data-toggle="tab" data-url="/gov/rm/_jcr_content/themes.keywordsinit.html">A-Z</a></li>
+				                	
+				                	
+				                </ul>
+
+				                
+				                <div class="tab-content">
+								
+
+								
+								
+									<div class="tab-pane" id="mf_keywords_tab"></div>
+									<h2 class="sr-only visible-print-block">A-Z</h2>
+								
+
+								
+								
+								</div>
+							</div>
+						</li>
+					</ul>
+				</li>
+			</ul>
+		</nav>
+
+
+</div>
+
+
+
+
+
+
+	
+
+ 	
+
+
+</header>
+
+
+
+    
+
+
+	
+	
+		
+
+<div class="mod mod-mainnavigation">
+
+	<!-- begin: mainnav -->
+	<div class="nav-main yamm navbar" id="main-navigation">
+
+		<h2 class="sr-only">
+			Navigaziun principala
+		</h2>
+
+		
+			
+
+
+<!-- mobile mainnav buttonbar -->
+ <section class="nav-mobile">
+	<div class="table-row">
+		<div class="nav-mobile-header">
+			<div class="table-row">
+				<span class="nav-mobile-logo">
+					
+						
+						
+							<img src="/etc/designs/core/frontend/guidelines/img/swiss.svg" onerror="this.onerror=null; this.src='/etc/designs/core/frontend/guidelines/img/swiss.png'" alt="Il Cussegl federal"/>
+						
+					
+				</span>
+				<h2>
+					<a href="/gov/rm/pagina-iniziala.html" title="Pagina iniziala" aria-label="Pagina iniziala">Il Cussegl federal</a>
+				</h2>
+			</div>
+		</div>
+		<div class="table-cell dropdown">
+			<a href="#" class="nav-mobile-menu dropdown-toggle" data-toggle="dropdown">
+				<span class="icon icon--menu"></span>
+			</a>
+			<div class="drilldown dropdown-menu" role="menu">
+				<div class="drilldown-container">
+					<nav class="nav-page-list">
+						
+							<ul aria-controls="submenu">
+								
+									
+									
+										<li>
+											
+												
+												
+													<a href="/gov/rm/pagina-iniziala/cussegl-federal.html">Cussegl federal</a>
+												
+											
+										</li>
+									
+								
+							</ul>
+						
+							<ul aria-controls="submenu">
+								
+									
+									
+										<li>
+											
+												
+												
+													<a href="/gov/rm/pagina-iniziala/presidi-confederaziun.html">Presidi da la Confederaziun </a>
+												
+											
+										</li>
+									
+								
+							</ul>
+						
+							<ul aria-controls="submenu">
+								
+									
+									
+										<li>
+											
+												
+												
+													<a href="/gov/rm/pagina-iniziala/departaments.html">Departaments</a>
+												
+											
+										</li>
+									
+								
+							</ul>
+						
+							<ul aria-controls="submenu">
+								
+									
+									
+										<li>
+											
+												
+												
+													<a href="/gov/rm/pagina-iniziala/chanzlia-federala.html">Chanzlia federala</a>
+												
+											
+										</li>
+									
+								
+							</ul>
+						
+							<ul aria-controls="submenu">
+								
+									
+										<li class="list-sub">
+											<a href="#" aria-label="Dretg Federal">Dretg Federal</a>
+
+											<nav class="drilldown-sub" aria-expanded="false">
+												<a href="#" class="icon icon--before icon--less drilldown-back" aria-hidden="true">Dretg Federal</a>
+
+												
+													<ul aria-controls="submenu">
+														<li class="list-emphasis">
+															<a href="/gov/rm/pagina-iniziala/bundesrecht/suche-und-neuigkeiten.html">Retschertga</a>
+														</li>
+													</ul>
+												
+													<ul aria-controls="submenu">
+														<li class="list-emphasis">
+															<a href="/gov/rm/pagina-iniziala/bundesrecht/collecziun-sistematica.html">Collecziun sistematica</a>
+														</li>
+													</ul>
+												
+
+											</nav>
+										</li>
+									
+									
+								
+							</ul>
+						
+							<ul aria-controls="submenu">
+								
+									
+									
+										<li>
+											
+												
+												
+													<a href="/gov/rm/pagina-iniziala/documentaziun.html">Documentaziun</a>
+												
+											
+										</li>
+									
+								
+							</ul>
+						
+
+						<button class="yamm-close-bottom" aria-label="Serrar">
+							<span class="icon icon--top" aria-hidden="true"></span>
+						</button>
+					</nav>
+				</div>
+			</div>
+		</div>
+		<div class="table-cell dropdown">
+			<a href="#" class="nav-mobile-menu dropdown-toggle" data-toggle="dropdown">
+				<span class="icon icon--search"></span>
+			</a>
+			<div class="dropdown-menu" role="menu">
+				
+				
+
+
+
+	
+		
+
+
+<div class="mod mod-searchfield">
+
+    
+        <div class="mod mod-searchfield global-search global-search-mobile">
+            <form action="/gov/rm/pagina-iniziala/tschertga.html" class="form  mod-searchfield-mobile" role="form">
+                <h2 class="sr-only">Tschertga</h2>
+                <label for="search-field-phone" class="sr-only">
+                    Tschertga
+                </label>
+                <input id="search-field-phone" name="query" class="search-input form-control" type="text" placeholder="Tschertgar"/>
+                <button class="icon icon--search icon--before" tabindex="0" role="button">
+                    <span class="sr-only">Tschertga</span>
+                </button>
+                <button class="icon icon--close icon--after search-reset" tabindex="0" role="button"><span class="sr-only"></span></button>
+
+                <div class="search-results">
+                    <div class="search-results-list"></div>
+                </div>
+            </form>
+        </div>
+    
+
+</div>
+
+	
+	
+
+
+				
+			</div>
+		</div>
+	</div>
+</section>
+
+		
+
+		
+		<ul class="nav navbar-nav" aria-controls="submenu">
+
+			
+			
+
+				
+                
+				
+
+				<li class="dropdown yamm-fw  ">
+					
+						
+			      		
+							<a href="/gov/rm/pagina-iniziala/cussegl-federal.html" aria-label="Cussegl federal" class="dropdown-toggle" data-toggle="dropdown" data-url="/gov/rm/start/bundesrat/_jcr_content/par.html">Cussegl federal</a>
+							
+							<ul class="dropdown-menu" role="menu" aria-controls="submenu">
+								<li>
+									<div class="yamm-content container-fluid">
+										<div class="row">
+											<div class="col-sm-12">
+												<button class="yamm-close btn btn-link icon icon--after icon--close pull-right">Serrar</button>
+											</div>
+										</div>
+										<div class="row">
+											<div class="col-md-12 main-column">
+
+											</div>
+										</div>
+										<br><br><br>
+										<button class="yamm-close-bottom" aria-label="Serrar"><span class="icon icon--top"></span></button>
+									</div>
+								</li>
+							</ul>
+						
+					
+				</li>
+			
+
+				
+                
+				
+
+				<li class="dropdown yamm-fw  ">
+					
+						
+			      		
+							<a href="/gov/rm/pagina-iniziala/presidi-confederaziun.html" aria-label="Presidi da la Confederaziun " class="dropdown-toggle" data-toggle="dropdown" data-url="/gov/rm/start/bundespraesidium/_jcr_content/par.html">Presidi da la Confederaziun </a>
+							
+							<ul class="dropdown-menu" role="menu" aria-controls="submenu">
+								<li>
+									<div class="yamm-content container-fluid">
+										<div class="row">
+											<div class="col-sm-12">
+												<button class="yamm-close btn btn-link icon icon--after icon--close pull-right">Serrar</button>
+											</div>
+										</div>
+										<div class="row">
+											<div class="col-md-12 main-column">
+
+											</div>
+										</div>
+										<br><br><br>
+										<button class="yamm-close-bottom" aria-label="Serrar"><span class="icon icon--top"></span></button>
+									</div>
+								</li>
+							</ul>
+						
+					
+				</li>
+			
+
+				
+                
+				
+
+				<li class="dropdown yamm-fw  ">
+					
+						
+			      		
+							<a href="/gov/rm/pagina-iniziala/departaments.html" aria-label="Departaments" class="dropdown-toggle" data-toggle="dropdown" data-url="/gov/rm/start/departemente/_jcr_content/par.html">Departaments</a>
+							
+							<ul class="dropdown-menu" role="menu" aria-controls="submenu">
+								<li>
+									<div class="yamm-content container-fluid">
+										<div class="row">
+											<div class="col-sm-12">
+												<button class="yamm-close btn btn-link icon icon--after icon--close pull-right">Serrar</button>
+											</div>
+										</div>
+										<div class="row">
+											<div class="col-md-12 main-column">
+
+											</div>
+										</div>
+										<br><br><br>
+										<button class="yamm-close-bottom" aria-label="Serrar"><span class="icon icon--top"></span></button>
+									</div>
+								</li>
+							</ul>
+						
+					
+				</li>
+			
+
+				
+                
+				
+
+				<li class="dropdown yamm-fw  ">
+					
+						
+			      		
+							<a href="/gov/rm/pagina-iniziala/chanzlia-federala.html" aria-label="Chanzlia federala" class="dropdown-toggle" data-toggle="dropdown" data-url="/gov/rm/start/bundeskanzlei/_jcr_content/par.html">Chanzlia federala</a>
+							
+							<ul class="dropdown-menu" role="menu" aria-controls="submenu">
+								<li>
+									<div class="yamm-content container-fluid">
+										<div class="row">
+											<div class="col-sm-12">
+												<button class="yamm-close btn btn-link icon icon--after icon--close pull-right">Serrar</button>
+											</div>
+										</div>
+										<div class="row">
+											<div class="col-md-12 main-column">
+
+											</div>
+										</div>
+										<br><br><br>
+										<button class="yamm-close-bottom" aria-label="Serrar"><span class="icon icon--top"></span></button>
+									</div>
+								</li>
+							</ul>
+						
+					
+				</li>
+			
+
+				
+                
+				
+
+				<li class="dropdown yamm-fw  ">
+					
+						
+							<a href="https://www.fedlex.admin.ch/rm/home" aria-label="Dretg Federal" class="dropdown-toggle icon icon--after icon--external" target="_blank" title="">Dretg Federal</a>
+			      		
+			      		
+					
+				</li>
+			
+
+				
+                
+				
+
+				<li class="dropdown yamm-fw  ">
+					
+						
+			      		
+							<a href="/gov/rm/pagina-iniziala/documentaziun.html" aria-label="Documentaziun" class="dropdown-toggle" data-toggle="dropdown" data-url="/gov/rm/start/dokumentation/_jcr_content/par.html">Documentaziun</a>
+							
+							<ul class="dropdown-menu" role="menu" aria-controls="submenu">
+								<li>
+									<div class="yamm-content container-fluid">
+										<div class="row">
+											<div class="col-sm-12">
+												<button class="yamm-close btn btn-link icon icon--after icon--close pull-right">Serrar</button>
+											</div>
+										</div>
+										<div class="row">
+											<div class="col-md-12 main-column">
+
+											</div>
+										</div>
+										<br><br><br>
+										<button class="yamm-close-bottom" aria-label="Serrar"><span class="icon icon--top"></span></button>
+									</div>
+								</li>
+							</ul>
+						
+					
+				</li>
+			
+		</ul>
+	</div>
+</div>
+
+	
+
+
+
+    
+
+<!-- begin: main -->
+<div class="container-fluid hidden-xs">
+	<div class="row">
+		<div class="col-sm-12">
+			
+		</div>
+	</div>
+</div>
+
+
+
+	
+	
+		<div class="container-fluid">
+			
+
+<div class="row">
+ 	<div class="col-md-12 js-glossary-context" id="content">
+    	
+
+
+
+
+<div class="mod mod-imagesbundesrat">
+	
+		
+		
+			<a class="js-mobile-landingpage" href="/gov/de/start/bundesrat/mitglieder-des-bundesrates.html">
+				<ul class="img-wrapper js-image-wrapper js-phone img-count-7 clearfix" data-mobile-url="/content/gov/de/start/bundesrat/mitglieder-des-bundesrates.html">
+					
+						<li>
+							<figure>
+								<img id="imagesbundesrat-dimg1" src="/gov/rm/pagina-iniziala/_jcr_content/par/imagesbundesrat_951380275/items/43_1451401227318/image.imagespooler.jpg/1704023938467/258.1000/header_elisabeth_baume-schneider_386x391.png" alt="" data-url="/gov/rm/pagina-iniziala/departaments/departament-da-intern-dfi.html"><figcaption id="imagesbundesrat-dimg1">Elisabeth Baume-Schneider</figcaption>
+							</figure>
+						</li>
+					
+						<li>
+							<figure>
+								<img id="imagesbundesrat-dimg2" src="/gov/rm/pagina-iniziala/_jcr_content/par/imagesbundesrat_951380275/items/johann_n_schneider_a/image.imagespooler.jpg/1704023945745/258.1000/header_ignazio_cassis_386x391.png" alt="" data-url="/gov/rm/pagina-iniziala/departaments/departament-dals-affars-exteriurs-dfae.html"><figcaption id="imagesbundesrat-dimg2">Ignazio Cassis<br />
+</figcaption>
+							</figure>
+						</li>
+					
+						<li>
+							<figure>
+								<img id="imagesbundesrat-dimg3" src="/gov/rm/pagina-iniziala/_jcr_content/par/imagesbundesrat_951380275/items/guy_parmelin/image.imagespooler.jpg/1704023973671/258.1000/header_keller_sutter_386x391.png" alt="" data-url="/gov/rm/pagina-iniziala/departaments/departament-finanzas-dff.html"><figcaption id="imagesbundesrat-dimg3">Karin Keller-Sutter</figcaption>
+							</figure>
+						</li>
+					
+						<li>
+							<figure>
+								<img id="imagesbundesrat-dimg4" src="/gov/rm/pagina-iniziala/_jcr_content/par/imagesbundesrat_951380275/items/doris_leuthard/image.imagespooler.jpg/1704024007883/258.1000/header_viola_amherd_386x391.png" alt="" data-url="/gov/rm/pagina-iniziala/departaments/departament-federal-da-defensiun-protecziun-da-la-populaziun-e-sport-ddps.html"><figcaption id="imagesbundesrat-dimg4">Viola Amherd<br />
+Presidenta da la Confederaziun</figcaption>
+							</figure>
+						</li>
+					
+						<li>
+							<figure>
+								<img id="imagesbundesrat-dimg5" src="/gov/rm/pagina-iniziala/_jcr_content/par/imagesbundesrat_951380275/items/simonetta_sommaruga/image.imagespooler.jpg/1704024015530/258.1000/header_guy_parmelin_386x391.png" alt="" data-url="/gov/rm/pagina-iniziala/departaments/departament-economia-furmaziun-retschertga-defr.html"><figcaption id="imagesbundesrat-dimg5">Guy Parmelin<br />
+</figcaption>
+							</figure>
+						</li>
+					
+						<li>
+							<figure>
+								<img id="imagesbundesrat-dimg6" src="/gov/rm/pagina-iniziala/_jcr_content/par/imagesbundesrat_951380275/items/44_1451401239396/image.imagespooler.jpg/1704024045612/258.1000/header_albert_roesti_386x391.png" alt="" data-url="/gov/rm/pagina-iniziala/departaments/departament-ambient-traffic-energia-communicaziun-datec.html"><figcaption id="imagesbundesrat-dimg6">Albert Rösti</figcaption>
+							</figure>
+						</li>
+					
+						<li>
+							<figure>
+								<img id="imagesbundesrat-dimg7" src="/gov/rm/pagina-iniziala/_jcr_content/par/imagesbundesrat_951380275/items/ueli_maurer/image.imagespooler.jpg/1704025028954/258.1000/header_beat_jans_386x391.png" alt="" data-url="/gov/rm/pagina-iniziala/departaments/departament-da-giustia-polizia-dfgp.html"><figcaption id="imagesbundesrat-dimg7">Beat Jans</figcaption>
+							</figure>
+						</li>
+					
+				</ul>
+			</a>
+		
+	
+</div>
+
+
+
+<div class="mod mod-teaserfocus">
+	
+	
+		
+		
+			
+				
+				
+					<div class="js-tab-equalheight" data-equal-height-elements="true">
+
+							
+						
+							<ul class="nav nav-tabs nav-tabs-focus nav-justified tabs-4">
+
+									
+								
+
+								
+
+									
+
+									
+									
+									
+									
+
+									<li class="active">
+										<a href="#tab_welcome_1737289406" data-toggle="tab">Bainvegni</a>
+									</li>
+								
+
+									
+
+									
+									
+									
+									
+
+									<li >
+										<a href="#tab_pr_sidialjahr_2015_1459499382" data-toggle="tab">Onn presidial 2024</a>
+									</li>
+								
+
+									
+
+									
+									
+									
+									
+
+									<li >
+										<a href="#tab_tgi_fa_part_da_la_re_679714003" data-toggle="tab">Tgi fa part da la regenza svizra? </a>
+									</li>
+								
+
+									
+
+									
+									
+									
+									
+
+									<li >
+										<a href="#tab_aufgaben_408946080" data-toggle="tab">Cussegl federal - Incumbensas</a>
+									</li>
+								
+							</ul>
+						
+
+						<div class="tab-content tab-border tab-focus tabs-4" data-interval="0">
+							<button class="tab-focus-control btn btn-sm hidden"><span class="icon icon--play"></span></button>
+							
+
+								
+
+								
+
+								<div class="tab-pane active js-equalheight-element" id="tab_welcome_1737289406">
+									<h2 class="sr-only visible-print-block">Bainvegni</h2>
+									<div class="row">
+										
+										
+
+
+<div class="mod mod-teaser">
+
+
+
+    
+    
+        
+            
+            
+                <div class="col-sm-7">
+                    <img src="/gov/rm/pagina-iniziala/_jcr_content/par/teaserfocus/items/welcome/teaserfocuspar/teaser/image.imagespooler.jpg/1542274201935/bh_west_teaser_en_rm.jpg" alt=""/>
+                </div>
+                <div class="col-sm-5 nopadding-left">
+                    
+                    
+                        
+                        
+                            <h4>Bainvegni </h4>
+                        
+                    
+                    <p>Qua chattais Vus infurmaziuns davart la regenza, l’administraziun e davart las votaziuns federalas en rumantsch. Las novitads na vegnan betg translatadas.</p>
+<p>Per l’infurmaziun cumplaina consultar p.pl. las paginas<br>
+<a href="/gov/de/start.html">tudestgas</a><br>
+<a href="/gov/fr/accueil.html">franzosas</a><br>
+<a href="/gov/it/pagina-iniziale.html">talianas</a></p>
+
+                    
+                </div>
+            
+
+            
+            
+        
+    
+
+</div>
+
+
+
+    
+        
+    
+
+
+
+									</div>
+								</div>
+							
+
+								
+
+								
+
+								<div class="tab-pane  js-equalheight-element" id="tab_pr_sidialjahr_2015_1459499382">
+									<h2 class="sr-only visible-print-block">Onn presidial 2024</h2>
+									<div class="row">
+										
+										
+
+
+<div class="mod mod-teaser">
+
+
+
+    
+    
+        
+            
+            
+                <div class="col-sm-7">
+                    <a href="/gov/rm/pagina-iniziala/presidi-confederaziun/onn-presidial-2024.html" data-skipextcss="true"><img src="/gov/rm/pagina-iniziala/_jcr_content/par/teaserfocus/items/pr_sidialjahr_2015/teaserfocuspar/teaser/image.imagespooler.jpg/1703751776218/231231-BR-Bundespraesident-Amherd-RZ01.jpg" alt=""/></a>
+                </div>
+                <div class="col-sm-5 nopadding-left">
+                    
+                    
+                        
+                            <h4>
+                                <a href="/gov/rm/pagina-iniziala/presidi-confederaziun/onn-presidial-2024.html" title="Onn presidial 2024" data-skipextcss="true">Onn presidial 2024</a>
+                            </h4>
+                        
+                        
+                    
+                    <p>Presidenta da la Confederaziun 2024 è Viola Amherd. Ella è vegnìda elegìda en quest uffizi ils 13 da december 2023.&nbsp;<br>
+</p>
+<div style="left: -10000px; top: 0px; width: 9000px; height: 16px; overflow: hidden; position: absolute;"><div>&nbsp;</div>
+</div>
+<div style="left: -10000px; top: 0px; width: 9000px; height: 16px; overflow: hidden; position: absolute;"><div>&nbsp;</div>
+</div>
+
+                    
+                </div>
+            
+
+            
+            
+        
+    
+
+</div>
+
+
+
+    
+        
+    
+
+
+
+									</div>
+								</div>
+							
+
+								
+
+								
+
+								<div class="tab-pane  js-equalheight-element" id="tab_tgi_fa_part_da_la_re_679714003">
+									<h2 class="sr-only visible-print-block">Tgi fa part da la regenza svizra? </h2>
+									<div class="row">
+										
+										
+
+
+<div class="mod mod-teaser">
+
+
+
+    
+    
+        
+            
+            
+                <div class="col-sm-7">
+                    <a href="/gov/rm/pagina-iniziala/cussegl-federal/commembras-e-commembers-dal-cussegl-federal.html" data-skipextcss="true"><img src="/gov/rm/pagina-iniziala/_jcr_content/par/teaserfocus/items/tgi_fa_part_da_la_re/teaserfocuspar/teaser/image.imagespooler.jpg/1704021165638/teaser_bundesrat_gruppenbild_2024_588x331_web.jpg" alt=""/></a>
+                </div>
+                <div class="col-sm-5 nopadding-left">
+                    
+                    
+                        
+                            <h4>
+                                <a href="/gov/rm/pagina-iniziala/cussegl-federal/commembras-e-commembers-dal-cussegl-federal.html" title="Tgi fa part da la regenza svizra? " data-skipextcss="true">Tgi fa part da la regenza svizra? </a>
+                            </h4>
+                        
+                        
+                    
+                    <p>Set scheffas e schefs dals departaments furman il Cussegl federal. Las decisiuns vegnan prendidas cuminaivlamain. &nbsp;</p>
+
+                    
+                </div>
+            
+
+            
+            
+        
+    
+
+</div>
+
+
+
+    
+        
+    
+
+
+
+									</div>
+								</div>
+							
+
+								
+
+								
+
+								<div class="tab-pane  js-equalheight-element" id="tab_aufgaben_408946080">
+									<h2 class="sr-only visible-print-block">Cussegl federal - Incumbensas</h2>
+									<div class="row">
+										
+										
+
+
+<div class="mod mod-teaser">
+
+
+
+    
+    
+        
+            
+            
+                <div class="col-sm-7">
+                    <a href="/gov/rm/pagina-iniziala/cussegl-federal/incumbensas.html" data-skipextcss="true"><img src="/gov/rm/pagina-iniziala/cussegl-federal/incumbensas/_jcr_content/image.imagespooler.jpg/1706542998023/240110-Erste-BR-Sitzung-Tweet-RZ012.jpg" alt="Co lavura la regenza svizra?"/></a>
+                </div>
+                <div class="col-sm-5 nopadding-left">
+                    
+                    
+                        
+                            <h4>
+                                <a href="/gov/rm/pagina-iniziala/cussegl-federal/incumbensas.html" title="Co lavura la regenza svizra?" data-skipextcss="true">Co lavura la regenza svizra?</a>
+                            </h4>
+                        
+                        
+                    
+                    <p>Il Cussegl federal dirigia la Svizra, maina l'administraziun, propona leschas ed exequescha quellas. El sa raduna mintga emna ed infurmescha davart sias decisiuns.</p>
+                    
+                </div>
+            
+
+            
+            
+        
+    
+
+</div>
+
+
+
+    
+        
+    
+
+
+
+									</div>
+								</div>
+							
+						</div>
+					</div>
+				
+			
+		
+	
+</div>
+
+<div class="mod mod-columncontrols">
+		
+			
+			
+				
+					
+					
+						<div class="row">
+							
+								<div class="col-md-6 col-sm-8">
+									
+<div class="mod mod-headline">
+	
+		
+		
+			<div class="list-group">
+				<div class="list-group-header">
+					<h2 class="pull-left">Conferenzas da pressa</h2>
+					<a href="/gov/de/start/dokumentation/medienkonferenzen/archiv-der-medienkonferenzen.html" class="pull-right icon icon--before icon--list" title="Alle" aria-label="Alle">
+						Alle
+					</a>
+				</div>
+			</div>
+		
+		
+	
+</div>
+
+<div class="mod mod-video">
+
+	
+
+	
+		
+		
+
+			
+
+				
+				
+
+				
+				
+					
+
+					
+
+					
+
+					<div>
+						<div class="clearfix  ">
+							
+							
+								
+								
+									<iframe width="1140" height="641" src="https://www.youtube.com/embed/videoseries?wmode=transparent&amp;si=Jd2UQO_u0al0QILD&amp;list=PLEnHzNShzOwYkw0paTCPfYSkqnw0U7yZs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen wmode="Opaque"></iframe>
+								
+							
+
+							
+							
+								
+								
+									
+								
+							
+							
+							
+						</div>
+					</div>
+
+				
+
+			
+		
+	
+
+
+
+</div>
+
+<div class="mod mod-text">
+    
+        
+        
+            <article class="clearfix">
+                
+                    <p><a href="https://youtube.com/playlist?list=PLEnHzNShzOwYkw0paTCPfYSkqnw0U7yZs&amp;si=5cDbaDSZKsakgPov" target="_blank" class="icon icon--after icon--external" title=""><b>Conferenza passada</b></a></p>
+
+                
+                
+            </article>
+        
+    
+</div>
+
+
+    
+        
+    
+
+
+
+								</div>
+							
+								<div class="col-md-6 col-sm-4">
+									
+
+
+	
+
+	
+		
+		
+			<div class="list-group news-feed">
+				
+					
+						
+					
+					
+				
+
+				
+					
+						<div class="list-group">
+							<div class="list-group-header">
+								<h3 class="pull-left">Communicaziuns a las medias</h3>
+								<a href="/gov/de/start/dokumentation/medienmitteilungen.html" title="Alle" class="pull-right icon icon--before icon--list">
+									Alle
+								</a>
+							</div>
+						</div>
+					
+					
+				
+
+				
+
+
+				
+				
+
+				
+
+
+				<div class="scroll-y mod mod-dynamic js-equalheight" data-equalheight-line="true" data-url="/gov/rm/pagina-iniziala/_jcr_content/par/columncontrols/items/1/column/nsbnewslist.entries.html" aria-live="off" aria-atomic="true" aria-relevant="all" data-connectors="dynamicNewsList">
+					<div class="nojs">
+						<p>
+							<p>Per mussar las communicaziuns a las medias dovri Java Script.</p>
+
+						</p>
+						
+							<p>
+								<a href="https://www.newsd.admin.ch/newsd/feeds/rss?lang=rm&org-nr=1&topic=&keyword=&offer-nr=&catalogueElement=&kind=M&start_date=2022-01-01&end_index=19" target="_blank" class="icon icon--after icon--external" title=""></a>
+							</p>
+						
+					</div>
+				</div>
+
+			</div>
+		
+
+	
+
+
+
+
+    
+        
+    
+
+
+
+								</div>
+							
+						</div>
+					
+				
+			
+		
+</div>
+
+
+<div class="mod mod-twitterstream">
+	
+		
+		
+            
+            	<div class="list-group">
+	                <div class="list-group-header">
+	                    <h2 class="pull-left">
+							Tweets - Pledader dal Cussegl federal
+	                    </h2>
+	                </div>
+                </div>
+            
+
+			<a href="">
+				
+			</a>
+
+            <ul class="twitter-timeline js-twitter-timeline" data-url="/gov/rm/pagina-iniziala/_jcr_content/par/twitterstream.tweets.html?username=BR_Sprecher" data-time-interval="300000" aria-live="polite" aria-atomic="true">
+            </ul>
+			
+				<a href="https://twitter.com/BR_Sprecher" class="twitter-follow-button" data-show-count="false" data-align="left" data-show-screen-name="true" data-size="medium" data-dnt="true"></a><script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+			
+        
+    
+</div>
+
+
+
+    
+        
+    
+
+
+
+    </div>
+</div>
+
+		</div>
+	
+
+<!-- end: main -->
+
+
+    <span class="visible-print">https://www.admin.ch/content/gov/rm/pagina-iniziala.html</span>
+
+    
+<footer role="contentinfo">
+	<h2 class="sr-only">Footer</h2>
+
+  
+
+  
+	<a name="context-sidebar"></a>
+  
+
+  
+  
+
+  	
+
+    
+        
+            <div class="container-fluid footer-service">
+                <h3>Il Cussegl federal</h3>
+                <nav>
+                    <ul>
+                        
+                        
+                            <li><a href="/gov/rm/pagina-iniziala/contact/contact.html" target="_self" title="Contact" aria-label="Contact">Contact</a></li>
+                        
+                    </ul>
+                </nav>
+            </div>
+        
+    
+
+
+
+	
+
+    	
+			
+			
+				
+					
+<div class="site-map">
+	<h2 class="sr-only">Footer</h2>
+
+	<a href="#site-map" data-target="#site-map" data-toggle="collapse" class="site-map-toggle collapsed">Sitemap</a>
+
+	<div class="container-fluid" id="site-map">
+		<div class="col-sm-6 col-md-3">
+			
+
+
+<div class="mod mod-linklist">
+	
+	
+
+
+
+	
+		
+		
+			
+				
+					
+						
+					
+					
+				
+
+				
+					
+					
+						<h3>Cussegl federal</h3>
+					
+				
+
+			
+			
+			
+				
+				
+					<ul >
+						
+							<li>
+								
+									
+										<a href="/gov/rm/pagina-iniziala/cussegl-federal/commembras-e-commembers-dal-cussegl-federal.html" title="Commembras e commembers dal Cussegl federal" aria-label="Commembras e commembers dal Cussegl federal" data-skipextcss="true">Commembras e commembers dal Cussegl federal</a>
+									
+									
+								
+							</li>
+						
+							<li>
+								
+									
+										<a href="/gov/rm/pagina-iniziala/cussegl-federal/elecziun-cussegl-federal.html" title="Elecziun dal Cussegl federal" aria-label="Elecziun dal Cussegl federal" data-skipextcss="true">Elecziun dal Cussegl federal</a>
+									
+									
+								
+							</li>
+						
+							<li>
+								
+									
+										<a href="/gov/rm/pagina-iniziala/cussegl-federal/incumbensas.html" title="Incumbensas" aria-label="Incumbensas" data-skipextcss="true">Incumbensas</a>
+									
+									
+								
+							</li>
+						
+							<li>
+								
+									
+										<a href="/gov/rm/pagina-iniziala/cussegl-federal/istorgia-dal-cussegl-federal.html" title="Istorgia dal Cussegl federal" aria-label="Istorgia dal Cussegl federal" data-skipextcss="true">Istorgia dal Cussegl federal</a>
+									
+									
+								
+							</li>
+						
+							<li>
+								
+									
+										<a href="/gov/rm/pagina-iniziala/cussegl-federal/fotografias-ed-pleds-dal-cussegl-federal.html" title="Fotografias e pleds dal Cussegl federal" aria-label="Fotografias e pleds dal Cussegl federal" data-skipextcss="true">Fotografias e pleds dal Cussegl federal</a>
+									
+									
+								
+							</li>
+						
+							<li>
+								
+									
+										<a href="/gov/rm/pagina-iniziala/cussegl-federal/nua-lavura-la-regenza.html" title="Nua lavura la regenza?" aria-label="Nua lavura la regenza?" data-skipextcss="true">Nua lavura la regenza?</a>
+									
+									
+								
+							</li>
+						
+					</ul>
+				
+			
+			
+		
+	
+
+
+
+	
+</div>
+
+		</div>
+		<div class="col-sm-6 col-md-3">
+			
+
+
+<div class="mod mod-linklist">
+	
+	
+
+
+
+	
+		
+		
+			
+				
+					
+						
+					
+					
+				
+
+				
+					
+					
+						<h3>Presidi da la Confederaziun</h3>
+					
+				
+
+			
+			
+			
+				
+				
+					<ul >
+						
+							<li>
+								
+									
+										<a href="/gov/rm/pagina-iniziala/presidi-confederaziun/onn-presidial-2024.html" title="Onn presidial 2024" aria-label="Onn presidial 2024" data-skipextcss="true">Onn presidial 2024</a>
+									
+									
+								
+							</li>
+						
+							<li>
+								
+									
+										<a href="/gov/rm/pagina-iniziala/presidi-confederaziun/uffizi-presidenta-confederaziun.html" title="L'uffizi dal president da la Confederaziun" aria-label="L'uffizi dal president da la Confederaziun" data-skipextcss="true">L'uffizi dal president da la Confederaziun</a>
+									
+									
+								
+							</li>
+						
+							<li>
+								
+									
+										<a href="/gov/rm/pagina-iniziala/presidi-confederaziun/istorgia-presidi-confederaziun.html" title="Istorgia dal presidi da la Confederaziun " aria-label="Istorgia dal presidi da la Confederaziun " data-skipextcss="true">Istorgia dal presidi da la Confederaziun </a>
+									
+									
+								
+							</li>
+						
+					</ul>
+				
+			
+			
+		
+	
+
+
+
+	
+</div>
+
+		</div>
+		<div class="col-sm-6 col-md-3">
+			
+
+
+<div class="mod mod-linklist">
+	
+	
+
+
+
+	
+		
+		
+			
+				
+					
+						
+					
+					
+				
+
+				
+					
+					
+						<h3>Chanzlia federala</h3>
+					
+				
+
+			
+			
+			
+				
+				
+					<ul >
+						
+							<li>
+								
+									
+										<a href="/gov/rm/pagina-iniziala/chanzlia-federala/chancelier-federal.html" title="Il Chancelier federal" aria-label="Il Chancelier federal" data-skipextcss="true">Il Chancelier federal</a>
+									
+									
+								
+							</li>
+						
+							<li>
+								
+									
+										<a href="/gov/rm/pagina-iniziala/chanzlia-federala/vizekanzler_in.html" title="Vicechanceliera Rachel Salzmann" aria-label="Vicechanceliera Rachel Salzmann" data-skipextcss="true">Vicechanceliera Rachel Salzmann</a>
+									
+									
+								
+							</li>
+						
+							<li>
+								
+									
+										<a href="/gov/rm/pagina-iniziala/chanzlia-federala/vizekanzler_brsprecher.html" title="Vicechancelier Andrea Arcidiacono" aria-label="Vicechancelier Andrea Arcidiacono" data-skipextcss="true">Vicechancelier Andrea Arcidiacono</a>
+									
+									
+								
+							</li>
+						
+							<li>
+								
+									
+										<a href="/gov/rm/pagina-iniziala/chanzlia-federala/aufgaben-der-bundeskanzlei.html" title="Incumbensas da la Chanzlia federala" aria-label="Incumbensas da la Chanzlia federala" data-skipextcss="true">Incumbensas da la Chanzlia federala</a>
+									
+									
+								
+							</li>
+						
+					</ul>
+				
+			
+			
+		
+	
+
+
+
+	
+</div>
+
+		</div>
+		<div class="col-sm-6 col-md-3">
+			
+
+
+<div class="mod mod-linklist">
+	
+	
+
+
+
+	
+		
+		
+			
+				
+					
+						
+					
+					
+				
+
+				
+					
+					
+						<h3>Vinavant tar</h3>
+					
+				
+
+			
+			
+			
+				
+				
+					<ul >
+						
+							<li>
+								
+									
+										<a href="http://www.parlament.ch/r/Paginas/default.aspx" aria-label="Parlament" target="_blank" title="">Parlament</a>
+									
+									
+								
+							</li>
+						
+							<li>
+								
+									
+										<a href="https://www.ch.ch/rm/demokratie/" aria-label="Il sistem politic svizzer" target="_blank" title="">Il sistem politic svizzer</a>
+									
+									
+								
+							</li>
+						
+					</ul>
+				
+			
+			
+		
+	
+
+
+
+	
+</div>
+
+		</div>
+		<div class="col-sm-6 col-md-3">
+			
+
+
+<div class="mod mod-linklist">
+	
+	
+
+
+
+	
+		
+		
+			
+				
+					
+						
+					
+					
+				
+
+				
+					
+					
+						<h3>Dretg Federal</h3>
+					
+				
+
+			
+			
+			
+				
+				
+					<ul >
+						
+							<li>
+								
+									
+										<a href="/gov/rm/pagina-iniziala/bundesrecht/suche-und-neuigkeiten.html" title="Retschertga" aria-label="Retschertga" data-skipextcss="true">Retschertga</a>
+									
+									
+								
+							</li>
+						
+							<li>
+								
+									
+										<a href="/gov/rm/pagina-iniziala/bundesrecht/collecziun-sistematica.html" title="Collecziun sistematica" aria-label="Collecziun sistematica" data-skipextcss="true">Collecziun sistematica</a>
+									
+									
+								
+							</li>
+						
+					</ul>
+				
+			
+			
+		
+	
+
+
+
+	
+</div>
+
+		</div>
+		<div class="col-sm-6 col-md-3">
+			
+
+
+<div class="mod mod-linklist">
+	
+	
+
+
+
+	
+		
+		
+			
+				
+					
+						
+					
+					
+				
+
+				
+					
+					
+						<h3>Documentaziun</h3>
+					
+				
+
+			
+			
+			
+				
+				
+					<ul >
+						
+							<li>
+								
+									
+										<a href="/gov/rm/pagina-iniziala/documentaziun/votaziuns.html" title="Votaziuns dal pievel" aria-label="Votaziuns dal pievel" data-skipextcss="true">Votaziuns dal pievel</a>
+									
+									
+								
+							</li>
+						
+							<li>
+								
+									
+										<a href="/gov/rm/pagina-iniziala/documentaziun/reden.html" title="Pleds" aria-label="Pleds" data-skipextcss="true">Pleds</a>
+									
+									
+								
+							</li>
+						
+							<li>
+								
+									
+										<a href="/gov/rm/pagina-iniziala/documentaziun/access-a-documents-uffizials.html" title="Access a documents uffizials" aria-label="Access a documents uffizials" data-skipextcss="true">Access a documents uffizials</a>
+									
+									
+								
+							</li>
+						
+							<li>
+								
+									
+										<a href="/gov/rm/pagina-iniziala/documentaziun/dossiers.html" title="dossiers" aria-label="dossiers" data-skipextcss="true">dossiers</a>
+									
+									
+								
+							</li>
+						
+							<li>
+								
+									
+										<a href="/gov/rm/pagina-iniziala/documentaziun/impressum.html" title="Impressum" aria-label="Impressum" data-skipextcss="true">Impressum</a>
+									
+									
+								
+							</li>
+						
+							<li>
+								
+									
+										<a href="/gov/rm/pagina-iniziala/documentaziun/communicaziun-a-las-medias.html" title="Communicaziuns a las medias" aria-label="Communicaziuns a las medias" data-skipextcss="true">Communicaziuns a las medias</a>
+									
+									
+								
+							</li>
+						
+					</ul>
+				
+			
+			
+		
+	
+
+
+
+	
+</div>
+
+		</div>
+		<div class="col-sm-6 col-md-3">
+			
+
+
+<div class="mod mod-linklist">
+	
+	
+
+
+
+	
+		
+		
+			
+				
+					
+						
+					
+					
+				
+
+				
+					
+					
+						<h3>Departaments</h3>
+					
+				
+
+			
+			
+			
+				
+				
+					<ul >
+						
+							<li>
+								
+									
+										<a href="/gov/rm/pagina-iniziala/departaments/departament-dals-affars-exteriurs-dfae.html" title="Departament federal d'affars exteriurs (DFAE)" aria-label="Departament federal d'affars exteriurs (DFAE)" data-skipextcss="true">Departament federal d'affars exteriurs (DFAE)</a>
+									
+									
+								
+							</li>
+						
+							<li>
+								
+									
+										<a href="/gov/rm/pagina-iniziala/departaments/departament-da-intern-dfi.html" title="Departament da l'intern (DFI)" aria-label="Departament da l'intern (DFI)" data-skipextcss="true">Departament da l'intern (DFI)</a>
+									
+									
+								
+							</li>
+						
+							<li>
+								
+									
+										<a href="/gov/rm/pagina-iniziala/departaments/departament-da-giustia-polizia-dfgp.html" title="Departament da giustia e polizia (DFGP)" aria-label="Departament da giustia e polizia (DFGP)" data-skipextcss="true">Departament da giustia e polizia (DFGP)</a>
+									
+									
+								
+							</li>
+						
+							<li>
+								
+									
+										<a href="/gov/rm/pagina-iniziala/departaments/departament-federal-da-defensiun-protecziun-da-la-populaziun-e-sport-ddps.html" title="Departament da defensiun, protecziun da la populaziun e sport (DDPS)" aria-label="Departament da defensiun, protecziun da la populaziun e sport (DDPS)" data-skipextcss="true">Departament da defensiun, protecziun da la populaziun e sport (DDPS)</a>
+									
+									
+								
+							</li>
+						
+							<li>
+								
+									
+										<a href="/gov/rm/pagina-iniziala/departaments/departament-finanzas-dff.html" title="Departament da finanzas (DFF)" aria-label="Departament da finanzas (DFF)" data-skipextcss="true">Departament da finanzas (DFF)</a>
+									
+									
+								
+							</li>
+						
+							<li>
+								
+									
+										<a href="/gov/rm/pagina-iniziala/departaments/departament-economia-furmaziun-retschertga-defr.html" title="Departament d'economia, furmaziun e retschertga (DEFR)" aria-label="Departament d'economia, furmaziun e retschertga (DEFR)" data-skipextcss="true">Departament d'economia, furmaziun e retschertga (DEFR)</a>
+									
+									
+								
+							</li>
+						
+							<li>
+								
+									
+										<a href="/gov/rm/pagina-iniziala/departaments/departament-ambient-traffic-energia-communicaziun-datec.html" title="Departament per ambient, traffic, energia e communicaziun (DATEC)" aria-label="Departament per ambient, traffic, energia e communicaziun (DATEC)" data-skipextcss="true">Departament per ambient, traffic, energia e communicaziun (DATEC)</a>
+									
+									
+								
+							</li>
+						
+					</ul>
+				
+			
+			
+		
+	
+
+
+
+	
+</div>
+
+		</div>
+		<div class="col-sm-6 col-md-3">
+			
+
+
+<div class="mod mod-linklist">
+	
+	
+
+
+
+	
+		
+		
+			
+				
+					
+						
+					
+					
+				
+
+				
+					
+					
+						<h3>Respostas a las burgaisas ed als burgais</h3>
+					
+				
+
+			
+			
+			
+				
+				
+					<ul >
+						
+							<li>
+								
+									
+										<a href="https://www.ch.ch/rm" aria-label="ch.ch - tut ils temas" target="_blank" title="">ch.ch - tut ils temas</a>
+									
+									
+								
+							</li>
+						
+							<li>
+								
+									
+										<a href="https://www.ch.ch/rm/reglas-da-traffic-e-multas-disciplinaras-en-svizra/" aria-label="Reglas da traffic" target="_blank" title="">Reglas da traffic</a>
+									
+									
+								
+							</li>
+						
+							<li>
+								
+									
+										<a href="https://www.ch.ch/rm/permissiuns-da-dimora-per-la-svizra" aria-label="Entrada e dimora en Svizra" target="_blank" title="">Entrada e dimora en Svizra</a>
+									
+									
+								
+							</li>
+						
+							<li>
+								
+									
+										<a href="https://www.ch.ch/rm/votaziuns-e-elecziuns/votaziuns/co-vegn-il-cedel-da-votar-empleni-en-moda-correcta/" aria-label="Co vegn il cedel da votar emplen&igrave; en moda correcta?" target="_blank" title="">Co vegn il cedel da votar emplen&igrave; en moda correcta?</a>
+									
+									
+								
+							</li>
+						
+					</ul>
+				
+			
+			
+		
+	
+
+
+
+	
+</div>
+
+		</div>
+	</div>
+</div>
+				
+			
+		
+    
+
+
+  	<div class="container-fluid">
+  		
+	
+
+
+	
+		
+		
+			
+		
+	
+
+
+
+		
+	
+
+<div class="mod mod-cobranding">
+    
+        
+            
+        
+        
+    
+</div>
+
+
+
+
+  		<!-- begin: logo phone -->
+		
+			
+			
+
+	
+		
+<div class="mod mod-logo">
+	
+	
+		
+			<hr class="footer-line visible-xs">
+			<img src="/gov/rm/_jcr_content/logo/image.imagespooler.png/1573197683467/Logo Schweizerische Eidgenossenschaft.png" class="visible-xs" alt="Logo Confederaziun svizra - turnar a la pagina iniziala"/>
+		
+		
+	
+	
+</div>
+	
+	
+
+
+			
+		
+	 	<!-- end: logo phone -->
+  	</div>
+
+    
+
+<div class="footer-address">
+	
+
+	<span class="hidden-xs">Il Cussegl federal</span>
+
+
+	
+
+	
+		
+			<nav class="pull-right">
+				<ul>
+					
+						<li><a href="https://www.admin.ch/gov/rm/pagina-iniziala/infurmaziuns-giuridicas.html" aria-label="Basas legalas" target="_blank" title="">Basas legalas</a></li>
+					
+						<li><a href="/gov/rm/pagina-iniziala/documentaziun/impressum.html" target="_self" title="Impressum" aria-label="Impressum" data-skipextcss="true">Impressum</a></li>
+					
+				</ul>
+			</nav>
+		
+		
+	
+
+
+</div>
+
+
+  
+  
+
+</footer>        
+
+
+    <div class="modal" id="nav_modal_rnd">
+        <!-- modal -->
+    </div>
+
+</div>
+<!-- end: container -->
+
+
+
+<script src="/etc.clientlibs/clientlibs/granite/jquery/granite/csrf.min.js"></script>
+<script src="/etc/clientlibs/granite/jquery/granite/csrf.min.js"></script>
+
+
+
+	<script type="text/javascript" src="/etc/designs/core/frontend/modules.js"></script>
+
+
+
+	
+	
+	
+		<script src="/etc/designs/gov-frontend/modules.js"></script>
+	
+	
+
+
+
+	
+
+
+
+
+
+
+	<!-- bdef9Vn5imj38jFtvtB0RdqjKgWgV9bmwrsqfQJ9vMgRj9QTE3kFTttwCIEa6PzlHAGGTqGtl3jVenxSqdRrhsAv2NMVhSTJjZIq0OlD1DSlZfSPIr0jlRmmAdH3EitaqG76sVlrjOx5BvRp7F99w7XCVV2opDbd1mALbDQx3zsKp1Uu5q6oRzHTuxUdIgclzU3tGABnFO6XDmmmxZkgXvDVovCOsOywvwePVf1EjrS0K7longP0VlP53EQcnBl7VJ9aKvjKYwWPQsk7gGI3J5WonotAbhL1sK1k5A5RJC02ej5lnPnIWuoRyaVaKxAxhy1CaUuWC4UB1iRpAV2fElYqw8RZCROJyqxXj4sX0PXIAbElBlGUvsoL8Tosk1Ch3OxOZkfKZEhqhPGVRpRhhL8t7jmYGsh40v1vDEhx3H6nTUsB5ej5TtgEhU8fueuAvkPXiatGIbFVrT2HL2oaio2QvAbHSiC9lPtI7nq1JO1IUhDToVCKEo35LifGRrYybehoOqWrVlWwScXwfeBOvaZioMwXNgYHCCi5YUbwmNPf4cENfFiu1uC5sTCmlRCxiH70bomeFV8WwwDSicYlRp4T9kFlkOTnt9ZRqiKEW1kZUnvj3JIhMNG25p30qDApnJhfGd9OyOIBHjrbdoRR5ZIXYf4MQShZDdEyQ1CNj1DcIzkxiOYhu7rJYkFhOeIKJ2KyzwdUx2EEOlfnT1iWKnNVlz4ZUoNDU9g3EVAeHupG7wM9BMuD0fNixV8koe2E6t20rDwh2tE3TpVksZGWKfNLxfSENmLC5L6x855GZeMTHBgYzVbzI6pm66n4AfXvjPog4r3q967bv9vEmw4qgCwRBUBFEPD3xJo3ZOU0YrZus0GqdduIaDhmGaqW4IEa3Jei5sJRedouzKI0YLkliRg06UJn8Ziv3P4Xr0TxRU70DBaeSjTTdzrlxdpIoFFxrljpi3DDaizs3jfCDSYWo4SaL37JN9GNP951Zm9zetnkxrVB9QmtDLc5np4bw5imNBYgdaaEj2ZMr4uTIe33G2gon0Dimw9KXlCzpvixk4ZdPiv69pl1ScL5VPor3Bdaff4rihGZeZ2sAWCMVemZfFD05v4tCOhkGZOqscxhdAo4smpweQNV6uhA626UenQIeVTflTzArnvchyELukFO6ToalcebGMSdycE7zo7Bqg5fBGkYipzPaoggDmHyRCBRzfvBGYr1VZGs2ff54HmTYZHuAA4sMczz3VUtAgQHZieasE07VqGZvzZX1B4gOjKGafvcxVoCJG6Hr7UePuQAh5469J84TuUnEdUaOvGy21S9THHsdBHtMlPnL4va7NHlMejsf8uQmNpkOeeOlqPcrYEeNMXCJfmEbaQEzEntOmI2ed4CVL0MJvGF1hrDVEqiBzED2zg1tEq05UJbsnJ4qUtvhJ7elw10VrfRN1L4u9seNot5XLkt89qlWaVJNWJvxCcU0YEqA1psx4wl1ZJAyaI8SEHFUmH6XNp1dgXlbw8jsFie88Xzn3kJnYoonyEkGIDotaNjHmTTzME1vZ8esaojkwTBULZiGlWereWYZck92OrbC4tDqPtCqnxx3sr36zbWPIUEK88DwB4hbptoi1VNZlQBA9gzK6HVHqkICsgjeccaiUfBxA1jJWBT4QTHg9At5lJxC712AUmVAUhTZKHY5Hxb7tkYssUbxZCRNshlsQ62xSH43Pfv0zpr6RVc3AbJJeCYTL7fSiEhTWfxNfwlugoFIywV6fWz1rZTaS1PAy7jmdKlfDAYb56DT6g79V9PXu0JHunPe69fogUmBmsiPaRsTcyHl4B7DOFd -->
+
+
+
+
+
+ 
+	
+
+
+
+
+	<!-- Matomo -->
+<script type="text/javascript">
+  var _paq = window._paq || [];
+  /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="https://analytics.bit.admin.ch/";
+    _paq.push(['setTrackerUrl', u+'matomo.php']);
+    _paq.push(['setSiteId', '29']);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<!-- End Matomo Code -->
+
+
+
+
+
+</body>
+
+    
+
+</html>
