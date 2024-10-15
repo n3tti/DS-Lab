@@ -2,11 +2,12 @@
 #
 # Don't forget to add your pipeline to the ITEM_PIPELINES setting
 # See: https://docs.scrapy.org/en/latest/topics/item-pipeline.html
-
+import logging
 
 # useful for handling different item types with a single interface
 from itemadapter import ItemAdapter
 from scrapy.exceptions import DropItem
+from scrapy import logformatter
 
 import csv
 import uuid
@@ -14,7 +15,6 @@ import json
 import os
 import shutil
 import pdb
-
 
 
 
@@ -96,6 +96,8 @@ class DuplicatesPipeline:
         return item
     
 class MetadataPipeline:
+    def __init__(self):
+        self.logger = logging.getLogger(__name__)
 
     def open_spider(self, spider):
         self.file = open('metadata.json', 'w')
@@ -107,9 +109,15 @@ class MetadataPipeline:
         import json
 
         keys_to_save = ["id", "depth", "url", "content_type", "content_length", "content_encoding", "last_modified",
-                        "date", "cousin_urls", "title", "content"]
+                        "date", "cousin_urls", "title", "content", "description", "keywords", "pdf_links"]
 
-        dic = {key: item[key] for key in keys_to_save}
+        dic = {}
+        for key in keys_to_save:
+            if key in item:
+                dic[key] = item[key]
+            else:
+                self.logger.warning(f"Key '{key}' not found in item")
+                dic[key] = None
 
         line = json.dumps(dic) + "\n"
         self.file.write(line)

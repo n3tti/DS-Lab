@@ -24,3 +24,5 @@ class PageItem(scrapy.Item):
     content = scrapy.Field()
     title = scrapy.Field()
     pdf_links = scrapy.Field()
+    description = scrapy.Field()
+    keywords = scrapy.Field()
