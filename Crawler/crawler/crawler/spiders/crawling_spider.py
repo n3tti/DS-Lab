@@ -15,6 +15,7 @@ class CrawlingSpider(CrawlSpider):
     #'RETRY_HTTP_CODES': [500, 502, 503, 504, 522, 524, 408, 429]
     'LOG_LEVEL': 'ERROR',  # Only log errors
     'LOG_FILE': 'crawler.log',  # Save logs to this file
+    "LOG_FILE_APPEND" : False,
     'LOG_STDOUT': False  # Don't print log messages to stdout
     }
     
@@ -28,14 +29,12 @@ class CrawlingSpider(CrawlSpider):
     )
 
 
-    def parse_item(self, response, parent_url=[]):
+    def parse_item(self, response):
         item = PageItem()
         item["id"] = None
         item["status"] = response.status
         item["depth"] = response.meta["depth"]
         item["url"] = response.url 
-        item["parent_url"] = parent_url
-
         item["child_urls"] = {}
         item["cousin_urls"] = {}
 

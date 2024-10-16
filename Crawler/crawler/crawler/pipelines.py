@@ -24,9 +24,9 @@ class FilterURLPipeline():
 
     def process_item(self, item, spider):
         if item["status"] != 200 or item["content_type"] is None:
-            raise DropItem("test")
+            raise DropItem()
         elif not item["content_type"].split(";")[0] in self.allowed_content_type: 
-            raise DropItem("test")
+            raise DropItem()
         else :
             return item
 
@@ -119,8 +119,6 @@ class DownloadContentPipeline:
             return item
         content_type = item["content_type"].split(";")[0]
         if not (content_type in self.folders):
-            print("Content type error...")
-            print(content_type)
             return item
         file = open("{}/{}.bin".format(content_type, item["id"]), "wb")
         file.write(item["content_body"])
