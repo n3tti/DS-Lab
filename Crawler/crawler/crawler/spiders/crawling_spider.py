@@ -1,7 +1,8 @@
-
+from scrapy import Request
 from scrapy.spiders import CrawlSpider, Rule
 from scrapy.linkextractors import LinkExtractor
 from crawler.items import PageItem
+import pdb
 
 class CrawlingSpider(CrawlSpider):
     name = "mycrawler"
@@ -19,13 +20,14 @@ class CrawlingSpider(CrawlSpider):
     'LOG_STDOUT': False  # Don't print log messages to stdout
     }
     
+
     rules = (
-        Rule(LinkExtractor(allow=(), deny=(
+        Rule(LinkExtractor(allow=allowed_domains, deny=(
             r'\.docx$', r'\.xlsx$', r'\.pptx$', r'\.zip$', r'\.tar$', r'\.gz$', r'\.jpg$', 
             r'\.jpeg$', r'\.gif$', r'\.svg$', r'\.mp3$', r'\.mp4$', r'\.avi$', r'\.mov$', 
             r'\.wmv$', r'\.txt$', r'\.json$', r'\.csv$', r'\.xml$', r'^mailto:', r'\.js$', 
             r'\.css$', r'\.exe$', r'\.bin$'
-        )), callback='parse_item', follow=True),
+        )), callback='parse_item', follow=True, process_request='add_parent_url'),
     )
 
 
@@ -54,10 +56,4 @@ class CrawlingSpider(CrawlSpider):
                 languages_dict[lang] = response.urljoin(href)
         item['cousin_urls'] = languages_dict
 
-        for link in response.css('a::attr(href)').getall():
-            if link not in item["cousin_urls"].keys() and link != response.url:
-                child_url = response.urljoin(link)
-                item["child_urls"][child_url] = None
-        yield item
-            
             
