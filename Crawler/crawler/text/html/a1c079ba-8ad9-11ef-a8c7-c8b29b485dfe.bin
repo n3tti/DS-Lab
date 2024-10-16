@@ -1,0 +1,2888 @@
+
+<!DOCTYPE HTML>
+<!--[if lt IE 7 ]> <html lang="it" class="no-js ie6 oldie"> <![endif]-->
+<!--[if IE 7 ]> <html lang="it" class="no-js ie7 oldie"> <![endif]-->
+<!--[if IE 8 ]> <html lang="it" class="no-js ie8 oldie"> <![endif]-->
+<!--[if IE 9 ]> <html lang="it" class="no-js ie9"> <![endif]-->
+<!--[if gt IE 9 ]><!--><html lang="it" class="no-js no-ie"> <!--<![endif]-->
+
+
+    
+<head>
+    
+    
+
+
+	
+	
+		<title>L&#039;UFAM in breve</title>
+	
+	
+
+
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta http-equiv="cleartype" content="on" />
+
+
+	<meta name="msapplication-TileColor" content="#ffffff"/>
+	<meta name="msapplication-TileImage" content="/etc/designs/core/frontend/guidelines/img/ico/mstile-144x144.png"/>
+	<meta name="msapplication-config" content="/etc/designs/core/frontend/guidelines/img/ico/browserconfig.xml"/>
+
+
+
+	
+	
+		
+	
+
+
+
+
+	<meta name="google-site-verification" content="eqrN_uQT4VV6q17UTz1tI0vtMXuz6TRvj145-p_WndY" />
+
+
+<meta name="language" content="it" />
+<meta name="author" content="Ufficio federale dell&#039;ambiente UFAM" />
+
+
+
+
+	<!-- current page in other languages -->
+	
+		<link rel="alternate" type="text/html" href="/bafu/de/home/amt/das-bafu-in-kuerze.html" hreflang="de" lang="de"/>
+	
+		<link rel="alternate" type="text/html" href="/bafu/en/home/office/the-foen-in-brief.html" hreflang="en" lang="en"/>
+	
+		<link rel="alternate" type="text/html" href="/bafu/it/home/ufficio/l-ufam-in-breve.html" hreflang="it" lang="it"/>
+	
+		<link rel="alternate" type="text/html" href="/bafu/fr/home/office/l-ofev-en-bref.html" hreflang="fr" lang="fr"/>
+	
+
+
+
+
+	<meta name="twitter:card" content="summary"/>
+	
+	
+		<meta property="og:url" content="https://www.bafu.admin.ch/bafu/it/home/das-bafu/das-bafu-in-kuerze.html"/>
+	
+	<meta property="og:type" content="article"/>
+	
+		<meta property="og:title" content="L&#039;UFAM in breve"/>
+	
+	
+	
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+	<!--style type="text/css" id="antiClickjack">body{display:none !important;}</style-->
+	<script type="text/javascript">
+
+		var styleElement = document.createElement('STYLE');
+		styleElement.setAttribute('id', 'antiClickjack');
+		styleElement.setAttribute('type', 'text/css');
+		styleElement.innerHTML = 'body {display:none !important;}';
+		document.getElementsByTagName('HEAD')[0].appendChild(styleElement);
+
+		if (self === top) {
+			var antiClickjack = document.getElementById("antiClickjack");
+			antiClickjack.parentNode.removeChild(antiClickjack);
+		} else {
+			top.location = self.location;
+		}
+	</script>
+
+
+
+
+<script src="/etc.clientlibs/clientlibs/granite/jquery.min.js"></script>
+<script src="/etc.clientlibs/clientlibs/granite/utils.min.js"></script>
+
+
+
+	<script>
+		Granite.I18n.init({
+			locale: "it",
+			urlPrefix: "/libs/cq/i18n/dict."
+		});
+	</script>
+
+
+
+	<link rel="stylesheet" href="/etc/designs/core/frontend/guidelines.min.css" type="text/css">
+
+	<link rel="stylesheet" href="/etc/designs/core/frontend/modules.min.css" type="text/css">
+
+	
+	<link rel="shortcut icon" href="/etc/designs/core/frontend/guidelines/img/ico/favicon.ico">
+	<link rel="apple-touch-icon" sizes="57x57" href="/etc/designs/core/frontend/guidelines/img/ico/apple-touch-icon-57x57.png"/>
+	<link rel="apple-touch-icon" sizes="114x114" href="/etc/designs/core/frontend/guidelines/img/ico/apple-touch-icon-114x114.png"/>
+	<link rel="apple-touch-icon" sizes="72x72" href="/etc/designs/core/frontend/guidelines/img/ico/apple-touch-icon-72x72.png"/>
+	<link rel="apple-touch-icon" sizes="144x144" href="/etc/designs/core/frontend/guidelines/img/ico/apple-touch-icon-144x144.png"/>
+	<link rel="apple-touch-icon" sizes="60x60" href="/etc/designs/core/frontend/guidelines/img/ico/apple-touch-icon-60x60.png"/>
+	<link rel="apple-touch-icon" sizes="120x120" href="/etc/designs/core/frontend/guidelines/img/ico/apple-touch-icon-120x120.png"/>
+	<link rel="apple-touch-icon" sizes="76x76" href="/etc/designs/core/frontend/guidelines/img/ico/apple-touch-icon-76x76.png"/>
+	<link rel="icon" type="image/png" href="/etc/designs/core/frontend/guidelines/img/ico/favicon-96x96.png" sizes="96x96"/>
+	<link rel="icon" type="image/png" href="/etc/designs/core/frontend/guidelines/img/ico/favicon-16x16.png" sizes="16x16"/>
+	<link rel="icon" type="image/png" href="/etc/designs/core/frontend/guidelines/img/ico/favicon-32x32.png" sizes="32x32"/>
+
+
+
+
+
+
+
+	<!--[if lt IE 9]>
+		<script src="https://cdnjs.cloudflare.com/polyfill/v2/polyfill.js?version=4.8.0"></script>
+	<![endif]-->
+
+
+
+    
+
+
+
+    
+        
+
+	
+
+    
+
+</head>
+
+
+    
+
+<body class="mod mod-layout   skin-layout-template-contentpage">
+
+<div class="mod mod-homepage">
+<ul class="access-keys" role="navigation">
+    <li><a href="/bafu/it/home.html" accesskey="0">Homepage</a></li>
+    
+    <li><a href="#main-navigation" accesskey="1">Main navigation</a></li>
+    
+    
+    <li><a href="#content" accesskey="2">Content area</a></li>
+    
+    
+    <li><a href="#site-map" accesskey="3">Sitemap</a></li>
+    
+    
+    <li><a href="#search-field" accesskey="4">Search</a></li>
+    
+</ul>
+</div>
+
+<!-- begin: container -->
+<div class="container container-main">
+
+    
+
+
+<header style="background-size: cover; background-image:" role="banner">
+	
+
+	<div class="clearfix">
+		
+			
+
+
+	
+
+
+
+	<nav class="navbar treecrumb pull-left">
+
+		
+		
+			<h2 class="sr-only">Treecrumb amministrazione federale</h2>
+		
+
+		
+			
+				<ul class="nav navbar-nav">
+				
+
+						
+
+						
+						<li class="dropdown">
+							
+							
+								
+									<a id="federalAdministration-dropdown" href="#" aria-label="Il Consiglio federale" class="dropdown-toggle" data-toggle="dropdown"><span class="icon icon--right"></span> Il Consiglio federale</a>
+								
+								
+							
+
+							
+								
+								<ul class="dropdown-menu" role="menu" aria-labelledby="federalAdministration-dropdown">
+									
+										
+										<li class="dropdown-header">
+											
+												
+													<a href="https://www.admin.ch/gov/it/pagina-iniziale.html" aria-label="Il Consiglio federale admin.ch" target="_blank" title="">Il Consiglio federale admin.ch</a>
+												
+												
+											
+
+											
+											
+												
+													<ul>
+														<li>
+															
+																
+																
+																
+																	<a href="https://www.bk.admin.ch/bk/it/home.html" aria-label="CaF: Cancelleria federale" target="_blank" title=""> CaF: Cancelleria federale</a>
+																
+															
+														</li>
+													</ul>
+												
+											
+												
+													<ul>
+														<li>
+															
+																
+																
+																
+																	<a href="http://www.eda.admin.ch/eda/it/home.html" aria-label="DFAE: Dipartimento federale degli affari esteri" target="_blank" title=""> DFAE: Dipartimento federale degli affari esteri</a>
+																
+															
+														</li>
+													</ul>
+												
+											
+												
+													<ul>
+														<li>
+															
+																
+																
+																
+																	<a href="https://www.edi.admin.ch/edi/it/home.html" aria-label="DFI: Dipartimento federale dell&#39;interno" target="_blank" title=""> DFI: Dipartimento federale dell&#39;interno</a>
+																
+															
+														</li>
+													</ul>
+												
+											
+												
+													<ul>
+														<li>
+															
+																
+																
+																
+																	<a href="http://www.ejpd.admin.ch/content/ejpd/it/home.html" aria-label="DFGP: Dipartimento federale di giustizia e polizia" target="_blank" title=""> DFGP: Dipartimento federale di giustizia e polizia</a>
+																
+															
+														</li>
+													</ul>
+												
+											
+												
+													<ul>
+														<li>
+															
+																
+																
+																
+																	<a href="http://www.vbs.admin.ch/it/home.html" aria-label="DDPS: Dipartimento federale della difesa, della protezione della popolazione e dello sport" target="_blank" title=""> DDPS: Dipartimento federale della difesa, della protezione della popolazione e dello sport</a>
+																
+															
+														</li>
+													</ul>
+												
+											
+												
+													<ul>
+														<li>
+															
+																
+																
+																
+																	<a href="https://www.efd.admin.ch/efd/it/home.html" aria-label="DFF: Dipartimento federale delle finanze" target="_blank" title=""> DFF: Dipartimento federale delle finanze</a>
+																
+															
+														</li>
+													</ul>
+												
+											
+												
+													<ul>
+														<li>
+															
+																
+																
+																
+																	<a href="https://www.wbf.admin.ch/wbf/it/home.html" aria-label="DEFR: Dipartimento federale dell&#39;economia, della formazione e della ricerca" target="_blank" title=""> DEFR: Dipartimento federale dell&#39;economia, della formazione e della ricerca</a>
+																
+															
+														</li>
+													</ul>
+												
+											
+												
+													<ul>
+														<li>
+															
+																
+																
+																
+																	<a href="https://www.uvek.admin.ch/uvek/it/home.html" aria-label="DATEC: Dipartimento federale dell&#39;ambiente, dei trasporti, dell&#39;energia e delle comunicazioni" target="_blank" title=""> DATEC: Dipartimento federale dell&#39;ambiente, dei trasporti, dell&#39;energia e delle comunicazioni</a>
+																
+															
+														</li>
+													</ul>
+												
+											
+										</li>
+									
+								</ul>
+							
+						</li>
+					
+
+						
+
+						
+						<li class="dropdown">
+							
+							
+								
+									<a id="departement-dropdown" href="#" aria-label="DATEC" class="dropdown-toggle" data-toggle="dropdown"><span class="icon icon--right"></span> DATEC</a>
+								
+								
+							
+
+							
+								
+								<ul class="dropdown-menu" role="menu" aria-labelledby="departement-dropdown">
+									
+										
+										<li class="dropdown-header">
+											
+												
+													<a href="https://www.uvek.admin.ch/uvek/it/home.html" aria-label="DATEC: Dipartimento federale dell&#39;ambiente, dei trasporti, dell&#39;energia e delle comunicazioni" target="_blank" title="">DATEC: Dipartimento federale dell&#39;ambiente, dei trasporti, dell&#39;energia e delle comunicazioni</a>
+												
+												
+											
+
+											
+											
+												
+													<ul>
+														<li>
+															
+																
+																
+																
+																	<a href="http://www.bav.admin.ch/" aria-label="UFT: Ufficio federale dei trasporti" target="_blank" title=""> UFT: Ufficio federale dei trasporti</a>
+																
+															
+														</li>
+													</ul>
+												
+											
+												
+													<ul>
+														<li>
+															
+																
+																
+																
+																	<a href="https://www.bazl.admin.ch/bazl/it/home.html" aria-label="UFAC: Ufficio federale dell’aviazione civile" target="_blank" title=""> UFAC: Ufficio federale dell’aviazione civile</a>
+																
+															
+														</li>
+													</ul>
+												
+											
+												
+													<ul>
+														<li>
+															
+																
+																
+																
+																	<a href="https://www.bfe.admin.ch/bfe/it/home.html" aria-label="UFE: Ufficio federale dell’energia" target="_blank" title=""> UFE: Ufficio federale dell’energia</a>
+																
+															
+														</li>
+													</ul>
+												
+											
+												
+													<ul>
+														<li>
+															
+																
+																
+																
+																	<a href="http://www.astra.admin.ch/" aria-label="USTRA: Ufficio federale delle strade" target="_blank" title=""> USTRA: Ufficio federale delle strade</a>
+																
+															
+														</li>
+													</ul>
+												
+											
+												
+													<ul>
+														<li>
+															
+																
+																
+																
+																	<a href="http://www.bakom.admin.ch/" aria-label="UFCOM: Ufficio federale delle comunicazioni" target="_blank" title=""> UFCOM: Ufficio federale delle comunicazioni</a>
+																
+															
+														</li>
+													</ul>
+												
+											
+												
+													<ul>
+														<li>
+															
+																
+																
+																
+																	<a href="https://www.bafu.admin.ch/bafu/it/home.html" aria-label="UFAM: Ufficio federale dell&#39;ambiente" target="_blank" title=""> UFAM: Ufficio federale dell&#39;ambiente</a>
+																
+															
+														</li>
+													</ul>
+												
+											
+												
+													<ul>
+														<li>
+															
+																
+																
+																
+																	<a href="http://www.are.admin.ch/" aria-label="ARE: Ufficio federale dello sviluppo territoriale" target="_blank" title=""> ARE: Ufficio federale dello sviluppo territoriale</a>
+																
+															
+														</li>
+													</ul>
+												
+											
+												
+													<ul>
+														<li>
+															
+																
+																
+																
+																	<a href="http://www.sust.admin.ch/" aria-label="SISI: Servizio d&#39;inchiesta svizzero sugli infortuni" target="_blank" title=""> SISI: Servizio d&#39;inchiesta svizzero sugli infortuni</a>
+																
+															
+														</li>
+													</ul>
+												
+											
+												
+													<ul>
+														<li>
+															
+																
+																
+																
+																	<a href="http://www.esti.admin.ch/" aria-label="ESTI: Ispettorato federale degli impianti a corrente forte" target="_blank" title=""> ESTI: Ispettorato federale degli impianti a corrente forte</a>
+																
+															
+														</li>
+													</ul>
+												
+											
+												
+													<ul>
+														<li>
+															
+																
+																
+																
+																	<a href="https://www.ensi.ch/it/" aria-label="IFSN: Ispettorato federale della sicurezza nucleare" target="_blank" title=""> IFSN: Ispettorato federale della sicurezza nucleare</a>
+																
+															
+														</li>
+													</ul>
+												
+											
+										</li>
+									
+								</ul>
+							
+						</li>
+					
+
+						
+
+						
+						<li class="dropdown">
+							
+							
+								
+									<a id="federalOffice-dropdown" href="#" aria-label="UFAM" class="dropdown-toggle" data-toggle="dropdown"><span class="icon icon--right"></span> UFAM</a>
+								
+								
+							
+
+							
+								
+								<ul class="dropdown-menu" role="menu" aria-labelledby="federalOffice-dropdown">
+									
+										
+										<li class="dropdown-header">
+											
+												
+													<a href="/bafu/it/home.html" aria-label="Pagina iniziale" data-skipextcss="true" target="_self">Pagina iniziale</a>
+												
+												
+											
+
+											
+											
+										</li>
+									
+								</ul>
+							
+						</li>
+					
+				</ul>
+			
+			
+		
+	</nav>
+
+
+
+
+		
+
+		
+<!-- begin: metanav -->
+<section class="nav-services clearfix">
+	
+	
+		
+
+
+	
+	<h2>L&#39;UFAM in breve</h2>
+
+	
+
+		
+		
+
+		<nav class="nav-lang">
+			<ul>
+				
+					<li>
+						
+							
+							
+								<a href="/bafu/de/home/amt/das-bafu-in-kuerze.html" lang="de" title="tedesco" aria-label="tedesco">DE</a>
+							
+							
+						
+					</li>
+				
+					<li>
+						
+							
+							
+								<a href="/bafu/fr/home/office/l-ofev-en-bref.html" lang="fr" title="francese" aria-label="francese">FR</a>
+							
+							
+						
+					</li>
+				
+					<li>
+						
+							
+								<a class="active" lang="it" title="italiano selected" aria-label="italiano selected">IT</a>
+							
+							
+							
+						
+					</li>
+				
+					<li>
+						
+							
+							
+								<a href="/bafu/en/home/office/the-foen-in-brief.html" lang="en" title="inglese" aria-label="inglese">EN</a>
+							
+							
+						
+					</li>
+				
+			</ul>
+		</nav>
+
+	
+
+
+		
+		
+
+    
+        
+            
+            
+
+                
+                <h2 class="sr-only">Service navigation</h2>
+
+                <nav class="nav-service">
+                    <ul>
+                        
+                        
+                            <li><a href="/bafu/it/home.html" title="Pagina iniziale" aria-label="Pagina iniziale" data-skipextcss="true">Pagina iniziale</a></li>
+                        
+                            <li><a href="/bafu/it/home/ufficio/servizio-media-dell-ufam.html" title="Media" aria-label="Media" data-skipextcss="true">Media</a></li>
+                        
+                            <li><a href="/bafu/it/home/ufficio/contatto-e-indirizzo-dell-ufam.html" title="Contatto" aria-label="Contatto" data-skipextcss="true">Contatto</a></li>
+                        
+                            <li><a href="/bafu/it/home/ufficio/lavorare-al-ufam.html" title="Jobs" aria-label="Jobs" data-skipextcss="true">Jobs</a></li>
+                        
+                            <li><a href="/bafu/it/home/sitemap.html" title="Mappa del sito" aria-label="Mappa del sito" data-skipextcss="true">Mappa del sito</a></li>
+                        
+                    </ul>
+                </nav>
+
+            
+        
+    
+
+
+	
+	
+</section>
+<!-- end: metanav -->
+
+	</div>
+
+	
+		
+
+	
+	
+		
+<div class="mod mod-logo">
+    
+        
+        
+            
+                <a href="/bafu/it/home.html" class="brand  hidden-xs" id="logo" title="Pagina iniziale" aria-label="Pagina iniziale">
+                    
+                        
+                            <img src="/bafu/it/_jcr_content/logo/image.imagespooler.png/1484574147227/logo.png" alt="Ufficio federale dell&apos;ambiente"/>
+                        
+                        
+                    
+                    <h2 id="logo-desktop-departement">Ufficio federale dell'ambiente UFAM
+                    </h2>
+                </a>
+                
+            
+        
+    
+</div>
+
+	
+
+
+	
+
+ 	
+		
+
+
+	
+
+
+
+	
+	
+		
+
+<div class="mod mod-searchfield">
+
+	
+		
+
+		
+			
+
+			<!-- begin: sitesearch desktop-->
+			<div class="mod mod-searchfield global-search global-search-standard">
+				<form action="/bafu/it/home/suche.html" class="form-horizontal form-search pull-right">
+					<h2 class="sr-only">Ricerca</h2>
+					<label for="search-field" class="sr-only"></label>
+					<input id="search-field" name="query" class="form-control search-field" type="text" placeholder=""/>
+                    <button class="icon icon--search icon--before" tabindex="0" role="button">
+                        <span class="sr-only"></span>
+                    </button>
+                    <button class="icon icon--close icon--after search-reset" tabindex="0" role="button"><span class="sr-only"></span></button>
+					<div class="search-results">
+						<div class="search-results-list"></div>
+					</div>
+				</form>
+			</div>
+			<!-- end: sitesearch desktop-->
+
+		
+	
+
+</div>
+
+	
+
+
+
+	
+
+	
+		
+
+
+	
+
+<div class="mod mod-themes">
+	
+
+		<nav class="navbar yamm yamm--select ddl-to-modal">
+			<h2 class="sr-only">Website A-Z</h2>
+			<ul>
+				<!-- Init dropdown with the `pull-right` class if you want to have your Topics select on the right -->
+				<li class="dropdown pull-right">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+						Parole chiave A-Z <span class="icon icon--bottom"></span>
+					</a>
+					<!-- begin: flyout -->
+					<ul class="dropdown-menu">
+						<li>
+							<!-- The `yamm-content` can contain any kind of content like tab, table, list, article... -->
+							<div class="yamm-content container-fluid">
+
+								
+								<div class="row">
+									<div class="col-sm-12">
+										<button class="yamm-close btn btn-link icon icon--after icon--close pull-right">
+											Chiudere
+										</button>
+									</div>
+								</div>
+
+								
+				                <ul class="nav nav-tabs">
+				                	
+				                	
+				                		<li><a href="#mf_keywords_tab" data-toggle="tab" data-url="/bafu/it/_jcr_content/themes.keywordsinit.html">Parole chiave A-Z</a></li>
+				                	
+				                	
+				                		<li><a href="#mf_glossary_tab" data-toggle="tab" data-url="/bafu/it/_jcr_content/themes.glossaryinit.html">Glossario</a></li>
+				                	
+				                </ul>
+
+				                
+				                <div class="tab-content">
+								
+
+								
+								
+									<div class="tab-pane" id="mf_keywords_tab"></div>
+									<h2 class="sr-only visible-print-block">Parole chiave A-Z</h2>
+								
+
+								
+								
+									<div class="tab-pane" id="mf_glossary_tab"></div>
+									<h2 class="sr-only visible-print-block">Glossario</h2>
+										
+
+								
+								</div>
+							</div>
+						</li>
+					</ul>
+				</li>
+			</ul>
+		</nav>
+
+
+</div>
+
+
+
+
+
+
+	
+
+ 	
+
+
+</header>
+
+
+
+    
+
+
+	
+	
+		
+
+<div class="mod mod-mainnavigation">
+
+	<!-- begin: mainnav -->
+	<div class="nav-main yamm navbar" id="main-navigation">
+
+		<h2 class="sr-only">
+			Navigation
+		</h2>
+
+		
+			
+
+
+<!-- mobile mainnav buttonbar -->
+ <section class="nav-mobile">
+	<div class="table-row">
+		<div class="nav-mobile-header">
+			<div class="table-row">
+				<span class="nav-mobile-logo">
+					
+						
+						
+							<img src="/etc/designs/core/frontend/guidelines/img/swiss.svg" onerror="this.onerror=null; this.src='/etc/designs/core/frontend/guidelines/img/swiss.png'" alt="Ufficio federale dell&#39;ambiente UFAM"/>
+						
+					
+				</span>
+				<h2>
+					<a href="/bafu/it/home.html" title="Pagina iniziale" aria-label="Pagina iniziale">UFAM</a>
+				</h2>
+			</div>
+		</div>
+		<div class="table-cell dropdown">
+			<a href="#" class="nav-mobile-menu dropdown-toggle" data-toggle="dropdown">
+				<span class="icon icon--menu"></span>
+			</a>
+			<div class="drilldown dropdown-menu" role="menu">
+				<div class="drilldown-container">
+					<nav class="nav-page-list">
+						
+							<ul aria-controls="submenu">
+								
+									
+									
+										<li>
+											
+												
+												
+													<a href="/bafu/it/home/temi.html">Temi</a>
+												
+											
+										</li>
+									
+								
+							</ul>
+						
+							<ul aria-controls="submenu">
+								
+									
+									
+										<li>
+											
+												
+												
+													<a href="/bafu/it/home/documentazione.html">Pubblicazioni, media</a>
+												
+											
+										</li>
+									
+								
+							</ul>
+						
+							<ul aria-controls="submenu">
+								
+									
+									
+										<li>
+											
+												
+												
+													<a href="/bafu/it/home/stato.html">Dati, indicatori, carte</a>
+												
+											
+										</li>
+									
+								
+							</ul>
+						
+							<ul aria-controls="submenu">
+								
+									
+									
+										<li>
+											
+												
+												
+													<a href="/bafu/it/home/ufficio.html">L&#39;UFAM</a>
+												
+											
+										</li>
+									
+								
+							</ul>
+						
+
+						<button class="yamm-close-bottom" aria-label="Chiudere">
+							<span class="icon icon--top" aria-hidden="true"></span>
+						</button>
+					</nav>
+				</div>
+			</div>
+		</div>
+		<div class="table-cell dropdown">
+			<a href="#" class="nav-mobile-menu dropdown-toggle" data-toggle="dropdown">
+				<span class="icon icon--search"></span>
+			</a>
+			<div class="dropdown-menu" role="menu">
+				
+				
+
+
+
+	
+		
+
+
+<div class="mod mod-searchfield">
+
+    
+        <div class="mod mod-searchfield global-search global-search-mobile">
+            <form action="/bafu/it/home/suche.html" class="form  mod-searchfield-mobile" role="form">
+                <h2 class="sr-only">Ricerca</h2>
+                <label for="search-field-phone" class="sr-only">
+                    
+                </label>
+                <input id="search-field-phone" name="query" class="search-input form-control" type="text" placeholder=""/>
+                <button class="icon icon--search icon--before" tabindex="0" role="button">
+                    <span class="sr-only"></span>
+                </button>
+                <button class="icon icon--close icon--after search-reset" tabindex="0" role="button"><span class="sr-only"></span></button>
+
+                <div class="search-results">
+                    <div class="search-results-list"></div>
+                </div>
+            </form>
+        </div>
+    
+
+</div>
+
+	
+	
+
+
+				
+			</div>
+		</div>
+	</div>
+</section>
+
+		
+
+		
+		<ul class="nav navbar-nav" aria-controls="submenu">
+
+			
+			
+
+				
+                
+				
+
+				<li class="dropdown yamm-fw  ">
+					
+						
+			      		
+							<a href="/bafu/it/home/temi.html" aria-label="Temi" class="dropdown-toggle" data-toggle="dropdown" data-url="/bafu/it/home/themen/_jcr_content/par.html">Temi</a>
+							
+							<ul class="dropdown-menu" role="menu" aria-controls="submenu">
+								<li>
+									<div class="yamm-content container-fluid">
+										<div class="row">
+											<div class="col-sm-12">
+												<button class="yamm-close btn btn-link icon icon--after icon--close pull-right">Chiudere</button>
+											</div>
+										</div>
+										<div class="row">
+											<div class="col-md-12 main-column">
+
+											</div>
+										</div>
+										<br><br><br>
+										<button class="yamm-close-bottom" aria-label="Chiudere"><span class="icon icon--top"></span></button>
+									</div>
+								</li>
+							</ul>
+						
+					
+				</li>
+			
+
+				
+                
+				
+
+				<li class="dropdown yamm-fw  ">
+					
+						
+			      		
+							<a href="/bafu/it/home/documentazione.html" aria-label="Pubblicazioni, media" class="dropdown-toggle" data-toggle="dropdown" data-url="/bafu/it/home/publikationen--medien/_jcr_content/par.html">Pubblicazioni, media</a>
+							
+							<ul class="dropdown-menu" role="menu" aria-controls="submenu">
+								<li>
+									<div class="yamm-content container-fluid">
+										<div class="row">
+											<div class="col-sm-12">
+												<button class="yamm-close btn btn-link icon icon--after icon--close pull-right">Chiudere</button>
+											</div>
+										</div>
+										<div class="row">
+											<div class="col-md-12 main-column">
+
+											</div>
+										</div>
+										<br><br><br>
+										<button class="yamm-close-bottom" aria-label="Chiudere"><span class="icon icon--top"></span></button>
+									</div>
+								</li>
+							</ul>
+						
+					
+				</li>
+			
+
+				
+                
+				
+
+				<li class="dropdown yamm-fw  ">
+					
+						
+			      		
+							<a href="/bafu/it/home/stato.html" aria-label="Dati, indicatori, carte" class="dropdown-toggle" data-toggle="dropdown" data-url="/bafu/it/home/daten--indikatoren--karten/_jcr_content/par.html">Dati, indicatori, carte</a>
+							
+							<ul class="dropdown-menu" role="menu" aria-controls="submenu">
+								<li>
+									<div class="yamm-content container-fluid">
+										<div class="row">
+											<div class="col-sm-12">
+												<button class="yamm-close btn btn-link icon icon--after icon--close pull-right">Chiudere</button>
+											</div>
+										</div>
+										<div class="row">
+											<div class="col-md-12 main-column">
+
+											</div>
+										</div>
+										<br><br><br>
+										<button class="yamm-close-bottom" aria-label="Chiudere"><span class="icon icon--top"></span></button>
+									</div>
+								</li>
+							</ul>
+						
+					
+				</li>
+			
+
+				
+                
+				
+
+				<li class="dropdown yamm-fw  current">
+					
+						
+			      		
+							<a href="/bafu/it/home/ufficio.html" aria-label="L&#39;UFAM" class="dropdown-toggle" data-toggle="dropdown" data-url="/bafu/it/home/das-bafu/_jcr_content/par.html">L&#39;UFAM<span class="sr-only">current page</span></a>
+							
+							<ul class="dropdown-menu" role="menu" aria-controls="submenu">
+								<li>
+									<div class="yamm-content container-fluid">
+										<div class="row">
+											<div class="col-sm-12">
+												<button class="yamm-close btn btn-link icon icon--after icon--close pull-right">Chiudere</button>
+											</div>
+										</div>
+										<div class="row">
+											<div class="col-md-12 main-column">
+
+											</div>
+										</div>
+										<br><br><br>
+										<button class="yamm-close-bottom" aria-label="Chiudere"><span class="icon icon--top"></span></button>
+									</div>
+								</li>
+							</ul>
+						
+					
+				</li>
+			
+		</ul>
+	</div>
+</div>
+
+	
+
+
+
+    
+
+<!-- begin: main -->
+<div class="container-fluid hidden-xs">
+	<div class="row">
+		<div class="col-sm-12">
+			
+	
+
+
+<div class="mod mod-breadcrumb">
+	<h2 id="br1" class="sr-only">Breadcrumb</h2>
+	<ol class="breadcrumb" role="menu" aria-labelledby="br1">
+		
+			<li><a href="/bafu/it/home.html" title="Pagina iniziale" aria-label="Pagina iniziale">Pagina iniziale</a><span class="icon icon--greater"></span></li>
+		
+			<li><a href="/bafu/it/home/ufficio.html" title="L'UFAM" aria-label="L'UFAM">L'UFAM</a><span class="icon icon--greater"></span></li>
+		
+		<li class="active" role="presentation">L&#39;UFAM in breve</li>
+	</ol>
+</div>
+
+	
+		</div>
+	</div>
+</div>
+
+
+
+	
+	
+		<div class="container-fluid">
+			
+
+<div class="row">
+    <div class="col-sm-4 col-md-3 drilldown">
+        
+
+<div class="mod mod-leftnavigation">
+
+		<a href="#collapseSubNav" data-toggle="collapse" class="collapsed visible-xs">Unternavigation</a>
+		<div class="drilldown-container">
+			<nav class="nav-page-list">
+				
+					<a href="/bafu/it/home.html" class="icon icon--before icon--less visible-xs">Zurück</a>
+
+					<a href="/bafu/it/home.html" class="icon icon--before icon--less"><span class="sr-only">Zurück zu </span>Pagina iniziale</a>
+				
+				<ul>
+					
+						
+							
+							
+								<li class="list-emphasis">
+									<a href="/bafu/it/home/ufficio.html">L&#39;UFAM</a>
+								</li>
+							
+						
+					
+
+					
+					
+					
+
+					
+						
+							
+							
+								
+									
+									
+										<li>
+											<a href="/bafu/it/home/ufficio/direzione.html">Direzione</a>
+										</li>
+									
+								
+							
+						
+					
+						
+							
+							
+								
+									
+									
+										<li>
+											<a href="/bafu/it/home/ufficio/divisioni-sezioni.html">Divisioni e sezioni</a>
+										</li>
+									
+								
+							
+						
+					
+						
+							
+							
+								
+									
+									
+										<li>
+											<a href="/bafu/it/home/ufficio/servizio-media-dell-ufam.html">Servizio media</a>
+										</li>
+									
+								
+							
+						
+					
+						
+							
+								<li class="active">
+									L&#39;UFAM in breve <span class="sr-only">selected</span>
+								</li>
+							
+							
+						
+					
+						
+							
+							
+								
+									
+									
+										<li>
+											<a href="/bafu/it/home/ufficio/contatto-e-indirizzo-dell-ufam.html">Contatto e indirizzo</a>
+										</li>
+									
+								
+							
+						
+					
+						
+							
+							
+								
+									
+									
+										<li>
+											<a href="/bafu/it/home/ufficio/collaborazione-con-i-cantoni.html">Collaborazione</a>
+										</li>
+									
+								
+							
+						
+					
+						
+							
+							
+								
+									
+									
+										<li>
+											<a href="/bafu/it/home/ufficio/lavorare-al-ufam.html">Lavorare all&#39;UFAM</a>
+										</li>
+									
+								
+							
+						
+					
+						
+							
+							
+								
+									
+									
+										<li>
+											<a href="/bafu/it/home/ufficio/commissioni-extraparlamentari.html">Commissioni extraparlamentari</a>
+										</li>
+									
+								
+							
+						
+					
+						
+							
+							
+								
+									
+									
+										<li>
+											<a href="/bafu/it/home/ufficio/segreterie-di-lainat-e-gin.html">LAINAT / GIN</a>
+										</li>
+									
+								
+							
+						
+					
+						
+							
+							
+								
+									
+									
+										<li>
+											<a href="/bafu/it/home/ufficio/accesso-ai-documenti-ufficiali.html">Accesso ai documenti ufficiali</a>
+										</li>
+									
+								
+							
+						
+					
+				</ul>
+			</nav>
+		</div>
+
+</div>
+
+    </div>
+    <div class="col-sm-8 col-md-9 main-column" id="content" role="main">
+        <div class="row">
+            <div class="col-md-8 main-content js-glossary-context">
+                
+
+<div class="visible-xs visible-sm">
+	<p><a href="#context-sidebar" class="icon icon--before icon--root">Context sidebar</a></p>
+</div>
+
+<div class="contentHead">
+	
+
+
+
+<div class="mod mod-backtooverview">
+	
+</div>
+
+
+	
+	
+
+
+	
+	
+		<a href="javascript:$.printPreview.printPreview()" onclick="" class="icon icon--before icon--print pull-right" title="Stampa la pagina"></a>
+	
+
+
+
+
+	
+	
+
+<div class="mod mod-contentpagefull">
+    <h1 class="text-inline">L&#39;UFAM in breve</h1>
+</div>
+
+</div>	
+
+
+
+
+
+
+<div class="mod mod-text">
+    
+        
+        
+            <article class="clearfix">
+                
+                
+                    <p class="lead">L’Ufficio federale dell’ambiente (UFAM) ha il mandato di garantire l’uso sostenibile delle risorse naturali quali il suolo, le acque, l’aria e le foreste. È responsabile della protezione della popolazione dai pericoli naturali, tutela l’ambiente e la salute umana da un inquinamento eccessivo, si impegna per la salvaguardia della biodiversità ed è competente in materia di politica ambientale internazionale.</p>
+                
+            </article>
+        
+    
+</div>
+<div class="mod mod-anchorlist">
+	
+		
+	  	
+	  		
+			
+				<ul>
+					 
+					 	<li class="anchor"><a href="#738317245" class="icon icon--before icon--root">Obiettivi e compiti</a></li>
+					 
+					 	<li class="anchor"><a href="#853271598" class="icon icon--before icon--root">Strategia</a></li>
+					 
+					 	<li class="anchor"><a href="#853271599" class="icon icon--before icon--root">L’UFAM in cifre</a></li>
+					 
+					 	<li class="anchor"><a href="#1162583512" class="icon icon--before icon--root">Bandi di concorso secondo la normativa OMC</a></li>
+					 
+					 	<li class="anchor"><a href="#-2128359841" class="icon icon--before icon--root">Fatture e modalità di pagamento</a></li>
+					 
+					 	<li class="anchor"><a href="#853271600" class="icon icon--before icon--root">Organizzazione</a></li>
+					 
+					 	<li class="anchor"><a href="#-456436636" class="icon icon--before icon--root">Storia</a></li>
+					 
+				</ul>
+			
+		
+	
+</div>
+
+<div class="mod mod-separator">
+	<hr/>
+</div>
+<div class="mod mod-text" id="738317245">
+    
+        
+        
+            <article class="clearfix">
+                
+                    <h2>Obiettivi e compiti dell&apos;UFAM </h2><p>L&apos;Ufficio federale dell&apos;ambiente (UFAM) è l&apos;autorità competente in materia di ambiente.</p><p>Conformemente al suo mandato politico, esso persegue in particolare i seguenti obiettivi:</p><ul type="disc"><li>garantire la conservazione a lungo termine e l&apos;utilizzazione sostenibile delle risorse naturali (suolo, acqua, foreste, aria, clima, diversità biologica e paesaggistica) ed eliminare i danni loro arrecati;</li><li>assicurare la protezione delle persone dall&apos;inquinamento eccessivo (provocato segnatamente dal rumore, dalle sostanze e dagli organismi nocivi, dalle radiazioni non ionizzanti, dai rifiuti, dai siti contaminati e dagli incidenti rilevanti);</li><li>assicurare la protezione delle persone e di beni importanti da pericoli idrologici e geologici (in particolare piene, terremoti, valanghe, scoscendimenti, erosioni e caduta di pietre).</li></ul><p>Per conseguire tali obiettivi, l&apos;UFAM svolge le seguenti funzioni:</p><ul type="disc"><li>prepara e applica le decisioni per una politica coerente orientata alla gestione sostenibile delle risorse naturali. Ne fanno parte segnatamente l&apos;utilizzazione sostenibile delle risorse naturali nonché la protezione delle persone dai pericoli naturali e dell&apos;ambiente dall&apos;inquinamento eccessivo;</li><li>quale base per la gestione delle risorse esegue un monitoraggio ambientale, informando sullo stato dell&apos;ambiente e sulle possibilità di utilizzare le risorse naturali in modo equilibrato e di tutelarle.</li></ul>
+
+                
+                
+            </article>
+        
+    
+</div>
+<div class="mod mod-link">
+	
+		
+		
+			<p>
+				<a href="http://www.admin.ch/opc/it/classified-compilation/19996045/index.html#a12" target="_blank" aria-label="Art.12: Ordinanza sull&rsquo;organizzazione del DATEC" class="icon icon--after icon--external" title="">Art.12: Ordinanza sull&rsquo;organizzazione del DATEC</a>
+			</p>
+		
+	
+</div>
+<div class="mod mod-separator">
+	<hr/>
+</div>
+<div class="mod mod-text" id="853271598">
+    
+        
+        
+            <article class="clearfix">
+                
+                    <h2>Strategia&nbsp;</h2>
+<p>Attualmente la politica ambientale deve affrontare tre sfide principali:</p>
+<ul type="disc">
+<li>la protezione del clima;</li>
+<li>la conservazione della biodiversità;</li>
+<li>la gestione delle risorse naturali.</li>
+</ul>
+<p>Inoltre, occorre rafforzare l'esecuzione delle leggi esistenti in collaborazione con i Cantoni e promuovere il dialogo con l'economia e la società sul valore dell'ambiente.</p>
+<p>In qualità di centro di competenze della Confederazione, l'UFAM è responsabile della preparazione e dell'attuazione della politica ambientale.</p>
+
+                
+                
+            </article>
+        
+    
+</div>
+<div class="mod mod-download">
+	
+	
+	
+	<p>
+		<a href="/dam/bafu/it/dokumente/das-bafu/fachinfo-daten/strategie_des_bafu.pdf.download.pdf/strategia_dell_ufam_2030.pdf" title="Strategia dell’UFAM 2030" class="icon icon--before icon--pdf">Strategia dell&rsquo;UFAM 2030<span class="text-dimmed"> (PDF, 190 kB, 30.05.2024)</span></a>
+	</p>
+	
+	
+</div>
+<div class="mod mod-download">
+	
+	
+	
+	<p>
+		<a href="/dam/bafu/de/dokumente/das-bafu/fachinfo-daten/leistungsvereinbarung_uvek-bafu.pdf.download.pdf/leistungsvereinbarung-uvek-bafu.pdf" title="Leistungsvereinbarung UVEK-BAFU 2024" class="icon icon--before icon--pdf">Leistungsvereinbarung UVEK-BAFU 2024<span class="text-dimmed"> (PDF, 383 kB, 08.01.2024)</span></a>
+	</p>
+	
+	
+</div>
+<div class="mod mod-link">
+	
+		
+		
+			<p>
+				<a href="https://www.uvek.admin.ch/uvek/it/home/datec/strategia.html" target="_blank" aria-label="DATEC: Strategia del DATEC " class="icon icon--after icon--external" title="">DATEC: Strategia del DATEC </a>
+			</p>
+		
+	
+</div>
+<div class="mod mod-link">
+	
+		
+		
+			<p>
+				<a href="https://www.uvek.admin.ch/uvek/it/home/datec/strategia/nuovo-modello-di-gestione-dell-amministrazione-federale.html" aria-label="DATEC: Nuovo modello di gestione dell'Amministrazione federale (NMG) " target="_blank" class="icon icon--after icon--external" title="">DATEC: Nuovo modello di gestione dell'Amministrazione federale (NMG) </a>
+			</p>
+		
+	
+</div>
+<div class="mod mod-separator">
+	<hr/>
+</div>
+<div class="mod mod-text" id="853271599">
+    
+        
+        
+            <article class="clearfix">
+                
+                    <h2>L'UFAM in cifre</h2>
+<p>Per svolgere i propri compiti l'UFAM dispone nel 2022 all'incirca di 528 posti a tempo pieno in organico e di un budget di circa 1,9 miliardi di franchi, pari al 2,4 per cento di quello della Confederazione. L'89 per cento circa di questi fondi è impiegato per le sovvenzioni e la ridistribuzione dei proventi delle tasse di incentivazione (CO2 e COV). Il restante 11 per cento è suddiviso tra uscite per il personale, uscite per beni e servizi e uscite d'esercizio.</p>
+
+                
+                
+            </article>
+        
+    
+</div>
+<div class="mod mod-separator">
+	<hr/>
+</div>
+<div class="mod mod-headline" id="1162583512">
+	
+		
+		
+		
+			<h2>Bandi di concorso secondo la normativa OMC</h2>
+		
+	
+</div>
+
+<div class="mod mod-text">
+    
+        
+        
+            <article class="clearfix">
+                
+                    <p>I bandi di concorso dell'UFAM secondo la normativa dell’OMC sono pubblicati su simap.ch, il sistema informativo sulle commesse pubbliche in Svizzera.<br>
+</p>
+
+                
+                
+            </article>
+        
+    
+</div>
+<div class="mod mod-link">
+	
+		
+		
+			<p>
+				<a href="https://www.simap.ch/shabforms/COMMON/application/applicationGrid.jsp" target="_self" aria-label="simap.ch" class="icon icon--after icon--external" title="">simap.ch</a>
+			</p>
+		
+	
+</div>
+<div class="mod mod-separator">
+	<hr/>
+</div>
+<div class="mod mod-headline" id="-2128359841">
+	
+		
+		
+		
+			<h2>Fatture e modalità di pagamento</h2>
+		
+	
+</div>
+
+<div class="mod mod-link">
+	
+		
+		
+			<p>
+				<a href="https://www.efv.admin.ch/efv/it/home/efv/erechnung/aktuell.html" target="_blank" aria-label="Fattura elettronica per l&rsquo;amministrazione pubblica in Svizzera." class="icon icon--after icon--external" title="">Fattura elettronica per l&rsquo;amministrazione pubblica in Svizzera.</a>
+			</p>
+		
+	
+</div>
+<div class="mod mod-separator">
+	<hr/>
+</div>
+<div class="mod mod-text" id="853271600">
+    
+        
+        
+            <article class="clearfix">
+                
+                    <h2>Organizzazione</h2>
+
+                
+                
+            </article>
+        
+    
+</div>
+<div class="mod mod-download">
+	
+	
+	
+	<p>
+		<a href="/dam/bafu/it/dokumente/das-bafu/organigramm/bafu-organigramm.pdf.download.pdf/organigramma-ufam.pdf" title="Organigramma UFAM" class="icon icon--before icon--pdf">Organigramma UFAM<span class="text-dimmed"> (PDF, 149 kB, 01.07.2024)</span></a>
+	</p>
+	
+	
+</div>
+<div class="mod mod-separator">
+	<hr/>
+</div>
+<div class="mod mod-headline" id="-456436636">
+	
+		
+		
+		
+			<h2>Storia</h2>
+		
+	
+</div>
+
+<div class="mod mod-text">
+    
+        
+        
+            <article class="clearfix">
+                
+                    <p><b>1971:</b>&nbsp;creazione dell'<b>Ufficio federale per la protezione dell'ambiente (UFPA)</b>, in un'epoca in cui&nbsp;si stava iniziando a prendere coscienza della problematica ambientale.</p>
+<p><b>1989:</b>&nbsp;fusione dell'UFPA&nbsp;e dell'Ufficio federale delle foreste e della protezione del paesaggio (UFPP) nel nuovo <b>Ufficio federale dell'ambiente, delle foreste e del paesaggio (UFAFP)</b>.</p>
+<p><b>2006:</b> fusione dell'UFAFP e di importanti settori dell'Ufficio federale delle acque e della geologia (UFAEG) nell'attuale <b>Ufficio federale dell'ambiente (UFAM).</b></p>
+
+                
+                
+            </article>
+        
+    
+</div>
+<div class="mod mod-headline">
+	
+		
+		
+		
+			<h2>Ulteriori informazioni</h2>
+		
+	
+</div>
+
+<div class="mod mod-tabs">
+    
+    
+        
+        
+            
+                
+                
+
+                    
+                        <a id="context-sidebar"></a>
+                        
+                    
+
+                    <!-- Nav tabs -->
+                    <ul class="nav nav-tabs">
+                        
+
+                        
+                            
+                            
+                            
+                            
+
+                            
+
+                            <li class="active">
+                                <a href="#tab__content_bafu_it_home_das-bafu_das-bafu-in-kuerze_jcr_content_par_tabs" data-toggle="tab">
+                                    
+                                        
+                                        
+                                            Link
+                                        
+                                    
+                                </a>
+                            </li>
+
+                        
+                    </ul>
+
+                    <!-- Tab panes -->
+                    <div class="tab-content tab-border">
+                        
+
+                        
+                            
+                            <div class="tab-pane clearfix active" id="tab__content_bafu_it_home_das-bafu_das-bafu-in-kuerze_jcr_content_par_tabs">
+                                <h2 class="sr-only visible-print-block">Link</h2>
+                                
+<div class="mod mod-link">
+	
+		
+		
+			<p>
+				<a href="https://www.bk.admin.ch/bk/it/home/documentazione/la-confederazione-in-breve.html" target="_blank" aria-label="La Confederazione in breve" class="icon icon--after icon--external" title="">La Confederazione in breve</a>
+			</p>
+		
+	
+</div>
+
+
+    
+        
+    
+
+
+
+                            </div>
+                        
+
+                    </div>
+
+                
+            
+        
+    
+    
+</div>
+
+
+
+
+    
+        
+    
+
+
+		
+
+
+
+
+
+
+<div class="mod mod-backtooverview">
+	
+</div>
+
+
+
+
+<div class="clearfix">
+	
+
+
+
+
+
+	
+		
+	
+	
+	
+
+
+
+
+
+
+	<p class="pull-left">
+		
+			<small>
+				<a href="mailto:info@bafu.admin.ch" class="icon icon--before icon--message">
+					Contatto
+				</a>
+			</small>
+		
+		
+			<br />
+		
+
+		
+			<small>
+				<span class="text-dimmed">Ultima modifica&nbsp;08.01.2024</span>
+			</small>
+		
+	</p>
+
+
+	
+	
+
+
+	<p class="pull-right">
+		<small>
+			
+				<a href="#" class="icon icon--before icon--power hidden-print">
+					Inizio pagina
+				</a>
+			
+		</small>
+	</p>
+ 
+</div>
+
+
+	
+		
+
+
+	
+
+	
+<div class="mod mod-socialshare">
+	
+
+	<div class="social-sharing" aria-labelledby="social_share">
+		<label id="social_share" class="sr-only">Social share</label>
+		
+			<a href="#" aria-label="Facebook" data-analytics="facebook" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u='+encodeURIComponent(location.href), 'share-dialog', 'width=626,height=436'); return false;">
+				<img src="/etc/designs/core/frontend/guidelines/img/FB-f-Logo__blue_29.png" width="16px" height="16px" alt="">
+			</a>
+		
+		
+		
+			<a href="#" aria-label="Twitter" data-analytics="twitter" onclick="window.open('http://twitter.com/share?text='+encodeURIComponent('L&#39;UFAM in breve')+'&url='+encodeURIComponent(location.href), 'share-dialog', 'width=626,height=436'); return false;">
+				<img src="/etc/designs/core/frontend/guidelines/img/Twitter_logo_blue.png" width="16px" height="16px" alt="">
+			</a>
+		
+
+		
+			<a href="#" aria-label="Xing" data-analytics="xing" onclick="window.open('https://www.xing.com/spi/shares/new?url='+encodeURIComponent(location.href), 'share-dialog', 'width=600,height=450'); return false;">
+				<img src="/etc/designs/core/frontend/assets/img/ico-xing.png" width="16px" height="16px" alt=""/>
+			</a>
+		
+
+		
+			<a href="#" aria-label="LinkedIn" data-analytics="linkedin" onclick="window.open('https://www.linkedin.com/shareArticle?mini=true&url='+encodeURIComponent(location.href), 'share-dialog', 'width=600,height=450'); return false;">
+				<img src="/etc/designs/core/frontend/assets/img/ico-linkedin.png" width="16px" height="16px" alt=""/>
+			</a>
+		
+	</div>
+</div>
+
+	
+	
+
+	
+
+            </div>
+            <div class="col-md-4">
+                
+
+
+<div class="context-column">
+	
+						
+		
+
+
+
+
+
+	
+		
+		
+			<div class="mod mod-contactbox">
+				
+					
+						
+					
+					
+				
+			</div>
+		
+	
+
+
+	
+	
+		
+
+
+
+	<div class="mod mod-basket">
+		<aside class="cart">
+			<h4>
+				Carrello acquisti
+			</h4>
+			<ul class="list-unstyled order-list js-order-list">
+			</ul>
+			
+		</aside>
+		<script type="text/template" id="order-list-template">
+			{{ for(var i=0,item;i<data.length;i++) {
+				index = i+1; item = data[i];
+			}}
+				<li class="clearfix" id="{{= item.id }}">
+					<span class="pull-left">{{= item.quantity }}x {{= item.productTitle }}</span>
+					<a class="storage-delete pull-right" href="#">
+						<span class="icon icon--after icon--trash"></span>
+					</a>
+					<input type="hidden" name="order_{{= index }}_productTitle" value="{{= item.productTitle }}" />
+					<input type="hidden" name="order_{{= index }}_quantity" value="{{= item.quantity }}" />
+					<input type="hidden" name="order_{{= index }}_productId" value="{{= item.productId }}" />
+					<input type="text" name="genericKeyValueParameter" value="{{= item.productTitle + "##" }}{{= item.quantity }}x" />
+				</li>
+			{{ } }}
+		</script>
+	</div>
+
+	
+	
+	
+
+	
+
+
+    
+        
+    
+
+
+
+</div>
+
+            </div>
+        </div>
+    </div>
+
+</div>
+
+		</div>
+	
+
+<!-- end: main -->
+
+
+    <span class="visible-print">https://www.bafu.admin.ch/content/bafu/it/home/ufficio/l-ufam-in-breve.html</span>
+
+    
+<footer role="contentinfo">
+	<h2 class="sr-only">Footer</h2>
+
+  
+
+  
+
+  
+  
+
+  	
+
+    
+        
+            <div class="container-fluid footer-service">
+                <h3>Ufficio federale dell&#039;ambiente UFAM</h3>
+                <nav>
+                    <ul>
+                        
+                        
+                            <li><a href="/bafu/it/home.html" title="Pagina iniziale" aria-label="Pagina iniziale">Pagina iniziale</a></li>
+                        
+                            <li><a href="/bafu/it/home/ufficio/servizio-media-dell-ufam.html" title="Media" aria-label="Media">Media</a></li>
+                        
+                            <li><a href="/bafu/it/home/ufficio/contatto-e-indirizzo-dell-ufam.html" title="Contatto" aria-label="Contatto">Contatto</a></li>
+                        
+                            <li><a href="/bafu/it/home/ufficio/lavorare-al-ufam.html" title="Jobs" aria-label="Jobs">Jobs</a></li>
+                        
+                            <li><a href="/bafu/it/home/sitemap.html" title="Mappa del sito" aria-label="Mappa del sito">Mappa del sito</a></li>
+                        
+                    </ul>
+                </nav>
+            </div>
+        
+    
+
+
+
+	
+
+    	
+			
+			
+				
+					
+<div class="site-map">
+	<h2 class="sr-only">Footer</h2>
+
+	<a href="#site-map" data-target="#site-map" data-toggle="collapse" class="site-map-toggle collapsed">Sitemap</a>
+
+	<div class="container-fluid" id="site-map">
+		<div class="col-sm-6 col-md-3">
+			
+
+
+<div class="mod mod-linklist">
+	
+	
+
+
+
+	
+		
+		
+			
+				
+					
+						
+					
+					
+				
+
+				
+					
+					
+						<h3>Temi</h3>
+					
+				
+
+			
+			
+			
+				
+				
+					<ul class="list-unstyled">
+						
+							<li>
+								
+									
+										<a href="/bafu/it/home/temi/acque.html" title="Acque" aria-label="Acque" data-skipextcss="true">Acque</a>
+									
+									
+								
+							</li>
+						
+							<li>
+								
+									
+										<a href="/bafu/it/home/temi/affari-internazionali.html" title="Affari internazionali" aria-label="Affari internazionali" data-skipextcss="true">Affari internazionali</a>
+									
+									
+								
+							</li>
+						
+							<li>
+								
+									
+										<a href="/bafu/it/home/temi/aria.html" title="Aria" aria-label="Aria" data-skipextcss="true">Aria</a>
+									
+									
+								
+							</li>
+						
+							<li>
+								
+									
+										<a href="/bafu/it/home/temi/biodiversita.html" title="Biodiversit&agrave;" aria-label="Biodiversit&agrave;" data-skipextcss="true">Biodiversit&agrave;</a>
+									
+									
+								
+							</li>
+						
+							<li>
+								
+									
+										<a href="/bafu/it/home/temi/biotecnologia.html" title="Biotecnologia" aria-label="Biotecnologia" data-skipextcss="true">Biotecnologia</a>
+									
+									
+								
+							</li>
+						
+							<li>
+								
+									
+										<a href="/bafu/it/home/temi/bosco.html" title="Bosco e legno " aria-label="Bosco e legno " data-skipextcss="true">Bosco e legno </a>
+									
+									
+								
+							</li>
+						
+							<li>
+								
+									
+										<a href="/bafu/it/home/temi/clima.html" title="Clima" aria-label="Clima" data-skipextcss="true">Clima</a>
+									
+									
+								
+							</li>
+						
+							<li>
+								
+									
+										<a href="/bafu/it/home/temi/diritto.html" title="Diritto" aria-label="Diritto" data-skipextcss="true">Diritto</a>
+									
+									
+								
+							</li>
+						
+							<li>
+								
+									
+										<a href="/bafu/it/home/temi/economia-consumo.html" title="Economia e consumo" aria-label="Economia e consumo" data-skipextcss="true">Economia e consumo</a>
+									
+									
+								
+							</li>
+						
+							<li>
+								
+									
+										<a href="/bafu/it/home/temi/educazione.html" title="Educazione, ricerca, innovazione " aria-label="Educazione, ricerca, innovazione " data-skipextcss="true">Educazione, ricerca, innovazione </a>
+									
+									
+								
+							</li>
+						
+							<li>
+								
+									
+										<a href="/bafu/it/home/temi/elettrosmog.html" title="Elettrosmog" aria-label="Elettrosmog" data-skipextcss="true">Elettrosmog</a>
+									
+									
+								
+							</li>
+						
+							<li>
+								
+									
+										<a href="/bafu/it/home/temi/eia.html" title="Esame dell'impatto sull'ambiente (EIA)" aria-label="Esame dell'impatto sull'ambiente (EIA)" data-skipextcss="true">Esame dell'impatto sull'ambiente (EIA)</a>
+									
+									
+								
+							</li>
+						
+							<li>
+								
+									
+										<a href="/bafu/it/home/temi/incidenti-rilevanti.html" title="Incidenti rilevanti" aria-label="Incidenti rilevanti" data-skipextcss="true">Incidenti rilevanti</a>
+									
+									
+								
+							</li>
+						
+							<li>
+								
+									
+										<a href="/bafu/it/home/temi/paesaggio.html" title="Paesaggio" aria-label="Paesaggio" data-skipextcss="true">Paesaggio</a>
+									
+									
+								
+							</li>
+						
+							<li>
+								
+									
+										<a href="/bafu/it/home/temi/pericoli-naturali.html" title="Pericoli naturali" aria-label="Pericoli naturali" data-skipextcss="true">Pericoli naturali</a>
+									
+									
+								
+							</li>
+						
+							<li>
+								
+									
+										<a href="/bafu/it/home/temi/prodotti-chimici.html" title="Prodotti chimici" aria-label="Prodotti chimici" data-skipextcss="true">Prodotti chimici</a>
+									
+									
+								
+							</li>
+						
+							<li>
+								
+									
+										<a href="/bafu/it/home/temi/rifiuti.html" title="Rifiuti" aria-label="Rifiuti" data-skipextcss="true">Rifiuti</a>
+									
+									
+								
+							</li>
+						
+							<li>
+								
+									
+										<a href="/bafu/it/home/temi/rumore.html" title="Rumore" aria-label="Rumore" data-skipextcss="true">Rumore</a>
+									
+									
+								
+							</li>
+						
+							<li>
+								
+									
+										<a href="/bafu/it/home/temi/siti-contaminati.html" title="Siti contaminati " aria-label="Siti contaminati " data-skipextcss="true">Siti contaminati </a>
+									
+									
+								
+							</li>
+						
+							<li>
+								
+									
+										<a href="/bafu/it/home/temi/suolo.html" title="Suolo" aria-label="Suolo" data-skipextcss="true">Suolo</a>
+									
+									
+								
+							</li>
+						
+					</ul>
+				
+			
+			
+		
+	
+
+
+
+	
+</div>
+
+		</div>
+		<div class="col-sm-6 col-md-3">
+			
+
+
+<div class="mod mod-linklist">
+	
+	
+
+
+
+	
+		
+		
+			
+				
+					
+						
+					
+					
+				
+
+				
+					
+					
+						<h3>Pubblicazioni, media</h3>
+					
+				
+
+			
+			
+			
+				
+				
+					<ul class="list-unstyled">
+						
+							<li>
+								
+									
+										<a href="/bafu/it/home/documentazione/pubblicazioni.html" title="Pubblicazioni" aria-label="Pubblicazioni" data-skipextcss="true">Pubblicazioni</a>
+									
+									
+								
+							</li>
+						
+							<li>
+								
+									
+										<a href="/bafu/it/home/documentazione/rapporti.html" title="Rapporti sull'ambiente" aria-label="Rapporti sull'ambiente" data-skipextcss="true">Rapporti sull'ambiente</a>
+									
+									
+								
+							</li>
+						
+							<li>
+								
+									
+										<a href="/bafu/it/home/documentazione/comunicati.html" title="Comunicati stampa" aria-label="Comunicati stampa" data-skipextcss="true">Comunicati stampa</a>
+									
+									
+								
+							</li>
+						
+							<li>
+								
+									
+										<a href="/bafu/it/home/documentazione/newsletter.html" title="Social media, newsletter" aria-label="Social media, newsletter" data-skipextcss="true">Social media, newsletter</a>
+									
+									
+								
+							</li>
+						
+							<li>
+								
+									
+										<a href="/bafu/it/home/documentazione/dossier.html" title="Dossier" aria-label="Dossier" data-skipextcss="true">Dossier</a>
+									
+									
+								
+							</li>
+						
+							<li>
+								
+									
+										<a href="/bafu/it/home/documentazione/campagne.html" title="Campagne" aria-label="Campagne" data-skipextcss="true">Campagne</a>
+									
+									
+								
+							</li>
+						
+							<li>
+								
+									
+										<a href="/bafu/it/home/documentazione/newsletter/apps.html" title="App nel settore ambientale" aria-label="App nel settore ambientale" data-skipextcss="true">App nel settore ambientale</a>
+									
+									
+								
+							</li>
+						
+							<li>
+								
+									
+										<a href="/bafu/it/home/documentazione/aiuti-esecuzione.html" title="Aiuti all'esecuzione" aria-label="Aiuti all'esecuzione" data-skipextcss="true">Aiuti all'esecuzione</a>
+									
+									
+								
+							</li>
+						
+					</ul>
+				
+			
+			
+		
+	
+
+
+
+	
+</div>
+
+		</div>
+		<div class="col-sm-6 col-md-3">
+			
+
+
+<div class="mod mod-linklist">
+	
+	
+
+
+
+	
+		
+		
+			
+				
+					
+						
+					
+					
+				
+
+				
+					
+					
+						<h3>Dati, indicatori, carte</h3>
+					
+				
+
+			
+			
+			
+				
+				
+					<ul class="list-unstyled">
+						
+							<li>
+								
+									
+										<a href="/bafu/it/home/stato/dati.html" title="Dati ambientali e geodati" aria-label="Dati ambientali e geodati" data-skipextcss="true">Dati ambientali e geodati</a>
+									
+									
+								
+							</li>
+						
+							<li>
+								
+									
+										<a href="/bafu/it/home/stato/indicatori.html" title="Indicatori" aria-label="Indicatori" data-skipextcss="true">Indicatori</a>
+									
+									
+								
+							</li>
+						
+							<li>
+								
+									
+										<a href="/bafu/it/home/stato/carte.html" title="Carte" aria-label="Carte" data-skipextcss="true">Carte</a>
+									
+									
+								
+							</li>
+						
+					</ul>
+				
+			
+			
+		
+	
+
+
+
+	
+</div>
+
+		</div>
+		<div class="col-sm-6 col-md-3">
+			
+
+
+<div class="mod mod-linklist">
+	
+	
+
+
+
+	
+		
+		
+			
+				
+					
+						
+					
+					
+				
+
+				
+					
+					
+						<h3>L&#39;UFAM</h3>
+					
+				
+
+			
+			
+			
+				
+				
+					<ul class="list-unstyled">
+						
+							<li>
+								
+									
+										<a href="/bafu/it/home/ufficio/direzione.html" title="Direzione" aria-label="Direzione" data-skipextcss="true">Direzione</a>
+									
+									
+								
+							</li>
+						
+							<li>
+								
+									
+										<a href="/bafu/it/home/ufficio/divisioni-sezioni.html" title="Divisioni e sezioni" aria-label="Divisioni e sezioni" data-skipextcss="true">Divisioni e sezioni</a>
+									
+									
+								
+							</li>
+						
+							<li>
+								
+									
+										<a href="/bafu/it/home/ufficio/servizio-media-dell-ufam.html" title="Servizio media" aria-label="Servizio media" data-skipextcss="true">Servizio media</a>
+									
+									
+								
+							</li>
+						
+							<li>
+								
+									
+										<a href="/bafu/it/home/ufficio/l-ufam-in-breve.html" title="L'UFAM in breve" aria-label="L'UFAM in breve" data-skipextcss="true">L'UFAM in breve</a>
+									
+									
+								
+							</li>
+						
+							<li>
+								
+									
+										<a href="/bafu/it/home/ufficio/contatto-e-indirizzo-dell-ufam.html" title="Contatto e indirizzo" aria-label="Contatto e indirizzo" data-skipextcss="true">Contatto e indirizzo</a>
+									
+									
+								
+							</li>
+						
+							<li>
+								
+									
+										<a href="/bafu/it/home/ufficio/lavorare-al-ufam.html" title="Lavorare all'UFAM" aria-label="Lavorare all'UFAM" data-skipextcss="true">Lavorare all'UFAM</a>
+									
+									
+								
+							</li>
+						
+							<li>
+								
+									
+										<a href="/bafu/it/home/ufficio/commissioni-extraparlamentari.html" title="Commissioni extraparlamentari" aria-label="Commissioni extraparlamentari" data-skipextcss="true">Commissioni extraparlamentari</a>
+									
+									
+								
+							</li>
+						
+							<li>
+								
+									
+										<a href="/bafu/it/home/ufficio/accesso-ai-documenti-ufficiali.html" title="Accesso ai documenti ufficiali" aria-label="Accesso ai documenti ufficiali" data-skipextcss="true">Accesso ai documenti ufficiali</a>
+									
+									
+								
+							</li>
+						
+					</ul>
+				
+			
+			
+		
+	
+
+
+
+	
+</div>
+
+		</div>
+		<div class="col-sm-6 col-md-3">
+			
+
+
+<div class="mod mod-linklist">
+	
+	
+
+
+
+	
+		
+		
+			
+			
+			
+				
+					
+				
+				
+			
+			
+		
+	
+
+
+
+	
+</div>
+
+		</div>
+		<div class="col-sm-6 col-md-3">
+			
+
+
+<div class="mod mod-linklist">
+	
+	
+
+
+
+	
+		
+		
+			
+			
+			
+				
+					
+				
+				
+			
+			
+		
+	
+
+
+
+	
+</div>
+
+		</div>
+		<div class="col-sm-6 col-md-3">
+			
+
+
+<div class="mod mod-linklist">
+	
+	
+
+
+
+	
+		
+		
+			
+			
+			
+				
+					
+				
+				
+			
+			
+		
+	
+
+
+
+	
+</div>
+
+		</div>
+		<div class="col-sm-6 col-md-3">
+			
+
+
+<div class="mod mod-linklist">
+	
+	
+
+
+
+	
+		
+		
+			
+			
+			
+				
+					
+				
+				
+			
+			
+		
+	
+
+
+
+	
+</div>
+
+		</div>
+	</div>
+</div>
+				
+			
+		
+    
+
+
+  	<div class="container-fluid">
+  		
+	
+
+
+	
+		
+			
+				<h3>Rimanete informati</h3>
+			
+
+			<nav class="links-social" aria-labelledby="social_media">
+				<label id="social_media" class="sr-only">Social media links</label>
+				<ul>
+					
+						<li><a href="https://www.facebook.com/BAFU.OFEV.UFAM" class="icon icon--before  icon icon--before icon--facebook" aria-label="Facebook" target="_blank" title="">Facebook</a></li>
+					
+						<li><a href="https://www.instagram.com/bafu.ch/" class="icon icon--before  icon icon--before fa fa-instagram" title="Instagram" aria-label="Instagram">Instagram</a></li>
+					
+						<li><a href="https://issuu.com/bundesamt-fuer-umwelt-bafu" class="icon icon--before  icon icon--before icomoon-icon--issuu" aria-label="Issuu" target="_blank" title="">Issuu</a></li>
+					
+						<li><a href="https://www.linkedin.com/company/federal-office-for-the-environment" class="icon icon--before  icon icon--before fa fa-linkedin" aria-label="LinkedIn" target="_blank" title="">LinkedIn</a></li>
+					
+						<li><a href="https://x.com/bafuCH" class="icon icon--before  icon icon--before icon--twitter" target="_blank" aria-label="x.com/bafuCH" title="">x.com/bafuCH</a></li>
+					
+						<li><a href="https://www.youtube.com/bafuCH" class="icon icon--before  icon icon--before fa fa-youtube" aria-label="Youtube" target="_blank" title="">Youtube</a></li>
+					
+				</ul>
+			</nav>
+		
+		
+	
+
+
+
+		
+	
+
+<div class="mod mod-cobranding">
+    
+        
+            
+        
+        
+    
+</div>
+
+
+
+
+  		<!-- begin: logo phone -->
+		
+			
+			
+
+	
+		
+<div class="mod mod-logo">
+	
+	
+		
+			<hr class="footer-line visible-xs">
+			<img src="/bafu/it/_jcr_content/logo/image.imagespooler.png/1484574147227/logo.png" class="visible-xs" alt="Ufficio federale dell&apos;ambiente"/>
+		
+		
+	
+	
+</div>
+	
+	
+
+
+			
+		
+	 	<!-- end: logo phone -->
+  	</div>
+
+    
+
+<div class="footer-address">
+	
+
+	<span class="hidden-xs">Ufficio federale dell&#39;ambiente UFAM</span>
+
+
+	
+
+	
+		
+			<nav class="pull-right">
+				<ul>
+					
+						<li><a href="https://www.admin.ch/gov/it/pagina-iniziale/basi-legali.html" target="_blank" aria-label="Basi legali" title="">Basi legali</a></li>
+					
+				</ul>
+			</nav>
+		
+		
+	
+
+
+</div>
+
+
+  
+  
+
+</footer>        
+
+
+    <div class="modal" id="nav_modal_rnd">
+        <!-- modal -->
+    </div>
+
+</div>
+<!-- end: container -->
+
+
+
+<script src="/etc.clientlibs/clientlibs/granite/jquery/granite/csrf.min.js"></script>
+<script src="/etc/clientlibs/granite/jquery/granite/csrf.min.js"></script>
+
+
+
+	<script type="text/javascript" src="/etc/designs/core/frontend/modules.js"></script>
+
+
+
+
+
+	
+
+
+
+
+
+	<!-- bdefq4wuWW7Aw5zwyQGgmXH5snTa6GAMxpVEKEweYg2NzPlSELvfwfBnwjulokRh43zrUqle7QRrpEK80Y4gaNAASZ0urKoGOIEvoQs075u773tumrorOlDTiKFu2ldCkFm44kdDFSlZzPZSvssqodOIVyZ8fTYeicRm1iucmFj0UqtQ5xXb3go15muqBloEgrtispV4KNMpGwJl23QgYGuk312FNWirqGzUkSIYRY3RxnKC9vytzceofUDWMjq9osOFw3gJu9QaIeWfEnErISTFSB2YyBW0rBYeQfDCGd1vfFNdgYmrWTeVQEQHboQaFDPGW4kLU3hC4al84oTlYKxGZ79SFlthaUo8ZE65gSWqg2QQlwxhOzVPb8t9MRDWfQI4P9IlLN4UGBwmPGqJ4fgDZolkZNwB7VMPgEMRdv30FG9wR0KcIoe1PGtmHSgESe82d95Qvjqq4vgJDmEppvw6WBupN90EQtGSOptlhbq415dP2hsf5Ar5PFYTU7h047oyz3r8ImRtIAMbLvswRBOO9kOUqA3cDYdKgSpjR6UzV3YF4RBIyx1BC943Un6pb6C2o76Ar7BUQSYAcocxJGdXc8WUbUgjeVlmZNKaKE0pd1WBYaFdl0uw4ZjsADBqyPL5tIN1ecWUJbp07JeqX3ZT3vza9S5MaGBqeTkkfn0OSF2XMo8mNFoZsojugRjMXDGJ05zEs0AvH4AmbITMnnBHQ8ChyI4k0Zp3Oy27gU7reBws6wtvOtJXx961tCmJHqT1kb0XHhI5naEXeumI7xeIIfVOYHvYUzsLXGnRMc7Emk5HjQvpTqjhBYwtbJBxzkzDs4AUEUYFtrF1ugWjrSAzixLPfZGpD0X9Y06PYPgBWxJy9UNhl2PvQEBfIb7VJq4FXpRsExO34trOy1jPOTj3Z4Cj36pRckcGFHkit0BShmkgc3U5G2n057ljWdk1BKhKAH3tYtpYahmEMSFJN73cue6BnE77oSXRDXUmEd9O2WlWbuUF4z3Jaf2oqP5rfdg1Hw5JLkLlIAYRh3XUcunitq1ectH3s9zL6x0hTfDkeUo3A8hdLiva5ps1mkFws9m8Qbg3KMMFaTvMSFB2yMz2VUDbdoHsZIk5obBclqwtJBpU2UyDSyVTT6AHhlRXOSdfzFhD0IRv0WIu4L1QVuicOlM0c -->
+
+
+
+
+
+ 
+	
+
+
+
+
+	<!-- Matomo -->
+<script type="text/javascript">
+  var _paq = window._paq || [];
+  /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="https://analytics.bit.admin.ch/";
+    _paq.push(['setTrackerUrl', u+'matomo.php']);
+    _paq.push(['setSiteId', '94']);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<!-- End Matomo Code -->
+
+
+
+
+
+</body>
+
+    
+
+</html>

@@ -1,0 +1,2619 @@
+
+<!DOCTYPE HTML>
+<!--[if lt IE 7 ]> <html lang="it" class="no-js ie6 oldie"> <![endif]-->
+<!--[if IE 7 ]> <html lang="it" class="no-js ie7 oldie"> <![endif]-->
+<!--[if IE 8 ]> <html lang="it" class="no-js ie8 oldie"> <![endif]-->
+<!--[if IE 9 ]> <html lang="it" class="no-js ie9"> <![endif]-->
+<!--[if gt IE 9 ]><!--><html lang="it" class="no-js no-ie"> <!--<![endif]-->
+
+
+    
+<head>
+    
+    
+
+
+	
+	
+		<title>Realizzazione delle Spiegazioni del Consiglio federale</title>
+	
+	
+
+
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta http-equiv="cleartype" content="on" />
+
+
+	<meta name="msapplication-TileColor" content="#ffffff"/>
+	<meta name="msapplication-TileImage" content="/etc/designs/core/frontend/guidelines/img/ico/mstile-144x144.png"/>
+	<meta name="msapplication-config" content="/etc/designs/core/frontend/guidelines/img/ico/browserconfig.xml"/>
+
+
+
+	
+		<meta name="description" content="Wie entsteht das Abstimmungsbüchlein? Wie werden die &#034;Erläuterungen des Bundesrates&#034; zu den Volksabstimmungen produziert? Fristen, Redaktion und Produktion des Bundesbüchlein" />
+	
+	
+
+
+
+
+	<meta name="google-site-verification" content="_KMXCj6xrBYMPuUE4UMltyFjFOTsYbPI5aCSxncV6HM" />
+
+
+<meta name="language" content="it" />
+<meta name="author" content="Cancelleria federale CaF" />
+
+
+
+
+	<!-- current page in other languages -->
+	
+		<link rel="alternate" type="text/html" href="/bk/de/home/dokumentation/entstehung-abstimmungsbuechlein.html" hreflang="de" lang="de"/>
+	
+		<link rel="alternate" type="text/html" href="/bk/it/home/documentazione/entstehung-abstimmungsbuechlein.html" hreflang="it" lang="it"/>
+	
+		<link rel="alternate" type="text/html" href="/bk/fr/home/documentation/realisation-explications-vote.html" hreflang="fr" lang="fr"/>
+	
+
+
+
+
+	<meta name="twitter:card" content="summary"/>
+	
+	
+		<meta property="og:url" content="https://www.bk.admin.ch/bk/it/home/dokumentation/entstehung-abstimmungsbuechlein.html"/>
+	
+	<meta property="og:type" content="article"/>
+	
+		<meta property="og:title" content="Realizzazione delle Spiegazioni del Consiglio federale"/>
+	
+	
+		<meta property="og:description" content="La creazione del libretto annesso ad ogni votazione richiede parecchi mesi. Scoprite di più sulle diverse fasi di produzione e sui relativi termini legali."/>
+	
+	
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+	<!--style type="text/css" id="antiClickjack">body{display:none !important;}</style-->
+	<script type="text/javascript">
+
+		var styleElement = document.createElement('STYLE');
+		styleElement.setAttribute('id', 'antiClickjack');
+		styleElement.setAttribute('type', 'text/css');
+		styleElement.innerHTML = 'body {display:none !important;}';
+		document.getElementsByTagName('HEAD')[0].appendChild(styleElement);
+
+		if (self === top) {
+			var antiClickjack = document.getElementById("antiClickjack");
+			antiClickjack.parentNode.removeChild(antiClickjack);
+		} else {
+			top.location = self.location;
+		}
+	</script>
+
+
+
+
+<script src="/etc.clientlibs/clientlibs/granite/jquery.min.js"></script>
+<script src="/etc.clientlibs/clientlibs/granite/utils.min.js"></script>
+
+
+
+	<script>
+		Granite.I18n.init({
+			locale: "it",
+			urlPrefix: "/libs/cq/i18n/dict."
+		});
+	</script>
+
+
+
+	<link rel="stylesheet" href="/etc/designs/core/frontend/guidelines.min.css" type="text/css">
+
+	<link rel="stylesheet" href="/etc/designs/core/frontend/modules.min.css" type="text/css">
+
+	
+	<link rel="shortcut icon" href="/etc/designs/core/frontend/guidelines/img/ico/favicon.ico">
+	<link rel="apple-touch-icon" sizes="57x57" href="/etc/designs/core/frontend/guidelines/img/ico/apple-touch-icon-57x57.png"/>
+	<link rel="apple-touch-icon" sizes="114x114" href="/etc/designs/core/frontend/guidelines/img/ico/apple-touch-icon-114x114.png"/>
+	<link rel="apple-touch-icon" sizes="72x72" href="/etc/designs/core/frontend/guidelines/img/ico/apple-touch-icon-72x72.png"/>
+	<link rel="apple-touch-icon" sizes="144x144" href="/etc/designs/core/frontend/guidelines/img/ico/apple-touch-icon-144x144.png"/>
+	<link rel="apple-touch-icon" sizes="60x60" href="/etc/designs/core/frontend/guidelines/img/ico/apple-touch-icon-60x60.png"/>
+	<link rel="apple-touch-icon" sizes="120x120" href="/etc/designs/core/frontend/guidelines/img/ico/apple-touch-icon-120x120.png"/>
+	<link rel="apple-touch-icon" sizes="76x76" href="/etc/designs/core/frontend/guidelines/img/ico/apple-touch-icon-76x76.png"/>
+	<link rel="icon" type="image/png" href="/etc/designs/core/frontend/guidelines/img/ico/favicon-96x96.png" sizes="96x96"/>
+	<link rel="icon" type="image/png" href="/etc/designs/core/frontend/guidelines/img/ico/favicon-16x16.png" sizes="16x16"/>
+	<link rel="icon" type="image/png" href="/etc/designs/core/frontend/guidelines/img/ico/favicon-32x32.png" sizes="32x32"/>
+
+
+
+
+
+
+
+	<!--[if lt IE 9]>
+		<script src="https://cdnjs.cloudflare.com/polyfill/v2/polyfill.js?version=4.8.0"></script>
+	<![endif]-->
+
+
+
+    
+
+
+
+    
+        
+
+	
+
+    
+
+</head>
+
+
+    
+
+<body class="mod mod-layout   skin-layout-template-contentpagewide">
+
+<div class="mod mod-homepage">
+<ul class="access-keys" role="navigation">
+    <li><a href="/bk/it/home.html" accesskey="0">Homepage</a></li>
+    
+    <li><a href="#main-navigation" accesskey="1">Main navigation</a></li>
+    
+    
+    <li><a href="#content" accesskey="2">Content area</a></li>
+    
+    
+    <li><a href="#site-map" accesskey="3">Sitemap</a></li>
+    
+    
+    <li><a href="#search-field" accesskey="4">Search</a></li>
+    
+</ul>
+</div>
+
+<!-- begin: container -->
+<div class="container container-main">
+
+    
+
+
+<header style="background-size: cover; background-image:" role="banner">
+	
+
+	<div class="clearfix">
+		
+			
+
+
+	
+
+
+
+	<nav class="navbar treecrumb pull-left">
+
+		
+		
+			<h2 class="sr-only">Treecrumb amministrazione federale</h2>
+		
+
+		
+			
+				<ul class="nav navbar-nav">
+				
+
+						
+
+						
+						<li class="dropdown">
+							
+							
+								
+									<a id="federalAdministration-dropdown" href="#" aria-label="Il Consiglio federale" class="dropdown-toggle" data-toggle="dropdown"><span class="icon icon--right"></span> Il Consiglio federale</a>
+								
+								
+							
+
+							
+								
+								<ul class="dropdown-menu" role="menu" aria-labelledby="federalAdministration-dropdown">
+									
+										
+										<li class="dropdown-header">
+											
+												
+													<a href="https://www.admin.ch/gov/it/pagina-iniziale.html" aria-label="Il Consiglio federale admin.ch" target="_blank" title="">Il Consiglio federale admin.ch</a>
+												
+												
+											
+
+											
+											
+												
+													<ul>
+														<li>
+															
+																
+																
+																
+																	<a href="https://www.bk.admin.ch/bk/it/home.html" aria-label="CaF: Cancelleria federale" target="_blank" title=""> CaF: Cancelleria federale</a>
+																
+															
+														</li>
+													</ul>
+												
+											
+												
+													<ul>
+														<li>
+															
+																
+																
+																
+																	<a href="https://www.eda.admin.ch/eda/it/dfae.html" aria-label="DFAE: Dipartimento federale degli affari esteri" target="_blank" title=""> DFAE: Dipartimento federale degli affari esteri</a>
+																
+															
+														</li>
+													</ul>
+												
+											
+												
+													<ul>
+														<li>
+															
+																
+																
+																
+																	<a href="https://www.edi.admin.ch/edi/it/home.html" aria-label="DFI: Dipartimento federale dell&#39;interno" target="_blank" title=""> DFI: Dipartimento federale dell&#39;interno</a>
+																
+															
+														</li>
+													</ul>
+												
+											
+												
+													<ul>
+														<li>
+															
+																
+																
+																
+																	<a href="https://www.ejpd.admin.ch/ejpd/it/home.html" aria-label="DFGP: Dipartimento federale di giustizia e polizia" target="_blank" title=""> DFGP: Dipartimento federale di giustizia e polizia</a>
+																
+															
+														</li>
+													</ul>
+												
+											
+												
+													<ul>
+														<li>
+															
+																
+																
+																
+																	<a href="https://www.vbs.admin.ch/it" aria-label="DDPS: Dipartimento federale della difesa, della protezione della popolazione e dello sport" target="_blank" title=""> DDPS: Dipartimento federale della difesa, della protezione della popolazione e dello sport</a>
+																
+															
+														</li>
+													</ul>
+												
+											
+												
+													<ul>
+														<li>
+															
+																
+																
+																
+																	<a href="https://www.efd.admin.ch/efd/it/home.html" aria-label="DFF: Dipartimento federale delle finanze" target="_blank" title=""> DFF: Dipartimento federale delle finanze</a>
+																
+															
+														</li>
+													</ul>
+												
+											
+												
+													<ul>
+														<li>
+															
+																
+																
+																
+																	<a href="https://www.wbf.admin.ch/wbf/it/home.html" aria-label="DEFR: Dipartimento federale dell&#39;economia, della formazione e della ricerca" target="_blank" title=""> DEFR: Dipartimento federale dell&#39;economia, della formazione e della ricerca</a>
+																
+															
+														</li>
+													</ul>
+												
+											
+												
+													<ul>
+														<li>
+															
+																
+																
+																
+																	<a href="https://www.uvek.admin.ch/uvek/it/home.html" aria-label="DATEC: Dipartimento federale dell&#39;ambiente, dei trasporti, dell&#39;energia e delle comunicazioni" target="_blank" title=""> DATEC: Dipartimento federale dell&#39;ambiente, dei trasporti, dell&#39;energia e delle comunicazioni</a>
+																
+															
+														</li>
+													</ul>
+												
+											
+										</li>
+									
+								</ul>
+							
+						</li>
+					
+
+						
+
+						
+						<li class="dropdown">
+							
+							
+								
+								
+									<a id="departement-dropdown" href="#" aria-label="Cancelleria federale" class="dropdown-toggle"><span class="icon icon--right"></span> Cancelleria federale</a>
+								
+							
+
+							
+						</li>
+					
+				</ul>
+			
+			
+		
+	</nav>
+
+
+
+
+		
+
+		
+<!-- begin: metanav -->
+<section class="nav-services clearfix">
+	
+	
+		
+
+
+	
+	<h2>Realizzazione delle Spiegazioni del Consiglio federale</h2>
+
+	
+
+		
+		
+
+		<nav class="nav-lang">
+			<ul>
+				
+					<li>
+						
+							
+							
+								<a href="/bk/de/home/dokumentation/entstehung-abstimmungsbuechlein.html" lang="de" title="tedesco" aria-label="tedesco">DE</a>
+							
+							
+						
+					</li>
+				
+					<li>
+						
+							
+							
+								<a href="/bk/fr/home/documentation/realisation-explications-vote.html" lang="fr" title="francese" aria-label="francese">FR</a>
+							
+							
+						
+					</li>
+				
+					<li>
+						
+							
+								<a class="active" lang="it" title="italiano selected" aria-label="italiano selected">IT</a>
+							
+							
+							
+						
+					</li>
+				
+					<li>
+						
+							
+							
+							
+								<a class="disabled" lang="rm" title="romancio" aria-label="romancio">RM<span class="sr-only">disabled</span></a>
+							
+						
+					</li>
+				
+					<li>
+						
+							
+							
+							
+								<a class="disabled" lang="en" title="inglese" aria-label="inglese">EN<span class="sr-only">disabled</span></a>
+							
+						
+					</li>
+				
+			</ul>
+		</nav>
+
+	
+
+
+		
+		
+
+    
+        
+            
+            
+
+                
+                <h2 class="sr-only">Service navigation</h2>
+
+                <nav class="nav-service">
+                    <ul>
+                        
+                        
+                            <li><a href="/bk/it/home/service/contatto.html" title="Contatto" aria-label="Contatto" data-skipextcss="true">Contatto</a></li>
+                        
+                            <li><a href="/bk/it/home/service/media.html" title="Media" aria-label="Media" data-skipextcss="true">Media</a></li>
+                        
+                            <li><a href="/bk/it/home/service/legalizzazioni.html" title="Legalizzazioni" aria-label="Legalizzazioni" data-skipextcss="true">Legalizzazioni</a></li>
+                        
+                            <li><a href="/bk/it/home/service/posti-vacanti.html" title="Posti vacanti" aria-label="Posti vacanti" data-skipextcss="true">Posti vacanti</a></li>
+                        
+                    </ul>
+                </nav>
+
+            
+        
+    
+
+
+	
+	
+</section>
+<!-- end: metanav -->
+
+	</div>
+
+	
+		
+
+	
+	
+		
+<div class="mod mod-logo">
+    
+        
+        
+            
+                <a href="/bk/it/home.html" class="brand  hidden-xs" id="logo" title="Pagina iniziale" aria-label="Pagina iniziale">
+                    
+                        
+                            <img src="/bk/it/_jcr_content/logo/image.imagespooler.png/1607941605855/logo.png" alt="Cancelleria federale svizzera"/>
+                        
+                        
+                    
+                    <h2 id="logo-desktop-departement">Cancelleria federale CaF
+                    </h2>
+                </a>
+                
+            
+        
+    
+</div>
+
+	
+
+
+	
+
+ 	
+		
+
+
+	
+
+
+
+	
+	
+		
+
+<div class="mod mod-searchfield">
+
+	
+		
+
+		
+			
+
+			<!-- begin: sitesearch desktop-->
+			<div class="mod mod-searchfield global-search global-search-standard">
+				<form action="/bk/it/home/ricerca.html" class="form-horizontal form-search pull-right">
+					<h2 class="sr-only">Ricerca</h2>
+					<label for="search-field" class="sr-only">Ricerca</label>
+					<input id="search-field" name="query" class="form-control search-field" type="text" placeholder="Ricerca"/>
+                    <button class="icon icon--search icon--before" tabindex="0" role="button">
+                        <span class="sr-only">Ricerca</span>
+                    </button>
+                    <button class="icon icon--close icon--after search-reset" tabindex="0" role="button"><span class="sr-only"></span></button>
+					<div class="search-results">
+						<div class="search-results-list"></div>
+					</div>
+				</form>
+			</div>
+			<!-- end: sitesearch desktop-->
+
+		
+	
+
+</div>
+
+	
+
+
+
+	
+
+	
+		
+
+
+	
+
+<div class="mod mod-themes">
+	
+
+		<nav class="navbar yamm yamm--select ddl-to-modal">
+			<h2 class="sr-only">A-Z</h2>
+			<ul>
+				<!-- Init dropdown with the `pull-right` class if you want to have your Topics select on the right -->
+				<li class="dropdown pull-right">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+						Tema A-Z <span class="icon icon--bottom"></span>
+					</a>
+					<!-- begin: flyout -->
+					<ul class="dropdown-menu">
+						<li>
+							<!-- The `yamm-content` can contain any kind of content like tab, table, list, article... -->
+							<div class="yamm-content container-fluid">
+
+								
+								<div class="row">
+									<div class="col-sm-12">
+										<button class="yamm-close btn btn-link icon icon--after icon--close pull-right">
+											Chiudere
+										</button>
+									</div>
+								</div>
+
+								
+				                <ul class="nav nav-tabs">
+				                	
+				                	
+				                		<li><a href="#mf_keywords_tab" data-toggle="tab" data-url="/bk/it/_jcr_content/themes.keywordsinit.html">Parole chiave</a></li>
+				                	
+				                	
+				                		<li><a href="#mf_glossary_tab" data-toggle="tab" data-url="/bk/it/_jcr_content/themes.glossaryinit.html">Glossario</a></li>
+				                	
+				                </ul>
+
+				                
+				                <div class="tab-content">
+								
+
+								
+								
+									<div class="tab-pane" id="mf_keywords_tab"></div>
+									<h2 class="sr-only visible-print-block">Parole chiave</h2>
+								
+
+								
+								
+									<div class="tab-pane" id="mf_glossary_tab"></div>
+									<h2 class="sr-only visible-print-block">Glossario</h2>
+										
+
+								
+								</div>
+							</div>
+						</li>
+					</ul>
+				</li>
+			</ul>
+		</nav>
+
+
+</div>
+
+
+
+
+
+
+	
+
+ 	
+
+
+</header>
+
+
+
+    
+
+
+	
+	
+		
+
+<div class="mod mod-mainnavigation">
+
+	<!-- begin: mainnav -->
+	<div class="nav-main yamm navbar" id="main-navigation">
+
+		<h2 class="sr-only">
+			Navigazione principale
+		</h2>
+
+		
+			
+
+
+<!-- mobile mainnav buttonbar -->
+ <section class="nav-mobile">
+	<div class="table-row">
+		<div class="nav-mobile-header">
+			<div class="table-row">
+				<span class="nav-mobile-logo">
+					
+						
+						
+							<img src="/etc/designs/core/frontend/guidelines/img/swiss.svg" onerror="this.onerror=null; this.src='/etc/designs/core/frontend/guidelines/img/swiss.png'" alt="Cancelleria federale CaF"/>
+						
+					
+				</span>
+				<h2>
+					<a href="/bk/it/home.html" title="Pagina iniziale" aria-label="Pagina iniziale">Cancelleria federale</a>
+				</h2>
+			</div>
+		</div>
+		<div class="table-cell dropdown">
+			<a href="#" class="nav-mobile-menu dropdown-toggle" data-toggle="dropdown">
+				<span class="icon icon--menu"></span>
+			</a>
+			<div class="drilldown dropdown-menu" role="menu">
+				<div class="drilldown-container">
+					<nav class="nav-page-list">
+						
+							<ul aria-controls="submenu">
+								
+									
+									
+										<li>
+											
+												
+												
+													<a href="/bk/it/home/sostegno-al-governo.html">Sostegno al Governo </a>
+												
+											
+										</li>
+									
+								
+							</ul>
+						
+							<ul aria-controls="submenu">
+								
+									
+									
+										<li>
+											
+												
+												
+													<a href="/bk/it/home/diritti-politici.html">Diritti politici</a>
+												
+											
+										</li>
+									
+								
+							</ul>
+						
+							<ul aria-controls="submenu">
+								
+									
+									
+										<li>
+											
+												
+												
+													<a href="/bk/it/home/digitale-transformation-ikt-lenkung.html">Trasformazione digitale e governance delle TIC</a>
+												
+											
+										</li>
+									
+								
+							</ul>
+						
+							<ul aria-controls="submenu">
+								
+									
+									
+										<li>
+											
+												
+												
+													<a href="/bk/it/home/documentazione.html">Documentazione</a>
+												
+											
+										</li>
+									
+								
+							</ul>
+						
+							<ul aria-controls="submenu">
+								
+									
+									
+										<li>
+											
+												
+												
+													<a href="/bk/it/home/la-cancelleria-federale.html">La Cancelleria federale</a>
+												
+											
+										</li>
+									
+								
+							</ul>
+						
+
+						<button class="yamm-close-bottom" aria-label="Chiudere">
+							<span class="icon icon--top" aria-hidden="true"></span>
+						</button>
+					</nav>
+				</div>
+			</div>
+		</div>
+		<div class="table-cell dropdown">
+			<a href="#" class="nav-mobile-menu dropdown-toggle" data-toggle="dropdown">
+				<span class="icon icon--search"></span>
+			</a>
+			<div class="dropdown-menu" role="menu">
+				
+				
+
+
+
+	
+		
+
+
+<div class="mod mod-searchfield">
+
+    
+        <div class="mod mod-searchfield global-search global-search-mobile">
+            <form action="/bk/it/home/ricerca.html" class="form  mod-searchfield-mobile" role="form">
+                <h2 class="sr-only">Ricerca</h2>
+                <label for="search-field-phone" class="sr-only">
+                    Ricerca
+                </label>
+                <input id="search-field-phone" name="query" class="search-input form-control" type="text" placeholder="Ricerca"/>
+                <button class="icon icon--search icon--before" tabindex="0" role="button">
+                    <span class="sr-only">Ricerca</span>
+                </button>
+                <button class="icon icon--close icon--after search-reset" tabindex="0" role="button"><span class="sr-only"></span></button>
+
+                <div class="search-results">
+                    <div class="search-results-list"></div>
+                </div>
+            </form>
+        </div>
+    
+
+</div>
+
+	
+	
+
+
+				
+			</div>
+		</div>
+	</div>
+</section>
+
+		
+
+		
+		<ul class="nav navbar-nav" aria-controls="submenu">
+
+			
+			
+
+				
+                
+				
+
+				<li class="dropdown yamm-fw  ">
+					
+						
+			      		
+							<a href="/bk/it/home/sostegno-al-governo.html" aria-label="Sostegno al Governo " class="dropdown-toggle" data-toggle="dropdown" data-url="/bk/it/home/regierungsunterstuetzung/_jcr_content/par.html">Sostegno al Governo </a>
+							
+							<ul class="dropdown-menu" role="menu" aria-controls="submenu">
+								<li>
+									<div class="yamm-content container-fluid">
+										<div class="row">
+											<div class="col-sm-12">
+												<button class="yamm-close btn btn-link icon icon--after icon--close pull-right">Chiudere</button>
+											</div>
+										</div>
+										<div class="row">
+											<div class="col-md-12 main-column">
+
+											</div>
+										</div>
+										<br><br><br>
+										<button class="yamm-close-bottom" aria-label="Chiudere"><span class="icon icon--top"></span></button>
+									</div>
+								</li>
+							</ul>
+						
+					
+				</li>
+			
+
+				
+                
+				
+
+				<li class="dropdown yamm-fw  ">
+					
+						
+			      		
+							<a href="/bk/it/home/diritti-politici.html" aria-label="Diritti politici" class="dropdown-toggle" data-toggle="dropdown" data-url="/bk/it/home/politische-rechte/_jcr_content/par.html">Diritti politici</a>
+							
+							<ul class="dropdown-menu" role="menu" aria-controls="submenu">
+								<li>
+									<div class="yamm-content container-fluid">
+										<div class="row">
+											<div class="col-sm-12">
+												<button class="yamm-close btn btn-link icon icon--after icon--close pull-right">Chiudere</button>
+											</div>
+										</div>
+										<div class="row">
+											<div class="col-md-12 main-column">
+
+											</div>
+										</div>
+										<br><br><br>
+										<button class="yamm-close-bottom" aria-label="Chiudere"><span class="icon icon--top"></span></button>
+									</div>
+								</li>
+							</ul>
+						
+					
+				</li>
+			
+
+				
+                
+				
+
+				<li class="dropdown yamm-fw  ">
+					
+						
+			      		
+							<a href="/bk/it/home/digitale-transformation-ikt-lenkung.html" aria-label="Trasformazione digitale e governance delle TIC" class="dropdown-toggle" data-toggle="dropdown" data-url="/bk/it/home/digitale-transformation-ikt-lenkung/_jcr_content/par.html">Trasformazione digitale e governance delle TIC</a>
+							
+							<ul class="dropdown-menu" role="menu" aria-controls="submenu">
+								<li>
+									<div class="yamm-content container-fluid">
+										<div class="row">
+											<div class="col-sm-12">
+												<button class="yamm-close btn btn-link icon icon--after icon--close pull-right">Chiudere</button>
+											</div>
+										</div>
+										<div class="row">
+											<div class="col-md-12 main-column">
+
+											</div>
+										</div>
+										<br><br><br>
+										<button class="yamm-close-bottom" aria-label="Chiudere"><span class="icon icon--top"></span></button>
+									</div>
+								</li>
+							</ul>
+						
+					
+				</li>
+			
+
+				
+                
+				
+
+				<li class="dropdown yamm-fw  current">
+					
+						
+			      		
+							<a href="/bk/it/home/documentazione.html" aria-label="Documentazione" class="dropdown-toggle" data-toggle="dropdown" data-url="/bk/it/home/dokumentation/_jcr_content/par.html">Documentazione<span class="sr-only">current page</span></a>
+							
+							<ul class="dropdown-menu" role="menu" aria-controls="submenu">
+								<li>
+									<div class="yamm-content container-fluid">
+										<div class="row">
+											<div class="col-sm-12">
+												<button class="yamm-close btn btn-link icon icon--after icon--close pull-right">Chiudere</button>
+											</div>
+										</div>
+										<div class="row">
+											<div class="col-md-12 main-column">
+
+											</div>
+										</div>
+										<br><br><br>
+										<button class="yamm-close-bottom" aria-label="Chiudere"><span class="icon icon--top"></span></button>
+									</div>
+								</li>
+							</ul>
+						
+					
+				</li>
+			
+
+				
+                
+				
+
+				<li class="dropdown yamm-fw  ">
+					
+						
+			      		
+							<a href="/bk/it/home/la-cancelleria-federale.html" aria-label="La Cancelleria federale" class="dropdown-toggle" data-toggle="dropdown" data-url="/bk/it/home/bk/_jcr_content/par.html">La Cancelleria federale</a>
+							
+							<ul class="dropdown-menu" role="menu" aria-controls="submenu">
+								<li>
+									<div class="yamm-content container-fluid">
+										<div class="row">
+											<div class="col-sm-12">
+												<button class="yamm-close btn btn-link icon icon--after icon--close pull-right">Chiudere</button>
+											</div>
+										</div>
+										<div class="row">
+											<div class="col-md-12 main-column">
+
+											</div>
+										</div>
+										<br><br><br>
+										<button class="yamm-close-bottom" aria-label="Chiudere"><span class="icon icon--top"></span></button>
+									</div>
+								</li>
+							</ul>
+						
+					
+				</li>
+			
+		</ul>
+	</div>
+</div>
+
+	
+
+
+
+    
+
+<!-- begin: main -->
+<div class="container-fluid hidden-xs">
+	<div class="row">
+		<div class="col-sm-12">
+			
+	
+
+
+<div class="mod mod-breadcrumb">
+	<h2 id="br1" class="sr-only">Breadcrumb</h2>
+	<ol class="breadcrumb" role="menu" aria-labelledby="br1">
+		
+			<li><a href="/bk/it/home.html" title="Pagina iniziale" aria-label="Pagina iniziale">Pagina iniziale</a><span class="icon icon--greater"></span></li>
+		
+			<li><a href="/bk/it/home/documentazione.html" title="Documentazione" aria-label="Documentazione">Documentazione</a><span class="icon icon--greater"></span></li>
+		
+		<li class="active" role="presentation">Spiegazioni del Consiglio federale: Realizzazione</li>
+	</ol>
+</div>
+
+	
+		</div>
+	</div>
+</div>
+
+
+
+	
+	
+		<div class="container-fluid">
+			
+
+<div class="row">
+	<div class="col-sm-4 col-md-3 drilldown">
+		
+
+<div class="mod mod-leftnavigation">
+
+		<a href="#collapseSubNav" data-toggle="collapse" class="collapsed visible-xs">Navigazione secondaria</a>
+		<div class="drilldown-container">
+			<nav class="nav-page-list">
+				
+					<a href="/bk/it/home.html" class="icon icon--before icon--less visible-xs">Ritornare</a>
+
+					<a href="/bk/it/home.html" class="icon icon--before icon--less"><span class="sr-only">Ritornare </span>Pagina iniziale</a>
+				
+				<ul>
+					
+						
+							
+							
+								<li class="list-emphasis">
+									<a href="/bk/it/home/documentazione.html">Documentazione</a>
+								</li>
+							
+						
+					
+
+					
+					
+					
+
+					
+						
+							
+							
+								
+									
+									
+										<li>
+											<a href="/bk/it/home/documentazione/comunicati-stampa.html">Comunicati stampa</a>
+										</li>
+									
+								
+							
+						
+					
+						
+							
+							
+								
+									
+									
+										<li>
+											<a href="/bk/it/home/documentazione/discorsi.html">Discorsi</a>
+										</li>
+									
+								
+							
+						
+					
+						
+							
+							
+								
+									
+									
+										<li>
+											<a href="/bk/it/home/documentazione/aiuto-alla-condotta-strategica.html">Aiuto alla condotta strategica</a>
+										</li>
+									
+								
+							
+						
+					
+						
+							
+							
+								
+									
+									
+										<li>
+											<a href="/bk/it/home/documentazione/lingue.html">Lingue</a>
+										</li>
+									
+								
+							
+						
+					
+						
+							
+							
+								
+									
+									
+										<li>
+											<a href="/bk/it/home/documentazione/programma-gever-confederazione.html">Programma GEVER Confederazione</a>
+										</li>
+									
+								
+							
+						
+					
+						
+							
+							
+								
+									
+									
+										<li>
+											<a href="/bk/it/home/documentazione/legislazione.html">Legislazione</a>
+										</li>
+									
+								
+							
+						
+					
+						
+							
+							
+								
+									
+									
+										<li>
+											<a href="/bk/it/home/documentazione/accompagnamento-legislativo.html">Accompagnamento legislativo</a>
+										</li>
+									
+								
+							
+						
+					
+						
+							
+							
+								
+									
+									
+										<li>
+											<a href="/bk/it/home/documentazione/il-corporate-design-dell-amministrazione-federale.html">Il Corporate Design dell&#39;Amministrazione federale</a>
+										</li>
+									
+								
+							
+						
+					
+						
+							
+							
+								
+									
+									
+										<li>
+											<a href="/bk/it/home/documentazione/seminari-e-corsi.html">Seminari e corsi</a>
+										</li>
+									
+								
+							
+						
+					
+						
+							
+							
+								
+									
+									
+										<li>
+											<a href="/bk/it/home/documentazione/confederazione-in-breve.html">La Confederazione in breve</a>
+										</li>
+									
+								
+							
+						
+					
+						
+							
+							
+								
+									
+									
+										<li>
+											<a href="/bk/it/home/documentazione/protezione-dei-dati-e-principio-di-trasparenza-nella-caf.html">Protezione dei dati e principio di trasparenza nella CaF</a>
+										</li>
+									
+								
+							
+						
+					
+						
+							
+							
+								
+									
+									
+										<li>
+											<a href="/bk/it/home/documentazione/organi-extraparlamentari.html">Commissioni extraparlamentari, organi di direzione e rappresentanti della Confederazione </a>
+										</li>
+									
+								
+							
+						
+					
+						
+							
+							
+								
+									
+									
+										<li>
+											<a href="/bk/it/home/documentazione/raccolta-delle-spiegazioni-del-consiglio-federale-dal-1978.html">Raccolta delle spiegazioni del Consiglio federale dal 1978</a>
+										</li>
+									
+								
+							
+						
+					
+						
+							
+							
+								
+									
+									
+										<li>
+											<a href="/bk/it/home/documentazione/governo-elettronico.html">Scambio di atti giuridici per via elettronica con autorità</a>
+										</li>
+									
+								
+							
+						
+					
+						
+							
+							
+								
+									
+									
+										<li>
+											<a href="/bk/it/home/documentazione/publikationen-bestellen.html">Ordinazione di pubblicazioni </a>
+										</li>
+									
+								
+							
+						
+					
+						
+							
+							
+								
+									
+									
+										<li>
+											<a href="/bk/it/home/documentazione/prese_di_posizione.html">Prese di posizione della Cancelleria federale</a>
+										</li>
+									
+								
+							
+						
+					
+						
+							
+							
+								
+									
+									
+										<li>
+											<a href="/bk/it/home/documentazione/nuovo-design-opuscolo-informativo-votazioni.html">Opuscolo informativo delle votazioni: Design 2018</a>
+										</li>
+									
+								
+							
+						
+					
+						
+							
+								<li class="active">
+									Spiegazioni del Consiglio federale: Realizzazione <span class="sr-only">selected</span>
+								</li>
+							
+							
+						
+					
+				</ul>
+			</nav>
+		</div>
+
+</div>
+
+	</div>
+	<div class="col-sm-8 col-md-9 main-column main-content js-glossary-context" id="content">
+    	
+
+<div class="visible-xs visible-sm">
+	<p><a href="#context-sidebar" class="icon icon--before icon--root">Fine pagina</a></p>
+</div>
+
+<div class="contentHead">
+	
+
+
+
+<div class="mod mod-backtooverview">
+	
+</div>
+
+
+	
+	
+
+
+	
+	
+		<a href="javascript:$.printPreview.printPreview()" onclick="" class="icon icon--before icon--print pull-right" title="Stampa la pagina"></a>
+	
+
+
+
+
+	
+	
+
+<div class="mod mod-contentpage">
+    <h1 class="text-inline">Realizzazione delle Spiegazioni del Consiglio federale</h1>
+</div>
+
+</div>	
+
+
+
+
+
+
+<div class="mod mod-text">
+    
+        
+        
+            <article class="clearfix">
+                
+                
+                    <p class="lead">La creazione del libretto con le spiegazioni del Consiglio federale annesso ad ogni votazione popolare richiede parecchi mesi. Scoprite di più sui relativi termini legali e sulle diverse fasi di produzione.</p>
+                
+            </article>
+        
+    
+</div>
+<div class="mod mod-separator">
+	<hr/>
+</div>
+<div class="mod mod-image">
+	
+		
+		
+			
+				
+				
+					
+						<a href="#" data-toggle="modal" data-target="#lb-424400272x1728932109637"><figure style="max-width:1002px;"><img src="/bk/it/home/documentazione/entstehung-abstimmungsbuechlein/_jcr_content/par/image/image.imagespooler.png/1571841632408/infografik_abstimmungserlaeuterungen-IT.png" alt=""/><span class="fa fa-search magnifier"></span></figure></a>
+					<div class="modal fade" id="lb-424400272x1728932109637" tabindex="-1" role="dialog" aria-labelledby="lb-424400272x1728932109637_label" aria-hidden="true"><div class="modal-dialog"><div class="modal-content"><div class="modal-header"><button type="button" class="close icon icon--before icon--close" data-dismiss="modal" aria-hidden="true">Chiudere</button>&nbsp;</div><div class="modal-body" style="max-width: 1024px;"><img src="/bk/it/home/documentazione/entstehung-abstimmungsbuechlein/_jcr_content/par/image/image.imagespooler.png/1571841632408/original/infografik_abstimmungserlaeuterungen-IT.png" alt=""/></div></div></div></div>
+				
+				
+				
+			
+		
+	
+</div>
+
+
+    
+        
+    
+
+
+		
+
+
+
+
+
+
+<div class="mod mod-backtooverview">
+	
+</div>
+
+
+
+
+<div class="clearfix">
+	
+
+
+
+
+
+	
+	
+		
+	
+	
+
+
+
+
+
+
+	<p class="pull-left">
+		
+			<small>
+				<a href="mailto:info@bk.admin.ch" class="icon icon--before icon--message">
+					Messaggio per lo specialista
+				</a>
+			</small>
+		
+		
+
+		
+	</p>
+
+
+	
+	
+
+
+	<p class="pull-right">
+		<small>
+			
+				<a href="#" class="icon icon--before icon--power hidden-print">
+					Inizio pagina
+				</a>
+			
+		</small>
+	</p>
+ 
+</div>
+
+
+	
+		
+
+
+	
+
+	
+<div class="mod mod-socialshare">
+	
+
+	<div class="social-sharing" aria-labelledby="social_share">
+		<label id="social_share" class="sr-only">Social share</label>
+		
+			<a href="#" aria-label="Facebook" data-analytics="facebook" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u='+encodeURIComponent(location.href), 'share-dialog', 'width=626,height=436'); return false;">
+				<img src="/etc/designs/core/frontend/guidelines/img/FB-f-Logo__blue_29.png" width="16px" height="16px" alt="">
+			</a>
+		
+		
+		
+			<a href="#" aria-label="Twitter" data-analytics="twitter" onclick="window.open('http://twitter.com/share?text='+encodeURIComponent('Realizzazione delle Spiegazioni del Consiglio federale')+'&url='+encodeURIComponent(location.href), 'share-dialog', 'width=626,height=436'); return false;">
+				<img src="/etc/designs/core/frontend/guidelines/img/Twitter_logo_blue.png" width="16px" height="16px" alt="">
+			</a>
+		
+
+		
+			<a href="#" aria-label="Xing" data-analytics="xing" onclick="window.open('https://www.xing.com/spi/shares/new?url='+encodeURIComponent(location.href), 'share-dialog', 'width=600,height=450'); return false;">
+				<img src="/etc/designs/core/frontend/assets/img/ico-xing.png" width="16px" height="16px" alt=""/>
+			</a>
+		
+
+		
+			<a href="#" aria-label="LinkedIn" data-analytics="linkedin" onclick="window.open('https://www.linkedin.com/shareArticle?mini=true&url='+encodeURIComponent(location.href), 'share-dialog', 'width=600,height=450'); return false;">
+				<img src="/etc/designs/core/frontend/assets/img/ico-linkedin.png" width="16px" height="16px" alt=""/>
+			</a>
+		
+	</div>
+</div>
+
+	
+	
+
+	
+
+    </div>
+
+</div>
+
+		</div>
+	
+
+<!-- end: main -->
+
+
+    <span class="visible-print">https://www.bk.admin.ch/content/bk/it/home/documentazione/entstehung-abstimmungsbuechlein.html</span>
+
+    
+<footer role="contentinfo">
+	<h2 class="sr-only">Footer</h2>
+
+  
+
+  
+	<a name="context-sidebar"></a>
+  
+
+  
+  
+
+  	
+
+    
+        
+            <div class="container-fluid footer-service">
+                <h3>Cancelleria federale CaF</h3>
+                <nav>
+                    <ul>
+                        
+                        
+                            <li><a href="/bk/it/home/service/contatto.html" title="Contatto" aria-label="Contatto">Contatto</a></li>
+                        
+                            <li><a href="/bk/it/home/service/media.html" title="Media" aria-label="Media">Media</a></li>
+                        
+                            <li><a href="/bk/it/home/service/legalizzazioni.html" title="Legalizzazioni" aria-label="Legalizzazioni">Legalizzazioni</a></li>
+                        
+                            <li><a href="/bk/it/home/service/posti-vacanti.html" title="Posti vacanti" aria-label="Posti vacanti">Posti vacanti</a></li>
+                        
+                    </ul>
+                </nav>
+            </div>
+        
+    
+
+
+
+	
+
+    	
+			
+			
+				
+					
+<div class="site-map">
+	<h2 class="sr-only">Footer</h2>
+
+	<a href="#site-map" data-target="#site-map" data-toggle="collapse" class="site-map-toggle collapsed">Sitemap</a>
+
+	<div class="container-fluid" id="site-map">
+		<div class="col-sm-6 col-md-3">
+			
+
+
+<div class="mod mod-linklist">
+	
+	
+
+
+
+	
+		
+		
+			
+				
+					
+						
+					
+					
+				
+
+				
+					
+					
+						<h3>Sostegno al governo </h3>
+					
+				
+
+			
+			
+			
+				
+				
+					<ul class="list-unstyled">
+						
+							<li>
+								
+									
+										<a href="/bk/it/home/sostegno-al-governo/affari-del-consiglio-federale.html" title="Affari del Consiglio federale" aria-label="Affari del Consiglio federale" data-skipextcss="true">Affari del Consiglio federale</a>
+									
+									
+								
+							</li>
+						
+							<li>
+								
+									
+										<a href="/bk/it/home/sostegno-al-governo/aiuto-alla-condotta-strategica.html" title="Aiuto alla condotta strategica" aria-label="Aiuto alla condotta strategica" data-skipextcss="true">Aiuto alla condotta strategica</a>
+									
+									
+								
+							</li>
+						
+							<li>
+								
+									
+										<a href="/bk/it/home/sostegno-al-governo/communicazione.html" title="Comunicazione" aria-label="Comunicazione" data-skipextcss="true">Comunicazione</a>
+									
+									
+								
+							</li>
+						
+							<li>
+								
+									
+										<a href="/bk/it/home/sostegno-al-governo/lingue.html" title="Lingue" aria-label="Lingue" data-skipextcss="true">Lingue</a>
+									
+									
+								
+							</li>
+						
+							<li>
+								
+									
+										<a href="/bk/it/home/sostegno-al-governo/legislazione.html" title="Legislazione" aria-label="Legislazione" data-skipextcss="true">Legislazione</a>
+									
+									
+								
+							</li>
+						
+							<li>
+								
+									
+										<a href="/bk/it/home/sostegno-al-governo/accompagnamento-legislativo.html" title="Accompagnamento legislativo" aria-label="Accompagnamento legislativo" data-skipextcss="true">Accompagnamento legislativo</a>
+									
+									
+								
+							</li>
+						
+							<li>
+								
+									
+										<a href="/bk/it/home/sostegno-al-governo/pubblicazioni-ufficiali.html" title="Pubblicazioni ufficiali" aria-label="Pubblicazioni ufficiali" data-skipextcss="true">Pubblicazioni ufficiali</a>
+									
+									
+								
+							</li>
+						
+							<li>
+								
+									
+										<a href="/bk/it/home/sostegno-al-governo/servizio-presidenziale.html" title="Servizio presidenziale" aria-label="Servizio presidenziale" data-skipextcss="true">Servizio presidenziale</a>
+									
+									
+								
+							</li>
+						
+							<li>
+								
+									
+										<a href="/bk/it/home/sostegno-al-governo/Krisenmanagement.html" title="Gestione delle crisi" aria-label="Gestione delle crisi" data-skipextcss="true">Gestione delle crisi</a>
+									
+									
+								
+							</li>
+						
+					</ul>
+				
+			
+			
+		
+	
+
+
+
+	
+</div>
+
+		</div>
+		<div class="col-sm-6 col-md-3">
+			
+
+
+<div class="mod mod-linklist">
+	
+	
+
+
+
+	
+		
+		
+			
+				
+					
+						
+					
+					
+				
+
+				
+					
+					
+						<h3>Diritti politici</h3>
+					
+				
+
+			
+			
+			
+				
+				
+					<ul class="list-unstyled">
+						
+							<li>
+								
+									
+										<a href="/bk/it/home/diritti-politici/iniziative-popolari.html" title="Iniziative popolari" aria-label="Iniziative popolari" data-skipextcss="true">Iniziative popolari</a>
+									
+									
+								
+							</li>
+						
+							<li>
+								
+									
+										<a href="/bk/it/home/diritti-politici/referendum.html" title="Referendum" aria-label="Referendum" data-skipextcss="true">Referendum</a>
+									
+									
+								
+							</li>
+						
+							<li>
+								
+									
+										<a href="/bk/it/home/diritti-politici/votazioni.html" title="Votazioni popolari" aria-label="Votazioni popolari" data-skipextcss="true">Votazioni popolari</a>
+									
+									
+								
+							</li>
+						
+							<li>
+								
+									
+										<a href="/bk/it/home/diritti-politici/petizioni.html" title="Petizioni" aria-label="Petizioni" data-skipextcss="true">Petizioni</a>
+									
+									
+								
+							</li>
+						
+							<li>
+								
+									
+										<a href="/bk/it/home/diritti-politici/elezioni-del-consiglio-nazionale.html" title="Elezioni del Consiglio nazionale" aria-label="Elezioni del Consiglio nazionale" data-skipextcss="true">Elezioni del Consiglio nazionale</a>
+									
+									
+								
+							</li>
+						
+							<li>
+								
+									
+										<a href="/bk/it/home/diritti-politici/registro-federale-dei-partiti.html" title="Registro federale dei partiti" aria-label="Registro federale dei partiti" data-skipextcss="true">Registro federale dei partiti</a>
+									
+									
+								
+							</li>
+						
+							<li>
+								
+									
+										<a href="/bk/it/home/diritti-politici/esercizio-dei-diritti-politici-retrospettiva-e-dati.html" title="Esercizio dei diritti politici" aria-label="Esercizio dei diritti politici" data-skipextcss="true">Esercizio dei diritti politici</a>
+									
+									
+								
+							</li>
+						
+							<li>
+								
+									
+										<a href="/bk/it/home/diritti-politici/e-voting.html" title="Vote &eacute;lectronique" aria-label="Vote &eacute;lectronique" data-skipextcss="true">Vote &eacute;lectronique</a>
+									
+									
+								
+							</li>
+						
+					</ul>
+				
+			
+			
+		
+	
+
+
+
+	
+</div>
+
+		</div>
+		<div class="col-sm-6 col-md-3">
+			
+
+
+<div class="mod mod-linklist">
+	
+	
+
+
+
+	
+		
+		
+			
+				
+					
+						
+					
+					
+				
+
+				
+					
+					
+						<h3>Digitalizzazione</h3>
+					
+				
+
+			
+			
+			
+				
+				
+					<ul class="list-unstyled">
+						
+							<li>
+								
+									
+										<a href="/bk/it/home/digitale-transformation-ikt-lenkung/bereichdti.html" title="Settore TDT" aria-label="Settore TDT" data-skipextcss="true">Settore TDT</a>
+									
+									
+								
+							</li>
+						
+							<li>
+								
+									
+										<a href="/bk/it/home/digitale-transformation-ikt-lenkung/digitale-schweiz.html" title="Svizzera digitale" aria-label="Svizzera digitale" data-skipextcss="true">Svizzera digitale</a>
+									
+									
+								
+							</li>
+						
+							<li>
+								
+									
+										<a href="/bk/it/home/digitale-transformation-ikt-lenkung/digitale-bundesverwaltung.html" title="Amministrazione digitale" aria-label="Amministrazione digitale" data-skipextcss="true">Amministrazione digitale</a>
+									
+									
+								
+							</li>
+						
+							<li>
+								
+									
+										<a href="/bk/it/home/digitale-transformation-ikt-lenkung/bundesarchitektur.html" title="Architettura della Confederazione" aria-label="Architettura della Confederazione" data-skipextcss="true">Architettura della Confederazione</a>
+									
+									
+								
+							</li>
+						
+							<li>
+								
+									
+										<a href="/bk/it/home/digitale-transformation-ikt-lenkung/hermes_projektmanagementmethode.html" title="Metodo di gestione di progetti HERMES" aria-label="Metodo di gestione di progetti HERMES" data-skipextcss="true">Metodo di gestione di progetti HERMES</a>
+									
+									
+								
+							</li>
+						
+							<li>
+								
+									
+										<a href="/bk/it/home/digitale-transformation-ikt-lenkung/projekte-programme.html" title="Progetti e programmi" aria-label="Progetti e programmi" data-skipextcss="true">Progetti e programmi</a>
+									
+									
+								
+							</li>
+						
+							<li>
+								
+									
+										<a href="/bk/it/home/digitale-transformation-ikt-lenkung/standarddienste.html" title="Servizi standard TIC" aria-label="Servizi standard TIC" data-skipextcss="true">Servizi standard TIC</a>
+									
+									
+								
+							</li>
+						
+							<li>
+								
+									
+										<a href="/bk/it/home/digitale-transformation-ikt-lenkung/ikt-vorgaben.html" title="Direttive TIC" aria-label="Direttive TIC" data-skipextcss="true">Direttive TIC</a>
+									
+									
+								
+							</li>
+						
+							<li>
+								
+									
+										<a href="/bk/it/home/digitale-transformation-ikt-lenkung/finanzielle-fuehrung.html" title="Gestione finanziaria delle TIC" aria-label="Gestione finanziaria delle TIC" data-skipextcss="true">Gestione finanziaria delle TIC</a>
+									
+									
+								
+							</li>
+						
+							<li>
+								
+									
+										<a href="/bk/it/home/digitale-transformation-ikt-lenkung/controlling.html" title="Controlling informatico" aria-label="Controlling informatico" data-skipextcss="true">Controlling informatico</a>
+									
+									
+								
+							</li>
+						
+							<li>
+								
+									
+										<a href="/bk/it/home/digitale-transformation-ikt-lenkung/e-procurement.html" title="E-Procurement" aria-label="E-Procurement" data-skipextcss="true">E-Procurement</a>
+									
+									
+								
+							</li>
+						
+							<li>
+								
+									
+										<a href="/bk/it/home/digitale-transformation-ikt-lenkung/e-services-bund.html" title="E-Servizi della Confederazione" aria-label="E-Servizi della Confederazione" data-skipextcss="true">E-Servizi della Confederazione</a>
+									
+									
+								
+							</li>
+						
+							<li>
+								
+									
+										<a href="/bk/it/home/digitale-transformation-ikt-lenkung/datenoekosystem_schweiz.html" title="Ecosistema di dati Svizzera" aria-label="Ecosistema di dati Svizzera" data-skipextcss="true">Ecosistema di dati Svizzera</a>
+									
+									
+								
+							</li>
+						
+					</ul>
+				
+			
+			
+		
+	
+
+
+
+	
+</div>
+
+		</div>
+		<div class="col-sm-6 col-md-3">
+			
+
+
+<div class="mod mod-linklist">
+	
+	
+
+
+
+	
+		
+		
+			
+				
+					
+						
+					
+					
+				
+
+				
+					
+					
+						<h3>La Cancelleria federale</h3>
+					
+				
+
+			
+			
+			
+				
+				
+					<ul class="list-unstyled">
+						
+							<li>
+								
+									
+										<a href="/bk/it/home/la-cancelleria-federale/bundeskanzler.html" title="Viktor Rossi - Cancelliere della Confederazione " aria-label="Viktor Rossi - Cancelliere della Confederazione " data-skipextcss="true">Viktor Rossi - Cancelliere della Confederazione </a>
+									
+									
+								
+							</li>
+						
+							<li>
+								
+									
+										<a href="/bk/it/home/la-cancelleria-federale/vizekanzler_vizekanzlerin.html" title="Rachel Salzmann - Vicecancelliera" aria-label="Rachel Salzmann - Vicecancelliera" data-skipextcss="true">Rachel Salzmann - Vicecancelliera</a>
+									
+									
+								
+							</li>
+						
+							<li>
+								
+									
+										<a href="/bk/it/home/la-cancelleria-federale/vizekanzler_br-sprecher.html" title="Andrea Arcidiacono - Vicecancelliere" aria-label="Andrea Arcidiacono - Vicecancelliere" data-skipextcss="true">Andrea Arcidiacono - Vicecancelliere</a>
+									
+									
+								
+							</li>
+						
+							<li>
+								
+									
+										<a href="/bk/it/home/la-cancelleria-federale/geschaeftsleitung.html" title="Direzione" aria-label="Direzione" data-skipextcss="true">Direzione</a>
+									
+									
+								
+							</li>
+						
+							<li>
+								
+									
+										<a href="/bk/it/home/la-cancelleria-federale/organizzazione-della-cancelleria-federale.html" title="Organizzazione della Cancelleria federale" aria-label="Organizzazione della Cancelleria federale" data-skipextcss="true">Organizzazione della Cancelleria federale</a>
+									
+									
+								
+							</li>
+						
+							<li>
+								
+									
+										<a href="/bk/it/home/la-cancelleria-federale/basi-legali.html" title="Basi legali" aria-label="Basi legali" data-skipextcss="true">Basi legali</a>
+									
+									
+								
+							</li>
+						
+							<li>
+								
+									
+										<a href="/bk/it/home/la-cancelleria-federale/la-storia-della-cancelleria-federale.html" title="La storia della Cancelleria federale" aria-label="La storia della Cancelleria federale" data-skipextcss="true">La storia della Cancelleria federale</a>
+									
+									
+								
+							</li>
+						
+							<li>
+								
+									
+										<a href="/bk/it/home/la-cancelleria-federale/geschaeftsordnung.html" title="Regolamento interno" aria-label="Regolamento interno" data-skipextcss="true">Regolamento interno</a>
+									
+									
+								
+							</li>
+						
+							<li>
+								
+									
+										<a href="/bk/it/home/la-cancelleria-federale/arbeitenbeiderbundeskanzlei.html" title="Lavorare alla Cancelleria federale" aria-label="Lavorare alla Cancelleria federale" data-skipextcss="true">Lavorare alla Cancelleria federale</a>
+									
+									
+								
+							</li>
+						
+					</ul>
+				
+			
+			
+		
+	
+
+
+
+	
+</div>
+
+		</div>
+		<div class="col-sm-6 col-md-3">
+			
+
+
+<div class="mod mod-linklist">
+	
+	
+
+
+
+	
+		
+		
+			
+				
+					
+						
+					
+					
+				
+
+				
+					
+					
+						<h3>Documentazione</h3>
+					
+				
+
+			
+			
+			
+				
+				
+					<ul class="list-unstyled">
+						
+							<li>
+								
+									
+										<a href="/bk/it/home/documentazione/organi-extraparlamentari.html" title="Organi extraparlamentari " aria-label="Organi extraparlamentari " data-skipextcss="true">Organi extraparlamentari </a>
+									
+									
+								
+							</li>
+						
+							<li>
+								
+									
+										<a href="/bk/it/home/documentazione/protezione-dei-dati-e-principio-di-trasparenza-nella-caf.html" title="Protezione dei dati e principio di trasparenza" aria-label="Protezione dei dati e principio di trasparenza" data-skipextcss="true">Protezione dei dati e principio di trasparenza</a>
+									
+									
+								
+							</li>
+						
+							<li>
+								
+									
+										<a href="/bk/it/home/documentazione/aiuto-alla-condotta-strategica.html" title="Aiuto alla condotta strategica " aria-label="Aiuto alla condotta strategica " data-skipextcss="true">Aiuto alla condotta strategica </a>
+									
+									
+								
+							</li>
+						
+							<li>
+								
+									
+										<a href="/bk/it/home/documentazione/legislazione.html" title="Legislazione " aria-label="Legislazione " data-skipextcss="true">Legislazione </a>
+									
+									
+								
+							</li>
+						
+							<li>
+								
+									
+										<a href="/bk/it/home/documentazione/programma-gever-confederazione.html" title="Programma GEVER Confederazione " aria-label="Programma GEVER Confederazione " data-skipextcss="true">Programma GEVER Confederazione </a>
+									
+									
+								
+							</li>
+						
+							<li>
+								
+									
+										<a href="/bk/it/home/documentazione/seminari-e-corsi.html" title="Seminari e corsi " aria-label="Seminari e corsi " data-skipextcss="true">Seminari e corsi </a>
+									
+									
+								
+							</li>
+						
+							<li>
+								
+									
+										<a href="/bk/it/home/documentazione/accompagnamento-legislativo.html" title="Accompagnamento legislativo " aria-label="Accompagnamento legislativo " data-skipextcss="true">Accompagnamento legislativo </a>
+									
+									
+								
+							</li>
+						
+							<li>
+								
+									
+										<a href="/bk/it/home/documentazione/governo-elettronico.html" title="Scambio di atti giuridici per via elettronica con autorit&agrave;" aria-label="Scambio di atti giuridici per via elettronica con autorit&agrave;" data-skipextcss="true">Scambio di atti giuridici per via elettronica con autorit&agrave;</a>
+									
+									
+								
+							</li>
+						
+					</ul>
+				
+			
+			
+		
+	
+
+
+
+	
+</div>
+
+		</div>
+		<div class="col-sm-6 col-md-3">
+			
+
+
+<div class="mod mod-linklist">
+	
+	
+
+
+
+	
+		
+		
+			
+				
+					
+						
+					
+					
+				
+
+				
+					
+					
+						<h3>Pubblicazione</h3>
+					
+				
+
+			
+			
+			
+				
+				
+					<ul class="list-unstyled">
+						
+							<li>
+								
+									
+										<a href="/bk/it/home/documentazione/il-corporate-design-dell-amministrazione-federale.html" title="Il Corporate Design dell'Amministrazione federale " aria-label="Il Corporate Design dell'Amministrazione federale " data-skipextcss="true">Il Corporate Design dell'Amministrazione federale </a>
+									
+									
+								
+							</li>
+						
+							<li>
+								
+									
+										<a href="/bk/it/home/documentazione/confederazione-in-breve.html" title="La Confederazione in breve " aria-label="La Confederazione in breve " data-skipextcss="true">La Confederazione in breve </a>
+									
+									
+								
+							</li>
+						
+							<li>
+								
+									
+										<a href="/bk/it/home/documentazione/comunicati-stampa.html" title="Comunicati stampa " aria-label="Comunicati stampa " data-skipextcss="true">Comunicati stampa </a>
+									
+									
+								
+							</li>
+						
+							<li>
+								
+									
+										<a href="/bk/it/home/documentazione/discorsi.html" title="Discorsi " aria-label="Discorsi " data-skipextcss="true">Discorsi </a>
+									
+									
+								
+							</li>
+						
+							<li>
+								
+									
+										<a href="/bk/it/home/documentazione/raccolta-delle-spiegazioni-del-consiglio-federale-dal-1978.html" title="Raccolta delle spiegazioni del Consiglio federale" aria-label="Raccolta delle spiegazioni del Consiglio federale" data-skipextcss="true">Raccolta delle spiegazioni del Consiglio federale</a>
+									
+									
+								
+							</li>
+						
+							<li>
+								
+									
+										<a href="/bk/it/home/documentazione/lingue.html" title="Lingue " aria-label="Lingue " data-skipextcss="true">Lingue </a>
+									
+									
+								
+							</li>
+						
+					</ul>
+				
+			
+			
+		
+	
+
+
+
+	
+</div>
+
+		</div>
+		<div class="col-sm-6 col-md-3">
+			
+
+
+<div class="mod mod-linklist">
+	
+	
+
+
+
+	
+		
+		
+			
+			
+			
+				
+					
+				
+				
+			
+			
+		
+	
+
+
+
+	
+</div>
+
+		</div>
+		<div class="col-sm-6 col-md-3">
+			
+
+
+<div class="mod mod-linklist">
+	
+	
+
+
+
+	
+		
+		
+			
+			
+			
+				
+					
+				
+				
+			
+			
+		
+	
+
+
+
+	
+</div>
+
+		</div>
+	</div>
+</div>
+				
+			
+		
+    
+
+
+  	<div class="container-fluid">
+  		
+	
+
+
+	
+		
+			
+				<h3>Sempre informati</h3>
+			
+
+			<nav class="links-social" aria-labelledby="social_media">
+				<label id="social_media" class="sr-only">Social media links</label>
+				<ul>
+					
+						<li><a href="https://twitter.com/BR_Sprecher" class="icon icon--before  icon icon--before icon--twitter" title="@BR_Sprecher" aria-label="@BR_Sprecher">@BR_Sprecher</a></li>
+					
+						<li><a href="https://x.com/SwissGov" class="icon icon--before  icon icon--before icon--twitter" aria-label="@SwissGov" target="_blank" title="">@SwissGov</a></li>
+					
+						<li><a href="https://www.admin.ch/gov/it/pagina-iniziale/documentazione/comunicati-stampa/abbonarsi-comunicati-stampa.html" class="icon icon--before  icon icon--before icon--message" aria-label="News" target="_blank" title="">News</a></li>
+					
+						<li><a href="https://www.newsd.admin.ch/newsd/feeds/rss?lang=it&org-nr=1&topic=&keyword=&offer-nr=&catalogueElement=&kind=M,R&start_date=2015-01-01&end_date=" class="icon icon--before  icon icon--before icon--rss" aria-label="RSS Feed" target="_blank" title="">RSS Feed</a></li>
+					
+						<li><a href="https://www.instagram.com/gov.ch/" class="icon icon--before  icon icon--before fa fa-instagram" title="@gov.ch" aria-label="@gov.ch">@gov.ch</a></li>
+					
+						<li><a href="https://www.linkedin.com/company/digitale-schweiz/" class="icon icon--before  icon icon--before fa fa-linkedin" target="_blank" aria-label="La Svizzera digitale" title="">La Svizzera digitale</a></li>
+					
+						<li><a href="https://twitter.com/digitaldialogCH/" class="icon icon--before  icon icon--before icon--twitter" target="_blank" title="@digitaldialogCH" aria-label="@digitaldialogCH">@digitaldialogCH</a></li>
+					
+						<li><a href="https://www.linkedin.com/company/bundeskanzlei-bk/" class="icon icon--before  icon icon--before fa fa-linkedin" aria-label="Cancelleria federale" target="_blank" title="">Cancelleria federale</a></li>
+					
+				</ul>
+			</nav>
+		
+		
+	
+
+
+
+		
+	
+
+<div class="mod mod-cobranding">
+    
+        
+            
+        
+        
+    
+</div>
+
+
+
+
+  		<!-- begin: logo phone -->
+		
+			
+			
+
+	
+		
+<div class="mod mod-logo">
+	
+	
+		
+			<hr class="footer-line visible-xs">
+			<img src="/bk/it/_jcr_content/logo/image.imagespooler.png/1607941605855/logo.png" class="visible-xs" alt="Cancelleria federale svizzera"/>
+		
+		
+	
+	
+</div>
+	
+	
+
+
+			
+		
+	 	<!-- end: logo phone -->
+  	</div>
+
+    
+
+<div class="footer-address">
+	
+
+	<span class="hidden-xs">Cancelleria federale CaF</span>
+
+
+	
+
+	
+		
+			<nav class="pull-right">
+				<ul>
+					
+						<li><a href="https://www.admin.ch/gov/it/pagina-iniziale/basi-legali.html" target="_blank" aria-label="Basi legali" title="">Basi legali</a></li>
+					
+						<li><a href="/bk/it/home/documentazione/impressum.html" title="Impressum" aria-label="Impressum" data-skipextcss="true">Impressum</a></li>
+					
+				</ul>
+			</nav>
+		
+		
+	
+
+
+</div>
+
+
+  
+  
+
+</footer>        
+
+
+    <div class="modal" id="nav_modal_rnd">
+        <!-- modal -->
+    </div>
+
+</div>
+<!-- end: container -->
+
+
+
+<script src="/etc.clientlibs/clientlibs/granite/jquery/granite/csrf.min.js"></script>
+<script src="/etc/clientlibs/granite/jquery/granite/csrf.min.js"></script>
+
+
+
+	<script type="text/javascript" src="/etc/designs/core/frontend/modules.js"></script>
+
+
+
+
+
+	
+
+
+
+
+
+	<!-- bdefCvqbiCNlwcRyJV32rZjkxxUmyCugsSlVpc5avzBK44hYQB0UWoHpoJWbRbUURSNXUhzz1UDaCk0D03IH5jGGBNlBaptVAW3kd8Syii3Xa1QjrXaOChwQQW4LeZl1BplLNTv1p5UbJkUwDFPfv2MVwCvU8zxA9iE7CBWPQnOpzwaqAGPwxatw7RcLsyxyaIUSqv7OehE3lQhBmo92DswWIB6qUKdHbIHELqu4UEQlH1K2FxPbaiq0gRVbf9POg61D2rBOfe20vTPidReW4X4qCUC8FOhyck0V8QNBdXtWCCjMPFMixtFxcg5KQxQVY8En7WFDClojl6Tl5c7JbwHCofF4aA9mMdG75DzgLHdsd7enooyA3lBZbItsrQkJ8jJzTsMMFJYNmmxZAmpFPqoUy7ZVAUzOfEk3cSi9dAjEWQCBmAAB41JAE6nmPF1tYcRVKGZk3UTcfAvl2gHL2tFtRcDTG5E58p9XhomUSA1blUosZcLMXZXHCMjZvPmk2OrEbOZXVNcstCTxsl6wuaLDxF17sI35Efc5iUUa6j8ZU98Ys9ml9E9Zsd8kYYQxkiFAe5JmyEfwsf22wZQQttVKmOrOuGSLdqPzOxHQH8t2OksJUbz27U73hFOY884zB2rPMLmqqsLhgKXlvXJ6XLsm68CYtcxdMOIvhLb1UNe5ijMxhnR7Ky16V9pt6EJbfy0bO34MNuxPdPsbFUeM7wImcwma4xod43GQ3YjNs9KFQudWbu36z7A0ICpSJUigjkvEt7GVhLwgdzoI5FzUubc1XDChiN6aDPNw5V0FhJTESpGYviMOvGwr1GAxE4r1d7P0Snk6qELNdiraGxXtKEpiAL6yvCaVZigSP8Jlocl3InqfV5JoUZQVL28n5QSEJzigU2qi1eL92SZbvx0KTTA4o2t5FgzVs1NyrSK2rGa7vyTpHIfHGT5FV1gb93SzJACKnzINZvzccZVTMb9CAMuOWmIdLzMOhvXbDj3PxvgNWP4xfmetCMwD6eiyX0Jl7quFdRM71jEk81JuG5w4r6TYXW89GA26kSqgPIxrZHjOSJCw7OtBCdw9m3aXkZixLQCpn4eQv63LYcGf8xq1bvG2CBbC5BtFy78LDHuQEBQOyrFWWdmLpoNTHXt7uoPSpqIGa20BXOfAoJv9Ot6gj82t8JTYxD183Z7cqv5Tr5k5QOePeTI4iZVvSaxKsRFK0XjQ9No9oZcLokt3BasevKZLHCd22hS3x4Vu3AXyXGSZGGP39eU4s17S8HD5kPZKbTzlNXY4ZnVFvdTKrGqAo1QqqAQX60CswW3ehT2MHhzNcIY60zJxLX5Ng7FAwdmVqAO31VcxeoWLrzNyUujn4roHd5kDnHVS1h4QYqJPNLnG6Y7nfYsxkV3jupaJwYockXMDtLxaK1ErcaTMayDTDxS6lQeYwYQOpzWCibMDSff51OelTXwUbHxhE3jb6GXpXudXc9iDFxYfSlquUkXJQn2TabWJHIX -->
+
+
+
+
+
+ 
+	
+
+
+
+
+	<!-- Matomo -->
+<script type="text/javascript">
+  var _paq = window._paq || [];
+  /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="https://analytics.bit.admin.ch/";
+    _paq.push(['setTrackerUrl', u+'matomo.php']);
+    _paq.push(['setSiteId', '20']);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<!-- End Matomo Code -->
+
+
+
+
+
+</body>
+
+    
+
+</html>

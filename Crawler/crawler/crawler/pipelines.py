@@ -20,15 +20,15 @@ import shutil
 class FilterURLPipeline():
     
     def __init__(self):
-        self.allowed_content_type = {"text/html", "application/pdf", "image/png"}
+        self.allowed_content_type = ["text/html", "application/pdf", "image/png"]
 
     def process_item(self, item, spider):
-        if item["status"] != 200 or item["content_type"] == None:
-            DropItem()
-        item["content_type"] = item["content_type"].split(";")[0]
-        if item["content_type"] not in self.allowed_content_type:
-            DropItem()
-        return item
+        if item["status"] != 200 or item["content_type"] is None:
+            raise DropItem("test")
+        elif not item["content_type"].split(";")[0] in self.allowed_content_type: 
+            raise DropItem("test")
+        else :
+            return item
 
 
 class IDAssignmentPipeline:
@@ -118,6 +118,10 @@ class DownloadContentPipeline:
         if item["content_type"] == None:
             return item
         content_type = item["content_type"].split(";")[0]
+        if not (content_type in self.folders):
+            print("Content type error...")
+            print(content_type)
+            return item
         file = open("{}/{}.bin".format(content_type, item["id"]), "wb")
         file.write(item["content_body"])
         file.close()
