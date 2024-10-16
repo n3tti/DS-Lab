@@ -20,4 +20,4 @@ class PageItem(scrapy.Item):
     content_body = scrapy.Field()
     last_modified = scrapy.Field()
     date = scrapy.Field()
-    
+    lang = scrapy.Field()

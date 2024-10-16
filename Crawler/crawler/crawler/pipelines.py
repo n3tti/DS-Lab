@@ -72,10 +72,17 @@ class ParentsPipeline:
         self.file = open('parents.json', 'w')
 
     def close_spider(self, spider):
+        self.file.write("[\n")
+        first = True
         for child_id, parents_set in self.parents.items():
             dic = {"id" : child_id, "parents" : list(parents_set)}
-            line = json.dumps(dic) + "\n"
+            line = json.dumps(dic)
+            if first:
+                first = False
+            else:
+                line = ",\n" + line 
             self.file.write(line)
+        self.file.write("\n]")
         self.file.close()
 
     def process_item(self, item, spider):
@@ -98,14 +105,21 @@ class MetadataPipeline:
 
     def open_spider(self, spider):
         self.file = open('metadata.json', 'w')
+        self.file.write("[\n")
+        self.isFirst = True
 
     def close_spider(self, spider):
+        self.file.write("\n]")
         self.file.close()
 
     def process_item(self, item, spider):
-        dic = {"id": item["id"], "depth" : item["depth"], "url" : item["url"], "type" : item["content_type"], "length" : item["content_length"], \
+        dic = {"id": item["id"], "depth" : item["depth"], "url" : item["url"],"lang": item["lang"], "type" : item["content_type"], "length" : item["content_length"], \
                "encoding" : item["content_encoding"], "last_modified" : item["last_modified"], "date" : item["date"], "cousin_urls" : item["cousin_urls"]}
-        line = json.dumps(dic) + "\n"
+        line = json.dumps(dic)
+        if self.isFirst:
+            self.isFirst = False
+        else:
+            line = ",\n" + line
         self.file.write(line)
         return item
   

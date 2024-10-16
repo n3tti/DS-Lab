@@ -44,7 +44,7 @@ class CrawlingSpider(CrawlSpider):
         item["content_body"] = response.body
         item["last_modified"] = response.headers.get("Last-Modified").decode('utf-8') if response.headers.get('Last-Modified') else None
         item["date"] = response.headers.get('Date').decode('utf-8') if response.headers.get('Date') else None
-
+        item["lang"] = response.xpath("//html/@lang").get()
         alternate_links = response.xpath('//link[@rel="alternate"]')
         languages_dict = {}
         for link in alternate_links:
