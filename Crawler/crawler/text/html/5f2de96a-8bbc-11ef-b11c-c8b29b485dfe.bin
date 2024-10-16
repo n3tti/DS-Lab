@@ -1,0 +1,2837 @@
+
+<!DOCTYPE HTML>
+<!--[if lt IE 7 ]> <html lang="de" class="no-js ie6 oldie"> <![endif]-->
+<!--[if IE 7 ]> <html lang="de" class="no-js ie7 oldie"> <![endif]-->
+<!--[if IE 8 ]> <html lang="de" class="no-js ie8 oldie"> <![endif]-->
+<!--[if IE 9 ]> <html lang="de" class="no-js ie9"> <![endif]-->
+<!--[if gt IE 9 ]><!--><html lang="de" class="no-js no-ie"> <!--<![endif]-->
+
+
+    
+<head>
+    
+    
+
+
+	
+	
+		<title>Startseite EJPD</title>
+	
+	
+
+
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta http-equiv="cleartype" content="on" />
+
+
+	<meta name="msapplication-TileColor" content="#ffffff"/>
+	<meta name="msapplication-TileImage" content="/etc/designs/core/frontend/guidelines/img/ico/mstile-144x144.png"/>
+	<meta name="msapplication-config" content="/etc/designs/core/frontend/guidelines/img/ico/browserconfig.xml"/>
+
+
+
+	
+	
+		
+	
+
+
+
+
+
+<meta name="language" content="de" />
+<meta name="author" content="Eidgenössisches Justiz- und Polizeidepartement" />
+
+
+
+
+	<!-- current page in other languages -->
+	
+		<link rel="alternate" type="text/html" href="/ejpd/de/home.html" hreflang="de" lang="de"/>
+	
+		<link rel="alternate" type="text/html" href="/ejpd/en/home.html" hreflang="en" lang="en"/>
+	
+		<link rel="alternate" type="text/html" href="/ejpd/it/home.html" hreflang="it" lang="it"/>
+	
+		<link rel="alternate" type="text/html" href="/ejpd/fr/home.html" hreflang="fr" lang="fr"/>
+	
+
+
+
+
+	<meta name="twitter:card" content="summary"/>
+	
+		<meta name="twitter:site" content="@EJPD_DFJP_DFGP"/>
+	
+	
+		<meta property="og:url" content="https://www.ejpd.admin.ch/ejpd/de/home.html"/>
+	
+	<meta property="og:type" content="article"/>
+	
+		<meta property="og:title" content="Startseite EJPD"/>
+	
+	
+	
+		<meta property="og:image" content="https://www.ejpd.admin.ch/ejpd/de/_jcr_content/socialshareimage.imagespooler.png/1677051042173/swiss.png"/>
+	
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+	<!--style type="text/css" id="antiClickjack">body{display:none !important;}</style-->
+	<script type="text/javascript">
+
+		var styleElement = document.createElement('STYLE');
+		styleElement.setAttribute('id', 'antiClickjack');
+		styleElement.setAttribute('type', 'text/css');
+		styleElement.innerHTML = 'body {display:none !important;}';
+		document.getElementsByTagName('HEAD')[0].appendChild(styleElement);
+
+		if (self === top) {
+			var antiClickjack = document.getElementById("antiClickjack");
+			antiClickjack.parentNode.removeChild(antiClickjack);
+		} else {
+			top.location = self.location;
+		}
+	</script>
+
+
+
+
+<script src="/etc.clientlibs/clientlibs/granite/jquery.min.js"></script>
+<script src="/etc.clientlibs/clientlibs/granite/utils.min.js"></script>
+
+
+
+	<script>
+		Granite.I18n.init({
+			locale: "de",
+			urlPrefix: "/libs/cq/i18n/dict."
+		});
+	</script>
+
+
+
+	<link rel="stylesheet" href="/etc/designs/core/frontend/guidelines.min.css" type="text/css">
+
+	<link rel="stylesheet" href="/etc/designs/core/frontend/modules.min.css" type="text/css">
+
+	
+	<link rel="shortcut icon" href="/etc/designs/core/frontend/guidelines/img/ico/favicon.ico">
+	<link rel="apple-touch-icon" sizes="57x57" href="/etc/designs/core/frontend/guidelines/img/ico/apple-touch-icon-57x57.png"/>
+	<link rel="apple-touch-icon" sizes="114x114" href="/etc/designs/core/frontend/guidelines/img/ico/apple-touch-icon-114x114.png"/>
+	<link rel="apple-touch-icon" sizes="72x72" href="/etc/designs/core/frontend/guidelines/img/ico/apple-touch-icon-72x72.png"/>
+	<link rel="apple-touch-icon" sizes="144x144" href="/etc/designs/core/frontend/guidelines/img/ico/apple-touch-icon-144x144.png"/>
+	<link rel="apple-touch-icon" sizes="60x60" href="/etc/designs/core/frontend/guidelines/img/ico/apple-touch-icon-60x60.png"/>
+	<link rel="apple-touch-icon" sizes="120x120" href="/etc/designs/core/frontend/guidelines/img/ico/apple-touch-icon-120x120.png"/>
+	<link rel="apple-touch-icon" sizes="76x76" href="/etc/designs/core/frontend/guidelines/img/ico/apple-touch-icon-76x76.png"/>
+	<link rel="icon" type="image/png" href="/etc/designs/core/frontend/guidelines/img/ico/favicon-96x96.png" sizes="96x96"/>
+	<link rel="icon" type="image/png" href="/etc/designs/core/frontend/guidelines/img/ico/favicon-16x16.png" sizes="16x16"/>
+	<link rel="icon" type="image/png" href="/etc/designs/core/frontend/guidelines/img/ico/favicon-32x32.png" sizes="32x32"/>
+
+
+
+
+
+
+
+	<!--[if lt IE 9]>
+		<script src="https://cdnjs.cloudflare.com/polyfill/v2/polyfill.js?version=4.8.0"></script>
+	<![endif]-->
+
+
+
+    
+
+
+
+    
+        
+
+	
+
+    
+
+</head>
+
+
+    
+
+<body class="mod mod-layout   skin-layout-template-homepage" data-glossary="/ejpd/de/home.glossaryjs.json">
+
+<div class="mod mod-homepage">
+<ul class="access-keys" role="navigation">
+    <li><a href="/ejpd/de/home.html" accesskey="0">Homepage</a></li>
+    
+    <li><a href="#main-navigation" accesskey="1">Main navigation</a></li>
+    
+    
+    <li><a href="#content" accesskey="2">Content area</a></li>
+    
+    
+    <li><a href="#site-map" accesskey="3">Sitemap</a></li>
+    
+    
+    <li><a href="#search-field" accesskey="4">Search</a></li>
+    
+</ul>
+</div>
+
+<!-- begin: container -->
+<div class="container container-main">
+
+    
+
+
+<header style="background-size: cover; background-image:" role="banner">
+	
+
+	<div class="clearfix">
+		
+			
+
+
+	
+
+
+
+	<nav class="navbar treecrumb pull-left">
+
+		
+		
+			<h2 class="sr-only">Eidgenössisches Justiz- und Polizeidepartement EJPD</h2>
+		
+
+		
+			
+				<ul class="nav navbar-nav">
+				
+
+						
+
+						
+						<li class="dropdown">
+							
+							
+								
+									<a id="federalAdministration-dropdown" href="#" aria-label="Bundesverwaltung" class="dropdown-toggle" data-toggle="dropdown"><span class="icon icon--right"></span> Bundesverwaltung</a>
+								
+								
+							
+
+							
+								
+								<ul class="dropdown-menu" role="menu" aria-labelledby="federalAdministration-dropdown">
+									
+										
+										<li class="dropdown-header">
+											
+												
+													<a href="https://www.admin.ch/" aria-label="Bundesverwaltung admin.ch" target="_blank" title="">Bundesverwaltung admin.ch</a>
+												
+												
+											
+
+											
+											
+												
+													<ul>
+														<li>
+															
+																
+																
+																
+																	<a href="https://www.bk.admin.ch/" aria-label="BK: Schweizerische Bundeskanzlei" target="_blank" title=""> BK: Schweizerische Bundeskanzlei</a>
+																
+															
+														</li>
+													</ul>
+												
+											
+												
+													<ul>
+														<li>
+															
+																
+																
+																
+																	<a href="https://www.eda.admin.ch/" aria-label="EDA: Eidgenössisches Departement für auswärtige Angelegenheiten" target="_blank" title=""> EDA: Eidgenössisches Departement für auswärtige Angelegenheiten</a>
+																
+															
+														</li>
+													</ul>
+												
+											
+												
+													<ul>
+														<li>
+															
+																
+																
+																
+																	<a href="https://www.edi.admin.ch/" aria-label="EDI: Eidgenössisches Department des Innern" target="_blank" title=""> EDI: Eidgenössisches Department des Innern</a>
+																
+															
+														</li>
+													</ul>
+												
+											
+												
+													<ul>
+														<li>
+															
+																
+																
+																
+																	<a href="http://www.ejpd.admin.ch/" aria-label="EJPD: Eidgenössisches Justiz- und Polizeidepartment" target="_blank" title=""> EJPD: Eidgenössisches Justiz- und Polizeidepartment</a>
+																
+															
+														</li>
+													</ul>
+												
+											
+												
+													<ul>
+														<li>
+															
+																
+																
+																
+																	<a href="https://www.vbs.admin.ch/" aria-label="VBS: Eidgenössisches Department für Verteidigung, Bevölkerungsschutz und Sport" target="_blank" title=""> VBS: Eidgenössisches Department für Verteidigung, Bevölkerungsschutz und Sport</a>
+																
+															
+														</li>
+													</ul>
+												
+											
+												
+													<ul>
+														<li>
+															
+																
+																
+																
+																	<a href="https://www.efd.admin.ch/" aria-label="EFD: Eidgenössisches Finanzdepartement" target="_blank" title=""> EFD: Eidgenössisches Finanzdepartement</a>
+																
+															
+														</li>
+													</ul>
+												
+											
+												
+													<ul>
+														<li>
+															
+																
+																
+																
+																	<a href="https://www.wbf.admin.ch/" aria-label="WBF: Eidgenössisches Departement für Wirtschaft, Bildung und Forschung" target="_blank" title=""> WBF: Eidgenössisches Departement für Wirtschaft, Bildung und Forschung</a>
+																
+															
+														</li>
+													</ul>
+												
+											
+												
+													<ul>
+														<li>
+															
+																
+																
+																
+																	<a href="https://www.uvek.admin.ch/" aria-label="UVEK: Eidgenössisches Department für Umwelt, Verkehr, Energie und Kommunikation" target="_blank" title=""> UVEK: Eidgenössisches Department für Umwelt, Verkehr, Energie und Kommunikation</a>
+																
+															
+														</li>
+													</ul>
+												
+											
+										</li>
+									
+								</ul>
+							
+						</li>
+					
+
+						
+
+						
+						<li class="dropdown">
+							
+							
+								
+									<a id="departement-dropdown" href="#" aria-label="Departement: EJPD" class="dropdown-toggle" data-toggle="dropdown"><span class="icon icon--right"></span> Departement: EJPD</a>
+								
+								
+							
+
+							
+								
+								<ul class="dropdown-menu" role="menu" aria-labelledby="departement-dropdown">
+									
+										
+										<li class="dropdown-header">
+											
+												
+													<a href="/ejpd/de/home.html" aria-label="Departement: EJPD" data-skipextcss="true">Departement: EJPD</a>
+												
+												
+											
+
+											
+											
+												
+													<ul>
+														<li>
+															
+																
+																
+																
+																	<a href="/ejpd/de/home/das-ejpd/org/gs-ejpd.html" aria-label="GS-EJPD: Generalsekretariat EJPD" data-skipextcss="true"> GS-EJPD: Generalsekretariat EJPD</a>
+																
+															
+														</li>
+													</ul>
+												
+											
+												
+													<ul>
+														<li>
+															
+																
+																
+																
+																	<a href="https://www.bj.admin.ch/" aria-label="BJ: Bundesamt für Justiz" target="_blank" title=""> BJ: Bundesamt für Justiz</a>
+																
+															
+														</li>
+													</ul>
+												
+											
+												
+													<ul>
+														<li>
+															
+																
+																
+																
+																	<a href="https://www.fedpol.admin.ch/" aria-label="fedpol: Bundesamt für Polizei" target="_blank" title=""> fedpol: Bundesamt für Polizei</a>
+																
+															
+														</li>
+													</ul>
+												
+											
+												
+													<ul>
+														<li>
+															
+																
+																
+																
+																	<a href="https://www.sem.admin.ch/" aria-label="SEM: Staatsekretariat für Migration" target="_blank" title=""> SEM: Staatsekretariat für Migration</a>
+																
+															
+														</li>
+													</ul>
+												
+											
+												
+													<ul>
+														<li>
+															
+																
+																
+																
+																	<a href="https://www.esbk.admin.ch/" aria-label="ESBK: Eidgenössische Spielbankenkommission" target="_blank" title=""> ESBK: Eidgenössische Spielbankenkommission</a>
+																
+															
+														</li>
+													</ul>
+												
+											
+												
+													<ul>
+														<li>
+															
+																
+																
+																
+																	<a href="https://www.eschk.admin.ch/" aria-label="ESchK: Eidgenössische Schiedskommission für die Verwertung von Urheberrechten und verwandten Schutzrechten" target="_blank" title=""> ESchK: Eidgenössische Schiedskommission für die Verwertung von Urheberrechten und verwandten Schutzrechten</a>
+																
+															
+														</li>
+													</ul>
+												
+											
+												
+													<ul>
+														<li>
+															
+																
+																
+																
+																	<a href="https://www.nkvf.admin.ch/" aria-label="NKVF: Nationale Kommission zur Verhütung von Folter" target="_blank" title=""> NKVF: Nationale Kommission zur Verhütung von Folter</a>
+																
+															
+														</li>
+													</ul>
+												
+											
+												
+													<ul>
+														<li>
+															
+																
+																
+																
+																	<a href="https://www.ige.ch/" aria-label="IGE: Eidgenössisches Institut für Geistiges Eigentum" target="_blank" title=""> IGE: Eidgenössisches Institut für Geistiges Eigentum</a>
+																
+															
+														</li>
+													</ul>
+												
+											
+												
+													<ul>
+														<li>
+															
+																
+																
+																
+																	<a href="https://www.metas.ch/metas/de.html" aria-label="METAS: Eidgenössisches Institut für Metrologie" target="_blank" title=""> METAS: Eidgenössisches Institut für Metrologie</a>
+																
+															
+														</li>
+													</ul>
+												
+											
+												
+													<ul>
+														<li>
+															
+																
+																
+																
+																	<a href="https://www.rab-asr.ch/" aria-label="RAB: Eidgenössische Revisionsaufsichtsbehörde" target="_blank" title=""> RAB: Eidgenössische Revisionsaufsichtsbehörde</a>
+																
+															
+														</li>
+													</ul>
+												
+											
+												
+													<ul>
+														<li>
+															
+																
+																
+																
+																	<a href="https://www.isc-ejpd.admin.ch/" aria-label="ISC-EJPD: Informatik Service Center" target="_blank" title=""> ISC-EJPD: Informatik Service Center</a>
+																
+															
+														</li>
+													</ul>
+												
+											
+												
+													<ul>
+														<li>
+															
+																
+																
+																
+																	<a href="https://www.li.admin.ch/de" aria-label="Dienst Überwachung Post- und Fernmeldeverkehr" target="_blank" title=""> Dienst Überwachung Post- und Fernmeldeverkehr</a>
+																
+															
+														</li>
+													</ul>
+												
+											
+										</li>
+									
+								</ul>
+							
+						</li>
+					
+				</ul>
+			
+			
+		
+	</nav>
+
+
+
+
+		
+
+		
+<!-- begin: metanav -->
+<section class="nav-services clearfix">
+	
+	
+		
+
+
+	
+	<h2>Startseite EJPD</h2>
+
+	
+
+		
+		
+
+		<nav class="nav-lang">
+			<ul>
+				
+					<li>
+						
+							
+								<a class="active" lang="de" title="Deutsch selected" aria-label="Deutsch selected">DE</a>
+							
+							
+							
+						
+					</li>
+				
+					<li>
+						
+							
+							
+								<a href="/ejpd/fr/home.html" lang="fr" title="Französisch" aria-label="Französisch">FR</a>
+							
+							
+						
+					</li>
+				
+					<li>
+						
+							
+							
+								<a href="/ejpd/it/home.html" lang="it" title="Italienisch" aria-label="Italienisch">IT</a>
+							
+							
+						
+					</li>
+				
+					<li>
+						
+							
+							
+								<a href="/ejpd/en/home.html" lang="en" title="Englisch" aria-label="Englisch">EN</a>
+							
+							
+						
+					</li>
+				
+			</ul>
+		</nav>
+
+	
+
+
+		
+		
+
+    
+        
+            
+            
+
+                
+                <h2 class="sr-only">Service navigation</h2>
+
+                <nav class="nav-service">
+                    <ul>
+                        
+                        
+                            <li><a href="/ejpd/de/home.html" title="Startseite" aria-label="Startseite" data-skipextcss="true">Startseite</a></li>
+                        
+                            <li><a href="/ejpd/de/home/das-ejpd/departement/contact.html" title="Kontakte" aria-label="Kontakte" data-skipextcss="true">Kontakte</a></li>
+                        
+                            <li><a href="/ejpd/de/home/das-ejpd/departement/contact/medienkontakt.html" title="Medien" aria-label="Medien" data-skipextcss="true">Medien</a></li>
+                        
+                            <li><a href="/ejpd/de/home/das-ejpd/departement/arbeiten-im-ejpd.html" title="Jobs" aria-label="Jobs" data-skipextcss="true">Jobs</a></li>
+                        
+                    </ul>
+                </nav>
+
+            
+        
+    
+
+
+	
+	
+</section>
+<!-- end: metanav -->
+
+	</div>
+
+	
+		
+
+	
+	
+		
+<div class="mod mod-logo">
+    
+        
+        
+            
+                <a href="/ejpd/de/home.html" class="brand  hidden-xs" id="logo" title="Startseite EJPD" aria-label="Startseite EJPD">
+                    
+                        
+                            <img src="/ejpd/de/_jcr_content/logo/image.imagespooler.png/1591358124164/logo.png" alt="Eidgen&#246;ssisches Justiz- und Polizeidepartement EJPD"/>
+                        
+                        
+                    
+                    <h2 id="logo-desktop-departement">Eidgen&ouml;ssisches Justiz- und Polizeidepartement EJPD
+                    </h2>
+                </a>
+                
+            
+        
+    
+</div>
+
+	
+
+
+	
+
+ 	
+		
+
+
+	
+
+
+
+	
+	
+		
+
+<div class="mod mod-searchfield">
+
+	
+		
+
+		
+			
+
+			<!-- begin: sitesearch desktop-->
+			<div class="mod mod-searchfield global-search global-search-standard">
+				<form action="/ejpd/de/home/suche.html" class="form-horizontal form-search pull-right">
+					<h2 class="sr-only">Suche</h2>
+					<label for="search-field" class="sr-only"></label>
+					<input id="search-field" name="query" class="form-control search-field" type="text" placeholder=""/>
+                    <button class="icon icon--search icon--before" tabindex="0" role="button">
+                        <span class="sr-only"></span>
+                    </button>
+                    <button class="icon icon--close icon--after search-reset" tabindex="0" role="button"><span class="sr-only"></span></button>
+					<div class="search-results">
+						<div class="search-results-list"></div>
+					</div>
+				</form>
+			</div>
+			<!-- end: sitesearch desktop-->
+
+		
+	
+
+</div>
+
+	
+
+
+
+	
+
+	
+		
+
+
+	
+
+<div class="mod mod-themes">
+	
+
+		<nav class="navbar yamm yamm--select ddl-to-modal">
+			<h2 class="sr-only">Themen A-Z</h2>
+			<ul>
+				<!-- Init dropdown with the `pull-right` class if you want to have your Topics select on the right -->
+				<li class="dropdown pull-right">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+						Themen A-Z <span class="icon icon--bottom"></span>
+					</a>
+					<!-- begin: flyout -->
+					<ul class="dropdown-menu">
+						<li>
+							<!-- The `yamm-content` can contain any kind of content like tab, table, list, article... -->
+							<div class="yamm-content container-fluid">
+
+								
+								<div class="row">
+									<div class="col-sm-12">
+										<button class="yamm-close btn btn-link icon icon--after icon--close pull-right">
+											Schliessen
+										</button>
+									</div>
+								</div>
+
+								
+				                <ul class="nav nav-tabs">
+				                	
+				                	
+				                		<li><a href="#mf_keywords_tab" data-toggle="tab" data-url="/ejpd/de/_jcr_content/themes.keywordsinit.html">Stichwörter</a></li>
+				                	
+				                	
+				                </ul>
+
+				                
+				                <div class="tab-content">
+								
+
+								
+								
+									<div class="tab-pane" id="mf_keywords_tab"></div>
+									<h2 class="sr-only visible-print-block">Stichwörter</h2>
+								
+
+								
+								
+								</div>
+							</div>
+						</li>
+					</ul>
+				</li>
+			</ul>
+		</nav>
+
+
+</div>
+
+
+
+
+
+
+	
+
+ 	
+
+
+</header>
+
+
+
+    
+
+
+	
+	
+		
+
+<div class="mod mod-mainnavigation">
+
+	<!-- begin: mainnav -->
+	<div class="nav-main yamm navbar" id="main-navigation">
+
+		<h2 class="sr-only">
+			Hauptnavigation
+		</h2>
+
+		
+			
+
+
+<!-- mobile mainnav buttonbar -->
+ <section class="nav-mobile">
+	<div class="table-row">
+		<div class="nav-mobile-header">
+			<div class="table-row">
+				<span class="nav-mobile-logo">
+					
+						
+						
+							<img src="/etc/designs/core/frontend/guidelines/img/swiss.svg" onerror="this.onerror=null; this.src='/etc/designs/core/frontend/guidelines/img/swiss.png'" alt="Eidgenössisches Justiz- und Polizeidepartement"/>
+						
+					
+				</span>
+				<h2>
+					<a href="/ejpd/de/home.html" title="Startseite EJPD" aria-label="Startseite EJPD">Eidgenössisches Justiz- und Polizeidepartement</a>
+				</h2>
+			</div>
+		</div>
+		<div class="table-cell dropdown">
+			<a href="#" class="nav-mobile-menu dropdown-toggle" data-toggle="dropdown">
+				<span class="icon icon--menu"></span>
+			</a>
+			<div class="drilldown dropdown-menu" role="menu">
+				<div class="drilldown-container">
+					<nav class="nav-page-list">
+						
+							<ul aria-controls="submenu">
+								
+									
+									
+										<li>
+											
+												
+												
+													<a href="/ejpd/de/home/aktuell.html">Aktuell</a>
+												
+											
+										</li>
+									
+								
+							</ul>
+						
+							<ul aria-controls="submenu">
+								
+									
+									
+										<li>
+											
+												
+												
+													<a href="/ejpd/de/home/themen.html">Themen</a>
+												
+											
+										</li>
+									
+								
+							</ul>
+						
+							<ul aria-controls="submenu">
+								
+									
+									
+										<li>
+											
+												
+												
+													<a href="/ejpd/de/home/das-ejpd.html">Das EJPD</a>
+												
+											
+										</li>
+									
+								
+							</ul>
+						
+
+						<button class="yamm-close-bottom" aria-label="Schliessen">
+							<span class="icon icon--top" aria-hidden="true"></span>
+						</button>
+					</nav>
+				</div>
+			</div>
+		</div>
+		<div class="table-cell dropdown">
+			<a href="#" class="nav-mobile-menu dropdown-toggle" data-toggle="dropdown">
+				<span class="icon icon--search"></span>
+			</a>
+			<div class="dropdown-menu" role="menu">
+				
+				
+
+
+
+	
+		
+
+
+<div class="mod mod-searchfield">
+
+    
+        <div class="mod mod-searchfield global-search global-search-mobile">
+            <form action="/ejpd/de/home/suche.html" class="form  mod-searchfield-mobile" role="form">
+                <h2 class="sr-only">Suche</h2>
+                <label for="search-field-phone" class="sr-only">
+                    
+                </label>
+                <input id="search-field-phone" name="query" class="search-input form-control" type="text" placeholder=""/>
+                <button class="icon icon--search icon--before" tabindex="0" role="button">
+                    <span class="sr-only"></span>
+                </button>
+                <button class="icon icon--close icon--after search-reset" tabindex="0" role="button"><span class="sr-only"></span></button>
+
+                <div class="search-results">
+                    <div class="search-results-list"></div>
+                </div>
+            </form>
+        </div>
+    
+
+</div>
+
+	
+	
+
+
+				
+			</div>
+		</div>
+	</div>
+</section>
+
+		
+
+		
+		<ul class="nav navbar-nav" aria-controls="submenu">
+
+			
+			
+
+				
+                
+				
+
+				<li class="dropdown yamm-fw  ">
+					
+						
+			      		
+							<a href="/ejpd/de/home/aktuell.html" aria-label="Aktuell" class="dropdown-toggle" data-toggle="dropdown" data-url="/ejpd/de/home/aktuell/_jcr_content/par.html">Aktuell</a>
+							
+							<ul class="dropdown-menu" role="menu" aria-controls="submenu">
+								<li>
+									<div class="yamm-content container-fluid">
+										<div class="row">
+											<div class="col-sm-12">
+												<button class="yamm-close btn btn-link icon icon--after icon--close pull-right">Schliessen</button>
+											</div>
+										</div>
+										<div class="row">
+											<div class="col-md-12 main-column">
+
+											</div>
+										</div>
+										<br><br><br>
+										<button class="yamm-close-bottom" aria-label="Schliessen"><span class="icon icon--top"></span></button>
+									</div>
+								</li>
+							</ul>
+						
+					
+				</li>
+			
+
+				
+                
+				
+
+				<li class="dropdown yamm-fw  ">
+					
+						
+			      		
+							<a href="/ejpd/de/home/themen.html" aria-label="Themen" class="dropdown-toggle" data-toggle="dropdown" data-url="/ejpd/de/home/themen/_jcr_content/par.html">Themen</a>
+							
+							<ul class="dropdown-menu" role="menu" aria-controls="submenu">
+								<li>
+									<div class="yamm-content container-fluid">
+										<div class="row">
+											<div class="col-sm-12">
+												<button class="yamm-close btn btn-link icon icon--after icon--close pull-right">Schliessen</button>
+											</div>
+										</div>
+										<div class="row">
+											<div class="col-md-12 main-column">
+
+											</div>
+										</div>
+										<br><br><br>
+										<button class="yamm-close-bottom" aria-label="Schliessen"><span class="icon icon--top"></span></button>
+									</div>
+								</li>
+							</ul>
+						
+					
+				</li>
+			
+
+				
+                
+				
+
+				<li class="dropdown yamm-fw  ">
+					
+						
+			      		
+							<a href="/ejpd/de/home/das-ejpd.html" aria-label="Das EJPD" class="dropdown-toggle" data-toggle="dropdown" data-url="/ejpd/de/home/das-ejpd/_jcr_content/par.html">Das EJPD</a>
+							
+							<ul class="dropdown-menu" role="menu" aria-controls="submenu">
+								<li>
+									<div class="yamm-content container-fluid">
+										<div class="row">
+											<div class="col-sm-12">
+												<button class="yamm-close btn btn-link icon icon--after icon--close pull-right">Schliessen</button>
+											</div>
+										</div>
+										<div class="row">
+											<div class="col-md-12 main-column">
+
+											</div>
+										</div>
+										<br><br><br>
+										<button class="yamm-close-bottom" aria-label="Schliessen"><span class="icon icon--top"></span></button>
+									</div>
+								</li>
+							</ul>
+						
+					
+				</li>
+			
+		</ul>
+	</div>
+</div>
+
+	
+
+
+
+    
+
+<!-- begin: main -->
+<div class="container-fluid hidden-xs">
+	<div class="row">
+		<div class="col-sm-12">
+			
+		</div>
+	</div>
+</div>
+
+
+
+	
+	
+		<div class="container-fluid">
+			
+
+<div class="row">
+ 	<div class="col-md-12 js-glossary-context" id="content">
+    	
+
+
+<div class="mod mod-html">
+	
+		
+		
+			<h2 style="font-weight: bold; margin-top: 0px;">Aktuell</h2>
+<hr style="height: 2px;">
+		
+	
+</div>
+<div class="mod mod-enhancedmulticolumn">
+		
+			
+			
+				
+					
+					
+						<div class="row">
+							
+								<div class="col-sm-8">
+									
+
+
+
+
+
+    
+        
+        
+
+
+            <div class="focus">
+                <div class="slideshow" data-cycle-timeout="7000" data-cycle-speed="2000" data-cycle-manual-fx="scrollHorz" data-cycle-manual-speed="400" data-cycle-swipe="true" data-cycle-loader="true" data-cycle-swipe-fx="scrollHorz" data-pager-margin="24" data-cycle-pause-on-hover="true" data-hr-image-width="1920" data-hr-image-height="1080" data-cycle-slides="> .slide">
+
+                    <button class="cycle-toggle tab-focus-control btn btn-sm" data-text-play="start"
+                            data-text-pause="stop"><span class="icon icon--pause"><span
+                            class="sr-only">stop</span></span></button>
+                    <div class="cycle-pager"></div>
+                    <div class="cycle-prev"><img class="dpr2" src="/etc/designs/core/frontend/assets/img/prev@2x.png" alt="&lt;"/></div>
+                    <div class="cycle-next"><img class="dpr2" src="/etc/designs/core/frontend/assets/img/next@2x.png" alt="&gt;"/></div>
+
+                    
+                        <div class="slide">
+                            <a href="/ejpd/de/home/aktuell/mm.msg-id-102711.html" tabindex="-1" class="no-after no-before">
+                            <figure><img src="/dam/ejpd/de/images/Fotos/2024/241009-mk-opferhilfegesetz.jpg" alt="" title="Rechtsmedizinische Hilfe für Gewaltopfer stärken"/></figure>
+                            </a>
+                            
+                            <div class="legend text">
+
+                                
+                                    <a href="/ejpd/de/home/aktuell/mm.msg-id-102711.html">
+                                    <span class="title">Rechtsmedizinische Hilfe für Gewaltopfer stärken</span>
+                                    </a>
+                                
+                                <p class="focusleaddescription">Die Hilfsangebote für Opfer insbesondere von häuslicher und sexueller Gewalt sollen ausgebaut werden. An seiner Sitzung vom 9. Oktober 2024 hat der Bundesrat die Vernehmlassung für eine entsprechende Teilrevision des Opferhilfegesetzes (OHG) eröffnet.</p>
+                            </div>
+                        </div>
+                    
+                        <div class="slide">
+                            <a href="/ejpd/de/home/aktuell/mm.msg-id-102560.html" tabindex="-1" class="no-after no-before">
+                            <figure><img src="/dam/ejpd/de/images/Fotos/2024/240923-treffen-dtspr-justizminister.jpg" alt="" title="Bundesrat Beat Jans trifft deutschsprachige Justizministerinnen und Justizminister in Luxemburg"/></figure>
+                            </a>
+                            
+                            <div class="legend text">
+
+                                
+                                    <a href="/ejpd/de/home/aktuell/mm.msg-id-102560.html">
+                                    <span class="title">Bundesrat Beat Jans trifft deutschsprachige Justizministerinnen und Justizminister in Luxemburg</span>
+                                    </a>
+                                
+                                <p class="focusleaddescription">Bundesrat Beat Jans hat am 22. und am 23. September 2024 am traditionellen Treffen der deutschsprachigen Justizministerinnen und Justizminister in Luxemburg teilgenommen. Im Zentrum der Gespräche standen aktuelle Themen wie die Digitalisierung der Justiz, Herausforderungen im Jugendstrafrecht sowie Erfahrungen im Umgang mit dem Dritten Geschlecht.</p>
+                            </div>
+                        </div>
+                    
+                        <div class="slide">
+                            <a href="/ejpd/de/home/aktuell/reden.msg-id-101977.html" tabindex="-1" class="no-after no-before">
+                            <figure><img src="/dam/ejpd/de/images/Fotos/2024/240801-nationalfeiertag.jpg" alt="" title="Rede von Bundesrat Beat Jans zum Nationalfeiertag"/></figure>
+                            </a>
+                            
+                            <div class="legend text">
+
+                                
+                                    <a href="/ejpd/de/home/aktuell/reden.msg-id-101977.html">
+                                    <span class="title">Rede von Bundesrat Beat Jans zum Nationalfeiertag</span>
+                                    </a>
+                                
+                                <p class="focusleaddescription">«Die Schweiz ist das Land der Möglichkeiten, das Land der Chancen. Wir müssen sie nutzen, uns engagieren – und gemeinsam Lösungen finden. Der Kompromiss ist die Essenz der Schweiz». Diese Botschaft richtet Bundesrat Beat Jans am Bundesfeiertag an die Schweiz. Er feiert den 1. August an einem Bauern-Brunch in Schüpfen und später mit der Bevölkerung von Biberist. </p>
+                            </div>
+                        </div>
+                    
+                        <div class="slide">
+                            <a href="/ejpd/de/home/aktuell/anlaesse-reisen/2024-07-02-aut-srb.html" tabindex="-1" class="no-after no-before">
+                            <figure><img src="/ejpd/de/home/aktuell/anlaesse-reisen/2024-07-02-aut-srb/_jcr_content/image.imagespooler.jpg/1720075243373/240703-srb-1.jpg" alt="*" title="Bundesrat Beat Jans auf Arbeitsbesuch in Österreich und Serbien"/></figure>
+                            </a>
+                            
+                            <div class="legend text">
+
+                                
+                                    <a href="/ejpd/de/home/aktuell/anlaesse-reisen/2024-07-02-aut-srb.html">
+                                    <span class="title">Bundesrat Beat Jans auf Arbeitsbesuch in Österreich und Serbien</span>
+                                    </a>
+                                
+                                <p class="focusleaddescription">Bundesrat Beat Jans hat vom 1. bis zum 3. Juli 2024 Österreich und Serbien besucht. Er traf sich im Rahmen dieses Arbeitsbesuches in Wien mit dem österreichischen Innenminister Gerhard Karner, wobei Migrations- und Sicherheitsthemen besprochen wurden. In Belgrad traf Bundesrat Beat Jans Staatspräsident Aleksandar Vučić und führte Gespräche mit dem serbischen Vize-Premier- und Innenminister Ivica Dačić und Justizministerin Maja Popović.</p>
+                            </div>
+                        </div>
+                    
+
+                </div>
+            </div>
+            <div class="clear"></div>
+        
+    
+
+    <link rel="stylesheet" href="/etc/designs/core/frontend/modules/focus.min.css" type="text/css">
+<script src="/etc/designs/core/frontend/modules/focus.min.js"></script>
+
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            Namics.focus.init();
+        });
+    </script>
+
+
+
+
+
+    
+        
+    
+
+
+
+								</div>
+							
+								<div class="col-sm-4">
+									
+<div class="mod mod-html">
+	
+		
+		
+			<style> 
+a.cardlong {
+text-decoration: none;
+}
+
+a.cardlong h3:visited,
+a.cardlong h3 {
+				color: #069;
+		}
+</style>
+
+<a class="cardlong" onclick="window.open('https://x.com/EJPD_DFJP_DFGP', '_blank');" style="cursor:pointer; padding: 51px 0px 51px 0px;">
+	<i class="fab fa-x-twitter"></i>
+	<h3>Das EJPD auf X</h3>
+</a>
+		
+	
+</div>
+<div class="mod mod-html">
+	
+		
+		
+			<style> 
+a.cardlong {
+text-decoration: none;
+padding: 60px 0px 60px 0px;
+}
+
+a.cardlong h3:visited,
+a.cardlong h3 {
+color: #069; font-size: 15pt;
+width: 75%;
+}
+
+.cardlong i {
+width: 25%;}
+
+
+
+</style>
+
+<a class="cardlong" onclick="document.location='/content/ejpd/de/home/aktuell/mm.html?dyn_startDate=01.01.2021&dyn_organization=401'" style="cursor:pointer; padding: 51px 0px 51px 0px;">
+	<i class="fa-solid fa-bullhorn"></i>
+	<h3>Medienmitteilungen</h3>
+</a>
+
+		
+	
+</div>
+<div class="mod mod-html">
+	
+		
+		
+			<style> 
+a.cardlong {
+text-decoration: none;
+}
+
+a.cardlong h3:visited,
+a.cardlong h3 {
+				color: #069;
+		}
+</style>
+
+<a class="cardlong" onclick="document.location='/content/ejpd/de/home/aktuell/reden.html?dyn_startDate=01.01.2024'" style="cursor:pointer; padding: 51px 0px 51px 0px;">
+	<i class="fa-solid fa-comment-dots" ></i>
+	<h3>Reden</h3>
+</a>
+		
+	
+</div>
+<div class="mod mod-html">
+	
+		
+		
+			<style> 
+a.cardlong {
+text-decoration: none;
+}
+
+a.cardlong h3:visited,
+a.cardlong h3 {
+				color: #069;
+		}
+</style>
+
+<a class="cardlong" onclick="document.location='/content/ejpd/de/home/aktuell/interviews.html'" style="cursor:pointer; padding: 51px 0px 51px 0px;">
+	<i class="fa-solid fa-microphone"></i>
+	<h3>Interviews</h3>
+</a>
+		
+	
+</div>
+<div class="mod mod-html">
+	
+		
+		
+			<style> 
+a.cardlong {
+text-decoration: none;
+}
+
+a.cardlong h3:visited,
+a.cardlong h3 {
+				color: #069;
+		}
+</style>
+
+<a class="cardlong" onclick="document.location='/content/ejpd/de/home/aktuell/klarstellungen.html'" style="cursor:pointer; padding: 51px 0px 51px 0px;">
+	<i class="fa-solid fa-circle-check"></i>
+	<h3>Klarstellungen</h3>
+</a>
+
+		
+	
+</div>
+
+
+    
+        
+    
+
+
+
+								</div>
+							
+						</div>
+					
+				
+			
+		
+</div>
+
+
+<div class="mod mod-html">
+	
+		
+		
+			<link rel="stylesheet" href="/dam/ejpd/de/data/fa-custom.css">
+		
+	
+</div>
+<div class="mod mod-specialbox">
+    
+        
+        
+            
+                
+                
+                    <div class="specialbox section">
+    <div class="alert alert-warning clearfix" role="alert">
+
+        <div class="col-sm-3">
+            <span class="title">Achtung: Betrugsmails</span>
+        </div>
+
+        <div class="col-sm-9">
+            <p><p>Seit einiger Zeit werden im Namen des EJPD, der Polizei und anderer Behörden Betrugsmails verschickt.&nbsp;<br>
+<a href="/fedpol/de/home/aktuell/informationen/2022-06-21.html">Hier finden Sie weitere Informationen und Tipps.</a></p>
+</p>
+            
+
+
+    
+        
+    
+
+
+
+        </div>
+
+        
+    </div>
+</div>
+
+                
+            
+        
+    
+</div>
+<div class="mod mod-html">
+	
+		
+		
+			<hr><br>
+		
+	
+</div>
+<div class="mod mod-html">
+	
+		
+		
+			<h2 style="font-weight: bold;">Themen</h2>
+<hr style="height: 2px;">
+		
+	
+</div>
+<div class="mod mod-enhancedmulticolumn">
+		
+			
+			
+				
+					
+					
+						<div class="row">
+							
+								<div class="col-sm-4">
+									
+
+
+<div class="mod mod-teaser">
+
+
+
+    
+    
+        
+            
+            
+
+            
+            
+                
+
+                
+                
+                <div>
+                    <div class="clearfix  ">
+                        
+                        
+                            
+                            
+                                <a href="/ejpd/de/home/themen/haeusliche-und-sexuelle-gewalt.html" data-skipextcss="true"><img src="/ejpd/de/home/themen/haeusliche-und-sexuelle-gewalt/_jcr_content/image.imagespooler.jpg/1688979469295/haeusliche-gewalt.jpg" alt="Symbolbild: H&#228;usliche Gewalt"/></a>
+                            
+                        
+                        
+                        
+                        
+                            
+                                <h3>
+                                    <a href="/ejpd/de/home/themen/haeusliche-und-sexuelle-gewalt.html" title="Bek&auml;mpfung der h&auml;uslichen und sexuellen Gewalt" aria-label="Bek&auml;mpfung der h&auml;uslichen und sexuellen Gewalt" data-skipextcss="true">Bek&auml;mpfung der h&auml;uslichen und sexuellen Gewalt</a>
+                                </h3>
+                            
+                            
+                        
+                        <p>Die Bek&auml;mpfung der h&auml;uslichen und der sexuellen Gewalt ist ein Schwerpunkt des Eidgen&ouml;ssischen Justiz- und Polizeidepartements (EJPD). Das EJPD arbeitet zusammen mit dem Eidgen&ouml;ssischen Departement des Innern (EDI), den Kantonen, weiteren Partnern und Organisationen sowie den St&auml;dten und Gemeinden an verschiedenen Massnahmen gegen h&auml;usliche und sexuelle Gewalt.</p>
+                        
+                    </div>
+                </div>
+            
+        
+    
+
+</div>
+
+
+
+    
+        
+    
+
+
+
+								</div>
+							
+								<div class="col-sm-4">
+									
+
+
+<div class="mod mod-teaser">
+
+
+
+    
+    
+        
+            
+            
+
+            
+            
+                
+
+                
+                
+                <div>
+                    <div class="clearfix  ">
+                        
+                        
+                            
+                            
+                                <a href="/ejpd/de/home/themen/ukraine.html" data-skipextcss="true"><img src="/ejpd/de/home/themen/ukraine/_jcr_content/image.imagespooler.jpg/1677050605075/220316-ukraine-refugees.jpg" alt="*"/></a>
+                            
+                        
+                        
+                        
+                        
+                            
+                                <h3>
+                                    <a href="/ejpd/de/home/themen/ukraine.html" title="Ukraine-Krieg: Schweiz gew&auml;hrt Gefl&uuml;chteten Schutz" aria-label="Ukraine-Krieg: Schweiz gew&auml;hrt Gefl&uuml;chteten Schutz" data-skipextcss="true">Ukraine-Krieg: Schweiz gew&auml;hrt Gefl&uuml;chteten Schutz</a>
+                                </h3>
+                            
+                            
+                        
+                        <p>Seit Kriegsausbruch suchen Gefl&uuml;chtete aus der Ukraine Schutz in Westeuropa. Die Schweiz zeigt sich solidarisch und hat erstmals den Schutzstatus S aktiviert. So kann den Menschen aus der Ukraine rasch und unkompliziert Schutz gew&auml;hrt werden. Sie erhalten ein Aufenthaltsrecht, ohne ein ordentliches Asylverfahren durchlaufen zu m&uuml;ssen.</p>
+                        
+                    </div>
+                </div>
+            
+        
+    
+
+</div>
+
+
+
+    
+        
+    
+
+
+
+								</div>
+							
+								<div class="col-sm-4">
+									
+
+
+<div class="mod mod-teaser">
+
+
+
+    
+    
+        
+            
+            
+
+            
+            
+                
+
+                
+                
+                <div>
+                    <div class="clearfix  ">
+                        
+                        
+                            
+                            
+                                <a href="https://www.eid.admin.ch" target="_blank" title=""><img src="/ejpd/de/home/_jcr_content/par/enhancedmulticolumn_377926064/items/2/column/teaser/image.imagespooler.jpg/1700663553478/teaser-e-id.jpg" alt="Staatliche E-ID"/></a>
+                            
+                        
+                        
+                        
+                        
+                            
+                                <h3>
+                                    <a href="https://www.eid.admin.ch" target="_blank" title="">Staatliche E-ID</a>
+                                </h3>
+                            
+                            
+                        
+                        <p>Mit der neuen elektronischen Identität (E-ID) sollen sich Nutzerinnen und Nutzer künftig sicher, schnell und unkompliziert digital ausweisen können. Der Bundesrat hat an seiner Sitzung vom 22. November 2023 die Botschaft zum entsprechenden Bundesgesetz verabschiedet. Die E-ID soll vom Bund herausgegeben werden und den grösstmöglichen Schutz der persönlichen Daten gewährleisten.<br>
+</p>
+
+                        
+                    </div>
+                </div>
+            
+        
+    
+
+</div>
+
+
+
+    
+        
+    
+
+
+
+								</div>
+							
+						</div>
+					
+				
+			
+		
+</div>
+
+
+<div class="mod mod-enhancedmulticolumn">
+		
+			
+			
+				
+					
+					
+						<div class="row">
+							
+								<div class="col-sm-6">
+									
+<div class="mod mod-html">
+	
+		
+		
+			<div class="cardlong" onclick="document.location='/content/ejpd/de/home/themen/dossiers.html'" style="cursor:pointer;">
+	<i class="fa-solid fa-folder-open"></i>
+	<h3><a href="/ejpd/de/home/themen/dossiers.html">Übersicht Dossiers</a></h3>
+</div>
+		
+	
+</div>
+
+
+    
+        
+    
+
+
+
+								</div>
+							
+								<div class="col-sm-6">
+									
+<div class="mod mod-html">
+	
+		
+		
+			<div class="cardlong" onclick="document.location='/content/ejpd/de/home/themen/abstimmungen.html'" style="cursor:pointer;">
+	<i class="fa-solid fa-check-to-slot"></i>
+	<h3><a href="/ejpd/de/home/themen/abstimmungen.html">Übersicht Abstimmungen</a></h3>
+</div>
+		
+	
+</div>
+
+
+    
+        
+    
+
+
+
+								</div>
+							
+						</div>
+					
+				
+			
+		
+</div>
+
+
+<div class="mod mod-html">
+	
+		
+		
+			<hr><br>
+		
+	
+</div>
+<div class="mod mod-html">
+	
+		
+		
+			<h2 style="font-weight: bold;">Das EJPD</h2>
+<hr style="height: 2px;">
+		
+	
+</div>
+<div class="mod mod-enhancedmulticolumn">
+		
+			
+			
+				
+					
+					
+						<div class="row">
+							
+								<div class="col-sm-4">
+									
+
+
+<div class="mod mod-teaser">
+
+
+
+    
+    
+        
+            
+            
+
+            
+            
+                
+
+                
+                
+                <div>
+                    <div class="clearfix  ">
+                        
+                        
+                            
+                            
+                                <a href="/ejpd/de/home/das-ejpd/departement.html" data-skipextcss="true"><img src="/ejpd/de/home/_jcr_content/par/enhancedmulticolumn_532883424/items/0/column/teaser/image.imagespooler.jpg/1671022439848/bhw-n.jpg" alt="*"/></a>
+                            
+                        
+                        
+                        
+                        
+                            
+                                <h3>
+                                    <a href="/ejpd/de/home/das-ejpd/departement.html" title="Das EJPD - im Dienste der Sicherheit" aria-label="Das EJPD - im Dienste der Sicherheit" data-skipextcss="true">Das EJPD - im Dienste der Sicherheit</a>
+                                </h3>
+                            
+                            
+                        
+                        <p>Das Eidgen&ouml;ssische Justiz- und Polizeidepartement (EJPD) ist thematisch breit gef&auml;chert. Es befasst sich mit gesellschaftspolitischen Themen wie dem Zusammenleben von Menschen schweizerischer und ausl&auml;ndischer Nationalit&auml;t, Asylfragen, der Inneren Sicherheit oder Bek&auml;mpfung von Kriminalit&auml;t. Das Zivilstandswesen oder B&uuml;rgerrechtsfragen geh&ouml;ren ebenso zum Aufgabenkreis des EJPD wie die Aufsicht &uuml;ber das Gl&uuml;cksspiel oder die Erarbeitung von Grundlagen und Mitteln zur internationalen Justiz- und Polizeizusammenarbeit.</p>
+                        
+                    </div>
+                </div>
+            
+        
+    
+
+</div>
+
+
+
+    
+        
+    
+
+
+
+								</div>
+							
+								<div class="col-sm-4">
+									
+
+
+<div class="mod mod-teaser">
+
+
+
+    
+    
+        
+            
+            
+
+            
+            
+                
+
+                
+                
+                <div>
+                    <div class="clearfix  ">
+                        
+                        
+                            
+                            
+                                <a href="/ejpd/de/home/das-ejpd/org.html" data-skipextcss="true"><img src="/ejpd/de/home/das-ejpd/org/_jcr_content/image.imagespooler.jpg/1670407450307/beschriftung.jpg" alt="*"/></a>
+                            
+                        
+                        
+                        
+                        
+                            
+                                <h3>
+                                    <a href="/ejpd/de/home/das-ejpd/org.html" title="Organisation" aria-label="Organisation" data-skipextcss="true">Organisation</a>
+                                </h3>
+                            
+                            
+                        
+                        <p>Das EJPD umfasst verschiedene Verwaltungseinheiten:</p>
+
+                        
+                    </div>
+                </div>
+            
+        
+    
+
+</div>
+
+
+
+<div class="mod mod-linklist">
+	
+	
+
+
+
+	
+		
+		
+			
+			
+			
+				
+				
+					<ul >
+						
+							<li>
+								
+									
+									
+										<a href="/ejpd/de/home/das-ejpd/org/gs-ejpd.html" title="Generalsekretariat GS-EJPD" aria-label="Generalsekretariat GS-EJPD">Generalsekretariat GS-EJPD</a>
+									
+								
+							</li>
+						
+							<li>
+								
+									
+									
+										<a href="/ejpd/de/home/das-ejpd/org/bundesaemter.html" title="Bundes&auml;mter" aria-label="Bundes&auml;mter">Bundes&auml;mter</a>
+									
+								
+							</li>
+						
+							<li>
+								
+									
+									
+										<a href="/ejpd/de/home/das-ejpd/org/institute.html" title="Institute" aria-label="Institute">Institute</a>
+									
+								
+							</li>
+						
+							<li>
+								
+									
+									
+										<a href="/ejpd/de/home/das-ejpd/org/kommissionen.html" title="Kommissionen" aria-label="Kommissionen">Kommissionen</a>
+									
+								
+							</li>
+						
+							<li>
+								
+									
+									
+										<a href="/ejpd/de/home/das-ejpd/org/administrativ-zugeordnet.html" title="Administrativ zugeordnete Verwaltungseinheiten" aria-label="Administrativ zugeordnete Verwaltungseinheiten">Administrativ zugeordnete Verwaltungseinheiten</a>
+									
+								
+							</li>
+						
+					</ul>
+				
+			
+			
+		
+	
+
+
+
+	
+</div>
+
+
+
+    
+        
+    
+
+
+
+								</div>
+							
+								<div class="col-sm-4">
+									
+
+
+<div class="mod mod-teaser">
+
+
+
+    
+    
+        
+            
+            
+
+            
+            
+                
+
+                
+                
+                <div>
+                    <div class="clearfix  ">
+                        
+                        
+                            
+                            
+                                <a href="/ejpd/de/home/das-ejpd/beat-jans.html" data-skipextcss="true"><img src="/ejpd/de/home/_jcr_content/par/enhancedmulticolumn_532883424/items/2/column/teaser/image.imagespooler.jpg/1704027370383/beat-jans-16x10.jpg" alt="Beat Jans"/></a>
+                            
+                        
+                        
+                        
+                        
+                            
+                                <h3>
+                                    <a href="/ejpd/de/home/das-ejpd/beat-jans.html" title="Beat Jans" aria-label="Beat Jans" data-skipextcss="true">Beat Jans</a>
+                                </h3>
+                            
+                            
+                        
+                        <p>Seit dem 1. Januar 2024 ist Bundesrat Beat Jans Vorsteher des Eidgen&ouml;ssischen Justiz- und Polizeidepartements (EJPD). Er war am 14. Dezember 2023 von der Vereinigten Bundesversammlung in den Bundesrat gew&auml;hlt worden.</p>
+                        
+                    </div>
+                </div>
+            
+        
+    
+
+</div>
+
+<div class="mod mod-image">
+	
+		
+			
+		
+		
+	
+</div>
+
+
+    
+        
+    
+
+
+
+								</div>
+							
+						</div>
+					
+				
+			
+		
+</div>
+
+
+
+
+    
+        
+    
+
+
+
+    </div>
+</div>
+
+		</div>
+	
+
+<!-- end: main -->
+
+
+    <span class="visible-print">https://www.ejpd.admin.ch/content/ejpd/de/home.html</span>
+
+    
+<footer role="contentinfo">
+	<h2 class="sr-only">Footer</h2>
+
+  
+
+  
+	<a name="context-sidebar"></a>
+  
+
+  
+  
+
+  	
+
+    
+        
+            <div class="container-fluid footer-service">
+                <h3>Eidgenössisches Justiz- und Polizeidepartement</h3>
+                <nav>
+                    <ul>
+                        
+                        
+                            <li><a href="/ejpd/de/home.html" title="Startseite" aria-label="Startseite">Startseite</a></li>
+                        
+                            <li><a href="/ejpd/de/home/das-ejpd/departement/contact.html" title="Kontakte" aria-label="Kontakte">Kontakte</a></li>
+                        
+                            <li><a href="/ejpd/de/home/das-ejpd/departement/contact/medienkontakt.html" title="Medien" aria-label="Medien">Medien</a></li>
+                        
+                            <li><a href="/ejpd/de/home/das-ejpd/departement/arbeiten-im-ejpd.html" title="Jobs" aria-label="Jobs">Jobs</a></li>
+                        
+                    </ul>
+                </nav>
+            </div>
+        
+    
+
+
+
+	
+
+    	
+			
+			
+				
+					
+<div class="site-map">
+	<h2 class="sr-only">Footer</h2>
+
+	<a href="#site-map" data-target="#site-map" data-toggle="collapse" class="site-map-toggle collapsed">Sitemap</a>
+
+	<div class="container-fluid" id="site-map">
+		<div class="col-sm-6 col-md-3">
+			
+
+
+<div class="mod mod-linklist">
+	
+	
+
+
+
+	
+		
+		
+			
+				
+					
+						
+					
+					
+				
+
+				
+					
+					
+						<h3>Aktuell</h3>
+					
+				
+
+			
+			
+			
+				
+				
+					<ul class="list-unstyled">
+						
+							<li>
+								
+									
+										<a href="/ejpd/de/home/aktuell/mm.html" title="Medienmitteilungen" aria-label="Medienmitteilungen" data-skipextcss="true">Medienmitteilungen</a>
+									
+									
+								
+							</li>
+						
+							<li>
+								
+									
+										<a href="/ejpd/de/home/aktuell/reden.html" title="Reden" aria-label="Reden" data-skipextcss="true">Reden</a>
+									
+									
+								
+							</li>
+						
+							<li>
+								
+									
+										<a href="/ejpd/de/home/aktuell/interviews.html" title="Interviews" aria-label="Interviews" data-skipextcss="true">Interviews</a>
+									
+									
+								
+							</li>
+						
+							<li>
+								
+									
+										<a href="/ejpd/de/home/aktuell/anlaesse-reisen.html" title="Anl&auml;sse und Reisen" aria-label="Anl&auml;sse und Reisen" data-skipextcss="true">Anl&auml;sse und Reisen</a>
+									
+									
+								
+							</li>
+						
+							<li>
+								
+									
+										<a href="/ejpd/de/home/aktuell/klarstellungen.html" title="Klarstellungen" aria-label="Klarstellungen" data-skipextcss="true">Klarstellungen</a>
+									
+									
+								
+							</li>
+						
+							<li>
+								
+									
+										<a href="/ejpd/de/home/aktuell/amtliche-dokumente.html" title="Amtliche Dokumente" aria-label="Amtliche Dokumente" data-skipextcss="true">Amtliche Dokumente</a>
+									
+									
+								
+							</li>
+						
+							<li>
+								
+									
+										<a href="/ejpd/de/home/aktuell/informationen.html" title="Informationen" aria-label="Informationen" data-skipextcss="true">Informationen</a>
+									
+									
+								
+							</li>
+						
+					</ul>
+				
+			
+			
+		
+	
+
+
+
+	
+</div>
+
+		</div>
+		<div class="col-sm-6 col-md-3">
+			
+
+
+<div class="mod mod-linklist">
+	
+	
+
+
+
+	
+		
+		
+			
+				
+					
+						
+					
+					
+				
+
+				
+					
+					
+						<h3>Themen</h3>
+					
+				
+
+			
+			
+			
+				
+				
+					<ul class="list-unstyled">
+						
+							<li>
+								
+									
+										<a href="/ejpd/de/home/themen/dossiers.html" title="Dossiers" aria-label="Dossiers" data-skipextcss="true">Dossiers</a>
+									
+									
+								
+							</li>
+						
+							<li>
+								
+									
+										<a href="/ejpd/de/home/themen/abstimmungen.html" title="Abstimmungen" aria-label="Abstimmungen" data-skipextcss="true">Abstimmungen</a>
+									
+									
+								
+							</li>
+						
+					</ul>
+				
+			
+			
+		
+	
+
+
+
+	
+</div>
+
+		</div>
+		<div class="col-sm-6 col-md-3">
+			
+
+
+<div class="mod mod-linklist">
+	
+	
+
+
+
+	
+		
+		
+			
+				
+					
+						
+					
+					
+				
+
+				
+					
+					
+						<h3>Das EJPD</h3>
+					
+				
+
+			
+			
+			
+				
+				
+					<ul class="list-unstyled">
+						
+							<li>
+								
+									
+										<a href="/ejpd/de/home/das-ejpd/departement.html" title="Departement" aria-label="Departement" data-skipextcss="true">Departement</a>
+									
+									
+								
+							</li>
+						
+							<li>
+								
+									
+										<a href="/ejpd/de/home/das-ejpd/org.html" title="Organisation" aria-label="Organisation" data-skipextcss="true">Organisation</a>
+									
+									
+								
+							</li>
+						
+							<li>
+								
+									
+										<a href="/ejpd/de/home/das-ejpd/beat-jans.html" title="Bundesrat Beat Jans" aria-label="Bundesrat Beat Jans" data-skipextcss="true">Bundesrat Beat Jans</a>
+									
+									
+								
+							</li>
+						
+							<li>
+								
+									
+										<a href="/ejpd/de/home/das-ejpd/fruehere_dv.html" title="Fr&uuml;here Departementsvorstehende" aria-label="Fr&uuml;here Departementsvorstehende" data-skipextcss="true">Fr&uuml;here Departementsvorstehende</a>
+									
+									
+								
+							</li>
+						
+							<li>
+								
+									
+										<a href="/ejpd/de/home/das-ejpd/departement/contact.html" title="Kontakte" aria-label="Kontakte" data-skipextcss="true">Kontakte</a>
+									
+									
+								
+							</li>
+						
+					</ul>
+				
+			
+			
+		
+	
+
+
+
+	
+</div>
+
+		</div>
+		<div class="col-sm-6 col-md-3">
+			
+
+
+<div class="mod mod-linklist">
+	
+	
+
+
+
+	
+		
+		
+			
+			
+			
+				
+					
+				
+				
+			
+			
+		
+	
+
+
+
+	
+</div>
+
+		</div>
+		<div class="col-sm-6 col-md-3">
+			
+
+
+<div class="mod mod-linklist">
+	
+	
+
+
+
+	
+		
+		
+			
+				
+					
+						
+					
+					
+				
+
+				
+					
+					
+						<h3>Ämter</h3>
+					
+				
+
+			
+			
+			
+				
+				
+					<ul class="list-unstyled">
+						
+							<li>
+								
+									
+										<a href="https://www.bj.admin.ch/" aria-label="BJ: Bundesamt f&uuml;r Justiz" target="_blank" title="">BJ: Bundesamt f&uuml;r Justiz</a>
+									
+									
+								
+							</li>
+						
+							<li>
+								
+									
+										<a href="https://www.fedpol.admin.ch/" aria-label="fedpol: Bundesamt f&uuml;r Polizei" target="_blank" title="">fedpol: Bundesamt f&uuml;r Polizei</a>
+									
+									
+								
+							</li>
+						
+							<li>
+								
+									
+										<a href="https://www.sem.admin.ch/" aria-label="SEM: Staatsekretariat f&uuml;r Migration" target="_blank" title="">SEM: Staatsekretariat f&uuml;r Migration</a>
+									
+									
+								
+							</li>
+						
+					</ul>
+				
+			
+			
+		
+	
+
+
+
+	
+</div>
+
+		</div>
+		<div class="col-sm-6 col-md-3">
+			
+
+
+<div class="mod mod-linklist">
+	
+	
+
+
+
+	
+		
+		
+			
+				
+					
+						
+					
+					
+				
+
+				
+					
+					
+						<h3>Kommissionen</h3>
+					
+				
+
+			
+			
+			
+				
+				
+					<ul class="list-unstyled">
+						
+							<li>
+								
+									
+										<a href="https://www.nkvf.admin.ch/" aria-label="NKVF: Nationale Kommission zur Verh&uuml;tung von Folter" target="_blank" title="">NKVF: Nationale Kommission zur Verh&uuml;tung von Folter</a>
+									
+									
+								
+							</li>
+						
+							<li>
+								
+									
+										<a href="https://www.eschk.admin.ch/" aria-label="ESchK: Eidgen&ouml;ssische Schiedskommission" target="_blank" title="">ESchK: Eidgen&ouml;ssische Schiedskommission</a>
+									
+									
+								
+							</li>
+						
+							<li>
+								
+									
+										<a href="https://www.esbk.admin.ch/" aria-label="ESBK: Eidgen&ouml;ssische Spielbankenkommission" target="_blank" title="">ESBK: Eidgen&ouml;ssische Spielbankenkommission</a>
+									
+									
+								
+							</li>
+						
+							<li>
+								
+									
+										<a href="https://www.ekm.admin.ch" aria-label="EKM: Eidgen&ouml;ssische Migrationskommission" target="_blank" title="">EKM: Eidgen&ouml;ssische Migrationskommission</a>
+									
+									
+								
+							</li>
+						
+					</ul>
+				
+			
+			
+		
+	
+
+
+
+	
+</div>
+
+		</div>
+		<div class="col-sm-6 col-md-3">
+			
+
+
+<div class="mod mod-linklist">
+	
+	
+
+
+
+	
+		
+		
+			
+				
+					
+						
+					
+					
+				
+
+				
+					
+					
+						<h3>Institute</h3>
+					
+				
+
+			
+			
+			
+				
+				
+					<ul class="list-unstyled">
+						
+							<li>
+								
+									
+										<a href="https://www.metas.ch/metas/de.html" aria-label="METAS: Eidgen&ouml;ssisches Institut f&uuml;r Metrologie" target="_blank" title="">METAS: Eidgen&ouml;ssisches Institut f&uuml;r Metrologie</a>
+									
+									
+								
+							</li>
+						
+							<li>
+								
+									
+										<a href="https://www.ige.ch/" aria-label="IGE: Eidgen&ouml;ssisches Institut f&uuml;r Geistiges Eigentum" target="_blank" title="">IGE: Eidgen&ouml;ssisches Institut f&uuml;r Geistiges Eigentum</a>
+									
+									
+								
+							</li>
+						
+							<li>
+								
+									
+										<a href="https://www.isdc.ch/de/" aria-label="SIR: Schweizerisches Institut f&uuml;r Rechtsvergleichung" target="_blank" title="">SIR: Schweizerisches Institut f&uuml;r Rechtsvergleichung</a>
+									
+									
+								
+							</li>
+						
+					</ul>
+				
+			
+			
+		
+	
+
+
+
+	
+</div>
+
+		</div>
+		<div class="col-sm-6 col-md-3">
+			
+
+
+<div class="mod mod-linklist">
+	
+	
+
+
+
+	
+		
+		
+			
+			
+			
+				
+					
+				
+				
+			
+			
+		
+	
+
+
+
+	
+</div>
+
+		</div>
+	</div>
+</div>
+				
+			
+		
+    
+
+
+  	<div class="container-fluid">
+  		
+	
+
+
+	
+		
+			
+				<h3>Informiert bleiben</h3>
+			
+
+			<nav class="links-social" aria-labelledby="social_media">
+				<label id="social_media" class="sr-only">Social media links</label>
+				<ul>
+					
+						<li><a href="https://twitter.com/EJPD_DFJP_DFGP" class="icon icon--before  icon icon--before icon--twitter" aria-label="EJPD auf X" target="_blank" title="">EJPD auf X</a></li>
+					
+						<li><a href="https://www.youtube.com/@EJPD_DFJP_DFGP" class="icon icon--before  icon icon--before fa fa-youtube" target="_blank" aria-label="Youtube EJPD" title="">Youtube EJPD</a></li>
+					
+						<li><a href="https://www.linkedin.com/company/gsejpd-sgdfjp" class="icon icon--before  icon icon--before fa fa-linkedin" aria-label="LinkedIn GS-EJPD" target="_blank" title="">LinkedIn GS-EJPD</a></li>
+					
+						<li><a href="/ejpd/de/home/das-ejpd/departement/contact/medienkontakt/netiquette-sm.html" class="icon icon--before  icon icon--before icon--message" target="_blank" title="Netiquette Social Media EJPD" aria-label="Netiquette Social Media EJPD">Netiquette Social Media EJPD</a></li>
+					
+						<li><a href="http://d-nsbc-p.admin.ch/NSBSubscriber/feeds/rss?lang=de&org-nr=401&topic=&keyword=&offer-nr=&catalogueElement=&kind=M&start_date=&end_date=" class="icon icon--before  icon icon--before icon--rss" aria-label="RSS" target="_blank" title="">RSS</a></li>
+					
+				</ul>
+			</nav>
+		
+		
+	
+
+
+
+		
+	
+
+<div class="mod mod-cobranding">
+    
+        
+            
+        
+        
+    
+</div>
+
+
+
+
+  		<!-- begin: logo phone -->
+		
+			
+			
+
+	
+		
+<div class="mod mod-logo">
+	
+	
+		
+			<hr class="footer-line visible-xs">
+			<img src="/ejpd/de/_jcr_content/logo/image.imagespooler.png/1591358124164/logo.png" class="visible-xs" alt="Eidgen&#246;ssisches Justiz- und Polizeidepartement EJPD"/>
+		
+		
+	
+	
+</div>
+	
+	
+
+
+			
+		
+	 	<!-- end: logo phone -->
+  	</div>
+
+    
+
+<div class="footer-address">
+	
+
+	<span class="hidden-xs">Eidgenössisches Justiz- und Polizeidepartement</span>
+
+
+	
+
+	
+		
+			<nav class="pull-right">
+				<ul>
+					
+						<li><a href="http://www.disclaimer.admin.ch/index.html" target="_blank" aria-label="Rechtliche Grundlagen" title="">Rechtliche Grundlagen</a></li>
+					
+				</ul>
+			</nav>
+		
+		
+	
+
+
+</div>
+
+
+  
+  
+
+</footer>        
+
+
+    <div class="modal" id="nav_modal_rnd">
+        <!-- modal -->
+    </div>
+
+</div>
+<!-- end: container -->
+
+
+
+<script src="/etc.clientlibs/clientlibs/granite/jquery/granite/csrf.min.js"></script>
+<script src="/etc/clientlibs/granite/jquery/granite/csrf.min.js"></script>
+
+
+
+	<script type="text/javascript" src="/etc/designs/core/frontend/modules.js"></script>
+
+
+
+
+
+	
+
+
+
+
+
+
+	<!-- bdef7N8oYHskotXQtBvlWNuBECTtmYkzG1gxkuxcoSrg24rfl2M6XRgO817zBQtvCgevzziCHlkxM8C3XtjzuvnesxWCKzr7zBvLqBqBp1Po6CZmcS53gJe94rSuE4tHWSnF7Pi2K0PG6jK9tIpXxjWfaRCgj4DMdjm5YGMX9XwUViOy8jaUqRnNeb9YixSR54uRm6LJVfMYMpQW82SEJH8TMPZbhh8g6mvooXzJ4z74ev3GgMYGKVFZ9rWdAsDg55IO2hg728PSGs3WyPYuceGZyeoUGfRI7AbLqREUv1CcOUD9CvCqkuB2GPOYihepHLuzbbfHEcDK7U -->
+
+
+
+
+
+ 
+	
+
+
+
+
+	<!-- Matomo -->
+<script type="text/javascript">
+  var _paq = window._paq || [];
+  /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="https://analytics.bit.admin.ch/";
+    _paq.push(['setTrackerUrl', u+'matomo.php']);
+    _paq.push(['setSiteId', '118']);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<!-- End Matomo Code -->
+
+
+
+
+
+</body>
+
+    
+
+</html>

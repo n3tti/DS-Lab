@@ -21,15 +21,15 @@ import pdb
 class FilterURLPipeline():
     
     def __init__(self):
-        self.allowed_content_type = {"text/html", "application/pdf", "image/png"}
+        self.allowed_content_type = ["text/html", "application/pdf", "image/png"]
 
     def process_item(self, item, spider):
-        if item["status"] != 200 or item["content_type"] == None:
-            DropItem()
-        item["content_type"] = item["content_type"].split(";")[0]
-        if item["content_type"] not in self.allowed_content_type:
-            DropItem()
-        return item
+        if item["status"] != 200 or item["content_type"] is None:
+            raise DropItem()
+        elif not item["content_type"].split(";")[0] in self.allowed_content_type: 
+            raise DropItem()
+        else :
+            return item
 
 
 class IDAssignmentPipeline:
@@ -73,10 +73,17 @@ class ParentsPipeline:
         self.file = open('parents.json', 'w')
 
     def close_spider(self, spider):
+        self.file.write("[\n")
+        first = True
         for child_id, parents_set in self.parents.items():
             dic = {"id" : child_id, "parents" : list(parents_set)}
-            line = json.dumps(dic) + "\n"
+            line = json.dumps(dic)
+            if first:
+                first = False
+            else:
+                line = ",\n" + line 
             self.file.write(line)
+        self.file.write("\n]")
         self.file.close()
 
     def process_item(self, item, spider):
@@ -101,14 +108,18 @@ class MetadataPipeline:
 
     def open_spider(self, spider):
         self.file = open('metadata.json', 'w')
+        self.file.write("[\n")
+        self.isFirst = True
 
     def close_spider(self, spider):
+        self.file.write("\n]")
         self.file.close()
 
     def process_item(self, item, spider):
-        import json
 
-        keys_to_save = ["id", "depth", "url", "content_type", "content_length", "content_encoding", "last_modified",
+        import json
+        # TODO: @saschas version of metadata saving, check for merging @emma
+        '''keys_to_save = ["id", "depth", "url", "content_type", "content_length", "content_encoding", "last_modified",
                         "date", "cousin_urls", "title", "content", "description", "keywords", "pdf_links"]
 
         dic = {}
@@ -120,6 +131,16 @@ class MetadataPipeline:
                 dic[key] = None
 
         line = json.dumps(dic) + "\n"
+        '''
+
+        dic = {"id": item["id"], "depth" : item["depth"], "url" : item["url"],"lang": item["lang"], "type" : item["content_type"], "length" : item["content_length"], \
+               "encoding" : item["content_encoding"], "last_modified" : item["last_modified"], "date" : item["date"], "cousin_urls" : item["cousin_urls"]}
+        line = json.dumps(dic)
+        if self.isFirst:
+            self.isFirst = False
+        else:
+            line = ",\n" + line
+            
         self.file.write(line)
         return item
   
@@ -129,17 +150,15 @@ class DownloadContentPipeline:
         self.folders = ["text/html", "image/png", "application/pdf"]
 
     def process_item(self, item, spider):
-        try:
-            if item["content_type"] == None:
-                return item
-            content_type = item["content_type"].split(";")[0]
-            file = open("{}/{}.bin".format(content_type, item["id"]), "wb")
-            file.write(item["content_body"])
-            file.close()
+     
+        content_type = item["content_type"].split(";")[0]
+        if not (content_type in self.folders):
             return item
-        except Exception as e:
-            print(e)
-            pdb.set_trace()
+        file = open("{}/{}.bin".format(content_type, item["id"]), "wb")
+        file.write(item["content_body"])
+        file.close()
+        return item
+
 
     def open_spider(self, spider):
         self.clean_folders()
