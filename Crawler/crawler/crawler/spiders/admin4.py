@@ -12,7 +12,7 @@ class AdminChSpider(scrapy.Spider):
 
     custom_settings = {
         'LOG_LEVEL': 'ERROR',  # Only log errors
-        'LOG_FILE': 'admin_ch_spider.log',  # Save logs to this file
+        'LOG_FILE': 'crawler.log',  # Save logs to this file
         'LOG_STDOUT': False  # Don't print log messages to stdout
     }
     
