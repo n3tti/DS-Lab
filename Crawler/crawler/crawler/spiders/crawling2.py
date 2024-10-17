@@ -6,7 +6,7 @@ from urllib.parse import urljoin
 import pdb
 
 class CrawlingSpider(CrawlSpider):
-    name = "mycrawler2"
+    name = "mycrawler"
     allowed_domains = ["admin.ch"]
     start_urls = ["https://www.admin.ch/"]
     
@@ -50,6 +50,7 @@ class CrawlingSpider(CrawlSpider):
 
         item["content"] = ' '.join(response.css('p::text').getall())
 
+        item["lang"] = response.xpath("//html/@lang").get()
 
         alternate_links = response.xpath('//link[@rel="alternate"]')
         languages_dict = {}
