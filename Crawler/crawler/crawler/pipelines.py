@@ -9,13 +9,14 @@ from itemadapter import ItemAdapter
 from scrapy.exceptions import DropItem
 from scrapy import logformatter
 
+from crawler.config import PARENTS_DIR, METADATA_DIR, TEXT_DIR, IMAGE_DIR, APPLICATION_DIR
+
 import csv
 import uuid
 import json
 import os
 import shutil
 import pdb
-
 
 
 class FilterURLPipeline():
@@ -70,7 +71,7 @@ class ParentsPipeline:
         self.parents = {}
     
     def open_spider(self, spider):
-        self.file = open('parents.json', 'w')
+        self.file = open(PARENTS_DIR, 'w')
 
     def close_spider(self, spider):
         self.file.write("[\n")
@@ -107,7 +108,7 @@ class MetadataPipeline:
         self.logger = logging.getLogger(__name__)
 
     def open_spider(self, spider):
-        self.file = open('metadata.json', 'w')
+        self.file = open(METADATA_DIR, 'w')
         self.file.write("[\n")
         self.isFirst = True
 
@@ -133,7 +134,7 @@ class MetadataPipeline:
         line = json.dumps(dic) + "\n"
         '''
 
-        dic = {"id": item["id"], "depth" : item["depth"], "url" : item["url"],"lang": item["lang"], "type" : item["content_type"], "length" : item["content_length"], \
+        dic = {"id": item["id"], "depth" : item["depth"], "url" : item["url"], "type" : item["content_type"], "length" : item["content_length"], \
                "encoding" : item["content_encoding"], "last_modified" : item["last_modified"], "date" : item["date"], "cousin_urls" : item["cousin_urls"]}
         line = json.dumps(dic)
         if self.isFirst:
@@ -147,16 +148,16 @@ class MetadataPipeline:
     
 class DownloadContentPipeline:
     def __init__(self):
-        self.folders = ["text/html", "image/png", "application/pdf"]
+        self.folders = [TEXT_DIR, IMAGE_DIR, APPLICATION_DIR]
+        self.content_types = ["text/html", "application/pdf", "image/png"]
 
     def process_item(self, item, spider):
-     
         content_type = item["content_type"].split(";")[0]
-        if not (content_type in self.folders):
-            return item
-        file = open("{}/{}.bin".format(content_type, item["id"]), "wb")
-        file.write(item["content_body"])
-        file.close()
+
+        if content_type == "text/html":
+            with open(TEXT_DIR + f"{item['id']}.bin", "wb") as file:
+                file.write(item["content_body"])
+
         return item
 
 
@@ -164,8 +165,7 @@ class DownloadContentPipeline:
         self.clean_folders()
 
     def clean_folders(self):
-        for folder in self.folders:
-            path = "./{}".format(folder)
+        for path in self.folders:
             if os.path.exists(path):
                 for filename in os.listdir(path):
                     file_path = os.path.join(path, filename)
