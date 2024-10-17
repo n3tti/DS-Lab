@@ -2,22 +2,6 @@ import json
 
 import pytest
 
-metadata_file = "./metadata.json"
-parents_file = "./parents.json"
-
-
-@pytest.fixture
-def load_metadata():
-    with open(metadata_file, "r") as f:
-        return json.load(f)
-
-
-@pytest.fixture
-def load_parents():
-    with open(parents_file, "r") as f:
-        return json.load(f)
-
-
 # Unique IDs
 def test_unique_ids(load_metadata):
     data = load_metadata
