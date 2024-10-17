@@ -20,4 +20,12 @@ class PageItem(scrapy.Item):
     content_body = scrapy.Field()
     last_modified = scrapy.Field()
     date = scrapy.Field()
+    
+    content = scrapy.Field()
+    title = scrapy.Field()
+    pdf_links = scrapy.Field()
+    description = scrapy.Field()
+    keywords = scrapy.Field()
+
     lang = scrapy.Field()
+

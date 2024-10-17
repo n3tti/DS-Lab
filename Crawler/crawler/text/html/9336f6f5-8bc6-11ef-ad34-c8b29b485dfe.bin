@@ -1,0 +1,4132 @@
+
+<!DOCTYPE HTML>
+<!--[if lt IE 7 ]> <html lang="de" class="no-js ie6 oldie"> <![endif]-->
+<!--[if IE 7 ]> <html lang="de" class="no-js ie7 oldie"> <![endif]-->
+<!--[if IE 8 ]> <html lang="de" class="no-js ie8 oldie"> <![endif]-->
+<!--[if IE 9 ]> <html lang="de" class="no-js ie9"> <![endif]-->
+<!--[if gt IE 9 ]><!--><html lang="de" class="no-js no-ie"> <!--<![endif]-->
+
+
+    
+<head>
+    
+    
+
+
+	
+	
+		<title>Abstimmungen - UVEK</title>
+	
+	
+
+
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta http-equiv="cleartype" content="on" />
+
+
+	<meta name="msapplication-TileColor" content="#ffffff"/>
+	<meta name="msapplication-TileImage" content="/etc/designs/core/frontend/guidelines/img/ico/mstile-144x144.png"/>
+	<meta name="msapplication-config" content="/etc/designs/core/frontend/guidelines/img/ico/browserconfig.xml"/>
+
+
+
+	
+		<meta name="description" content="Geplante und vergangene Initiativen und Referendumsvorlagen, die Themen des UVEK betreffen." />
+	
+	
+
+
+	<meta name="keywords" content="UVEK, Abstimmungen, Vorlagen, Volksinitiativen, Referenden,Abstimmungen" />
+
+
+
+	<meta name="google-site-verification" content="Jo7uw67ogPouO_9YKRV3YRBquQmk0XRPMdlob5R0F_0" />
+
+
+<meta name="language" content="de" />
+<meta name="author" content="Eidgenössisches Departement für Umwelt, Verkehr, Energie und Kommunikation UVEK" />
+
+
+
+
+	<!-- current page in other languages -->
+	
+		<link rel="alternate" type="text/html" href="/uvek/de/home/uvek/abstimmungen.html" hreflang="de" lang="de"/>
+	
+		<link rel="alternate" type="text/html" href="/uvek/it/home/datec/votazioni.html" hreflang="it" lang="it"/>
+	
+		<link rel="alternate" type="text/html" href="/uvek/rm/home/datec/abstimmungen.html" hreflang="rm" lang="rm"/>
+	
+		<link rel="alternate" type="text/html" href="/uvek/fr/home/detec/votations.html" hreflang="fr" lang="fr"/>
+	
+
+
+
+
+	<meta name="twitter:card" content="summary"/>
+	
+		<meta name="twitter:site" content="@UVEK"/>
+	
+	
+		<meta property="og:url" content="https://www.uvek.admin.ch/uvek/de/home/uvek/abstimmungen.html"/>
+	
+	<meta property="og:type" content="article"/>
+	
+		<meta property="og:title" content="Abstimmungen"/>
+	
+	
+		<meta property="og:description" content="Eine Übersicht zu den geplanten und vergangenen Initiativen und Referendumsvorlagen, die Themen des UVEK betreffen."/>
+	
+	
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+	<!--style type="text/css" id="antiClickjack">body{display:none !important;}</style-->
+	<script type="text/javascript">
+
+		var styleElement = document.createElement('STYLE');
+		styleElement.setAttribute('id', 'antiClickjack');
+		styleElement.setAttribute('type', 'text/css');
+		styleElement.innerHTML = 'body {display:none !important;}';
+		document.getElementsByTagName('HEAD')[0].appendChild(styleElement);
+
+		if (self === top) {
+			var antiClickjack = document.getElementById("antiClickjack");
+			antiClickjack.parentNode.removeChild(antiClickjack);
+		} else {
+			top.location = self.location;
+		}
+	</script>
+
+
+
+
+<script src="/etc.clientlibs/clientlibs/granite/jquery.min.js"></script>
+<script src="/etc.clientlibs/clientlibs/granite/utils.min.js"></script>
+
+
+
+	<script>
+		Granite.I18n.init({
+			locale: "de",
+			urlPrefix: "/libs/cq/i18n/dict."
+		});
+	</script>
+
+
+
+	<link rel="stylesheet" href="/etc/designs/core/frontend/guidelines.min.css" type="text/css">
+
+	<link rel="stylesheet" href="/etc/designs/core/frontend/modules.min.css" type="text/css">
+
+	
+	<link rel="shortcut icon" href="/etc/designs/core/frontend/guidelines/img/ico/favicon.ico">
+	<link rel="apple-touch-icon" sizes="57x57" href="/etc/designs/core/frontend/guidelines/img/ico/apple-touch-icon-57x57.png"/>
+	<link rel="apple-touch-icon" sizes="114x114" href="/etc/designs/core/frontend/guidelines/img/ico/apple-touch-icon-114x114.png"/>
+	<link rel="apple-touch-icon" sizes="72x72" href="/etc/designs/core/frontend/guidelines/img/ico/apple-touch-icon-72x72.png"/>
+	<link rel="apple-touch-icon" sizes="144x144" href="/etc/designs/core/frontend/guidelines/img/ico/apple-touch-icon-144x144.png"/>
+	<link rel="apple-touch-icon" sizes="60x60" href="/etc/designs/core/frontend/guidelines/img/ico/apple-touch-icon-60x60.png"/>
+	<link rel="apple-touch-icon" sizes="120x120" href="/etc/designs/core/frontend/guidelines/img/ico/apple-touch-icon-120x120.png"/>
+	<link rel="apple-touch-icon" sizes="76x76" href="/etc/designs/core/frontend/guidelines/img/ico/apple-touch-icon-76x76.png"/>
+	<link rel="icon" type="image/png" href="/etc/designs/core/frontend/guidelines/img/ico/favicon-96x96.png" sizes="96x96"/>
+	<link rel="icon" type="image/png" href="/etc/designs/core/frontend/guidelines/img/ico/favicon-16x16.png" sizes="16x16"/>
+	<link rel="icon" type="image/png" href="/etc/designs/core/frontend/guidelines/img/ico/favicon-32x32.png" sizes="32x32"/>
+
+
+
+
+
+
+
+	<!--[if lt IE 9]>
+		<script src="https://cdnjs.cloudflare.com/polyfill/v2/polyfill.js?version=4.8.0"></script>
+	<![endif]-->
+
+
+
+    
+
+
+
+    
+        
+
+	
+
+    
+
+</head>
+
+
+    
+
+<body class="mod mod-layout   skin-layout-template-contentpage" data-glossary="/uvek/de/home.glossaryjs.json">
+
+<div class="mod mod-homepage">
+<ul class="access-keys" role="navigation">
+    <li><a href="/uvek/de/home.html" accesskey="0">Homepage</a></li>
+    
+    <li><a href="#main-navigation" accesskey="1">Main navigation</a></li>
+    
+    
+    <li><a href="#content" accesskey="2">Content area</a></li>
+    
+    
+    <li><a href="#site-map" accesskey="3">Sitemap</a></li>
+    
+    
+    <li><a href="#search-field" accesskey="4">Search</a></li>
+    
+</ul>
+</div>
+
+<!-- begin: container -->
+<div class="container container-main">
+
+    
+
+
+<header style="background-size: cover; background-image:" role="banner">
+	
+
+	<div class="clearfix">
+		
+			
+
+
+	
+
+
+
+	<nav class="navbar treecrumb pull-left">
+
+		
+		
+			<h2 class="sr-only">Treecrumb Bundesverwaltung</h2>
+		
+
+		
+			
+				<ul class="nav navbar-nav">
+				
+
+						
+
+						
+						<li class="dropdown">
+							
+							
+								
+									<a id="federalAdministration-dropdown" href="#" aria-label="Der Bundesrat" class="dropdown-toggle" data-toggle="dropdown"><span class="icon icon--right"></span> Der Bundesrat</a>
+								
+								
+							
+
+							
+								
+								<ul class="dropdown-menu" role="menu" aria-labelledby="federalAdministration-dropdown">
+									
+										
+										<li class="dropdown-header">
+											
+												
+													<a href="https://www.admin.ch/gov/de/start.html" aria-label="Der Bundesrat admin.ch" target="_blank" title="">Der Bundesrat admin.ch</a>
+												
+												
+											
+
+											
+											
+												
+													<ul>
+														<li>
+															
+																
+																
+																
+																	<a href="https://www.bk.admin.ch/bk/de/home.html" aria-label="Schweizerische Bundeskanzlei" target="_blank" title="">BK:  Schweizerische Bundeskanzlei</a>
+																
+															
+														</li>
+													</ul>
+												
+											
+												
+													<ul>
+														<li>
+															
+																
+																
+																
+																	<a href="http://www.eda.admin.ch/eda/de/home.html" aria-label="Eidgenössisches Departement für auswärtige Angelegenheiten" target="_blank" title="">EDA:  Eidgenössisches Departement für auswärtige Angelegenheiten</a>
+																
+															
+														</li>
+													</ul>
+												
+											
+												
+													<ul>
+														<li>
+															
+																
+																
+																
+																	<a href="https://www.edi.admin.ch/edi/de/home.html" aria-label="Eidgenössisches Departement des Innern" target="_blank" title="">EDI:  Eidgenössisches Departement des Innern</a>
+																
+															
+														</li>
+													</ul>
+												
+											
+												
+													<ul>
+														<li>
+															
+																
+																
+																
+																	<a href="http://www.ejpd.admin.ch/ejpd/de/home.html" aria-label="Eidgenössisches Justiz- und Polizeidepartement" target="_blank" title="">EJPD:  Eidgenössisches Justiz- und Polizeidepartement</a>
+																
+															
+														</li>
+													</ul>
+												
+											
+												
+													<ul>
+														<li>
+															
+																
+																
+																
+																	<a href="https://www.vbs.admin.ch/de" aria-label="Eidgenössisches Departement für Verteidigung, Bevölkerungsschutz und Sport" target="_blank" title="">VBS:  Eidgenössisches Departement für Verteidigung, Bevölkerungsschutz und Sport</a>
+																
+															
+														</li>
+													</ul>
+												
+											
+												
+													<ul>
+														<li>
+															
+																
+																
+																
+																	<a href="https://www.efd.admin.ch/de" aria-label="Eidgenössisches Finanzdepartement" target="_blank" title="">EFD:  Eidgenössisches Finanzdepartement</a>
+																
+															
+														</li>
+													</ul>
+												
+											
+												
+													<ul>
+														<li>
+															
+																
+																
+																
+																	<a href="http://www.wbf.admin.ch/" aria-label="Eidgenössisches Departement für Wirtschaft, Bildung und Forschung" target="_blank" title="">WBF:  Eidgenössisches Departement für Wirtschaft, Bildung und Forschung</a>
+																
+															
+														</li>
+													</ul>
+												
+											
+												
+													<ul>
+														<li>
+															
+																
+																
+																
+																	<a href="https://www.uvek.admin.ch/uvek/de/home.html" aria-label="Eidgenössisches Departement für Umwelt, Verkehr, Energie und Kommunikation" target="_self" title="">UVEK:  Eidgenössisches Departement für Umwelt, Verkehr, Energie und Kommunikation</a>
+																
+															
+														</li>
+													</ul>
+												
+											
+										</li>
+									
+								</ul>
+							
+						</li>
+					
+
+						
+
+						
+						<li class="dropdown">
+							
+							
+								
+									<a id="departement-dropdown" href="#" aria-label="UVEK" class="dropdown-toggle" data-toggle="dropdown"><span class="icon icon--right"></span> UVEK</a>
+								
+								
+							
+
+							
+								
+								<ul class="dropdown-menu" role="menu" aria-labelledby="departement-dropdown">
+									
+										
+										<li class="dropdown-header">
+											
+												
+													<a href="/uvek/de/home/uvek/organisation/generalsekretariat.html" aria-label="Generalsekretariat" data-skipextcss="true" target="_self">Generalsekretariat</a>
+												
+												
+											
+
+											
+											
+												
+													<ul>
+														<li>
+															
+																
+																
+																
+																	<a href="http://www.bav.admin.ch/" aria-label="BAV: Bundesamt für Verkehr" target="_blank" title=""> BAV: Bundesamt für Verkehr</a>
+																
+															
+														</li>
+													</ul>
+												
+											
+												
+													<ul>
+														<li>
+															
+																
+																
+																
+																	<a href="https://www.bazl.admin.ch/bazl/de/home.html" aria-label="BAZL: Bundesamt für Zivilluftfahrt" target="_blank" title=""> BAZL: Bundesamt für Zivilluftfahrt</a>
+																
+															
+														</li>
+													</ul>
+												
+											
+												
+													<ul>
+														<li>
+															
+																
+																
+																
+																	<a href="https://www.bfe.admin.ch/bfe/de/home.html" aria-label="BFE: Bundesamt für Energie" target="_blank" title=""> BFE: Bundesamt für Energie</a>
+																
+															
+														</li>
+													</ul>
+												
+											
+												
+													<ul>
+														<li>
+															
+																
+																
+																
+																	<a href="https://www.astra.admin.ch/astra/de/home.html" aria-label="ASTRA: Bundesamt für Strassen" target="_blank" title=""> ASTRA: Bundesamt für Strassen</a>
+																
+															
+														</li>
+													</ul>
+												
+											
+												
+													<ul>
+														<li>
+															
+																
+																
+																
+																	<a href="http://www.bakom.admin.ch" aria-label="BAKOM: Bundesamt für Kommunikation" target="_blank" title=""> BAKOM: Bundesamt für Kommunikation</a>
+																
+															
+														</li>
+													</ul>
+												
+											
+												
+													<ul>
+														<li>
+															
+																
+																
+																
+																	<a href="http://www.bafu.admin.ch" aria-label="BAFU: Bundesamt für Umwelt" target="_blank" title=""> BAFU: Bundesamt für Umwelt</a>
+																
+															
+														</li>
+													</ul>
+												
+											
+												
+													<ul>
+														<li>
+															
+																
+																
+																
+																	<a href="https://www.are.admin.ch/are/de/home.html" aria-label="ARE: Bundesamt für Raumentwicklung" target="_blank" title=""> ARE: Bundesamt für Raumentwicklung</a>
+																
+															
+														</li>
+													</ul>
+												
+											
+												
+													<ul>
+														<li>
+															
+																
+																
+																
+																	<a href="https://www.comcom.admin.ch/comcom/de/home.html" aria-label="Eidgenössische Kommunikationskommission ComCom" target="_blank" title=""> Eidgenössische Kommunikationskommission ComCom</a>
+																
+															
+														</li>
+													</ul>
+												
+											
+												
+													<ul>
+														<li>
+															
+																
+																
+																
+																	<a href="https://www.elcom.admin.ch/elcom/de/home.html" aria-label="Eidgenössische Elektrizitätskommission ElCom" target="_blank" title=""> Eidgenössische Elektrizitätskommission ElCom</a>
+																
+															
+														</li>
+													</ul>
+												
+											
+												
+													<ul>
+														<li>
+															
+																
+																
+																
+																	<a href="http://www.postcom.admin.ch/de/" aria-label="Eidgenössische Postkommission PostCom" target="_blank" title=""> Eidgenössische Postkommission PostCom</a>
+																
+															
+														</li>
+													</ul>
+												
+											
+												
+													<ul>
+														<li>
+															
+																
+																
+																
+																	<a href="https://www.railcom.admin.ch/de" aria-label="Kommission für den Eisenbahnverkehr RailCom" target="_blank" title=""> Kommission für den Eisenbahnverkehr RailCom</a>
+																
+															
+														</li>
+													</ul>
+												
+											
+												
+													<ul>
+														<li>
+															
+																
+																
+																
+																	<a href="https://www.ubi.admin.ch" aria-label="Unabhängige Beschwerdeinstanz für Radio und Fernsehen UBI" target="_blank" title=""> Unabhängige Beschwerdeinstanz für Radio und Fernsehen UBI</a>
+																
+															
+														</li>
+													</ul>
+												
+											
+												
+													<ul>
+														<li>
+															
+																
+																
+																
+																	<a href="/uvek/de/home/uvek/organisation/fachstellen/safety-office.html" aria-label="Safety Office" data-skipextcss="true"> Safety Office</a>
+																
+															
+														</li>
+													</ul>
+												
+											
+												
+													<ul>
+														<li>
+															
+																
+																
+																
+																	<a href="/uvek/de/home/uvek/organisation/fachstellen/meldestelle-just-culture-zivilluftfahrt.html" aria-label="Meldestelle für Just Culture in der Zivilluftfahrt" data-skipextcss="true" target="_self"> Meldestelle für Just Culture in der Zivilluftfahrt</a>
+																
+															
+														</li>
+													</ul>
+												
+											
+												
+													<ul>
+														<li>
+															
+																
+																
+																
+																	<a href="http://www.sust.admin.ch/de/" aria-label="Schweizerische Sicherheitsuntersuchungsstelle SUST" target="_blank" title=""> Schweizerische Sicherheitsuntersuchungsstelle SUST</a>
+																
+															
+														</li>
+													</ul>
+												
+											
+												
+													<ul>
+														<li>
+															
+																
+																
+																
+																	<a href="http://www.esti.admin.ch/de/" aria-label="Eidgenössisches Starkstrominspektorat ESTI" target="_blank" title=""> Eidgenössisches Starkstrominspektorat ESTI</a>
+																
+															
+														</li>
+													</ul>
+												
+											
+												
+													<ul>
+														<li>
+															
+																
+																
+																
+																	<a href="https://www.svti.ch/eidg-rohrleitungsinspektorat" aria-label="Eidgenössisches Rohrleitungsinspektorat ERI" target="_blank" title=""> Eidgenössisches Rohrleitungsinspektorat ERI</a>
+																
+															
+														</li>
+													</ul>
+												
+											
+												
+													<ul>
+														<li>
+															
+																
+																
+																
+																	<a href="http://www.ensi.ch/de/" aria-label="Eidgenössisches Nuklearsicherheitsinspektorat ENSI" target="_blank" title=""> Eidgenössisches Nuklearsicherheitsinspektorat ENSI</a>
+																
+															
+														</li>
+													</ul>
+												
+											
+												
+													<ul>
+														<li>
+															
+																
+																
+																
+																	<a href="https://www.bfe.admin.ch/bfe/de/home/versorgung/aufsicht-und-sicherheit/kommissionen-und-inspektorate/eidgenoessische-kommission-fuer-nukleare-sicherheit-kns.html" aria-label="Eidgenössische Kommission für nukleare Sicherheit KNS" target="_blank" title=""> Eidgenössische Kommission für nukleare Sicherheit KNS</a>
+																
+															
+														</li>
+													</ul>
+												
+											
+												
+													<ul>
+														<li>
+															
+																
+																
+																
+																	<a href="https://www.energieschweiz.ch/" aria-label="EnergieSchweiz" target="_blank" title=""> EnergieSchweiz</a>
+																
+															
+														</li>
+													</ul>
+												
+											
+												
+													<ul>
+														<li>
+															
+																
+																
+																
+																	<a href="https://www.vorbild-energie-klima.admin.ch/vbe/de/home.html" aria-label="Energie- und Klima-Vorbild Bund" target="_blank" title=""> Energie- und Klima-Vorbild Bund</a>
+																
+															
+														</li>
+													</ul>
+												
+											
+												
+													<ul>
+														<li>
+															
+																
+																
+																
+																	<a href="https://www.rumba.admin.ch/rumba/de/home.html" aria-label="RUMBA: Ressourcen- und Umweltmanagement der Bundesverwaltung" target="_blank" title=""> RUMBA: Ressourcen- und Umweltmanagement der Bundesverwaltung</a>
+																
+															
+														</li>
+													</ul>
+												
+											
+												
+													<ul>
+														<li>
+															
+																
+																
+																
+																	<a href="https://www.dasgebaeudeprogramm.ch/de/" aria-label="Das Gebäudeprogramm von Bund und Kantonen" target="_blank" title=""> Das Gebäudeprogramm von Bund und Kantonen</a>
+																
+															
+														</li>
+													</ul>
+												
+											
+												
+													<ul>
+														<li>
+															
+																
+																
+																
+																	<a href="http://www.naturgefahren.ch/home/aktuelle-naturgefahren.html" aria-label="Naturgefahrenportal" target="_blank" title=""> Naturgefahrenportal</a>
+																
+															
+														</li>
+													</ul>
+												
+											
+												
+													<ul>
+														<li>
+															
+																
+																
+																
+																	<a href="http://www.eofcom.admin.ch/eofcom/public/welcome.do" aria-label="Online-Dienstleistungen des BAKOM" target="_blank" title=""> Online-Dienstleistungen des BAKOM</a>
+																
+															
+														</li>
+													</ul>
+												
+											
+												
+													<ul>
+														<li>
+															
+																
+																
+																
+																	<a href="http://dot.swiss/" aria-label="Dotswiss" target="_blank" title=""> Dotswiss</a>
+																
+															
+														</li>
+													</ul>
+												
+											
+												
+													<ul>
+														<li>
+															
+																
+																
+																
+																	<a href="https://map.geo.admin.ch/" aria-label="Geodatenportal des Bundes" target="_blank" title=""> Geodatenportal des Bundes</a>
+																
+															
+														</li>
+													</ul>
+												
+											
+												
+													<ul>
+														<li>
+															
+																
+																
+																
+																	<a href="https://www.uvek.egov.swiss/de/servicekatalog" aria-label="E-Government-Portal UVEK" target="_blank" title=""> E-Government-Portal UVEK</a>
+																
+															
+														</li>
+													</ul>
+												
+											
+										</li>
+									
+								</ul>
+							
+						</li>
+					
+				</ul>
+			
+			
+		
+	</nav>
+
+
+
+
+		
+
+		
+<!-- begin: metanav -->
+<section class="nav-services clearfix">
+	
+	
+		
+
+
+	
+	<h2>Abstimmungen</h2>
+
+	
+
+		
+		
+
+		<nav class="nav-lang">
+			<ul>
+				
+					<li>
+						
+							
+								<a class="active" lang="de" title="Deutsch selected" aria-label="Deutsch selected">DE</a>
+							
+							
+							
+						
+					</li>
+				
+					<li>
+						
+							
+							
+								<a href="/uvek/fr/home/detec/votations.html" lang="fr" title="Französisch" aria-label="Französisch">FR</a>
+							
+							
+						
+					</li>
+				
+					<li>
+						
+							
+							
+								<a href="/uvek/it/home/datec/votazioni.html" lang="it" title="Italienisch" aria-label="Italienisch">IT</a>
+							
+							
+						
+					</li>
+				
+					<li>
+						
+							
+							
+							
+								<a class="disabled" lang="en" title="Englisch" aria-label="Englisch">EN<span class="sr-only">disabled</span></a>
+							
+						
+					</li>
+				
+					<li>
+						
+							
+							
+								<a href="/uvek/rm/home/datec/abstimmungen.html" lang="rm" title="Rätoromanisch" aria-label="Rätoromanisch">RM</a>
+							
+							
+						
+					</li>
+				
+			</ul>
+		</nav>
+
+	
+
+
+		
+		
+
+    
+        
+            
+            
+
+                
+                <h2 class="sr-only">Service navigation</h2>
+
+                <nav class="nav-service">
+                    <ul>
+                        
+                        
+                            <li><a href="/uvek/de/home/uvek/jobs.html" title="Jobs" aria-label="Jobs" data-skipextcss="true">Jobs</a></li>
+                        
+                            <li><a href="/uvek/de/home/uvek/medien.html" title="Medien" aria-label="Medien" data-skipextcss="true">Medien</a></li>
+                        
+                            <li><a href="/uvek/de/home/uvek/kontakt.html" title="Kontakt" aria-label="Kontakt" data-skipextcss="true">Kontakt</a></li>
+                        
+                            <li><a href="/uvek/de/home/sitemap.html" title="Sitemap" aria-label="Sitemap" data-skipextcss="true">Sitemap</a></li>
+                        
+                    </ul>
+                </nav>
+
+            
+        
+    
+
+
+	
+	
+</section>
+<!-- end: metanav -->
+
+	</div>
+
+	
+		
+
+	
+	
+		
+<div class="mod mod-logo">
+    
+        
+        
+            
+                <a href="/uvek/de/home.html" class="brand  hidden-xs" id="logo" title="Startseite" aria-label="Startseite">
+                    
+                        
+                            <img src="/uvek/de/_jcr_content/logo/image.imagespooler.png/1441789978226/logo.png" alt="Zur Startseite"/>
+                        
+                        
+                    
+                    <h2 id="logo-desktop-departement">Eidgen&ouml;ssisches Departement f&uuml;r Umwelt, Verkehr, Energie und Kommunikation UVEK
+                    </h2>
+                </a>
+                
+            
+        
+    
+</div>
+
+	
+
+
+	
+
+ 	
+		
+
+
+	
+
+
+
+	
+	
+		
+
+<div class="mod mod-searchfield">
+
+	
+		
+
+		
+			
+
+			<!-- begin: sitesearch desktop-->
+			<div class="mod mod-searchfield global-search global-search-standard">
+				<form action="/uvek/de/home/suche.html" class="form-horizontal form-search pull-right">
+					<h2 class="sr-only">Suche</h2>
+					<label for="search-field" class="sr-only">Suche</label>
+					<input id="search-field" name="query" class="form-control search-field" type="text" placeholder="Suchen"/>
+                    <button class="icon icon--search icon--before" tabindex="0" role="button">
+                        <span class="sr-only">Suche</span>
+                    </button>
+                    <button class="icon icon--close icon--after search-reset" tabindex="0" role="button"><span class="sr-only"></span></button>
+					<div class="search-results">
+						<div class="search-results-list"></div>
+					</div>
+				</form>
+			</div>
+			<!-- end: sitesearch desktop-->
+
+		
+	
+
+</div>
+
+	
+
+
+
+	
+
+	
+		
+
+
+	
+
+<div class="mod mod-themes">
+	
+
+		<nav class="navbar yamm yamm--select ddl-to-modal">
+			<h2 class="sr-only">Themen A-Z</h2>
+			<ul>
+				<!-- Init dropdown with the `pull-right` class if you want to have your Topics select on the right -->
+				<li class="dropdown pull-right">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+						Themen A-Z <span class="icon icon--bottom"></span>
+					</a>
+					<!-- begin: flyout -->
+					<ul class="dropdown-menu">
+						<li>
+							<!-- The `yamm-content` can contain any kind of content like tab, table, list, article... -->
+							<div class="yamm-content container-fluid">
+
+								
+								<div class="row">
+									<div class="col-sm-12">
+										<button class="yamm-close btn btn-link icon icon--after icon--close pull-right">
+											Schliessen
+										</button>
+									</div>
+								</div>
+
+								
+				                <ul class="nav nav-tabs">
+				                	
+				                	
+				                		<li><a href="#mf_keywords_tab" data-toggle="tab" data-url="/uvek/de/_jcr_content/themes.keywordsinit.html">A-Z</a></li>
+				                	
+				                	
+				                </ul>
+
+				                
+				                <div class="tab-content">
+								
+
+								
+								
+									<div class="tab-pane" id="mf_keywords_tab"></div>
+									<h2 class="sr-only visible-print-block">A-Z</h2>
+								
+
+								
+								
+								</div>
+							</div>
+						</li>
+					</ul>
+				</li>
+			</ul>
+		</nav>
+
+
+</div>
+
+
+
+
+
+
+	
+
+ 	
+
+
+</header>
+
+
+
+    
+
+
+	
+	
+		
+
+<div class="mod mod-mainnavigation">
+
+	<!-- begin: mainnav -->
+	<div class="nav-main yamm navbar" id="main-navigation">
+
+		<h2 class="sr-only">
+			Hauptnavigation
+		</h2>
+
+		
+			
+
+
+<!-- mobile mainnav buttonbar -->
+ <section class="nav-mobile">
+	<div class="table-row">
+		<div class="nav-mobile-header">
+			<div class="table-row">
+				<span class="nav-mobile-logo">
+					
+						
+						
+							<img src="/etc/designs/core/frontend/guidelines/img/swiss.svg" onerror="this.onerror=null; this.src='/etc/designs/core/frontend/guidelines/img/swiss.png'" alt="Eidgenössisches Departement für Umwelt, Verkehr, Energie und Kommunikation UVEK"/>
+						
+					
+				</span>
+				<h2>
+					<a href="/uvek/de/home.html" title="Startseite" aria-label="Startseite">Eidgenössisches Departement für Umwelt, Verkehr, Energie und Kommunikation UVEK</a>
+				</h2>
+			</div>
+		</div>
+		<div class="table-cell dropdown">
+			<a href="#" class="nav-mobile-menu dropdown-toggle" data-toggle="dropdown">
+				<span class="icon icon--menu"></span>
+			</a>
+			<div class="drilldown dropdown-menu" role="menu">
+				<div class="drilldown-container">
+					<nav class="nav-page-list">
+						
+							<ul aria-controls="submenu">
+								
+									
+									
+										<li>
+											
+												
+												
+													<a href="/uvek/de/home/energie.html">Energie</a>
+												
+											
+										</li>
+									
+								
+							</ul>
+						
+							<ul aria-controls="submenu">
+								
+									
+									
+										<li>
+											
+												
+												
+													<a href="/uvek/de/home/verkehr.html">Verkehr</a>
+												
+											
+										</li>
+									
+								
+							</ul>
+						
+							<ul aria-controls="submenu">
+								
+									
+									
+										<li>
+											
+												
+												
+													<a href="/uvek/de/home/umwelt.html">Umwelt</a>
+												
+											
+										</li>
+									
+								
+							</ul>
+						
+							<ul aria-controls="submenu">
+								
+									
+									
+										<li>
+											
+												
+												
+													<a href="/uvek/de/home/raumentwicklung.html">Raumentwicklung</a>
+												
+											
+										</li>
+									
+								
+							</ul>
+						
+							<ul aria-controls="submenu">
+								
+									
+									
+										<li>
+											
+												
+												
+													<a href="/uvek/de/home/kommunikation.html">Kommunikation</a>
+												
+											
+										</li>
+									
+								
+							</ul>
+						
+							<ul aria-controls="submenu">
+								
+									
+									
+										<li>
+											
+												
+												
+													<a href="/uvek/de/home/uvek.html">Das UVEK</a>
+												
+											
+										</li>
+									
+								
+							</ul>
+						
+
+						<button class="yamm-close-bottom" aria-label="Schliessen">
+							<span class="icon icon--top" aria-hidden="true"></span>
+						</button>
+					</nav>
+				</div>
+			</div>
+		</div>
+		<div class="table-cell dropdown">
+			<a href="#" class="nav-mobile-menu dropdown-toggle" data-toggle="dropdown">
+				<span class="icon icon--search"></span>
+			</a>
+			<div class="dropdown-menu" role="menu">
+				
+				
+
+
+
+	
+		
+
+
+<div class="mod mod-searchfield">
+
+    
+        <div class="mod mod-searchfield global-search global-search-mobile">
+            <form action="/uvek/de/home/suche.html" class="form  mod-searchfield-mobile" role="form">
+                <h2 class="sr-only">Suche</h2>
+                <label for="search-field-phone" class="sr-only">
+                    Suche
+                </label>
+                <input id="search-field-phone" name="query" class="search-input form-control" type="text" placeholder="Suchen"/>
+                <button class="icon icon--search icon--before" tabindex="0" role="button">
+                    <span class="sr-only">Suche</span>
+                </button>
+                <button class="icon icon--close icon--after search-reset" tabindex="0" role="button"><span class="sr-only"></span></button>
+
+                <div class="search-results">
+                    <div class="search-results-list"></div>
+                </div>
+            </form>
+        </div>
+    
+
+</div>
+
+	
+	
+
+
+				
+			</div>
+		</div>
+	</div>
+</section>
+
+		
+
+		
+		<ul class="nav navbar-nav" aria-controls="submenu">
+
+			
+			
+
+				
+                
+				
+
+				<li class="dropdown yamm-fw  ">
+					
+						
+			      		
+							<a href="/uvek/de/home/energie.html" aria-label="Energie" class="dropdown-toggle" data-toggle="dropdown" data-url="/uvek/de/home/energie/_jcr_content/par.html">Energie</a>
+							
+							<ul class="dropdown-menu" role="menu" aria-controls="submenu">
+								<li>
+									<div class="yamm-content container-fluid">
+										<div class="row">
+											<div class="col-sm-12">
+												<button class="yamm-close btn btn-link icon icon--after icon--close pull-right">Schliessen</button>
+											</div>
+										</div>
+										<div class="row">
+											<div class="col-md-12 main-column">
+
+											</div>
+										</div>
+										<br><br><br>
+										<button class="yamm-close-bottom" aria-label="Schliessen"><span class="icon icon--top"></span></button>
+									</div>
+								</li>
+							</ul>
+						
+					
+				</li>
+			
+
+				
+                
+				
+
+				<li class="dropdown yamm-fw  ">
+					
+						
+			      		
+							<a href="/uvek/de/home/verkehr.html" aria-label="Verkehr" class="dropdown-toggle" data-toggle="dropdown" data-url="/uvek/de/home/verkehr/_jcr_content/par.html">Verkehr</a>
+							
+							<ul class="dropdown-menu" role="menu" aria-controls="submenu">
+								<li>
+									<div class="yamm-content container-fluid">
+										<div class="row">
+											<div class="col-sm-12">
+												<button class="yamm-close btn btn-link icon icon--after icon--close pull-right">Schliessen</button>
+											</div>
+										</div>
+										<div class="row">
+											<div class="col-md-12 main-column">
+
+											</div>
+										</div>
+										<br><br><br>
+										<button class="yamm-close-bottom" aria-label="Schliessen"><span class="icon icon--top"></span></button>
+									</div>
+								</li>
+							</ul>
+						
+					
+				</li>
+			
+
+				
+                
+				
+
+				<li class="dropdown yamm-fw  ">
+					
+						
+			      		
+							<a href="/uvek/de/home/umwelt.html" aria-label="Umwelt" class="dropdown-toggle" data-toggle="dropdown" data-url="/uvek/de/home/umwelt/_jcr_content/par.html">Umwelt</a>
+							
+							<ul class="dropdown-menu" role="menu" aria-controls="submenu">
+								<li>
+									<div class="yamm-content container-fluid">
+										<div class="row">
+											<div class="col-sm-12">
+												<button class="yamm-close btn btn-link icon icon--after icon--close pull-right">Schliessen</button>
+											</div>
+										</div>
+										<div class="row">
+											<div class="col-md-12 main-column">
+
+											</div>
+										</div>
+										<br><br><br>
+										<button class="yamm-close-bottom" aria-label="Schliessen"><span class="icon icon--top"></span></button>
+									</div>
+								</li>
+							</ul>
+						
+					
+				</li>
+			
+
+				
+                
+				
+
+				<li class="dropdown yamm-fw  ">
+					
+						
+			      		
+							<a href="/uvek/de/home/raumentwicklung.html" aria-label="Raumentwicklung" class="dropdown-toggle" data-toggle="dropdown" data-url="/uvek/de/home/raumentwicklung/_jcr_content/par.html">Raumentwicklung</a>
+							
+							<ul class="dropdown-menu" role="menu" aria-controls="submenu">
+								<li>
+									<div class="yamm-content container-fluid">
+										<div class="row">
+											<div class="col-sm-12">
+												<button class="yamm-close btn btn-link icon icon--after icon--close pull-right">Schliessen</button>
+											</div>
+										</div>
+										<div class="row">
+											<div class="col-md-12 main-column">
+
+											</div>
+										</div>
+										<br><br><br>
+										<button class="yamm-close-bottom" aria-label="Schliessen"><span class="icon icon--top"></span></button>
+									</div>
+								</li>
+							</ul>
+						
+					
+				</li>
+			
+
+				
+                
+				
+
+				<li class="dropdown yamm-fw  ">
+					
+						
+			      		
+							<a href="/uvek/de/home/kommunikation.html" aria-label="Kommunikation" class="dropdown-toggle" data-toggle="dropdown" data-url="/uvek/de/home/kommunikation/_jcr_content/par.html">Kommunikation</a>
+							
+							<ul class="dropdown-menu" role="menu" aria-controls="submenu">
+								<li>
+									<div class="yamm-content container-fluid">
+										<div class="row">
+											<div class="col-sm-12">
+												<button class="yamm-close btn btn-link icon icon--after icon--close pull-right">Schliessen</button>
+											</div>
+										</div>
+										<div class="row">
+											<div class="col-md-12 main-column">
+
+											</div>
+										</div>
+										<br><br><br>
+										<button class="yamm-close-bottom" aria-label="Schliessen"><span class="icon icon--top"></span></button>
+									</div>
+								</li>
+							</ul>
+						
+					
+				</li>
+			
+
+				
+                
+				
+
+				<li class="dropdown yamm-fw  current">
+					
+						
+			      		
+							<a href="/uvek/de/home/uvek.html" aria-label="Das UVEK" class="dropdown-toggle" data-toggle="dropdown" data-url="/uvek/de/home/uvek/_jcr_content/par.html">Das UVEK<span class="sr-only">current page</span></a>
+							
+							<ul class="dropdown-menu" role="menu" aria-controls="submenu">
+								<li>
+									<div class="yamm-content container-fluid">
+										<div class="row">
+											<div class="col-sm-12">
+												<button class="yamm-close btn btn-link icon icon--after icon--close pull-right">Schliessen</button>
+											</div>
+										</div>
+										<div class="row">
+											<div class="col-md-12 main-column">
+
+											</div>
+										</div>
+										<br><br><br>
+										<button class="yamm-close-bottom" aria-label="Schliessen"><span class="icon icon--top"></span></button>
+									</div>
+								</li>
+							</ul>
+						
+					
+				</li>
+			
+		</ul>
+	</div>
+</div>
+
+	
+
+
+
+    
+
+<!-- begin: main -->
+<div class="container-fluid hidden-xs">
+	<div class="row">
+		<div class="col-sm-12">
+			
+	
+
+
+<div class="mod mod-breadcrumb">
+	<h2 id="br1" class="sr-only">Breadcrumb</h2>
+	<ol class="breadcrumb" role="menu" aria-labelledby="br1">
+		
+			<li><a href="/uvek/de/home.html" title="Startseite" aria-label="Startseite">Startseite</a><span class="icon icon--greater"></span></li>
+		
+			<li><a href="/uvek/de/home/uvek.html" title="Das UVEK" aria-label="Das UVEK">Das UVEK</a><span class="icon icon--greater"></span></li>
+		
+		<li class="active" role="presentation">Abstimmungen</li>
+	</ol>
+</div>
+
+	
+		</div>
+	</div>
+</div>
+
+
+
+	
+	
+		<div class="container-fluid">
+			
+
+<div class="row">
+    <div class="col-sm-4 col-md-3 drilldown">
+        
+
+<div class="mod mod-leftnavigation">
+
+		<a href="#collapseSubNav" data-toggle="collapse" class="collapsed visible-xs">Unternavigation</a>
+		<div class="drilldown-container">
+			<nav class="nav-page-list">
+				
+					<a href="/uvek/de/home/uvek.html" class="icon icon--before icon--less visible-xs">Zurück</a>
+
+					<a href="/uvek/de/home/uvek.html" class="icon icon--before icon--less"><span class="sr-only">Zurück </span>Das UVEK</a>
+				
+				<ul>
+					
+						
+							
+								<li class="list-emphasis active">
+									<span>Abstimmungen</span> <span class="sr-only"></span>
+								</li>
+							
+							
+						
+					
+
+					
+					
+					
+
+					
+						
+							
+							
+								
+									
+									
+										<li>
+											<a href="/uvek/de/home/uvek/abstimmungen/ausbauschritt-nationalstrassen.html">Ausbau der Nationalstrassen</a>
+										</li>
+									
+								
+							
+						
+					
+						
+							
+							
+								
+									
+									
+										<li>
+											<a href="/uvek/de/home/uvek/abstimmungen/biodiversitaetsinitiative.html">Biodiversitätsinitiative</a>
+										</li>
+									
+								
+							
+						
+					
+						
+							
+							
+								
+									
+									
+										<li>
+											<a href="/uvek/de/home/uvek/abstimmungen/vorlage-sichere-stromversorgung.html">Vorlage für eine sichere Stromversorgung</a>
+										</li>
+									
+								
+							
+						
+					
+						
+							
+							
+								
+									
+									
+										<li>
+											<a href="/uvek/de/home/uvek/abstimmungen/klima-und-innovationsgesetz.html">Klima- und Innovationsgesetz</a>
+										</li>
+									
+								
+							
+						
+					
+						
+							
+							
+								
+									
+									
+										<li>
+											<a href="/uvek/de/home/uvek/abstimmungen/medienpaket.html">Medienpaket</a>
+										</li>
+									
+								
+							
+						
+					
+						
+							
+							
+								
+									
+									
+										<li>
+											<a href="/uvek/de/home/uvek/abstimmungen/co2-gesetz.html">CO2-Gesetz</a>
+										</li>
+									
+								
+							
+						
+					
+						
+							
+							
+								
+									
+									
+										<li>
+											<a href="/uvek/de/home/uvek/abstimmungen/revision-des-jagdgesetzes.html">Jagdgesetz</a>
+										</li>
+									
+								
+							
+						
+					
+						
+							
+							
+								
+									
+									
+										<li>
+											<a href="/uvek/de/home/uvek/abstimmungen/zersiedelungsinitiative.html">Zersiedelungsinitiative</a>
+										</li>
+									
+								
+							
+						
+					
+						
+							
+							
+								
+									
+									
+										<li>
+											<a href="/uvek/de/home/uvek/abstimmungen/velo-vorlage.html">Bundesbeschluss Velowege</a>
+										</li>
+									
+								
+							
+						
+					
+						
+							
+							
+								
+									
+									
+										<li>
+											<a href="/uvek/de/home/uvek/abstimmungen/no-billag-initiative.html">«No Billag»-Initiative</a>
+										</li>
+									
+								
+							
+						
+					
+						
+							
+							
+								
+									
+									
+										<li>
+											<a href="/uvek/de/home/uvek/abstimmungen/abstimmung-zum-energiegesetz.html">Energiegesetz</a>
+										</li>
+									
+								
+							
+						
+					
+						
+							
+							
+								
+									
+									
+										<li>
+											<a href="/uvek/de/home/uvek/abstimmungen/abstimmung-naf.html">Abstimmung zum NAF</a>
+										</li>
+									
+								
+							
+						
+					
+						
+							
+							
+								
+									
+									
+										<li>
+											<a href="/uvek/de/home/uvek/abstimmungen/atomausstiegsinitiative.html">Atomausstiegsinitiative</a>
+										</li>
+									
+								
+							
+						
+					
+						
+							
+							
+								
+									
+									
+										<li>
+											<a href="/uvek/de/home/uvek/abstimmungen/volksinitiative-gruene-wirtschaft.html">Volksinitiative «Grüne Wirtschaft»</a>
+										</li>
+									
+								
+							
+						
+					
+						
+							
+							
+								
+									
+									
+										<li>
+											<a href="/uvek/de/home/uvek/abstimmungen/abstimmung-service-public.html">Volksinitiative «Pro Service public»</a>
+										</li>
+									
+								
+							
+						
+					
+						
+							
+							
+								
+									
+									
+										<li>
+											<a href="/uvek/de/home/uvek/abstimmungen/verkehrsfinanzierung.html">Volksinitiative Verkehrsfinanzierung</a>
+										</li>
+									
+								
+							
+						
+					
+						
+							
+							
+								
+									
+									
+										<li>
+											<a href="/uvek/de/home/uvek/abstimmungen/abstimmung-gotthard-strassentunnel.html">Abstimmung zur Sanierung des Gotthard-Strassentunnels</a>
+										</li>
+									
+								
+							
+						
+					
+						
+							
+							
+								
+									
+									
+										<li>
+											<a href="/uvek/de/home/uvek/abstimmungen/abstimmung-rtvg.html">Revision des Bundesgesetzes über Radio und Fernsehen</a>
+										</li>
+									
+								
+							
+						
+					
+						
+							
+							
+								
+									
+									
+										<li>
+											<a href="/uvek/de/home/uvek/abstimmungen/abstimmung-fabi-vorlage.html">FABI-Vorlage</a>
+										</li>
+									
+								
+							
+						
+					
+						
+							
+							
+								
+									
+									
+										<li>
+											<a href="/uvek/de/home/uvek/abstimmungen/abstimmung-autobahnvignette.html">Vignetten-Vorlage</a>
+										</li>
+									
+								
+							
+						
+					
+						
+							
+							
+								
+									
+									
+										<li>
+											<a href="/uvek/de/home/uvek/abstimmungen/abstimmung-raumplanungsgesetz.html">Änderung des Raumplanungsgesetzes</a>
+										</li>
+									
+								
+							
+						
+					
+						
+							
+							
+								
+									
+									
+										<li>
+											<a href="/uvek/de/home/uvek/abstimmungen/zweitwohnungsinitiative.html">Zweitwohnungsinitiative</a>
+										</li>
+									
+								
+							
+						
+					
+				</ul>
+			</nav>
+		</div>
+
+</div>
+
+    </div>
+    <div class="col-sm-8 col-md-9 main-column" id="content" role="main">
+        <div class="row">
+            <div class="col-md-8 main-content js-glossary-context">
+                
+
+<div class="visible-xs visible-sm">
+	<p><a href="#context-sidebar" class="icon icon--before icon--root">Zum Seitenende</a></p>
+</div>
+
+<div class="contentHead">
+	
+
+
+
+<div class="mod mod-backtooverview">
+	
+</div>
+
+
+	
+	
+
+
+	
+	
+		<a href="javascript:$.printPreview.printPreview()" onclick="" class="icon icon--before icon--print pull-right" title="Seite drucken"></a>
+	
+
+
+
+
+	
+	
+
+<div class="mod mod-contentpage">
+    <h1 class="text-inline">Abstimmungen</h1>
+</div>
+
+</div>	
+
+
+
+
+
+
+<div class="mod mod-text">
+    
+        
+        
+            <article class="clearfix">
+                
+                    <p><b>Eine Übersicht zu den geplanten und vergangenen Initiativen und Referendumsvorlagen, die Themen des UVEK betreffen.<br>
+ &nbsp;</b></p>
+
+                
+                
+            </article>
+        
+    
+</div>
+<div class="mod mod-anchorlist">
+	
+		
+	  	
+	  		
+			
+				<ul>
+					 
+					 	<li class="anchor"><a href="#303057390" class="icon icon--before icon--root">Abstimmungsreife Initiativen, Referenden, Vorlagen und Beschlüsse</a></li>
+					 
+					 	<li class="anchor"><a href="#1733133222" class="icon icon--before icon--root">Beim Parlament hängige Volksinitiativen</a></li>
+					 
+					 	<li class="anchor"><a href="#423207042" class="icon icon--before icon--root">Beim Bundesrat hängige Volksinitiativen</a></li>
+					 
+					 	<li class="anchor"><a href="#1178796426" class="icon icon--before icon--root">Bedingt zurückgezogene Initiativen</a></li>
+					 
+					 	<li class="anchor"><a href="#1818079600" class="icon icon--before icon--root">Initiativen im Sammelstadium </a></li>
+					 
+					 	<li class="anchor"><a href="#2017608620" class="icon icon--before icon--root">Vergangene Abstimmungen</a></li>
+					 
+				</ul>
+			
+		
+	
+</div>
+
+<div class="mod mod-text">
+    
+        
+        
+            <article class="clearfix">
+                
+                    <p>&nbsp; &nbsp;</p>
+
+                
+                
+            </article>
+        
+    
+</div>
+<div class="mod mod-headline">
+	
+		
+		
+		
+			<h2>Geplante Abstimmungen</h2>
+		
+	
+</div>
+
+<div class="mod mod-headline" id="303057390">
+	
+		
+		
+		
+			<h3>Abstimmungsreife Initiativen, Referenden, Vorlagen und Beschlüsse</h3>
+		
+	
+</div>
+
+
+
+<div class="mod mod-teaser">
+
+
+
+    
+    
+        
+            
+            
+
+            
+            
+                
+
+                
+                
+                <div>
+                    <div class="clearfix well ">
+                        
+                        
+                            
+                            
+                                
+                            
+                        
+                        
+                        
+                        
+                            
+                                <h3>
+                                    <a href="/uvek/de/home/uvek/abstimmungen/ausbauschritt-nationalstrassen.html" title="Ausbau der Nationalstrassen" aria-label="Ausbau der Nationalstrassen" data-skipextcss="true">Ausbau der Nationalstrassen</a>
+                                </h3>
+                            
+                            
+                        
+                        <p>Am 24. November 2024 entscheiden die Stimmb&uuml;rgerinnen und Stimmb&uuml;rger &uuml;ber den Ausbauschritt 2023 f&uuml;r die Nationalstrassen. Zu den Details und den Argumenten des Bundesrates.</p>
+                        
+                    </div>
+                </div>
+            
+        
+    
+
+</div>
+
+<div class="mod mod-text">
+    
+        
+        
+            <article class="clearfix">
+                
+                    <p><a href="https://www.bk.admin.ch/ch/d/pore/vi/vis535.html" target="_blank" class="icon icon--after icon--external" title="">Für eine gerechte Energie- und Klimapolitik: Investieren für Wohlstand, Arbeit und Umwelt (Klimafonds-Initiative)</a><br>
+Zustandegekommen am 08.04.2024<br>
+<a href="/uvek/de/home/uvek/medien/medienmitteilungen.msg-id-101009.html">«Der Bundesrat empfiehlt die Klimafonds-Initiative zur Ablehnung» (Medienmitteilung, 15.05.2024)</a><br>
+<a href="https://www.parlament.ch/de/ratsbetrieb/suche-curia-vista/geschaeft?AffairId=20240021" target="_blank" class="icon icon--after icon--external" title="">Behandlung im Parlament</a><br>
+</p>
+
+                
+                
+            </article>
+        
+    
+</div>
+<div class="mod mod-headline" id="1733133222">
+	
+		
+		
+		
+			<h3>Beim Parlament hängige Volksinitiativen</h3>
+		
+	
+</div>
+
+<div class="mod mod-text">
+    
+        
+        
+            <article class="clearfix">
+                
+                    <p><a href="https://www.bk.admin.ch/ch/d/pore/vi/vis515.html" target="_blank" class="icon icon--after icon--external" title="">Für eine verantwortungsvolle Wirtschaft innerhalb der planetaren Grenzen (Umweltverantwortungsinitiative)</a><br>
+Zustandegekommen am 22.03.2023<br>
+<a href="https://www.uvek.admin.ch/uvek/de/home/uvek/medien/medienmitteilungen.msg-id-99633.html" target="_blank" class="icon icon--after icon--external" title="">«Der Bundesrat lehnt die Umweltverantwortungsinitiative ab» (Medienmitteilung, 10.01.2024)</a></p>
+
+                
+                
+            </article>
+        
+    
+</div>
+<div class="mod mod-text">
+    
+        
+        
+            <article class="clearfix">
+                
+                    <p><a href="https://www.bk.admin.ch/ch/d/pore/vi/vis525.html" target="_blank" class="icon icon--after icon--external" title="">Für eine Einschränkung von Feuerwerk</a><br>
+Zustandegekommen am 01.12.2023<br>
+<a href="https://www.uvek.admin.ch/uvek/de/home/uvek/medien/medienmitteilungen.msg-id-102797.html" target="_blank" class="icon icon--after icon--external" title="">«Der Bundesrat lehnt die «Feuerwerksinitiative» ab» (Medienmitteilung, 16.10.2024)</a><br>
+</p>
+
+                
+                
+            </article>
+        
+    
+</div>
+<div class="mod mod-headline" id="423207042">
+	
+		
+		
+		
+			<h3>Beim Bundesrat hängige Volksinitiativen</h3>
+		
+	
+</div>
+
+<div class="mod mod-text">
+    
+        
+        
+            <article class="clearfix">
+                
+                    <p><a href="https://www.bk.admin.ch/ch/d/pore/vi/vis528.html" target="_blank" class="icon icon--after icon--external" title="">200 Franken sind genug! (SRG-Initiative)</a><br>
+Zustandegekommen am 31.08.2023<br>
+<a href="https://www.uvek.admin.ch/uvek/de/home/uvek/medien/medienmitteilungen.msg-id-101502.html" target="_blank" class="icon icon--after icon--external" title="">«Bundesrat lehnt SRG-Initiative ab und schlägt stattdessen Abgabesenkung auf 300 Franken vor» (Medienmitteilung, 19.06.2024)</a><br>
+</p>
+
+                
+                
+            </article>
+        
+    
+</div>
+<div class="mod mod-text">
+    
+        
+        
+            <article class="clearfix">
+                
+                    <p><a href="https://www.bk.admin.ch/ch/d/pore/vi/vis533.html" target="_blank" class="icon icon--after icon--external" title="">Jederzeit Strom für alle (Blackout stoppen)</a><br>
+Zustandegekommen am 19.03.2024<br>
+<a href="https://www.uvek.admin.ch/uvek/de/home/uvek/medien/medienmitteilungen.msg-id-102240.html" target="_blank" class="icon icon--after icon--external" title="">Bundesrat schlägt indirekten Gegenvorschlag vor (Medienmitteilung 28.08.2024)</a>&nbsp;<br>
+</p>
+
+                
+                
+            </article>
+        
+    
+</div>
+<div class="mod mod-headline" id="1178796426">
+	
+		
+		
+		
+			<h3>Bedingt zurückgezogene Initiativen</h3>
+		
+	
+</div>
+
+<div class="mod mod-text">
+    
+        
+        
+            <article class="clearfix">
+                
+                    <p><a href="https://www.bk.admin.ch/ch/d/pore/vi/vis495.html" target="_blank" class="icon icon--after icon--external" title="">Gegen die Verbauung unserer Landschaft (Landschaftsinitiative)</a><br>
+Zustandegekommen am 14.10.2020, bedingt zurückgezogen am 07.11.2023<br>
+<a href="https://www.parlament.ch/de/ratsbetrieb/suche-curia-vista/geschaeft?AffairId=20210065" target="_blank" class="icon icon--after icon--external" title="">Behandlung im Parlament: Übersicht</a><br>
+<a href="https://www.uvek.admin.ch/uvek/de/home/uvek/medien/medienmitteilungen.msg-id-84934.html" target="_blank" class="icon icon--after icon--external" title="">«Bundesrat verabschiedet Botschaft zur Landschaftsinitiative» (Medienmitteilung, 01.09.2021)</a></p>
+
+                
+                
+            </article>
+        
+    
+</div>
+<div class="mod mod-headline" id="1818079600">
+	
+		
+		
+		
+			<h3>Initiativen/Referenden im Sammelstadium </h3>
+		
+	
+</div>
+
+<div class="mod mod-text">
+    
+        
+        
+            <article class="clearfix">
+                
+                    <p><a href="https://www.admin.ch/ch/d/pore/vi/vis_1_3_1_1.html" target="_blank" class="icon icon--after icon--external" title="">Initiativen im Sammelstadium (Website der Bundeskanzlei)</a></p>
+<p><a href="https://www.admin.ch/ch/d/pore/rf/ref_1_3_2_1.html" target="_blank" class="icon icon--after icon--external" title="">Vorlagen mit laufender Referendumsfrist (Website der Bundeskanzlei)</a><br>
+&nbsp;</p>
+
+                
+                
+            </article>
+        
+    
+</div>
+<div class="mod mod-headline" id="2017608620">
+	
+		
+		
+		
+			<h2>Vergangene Abstimmungen</h2>
+		
+	
+</div>
+
+<div class="mod mod-headline">
+	
+		
+		
+		
+			<h3>2024</h3>
+		
+	
+</div>
+
+<div class="mod mod-text">
+    
+        
+        
+            <article class="clearfix">
+                
+                    <p><b>Abstimmung über die Biodiversitätsinitiative<br>
+</b></p>
+<p>Abgelehnt: 63% Nein | 37% Ja</p>
+<p>Am 22. September 2024 haben die Stimmberechtigten die Biodiversitätsinitiative abgelehnt. Somit bleibt die aktuelle Gesetzgebung bestehen; Bund und Kantone engagieren sich auch zukünftig für die Biodiversität.<br>
+</p>
+<p><a href="/uvek/de/home/uvek/abstimmungen/biodiversitaetsinitiative.html">Dossier</a><br>
+<a href="https://www.bk.admin.ch/ch/d/pore/va/20240922/can671.html" target="_blank" class="icon icon--after icon--external" title="">Abstimmungsresultate</a><br>
+</p>
+
+                
+                
+            </article>
+        
+    
+</div>
+<div class="mod mod-text">
+    
+        
+        
+            <article class="clearfix">
+                
+                    <p><b>Abstimmung Vorlage für eine sichere Stromversorgung<br>
+</b></p>
+<p>Angenommen: 68,7% Ja | 31,3% Nein</p>
+<p>Am 9. Juni 2024 hat das Stimmvolk die Vorlage für eine sichere Stromversorgung angenommen. Dieses Gesetz schafft die Grundlage, um in der Schweiz rasch mehr Strom aus erneuerbaren Energiequellen wie Wasser, Sonne oder Wind zu produzieren.<br>
+</p>
+<p><a href="/uvek/de/home/uvek/abstimmungen/vorlage-sichere-stromversorgung.html">Dossier</a><br>
+<a href="https://www.bk.admin.ch/ch/d/pore/va/20240609/can670.html" target="_blank" class="icon icon--after icon--external" title="">Abstimmungsresultate</a><br>
+</p>
+<p>&nbsp;</p>
+
+                
+                
+            </article>
+        
+    
+</div>
+<div class="mod mod-headline">
+	
+		
+		
+		
+			<h3>2023</h3>
+		
+	
+</div>
+
+<div class="mod mod-text">
+    
+        
+        
+            <article class="clearfix">
+                
+                    <p><b>Abstimmung über das Klima- und Innovationsgesetz<br>
+</b></p>
+<p>Angenommen: 59,1% Ja | 40,9% Nein</p>
+<p>Am 18. Juni 2023 hat das Stimmvolk das Klima- und Innovationsgesetz angenommen. Mit der Annahme kann die Schweiz schrittweise ihren Verbrauch von Erdöl und Erdgas senken. Ziel ist es, bis 2050 die Klimaneutralität zu erreichen.<br>
+</p>
+<p><a href="/uvek/de/home/uvek/abstimmungen/klima-und-innovationsgesetz.html">Dossier</a><br>
+<a href="https://www.bk.admin.ch/ch/d/pore/va/20230618/can663.html" target="_blank" class="icon icon--after icon--external" title="">Abstimmungsresultate</a><br>
+</p>
+<p>&nbsp;</p>
+
+                
+                
+            </article>
+        
+    
+</div>
+<div class="mod mod-headline">
+	
+		
+		
+		
+			<h3>2022</h3>
+		
+	
+</div>
+
+<div class="mod mod-text">
+    
+        
+        
+            <article class="clearfix">
+                
+                    <p><b>Abstimmung über das Medienpaket</b></p>
+<p>Abgelehnt: 54,6% Nein | 45,4% Ja</p>
+<p>Die Stimmbevölkerung hat das Massnahmenpaket zugunsten der einheimischen Medien am 13. Februar 2022 abgelehnt. Damit bleibt gesetzlich alles beim Alten.<br>
+</p>
+<p><a href="/uvek/de/home/uvek/abstimmungen/medienpaket.html">Dossier</a><br>
+<a href="https://www.bk.admin.ch/ch/d/pore/va/20220213/can654.html" target="_blank" class="icon icon--after icon--external" title="">Abstimmungsresultate</a><br>
+</p>
+<p>&nbsp;</p>
+
+                
+                
+            </article>
+        
+    
+</div>
+<div class="mod mod-headline">
+	
+		
+		
+		
+			<h3>2021</h3>
+		
+	
+</div>
+
+<div class="mod mod-text">
+    
+        
+        
+            <article class="clearfix">
+                
+                    <p><b>Abstimmung über das CO2-Gesetz&nbsp;</b></p>
+<p>Abgelehnt: 51,6% Nein | 48,4% Ja</p>
+<p>Das revidierte CO2-Gesetz wurde am 13. Juni 2021 von der Schweizer Stimmbevölkerung abgelehnt. Das bestehende CO2-Gesetz bleibt in Kraft.<br>
+</p>
+<p><a href="/uvek/de/home/uvek/abstimmungen/co2-gesetz.html">Dossier</a><br>
+<a href="https://www.bk.admin.ch/ch/d/pore/va/20210613/can644.html" target="_blank" class="icon icon--after icon--external" title="">Abstimmungsresultate</a><br>
+</p>
+<p>&nbsp;</p>
+
+                
+                
+            </article>
+        
+    
+</div>
+<div class="mod mod-headline">
+	
+		
+		
+		
+			<h3>2020</h3>
+		
+	
+</div>
+
+<div class="mod mod-text">
+    
+        
+        
+            <article class="clearfix">
+                
+                    <p><b>Abstimmung über das revidierte Jagdgesetz</b></p>
+<p>Abgelehnt: 51,9% Nein | 48,1% Ja</p>
+<p>Am 27. September 2020 hat die Schweizer Stimmbevölkerung das revidierte Jagdgesetz abgelehnt. Damit bleibt es bei den Schutzgebieten, Zugvogelreservaten und Wildtierkorridoren sowie im Umgang mit dem Wolf bei den bisherigen Regeln.<br>
+</p>
+<p><a href="/uvek/de/home/uvek/abstimmungen/revision-des-jagdgesetzes.html">Dossier</a><br>
+<a href="https://www.bk.admin.ch/ch/d/pore/va/20200927/can632.html" target="_blank" class="icon icon--after icon--external" title="">Abstimmungsresultate</a><br>
+</p>
+<p>&nbsp;</p>
+
+                
+                
+            </article>
+        
+    
+</div>
+<div class="mod mod-headline">
+	
+		
+		
+		
+			<h3>2019</h3>
+		
+	
+</div>
+
+<div class="mod mod-text">
+    
+        
+        
+            <article class="clearfix">
+                
+                    <p><b>Volksinitiative «Zersiedelung stoppen – für eine nachhaltige Siedlungsentwicklung» (Zersiedelungsinitiative)</b></p>
+<p>Abgelehnt: 63,7% Nein | 36,3% Ja</p>
+<p>Die Zersiedelungsinitiative wurde am 10. Februar 2019 abgelehnt. Der Bundesrat sprach sich dagegen aus, weil sich die Bautätigkeit mit einem starren, landesweiten Bauzonen-Stopp in bisher verschonte Gebiete verlagert hätte. In Städten mit knappen Wohnraum drohten aufgrund des Bauzonen-Stopps zudem höhere Mieten.<br>
+</p>
+<p><a href="/uvek/de/home/uvek/abstimmungen/zersiedelungsinitiative.html">Dossier</a><br>
+<a href="https://www.bk.admin.ch/ch/d/pore/va/20190210/index.html" target="_blank" class="icon icon--after icon--external" title="">Abstimmungsresultate</a></p>
+<p>&nbsp;</p>
+
+                
+                
+            </article>
+        
+    
+</div>
+<div class="mod mod-headline">
+	
+		
+		
+		
+			<h3>2018</h3>
+		
+	
+</div>
+
+<div class="mod mod-text">
+    
+        
+        
+            <article class="clearfix">
+                
+                    <p><b>Bundesbeschluss über die Velowege sowie die Fuss- und Wanderwege</b></p>
+<p>Angenommen: 73,6% Ja | 26,4% Nein</p>
+<p>Am 23. September 2018 wurde der Bundesbeschluss Velo von Volk und Ständen angenommen. Der Bund erhält damit die Möglichkeit, Grundsätze für Velowegnetze festzulegen sowie Massnahmen der Kantone, Gemeinden und weiterer Akteure zu unterstützen und zu koordinieren.<br>
+</p>
+<p><a href="/uvek/de/home/uvek/abstimmungen/velo-vorlage.html">Dossier<br>
+ </a><a href="https://www.bk.admin.ch/ch/d/pore/va/20180923/det620.html" target="_blank" class="icon icon--after icon--external" title="">Abstimmungsresultate</a></p>
+<p>&nbsp;</p>
+
+                
+                
+            </article>
+        
+    
+</div>
+<div class="mod mod-text">
+    
+        
+        
+            <article class="clearfix">
+                
+                    <p><b>Volksinitiative «Ja zur Abschaffung der Radio- und Fernsehgebühren» (Abschaffung der Billag-Gebühren)</b></p>
+<p>Abgelehnt: 71,6% Nein | 28,4% Ja</p>
+<p>Die «No Billag»-Initiative wurde am 4. März 2018 von Volk und Ständen abgelehnt. Damit wird die Empfangsgebühr für Radio und Fernsehen nicht abgeschafft. Deren Erträge sorgen dafür, dass alle Sprachregionen der Schweiz auf eine umfassende Radio- und TV-Berichterstattung zählen können.<br>
+</p>
+<p><a href="/uvek/de/home/uvek/abstimmungen/no-billag-initiative.html">Dossier<br>
+ </a><a href="https://www.bk.admin.ch/ch/d/pore/va/20180304/det617.html" target="_blank" class="icon icon--after icon--external" title="">Abstimmungsresultate</a></p>
+<p>&nbsp;</p>
+
+                
+                
+            </article>
+        
+    
+</div>
+<div class="mod mod-headline">
+	
+		
+		
+		
+			<h3>2017</h3>
+		
+	
+</div>
+
+<div class="mod mod-text">
+    
+        
+        
+            <article class="clearfix">
+                
+                    <p><b>Energiegesetz (EnG)</b></p>
+<p>Angenommen: 58,2% Ja | 41,8% Nein</p>
+<p>Am 21. Mai 2017 hat das Stimmvolk das revidierte Energiegesetz angenommen. Es dient dazu, den Energieverbrauch zu senken, die Energieeffizienz zu erhöhen und die erneuerbaren Energien zu fördern. Zudem wird der Bau neuer Kernkraftwerke verboten.<br>
+</p>
+<p><a href="/uvek/de/home/uvek/abstimmungen/abstimmung-zum-energiegesetz.html">Dossier: Abstimmung zum Energiegesetz<br>
+ </a><a href="https://www.admin.ch/ch/d/pore/va/20170521/det612.html" target="_blank" class="icon icon--after icon--external" title="">Abstimmungsresultate</a></p>
+<p>&nbsp;</p>
+
+                
+                
+            </article>
+        
+    
+</div>
+<div class="mod mod-text">
+    
+        
+        
+            <article class="clearfix">
+                
+                    <p><b><br>
+ Bundesbeschluss über die Schaffung eines Fonds für die Nationalstrassen und den Agglomerationsverkehr (NAF)</b></p>
+<p>Angenommen: 62% Ja | 38% Nein</p>
+<p>Volk und Stände haben am 12. Februar 2017 den Bundesbeschluss zur Schaffung eines Nationalstrassen- und Agglomerationsverkehrs-Fonds (NAF) angenommen. Damit wird sichergestellt, dass das Verkehrsnetz in der ganzen Schweiz verbessert werden kann.<br>
+</p>
+<p><a href="/uvek/de/home/uvek/abstimmungen/abstimmung-naf.html">Dossier</a></p>
+<p>&nbsp;</p>
+
+                
+                
+            </article>
+        
+    
+</div>
+<div class="mod mod-headline">
+	
+		
+		
+		
+			<h3>2016</h3>
+		
+	
+</div>
+
+<div class="mod mod-textimage">
+    
+<div class="clearfix">
+    
+        
+        
+
+            
+                
+                
+                    
+                
+            
+            
+            
+            <p><b>Volksinitiative „Für den geordneten Ausstieg aus der Atomenergie“</b><br>
+<br>
+Abgelehnt: 45,8% Ja | 54,2% Nein<br>
+<br>
+Am 27. November 2016 wurde die Atomausstiegsinitiative abgelehnt. Sie verlangte, den Bau neuer KKW zu verbieten und die Laufzeit der bestehenden KKW zu begrenzen. Der Bundesrat hatte das Begehren zur Ablehnung empfohlen, da er sich für einen Ausstieg aus der Kernenergie ausspricht, der mit dem Ausbau der einheimischen erneuerbaren Energien Schritt hält.<br>
+</p>
+<p><a href="/uvek/de/home/uvek/abstimmungen/atomausstiegsinitiative.html">Dossier</a></p>
+
+            
+        
+    
+</div>
+
+</div>
+
+<div class="mod mod-text">
+    
+        
+        
+            <article class="clearfix">
+                
+                    <p><br>
+<b>Volksinitiative «Für eine nachhaltige und ressourceneffiziente Wirtschaft» (Grüne Wirtschaft)</b></p>
+<p>Abgelehnt: 36,4% Ja | 63,6% Nein</p>
+<p>Die Stimmbevölkerung hat sich am 25. September 2016 gegen die Initiative «Für eine nachhaltige und ressourceneffiziente Wirtschaft» ausgesprochen. Die Initiative wollte die Grundlagen für eine Wirtschaft schaffen, welche die natürlichen Ressourcen nicht übermässig beansprucht. Der Bundesrat teilt dieses Anliegen, empfahl das Begehren jedoch zur Ablehnung, da er das Ziel innerhalb der angestrebten Frist für nicht umsetzbar hielt.<br>
+</p>
+<p><a href="/uvek/de/home/uvek/abstimmungen/volksinitiative-gruene-wirtschaft.html">Dossier</a></p>
+
+                
+                
+            </article>
+        
+    
+</div>
+<div class="mod mod-text">
+    
+        
+        
+            <article class="clearfix">
+                
+                    <p><b><br>
+Abstimmung zur Volksinitiative &quot;Pro Service public&quot;</b></p>
+<p>Abgelehnt: 32.4% Ja | 67.6% Nein</p>
+<p>Am 5. Juni 2016 haben die Stimmberechtigten die Volksinitiative &quot;Pro Service public&quot; abgelehnt. Die Initiative wollte bundesnahen Unternehmen wie der SBB, Post und Swisscom das Streben nach Gewinn im Bereich der Grundversorgung sowie Quersubventionierungen verbieten und Vorschriften zu den Löhnen erlassen.</p>
+<p><a href="/uvek/de/home/uvek/abstimmungen/abstimmung-service-public.html">Abstimmungsdossier</a></p>
+
+                
+                
+            </article>
+        
+    
+</div>
+<div class="mod mod-text">
+    
+        
+        
+            <article class="clearfix">
+                
+                    <p><b><br>
+ Volksinitiative „Für eine faire Verkehrsfinanzierung“</b></p>
+<p>Zuständigkeit: Eidgenössisches Finanzdepartement EFD<br>
+Abgelehnt: 70,8 Nein | 29.2 Ja<br>
+</p>
+<p>Am 5. Juni 2016 haben Volk und Stände die Initiative «Für eine faire Verkehrsfinanzierung» verworfen. Diese wollte alle Erträge aus der Mineralölsteuer auf Treibstoffen für den Strassenverkehr verwenden. Bundesrat und Parlament hatten die Initiative ebenfalls abgelehnt, weil die fehlenden Mittel beim Bund durch ein einschneidendes Sparprogramm hätten ausgeglichen werden müssen.<br>
+</p>
+<p><a href="/uvek/de/home/uvek/abstimmungen/verkehrsfinanzierung.html">Dossier</a><br>
+</p>
+
+                
+                
+            </article>
+        
+    
+</div>
+<div class="mod mod-text">
+    
+        
+        
+            <article class="clearfix">
+                
+                    <p><b><br>
+ Sanierung des Gotthard-Strassentunnels</b><br>
+</p>
+<p>Angenommen: 57% Ja | 43% Nein</p>
+<p>Der Gotthard-Strassentunnel muss altersbedingt umfassend saniert und deswegen für längere Zeit gesperrt werden. Damit die wichtige Nord-Süd-Verbindung trotzdem aufrechterhalten werden kann, haben Bundesrat und Parlament den Bau einer zweiten Röhre mit anschliessender Sanierung des bestehenden Tunnels beschlossen. Das Stimmvolk hat der Vorlage am 28. Februar 2016 zugestimmt.<br>
+</p>
+<p><a href="/uvek/de/home/uvek/abstimmungen/abstimmung-gotthard-strassentunnel.html">Abstimmungsdossier</a></p>
+<p>&nbsp;</p>
+
+                
+                
+            </article>
+        
+    
+</div>
+<div class="mod mod-headline">
+	
+		
+		
+		
+			<h3>2015</h3>
+		
+	
+</div>
+
+<div class="mod mod-text">
+    
+        
+        
+            <article class="clearfix">
+                
+                    <p><b>Revision des Bundesgesetzes über Radio und Fernsehen (RTVG)</b></p>
+<p>Angenommen: 50,1% Ja | 49,9% Nein</p>
+<p>Radio und TV können fast überall und jederzeit empfangen werden - auch mit Handy, Tablet oder Computer. Bundesrat und Parlament haben darum vorgeschlagen, die Empfangsgebühr durch eine allgemeine Abgabe zu ersetzen und das Gesetz entsprechend anzupassen. Das Stimmvolk hat dem am 14. Juni 2015 zugestimmt und damit auch eine Stärkung der lokalen Radio- und TV-Stationen mit Service Public-Auftrag beschlossen.</p>
+<p><a href="/uvek/de/home/uvek/abstimmungen/abstimmung-rtvg.html">Abstimmungsdossier</a></p>
+<p>&nbsp;</p>
+
+                
+                
+            </article>
+        
+    
+</div>
+<div class="mod mod-headline">
+	
+		
+		
+		
+			<h3>2014</h3>
+		
+	
+</div>
+
+<div class="mod mod-text">
+    
+        
+        
+            <article class="clearfix">
+                
+                    <p><b>Bundesbeschluss über die Finanzierung und den Ausbau der Eisenbahninfrastruktur (FABI)</b></p>
+<p>Angenommen: 62% Ja | 38% Nein</p>
+<p>Volk und Stände haben am 9. Februar 2014 den Bundesbeschluss über die Finanzierung und den Ausbau der Eisenbahninfrastruktur (FABI) angenommen. Damit wurde ein neuer, unbefristeter Bahninfrastrukturfonds geschaffen und sichergestellt, dass genug Geld in Unterhalt, Betrieb und Ausbau des Bahnnetzes investiert werden kann.</p>
+<p><a href="/uvek/de/home/verkehr/investitionen/bif.html">Finanzierung und Ausbau der Eisenbahninfrastruktur FABI</a><br>
+<a href="/uvek/de/home/uvek/abstimmungen/abstimmung-fabi-vorlage.html">Abstimmungsdossier</a></p>
+<p>&nbsp;</p>
+
+                
+                
+            </article>
+        
+    
+</div>
+<div class="mod mod-headline">
+	
+		
+		
+		
+			<h3>2013</h3>
+		
+	
+</div>
+
+<div class="mod mod-text">
+    
+        
+        
+            <article class="clearfix">
+                
+                    <p><b>Autobahnvignette</b></p>
+<p>Abgelehnt: 39,5% Ja | 60,5% Nein</p>
+<p>Die Schweizer Stimmbevölkerung hat am 24. November 2013 die Vignetten-Vorlage abgelehnt. Damit bleibt der Preis der Autobahnvignette unverändert und die Einführung einer Zweimonatsvignette entfällt. Die an die Vignetten-Vorlage geknüpfte Erweiterung des Nationalstrassennetzes um rund 400 Kilometer konnte nicht in Kraft gesetzt werden.</p>
+<p><a href="/uvek/de/home/uvek/abstimmungen/abstimmung-autobahnvignette.html">Abstimmungsdossier</a><br>
+</p>
+
+                
+                
+            </article>
+        
+    
+</div>
+<div class="mod mod-text">
+    
+        
+        
+            <article class="clearfix">
+                
+                    <p><br>
+<b>Änderung des Raumplanungsgesetzes</b></p>
+<p>Angenommen: 62,9% Ja | 37,1% Nein</p>
+<p>Die Schweizer Stimmbevölkerung hat sich am 3. März 2013 für die Revision des Raumplanungsgesetzes ausgesprochen. Damit kann die Zersiedelung gebremst werden. Die Revision stoppt Landverschleiss, gewährleistet eine kompaktere Siedlungsentwicklung und hält die Schweiz als Wohn- und Arbeitsort attraktiv.&nbsp;&nbsp;&nbsp;&nbsp;<br>
+<br>
+<a href="/uvek/de/home/raumentwicklung/revisionen-raumplanungsgesetz.html">Revisionen des Raumplanungsgesetz</a><br>
+<a href="/uvek/de/home/uvek/abstimmungen/abstimmung-raumplanungsgesetz.html">Abstimmungsdossier</a></p>
+<p>&nbsp;</p>
+
+                
+                
+            </article>
+        
+    
+</div>
+<div class="mod mod-headline">
+	
+		
+		
+		
+			<h3>2012</h3>
+		
+	
+</div>
+
+<div class="mod mod-text">
+    
+        
+        
+            <article class="clearfix">
+                
+                    <p><b>Zweitwohnungsinitiative</b></p>
+<p>Angenommen: 50,6% Ja | 49,4% Nein</p>
+<p>Am 11. März 2012 fand die Abstimmung über die Volksinitiative «Schluss mit uferlosem Bau von Zweitwohnungen!» statt. Sie wurde mit 50,6 % Ja-Stimmen angenommen. Damit wurde in der Bundesverfassung verankert, dass der Zweitwohnungsanteil in einer Gemeinde höchstens zwanzig Prozent betragen darf.<br>
+</p>
+<p><a href="/uvek/de/home/raumentwicklung/zweitwohnungen.html">Umsetzung Zweitwohnungsinitiative</a><br>
+<a href="/uvek/de/home/uvek/abstimmungen/zweitwohnungsinitiative.html">Abstimmungsdossier</a></p>
+<p>&nbsp;</p>
+
+                
+                
+            </article>
+        
+    
+</div>
+<div class="mod mod-tabs">
+    
+    
+        
+        
+            
+                
+                
+
+                    
+                        <a id="context-sidebar"></a>
+                        
+                    
+
+                    <!-- Nav tabs -->
+                    <ul class="nav nav-tabs">
+                        
+
+                        
+                            
+                            
+                            
+                            
+
+                            
+
+                            <li class="active">
+                                <a href="#231_1454950940128__content_uvek_de_home_uvek_abstimmungen_jcr_content_par_tabs" data-toggle="tab">
+                                    
+                                        
+                                        
+                                            Links
+                                        
+                                    
+                                </a>
+                            </li>
+
+                        
+                    </ul>
+
+                    <!-- Tab panes -->
+                    <div class="tab-content tab-border">
+                        
+
+                        
+                            
+                            <div class="tab-pane clearfix active" id="231_1454950940128__content_uvek_de_home_uvek_abstimmungen_jcr_content_par_tabs">
+                                <h2 class="sr-only visible-print-block">Links</h2>
+                                
+<div class="mod mod-link">
+	
+		
+		
+			<p>
+				<a href="https://www.admin.ch/gov/de/start/dokumentation/abstimmungen.html" target="_blank" aria-label="Alle kommenden Referendumsvorlagen und Volksinitiativen (Website der Bundeskanzlei)" class="icon icon--after icon--external" title="">Alle kommenden Referendumsvorlagen und Volksinitiativen (Website der Bundeskanzlei)</a>
+			</p>
+		
+	
+</div>
+
+
+    
+        
+    
+
+
+
+                            </div>
+                        
+
+                    </div>
+
+                
+            
+        
+    
+    
+</div>
+
+
+
+
+    
+        
+    
+
+
+		
+
+
+
+
+
+
+<div class="mod mod-backtooverview">
+	
+</div>
+
+
+
+
+<div class="clearfix">
+	
+
+
+
+
+
+	
+	
+	
+		
+	
+
+
+
+
+
+
+
+	
+	
+
+
+	<p class="pull-right">
+		<small>
+			
+				<a href="#" class="icon icon--before icon--power hidden-print">
+					Zum Seitenanfang
+				</a>
+			
+		</small>
+	</p>
+ 
+</div>
+
+
+	
+		
+
+
+	
+
+	
+<div class="mod mod-socialshare">
+	
+
+	<div class="social-sharing" aria-labelledby="social_share">
+		<label id="social_share" class="sr-only">Social share</label>
+		
+			<a href="#" aria-label="Facebook" data-analytics="facebook" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u='+encodeURIComponent(location.href), 'share-dialog', 'width=626,height=436'); return false;">
+				<img src="/etc/designs/core/frontend/guidelines/img/FB-f-Logo__blue_29.png" width="16px" height="16px" alt="">
+			</a>
+		
+		
+		
+			<a href="#" aria-label="Twitter" data-analytics="twitter" onclick="window.open('http://twitter.com/share?text='+encodeURIComponent('Abstimmungen')+'&url='+encodeURIComponent(location.href), 'share-dialog', 'width=626,height=436'); return false;">
+				<img src="/etc/designs/core/frontend/guidelines/img/Twitter_logo_blue.png" width="16px" height="16px" alt="">
+			</a>
+		
+
+		
+			<a href="#" aria-label="Xing" data-analytics="xing" onclick="window.open('https://www.xing.com/spi/shares/new?url='+encodeURIComponent(location.href), 'share-dialog', 'width=600,height=450'); return false;">
+				<img src="/etc/designs/core/frontend/assets/img/ico-xing.png" width="16px" height="16px" alt=""/>
+			</a>
+		
+
+		
+			<a href="#" aria-label="LinkedIn" data-analytics="linkedin" onclick="window.open('https://www.linkedin.com/shareArticle?mini=true&url='+encodeURIComponent(location.href), 'share-dialog', 'width=600,height=450'); return false;">
+				<img src="/etc/designs/core/frontend/assets/img/ico-linkedin.png" width="16px" height="16px" alt=""/>
+			</a>
+		
+	</div>
+</div>
+
+	
+	
+
+	
+
+            </div>
+            <div class="col-md-4">
+                
+
+
+<div class="context-column">
+	
+						
+		
+
+
+
+
+
+	
+		
+		
+			<div class="mod mod-contactbox">
+				
+					
+					
+						<ul class="nav nav-tabs">
+							
+								
+								
+									<li class="active">
+										<a href="#contact" data-toggle="tab">
+											Kontakt
+										</a>
+									</li>
+								
+								
+							
+						</ul>
+
+						<div class="tab-content tab-border">
+							
+								<div class="tab-pane active" id="contact" data-print="contact-info">
+									<h2 class="sr-only visible-print-block">Kontakt</h2>
+									
+
+
+	
+		
+
+		
+
+		
+
+		
+
+		
+			
+				
+				<p>Generalsekretariat<br>
+Eidgenössisches Departement für Umwelt, Verkehr, Energie und Kommunikation UVEK</p>
+<p>Bundeshaus Nord<br>
+CH-3003 Bern</p>
+
+			
+		
+	
+
+	
+		
+
+		
+
+		
+			
+				
+			
+
+			<dl class="dl-horizontal">
+				
+					
+						
+							<dt>
+								<abbr title="Telefon">
+								Tel.
+								</abbr>
+							</dt>
+							<dd>
+								<a href="tel:+41 58 462 55 11">
+								+41 58 462 55 11
+								</a>
+							</dd>
+						
+						
+					
+				
+			</dl>
+		
+
+		
+
+		
+	
+
+	
+		
+
+		
+
+		
+
+		
+			
+				
+			
+
+			<p>
+				
+					
+						<a data-skip-externallinktransformer="true" class="tab-contact icon icon--before icon--message" href="mailto:info@gs-uvek.admin.ch">
+							info@gs-uvek.admin.ch
+						</a>
+					
+				
+			</p>
+		
+
+		
+	
+
+	
+		
+
+		
+
+		
+
+		
+
+		
+			
+				
+				<p><a href="/uvek/de/home/uvek/kontakt.html">Weitere Kontakte</a></p>
+
+			
+		
+	
+
+
+								</div>
+								<p>
+									<a class="icon icon--before icon--print print js-print-contact" href="#" title="Druckversion">
+										Kontaktinformationen drucken
+									</a>
+								</p>
+							
+
+							
+								
+								
+									
+								
+							
+						</div>
+					
+				
+			</div>
+		
+	
+
+
+	
+	
+		
+
+
+
+	<div class="mod mod-basket">
+		<aside class="cart">
+			<h4>
+				Einkaufskorb
+			</h4>
+			<ul class="list-unstyled order-list js-order-list">
+			</ul>
+			
+		</aside>
+		<script type="text/template" id="order-list-template">
+			{{ for(var i=0,item;i<data.length;i++) {
+				index = i+1; item = data[i];
+			}}
+				<li class="clearfix" id="{{= item.id }}">
+					<span class="pull-left">{{= item.quantity }}x {{= item.productTitle }}</span>
+					<a class="storage-delete pull-right" href="#">
+						<span class="icon icon--after icon--trash"></span>
+					</a>
+					<input type="hidden" name="order_{{= index }}_productTitle" value="{{= item.productTitle }}" />
+					<input type="hidden" name="order_{{= index }}_quantity" value="{{= item.quantity }}" />
+					<input type="hidden" name="order_{{= index }}_productId" value="{{= item.productId }}" />
+					<input type="text" name="genericKeyValueParameter" value="{{= item.productTitle + "##" }}{{= item.quantity }}x" />
+				</li>
+			{{ } }}
+		</script>
+	</div>
+
+	
+	
+	
+
+	
+
+
+<div class="mod mod-teaser">
+
+
+
+    
+    
+        
+            
+            
+
+            
+            
+                
+
+                
+                
+                <div>
+                    <div class="clearfix  ">
+                        
+                        
+                            
+                            
+                                <a href="https://www.admin.ch/gov/de/start/dokumentation/medienmitteilungen.msg-id-73653.html" target="_blank" title=""><img src="/uvek/de/home/uvek/abstimmungen/_jcr_content/contextpar/teaser/image.imagespooler.png/1548834974943/VoteInfoLogo.png" alt="VoteInfoLogo"/></a>
+                            
+                        
+                        
+                        
+                        
+                            
+                            
+                                
+                            
+                        
+                        <p>Die Abstimmungs-App von Bund und Kantonen:</p>
+<ul>
+<li><a href="https://itunes.apple.com/ch/app/id1434819062" target="_blank" class="icon icon--after icon--external" title="">Download im App Store</a><br>
+</li>
+<li><a href="https://play.google.com/store/apps/details?id=ch.bk.voteinfo" target="_blank" class="icon icon--after icon--external" title="">Download  im Google Play Store </a>&nbsp;</li>
+</ul>
+
+                        
+                    </div>
+                </div>
+            
+        
+    
+
+</div>
+
+
+
+    
+        
+    
+
+
+
+</div>
+
+            </div>
+        </div>
+    </div>
+
+</div>
+
+		</div>
+	
+
+<!-- end: main -->
+
+
+    <span class="visible-print">https://www.uvek.admin.ch/content/uvek/de/home/uvek/abstimmungen.html</span>
+
+    
+<footer role="contentinfo">
+	<h2 class="sr-only">Footer</h2>
+
+  
+
+  
+
+  
+  
+
+  	
+
+    
+        
+            <div class="container-fluid footer-service">
+                <h3>Eidgenössisches Departement für Umwelt, Verkehr, Energie und Kommunikation UVEK</h3>
+                <nav>
+                    <ul>
+                        
+                        
+                            <li><a href="/uvek/de/home/uvek/jobs.html" title="Jobs" aria-label="Jobs">Jobs</a></li>
+                        
+                            <li><a href="/uvek/de/home/uvek/medien.html" title="Medien" aria-label="Medien">Medien</a></li>
+                        
+                            <li><a href="/uvek/de/home/uvek/kontakt.html" title="Kontakt" aria-label="Kontakt">Kontakt</a></li>
+                        
+                            <li><a href="/uvek/de/home/sitemap.html" title="Sitemap" aria-label="Sitemap">Sitemap</a></li>
+                        
+                    </ul>
+                </nav>
+            </div>
+        
+    
+
+
+
+	
+
+    	
+			
+			
+				
+					
+<div class="site-map">
+	<h2 class="sr-only">Footer</h2>
+
+	<a href="#site-map" data-target="#site-map" data-toggle="collapse" class="site-map-toggle collapsed">Sitemap</a>
+
+	<div class="container-fluid" id="site-map">
+		<div class="col-sm-6 col-md-3">
+			
+
+
+<div class="mod mod-linklist">
+	
+	
+
+
+
+	
+		
+		
+			
+				
+					
+						
+					
+					
+				
+
+				
+					
+					
+						<h3>Energie</h3>
+					
+				
+
+			
+			
+			
+				
+				
+					<ul class="list-unstyled">
+						
+							<li>
+								
+									
+										<a href="/uvek/de/home/energie/grundsaetze-der-energiepolitik.html" title="Grunds&auml;tze Energiepolitik" aria-label="Grunds&auml;tze Energiepolitik" data-skipextcss="true">Grunds&auml;tze Energiepolitik</a>
+									
+									
+								
+							</li>
+						
+							<li>
+								
+									
+										<a href="/uvek/de/home/energie/stromversorgungssicherheit.html" title="Sichere Stromversorgung" aria-label="Sichere Stromversorgung" data-skipextcss="true">Sichere Stromversorgung</a>
+									
+									
+								
+							</li>
+						
+							<li>
+								
+									
+										<a href="/uvek/de/home/energie/radioaktive-abfaelle.html" title="Radioaktive Abf&auml;lle" aria-label="Radioaktive Abf&auml;lle" data-skipextcss="true">Radioaktive Abf&auml;lle</a>
+									
+									
+								
+							</li>
+						
+							<li>
+								
+									
+										<a href="/uvek/de/home/energie/schweiz-eu-strom-verkehr.html" title="Verhandlungen Schweiz-EU: Strom,  Landverkehr, Luftverkehr" aria-label="Verhandlungen Schweiz-EU: Strom,  Landverkehr, Luftverkehr" data-skipextcss="true">Verhandlungen Schweiz-EU: Strom,  Landverkehr, Luftverkehr</a>
+									
+									
+								
+							</li>
+						
+					</ul>
+				
+			
+			
+		
+	
+
+
+
+	
+</div>
+
+		</div>
+		<div class="col-sm-6 col-md-3">
+			
+
+
+<div class="mod mod-linklist">
+	
+	
+
+
+
+	
+		
+		
+			
+				
+					
+						
+					
+					
+				
+
+				
+					
+					
+						<h3>Verkehr</h3>
+					
+				
+
+			
+			
+			
+				
+				
+					<ul class="list-unstyled">
+						
+							<li>
+								
+									
+										<a href="/uvek/de/home/verkehr/verkehrspolitik.html" title="Grunds&auml;tze Verkehrspolitik" aria-label="Grunds&auml;tze Verkehrspolitik" data-skipextcss="true">Grunds&auml;tze Verkehrspolitik</a>
+									
+									
+								
+							</li>
+						
+							<li>
+								
+									
+										<a href="/uvek/de/home/verkehr/investitionen.html" title="Investitionen ins Verkehrsnetz" aria-label="Investitionen ins Verkehrsnetz" data-skipextcss="true">Investitionen ins Verkehrsnetz</a>
+									
+									
+								
+							</li>
+						
+							<li>
+								
+									
+										<a href="/uvek/de/home/verkehr/verkehrsverlagerung.html" title="Verkehrsverlagerung" aria-label="Verkehrsverlagerung" data-skipextcss="true">Verkehrsverlagerung</a>
+									
+									
+								
+							</li>
+						
+							<li>
+								
+									
+										<a href="/uvek/de/home/verkehr/neat.html" title="Die Neue Eisenbahn-Alpentransversale NEAT" aria-label="Die Neue Eisenbahn-Alpentransversale NEAT" data-skipextcss="true">Die Neue Eisenbahn-Alpentransversale NEAT</a>
+									
+									
+								
+							</li>
+						
+							<li>
+								
+									
+										<a href="/uvek/de/home/verkehr/gotthard-strassentunnel.html" title="Gotthard-Strassentunnel" aria-label="Gotthard-Strassentunnel" data-skipextcss="true">Gotthard-Strassentunnel</a>
+									
+									
+								
+							</li>
+						
+							<li>
+								
+									
+										<a href="/uvek/de/home/verkehr/luftfahrt.html" title="Luftfahrt" aria-label="Luftfahrt" data-skipextcss="true">Luftfahrt</a>
+									
+									
+								
+							</li>
+						
+							<li>
+								
+									
+										<a href="/uvek/de/home/verkehr/sicherheit-im-verkehr.html" title="Sicherheit im Verkehr" aria-label="Sicherheit im Verkehr" data-skipextcss="true">Sicherheit im Verkehr</a>
+									
+									
+								
+							</li>
+						
+							<li>
+								
+									
+										<a href="/uvek/de/home/verkehr/mobility-pricing.html" title="Mobility Pricing" aria-label="Mobility Pricing" data-skipextcss="true">Mobility Pricing</a>
+									
+									
+								
+							</li>
+						
+							<li>
+								
+									
+										<a href="/uvek/de/home/verkehr/verkehrsperspektiven.html" title="Verkehrsperspektiven Schweiz" aria-label="Verkehrsperspektiven Schweiz" data-skipextcss="true">Verkehrsperspektiven Schweiz</a>
+									
+									
+								
+							</li>
+						
+					</ul>
+				
+			
+			
+		
+	
+
+
+
+	
+</div>
+
+		</div>
+		<div class="col-sm-6 col-md-3">
+			
+
+
+<div class="mod mod-linklist">
+	
+	
+
+
+
+	
+		
+		
+			
+				
+					
+						
+					
+					
+				
+
+				
+					
+					
+						<h3>Umwelt</h3>
+					
+				
+
+			
+			
+			
+				
+				
+					<ul class="list-unstyled">
+						
+							<li>
+								
+									
+										<a href="/uvek/de/home/umwelt/umweltpolitik.html" title="Grunds&auml;tze Umweltpolitik" aria-label="Grunds&auml;tze Umweltpolitik" data-skipextcss="true">Grunds&auml;tze Umweltpolitik</a>
+									
+									
+								
+							</li>
+						
+							<li>
+								
+									
+										<a href="/uvek/de/home/umwelt/klimaschutz.html" title="Klimaschutz" aria-label="Klimaschutz" data-skipextcss="true">Klimaschutz</a>
+									
+									
+								
+							</li>
+						
+							<li>
+								
+									
+										<a href="/uvek/de/home/umwelt/ressourcenschonende-wirtschaft.html" title="Ressourcenschonende Wirtschaft" aria-label="Ressourcenschonende Wirtschaft" data-skipextcss="true">Ressourcenschonende Wirtschaft</a>
+									
+									
+								
+							</li>
+						
+							<li>
+								
+									
+										<a href="/uvek/de/home/umwelt/biodiversitaet.html" title="Biodiversit&auml;t" aria-label="Biodiversit&auml;t" data-skipextcss="true">Biodiversit&auml;t</a>
+									
+									
+								
+							</li>
+						
+					</ul>
+				
+			
+			
+		
+	
+
+
+
+	
+</div>
+
+		</div>
+		<div class="col-sm-6 col-md-3">
+			
+
+
+<div class="mod mod-linklist">
+	
+	
+
+
+
+	
+		
+		
+			
+				
+					
+						
+					
+					
+				
+
+				
+					
+					
+						<h3>Raumentwicklung</h3>
+					
+				
+
+			
+			
+			
+				
+				
+					<ul class="list-unstyled">
+						
+							<li>
+								
+									
+										<a href="/uvek/de/home/raumentwicklung/raumentwicklungspolitik.html" title="Grunds&auml;tze Raumentwicklungspolitik" aria-label="Grunds&auml;tze Raumentwicklungspolitik" data-skipextcss="true">Grunds&auml;tze Raumentwicklungspolitik</a>
+									
+									
+								
+							</li>
+						
+							<li>
+								
+									
+										<a href="/uvek/de/home/raumentwicklung/revisionen-raumplanungsgesetz.html" title="Revisionen des Raumplanungsgesetzes" aria-label="Revisionen des Raumplanungsgesetzes" data-skipextcss="true">Revisionen des Raumplanungsgesetzes</a>
+									
+									
+								
+							</li>
+						
+							<li>
+								
+									
+										<a href="/uvek/de/home/raumentwicklung/zweitwohnungen.html" title="Zweitwohnungen" aria-label="Zweitwohnungen" data-skipextcss="true">Zweitwohnungen</a>
+									
+									
+								
+							</li>
+						
+							<li>
+								
+									
+										<a href="/uvek/de/home/raumentwicklung/mobilitaet-und-raumentwicklung.html" title="Mobilit&auml;t und Raumentwicklung" aria-label="Mobilit&auml;t und Raumentwicklung" data-skipextcss="true">Mobilit&auml;t und Raumentwicklung</a>
+									
+									
+								
+							</li>
+						
+					</ul>
+				
+			
+			
+		
+	
+
+
+
+	
+</div>
+
+		</div>
+		<div class="col-sm-6 col-md-3">
+			
+
+
+<div class="mod mod-linklist">
+	
+	
+
+
+
+	
+		
+		
+			
+				
+					
+						
+					
+					
+				
+
+				
+					
+					
+						<h3>Kommunikation</h3>
+					
+				
+
+			
+			
+			
+				
+				
+					<ul class="list-unstyled">
+						
+							<li>
+								
+									
+										<a href="/uvek/de/home/kommunikation/kommunikationspolitik.html" title="Grunds&auml;tze Kommunikationspolitik" aria-label="Grunds&auml;tze Kommunikationspolitik" data-skipextcss="true">Grunds&auml;tze Kommunikationspolitik</a>
+									
+									
+								
+							</li>
+						
+							<li>
+								
+									
+										<a href="/uvek/de/home/kommunikation/medienpolitik.html" title="Medienpolitik" aria-label="Medienpolitik" data-skipextcss="true">Medienpolitik</a>
+									
+									
+								
+							</li>
+						
+							<li>
+								
+									
+										<a href="/uvek/de/home/kommunikation/digitalisierung-telekommunikation.html" title="Digitalisierung und Telekommunikation" aria-label="Digitalisierung und Telekommunikation" data-skipextcss="true">Digitalisierung und Telekommunikation</a>
+									
+									
+								
+							</li>
+						
+							<li>
+								
+									
+										<a href="/uvek/de/home/kommunikation/open-government-data.html" title="&Ouml;ffentliche Beh&ouml;rdendaten (Open Government Data)" aria-label="&Ouml;ffentliche Beh&ouml;rdendaten (Open Government Data)" data-skipextcss="true">&Ouml;ffentliche Beh&ouml;rdendaten (Open Government Data)</a>
+									
+									
+								
+							</li>
+						
+					</ul>
+				
+			
+			
+		
+	
+
+
+
+	
+</div>
+
+		</div>
+		<div class="col-sm-6 col-md-3">
+			
+
+
+<div class="mod mod-linklist">
+	
+	
+
+
+
+	
+		
+		
+			
+				
+					
+						
+					
+					
+				
+
+				
+					
+					
+						<h3>Das UVEK</h3>
+					
+				
+
+			
+			
+			
+				
+				
+					<ul class="list-unstyled">
+						
+							<li>
+								
+									
+										<a href="/uvek/de/home/uvek/bundesrat-albert-roesti.html" title="Bundesrat Albert R&ouml;sti" aria-label="Bundesrat Albert R&ouml;sti" data-skipextcss="true">Bundesrat Albert R&ouml;sti</a>
+									
+									
+								
+							</li>
+						
+							<li>
+								
+									
+										<a href="/uvek/de/home/uvek/strategie.html" title="Ziele und Strategien" aria-label="Ziele und Strategien" data-skipextcss="true">Ziele und Strategien</a>
+									
+									
+								
+							</li>
+						
+							<li>
+								
+									
+										<a href="/uvek/de/home/uvek/organisation.html" title="Organisation" aria-label="Organisation" data-skipextcss="true">Organisation</a>
+									
+									
+								
+							</li>
+						
+							<li>
+								
+									
+										<a href="/uvek/de/home/uvek/kontakt.html" title="Kontakt" aria-label="Kontakt" data-skipextcss="true">Kontakt</a>
+									
+									
+								
+							</li>
+						
+							<li>
+								
+									
+										<a href="/uvek/de/home/uvek/bundesnahe-betriebe.html" title="Bundesnahe Betriebe" aria-label="Bundesnahe Betriebe" data-skipextcss="true">Bundesnahe Betriebe</a>
+									
+									
+								
+							</li>
+						
+							<li>
+								
+									
+										<a href="/uvek/de/home/uvek/medien.html" title="Medien" aria-label="Medien" data-skipextcss="true">Medien</a>
+									
+									
+								
+							</li>
+						
+							<li>
+								
+									
+										<a href="/uvek/de/home/uvek/jobs.html" title="Arbeiten beim UVEK" aria-label="Arbeiten beim UVEK" data-skipextcss="true">Arbeiten beim UVEK</a>
+									
+									
+								
+							</li>
+						
+							<li>
+								
+									
+										<a href="/uvek/de/home/uvek/oeffentlichkeitsgesetz.html" title="&Ouml;ffentlichkeitsgesetz, Vernehmlassungen und Rechtliche Grundlagen" aria-label="&Ouml;ffentlichkeitsgesetz, Vernehmlassungen und Rechtliche Grundlagen" data-skipextcss="true">&Ouml;ffentlichkeitsgesetz, Vernehmlassungen und Rechtliche Grundlagen</a>
+									
+									
+								
+							</li>
+						
+							<li>
+								
+									
+										<a href="/uvek/de/home/uvek/rechnungen-zahlungsauftraege.html" title="Rechnungen und Zahlungsm&ouml;glichkeiten" aria-label="Rechnungen und Zahlungsm&ouml;glichkeiten" data-skipextcss="true">Rechnungen und Zahlungsm&ouml;glichkeiten</a>
+									
+									
+								
+							</li>
+						
+							<li>
+								
+									
+										<a href="/uvek/de/home/uvek/abstimmungen.html" title="Abstimmungen" aria-label="Abstimmungen" data-skipextcss="true">Abstimmungen</a>
+									
+									
+								
+							</li>
+						
+					</ul>
+				
+			
+			
+		
+	
+
+
+
+	
+</div>
+
+		</div>
+		<div class="col-sm-6 col-md-3">
+			
+
+
+<div class="mod mod-linklist">
+	
+	
+
+
+
+	
+		
+		
+			
+			
+			
+				
+					
+				
+				
+			
+			
+		
+	
+
+
+
+	
+</div>
+
+		</div>
+		<div class="col-sm-6 col-md-3">
+			
+
+
+<div class="mod mod-linklist">
+	
+	
+
+
+
+	
+		
+		
+			
+			
+			
+				
+					
+				
+				
+			
+			
+		
+	
+
+
+
+	
+</div>
+
+		</div>
+	</div>
+</div>
+				
+			
+		
+    
+
+
+  	<div class="container-fluid">
+  		
+	
+
+
+	
+		
+			
+				<h3>Informiert bleiben</h3>
+			
+
+			<nav class="links-social" aria-labelledby="social_media">
+				<label id="social_media" class="sr-only">Social media links</label>
+				<ul>
+					
+						<li><a href="/uvek/de/home/uvek/medien/medienmitteilungen.html" class="icon icon--before  icon icon--before icon--message" target="_self" title="Medienmitteilungen" aria-label="Medienmitteilungen">Medienmitteilungen</a></li>
+					
+						<li><a href="http://www.twitter.com/uvek" class="icon icon--before  icon icon--before icon--twitter" target="_blank" aria-label="UVEK" title="">UVEK</a></li>
+					
+						<li><a href="https://www.instagram.com/albert.roesti/" class="icon icon--before  icon icon--before fa fa-instagram" title="Instagram BR Albert R&ouml;sti" aria-label="Instagram BR Albert R&ouml;sti">Instagram BR Albert R&ouml;sti</a></li>
+					
+						<li><a href="http://www.youtube.com/uvekCH" class="icon icon--before  icon icon--before fa fa-youtube" target="_blank" aria-label="Youtube UVEK" title="">Youtube UVEK</a></li>
+					
+						<li><a href="https://www.linkedin.com/company/15221510?trk=tyah&trkInfo=clickedVertical%3Acompany%2CclickedEntityId%3A15221510%2Cidx%3A1-1-1%2CtarId%3A1478019761371%2Ctas%3Auvek" class="icon icon--before  icon icon--before fa fa-linkedin" target="_blank" aria-label="LinkedIn GS-UVEK" title="">LinkedIn GS-UVEK</a></li>
+					
+				</ul>
+			</nav>
+		
+		
+	
+
+
+
+		
+	
+
+<div class="mod mod-cobranding">
+    
+        
+            
+        
+        
+    
+</div>
+
+
+
+
+  		<!-- begin: logo phone -->
+		
+			
+			
+
+	
+		
+<div class="mod mod-logo">
+	
+	
+		
+			<hr class="footer-line visible-xs">
+			<img src="/uvek/de/_jcr_content/logo/image1.imagespooler.png/1441789978226/swiss.png" class="visible-xs" alt="Zur Startseite"/>
+		
+		
+	
+	
+</div>
+	
+	
+
+
+			
+		
+	 	<!-- end: logo phone -->
+  	</div>
+
+    
+
+<div class="footer-address">
+	
+
+	<span class="hidden-xs">Eidgenössisches Departement für Umwelt, Verkehr, Energie und Kommunikation UVEK</span>
+
+
+	
+
+	
+		
+			<nav class="pull-right">
+				<ul>
+					
+						<li><a href="https://www.admin.ch/gov/de/start/rechtliches.html" target="_blank" aria-label="Rechtliches" title="">Rechtliches</a></li>
+					
+						<li><a href="/uvek/de/home/uvek/kontakt.html" title="Kontakt" aria-label="Kontakt" data-skipextcss="true">Kontakt</a></li>
+					
+				</ul>
+			</nav>
+		
+		
+	
+
+
+</div>
+
+
+  
+  
+
+</footer>        
+
+
+    <div class="modal" id="nav_modal_rnd">
+        <!-- modal -->
+    </div>
+
+</div>
+<!-- end: container -->
+
+
+
+<script src="/etc.clientlibs/clientlibs/granite/jquery/granite/csrf.min.js"></script>
+<script src="/etc/clientlibs/granite/jquery/granite/csrf.min.js"></script>
+
+
+
+	<script type="text/javascript" src="/etc/designs/core/frontend/modules.js"></script>
+
+
+
+	
+	
+	
+		<script src="/dam/uvek/scripts/siteimprove.js"></script>
+	
+	
+
+
+
+	
+
+
+
+
+
+	<!-- bdef4jWIWbFBSGZX6xB6sWBCaRGW4HqP9w9QA595CJ3QTXfJG5EwZfC8fOqJOj7H29BN4MRuT5ER9k9XDfBPU2aL8EGcMR0RGVqio8D2NDFmp9BkzRSRmEjGgXTBUTWL5i7JNVh3sBQRtvBa6EMRxOU81QOkxXv3T1UTGyw5gTNSZy53kDB52HzPHmG5hMhTSaYc4gLwVRMgY7tHjIKsDAUI2jvU5C5OKQIrxjn6ntmZxIXw262mTUAPw8YEnAutZfvML6B44VtbPmqiyAPmEEweOujkttnKcbQuoWVHGdZBJQ0Ihu9GSWLl7MxIwq8cuFy84L1f1CwAPo7O8zn3ehTHsWeDOwYXiEm8IEAMNAHIa5X86Pmcv8H3kAw9usHxV3mGS4YYwNcDFnJ9sJ2uTJgwm83FConlAvOMcjyoLpXG76SViaiPaT9pVtMzPNGRaHqoFYRAqKq9C887VfssFMMvKbuxRXFZf9s0s0hhzn7Mdc1myRmdtVgZY2XsUMuJxbioU0S60rvn6lBW0YNDydDkqtPefQk4EiZGUrAIDeGbe6ji4Z6mUOA5lggPv9xbO3DaRoeaNeku4Q5HVe2nzIH7ZC4ZTXK8zSe9tCtFQPHo6t5XtqdPFyTqG2YwoyUdwgdsm6xOtvOBst8pMwOzHbR54MrkirPN9rRsdpZPNwvDPizIMaVns2jcOR2TitLq2dcwGh9jaQ3FCjmcVDCzgKoEJtRH3btOrI5HpjExa9IqqK004eGdSJNH6rArANbjLr9ahnkQp0WtYEKdN6fxn1fJHR58ZoRbOqhbZ00ONnuZ6kSCirjXWVsvyobrZe3KOFvAgsWnWwkWa1MkdiTLkc7D2o5yMSSntGJDrPZUE83ePuwOQUxI8Tq2M2hSp6cVljjQnqhmzl76mak2kYPCHTl2bmgGlQXtzKi00ijsq3xwrAfZwYPWgO0SxBd1qWCo0MhfYJrkBPlB75zgpmxBHp6uOLvX7FcOJKkDOZyPBIYpD36RJi4IxzLQwZthFwQUVrL4chypPGlEuwSuA7LChE0m8qoVncrOsel7j5fQMuxH5YeDfn9bVT3k96f86eI6G7tnWURvweuIV9Xz9AyaWUzgpVNFzxM9fbPyl041wkOWYGmxv87sqtHvuQcrODPV51szhFBPbgvyo0FpIcH2DoN3eX2t0tEwBG4PgpsK8mnh3a3rfgPVZUZOGlpCjuVVrxXyLDA12fMDztXdaQmfxZij3fiLNE42yN43jvEAMW6V1rEilwCmXevpXCMGxGn2aUvDICWRwcp1CMOeM1lLgHbsk5TpIrmPeA6q2oHz7MhMfWJ4oqC8WfmRudJMK0gCdCdSDpeIFBVJsLiHnIZIEj2JO4AiZ1ze9eVomdnC94vHwHcPeSSjRvy1tFUI3TZ9vwj9qBiwkimvPExm56DsFqShYJOiGUOXcJy7Potg -->
+
+
+
+
+
+ 
+	
+
+
+
+
+	<!-- Matomo -->
+<script type="text/javascript">
+  var _paq = window._paq || [];
+  /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="https://analytics.bit.admin.ch/";
+    _paq.push(['setTrackerUrl', u+'matomo.php']);
+    _paq.push(['setSiteId', '63']);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<!-- End Matomo Code -->
+
+
+
+
+
+</body>
+
+    
+
+</html>

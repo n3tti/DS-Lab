@@ -14,7 +14,10 @@
 *.tax2010
 *.vcf
 *.xml
-.json
+*.json
+
+
+
 
 ### JupyterNotebooks ###
 # gitignore template for Jupyter Notebooks
@@ -202,6 +205,9 @@ pyrightconfig.json
 # End of https://www.toptal.com/developers/gitignore/api/python,jupyternotebooks,data
 
 # Data Files
-Crawler/crawler/text/html/*
 Crawler/crawler/application/pdf/*
 Crawler/crawler/iamge/png/*
+/Crawler/crawler/crawler/spiders/text/html/**
+/Crawler/crawler/crawler/text/html/**
+Crawler/crawler/crawler/spiders/__pycache__/
+

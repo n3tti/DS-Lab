@@ -2,18 +2,19 @@
 #
 # Don't forget to add your pipeline to the ITEM_PIPELINES setting
 # See: https://docs.scrapy.org/en/latest/topics/item-pipeline.html
-
+import logging
 
 # useful for handling different item types with a single interface
 from itemadapter import ItemAdapter
 from scrapy.exceptions import DropItem
+from scrapy import logformatter
 
 import csv
 import uuid
 import json
 import os
 import shutil
-
+import pdb
 
 
 
@@ -102,6 +103,8 @@ class DuplicatesPipeline:
         return item
     
 class MetadataPipeline:
+    def __init__(self):
+        self.logger = logging.getLogger(__name__)
 
     def open_spider(self, spider):
         self.file = open('metadata.json', 'w')
@@ -113,6 +116,23 @@ class MetadataPipeline:
         self.file.close()
 
     def process_item(self, item, spider):
+
+        import json
+        # TODO: @saschas version of metadata saving, check for merging @emma
+        '''keys_to_save = ["id", "depth", "url", "content_type", "content_length", "content_encoding", "last_modified",
+                        "date", "cousin_urls", "title", "content", "description", "keywords", "pdf_links"]
+
+        dic = {}
+        for key in keys_to_save:
+            if key in item:
+                dic[key] = item[key]
+            else:
+                self.logger.warning(f"Key '{key}' not found in item")
+                dic[key] = None
+
+        line = json.dumps(dic) + "\n"
+        '''
+
         dic = {"id": item["id"], "depth" : item["depth"], "url" : item["url"],"lang": item["lang"], "type" : item["content_type"], "length" : item["content_length"], \
                "encoding" : item["content_encoding"], "last_modified" : item["last_modified"], "date" : item["date"], "cousin_urls" : item["cousin_urls"]}
         line = json.dumps(dic)
@@ -120,6 +140,7 @@ class MetadataPipeline:
             self.isFirst = False
         else:
             line = ",\n" + line
+            
         self.file.write(line)
         return item
   
@@ -129,8 +150,7 @@ class DownloadContentPipeline:
         self.folders = ["text/html", "image/png", "application/pdf"]
 
     def process_item(self, item, spider):
-        if item["content_type"] == None:
-            return item
+     
         content_type = item["content_type"].split(";")[0]
         if not (content_type in self.folders):
             return item
@@ -138,6 +158,7 @@ class DownloadContentPipeline:
         file.write(item["content_body"])
         file.close()
         return item
+
 
     def open_spider(self, spider):
         self.clean_folders()

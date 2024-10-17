@@ -1,0 +1,2554 @@
+
+<!DOCTYPE HTML>
+<!--[if lt IE 7 ]> <html lang="en" class="no-js ie6 oldie"> <![endif]-->
+<!--[if IE 7 ]> <html lang="en" class="no-js ie7 oldie"> <![endif]-->
+<!--[if IE 8 ]> <html lang="en" class="no-js ie8 oldie"> <![endif]-->
+<!--[if IE 9 ]> <html lang="en" class="no-js ie9"> <![endif]-->
+<!--[if gt IE 9 ]><!--><html lang="en" class="no-js no-ie"> <!--<![endif]-->
+
+
+    
+<head>
+    
+    
+
+
+	
+	
+		<title>Submitting e-bills to the Confederation </title>
+	
+	
+
+
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta http-equiv="cleartype" content="on" />
+
+
+	<meta name="msapplication-TileColor" content="#ffffff"/>
+	<meta name="msapplication-TileImage" content="/etc/designs/core/frontend/guidelines/img/ico/mstile-144x144.png"/>
+	<meta name="msapplication-config" content="/etc/designs/core/frontend/guidelines/img/ico/browserconfig.xml"/>
+
+
+
+	
+	
+		
+	
+
+
+
+
+
+<meta name="language" content="en" />
+<meta name="author" content="Federal Finance Administration FFA" />
+
+
+
+
+	<!-- current page in other languages -->
+	
+		<link rel="alternate" type="text/html" href="/efv/de/home/efv/erechnung/e-rechnung-zustellen.html" hreflang="de" lang="de"/>
+	
+		<link rel="alternate" type="text/html" href="/efv/en/home/efv/erechnung/e-rechnung-zustellen.html" hreflang="en" lang="en"/>
+	
+		<link rel="alternate" type="text/html" href="/efv/it/home/efv/erechnung/e-rechnung-zustellen.html" hreflang="it" lang="it"/>
+	
+		<link rel="alternate" type="text/html" href="/efv/fr/home/efv/erechnung/e-rechnung-zustellen.html" hreflang="fr" lang="fr"/>
+	
+
+
+
+
+	<meta name="twitter:card" content="summary"/>
+	
+	
+		<meta property="og:url" content="https://www.efv.admin.ch/efv/en/home/efv/erechnung/e-rechnung-zustellen.html"/>
+	
+	<meta property="og:type" content="article"/>
+	
+		<meta property="og:title" content="Submitting e-bills to the Confederation "/>
+	
+	
+	
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+	<!--style type="text/css" id="antiClickjack">body{display:none !important;}</style-->
+	<script type="text/javascript">
+
+		var styleElement = document.createElement('STYLE');
+		styleElement.setAttribute('id', 'antiClickjack');
+		styleElement.setAttribute('type', 'text/css');
+		styleElement.innerHTML = 'body {display:none !important;}';
+		document.getElementsByTagName('HEAD')[0].appendChild(styleElement);
+
+		if (self === top) {
+			var antiClickjack = document.getElementById("antiClickjack");
+			antiClickjack.parentNode.removeChild(antiClickjack);
+		} else {
+			top.location = self.location;
+		}
+	</script>
+
+
+
+
+<script src="/etc.clientlibs/clientlibs/granite/jquery.min.js"></script>
+<script src="/etc.clientlibs/clientlibs/granite/utils.min.js"></script>
+
+
+
+	<script>
+		Granite.I18n.init({
+			locale: "en",
+			urlPrefix: "/libs/cq/i18n/dict."
+		});
+	</script>
+
+
+
+	<link rel="stylesheet" href="/etc/designs/core/frontend/guidelines.min.css" type="text/css">
+
+	<link rel="stylesheet" href="/etc/designs/core/frontend/modules.min.css" type="text/css">
+
+	
+	<link rel="shortcut icon" href="/etc/designs/core/frontend/guidelines/img/ico/favicon.ico">
+	<link rel="apple-touch-icon" sizes="57x57" href="/etc/designs/core/frontend/guidelines/img/ico/apple-touch-icon-57x57.png"/>
+	<link rel="apple-touch-icon" sizes="114x114" href="/etc/designs/core/frontend/guidelines/img/ico/apple-touch-icon-114x114.png"/>
+	<link rel="apple-touch-icon" sizes="72x72" href="/etc/designs/core/frontend/guidelines/img/ico/apple-touch-icon-72x72.png"/>
+	<link rel="apple-touch-icon" sizes="144x144" href="/etc/designs/core/frontend/guidelines/img/ico/apple-touch-icon-144x144.png"/>
+	<link rel="apple-touch-icon" sizes="60x60" href="/etc/designs/core/frontend/guidelines/img/ico/apple-touch-icon-60x60.png"/>
+	<link rel="apple-touch-icon" sizes="120x120" href="/etc/designs/core/frontend/guidelines/img/ico/apple-touch-icon-120x120.png"/>
+	<link rel="apple-touch-icon" sizes="76x76" href="/etc/designs/core/frontend/guidelines/img/ico/apple-touch-icon-76x76.png"/>
+	<link rel="icon" type="image/png" href="/etc/designs/core/frontend/guidelines/img/ico/favicon-96x96.png" sizes="96x96"/>
+	<link rel="icon" type="image/png" href="/etc/designs/core/frontend/guidelines/img/ico/favicon-16x16.png" sizes="16x16"/>
+	<link rel="icon" type="image/png" href="/etc/designs/core/frontend/guidelines/img/ico/favicon-32x32.png" sizes="32x32"/>
+
+
+
+
+
+
+
+	<!--[if lt IE 9]>
+		<script src="https://cdnjs.cloudflare.com/polyfill/v2/polyfill.js?version=4.8.0"></script>
+	<![endif]-->
+
+
+
+    
+
+
+
+    
+        
+
+	
+
+    
+
+</head>
+
+
+    
+
+<body class="mod mod-layout   skin-layout-template-contentpage" data-glossary="/efv/en/home.glossaryjs.json">
+
+<div class="mod mod-homepage">
+<ul class="access-keys" role="navigation">
+    <li><a href="/efv/en/home.html" accesskey="0">Homepage</a></li>
+    
+    <li><a href="#main-navigation" accesskey="1">Main navigation</a></li>
+    
+    
+    <li><a href="#content" accesskey="2">Content area</a></li>
+    
+    
+    <li><a href="#site-map" accesskey="3">Sitemap</a></li>
+    
+    
+    <li><a href="#search-field" accesskey="4">Search</a></li>
+    
+</ul>
+</div>
+
+<!-- begin: container -->
+<div class="container container-main">
+
+    
+
+
+<header style="background-size: cover; background-image:" role="banner">
+	
+
+	<div class="clearfix">
+		
+			
+
+
+	
+
+
+
+	<nav class="navbar treecrumb pull-left">
+
+		
+		
+			<h2 class="sr-only">Federal Finance Administration</h2>
+		
+
+		
+			
+				<ul class="nav navbar-nav">
+				
+
+						
+
+						
+						<li class="dropdown">
+							
+							
+								
+									<a id="federalAdministration-dropdown" href="#" aria-label="The Federal Council" class="dropdown-toggle" data-toggle="dropdown"><span class="icon icon--right"></span> The Federal Council</a>
+								
+								
+							
+
+							
+								
+								<ul class="dropdown-menu" role="menu" aria-labelledby="federalAdministration-dropdown">
+									
+										
+										<li class="dropdown-header">
+											
+												
+													<a href="https://www.admin.ch/gov/en/start.html" aria-label="The Federal Council admin.ch" target="_blank" title="">The Federal Council admin.ch</a>
+												
+												
+											
+
+											
+											
+												
+													<ul>
+														<li>
+															
+																
+																
+																
+																	<a href="https://www.bk.admin.ch/bk/en/home.html" aria-label="FCh: Federal Chancellery " target="_blank" title=""> FCh: Federal Chancellery </a>
+																
+															
+														</li>
+													</ul>
+												
+											
+												
+													<ul>
+														<li>
+															
+																
+																
+																
+																	<a href="https://www.eda.admin.ch/eda/en/home.html" aria-label="FDFA: Federal Department of Foreign Affairs " target="_blank" title=""> FDFA: Federal Department of Foreign Affairs </a>
+																
+															
+														</li>
+													</ul>
+												
+											
+												
+													<ul>
+														<li>
+															
+																
+																
+																
+																	<a href="https://www.edi.admin.ch/edi/de/home.html" aria-label="FDHA: Federal Department of Home Affairs" target="_blank" title=""> FDHA: Federal Department of Home Affairs</a>
+																
+															
+														</li>
+													</ul>
+												
+											
+												
+													<ul>
+														<li>
+															
+																
+																
+																
+																	<a href="https://www.ejpd.admin.ch/content/ejpd/en/home.html" aria-label="FDJP: Federal Department of Justice and Police " target="_blank" title=""> FDJP: Federal Department of Justice and Police </a>
+																
+															
+														</li>
+													</ul>
+												
+											
+												
+													<ul>
+														<li>
+															
+																
+																
+																
+																	<a href="https://www.vbs.admin.ch/en" aria-label="DDPS: Federal Department of Defence Civil Protection and Sport " target="_blank" title=""> DDPS: Federal Department of Defence Civil Protection and Sport </a>
+																
+															
+														</li>
+													</ul>
+												
+											
+												
+													<ul>
+														<li>
+															
+																
+																
+																
+																	<a href="https://www.efd.admin.ch/en" aria-label="FDF: Federal Department of Finance " target="_blank" title=""> FDF: Federal Department of Finance </a>
+																
+															
+														</li>
+													</ul>
+												
+											
+												
+													<ul>
+														<li>
+															
+																
+																
+																
+																	<a href="https://www.wbf.admin.ch/wbf/en/home.html" aria-label="EAER: Federal Department of Economic Affairs, Education and Research" target="_blank" title=""> EAER: Federal Department of Economic Affairs, Education and Research</a>
+																
+															
+														</li>
+													</ul>
+												
+											
+												
+													<ul>
+														<li>
+															
+																
+																
+																
+																	<a href="https://www.uvek.admin.ch/uvek/de/home.html" aria-label="DETEC: Federal Department of the Environment, Transport, Energy and Communications" target="_blank" title=""> DETEC: Federal Department of the Environment, Transport, Energy and Communications</a>
+																
+															
+														</li>
+													</ul>
+												
+											
+										</li>
+									
+								</ul>
+							
+						</li>
+					
+
+						
+
+						
+						<li class="dropdown">
+							
+							
+								
+									<a id="departement-dropdown" href="#" aria-label="FDF" class="dropdown-toggle" data-toggle="dropdown"><span class="icon icon--right"></span> FDF</a>
+								
+								
+							
+
+							
+								
+								<ul class="dropdown-menu" role="menu" aria-labelledby="departement-dropdown">
+									
+										
+										<li class="dropdown-header">
+											
+												
+													<a href="https://www.efd.admin.ch/en" aria-label="FDF: Federal Department of Finance" target="_blank" title="">FDF: Federal Department of Finance</a>
+												
+												
+											
+
+											
+											
+												
+													<ul>
+														<li>
+															
+																
+																
+																
+																	<a href="https://www.efd.admin.ch/en/general-secretariat" aria-label="GS-FDF: The General Secretariat" target="_blank" title=""> GS-FDF: The General Secretariat</a>
+																
+															
+														</li>
+													</ul>
+												
+											
+												
+													<ul>
+														<li>
+															
+																
+																
+																
+																	<a href="https://www.sif.admin.ch/sif/en/home.html" aria-label="SIF: State Secretary for International Financial " target="_blank" title=""> SIF: State Secretary for International Financial </a>
+																
+															
+														</li>
+													</ul>
+												
+											
+												
+													<ul>
+														<li>
+															
+																
+																
+																
+																	<a href="https://www.efv.admin.ch/efv/en/home.html" aria-label="FFA: Federal Finance Administration" target="_self" title=""> FFA: Federal Finance Administration</a>
+																
+															
+														</li>
+													</ul>
+												
+											
+												
+													<ul>
+														<li>
+															
+																
+																
+																
+																	<a href="https://www.epa.admin.ch/epa/de/home.html" aria-label="FOPER: Federal Personnel Office" target="_blank" title=""> FOPER: Federal Personnel Office</a>
+																
+															
+														</li>
+													</ul>
+												
+											
+												
+													<ul>
+														<li>
+															
+																
+																
+																
+																	<a href="https://www.estv.admin.ch/estv/en/home.html" aria-label="FTA: Swiss Federal Tax Administration" target="_blank" title=""> FTA: Swiss Federal Tax Administration</a>
+																
+															
+														</li>
+													</ul>
+												
+											
+												
+													<ul>
+														<li>
+															
+																
+																
+																
+																	<a href="https://www.bazg.admin.ch/bazg/en/home.html" aria-label="FOCBS: Federal Office for Customs and Border Security" target="_blank" title=""> FOCBS: Federal Office for Customs and Border Security</a>
+																
+															
+														</li>
+													</ul>
+												
+											
+												
+													<ul>
+														<li>
+															
+																
+																
+																
+																	<a href="https://www.bit.admin.ch/bit/en/home.html" aria-label="FOITT: Federal Office of Information Technology, Systems and Telecommunication " target="_blank" title=""> FOITT: Federal Office of Information Technology, Systems and Telecommunication </a>
+																
+															
+														</li>
+													</ul>
+												
+											
+												
+													<ul>
+														<li>
+															
+																
+																
+																
+																	<a href="https://www.bbl.admin.ch/bbl/de/home.html" aria-label="FBL: Federal Office for Buildings and Logistics" target="_blank" title=""> FBL: Federal Office for Buildings and Logistics</a>
+																
+															
+														</li>
+													</ul>
+												
+											
+												
+													<ul>
+														<li>
+															
+																
+																
+																
+																	<a href="https://www.plurilingua.admin.ch/plurilingua/en/home.html" aria-label="Federal Delegate for Plurilingualism " target="_blank" title=""> Federal Delegate for Plurilingualism </a>
+																
+															
+														</li>
+													</ul>
+												
+											
+												
+													<ul>
+														<li>
+															
+																
+																
+																
+																	<a href="https://www.finma.ch/en/" aria-label="FINMA: Swiss Financial Market Supervisory Authority " target="_blank" title=""> FINMA: Swiss Financial Market Supervisory Authority </a>
+																
+															
+														</li>
+													</ul>
+												
+											
+												
+													<ul>
+														<li>
+															
+																
+																
+																
+																	<a href="https://www.efk.admin.ch/index.php?lang=en" aria-label="SFAO: Swiss Federal Audit Office " target="_blank" title=""> SFAO: Swiss Federal Audit Office </a>
+																
+															
+														</li>
+													</ul>
+												
+											
+												
+													<ul>
+														<li>
+															
+																
+																
+																
+																	<a href="https://publica.ch/en/home" aria-label="PUBLICA: Federal Pension Fund " target="_blank" title=""> PUBLICA: Federal Pension Fund </a>
+																
+															
+														</li>
+													</ul>
+												
+											
+										</li>
+									
+								</ul>
+							
+						</li>
+					
+
+						
+
+						
+						<li class="dropdown">
+							
+							
+								
+									<a id="federalOffice-dropdown" href="#" aria-label="FFA" class="dropdown-toggle" data-toggle="dropdown"><span class="icon icon--right"></span> FFA</a>
+								
+								
+							
+
+							
+								
+								<ul class="dropdown-menu" role="menu" aria-labelledby="federalOffice-dropdown">
+									
+										
+										<li class="dropdown-header">
+											
+												
+													<a href="https://www.zas.admin.ch/zas/en/home.html" aria-label="Central Compensation Office CCO" target="_blank" title="">Central Compensation Office CCO</a>
+												
+												
+											
+
+											
+											
+												
+													<ul>
+														<li>
+															
+																
+																
+																
+																	<a href="https://www.swissmint.ch/en" aria-label="Swissmint" target="_blank" title=""> Swissmint</a>
+																
+															
+														</li>
+													</ul>
+												
+											
+										</li>
+									
+								</ul>
+							
+						</li>
+					
+				</ul>
+			
+			
+		
+	</nav>
+
+
+
+
+		
+
+		
+<!-- begin: metanav -->
+<section class="nav-services clearfix">
+	
+	
+		
+
+
+	
+	<h2>Submitting e-bills to the Confederation </h2>
+
+	
+
+		
+		<h2 class="sr-only">Languages</h2>
+
+		<nav class="nav-lang">
+			<ul>
+				
+					<li>
+						
+							
+							
+								<a href="/efv/de/home/efv/erechnung/e-rechnung-zustellen.html" lang="de" title="German" aria-label="German">DE</a>
+							
+							
+						
+					</li>
+				
+					<li>
+						
+							
+							
+								<a href="/efv/fr/home/efv/erechnung/e-rechnung-zustellen.html" lang="fr" title="French" aria-label="French">FR</a>
+							
+							
+						
+					</li>
+				
+					<li>
+						
+							
+							
+								<a href="/efv/it/home/efv/erechnung/e-rechnung-zustellen.html" lang="it" title="Italian" aria-label="Italian">IT</a>
+							
+							
+						
+					</li>
+				
+					<li>
+						
+							
+								<a class="active" lang="en" title="English selected" aria-label="English selected">EN</a>
+							
+							
+							
+						
+					</li>
+				
+			</ul>
+		</nav>
+
+	
+
+
+		
+		
+
+    
+        
+            
+            
+
+                
+                <h2 class="sr-only">Service navigation</h2>
+
+                <nav class="nav-service">
+                    <ul>
+                        
+                        
+                            <li><a href="/efv/en/home.html" title="Homepage" aria-label="Homepage" data-skipextcss="true">Homepage</a></li>
+                        
+                            <li><a href="/efv/en/home/efv/kontakt.html" target="_self" title="Contact" aria-label="Contact" data-skipextcss="true">Contact</a></li>
+                        
+                            <li><a href="https://www.efv.admin.ch/efv/en/home/efv/stellenangebote.html" target="_blank" aria-label="Jobs" title="">Jobs</a></li>
+                        
+                            <li><a href="https://www.efv.admin.ch/efv/en/home/aktuell/nsb-news_list.html?dyn_organization=603" target="_blank" aria-label="News" title="">News</a></li>
+                        
+                            <li><a href="https://eportal.admin.ch" target="_blank" aria-label="e-Portal: Services" title="">e-Portal: Services</a></li>
+                        
+                    </ul>
+                </nav>
+
+            
+        
+    
+
+
+	
+	
+</section>
+<!-- end: metanav -->
+
+	</div>
+
+	
+		
+
+	
+	
+		
+<div class="mod mod-logo">
+    
+        
+        
+            
+                <a href="/efv/en/home.html" class="brand  hidden-xs" id="logo" title="Homepage" aria-label="Homepage">
+                    
+                        
+                            <img src="/efv/en/_jcr_content/logo/image.imagespooler.png/1675236487282/logo.png" alt="Federal Finance Administration FFA"/>
+                        
+                        
+                    
+                    <h2 id="logo-desktop-departement">Federal Finance Administration FFA
+                    </h2>
+                </a>
+                
+            
+        
+    
+</div>
+
+	
+
+
+	
+
+ 	
+		
+
+
+	
+
+
+
+	
+	
+		
+
+<div class="mod mod-searchfield">
+
+	
+		
+
+		
+			
+
+			<!-- begin: sitesearch desktop-->
+			<div class="mod mod-searchfield global-search global-search-standard">
+				<form action="/efv/en/home/suche.html" class="form-horizontal form-search pull-right">
+					<h2 class="sr-only">Search</h2>
+					<label for="search-field" class="sr-only"></label>
+					<input id="search-field" name="query" class="form-control search-field" type="text" placeholder=""/>
+                    <button class="icon icon--search icon--before" tabindex="0" role="button">
+                        <span class="sr-only"></span>
+                    </button>
+                    <button class="icon icon--close icon--after search-reset" tabindex="0" role="button"><span class="sr-only"></span></button>
+					<div class="search-results">
+						<div class="search-results-list"></div>
+					</div>
+				</form>
+			</div>
+			<!-- end: sitesearch desktop-->
+
+		
+	
+
+</div>
+
+	
+
+
+
+	
+
+	
+
+ 	
+
+
+</header>
+
+
+
+    
+
+
+	
+	
+		
+
+<div class="mod mod-mainnavigation">
+
+	<!-- begin: mainnav -->
+	<div class="nav-main yamm navbar" id="main-navigation">
+
+		<h2 class="sr-only">
+			Main Navigation
+		</h2>
+
+		
+			
+
+
+<!-- mobile mainnav buttonbar -->
+ <section class="nav-mobile">
+	<div class="table-row">
+		<div class="nav-mobile-header">
+			<div class="table-row">
+				<span class="nav-mobile-logo">
+					
+						
+							<img src="/efv/en/_jcr_content/navigation/icon.imagespooler.png/1463575638314/swiss.png" alt=""/>
+						
+						
+					
+				</span>
+				<h2>
+					<a href="/efv/en/home.html" title="Homepage" aria-label="Homepage">FFA</a>
+				</h2>
+			</div>
+		</div>
+		<div class="table-cell dropdown">
+			<a href="#" class="nav-mobile-menu dropdown-toggle" data-toggle="dropdown">
+				<span class="icon icon--menu"></span>
+			</a>
+			<div class="drilldown dropdown-menu" role="menu">
+				<div class="drilldown-container">
+					<nav class="nav-page-list">
+						
+							<ul aria-controls="submenu">
+								
+									
+									
+										<li>
+											
+												
+												
+													<a href="/efv/en/home/aktuell.html">Actuality</a>
+												
+											
+										</li>
+									
+								
+							</ul>
+						
+							<ul aria-controls="submenu">
+								
+									
+									
+										<li>
+											
+												
+												
+													<a href="/efv/en/home/themen.html">Topics</a>
+												
+											
+										</li>
+									
+								
+							</ul>
+						
+							<ul aria-controls="submenu">
+								
+									
+									
+										<li>
+											
+												
+												
+													<a href="/efv/en/home/finanzberichterstattung.html">Financial reports</a>
+												
+											
+										</li>
+									
+								
+							</ul>
+						
+							<ul aria-controls="submenu">
+								
+									
+									
+										<li>
+											
+												
+												
+													<a href="/efv/en/home/efv.html">The FFA</a>
+												
+											
+										</li>
+									
+								
+							</ul>
+						
+
+						<button class="yamm-close-bottom" aria-label="Close">
+							<span class="icon icon--top" aria-hidden="true"></span>
+						</button>
+					</nav>
+				</div>
+			</div>
+		</div>
+		<div class="table-cell dropdown">
+			<a href="#" class="nav-mobile-menu dropdown-toggle" data-toggle="dropdown">
+				<span class="icon icon--search"></span>
+			</a>
+			<div class="dropdown-menu" role="menu">
+				
+				
+
+
+
+	
+		
+
+
+<div class="mod mod-searchfield">
+
+    
+        <div class="mod mod-searchfield global-search global-search-mobile">
+            <form action="/efv/en/home/suche.html" class="form  mod-searchfield-mobile" role="form">
+                <h2 class="sr-only">Search</h2>
+                <label for="search-field-phone" class="sr-only">
+                    
+                </label>
+                <input id="search-field-phone" name="query" class="search-input form-control" type="text" placeholder=""/>
+                <button class="icon icon--search icon--before" tabindex="0" role="button">
+                    <span class="sr-only"></span>
+                </button>
+                <button class="icon icon--close icon--after search-reset" tabindex="0" role="button"><span class="sr-only"></span></button>
+
+                <div class="search-results">
+                    <div class="search-results-list"></div>
+                </div>
+            </form>
+        </div>
+    
+
+</div>
+
+	
+	
+
+
+				
+			</div>
+		</div>
+	</div>
+</section>
+
+		
+
+		
+		<ul class="nav navbar-nav" aria-controls="submenu">
+
+			
+			
+
+				
+                
+				
+
+				<li class="dropdown yamm-fw  ">
+					
+						
+			      		
+							<a href="/efv/en/home/aktuell.html" aria-label="Actuality" class="dropdown-toggle" data-toggle="dropdown" data-url="/efv/en/home/aktuell/_jcr_content/par.html">Actuality</a>
+							
+							<ul class="dropdown-menu" role="menu" aria-controls="submenu">
+								<li>
+									<div class="yamm-content container-fluid">
+										<div class="row">
+											<div class="col-sm-12">
+												<button class="yamm-close btn btn-link icon icon--after icon--close pull-right">Close</button>
+											</div>
+										</div>
+										<div class="row">
+											<div class="col-md-12 main-column">
+
+											</div>
+										</div>
+										<br><br><br>
+										<button class="yamm-close-bottom" aria-label="Close"><span class="icon icon--top"></span></button>
+									</div>
+								</li>
+							</ul>
+						
+					
+				</li>
+			
+
+				
+                
+				
+
+				<li class="dropdown yamm-fw  ">
+					
+						
+			      		
+							<a href="/efv/en/home/themen.html" aria-label="Topics" class="dropdown-toggle" data-toggle="dropdown" data-url="/efv/en/home/themen/_jcr_content/par.html">Topics</a>
+							
+							<ul class="dropdown-menu" role="menu" aria-controls="submenu">
+								<li>
+									<div class="yamm-content container-fluid">
+										<div class="row">
+											<div class="col-sm-12">
+												<button class="yamm-close btn btn-link icon icon--after icon--close pull-right">Close</button>
+											</div>
+										</div>
+										<div class="row">
+											<div class="col-md-12 main-column">
+
+											</div>
+										</div>
+										<br><br><br>
+										<button class="yamm-close-bottom" aria-label="Close"><span class="icon icon--top"></span></button>
+									</div>
+								</li>
+							</ul>
+						
+					
+				</li>
+			
+
+				
+                
+				
+
+				<li class="dropdown yamm-fw  ">
+					
+						
+			      		
+							<a href="/efv/en/home/finanzberichterstattung.html" aria-label="Financial reports" class="dropdown-toggle" data-toggle="dropdown" data-url="/efv/en/home/finanzberichterstattung/_jcr_content/par.html">Financial reports</a>
+							
+							<ul class="dropdown-menu" role="menu" aria-controls="submenu">
+								<li>
+									<div class="yamm-content container-fluid">
+										<div class="row">
+											<div class="col-sm-12">
+												<button class="yamm-close btn btn-link icon icon--after icon--close pull-right">Close</button>
+											</div>
+										</div>
+										<div class="row">
+											<div class="col-md-12 main-column">
+
+											</div>
+										</div>
+										<br><br><br>
+										<button class="yamm-close-bottom" aria-label="Close"><span class="icon icon--top"></span></button>
+									</div>
+								</li>
+							</ul>
+						
+					
+				</li>
+			
+
+				
+                
+				
+
+				<li class="dropdown yamm-fw  current">
+					
+						
+			      		
+							<a href="/efv/en/home/efv.html" aria-label="The FFA" class="dropdown-toggle" data-toggle="dropdown" data-url="/efv/en/home/efv/_jcr_content/par.html">The FFA<span class="sr-only">current page</span></a>
+							
+							<ul class="dropdown-menu" role="menu" aria-controls="submenu">
+								<li>
+									<div class="yamm-content container-fluid">
+										<div class="row">
+											<div class="col-sm-12">
+												<button class="yamm-close btn btn-link icon icon--after icon--close pull-right">Close</button>
+											</div>
+										</div>
+										<div class="row">
+											<div class="col-md-12 main-column">
+
+											</div>
+										</div>
+										<br><br><br>
+										<button class="yamm-close-bottom" aria-label="Close"><span class="icon icon--top"></span></button>
+									</div>
+								</li>
+							</ul>
+						
+					
+				</li>
+			
+		</ul>
+	</div>
+</div>
+
+	
+
+
+
+    
+
+<!-- begin: main -->
+<div class="container-fluid hidden-xs">
+	<div class="row">
+		<div class="col-sm-12">
+			
+	
+
+
+<div class="mod mod-breadcrumb">
+	<h2 id="br1" class="sr-only">Breadcrumb</h2>
+	<ol class="breadcrumb" role="menu" aria-labelledby="br1">
+		
+			<li><a href="/efv/en/home.html" title="Homepage" aria-label="Homepage">Homepage</a><span class="icon icon--greater"></span></li>
+		
+			<li><a href="/efv/en/home/efv.html" title="The FFA" aria-label="The FFA">The FFA</a><span class="icon icon--greater"></span></li>
+		
+			<li><a href="/efv/en/home/efv/erechnung.html" title="E-bill" aria-label="E-bill">E-bill</a><span class="icon icon--greater"></span></li>
+		
+		<li class="active" role="presentation">Submitting e-bills to the Confederation </li>
+	</ol>
+</div>
+
+	
+		</div>
+	</div>
+</div>
+
+
+
+	
+	
+		<div class="container-fluid">
+			
+
+<div class="row">
+    <div class="col-sm-4 col-md-3 drilldown">
+        
+
+<div class="mod mod-leftnavigation">
+
+		<a href="#collapseSubNav" data-toggle="collapse" class="collapsed visible-xs">Unternavigation</a>
+		<div class="drilldown-container">
+			<nav class="nav-page-list">
+				
+					<a href="/efv/en/home/efv.html" class="icon icon--before icon--less visible-xs">Zurück</a>
+
+					<a href="/efv/en/home/efv.html" class="icon icon--before icon--less"><span class="sr-only">Zurück zu </span>The FFA</a>
+				
+				<ul>
+					
+						
+							
+							
+								<li class="list-emphasis">
+									<a href="/efv/en/home/efv/erechnung.html">E-bill</a>
+								</li>
+							
+						
+					
+
+					
+					
+					
+
+					
+						
+							
+							
+								
+									
+									
+										<li>
+											<a href="/efv/en/home/efv/erechnung/aktuell.html">News</a>
+										</li>
+									
+								
+							
+						
+					
+						
+							
+							
+								
+									
+									
+										<li>
+											<a href="/efv/en/home/efv/erechnung/kurze-einfuehrung.html">Brief introduction</a>
+										</li>
+									
+								
+							
+						
+					
+						
+							
+								<li class="active">
+									Submitting e-bills to the Confederation  <span class="sr-only">selected</span>
+								</li>
+							
+							
+						
+					
+						
+							
+							
+								
+									
+									
+										<li>
+											<a href="/efv/en/home/efv/erechnung/e-rechnung-empfangen.html">Receiving e-bills from the Confederation</a>
+										</li>
+									
+								
+							
+						
+					
+						
+							
+							
+								
+									
+									
+										<li>
+											<a href="/efv/en/home/efv/erechnung/liste-verwaltungseinheiten.html">List of administrative units</a>
+										</li>
+									
+								
+							
+						
+					
+				</ul>
+			</nav>
+		</div>
+
+</div>
+
+    </div>
+    <div class="col-sm-8 col-md-9 main-column" id="content" role="main">
+        <div class="row">
+            <div class="col-md-8 main-content js-glossary-context">
+                
+
+<div class="visible-xs visible-sm">
+	<p><a href="#context-sidebar" class="icon icon--before icon--root">Context sidebar</a></p>
+</div>
+
+<div class="contentHead">
+	
+
+
+
+<div class="mod mod-backtooverview">
+	
+</div>
+
+
+	
+	
+
+
+	
+	
+		<a href="javascript:$.printPreview.printPreview()" onclick="" class="icon icon--before icon--print pull-right" title="Print this page"></a>
+	
+
+
+
+
+	
+	
+
+<div class="mod mod-contentpage">
+    <h1 class="text-inline">Submitting e-bills to the Confederation </h1>
+</div>
+
+</div>	
+
+
+
+
+
+
+<div class="mod mod-headline">
+	
+		
+		
+		
+			<h2>E-billing – of course!</h2>
+		
+	
+</div>
+
+<div class="mod mod-text">
+    
+        
+        
+            <article class="clearfix">
+                
+                    <p>Electronic billing (e-billing) is an easy and secure way to submit an invoice. Instead of printing your invoice and posting it to the Federal Administration, you send your invoice data electronically or via email.</p>
+<p>You save time and money, and your invoice can undergo swift, end-to-end digital processing.</p>
+
+                
+                
+            </article>
+        
+    
+</div>
+<div class="mod mod-text">
+    
+        
+        
+            <article class="clearfix">
+                
+                    <p><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAl0AAACkCAYAAACtgJvTAAAgAElEQVR4nOydd3hUVfqAB3V1LT8LAlKUoiKI6AILIoKxr3Ut62IXpIdUeg0ISAeVJr2GToD0Pi1l0nsmydRk0iskEHp7f39MZkhCkYV0znme90ly75l779zMzH3n+879jgTRRBNNNNFEE0000eq9SRr7AEQTTTTRRBNNNNHuhvY/S9eVK1e4dOkSFy9e5MKFCwKBoA64cuVKfby/RRPtttrly5fF57xAUAdcvHixxuf7LUvXuXPnKC8vp7CwEJPJhNFoRKfTCQSCOyQjI4PKysp6uXiKJtqttitXrnDq1CnKysrIzc3FZDJhMBga/f0hEDRXtFoter2eixcvWt9nfyldFy9epKSkBKPRSEZGBhkZGWg0GoFAUEekpaUJ6RKtUVtlZSW5ublotVrS09Mb/T0hELQEMjIy0Gq1ty5dZ86cwWQyWUVLq9UKBII6Jj09XUiXaI3SLl++THFxMTqdTnzOCwR1jEajQafT3Zp0VVZWYjAYrKYmEAjqByFdojVGu3TpEvn5+UK2BIJ64pal68yZM0K4BIIGQkiXaA3dLl++TEFBgfiMFwjqkVuSrkuXLpGVlSXejAJBAyGkS7SGbqWlpeIzXiCoZ25JuixvRhFuFggaBiFdojVkO3v2LHq9XnzGCwT1zF9K1/nz5zEYDOLNKBA0IEK6RGuoduXKFQoLC0WUSyBoAP5SusrLy8WbUSBoYIR0idZQ7cKFCyLKJRA0EDeVritXrvxPAyv1ej3Z2dk1sBTTq97PUkhVo9GQmZlJVlYWWq0Wo9FIVlaWtYCYQHC3IqRLtIZqJ06cEMIlEDQQN5Wuy5cvYzKZbukNqdfrSU1NRaFQ4Ofnh4+PDz4+PkilUrRaLZmZmda+oaGhxMbGotfriY6ORqVSodVqiY+PJywsjIyMDCFegrsaIV2iNVQrKiq6ZenS6XTk5eVRXFxcg5ycHOtntkajITs7m4KCAjQaDVlZWRQUFKDT6TAajRQWFtb7kJXq+9Xr9XXWVyC4U24qXZcuXbJGpP5qQ/n5+ezfv5/HHnuMLl260KNHD3r06EGXLl0YOnQokZGRmEwm9Ho9nTp1YvTo0ZSWljJixAjeffddjEYjLi4u9O3bl5iYGGv0SyC4GxHSJVpDtby8vFv+Yp2ens6ePXtYsmQJ8+fPZ/78+SxYsABPT0+MRiMGgwGj0Yinpyfr16/HaDQilUrZvHkzarUalUrFhg0biI2NvSYDUpcYDAakUinr168nMTHxpjJlMBgIDg5m/fr1JCUl3bF46XQ6srOzb/naKbi7uKl0Xbx4EZ1Od8vStXv3bh588EE2btxISEgIMpmMHTt28Mwzz/Dzzz9b35Rbt27F19eXnJwcfvrpJ2xsbDAajcyYMYOXXnrJKl2WdGVubi45OTk13qSZmZmYTCaysrLIzc0Vg/0FLQohXaI1VLPMMPJXr8nMzEySkpIYMGAATzzxBG+88QZvvPEGffv2pUOHDsyePRuDwUBxcTFjx46lY8eO5OXlsWDBAjp16kR0dDTbt2+nTZs2HD16lJycnHp7/+Tm5rJ48WI6deqETCarkWm5Xt+FCxfSqVMn5HL5Tfv+FTqdjuTkZLZt20ZAQABGo7HRP0sETYs6la49e/bwf//3fwQHB1NSUkJOTg5nzpxh/PjxdO/enbS0NIxGIxERESQmJpKVlcXw4cN56623MBqNzJo1i1deeYWYmBhycnLIzMxELpdz4MABfHx80Ov1ZGZmotPpUKlUqFQqwsLCOHDgADExMfX6zUkgaEgaQ7qKTp7HWHYWdeEpkvIrBY1NXiVphae5fOVKvf7fb7UGY2ZmJsnJybz22muMGjXKGvnSarVMmjSJBx98kMDAQHJzc0lJSSEhIYGcnBwWL15Mz549iYmJwdXVlW7duuHp6Ul2drZ12xqNBoPBQGFhIdnZ2ZSUlJCbm2tdXlBQQElJCUVFRTVERqPRWFOWJSUlFBYWWter1WoSEhLIyMggMzOTgoICsrKyKCoqoqSkpMb+q/fVas3ylJubS0lJSY2+lv3V3lZeXh5arZbs7GwUCgU9e/Zk7969lJaWimCAoAb1Il0ymYzjx49TVFREUlISQ4YM4bvvviMzMxOj0cizzz7L+PHjKSkpua50xcXFkZOTw/z582nXrh09evSgY8eOjBkzhvT0dPLy8pg6dSo9e/bExsaG559/nm3btpGfn9/oJ1QgqAsaSroqz13CLakEx8M6+q6Mo/3cCO6bFILEUYHESdCo2Ml4craKynOX6vU18L9K18CBA7G3t6e4uJi8vDzKy8vx9fXlb3/7GwcPHqS4uBh3d3fWrVtHTk4OS5Ys+UvpMhgMREZGsnr1ary9vZk+fTpbt24lKyuLtLQ01qxZw+TJk1m4cCGxsbHWscbZ2dkkJCSwbNkyJk+ezPLly0lISCA7O5vg4GDWrVtHSkoKoaGhbNq0Cblczrx585g6dSp+fn7WNGBQUBDr1q0jMTERo9GI0Whk3759TJkyhalTp+Lv72/tGxoayoYNGwgJCWHhwoVMnTqVPXv2kJWVRXJyMk5OTjz66KN89dVXeHh4YDAYxBhlgZU6la59+/bxyCOP8Oqrr/L+++/z3nvv8eKLL9KrVy9UKhW5ubno9Xqee+457Ozsbihdqamp7N69m0cffZS5c+eSmJjIvn37eOqpp5g1axbHjx9n9uzZSCQSVq5cSUREBAkJCWIQpKDF0BDS5ZZUyhtrEs2CNVaKxF5+VbacBY2OvYy2Lk1PugYNGsTw4cNJTEwkLi6O8PBwfvzxR95++20SEhIoKytj9OjRPPXUU+Tm5rJ06dK/lK6cnBzc3d15/PHHeeWVVxg0aBDz5s0jNTWVoUOH8vjjj/P+++/TvXt3Xn/9dcLCwigoKCA0NJRBgwbx9NNP88EHH/Dss89iY2NDamoqy5Yto3379oSHh7Nv3z5at27NgAEDGDJkCL169eLpp59m586dlJSUsGDBAtq3b49CobCmRNu0acPAgQMZMGAAXbp0YefOnRQVFVm39cYbb/D222/Tu3dvnnjiCTZt2kR8fDxffPEFDzzwAC+//LJ1XJuQLoGFOpWuvXv38sgjjzB8+HBmzpzJtGnTsLW15bnnnmPkyJHWu1e6d++Ovb39daWrT58+xMXF8eOPP9K/f3/i4+NJT09Ho9EwYsQIBgwYgFarZebMmbz88sskJyc3yN0wAkFDUp/SdfLcJSa4G/jbBCUSW5lZsiYoBU0NBzlPzYloctL1zjvv8MQTT/Diiy/y4osv8txzz/HAAw+wdOlS8vLyKCwsxNHRke7du9+ydGVnZ+Pp6UmHDh1wcnLCaDSSnZ3NokWLaN26NUePHqWkpISEhAReeuklRowYQXFxMba2tnTr1o3g4GCys7MJCAjg888/x8/PjzVr1vDCCy8QERHBkSNHuO+++xg9ejQGgwG1Ws2//vUvXnnlFTIzM1mxYoW1r1QqpW3btri4uFBUVEReXh4//fQTL730EjqdDnd3dx5++GHs7e2t1x0bGxtsbGzIzs7Gy8uLLl26sHnz5hrPUSDQauspvRgUFGTNg5eWlrJ69Woefvhh9u/fT05Ozk2lq2/fvkRGRvLVV1/Rpk0b+vTpw8svv8w//vEPnn76aXr16kVMTAyzZ8+mb9++xMXFiTsdBS2O+pKu42cu8q1rOpLxMiQO8sYXC0Gzk67Bgwfz6aef4ubmxoEDBzh48KB14Pz27dspKyu7Leny8PCga9euuLq6Wr9If/755/Tv359Dhw5x+PBh3N3d+eabb3j55ZeJiIigX79+jB49mmPHjlnrPBYUFFBQUMDy5cutIrVv3z569uyJVColPz+fwsJCNmzYQJcuXQgNDeWPP/7ghRdeICoqiuXLl9OxY0fWrVvH0aNHcXd359dff6Vt27YcPHgQDw8PunXrxqFDhygoKKC8vJwff/yRfv36YTKZ8PX1pVu3bmzfvt061ksgsFCv0mUymSgrK8PT05N27dqxfv36W5Ku2NhYhg4dSv/+/dm3bx979uxhz549bNiwgR07dqDT6Zg2bRp9+vQhNjZWSJegxVEf0nXp8hXsD+tEdKu50ESla+DAgTg4OFjHdBUWFpKZmcmrr77KJ598QnFxMc7OzrctXdu2bSM3N5eMjAw+++wz2rZty0svvUSPHj3o2bMnvXr14uOPP0apVPLiiy/i6OjIsWPHrIPu4+Li0Gq1rFy50ipdu3fvZsCAAcTGxmI0GsnNzWXTpk107doVhUJRQ7oWL17MI488Qq9evejZsyc9evTgpZde4pVXXsHNzc16nHv37iUnJ4eSkhK+++47+vfvj8lkwtvbm65du7J169Z6vUNT0Dypc+l6+OGH2blzJzExMYSHhyOXy/noo49o164dYWFhmEymGmO6hg0bZi0ZYUkZpqSksGHDBjp27MiGDRtQq9UolUqGDBnCTz/9REFBAVOnTuWVV14R0iVokdSHdO2ILkTioKgb4XJW3mAs0o3638I6yzat229gyam+/6ZAE5cuy117RUVF6HQ6+vfvz+eff14n0pWTk4PRaOSbb77htddeIzk5mfT0dNRqNXv27GHnzp1kZGTw3nvv8cEHH5Cfn09paSlqtZp+/fqxdu1a/vzzT6t0HThwgI4dO3Lw4EGOHz9OWVkZU6dO5bnnnkOtVvPbb79ZpWvdunW0b98eLy8v6x2a/v7+rF69muTkZNzc3G4qXZ6ennTt2pU9e/ZQWFjY6J8lgqZFnY/pevDBB+natSu9evWiV69edOnShb59+7J9+3brlEDV7168Xp2uuLg4cnNzmTdvHl27drUWWbWxscHd3Z3i4mImTZrEyy+/LKRL0CKpa+kqrjxPr6UxSOxkdSMEVeJ2/5RQ7p98lb9NDrlx/+tIVKsJSv42OYR7J4WYhccihM51JIf/A/dNCrnx8QvpskrXgAEDePvtt9m2bRtbtmxhy5YtDB06lIceeogdO3ZQXl7O+PHj6dy5M7m5uSxatIhu3boRHR3Nzp076dixI+7u7tdI19GjR+nQoQNbtmyxTiN35MgRunbtyo8//siuXbtYunQpbdu25fvvv6e4uJhdu3bRvn17Ro8ezY4dO/jss894/vnnUalU/P7773Tp0gWVSoW7uzutWrXiH//4B5s2bWLevHk89dRTzJgxg+LiYhYvXkyXLl0ICwsjNTUVGxsbBg8ezMaNG9m6dSuvvvoqPXr0QK1Wc+jQITp06MDu3bvJycmhtLSU//73v7z88stkZWURGhpK+/btGT58OCEhIeh0OjGQXmClzqRLr9eTlJSEt7c3Bw8eZP/+/ezfv5/Dhw8TGxtLdna29YUXEBCASqXCYDAQFhaGTCZDp9MRFRVFUFAQ6enpGI1GMjMzUSqVHDhwAHd3d1JSUjCZTOh0OiIiIqx9xQta0NKoa+n6IyTXfHfinUZyqmRoc0QBocYKjiSWcCS51Mpcv6yq/VT1d5Tz5GwVgZrjfLI51ZzatGzLUUHb2So2hOfz6aYUvtmZTqDmOE/MCmeJNJsNqgLzuLP6jnhVPaeR+zWsCc3joalh5rs4hXTVwGg0kpKSwrfffsvzzz9P79696d27N7169cLGxoa1a9daa2q5uLhgY2NDTk4Oa9eu5e233yYuLo5Dhw4xePBg/P39MZlM1m2bTCb8/Px4/fXX2bt3r3UO3uzsbPbv38+bb75Jr1696N27Nw4ODkRHR2MymTCZTGzYsIH+/fvTq1cv3nzzTdzc3Kxjtt58801iYmI4ePAgXbp04fvvv2fAgAH07NmTmTNnkpGRQV5eHuvWrePNN98kLCyMvLw8wsPD+eabb6wpzS+//BJvb2/y8/Nxd3fn9ddf5/Dhw2RnZ1NUVIS9vT2ffPKJtSL/2LFjee6551i2bBmZmZniznqBlTqTLo1Gg16vJzc39xpqT2JtKXxqmfPK8ubLzMy0yplleyaTybqd6kXxqvdt7JMoENQ1dSld5y9e5uPNKeayEHUkKKkFp9gXV8xjTkoemxFu5eFpYdeIQ/u5EeYB/LvSkfwUgGSc1DyQ3yKATgok44Jx8c3k+OmLtJuj4khyKaHGipoCVyVqknFSs7zZSmtG7uxkVeuqcFIgmag076v68nHV1jkrr27HWVkt0qa8uo9xUrP8Tay13NbyPO4O6bKg0WhIS0sjOTmZ5ORkUlJS0Gq11mneLH0s27zR79cjIyOjxvVGp9NZrx/Jycmo1WprvUfLNcJy/MnJyWi1Wmt/y75MJhOurq48++yz1rpZarWarKwsa0Ht2sdl2UdKSgopKSnW/dzoOWg0Gutx63Q69Ho9arWatLS0Rv8sETQt6ky6BAJB3VGX0pWcX8nTv0SaBaaOpCs25yRrQvKQ/FglURZqpy+rxEFfcobdsUX8qcxlT1wxTkf1SJwUPDEznJXyXP71ZxKOR/Tklp+jrYuKvfHFBGqO14qaKXhyloo1oXnsjC5kd2wRw/ZmcK+9HMnYYD7ZnMru2CJ2xhSxINDEI9PDkIyTMvagllUheeyMKWJ3bBFrw/J4Zp75fNw7KYTp3kYmuBv41jWdxcHZPDAlFImtjLl+WeyMKWR/QjEvLolBMjYYiZOC6d5GXGOLcI0tYtQBTf1F45qodOn1egwGQw30en2NL8CWPlqtWUJq/369L8s3W1d9n7XXWx5nOY7ay7Ozs9mxYwdPPfUUbm5u5OfnX7Od6sd4vX1eb7u1n2/1PpbHiqCAoDZCugSCJkhdSleg5rh5rFJdpMyqpCsi8wS+acf4YFUiH2xMtvLikpiaY7GqxCG96DQnz13i9TWJ/LArjcKT57E/rKPNbBXlZy8ywyeTcQd1N5YuZ7N0eaSU4RpbRO/ZKr7elY5CX07nuREM+SOB42cuMmyfhkG/xROfe5J98cVIfg7EL/0Y5y5e4d11iXy9M42Ll6/w834Nkp8CeGVZLKfOX2LMQS1rQ/PIOX6ONi4q1oXkEmU6Qf+lsbj4ZmIsO0vPBVHM9cui9NQFPtiQzBfbUik8eZ7xh7Q106YtXLqaG1lZWRw5coT33nsPX1/fGmlNgaChEdIlEDRB6lK63JJKq6JcdSddIYYKUgtOsUaew5rQPCtDd6aZo132cjPjpDw5W4Xp+Dl+Dcw2R8NGB7E+PB+FvpyuCyIxlJ1lgrsB20N/JV1yIrNOINWV09klAsnwQCTjpNwzMYRQYwV74orMKdQf/Rm6U01x5QWedlFxIKGYEGOFOVI1XsaBhBIOJ5dy3zgpP+7OILfiHE/OVrFUmk1czkneWJtI2ekL2KxNQjIyCImdjImH9Uz1NGIsO8uo/RokPwciGRnE78pcEnIreWxmOBLHOq57JqSrzrAU5haRJ0FjI6RLIGiC1KV0ucYWmYWjLkSgdnrxB38kY4JrMGRNInvji9kfX8ze2CJGH9CQUXyaTzenmvvYyZjtm0VCXiUD/4hHU3Lmr6WrKr044HdzFCsm5yTuCcXM9cvikWlhpBScIjr7JHsjC9gXX4xHaima4tO8tz4Z19gi87Yc5Ehspby7PpmyUxfoszKeIM1xVshzaDVWyh/KXGJzTvKvDSkUnjjPP3+LN4/ZmqBE8q0vLy+P5fylKxxMLGFfbBH74orwzzhGbPZJui+KRmJfx9EuIV11ihjMLmgKCOkSCJogTV26YrJPslFVgGSMtFqNLSUSJwX/Nz2M7ouizcyP5MUlMehKzvDNzjRzJGpsMIuCs4nOPmleV3qL0jVBiWREEBJnBc/MiWDEfg2V5y4x+qCWtMLTrAvLp8tsFc8viKLPiji+3ZVOp1nhHEwoIUhbJV32ctrMCCPMWIFrbBG5Fed4f2MyklFBrA7JIzbnJO+tT+bY6Qv0WRFnHaf28q9ROLvrOXPhMt+6ptNtTgTP/xrF4NWJDN2ZZo501XWJCyFdAkGLQ0iXQNAEaerSlZx/iu1RhddK1wSzeEkc5NbIUhsXFTnl54gyneBvE0PoOjeS1MJT/Bpo4snZ4RScOM8UTyP2h/WUVF6gnYuKQ0klKPTl1dKL5uKr07yMfLgxBcmIQNrPiaDizEXGHNQy0d2AofQMHeZGIBkVxO+KXHIrzvHM7HAOJ5WgNJRfHfA+KphJHgYAQgzlPDopBImdjPXh+WiKz9B1QRRhxgq2RhUiGS+j3/JYcivOMdnDwNHkEuT6ch6cbH6MKrMCL3UZj08OEdIlEAj+EiFdAkETpKlLl1tSCQm5lbglFOOWVGJlZ3QRvZbEXL1T0kFOWxcVCn05SXmn2BdfjFxfzuaIfP5vSijt50QQbTrBmINaftqTQVzOSZ6cHc668HzzQPjqkS4HOd/tSkddeAq32CL804+xQZXP3x0VSGylLJfnINeX45ZYQoihgiFrEpH8HMiWSPMdiFbpspPz2qoEtCVnmOmTaU55OspZEGgi1FjBg1NDeWZmOIEZx3BLKiHKdBIX3ywk42U8NVuFX/oxfNOPcTiplENJJbSdEV43d4YK6RIIWjxCugSCJkiTla4q7p8cwmMzw2k/N4L2c67SziWC+yeH1EgJtpqg5O9Vlevbuaho66Iyr3NU0Gqikr9PDeW+SSHcNymEB6eG0mqCkvsnh5pLN9Tet72cx6v229ZFZb2rUeJkpq2LivZzI3hoaqhV2B6Ycv1t/X1KqLkSftXff5scwt+r9i+xk/G3ySG0nxvBk7NU1u1LHMxlJtq5qGg/J4J7Jirrb+JwIV0CQYtDSJdA0ARp6tIlcVKYZed6XK9mlUVaLH2qp+Icq83daClr4aS4cbrO8Qbbcb7B8uttq7qs3ahf9eN1vsHy+pyqSEiXQNDiENIlEDRBmrx0CeofIV0CQYtDSJdA0AQR0iUQ0iUQtDyEdAkETRAhXf8j42VX50esvtxJYV7XFCawFtIlENz1COkSCJogQrpuEWcl90xU8ta6JHouiak5qN1ZwcPTwui7Io7Ws8Lrb2JqIV0CgeAWaRLSZZkstDlxowlbG/u4mgtiOo6b0+Kkyzr4vKp+V/XIk2VQevXl1Wt9VV9WO2JlL6fVBCVTvYx8tCnFPAWRs1lYJGOD+cfyWEorLzB0R1rV3YzX2a71GK6zXEiXQCCoQxpVunQ6HWq1GplMhlwubzbIZDISEhKs00rodDrS0tIICQlBKpU2u+fT0OdOqVSiVqvFtBw3oUVJl7O5PMOjM8Jo66Li2YXR5siTnXnanIenhfHYjHC6zI+i49wIJPZy7pmopNuCKLr9GsXD08KQ2Ml4dEYYj84It95J2GqiksdnhpvLQTjXlLWOcyN4dm4Eb61LwnTsLP/doTZPSu2koP3cCJ5dGM0TM2sew6Mzwuk8P9J8DE0hKiakSyBocTSqdOn1elJSUnB3d8fT07PZ4OHhgZ+fH4mJiTWiNnFxcfj4+DS759PQ587DwwOpVEpaWpoQrxvQoqRrbDCj9mvQlZwh2nSCA7FFJOZVMuD3eCRjgtkVU4Su5AzBunIWB2fz5JRQ9sQV4Z5SypGUUmS6crrNiWCiu574nEr+PjUUia2Mp+dFkldxji+2qwnSHsfFLwvJ8ADGu+lQZVVwILaI8MwKTMfP8umWVB5yVjDHLwtN8WkOxBaRlFdJv5VxSMYGszOmEEPpWWS6claH5t249IWQLoFAcAc0Ceny8vLC29u7WeHp6VlDvCzPJyEhAT8/Pzw9PRv9GJsynp6eBAcHC/G6AS1KusYE43hED8AX29RIfg5kbWge+pIzdJ6lQqYrR114mjZTzEVSV4fmUXDiPH+fGobEQY63ugyFoZyBfyRgKDvDt67pSEYFMXyvhoIT5+mzMo6UglMsCDTRe2ksJ85e5OPNKUh+DmSSu4ELl64weHUCn29Tc+r8Zd77MxnJT/6MPqhFW3KG7r9E4Jt+jOzj53h6XiQPTr5OUVYhXQKBoA4Q0iXEq1HPn4h4XZ+WJl3OR/XoS86YK8DbynhmXiSFJ8/ztWs6nqml7I4tQjIsgHYuKnLLzzE/wGQeg2Ur5cONyZw4e4k31ybhllTCrtgiJKODURrKWR+ez70OctKLTjPHL4vFwdnIdMdpZSdHMl5G1wVRpBed4rMtqawOySMp/xS9l8XSZ1E0g1YlcPkKjDqo5WhKqXmqoDHBYkyXQCCoN4R01bN4Nefn1lDnT0S8rqWlSddEdwMhhgrzFEF2Mh6aGkbhyfP8uCcD9+RS9sQVIRkZRJf5UZw8d4lhezRIxkmR2MsZtCqBY6cu8N76ZD7dkoK25DRfbEslo+g0n29TI7GXk1Fslq5VIXlItceR2MmR2Mt5Zl4k0aaTjNyvwVtdRtaxs+yMKWRXTBHbowr5MyyP1/5IwC/jGLvjipGMbkJ3eQrpEghaHEK6hHg1OkK8rqWlSZfzUT360jPm8VgjAnl/QzKV5y7x/vpkvNRl7I0rQjIqmEenhxGbc5IjySXmOwlHBmHnpqPoxHl6LYnhgSmhpBScIrfiHEpDBQ9MCuGeSSFW6RrrpqX45AV6LIlBMiyAfivjyK84x0ebUvhNmUtqwSlzBO1HfyTOSpYEZ9N3RSwBmmPsja+KdDW2bAnpEghaLEK6Gki8RKrxr8+fSDVepaVJ13g3HRcuXWFtWD5vLY8jPvckmyIKeMBORnxuJV6ppUjGSpGMl/HNjjROnL2IwxE9H21IRldyhpWKHO5zMEevlstyAJjrn4XEVsr9k0MorjzPSkUuDzoqiM4+iVtSCW+tTsQ9pRSA9zck84+lsWSWncU1toi3lsfhnVZGmLGCp+dGEJ19Ai91mYh0CQSCekVIVx3i5eUlIl53KF4i4mWmpUmXwxEdmWVn2RRRwKbwfGb5ZJrX2cmY5GFgxD5NVR0tJZLxMv6zXc3myAI2RRTgfFRvLgnhpEBiJ6P3slg2qPJpM1uFxF7OfZNC+MU/iy+2pSIZGUTHXyL5XZHLpogC5gWYmO2bSd8VcUhspfRbGceWqu3+roJ2EHEAACAASURBVMyl1UQlEns5kzwNjNivMVevb2zZEtIlELRYhHTVgzj4+/uTnJxsLSchIl5CvP5XWpR0jQ5mmpeRvPLzZnEaFWwer+WsME/bM84c4aoxhc94mTnyNVaKxFZ6tQ7XRLOMSMYEm7dlecxYqbnm1sQQ80B4y2PHVf20VKq3r3qsZb1T1XavdwyNjZAugaDFIaSrnsQhICCAlJQUkWoU4nVbtCjpspXy9c409seX8NDU0KuiIxDSJRDcZTRL6fL19SUgIOC6+Pj43PSxPj4++Pr61rs4eHl5Nah4+fj43Nb5+Cv8/Pzw8/MT4tXAtCjpmqC8Oq1PY4tMc0JIl0DQ4mh20mWp+O7q6sqmTZtqsGXLFtzd3W8oGpblR48ebZDoWkNFvHx8fPD09GTv3r1s3bqVjRs3snHjRnbs2IG/v/8dSeahQ4c4fPjwHcvb7Z6/u3VwfbOSrqpxUZJx0usvt61afr0K7+Nl5j6Oiqo0Yq3HX295bSxzLTa2JAnpEggEf0Gzk66goCCmTJnCU089xZAhQ3jzzTexsbHBxsaGjz/+GFdXV/z9/fHx8bFGtSzCEBwczIIFC/juu+9wd3e3RnBq97Msq05TFq+goCC2bt1Kx44d6devH2+//TZvvfUWPXv2xNHRES8vL+tzuN5zrf6cLessPz/66CN++OEH5HI53t7eN3xsfYrX3RjxalbS5SDnxSUxvLc+2SxAFkFyVPDcwmjz8om1pMtZSasJSvr/Fs9zC6PpsiCKL7apeXBqzXkUO/4SwZtrE/nb5JAbi5e9nA5zIxpfkoR0CQSCv6BZSte4cePo0aMHXl5eSKVSAgMDCQwMtKbTLKk2Hx8fPDw8rOnIoKAgvvvuOwYOHIiHhwf+/v4EBATg7e1do59FLvz9/fHy8rpjMfLy8sLf3/+G4nWnUbegoCA2bNhAu3btWLlyJWFhYSgUCn777Tc6derE8uXLCQ4Otp4TSzTQ8lwtv3t5eVnPQ1BQED4+Prz11lv897//RalUEhgYaI2qNZR03a3i1ayka0wwE9wNXL5yhRcWRV+NOo0OZnNkARnFp83pRUtUq4p7JoYg1ZXzhzKXHgujGX1Aa57c2lFh7jMykO93p1NQcY4nZ4XXeKzEXm7dpq2bznw3pH21wfL28uYf/RLSJRC0OJqldNna2tK7d28CAwMJDw8nJCSEkJAQZDIZQUFBTJ8+nffee49vv/2WwYMHM2jQILZs2cLmzZvp0qULTz75JN999x1BQUGsWLGCvn37MmTIEAYNGsT27duRy+VMnjyZd955h3fffZd//etfuLm53dHYpr+KeN2JeAUFBbFx40Y6duzImjVriI2NRaVScfDgQf75z3/y+++/o1QqWbt2rTUyOHjwYFasWIFUKiUgIIBff/2Vfv36MWTIEGxsbNi/fz/BwcG88847fP3118THx7No0SJeeOEFZs+ejZ+fX6NEvNRqtXWC8ZZMk5Su6ncOVi+t4Kig09wI9KVnWCbNqaokL+PZ+VEYy87y8z4NEjsZvZbG0P+PeHovi+XhKaFIJoTgpS7jd2Uu9zkreXhqmDnK5ajghUXR/HNxNI5H9agLTvHItDDudVbyj+Vx9P89nheXxHDvpBDaTgsjJf8U++KKaT0tDImtjB6LY+j/ezzPzItsWiUghHQJBHc9zVK6HB0dad++PSNHjmTcuHGMHTuWsWPHMnPmTGQyGaNHj+b+++/HxcUFb29vPv30UwYNGoSvry/ff/89r732Gp6envz555907dqViRMn4ufnx/Dhw3nppZfw9vbmp59+onXr1vz222/s2bOnTsaAWcpJJCUlWcXBYDCQlJR0R0IXFBTE5s2badOmDf/+97+xt7dn/PjxDBo0iLfeeguVSoWrqyvPPfcco0ePJjAwkIkTJ9K5c2d27NjBypUr6dKlC/Pnz8fLy4svv/ySPn364Onpyfvvv8+IESNYv349rVu3xtHREX9//waTrbtVvJqkdNnLaeei4ofd6bz6e3zNuxBtZWxU5ROTc5JHJocgGStl2F4NxrKztJmtYqZPJkpDOVsVuURknWB/fDH3TwnhaHIpc/yz+Gp7Gsn5lTw5S8XoAxrCjBW4xhWTUXSahNxK2sxW8WdYPv7px9kakoe68DQLAk28tTqBnPJzqAtP0XdJDB9tSiEp7xRbw/OJyDrBoFUJSGybqXgJ6RIIWhzNWrp+/vlnxowZw6hRoxg1ahTTp09HKpUyevRounfvjq+vL+Hh4fzyyy90794dT09PRo8ejY2NDXK5nGHDhtGvXz8OHz6Ml5cXrq6udO7cmblz5zJ69Gj69OmDj48PgYGBdSYNvr6+JCYm1pt0ffrpp9ja2jJu3Dj+/e9/06FDBzZu3MiMGTPo3r07Bw8eJDg4mODgYPr168ewYcP46quvGDRoEP7+/sjlcvbt20f79u1xcXHhm2++oXfv3rRu3ZoRI0YQHh7eKIPqLecvKChISNf/2OpEupwU/H2ikn3xxQAYys7SYU4EEke5VRB6LY2hpPICH21OQWIrQ6YrZ45fFg9MCmHsAS1tZoUj+TmAUfu15JWfo81sFYeTSpjjn8XQnWkk5VXy+qoENMWn+WxLKpKfA1kizcZ07CwvL41lxL4M7p8YgmRkEMtkOaTmn0IyOoijKaXM8smkz+IYdCVn+GBDCpJxwdi56dCXnOHZuRHNM9UopEsgaHE0S+mqnV5UKpUolUpkMhlSqZRRo0bRo0cP/Pz8UCqVzJo1i549e+Lp6cnIkSOxsbHB19eXzz77jE6dOjFkyBBef/11Bg8ezIABA1i0aBGjRo3in//8Z52VmLBME5SQkGAVBkt60TJ27E6kq3p6MSYmhvDwcHx9fenZsydffvklo0aNon///nh7m8erKZVKhgwZwueff867777LF198gb+/P4GBgezbt4/u3bszffp0vv76ax566CE6derEhx9+iJ+fX4OU3Lje+btbolxabROULkcFD08NRaYrB+DY6Yt0WxB1VWacFLRyViLTHWdRcDYdf4kg+/g5Xl+diMRWSpvpYTgc1iE3lBOWWUFOLen67440YrJP8tlW80TWzy+MRvJzIP/dqSaj6DRPzgrnqRnhLAw0IdWVk5BXSUJeJZJxUrzUZcz0zmTEAQ1lpy6wN76Yw4klHEgoJtRYQd+VcebCqY0tUUK6BIK7nmYpXePHj6dXr154eHgQFBSEv7+/FZlMxqhRo3jhhResclFdukaMGGGNdH311VcMGDAAHx8f/P398fDwYNKkSWzdutUaBbNISl0JV/XxXImJiXU2kH7jxo106NCBFStWoFQqCQoKws/Pj969e/P9998zZ84cnn/+eQ4cOGAd+9a3b1/s7OwYOnQor776Kv7+/igUCnbv3k3nzp1ZsmQJH330Ef/5z384dOgQTz/9NE5OTtY7GRtauMRA+ttrdZle7LU0hjWheQzbm2FOLzpXSzGOk/Lu+iS0xWdwTynlYGIJ9zrIaT0rnMisE3iklvLPRdH8d0caBSfO09blWun6ZFMKmuLT9Fgcg+SnAL5zTSc5v5LBqxNJKTjF3rginp2jYrZvJmlFp5GMk+KdVsZ0LyPD92lILTjF/VNCaVU1NkwyXlbzGJsTQroEghZHs5SusWPH8swzz7Bp0yZ2797Nzp07rVjGZnXu3BlfX19CQkKYPn06Xbt2xdPTk1GjRtGnTx8OHTrEunXreP7557G3t+fIkSOMHDmSbt26sWPHDr7//nt69ep1x9JVPaVYfVogi3DVVcmIDRs28NhjjzF9+nQOHjzI3r17mT59Op07d2blypUcOXKEnj178s033+Du7o6dnR3dunXD1dWVVatWWce2ubm58cknnzBgwAC8vb158803+eqrr4iNjcXZ2ZnWrVuzfv16652PQrjqhyYpXZaB9KODrz9Oyl5OexcVqQWnAPh6VxqSUUE8+2sU+SfO8+8tqbSfFkZAxjEuXLrC0/Mi8UsrY2FwNt+5pmMoPcMry2IJz6xgVUgu3X+JxEtdRl7FOT7dnEpexXl6L4vlpQVRpBedJq/iHH+zkxOQcYzNEQU8NycCVdYJ5gWYaD81lNEHNGyKKKDzvEiRXrxJE9IlEDQczU66AgICWLBgAX369GHw4MEMGTLEio2NDX/88QcuLi58+OGH+Pj4IJPJWLp0KR9//DGenp5s2bKF119/nU8++YSgoCBWr17NwIEDeeONN3j11VfZuXMncrkcZ2dnvvzyS7y9vW97DFNDCJflnOzatYuBAwfy2muvWc/HgAEDmD9/vjVtuHHjRt555x1sbGx46623WL16tfXuxaVLl9K/f3/eeOMN3n//fdzc3AgKCmLYsGE4ODigVCrx8PDg448/5ocffrjj+mVCuG5Ok5SuW2G8jFEHtLinlJprbjkpuMdOxneu6XikluGWXMpvyly2RBbw7vok5vmbGL43g7fWJeEaW8SDU0PpuyIOj9RSjqSU4pZUwobwfO6fFMIEdwNHkkvxSC1juSyH7VGFPPdrFOPddPhnHMNmdQJtXVQEaY5zKKEY37RjfLVDzQMTlDcvrtpUEdIlELQ4mp10eXubp6YJDAzE19f3Gqqv9/Y218jy9fW1/u3n50dAQIC1b0BAgLVqu+V3b2/vGjW87kS4bpRSrI9pgCwpRcu5sDwHixxV/7v687PU6breebD8bjmPQUFBDTKm624WLq22GUtXlSxI7Gql9Ryqqs47Ka7W0XK+znLLMgd5rb6Kq7W5qi+fUK3/BKV5YL9DVX/L8uYoXEK6BIIWSbOULosoXI/q62v3r/3Y623rRo+5E+GqrwjXrZyTm/W5lXXXOyciwlX/NGvpmqC8vug416J2v9q/1+474TYe29jiJKRLIBBUo9lKV1OloVKKLZXqdynercKl1bYA6RII6RIIBNcgpKsOsaTgaqcU62q6n5aOiHBdpdlKlyW1aCe7mi6coLyaGmxskWlOCOkSCFocQrrqUBhuVhZCRLhuTbju9giXhWYpXXYy2rqoGLgqgYF/JNBzcYx1TNXLy2Np46IS4iWkSyC4qxHSVc/CdaeFT+8GRITrWpqddDnKee2PBDxTy9iqymdrRAGqzBNM9jTw0NQwXHwyeW1VAhK7quiXZUC8pdZX7WVCzoR0CQQtECFddSRcljFcludVV4VPWzoiwnV9mqx0OVUVHLWvVffKToZf+jH2xhUj+c4PyU8BfL5VTUnlBXN1+THBV2XKUcFjM8P5v+lh3DNRyT0TQ7hnopJWE5U8Mj2Mx2eGc89EpfmuxsYWHyFdAoGgDhHSVQfCdaMxXCKleGvCJSJc19IkpctRwQNTQum3Mo5Ov0TWjEaNl+GTdoxo0wn6LYnh/kkhSEYH03ZGGO3mqPBNK+PzralIRgQxPyALf81x9ieUkJRXyUxvIx9uTCY88wSHkkrwTT+Gt7rMvI+7WbyEdAkELQ4hXXcgDDcaNO/v7y+ESwjXHdHkpMtZyf1OClbIcwGIzDrBEzPDkThdrY/1xu/xuKeUAhCgOc5MTyMdXVTcO1GJpvg03+xK5/OtqcRkn6DDjDC6Loim8OR51oXl8/XONC5ducKgVQm0nR5GTPZJZvtmXhtRu5sQ0iUQtDiahHR5eHjg6enZbPDw8LimDpdWqyUuLg4fHx/c3d0b/RibMh4eHiKl+Bc0OelyVPDI9DDicszHVHn+Ei8sir5alNRZgeTnQCTOSj7dnMJ3runE5JwkpfAULyyKJiLrBMP3ajicXMq8AJO575hg1oXlsSWygG92pqEpPk3rWSokI4LYHVvElsiCmndA3m0I6WoW6PV6QQPS2P/vO6VRpUun06FWq5FKpchksmZF9QiXTqcjLS2NkJAQgoODG/3YmjJSqRSFQiGE6y9octI1QUkreznv/JmEVHucX/yzuNciW04KnpgVzhtrE7m3Kq0oGRlEm9kqkvIqmexhJMxYwfB9Go4kl/KLvwnJCLN0rQ29Kl1phadp5xKBZHQwBxKK2RFdKKSrAaTLZMpCo8lAp9MKbsYN3qtJSUkkJCSQmJgoqGeSk5Mb/bP5TmlU6bLQ2OZ8O1iiW9WxFEIV3N75E1ylKUqXRQQk46vqcFlkyFFBh1kq1IWnWB2SZ14/XsaLS2KIzTnJf7aric+t5JtdaXy1Q0206QRtpoTS8ZdIMo+d5Q9lLt+7pmMsO8tTVdJ1JLmE3bFFQroaQLoKc01k6TVkG3WCv8Cov/a9GhUVhbe3d7PL2DRHfHx8iImJadbXkCYhXYLmh0ajJceoozhbf1sUmQQ3I9+ogUtn6uSiWuclI64nQXYyXloai2/aMdwSinGLLyZIc5wfdqdz/5QQAjXH+HK7GsmP/szyycQvw3ynY17FOeYFZPHp5lSUhgrazFYhGRPMhvB8flfkCum6jnRdvnyFoTvSeH1lPK+vTrhj/rkskr5LVfRbGiG4EYtUfPZnNBFJGeQYa17s9Xo9MTEx+Pj44OkpxvLWJ15eXs1evIR0CW6LLIMOzwg1a3ySWOOfLKhjVnkncDg+j4uXrzQ96boR9nLunxxK+7kRtJ8bwZOzVNbJp/8+JZT7JoXw6so43lqXyAOTQmjnEkFyfiWTPY3c62ju06pqW/dPCeX+ySGNLz5NULouXb5COxcVkpFBSGyld46dHImdQnBT5Ehs5bzxWyQxyTcXr+Z4Y1hzormLl5AuwW1Rlqvn680xSIZLkYyXC+oaW/PPqV5G7tS7GnQaoKo6XFasKUg5Ens53+5KJ/v4WdaH5+OWVMKeuCIenxxilrPqJShEgdSbStezv0aZRaCxj/FuwlmJxM4sXtEpGeRkXr3YW4aWCPFqePES0iW4KyjN0TNseyySceKDv95wVCCxl1WJ1+2bV5OZ8Lqq6nyPxTG8uS6JIWsS+fuUUHMKcWITON9NDSFdTRM7BW/+Fkl08s3FS6Qa65fmOsZLSJfgthDS1UBUidcUT+NtpxobVLoc5UhszQPpJbbSa+tsOSvNg/CrBtvXW/HTljDBtpCupomzEomdgiGWiJdINTYazTHVKKRLcFsI6WpAnBRI7OVM8zJyOwGvBpMuWynPLYxmU0QBu6IL2RdfzCebU5GMkzbo+brHUc4baxLpODeieVe0F9LVtLGTY/NbJFG1xniJVGPjildjXxv/CiFdgttCSFcD42gWr6le/3vEq0HuXnRU8NKSGOJyTjLZXU/feZF8vU2NsewMk48azMfvIDfPwTgm+KqIOSqQjJWa/x4TbD5OZ4U5WmYrvZp2tETPnJXm/pbtWKTKtmrZTwG8sCia9KLTdJ4faX5MY//vbhchXU2bqoiXzW8Rf5lqFOJVvzSnVKOQLsFtIaSrEagSl/811Vjndbpsa9XpmqBEYivFI7WUXTGFZvmxlyMZK+XzrWoWS7OR2Mt5Zl4Ec/yyWBiczfC9GUjs5HSYG8HI/RqG781gYXA2Dof13DMxhP9sV/PZ1tSqkhEKPtqUwkebUpBMUDLeTcfC4Gyme2fSelY4EicFX25TM8HdwEK/LPbEF3PmwmUWB2fTyklhlrjG/t/d5rkW0tXEqZZqjE3ViFRjI9JcUo1CugS3hZCuRqIq1TjV09jg0tXKTs7765MJyDjObN9qFekd5Dz/axTqwlN8uU1tFjLL48bLkNjL6TwvkkDNcXbHFvHj1lSSCyqZcFTPgN/juXz5CkdTSvlxqxpdyRlsD2px8c0kPvck99rJuXeSkrSi08wLMOHil8WhpBI+WZXAUmkOR5NLefbXKBLyKjGWneXH3en84m+i7PQF7Nx0tHJsxnW+hHQ1H+wUfLAmiqQ0c5HZ6p+Ver2e2NhYMbheiBdarZAuwW0ipKsRcTTXDZrtm9Vw0uWo4JFpYcTlVs29eK7a3Iv2cl5ZEUda0WkGr068Onh+otK8/gd/ftidgenYWR6bGY7kpwDGHNQSm3OSb3aloSs9w8ebUpD8FMAKeQ5744p5YFIIGUWn+WRTKj0Xx5CUV8l/tqtRF57m1yATn6xNxOGwnktXrjB0ZxohhgpcfLOQDPWhz8o4TMfP0WV+ZE0BbG4I6Wo+OCuR2Cv4cG00yWki4tWY1E41Nva1sjZCugS3hZCuRsZRwT1OChYFZTeMdDkruN9ZwXJZDgAxOSdpPTPcfLeis5IHJ4WgyjrBqP2aq2Ox7OU8+2sU9vs1LAgwEZdTyQNTQpHYShmyJpHk/FNM8jQQm1PJP5bHIrGVsig4G/+MY9w3OQT3lFJm+mSyUp7LjuhC+q2Mw1h2lnn+JhYGZfOLfxYTjurpsTgaVWYFE931SIYF8MbaRHLKz9FrSYyQrtpURUqv4VZvOHC8yV2hlnF7jX3eaj/X66WXrevM59laU+5G/W/pPWJ+/EdV4pUtBtc3Gk054iWkqxY5Rh0FWTp0Oi2a6idKqyUvU0d+lq7G8puRl6kjN/P2/tkarRa9zrwNve7G/XQ6LQVZOrIMt35cdYGQriaAg4J7HBUsDL65eNXZmC5HBQ9MCWXgHwnmQerVL762Uv4Mz0euL+deB7m5WvqYYNar8knIP8XYg1rz3IpzIpD86I/DYT0x2Sf57041yfmn6LcyDomtlCXSbAIyjiFxkPPBxhQScivRFp9m6M40nvklEk3JaQb+Ho/kK28kwwN4YkYYj88KJyb7JJM9DEiGBfDWn0nkVpyj0y8RZgFs7P/Tbf9/61i6nJU8Mj2MrguieGV5LH1XxtF3ZRyvLIvl4Wlht1Qv7bGZ4fzf9LBrU7ZOCp6eF0mPxTGNf96qnutDU0Pp+EuEWfSrH6+Tgtazwum9LJYHpoTSzkVF61nh/G1yCE/Pi+TBqaF3KF4KPlkbfU2qUdTxEuKl1QrpuvqGqPp5IETNluAU0jK0VtnRaLVkG3UcCktlS3AKhptIUPVtbQxKZps0pcayW0Wv05KSruFQqJrkNM11xcuoN/dzVaQijU3/y+OqS+pMuix3qo2ruoNtrLTuvy07KcwX3/qq2+RgHjR+TbRgotK8bFzVvi21q5wUZglyVNx5UdCqb+m/3iTiVacD6Z2q/l+16285Knh0aih+6cfYH1+M/a401oXmkZRfySd/JvHkjDC81GXI9eXY781AXXiK0Qc0DFqVQOGJ87z6ezyScVJWh+YRkVVBKycFj08PJ+f4OY6fvlAVIZOxKDib+NyT2Lums1SajSqrgj7LYkkpOIWLbyaSYQH0XRlH2ekLLAg08cTU0OZbr6supasqCmN/WEfF2YscSS5lV3Qhu6IK8VKXIdOV86SlUO0Epfl9aZkVwLnqb2clXuoyHI7oza/p6n1spfy4J4N5AaZrH2/ZhmV5daGpKphb4/V1K7MR1D6+2uvtZPxnuxp96RkGrUowv2Ytfe1kvL46gVXKXLouiCLEUM6f4fm8uCSG0tMX+GBjyp2VOXFS1kg13myMl4h43X3iJaSrCp3WLFbzjibywJQQAmLSrFEqo15HklrDC7+G8+8/oyk06cnLMkexso06q1CZDOa/8zJ1mAw6NlWTLoPOHEXLrYp+ZerNkSmD3rxfk+HqOoNOS26mjjX+ybyyxHw7sqnWG9eoN/dZ7p3EfU4KlnklWY/Fchz/q+g1uHQ5mMP7Dkd0bIksYHNEARtU+fRaGlN3EYqqb7WTPAx0+zWq7oXOQU6/lXEslebQ3TLGybLOXk7fFXGsUubRYW4EYw9qcTqq55l5kawOzTOn1GrLy+3gKOceJ+UNU40NOffiA1NCsXPTMc07k8meBrouiDLv215OOxcVDof1TPPO5IttaiTjZTw1J4KhO9LME107yhnwezwfbUqhVZWw2qxJ5N9bUquep/ki+71rOtO8M5niaTSfc3s5X25T8/Ky2Kr5H0P4crsap6N6npytEtI1QWmVrqmeRkoqL/DUHBWSUcFIRgXx2IxwCk6cZ1NEAfc7K6x3pj4yPcw8Y4CDHImDnP+bHkZ2+Tlm+2Zyn/3Vu1cfnBpqjg45yK+mc6veB49MDzMLc9U0T/dOCqkpSc4K7pmotKb57p0UwiPTw8zzbt5osvOqz42Hp4Xx0NSr267Rx07G1zvTyCk/yxtrE3lkQsjV47CI3phgHpsRTlJeJVsjC3lpaQynL1zm4813KF3W863go7XRJKVrrlvHS4hXw4uXkK4mhsmgIzZFQ8+FKpz3xZNdJV1FJh1bglN4fEYoqsQM1Bla9spScJWn4B+dhslg7qeMT0cWl46rPBXfqDRiUjKIS9Vg0Ju37RWhZqcshf2KVBLUGnIydcSmZCCLSyc4Np1dshTcVWr0Wi3JaRqGborhmTlhbAmuipZVRbIMOi1JaRqGbY+lzYxQ7nVSsMY/2SpaPpFpeKjUpGdcfUyTky4nBQ9PUHIgoZhQYwUfbEhm8Io4/gzLp6TyAm+sSjBHhsYGX63hZClTMK5anSaHaimR6nWgLGULbGW8vS6JksoLvLjEPG5I4qy4ttbT9SJOtfd1vfSLnYzvXNOpPHeZ11bFIxkWcPW4qi5cz8+P4pHpocj15YRnnqD/b/EAfLVdbT6OurhAO8ppdYOIV4NJ10Tl1Sje9c7Zjep0WSKBE83ns4Zwj5dd7Wu5ONf+n0yoWmbZV/U+zVW4qs5XXUvXZA8DhSfOm7+A2MuROChoNVGJe0opxrKzPDwtjDaTQ/BMLeNIcinhmSewP6zjgUkhzPbNpPLcJZLzTzH4jwSWyXJQZVbgl3GMeYEmlslycEsqMcv0bBVBmmMcSSwhynQCxyN67neQcyChmMXB2ebXva2MT7akkphXSTsXFe+tTyYq6wRHkkoIM1aYb66o/eXLUc6LS2LwTTuGV1oZQZrjzPDORDK+ViTbTsaX29RkHTtLkOY47qmlqLJOYHtIh2REIJ9tTUWVWUGPxTGEZ1awKaKAXktjOHHukrk0SV0U9K0Sr4/XRpGYpqkxBKS2eIlUY/3SlOp4CemqRXG2nqkH4+n5q4rYXf+wcQAAIABJREFU1AyyDOZI1PdbY3l/TRTK+HQ+XBvFp6si+WlLDC8tVPG7TzIZGi2vrYig27xwvt8Sg9PeOF5dEcG/10dj0GuZdTiRwb9FMG5HLO/8Fsk7q6JITtOwyjeJJ2eE8t7qKIZtjaHLvHAmH4gnIDqNgSsieGJqCCN3xpGcpsGoN79Qsgw6/KPTsN0dx9wjiTw9N5yVPknkVI3/mn80kWkHE0hJ02DQ18+L646ky9l8MZ3mZeTY6Yu0nqWyphcfnBSCZ2opGyMKaDMrnO9d0/neNZ2ZPpm8uTYRiaOCz7amMtMnk+neRp6ZF2n+wLWX025OBBPdDczyzWSyp5GuC6JoPT2M7VGFnDx7id+VuTw0KQTJBCU/7c1glm8mUz2NPDI97NoLWFXq4svtauu+nlsYfe1FwE7Gl9vNpQ5meBuZ6WlgimfVcY2V0nl+FN/uSOPJ2eEcTSnFL/0YfVbEUXH2ojmCU5fV2qsGOS+sJV5NZu5Fwf9GPUlXQcV52s9RIRltjnR1XRBF8cnz/BGSx0PTQgk1lHM4qZR7HeS8viqBnOPnsD+s535nBbqSM0zxNHKvvRylvpzjpy/wz9/ieGiCki2RBSTlV/LU9DBUmSc4mFDCveNlfLgxmeKT5/lqu5rJnkZS8itpUxWh2p9QjEJfTq8lMZRUXmCZLJt7baV875pOfsU5+v8WdzV6XFVzLSb7JFLtcR6bHMrzC6PJqzjHmAMas6BbBsWPk/LpllQuXb7C3vhiHpsUwneu6Zw8d5GXlsbwza50Ks9dpPeyWMKM9SRdlvNuJ+e91VHEqzVkGmp+jup0OhHxaiCaSqpRSFctTEYd3pFptJsdylKvJI7l6lHGp/PML+Gs80/mp+2xDN0cw4kCA/lZer7eFMMrS1QkqjX0WxrBq8sjqcg3kK7R8vpvEXy2PhpVUgbPzw9nf0gql0uNeEem0XpGKCt9kljtn8y9E5TsVaZytsjIIs8k2ruEEZaQzkKPJF6u2nb1cQEarTm9eCLfQGBMOu1mh7HC52p6MTfTnOJssulFBzmPzggjOvsEBxNLao7rcJDTdraKp2erGPhHApcuXyE+t5IpnkbeXZ/M/7N33uFRVN8fHsGuiAqiNMGCSCcgqIhKESWgoqCCimABpFcR6SAdRaT3EnpCCRDSk92UTXZTN31bsuk9hPSEEPL+/pjdJSEJakiB72/v83weyOzcO7OzU94559xzljnEkpxTwjzbaLZ7JhGclM/zi73p9LsCv/g8rJXpjD8Yjo0yA3lsLm9uDWKDWzzZhTdY5hBLs0Xe7PFJRn+1mKmn1ZwLzcRZnc1TlWJ/xFlYq53iSMm9zq+XotngHk9kWiFdjBYC43eZ7s7HB8LJKy4jNDmfORd0XAjNJDAhj6fmevDZwXAAemwO4HRwev1C11wPhJlSms6WstopjpIbN83QdT+rHqBr9nkdRaU3uRCWyTFFCpfCMglIyON4QBrNZknpsSmAkrKbDN0dynMLvGi+0At37TVxcsM0d9RpRcw6H40w1R2P6BwuR2SJ4090YpcsGXftNUYdiiC3uIyB25U8t9CLpxfLCEjI42RQOq2W+5Cae53RhyN5cIEnyTklfH0sigknVSReK6bH5gCeW+jFC0t8UKcXcliRequqwAwJA7YFk5FfyrfHo2i5wJNnF3hyxC8VTUYhLZf58MJSH15Y7kvLX70YayWC2/s7QxB+cuWh+Z5IddfY6B7PN8ejSM29TreNDQBd0yR8uF1OcA3QZZ7V+P8LvMzQdZu0WtGSNHSbAssdCtLidKw4H0y3dT4EhqvwD1NxyCWMX88E0XWdD91Xy+ix3ofgCDVv/uHL2AP+xMeIFqdBW+WM2KVAq9Fw1iuCA05hDPlbQZ91PjyzyJOV55VstQ/lhWXeKCPUpMRqOewWTvuVMq7II1lxXknXdT7IlCpio6ueHAl6LZd9I6tAV0Mcp7uCrhkSOvwuJy3vOtu9k8TA04qugZkShEmu9NsSRFZhKWtc4hC+d+bZJTIyC0r58bRanL021h4bZQZH/dMYtDOE04HpNJ3vQbvfvJl4UkVp2U0+2hvGm1uDic8upu0KOa+v96e49CYDtgUjjLZD+N6ZoMR8Nron3Lq5zxLBLyX3OtPOasVtjXfkXEgGF8MzxfV+EmfnCROdGLEvjKLSm0yz0SJ868hzS33QXy1mko0Gy31hXC28QdeN/pxpCOia64Ew1Y1Hf/FCHpfbONBlLMnzX5OS/uxWfYqHqW7/P3NS1QN0zbeNJjO/lOF7Q+m+zJd98hQA0Yr7jSPvbldy42Y5Tupszganc1aZwdmQDNY6x/HEr95EpRUy50I0wjR3PKNzOBuSKY79owu7ZMm4abMZaxVJyY2bXAzP4mxwBjZKUaud4mi20ItTQekcC0jjx9NqIlILeHmVnN2yZNLzSzkfmsFZZQZngtM5F5LBjHPaW+fENHdmnNNRWFqGo+qqaf+slRns9E5iqb2esyHi/v4lSWDBpWjkcbm0WyVHmCEG0tsoM7AKSGPCSRUp9Q1dhmz1I3cqUEaoiY2u/l5qjvFqWDW2q9EMXdUoPkbLIbdwXlwp47I8kjc3+zL/dBDXknTMPRVE9zUyph0N4IRHOEvPBfP6GhlB4SJ0fbnf32SVen+rnFG7/XDxj6T3Bl+Gb5Wz4HQQ1l4RdF/vyyKbYLbah9J6mTeKUBUpsVr2uYTx4koZDor/behqu8qXuKvFIhDcPoPJCF1/BZGWd52Z57UIU9z47FAEeSU3OOqfxnqnONbax6KIyyUgIY8nFnozwSqSvz0TSc69zpngDPJKyvj8cASDd4aQkF1C943+TLbWkFN0gx1eSax3jmONYyzRmUWcC8m85Tqc5s63x6PIKb7BYb9U1jvFsc5ej2d0Dur0Qr6yimK9SzzrXeP57VI082yjCUsuECcATHNHmCXF2nBz//xQBJkFpQ0HXTMlPDzXg60eiZQZSgU1GHQZfscxRyL59XKMYdbbv+kn5cH5nnx7XMW7O5QVZsx5IMySMvmMhiG7QkT3aWODUEOqHt2LbVf6imA81R2HqKuo0wt5br4n3TcFAPDGliDxxWKaOAtwzOEImswW3YszzomzFz2jczgfmimOb4Aud202XxyJ5HpZOe1Wyk3xjeOsohhtiGEcujuUlNzrJOeILk3hB2c2uMYTn10iFimf4oow1Y0JJ1ViwfSZhnvDdHc+OxhBTtENcfkk8cXn3e1KfrbRiJMvjOfONHe+OBpBTFYxFn8EIvzkwmMLvfCPz2OZg56vj9WzpcsUSG/IUl/N/dsMXo2nxrR4maGrGul1WsKj1PTd5MsHWxV0X++DvSISrUbDC8u8mXs6EHJjKU2LYfRePzqu8iY0snroGr3Hj/WXQmi+yAtpcBTkxXLRJ4Lmi7xYYbB01QRdi88G0229T7WlJe4EXfe8e3G2lIfmenA2JANtRpE4o8l4Y53iyg+n1ZzwT+PNrcGk5JQw+4IOYYob351QUVR6k6X2er48EM6YwxF8diiCD/8OZpxVFPnXy/jpjJp3/gikxVIfsgpL+eJIBejaFMD8i9HkFN1g6lkNXx0M57ODEYw5Esn7O0JupXyY5s6kMxoKrpeZtvXF4QhGHQzns0MR9N8axFdHI/nqaCSf7All6lktwYn5hvgy8Y36YlgWB+QpjGpI6JohoclcD7Z7JTdOTNd0d9qvkhOTVQzAqIPht6yH0yqkBakQd2NME/LYQi+CE/NZ5xpnyPHlZpqM0O+vIDqsNsyCnC2tXAR7piGZpXGsqfdxMtTbNVOMU6xL6Fp6RU9R6U1eXetnSozaea0fOcU3kMbk0HG1gpMBacj0uby6WsGXhyPIKb7BCodYhOnuxF0t4Q9JIs/+4kVQYj5Oqmxx/B9cOOKfijq9kGfme3A+NAPHqKu8usyH706oKLxexsJLMQiTXWmz3AdVWiGAeA1McqXTWj9isoo5HZzOq8t9mXNeR2ZBKQP/Dr7lzp8t5ZEFYlqS4MR8+mwOYMi2YNLyrjP3vM5kzRKhy40xRyIBOKvMoNNKX5ba64nPLqbNMh++Pa6ipOwmPTcHEpKUz/HAdHpsFoHz04PhdzfBxWDhGrFTUW3KiDvJnMfrfx+8zNBVg9LidPx5JQThBzdG7vIjIUZLjE7DV/v9eXGFjE2XxGD1Fou9aL3MG4+gKLqt82GEYV2NRkOfTb58sE2BrU8EbZZ5M3avP9vtQvhsjz9Pzfdg+vFANl0O4bFfPJGHqEiN1bLTMZTmi7ywk0eywzGUlku8WXFeSaRKUyUPV6Jei60skocXeLLukpIEA2gdk4RXyTV2T0GX4SE8ZLuSgutlzLWNFh+oP7jQYbWc5Jzr7Fek0ntzAGl515ljK75ZP7fMh7S866xwjEX42gHhRxdslKLr45dLMRSV3hRdEWPsWHJFb3rwf7gnlOSc67RZ6cvLaxQUl95k3LEohK+u0GSWFJk+h0V2eoRphu8yS8Ira/1IzrnO785xCOMdECY4cSwgjT2+KeI2jLMqf3Tm4wPhFF4vY/pZLcJ4R7ptDCA9/zojDoQzfG8Y14pE96K1Mh0nlQhdeSU3+LQuoWuGhIfneLDdK4nbW51Bl7GszyTX6lN6THPj2+MqAhPy8Ii+xlH/NISpbjy4wJM3tgQxfG8YE0+qeGWtH48bYm4mnlLT/88ghLkeOKuz2S9PYeLxqAppJKR0Xu9P7z8CsdwXJk77nyVFmCVl4HYlL/2uQJgt5bNDEUw8pWbQzhAR8O7Xeou3QVeH3xUUXq8j6JopZfShCE4EpPHCct9bLxk/u2G5LwwXdTZjDkfQdLo7Wz2TOB2cjm1YJpOs1WLh8NlSFtnpOR+ayehDEax1iWfxFb04xhQ3pp/TssM7CWGGhAfneXBQkcLpoHQuhmfx/Sn1razvU92YaqPhqH+a+MI1W0xT0efPQM6FZHA6KJ0rkVfp+2dgVfiZKaHlMh92y5KxVmZwLjSTCSdV4vk9p7K1/K2/g7HyT+OgPJXTwemcD80Uz48fXRiyK4STQWm8uFrBZvcEZp7X8eJqOWdDMkUrX20rGRgC50fsrL4O438FL7PFq37VGCWDzNBVg/Q6Db4hKpadV2InjyRGpyU2WkzVsPRsMDOsAll8NhgrSTibLofgGRzFdodQDruHEaMTx9jpFMo+lzD0Og3WXhHMPh7I9CMBWEnCOS4VwcjJL5I1tkpCI0Wfv1tAFOsuhuAfpkKl1rDqgpIFp4MIjlARcxtAxeg0yENUrLZV4qCIRK8T8439ZR/CuotKwqPU9ZYwtU7ydP3sxujDEajTizggT2G7JJGQ5HyOB6bx0HR3LP4I5GphqQhl00XryJdHI4m5Wsx+eQq2YZnYRWbRdrGM11criEor5LBfKtvdEnCMukrR9TK+O6HixdUKEnNKOBWUTvPFMqad1RJ/rYTtnkl4x+SwX57C84u8K7s4Z0gYaxVFzNViDvulciY4A4n2Gq1/866ci2u6O6MOhlNwvYyQ5Hy2eyTiG5vLXp9kmkxx49OD4eSXlNFtkz/nQjJwUWdj8WcghaVloiWoLqBrpoSH5nqyrRrgqlPomi6h+8YA/pQm8vWxKMPxMhyzWWK+JY/oayxziKXvliD0WcW8vsGfhxZ4EpCQx9WCUta6xDNyfxhH/dNwjLrK6it6FHG5jD4cgV1EFik5Jay+oicoMZ/DfqkIk13xjslhm2cSntE54kN+ihvdNvoTk1nEZ4ciWO4Qi7vuGr+d1+EZncOPp9S3LGz3s2aIecuu3yi/e+iqcK5UC6WG9CrGXGjGQuXCdHdxO3NuufiE6e4mUDLtg6Hsk+m432mMitubU82+GfvUlFNvVoWxZ0hqPg6zDIl8p1cY02g1M35mzEtmLP9jTKJam6TFBguXyaVYC+DSaMyuxobW7RYvM3Q1kowzBDPidcTHiPlVjMlM0+N1ZCToSIvTkaTXkhanI0YnluNJ0t/KxZISK5YN0mhEq1RGgtjP6P5L0ovle9LjdWLZIbUGfbQ4XrRWDOpPj9eRHq9Dd1tZIs1t+1MxB0xyrKGUUT0enzrLSD/VjZfWKBi2J5SP9oYxcLvSdHN/4ldvemwKoNUyn1tZsWeIVqgP94QyZFeImLxxujvCNHfarvRl2O5QPtoXRrtVcrpu9Bf7zpLSdaM/Q3eHipaSGRK6bwrgo71holvRMG7lG6i4rNM6P4btCWXo7lCxVMp098o35DlSnl4so8sGf3puDjB9h6bzPRGmu/PMYhm9Ngfy6EIvXvpdwatr/XhsoRe9NgfS/DfZ3eeRmimh6dzqLVx1Cl2zpDzxi5hrDCCroFS0MhkfjDMlvLRGQWRqAa+t9UP4wZnAhDzmXdTRZI4HwYn5bJEmInzjwBdHI9FkFIrFryc60W2DP8P2hOKmyeZEYBrCeEcG7QwhNLmAlktkuGqymWKtYdo5LWHJBQhT3VjpGIezOptPDoSTmFPC54ci6LhYxjQbLVkFpXQxJE1tVGi6W82Q8Ikh7UGdQZdZ9SNj0PwORbUFr2sLXmZXY+OAV326Gs3QZVatVKe1F41vyEYZ3zSNb8sVy+sYzPemdSsmNq04jjE79qwKb+jGN/w5Ff42bq/GG6l79duqKNNb/x2+gxHsjG/Ud9ruv9VMCY/MvTNw1Rl0zZby6DxPTgamA6C/WiwGPRuD26e6scEtgYTsYmZZa5h9VotndA4hyfl0WK3ALy6Pb49HIXzjyFJ7PT76HB6YZ3AtTXGjyXwP3LXXWO6gR/jZjTe2BBGVVojFn4HYR15l4eUYXl4tR5mYz4d7QrGPzOLHU2q+PR5Fev51DspTOOqXyh6fZHZ6J5sy1Tf6w/huNNWdLdLEKr+nGbruMd2WBLW2Fq7qZHY1/u+Blxm6zKqVzAWvG1kzJTw075+Bq86ga64HwgwJLZf6MPGkSqxnZ4TG2VKa/eKFZ/Q1TgSmMfecjnlntWxyTyCr4AZfHIlEHpvLdydUCN868sulaMJSCmg6zxNhiptYZ3GxDDftNVY5xSL87MZbW4OJSiuk9x8idC2z1yNMcuWwIpWo1AJUaYU8stCLr45GokorFGeufedoqDBQQ/mY+0kzJTz1qzfKpHwzdN3Lmu1hCJr3IzSqboFLozHn8Wps8KqPZ6cZusyqlczQ1YiaKeGhOR7s8E6u8kCuV+ia5yECzWTXyjFTU9yYaiMWUn52iQ/CD87iDMQZUryicwhNyicmq4ifTmsQvnem96YAAhPzWecSz9CtwVwMy2K+bTSe0TlsloglYt7dpiQ17zpvbAlCFpMrlo6Z5MrI/WKy2ZNB6QizpLRYIsNFnc3ZkAyGbglir08yJwLTabvCt7KF9H7Tz+Js3dtdi2bouodUwaV4NzFc/ySzq7FhVd95vMzQZVatZIauRtK/dCnWC3TVpGliVv7f7Awz2YwWsGnujNwfLuYzs4u5NStshoS+W4LY45PCblkyi+xiePxXb6af1Yo5kmZI6Pi7gqX2etqtlDPVRsvwvWFinN8ibza5J4gz26aLhZjbrJSz3TOJ3bJktnsm8epaP3G2XWP/VrXVdHea/ybDPz6v2t/TDF33gOpgluJ/lVarNVu8GkjG41sf4GWGLrNqJTN0NYJmilPx/wtwNQh0zRMfQFWm9xsLWE+pkJ+rYvzdZNdbn82RGjLPGyYqzDIUJZ992/I50qqFtGcZimxPcRP/vZ8tXLPEItRbq4nlMkPXPSKjS3GHol5cijWp4qxGe3t7M3g1AHjVh6vRDF1m1Upm6GpgzRTzcO3w/m/A1SDQZVad/cbCdHfmXYzmZnlVt6IZuu4BVSjt01AWrtt1t+kkrly5wpUrVxodau4H1UceLzN0mVUrmaGrAWUo7VMb4DJD130gwwzXh+Z4sNwh1lSo3Axd95huA664RgAujebuguuvXLmCs7MzLi4u2NvbNzrU3A+qaPHSarV37Wo0Q5dZtZIZuhpIptI+tQMuM3Tdg5pjSEA6QyK6VmdJeePPQGyUGf/q9yy7WU6LJTKE710MLtW71FSJWI3BrJo1VdSInX6ENZKF63ZVtHj9m+B6BwcHbG1tsbS0pFevXhw7dgwnJ6dGh5r7QXUZ42WGLrNqpcwEHd8dCkCYIrmV+8qsutUMCY/MkdbawmVs++UpCN84iOV7zGpcTXZFmC6hyTxP2qzwZdieUHZ5J3Ot6MY//5CGdrO8nCnWGj7dG8anB8PvWh9s92PIVjlD/laYVZO2yJlwKICg8HsDuIz6L65GFxcX/vrrL9q2bUurVq2YPXs2zs7OXL58GQcHByQSCe7u7nh4eODh4YGjoyOXL1/G2dnZ9JlUKkUqlZpiylxdXZFIJEilUtzd3bGzs8PZ2dk0RsVlEomkkuVIIpGYoM/V1dXUx8XFpdEhqybwqotZjWboMqtWykzQMf5QAMJkiRhYalbdapaUR+d7suMuLFzGpkovZLskge1eSWY1snZ4J3HULw3bsEyCEqvm4GqMdjUlnqQYNSmGShZmVaM4HcmxWqJ1jX/vraj/UjLI1dWVTz75hOHDhzNnzhz69u2Lvb09zs7OHDx4kClTpjBt2jQsLS0ZPnw4R48excPDgz/++IMpU6YwdepULC0t+eabb7C1tcXJyYnffvuNn3/+mdGjR/PTTz/h6OjItm3bGD58OJaWlsyaNQupVMrvv//OlClTuHLlisniNnnyZDZu3IhUKmXJkiVYWlpiaWnJmjVrcHZ2bnTIuhN4+fn5maHLrIZVtE6DV3AUl2QRXPI1q65l6x1GoD6zUR7C5vb/q8XGxqJSqRr9nmJW7VQRvBwcHKoFLwcHB06dOkWnTp34/fffOXz4MK1bt2bNmjX4+Pjw559/IggCAwcOZMuWLXz66ad06dKFK1euMGPGDARBYMyYMfz9998MGDCAkSNHYm9vz/Dhw3n22Wf59ddf2bZtGxs2bKBr167Mnj2bDRs20KVLF6ZMmcKOHTt44YUX2L17N97e3vz9998888wz7Nq1i8WLF9OqVStWrFjBkiVL6N69O7/99huurq6NDlnVyRhc7+fnV6vfywxdZtVKao2G2GgtiXqz6kNxOhXl1wsb5SFsbv+/mhm6/jcUHR2Nj49PtdDl4eHBzz//zOuvv467uzteXl689dZbfPjhh8hkMv766y9atGjB33//jVwu5+LFi3Tp0oVffvmF+fPn8/LLL3P27Fnkcjl79uyhXbt2bN26lTFjxjBw4EBcXFyQyWQMGjSIIUOGIJFIkMvlrF27lhdeeIH9+/czePBgJk6ciJ+fH5MmTeKdd97B2toaCwsLZs2aRXBwMIGBgUybNo3evXvj4OBwzwb7G8ErJCTkP89qNEOXWWbdg4qKiiI//95wP5nb/3YzQ9f9L51OR2hoKC4uLlWgywgv/fv35/nnn+fDDz/kww8/5OWXX6Zdu3bY2NiwdetWLCwsOH78OM7Ozjg7OzNs2DAmTpzIL7/8wtChQ3FwcMDJyQkbGxs6d+7MypUrGTNmDB9++CEuLi7Y2trSrVs3pkyZgouLC66uruzZs4c2bdqYLFp9+/bl9OnT9O/fn/nz53P69GnatWtH//79+eijjxg2bBj9+vWjR48enDhx4p4M9L98+TKXL1/Gy8sLlUr1n92MZugyy6x7UGboMreGambour8VHR1NaGgoTk5O1c5idHNz46+//qJNmzYsX76cXbt2sX37drZs2ULHjh1ZtGgRO3bsoHfv3pw6dQoXFxecnJzo3bs3P/74IwsWLGDIkCEmkDp+/DitW7dm7dq1jBkzhmHDhuHk5ISjoyMWFhZ8/fXXuLu7I5FI2LVrF+3bt2f//v1YW1vTtWtXvv/+e15//XVOnjzJsWPHaNWqFTNnzmTv3r1s27aNP/74g1WrVnH+/Pl7ztJlBC5vb280Gk2t4rrM0GWWWfegzNBlbg3VzNB1/8po4XJycqrWrWhvb4+joyMjRoygX79+ODo64u7ujqurK56enowdO5auXbuyceNGmjdvzvz58/H19WXNmjW0bt2affv2MXfuXJ5++ml27NiBTCbjhx9+oEuXLlhbWzNy5EiGDBmCg4MDUqmUH3/8kVdeeYUTJ07g6enJqFGj6N27N5cuXcLDw4NRo0bx8MMPM3LkSCQSCfb29gwZMoQBAwbg4eGBp6cnI0aMYPDgwVy+fPmegq66AC6NxgxdZpl1T8oMXebWUM0MXfenKgJXTXm6HB0dOXXqFG3btmXevHmmtA1GC9jWrVvp1KkT48eP55VXXqFPnz4MHTqUHj16sGTJEmQyGbNnz6ZNmza89957DB48mJ49e3L48GFcXV0ZNWoUI0eOxMHBAUdHRy5cuMDXX39Njx49eO+993jjjTc4duwYrq6uuLi4sH79elq3bs3vv/+Oq6srzs7OnDlzhgEDBvD2228zcOBAPvjgA6ysrO4p1+Lly5e5dOnSXQOXRmOGLrPuRlqtWfWkKJWK/IKCRnkIm9v/rxYbF4dKrW70c/6+UGPfcw36N8BlZ2dnSpx64sQJU/D37etcvHiR1atX06VLF7Zu3cqhQ4c4duwYLi4uuLu7M23aNPr168eJEyfYv38/p0+fNs0stLGxwcbGphLkXblyhYMHD7Jv3z7OnTtXKc7s8uXLWFtbV/rb2dmZixcvsm/fPvbt24etre09lTKiooVLrVbfdTkgM3SZVTup1WhiYtDGx5tVD1Lp9RSWlf3jA/Pm9eukHT1KzNKl6KtRzNKlJP71F6WZ1aefyPX1rbZfReUqFNX2vZ6eTsKff95x22nHjnGztLRq5/JyMi9cuGPf+LVrKY6NrXbbhZGRxK5cWeM+xyxdSraLS7V9ywoKSNm7947bTtq1ixu5udX2z3Zzq7GvfulSYpcvpyAsrNq+92KLS01FHRvb6Of8faHY2EaHr4oxXP+2BJCTk1O1rrorV67g6enJ5s2b6dixI4d/sukXAAAgAElEQVQOHUIikZjgyc3NjSlTptC7d28cHR1xcXHB0dHR1N/BwQEHB4dKY9rb2+Pk5ISTk1OVz65cuWIau+JyY5B+dX3uFeDSaO7OwmWUGbrMqpV0qakEL1mCrE8ffM2qc8ksLFAOG0Z+cPAdH5hlubkEdO+OnSDgUI2uCAKeTZuSHx5e/QN39WrsBQH7avoal8WvX19t37zgYKSGbVS3bTtBINDCgrLq3KTl5YSNHHnH/XYTBLKdnavddpqVFc417Lexv2by5Gr7lqSk4Nu6dY3bthMEZC1aUBwfX21/7YwZNX5ne0HAURBIOXiw2r6Vjl9AAKHDhhHYrx/KAQMIbiTJ+/bFx8Ki0c/5e1k+ffrg278/Yfv3o01JQVNHxY//8333X1q4/ovs7e2xsbFhx44dnD9/vhIQ2dvbc+zYMXbv3t3oAPS/AFwajRm6zKqldFlZ+I8di5sgIDWrXuQmCPh3705BaGiND+6bxcXEr11L+BdfEFmNwr/4At3MmZQkJ1fb/6qDAxFffEFENX2Ny646OVUPL4mJaKdPv+O24zds4GZJSdXO5eUk7959x77q77+nMCqqemDx8yPq66+r3W9j//RTp6rteyMnB/3ixXfcdsyvv1J69Wq1/dOtrWvsG/HFF0SOHUuOj0+1fSu2myUlJG3fjlQQcBEE3A2/eUNLcg+c6/e6JAZ5tWpF2MGDaJOTGxy86gO4jHBhb2+Pq6trFQvU5cuXTRauxoaghgauuorhul1m6DKrVtJlZhIwYQISQcCjDiQxPHTcDf+vizErSlrLcd2rUcVxJP/wufRfjHEnuQkCfp07k69U/uND3Nzu7VZWUECmrW0VmEs7ehSvZs3q5byv6Tq4XdJ63l59f6//eq+p7feVCgJeLVs2OHjVF3CZVT1w1YeFyygzdJlVK9UVdBmhJKB7d5QDB4rujvbtca/jG7/Xo4/i8/zz/6mf58MP49epE0Fvvoly4EBR77yDT4sWuAkCng89hOKllwjq16/S57Knnzbtv/cTT+DfpQvBb799a52BAwno2RPPBx/8V/vhJgj4de36j65GY8vx8KAsL6+OUMHc6qSVl6NfvBj3hx9G/cMP3CwurvRx2uHDeD3xRL0Dis/zz+PXoweBb71F4NtvEzhgAAF9+9bLtqWCgE+bNvj37Ytn06b1+r3+i3w7dEDWosXd3U9atmwwV+M/5eEy6/4BLo3GDF1m1VJ1AV1G4Ipbs4ZcHx8SDxwg/dQpCsLDiRo3Dnehqpm/Yt/bl92+3PiZpEkTEjZtInHr1kpvuTWN4WHYL7/OnbmRm8tVJyeSDxwg+cAB0k6cIC8wEJ9XXsH7qacoSUwkx9OTJOPnx4+T5+eH/LXXcBYEwoYPp/zGDTLOniX5wAFSDIpZuBDvJ57412/c7oKAX7dudwzQLi8vJ3nPHjyeeAL1hAmUmWc/3jutvJy41atNLkTNjz9WiXVLs7LC66mn6s3S69GkCfGHD5MdF0fsnj3od+xAv3MnGQEBJFpb4/Xss//q2vg3156HIFqUggcPRrtiBZ4PP1zj+jVdtzV9j3+6H9xp3ySCQJqnJ5qlS+/qxU4qCHg991y9W7zMFq7/LeDSaMzQZVYtVRfQ5S4I6H/7jZLkZBSdO+NseCAlbNzIzeJiQgYNQtKkCZ4PPoj3U08hMzwUJIKAd7Nm+LRsiddjj5n2QSKIQeM+LVvi07Ilng8+iLsg4Pv88xRERpJ68CDeBjeOtOIYDz9c5Xu4CwL+Xbpws7gY5fvv4ySIcTdSQaBQpSLzwgXk7dtzIyuLqLFjcRAEXA37n3HmDAXh4UibNSNkyBBulpQgb9/e9P3cDOPX5nj5v/56zRav8nISNm269WCfMoWbRUX1AxHm9p9b+c2bxK9Zg8RwrmgmT6assHJ9TaOrsS4tvRWhK/HMGZLs7JAazhFXQcCvVy9yMzNRzZxpcjd6PvQQspYt8TZAYEVo8W7WDJnh+qp47Xk9/jiyli0rWc2kFcbzfOihSvvj2bQpnhWuPe9nnkHWsuWt/a3uOwjiJAdZy5Z4Pfqoqa/ngw/i0aSJeJ9o0QKPBx6oBH9ejz4q7vOjj5Lm5YVm+fK7PsZSQcCrRQvCDhyoF/AyA1fDQ1d9A5dGY4Yus2qpu4UuiSAQ0LMnpWlpRC9YgGvFG2vTpkQvWEDw22+jmzuX/NBQst3cSD9xAq9HHxWXBQeTbmNDtkSCcuBA3AQBRceOpJ86RbqNDZnnz5Pt6orfq6+i+eknSrOyKNJq0c2bh8cTTxC7fLlpjGtSKf6vv17pJmwEnLKCAsIsLU0TBjwEgZRDhyiOiyOoXz9KkpJQf/+9af/dDd+L8nKU772HcuBAygoK8G3dGifDQ861hofKvwavbt1qjPEqv3FDfLA/8IAIXpMnm8HrHmvx69YhadJE/H1++qnK75NmZYXX44/XqcXLCF0JJ0+SbG+P1+OP3wKihx8mMzSUuH37kAqiKzvF2ZlEGxvSZDLCvvoKiQFiQj79lDSZjEQbG5Lt7PB+7jlcBYGQzz8nVSIhwdqaFGdnQr/8EhdBIGLiRJKvXCH8u+9I9fDA1xA64PnYYyRfvoxq3jw8W7Qg/uhRUhwdSbS2Jm7vXryefrqKJcuzWTNitmwhydaWhFOnSHZwwL9XL9wFgdhdu0h1dSXByorkCxdIOnsW7+bNcRcEgj/4gFRXVxJtbIg7cIDs2FhU8+fXCdiaXI11DF5ml2LDwlZDAZdGY4Yus2qpu4UuN0Eg6ptvKCsqQvnOO1WCz43WgKRt2yi/cYPQDz7A49FHifzyS26WlBD51Vc4CwKxy5ZRHBODd6tWZJw5Q463twlqcnx9ybCxwbt5c3K8vEjavh0XQSDq66+5ef06YSNG4CIIJPzxB/nBwcjatjXd6CtCV+iwYabZZV6PP05JYiIp+/fj27o1penpVaBL8fLLlCQmErtyJaEGS1fy3r3Erl1L/Nq16BcvRt6u3V2Bl1+XLhRGRNT8YF+7FqkRvCZNqj5tg7k1Wotfv970+6h//JEbtwfXW1nh/dRTdWbxqgRddnZ4PvSQySKqHD6c3GvXCB87Fu9mzcgMDibmjz/E2bN9+5IVGUnIxx8TNGQIVzUaggYPRvLAA+i3byfZwYHAgQPJ1uuJmjEDN0EgbNw4smNj8W3blqjp08mKiMC/Z08yw8KImDgRV0FA+fHHZMfG4t+3L/odO8gIDET2wgtIBYE0Ly/0W7ciNVjGpIIYIqBbv56MwEA8H3kEF0Eg7vBhUpyccBUEUt3cyIqMxKdDB7yaNSMrMhLV/Pn4vPACWVFRqBctwv2BBwj9/HNys7NRLVhQp8fWq1Urwo4eFcHrLh/aZgvX/y5waTRm6DKrlqoL6FJ//z03S0sJee+9at17zoJA0q5doqvugQeQCAIZNjbkeHqiePllfDp2FPNA5eainTED/z59CB4yhKjvvuOqoyOFajU53t7I27fnmlRKwp9/ImnShPTTp7nm6Ym8XTt8OnZEOWAA5WVlqL77DreKYGOI6brm4UHaqVOknTpFpq0tmba2eDz7LLJnnuFGdnYl6JIIAvIXX6RIoyHu998JHTqUm0VFxCxaROT48ajGjyfiiy/wadHirmaMuQtiDqwijab6p3p5OfFr1pjcSJrJk7lx7Vr9EIS5/fdm+H0khvM8YfPmKqukHTlSZ65GU0zXoUNcS0wk3srKZF3KUqnQLF2K5JFHCHjzTXLS0wl67z1kHToge/55Uj08iN21C92qVSTb2ZliLT0ffpjAoUOJ3bWLdJkMeZcuyDp0wK9rV7LCw9H8+iuRP/9MVng4Hg8+iG71alLd3XEXBLQrV5Li4IBvx45khYWh+fVXZG3bInvxRVSzZ3MtNRV5hw637gsPPIB/374EvP8+ge+8Q4K1NZlKJWleXng88ggp9vbE7tiBixEujx8n7uBBwsePJzM0FJ/WrU37neLsjGbx4jp14UoEAe82bQg/ffquwEun0xESEmIGrgaEroYELo3GDF1m1VJ1AV3hI0dys6gI7dSplW6AEkEgqF8/5F27krh1K/lKpThb8OGHyfXzozAqirTjx0k/c4bUI0dIO36cUEtLohcsIC8ggKwrV9AvXSoGtQcEoHjpJRG6Nm5E1qwZeUFBFEZFkX7yJOlnzpB2/Dhpx4+jfPdd036YLF35+ah/+AGfl15C8dJLKDp0wLNpU9wEAd82bbhx9WoVS5df586U5eWh+flnQgYPpiw/H3m7dpViuupiir67IBDUvz/F0dE1Ptvj165F0qQJLoKAfsmSOiYHc7vbFrtyJcr33qMgJKTaz9OsrPB68sk6mSVshJFUiQTFq6+i6NaNVBcXrkZHI3vhBVwFgYgffiD32jXRzXfkCPFHjpBw7Bhh48cTvXEjiefPV4qVchQE9Nu3k63Xo9+7l/gjR4g7cID4Q4cI+fJLombMICsyEg9BIOjdd8kMDSV4yBDSvLyImDgR/379uJaURLKdnWl7sfv2EfP33/i0aXNrW02bEjZuHGkyGckXLhA1eza6tWvJ8PPDu1kzki9dInbXLtOs4sQzZ4jduxfVjBlkKpX4tm9vildLsrWtc+gyHmPvF18k3NoaXS3Ay2zhaljYagzg0mjM0FVVMTFiqYdqPtPq9TV+VtP6Gr2+9vui1Yr9azghtBVKd2iioxv0ON0tdEkFAe9nnyU/MJCrBheBxAAkio4dKcvLI27VKuJ+/538kBDxBtm0KVcdHbkmlZosBF6PPopu3jwiv/qKIo2GxK1bcTIAyVV7e/L8/VF07EiOtzfxGzciEQSuOjhwzd0diSAGx3sIAvplywjo2dP0fapzL1bMaSQRBHxbt+ZGdjaqb77BWbjlEo36+mvKy8qQt20rxnQVFuLftWud3+SN+xnYty9FWm3ND/bly/Hr2pWr9vZ1iAtVW6atLdo5c9DOmUP0ggV33KfatGuenqQcOkT5zZt1Ou4/tbSjR0k/c4bSrCwS//iDghqy+9eqlZdXcS1Wt33vu5zVWJ170U0QkLVsSbpcTqpEgseTTxI8ZAg56enIO3XCxXA9ho0bR5ClJbqVK0k1XHtugoDPCy+gXrSIhFOnSPP2xuPRR00vH5FTpuA/cKAJuryfeALpgw+SaGNDRmAgWZGRyFq0wPfll7mq1xM5ZYppIop/z56o5s5F9swzpgB+76efJjM8HP3WrbgZrn3933+TGRiI9+OPk3z5MrG7d9+CLmtr9Dt3EjJyJDmpqfj16IGrIOD12GOkyWSo6wG6TPe19u2JsLb+Txav2pT2Mev+Ay6NxgxdVaSSy1H5+lb9LCYGVUAAUZ6e//pCipJIiJJKa2dqNvRRBQaiUamqjKFNTkYlkxFha0uEnR3qyEi0cXFiTcQGOE51NXvRv1s3ShITiVuzBrmFBcrBg8kLCCDP3x/PFi1I2b+f4thYU3oJ5fvvcz09ncStW5H37k3KoUMUhIUR2LcvuT4+5Pr6oujdG83UqZRmZlIcHY2iY0euOjiQdfEispdfJnTkSEozM4nfsAFF795knDtHrq8vsgpv1u6CQEC3bgCEjxplcjsaJREEfNu2FQPX161DYWFBgIUFkWPHUpKQQOzKlbg88ADhn3wCQECPHvVyk/cwPKiC+vev0dVYXlrK9YSEu+aDmlr5zZskbd9O8DvvkHH+PFl2duiXLMG/c2dyPD3rbDvxGzYQ9OablP+LmpR12Yo0GoqioymMisKnRQvST55s0O2DwdV4FxYvI3QlXbpEmpcXXk8+abqm/C0syC8sJP7gQXyef57EM2dIcXRE0bs3kT//THZsLGFjxyJ/7TXSFQo0S5Ygt7AgydaWpHPn8OvRgzRfX+L27cO3Vy9Uc+ZwLSkJeefO4v+Tk/Fu3lyM45wxgxIgbv9+pE2aIGnSBO3y5WSp1YSOHo2fhQWZISHEbNmC1BDsLxUEvJ58kmQ7O9IVCvx69SL0yy+5lpBAtk6HrGVLUiUS4q2sTNCVYm9PwsmTeDdvTqK1NUm2tsgtLNAuW0Yh1Bt0VQSv8DNn/hV4mS1c/3+AS6MxQ1clyNHGxaFcsQLZa6+hkstFC5JGI85IiYlBMWwY/qNGoU1IQBMTI1qXKs5W0elM62p0OoJXrSJk7Vq0xvV0OrFPdPStC1GrrfYzbVwc4adP4zdqFKqAANFqZgSumBgiLlzAt3dvFKNH4/vee/iPG4dKoTBtu74T9tVVclQ3QbQopVlZkWplRdrx4yRt24bPs8/iKohBxgmbNplgyE0QCB06lAxra9KsrEg5dAif55/HVRAIfvNN0k6cIM3KiqRt2wgdNoyUAwfwbtaMoL59ST95kpiFC3EXBMIsLck4e5Y0KyuS9+2rlHrCCFXyNm1IPXqUQAuLKjdoqSAge/ppkv7+27TNNCsr0k+dQjNpkilIOdDCglQrK+Tt2tVr4kujq7EoJqbBgaA0MxP/114j47ayO/rffiPryhXT31cdHEjcuZOUAwe4ef06ACVJSWS7uZEXEEDizp2kWVlVij0r0ulI2LWLtOPHifntN8I/+aRa6LpZXEzy/v0k7txZqdB1jo8PuQqFeE7s2UNBRARleXnifuzfT3FcnGnd6ykpJO7eTdLOnWSeP29anq9UUhAeTpFWi1+nTmSeO3f3B60WLc3KypTypFbQ9cADRM2ciXrRIjwfeaRSGojwb78l6exZFJ064fnww8Rs2kSClRUJJ04QPGiQqfKC/KWXiD9+nHgrK2L+/NMEU4pOnYjbt090L+7fj7+FBS6CgNLSkpgtW0zXl3fz5sQdPEjggAGVcuZFzZ5NwvHjxB89imrOnCpZ4yWCgKJzZ2INLszYXbuInDyZ6I0bUbz6Kup584j46SdxZmTTpqjmzCFq2jQR2B57jOgNG0iwskK3fj0xf/6J0tKyXq9HqSDg3aED4f9g8TIDV8MCV32V9jFDVy2ljY8nysMDWceOhGzZIsKVRoM2MZEIW1u8n3+eCBsbtElJqENCUAcHo1GpKrsctVrUwcGow8PRxsWJ1ieNRvw3MhJ1UBDq0FC0RmgzwppKJY5nsFhp9XqCFi7Ep3t3ory9xfU1ostSHRiIT5cuBC1aRHRODuqICHx69SJg0iR0qamow8JQh4XdF9BlvKEac1cZYaWixak6K5NbNevePo6kQl/j/yX/MMbtN85/ir9yE6ruu/t/HKOubvJugkBQ3741B9fXU7tZXEzo8OH49+pF1pUrVaHo5k0SNm8m0MKCuE2biBgzhsgvv6S8rIwse3s8H3oI1YQJxG3aRMigQai+/56bJSXk+fkRPGAAuiVLiF+zBr9XXyVsxAgoL680/PXkZCJGjSJs1CjiNm0iuH9/Ug8dgvJywj/9FN/WrUncsgXN7Nn4v/66uK3164n86ivCLC25kZ1NfnAwocOGoV2wgMQdOwgdOhT90qVQXk7EqFFEffMNRdHR+Hfu3CDQVZKYSPKePdzIzq60PO3o0btKoGqEp5qWG0Hs35a1ktawXFLD9qTVjOlxh+3dfo7fvp57DWNKKvx9e7/6KjVWLXi1a0dEDRYvM3A1LHA1toXLDF3VSatFl5xM4M8/Ix88WHTVRUejTU0laO5c5G+/jUanI2jePHwHDUI+fDiKDz4g8soVtDEx+H/9NYqPPkLx0UcE//ILAePHEzhtmght586hGDECxccf4/POOwTNnYs2IYGww4dRDB6M/3ffobC0xKdPH8KsrIiSSvHt2xfPp5/Gf/x41CEhInhptajDw4l0cTHtny4lBf+xY/H7+GN0mZkEL1tG0Jw5osuxnmK96rr2oll1I5PF6x/iqYpjYrgmkZBhY8P1lJS7hoQitZrgd98loG9ffDt0wK9zZ1Oh7kK1GkXHjuQqFKb1le+8Q+rhw1yTSPB9/nlTUe384GD8OnUiPziYqHHjiF6wwNRHN2sWykGD4LaYrrjVq1G+9Zbp71y5nIBevSjS6VCNHy+CmqEFdO1K9OzZAJSmp+P/2mvkeHmRvGuXCFmIwBO9cCEBPXtys7gY1XffoZk8uUGhSzVxIu6CgGr8+GrTSchatqx3kDfr7iURBGTt2xN+4oTorTA87M3A9f8TuMzQVY20CQlEnD2Ld9u2hJ88iTY1FXVwML59+hCyaRNBs2fj268fmshIdOnp+I8bh3zIEDRqNb59+iDr3BmNRoNKoUD+/vv4ff456qAgvNu3R7luHdH5+UQ6OeHdrh3hVlaE7tqFhyAQsnEj2vh4gubMwadrV9RBQShXr8bXwoIoHx+TpcsIh9r4eDQ6Hdr4eNT+/vi8/jpBs2eLlq6ICNQREfV6nMzQde/KmKC1UFO9xas4Opqgfv1El83LL5Nfw8y52rTSzEz0S5cSPnYssqefJv3UKTLOn8e3dWtiV6wgft06EjZtwr93bzSTJnFNIsHvtddMkFgYFUVg795ck0oJef99Mi9cuAUbx44RPmoU5aWllbYZMWYMwe++S8KmTcSvW0fMb7/h/eSTZNnbo/rmG2JXrABEi5zy3XdJ2b8fgOupqQT27Mk1d3fKy8pI2rkT3fz5BPTsiXL4cPy7dqUsPx/VhAkNCl1FGg3ytm1xEQR8WrWqdmZj7MqV5mvvPpFEEPDp3BmVry/auDgzcP0/Bi4zdFUnnQ6tVovvgAEETJyI7to1wvbvx+f114ny8CDy0iUizp8nws4O/88+w8fCAt833kATEYH8vfcImDABbVISGr0ehaUl/qNHo4mKIuzAAaI8PFAuX45ixAi8WrQgdMsWQnfuxLttW9TBwejS0og4dQqfTp2IcndHuWkTvm+8gSooqFJMV0VA1EREoPjoIzGA1RjTZYwTM0PX/0u5CQKBvXtXa+0qUqsJfvNNXAQB2XPPkXX58l1DQmFkJJqffuJGbm6l5ZpJk4gYNYrknTuRt2tH4tatJO/ZI9aftLIix9OTq46O+HXqRGFUFIA4KaJ3b3K8vAjq1480KyvTeGnHjhH+6adVoCv0gw8IHjyY1EOHSN6zh9QjR0g9dIginY7IMWNMFqybhYUo33mH5N27AShJTiawVy9yvLxI/OMPAnv2JHn/fgqjorjq4CDOXs3NbVDoKtJoCH77bVwFsTh1lp1dlXXyAwMJeuMNs6XrPpBUEPB85BGClyxBo1aj0+vNwNXAwCWTye4Z4DJDVw3SJiQQsmULPj16oAoMxG/kSDFeKjubsEOH8OnXD/nQoQTNm0fgrFn49OyJOixMhK4ffjBZoRSWlvh/8QXq8HACJk4UXZJDhhDy55/49OiB8vffCd25E9lLL6FSKNCmpBB+9Cg+nTsTJZWi3LAB3759qwTSazRinJnKzw/F0KH4dOtGlIcH2sTEBjtGjQVdxtil+kq/cHv82P0m00zG6oBLpyP47bdxFgR8nnuOqxWC3O+mlcTFoWjfnvgNGyotD//0U6LnzaMgLMyUtsPYor7+mtTDh02lmipBV48eFISGov7xRyJHjzb1Uf/wA8r33qsS06VfsgTl22+b/i4IDSX0gw8o0mqJGjsW/eLFgAG6BgyoAl3X3N0J/egjNFOm3NrWTz/h26oV5SUlontx0iQRul57rd6gqzg6muABA0QLV8uW1QJxXmAg/t263VfnaU1xZMZr+XZVvKf80+f/ZozGklQQ8HjkEZSrVqFNSCA6Ntac+LSRgEtXz0YIM3TdrWJjUQUE4NO9u+hOtLAg4tw5tHo9sq5dCZw2jeiCAmKKiwmaNQvZa6/dsnR9/70JuvxGjMB/3DjCDhzAu00bIh0ciC4sROXvj6xTJ0LWrROhq2PH6qFr3Tp833hDjOeqEKyvjYtD5euL/J138H37bdFKlpkpWrk0GvHfiu7I/xHokgoCsmeeIXrhQsKGD6/TN313QSDi88/Rzpx564Z5n8kUSK/TVXlYF2m1BPXvLz7QX3iBqw4OdQoMWXZ2+HXujHbOHGIWLybqm2+IHDOGIr0egJT9+wns3ZvoxYsJGzWKqG+/pTQjgyw7O3zbtqXAUNIoPyQExUsvURAeTmlaGqFDhqCaPBndnDn4vfIKoZaWVQL1S7OyUE+YgHLoUKIXLyb47bdJ3rFDLPVkaUn0L78AcLOggKA+fUjatg0QZ076d+rENamUjHPn8Hv1VaJ//ZWYX39FOXAg8g4dKNHriRo3DtWECRRptcjbtyfjzJk6PXYABeHhtyyQrVpVm1MtPygIvy5d7ivgkgpi7cOwL7+sUktR/tJLqBcuRLtyJdpVq9CuXo129WoCBgzAXRDwfuIJVHPnVv585Ur8unUzBcP7duiAZulStCtWiOusWkX0+vWEfPJJo4KXVBDweOwxE3DpYmMJNQCXOQ9XwwDXveRSNEPXP0mrRZuSQrAhl4ti2DBTELt80CDk776Lytub8DNn8G7dGu927VCHhOD7xhv4jxsnuv10OhSDBuH36aeE29jg1aIFynXrUPn5ETh9OtKmTVGuWkXI1q14t2wppqhITSX84EFkbduK7sU//0T26qtE2Nqi1enE/YqJEa1qgwbh1aoV4WfOECWTEenkRJSXFxq1GpWvr+n/d1sH7F6DLq/HHkM5cCD+r71WyepVMdN7dTMGjbOWPITKb8cVl/l37UrwW29V6lNdBvmKy++FN2rjPgW9+SbFt6eMKC+nIDTU9ED3ef75ekuSWpKQQLqNDenW1mRdvEi5IS2EseUpFKRbW5Nx4QLlhhtOaWYmuXI5ZQUFAJTl55Pn50eZwVV5Izub9LNnybx4kcLISArV6iqB9MbvmXHxIunW1uT6+JgWF4SGmo5JeVkZ+UFBlCQlAZhmSN7IyQEg19dX3PcrV7iekkJeYCA3srMpjIqiUK3mZlERuQoFpRkZdXvgAO306TgJBpevXVWXYp6/P36vv16vwFXTDMSKs3JvB6fqZjJ6CLdmBzsLYjHqNE/PKrMLQz//nPzr19EsX45y9GhCxowh5o8/uBodTQRnSS8AABCrSURBVMD77+PdvDn5168T89dfKEePRjlmDPq//yYrIgLliBFiDccRIygEVHPmoBw9mtDRown76iv8+/RptBcnk4Vr9Wq0iYlEVwAus4WrYaDrXgUuM3TdQdqEBKLc3FB89BFhBw+a0j9Eurri98knKEaOJOCbb1CuXEnAxIlEeXkRNGsWyjVrRKuUVkvQggUEL1mCVq9HuX498mHDkH/8McHLlxO0aBHKtWsJP3MG/6++Qh0UhDYhgchLlwj45hsxSWtgIP5ffCG6KAMDxYz4cXFESSQohg9H/uGH+H3+OX4jR6IYOZKgefNQR0SgXLOGoAUL/idnL3o9+iiBffsib9sWn+eeI2TQIJQDB6KeOJHIL77Au1kz5G3bEmZpiZchuaKHIBDQvTshQ4eK07ifeIKob75BPXEiyvffN+Uq8nv1VQJ79cLD8MBQvv8+6okTiRgzBs+HHjJNQw/q3x/Vd9+h+u47fNu0qbcki/8JuPr1qzZVRHlJCRGffYajULcuRXOr21YQEUHEF19Uyg9mbHlBQfjVs0tRKgh4P/UUgW++SdCQIURMmICic2fxfH//fSImTiR09OhKub08mjYlbOxYwsePJ/Tzz/F64gkTiMlfeomICRNQfv45cQcPknTuXBXoCvnkE7Lj4vDr3t2U/d5DELiq0RC9bh1ezZpxLTGR4A8+MH0uEQRid+8mIzAQryefJOi998hJSsLnhRdM6zTmy5BUEPB49FERuG6zcJmBq/5h614HLjN03UnGdBHJyZVde3o92sREE4RpExLEWCqtVvy/IS+XRqO5VaLHMNvQ+LmpX2ysWHYoKUm0SBm3aRhPo9OZtlXJYqXVisuTkm6NZ8jtpdFoxDHvpvzQv1BjQJdEEFC88grXMzKIW7WKMEtLAHIVCmJWr6YgPJz0kycJ7NWLkoQEtDNniqU/Hn+cQrWalP378XrsMbJdXMiwsSFu9WoKNRr0v/2GsyCQdvQohWo1boI4Vb8oOhr96tXkBQWReuQIHo88guq77yhJTiZp2zaSd+wgPyQE+WuvNdpN3k0QCHzjDYruUH8x4/x5At95h0xb27rkBHOr41ZdeaP8oCD8O3eud5eiRBDw79WL3Oxsku3sUK9aRdi4cajmzCEzPBzN6tWkSiTot2zB64knkLVpQ/yRIyRdvEjUr7+SfPkyCSdP4vHII8i7dSMjIICYTZvQ79hBTmoqidbWNUOXhQWuwi2rc1Z4ODGbN+PdvDnZCQmEfPpppZqoii5dyMvLw79nT7FAd0oKfl26IH3wQTwffBDPpk0bD7gee8wEXNFml6IZuKqRGbr+SdX9eFpt7Uv73EVJoGrHqqgGPC6NBl0vvUSRXo9+8WJCP/wQgJAhQ3AQRMvUjatXCerXj5R9+7jq5ITbAw/g99pr3MjJIXTwYGJXrKA4IQHv5s1xFAS006ZRlpeHX6dOJG3bRo6nJ4H9+1OakUHohx/iKAjI27Uj198fzaRJ5IeEEL92LfaCgJMgcNXRkfRTp/B48MEGd2cYXYp3Ai7TtfwP9f3M7d5reQEB9e5SrARdPXqQk5lJ5JQpOAgCAX37kpOWRsBbb2FvgIrMkBAivv+esLFjSbSxEd2QjzxC5KRJ4rp9+5Ls4IBu7VqcDedo4tmzJNvZVYWujz/mWlIS4RMmoLCwwK9PH7RLl3ItPp6gYcPwevJJriUlVYIuiSCgeP11clJTCejfH/++fckvKiLp4kXijx8n8exZojdvvgVBDaTqXIrmoHkzcFUnM3SZVSs1KnTFxKBfvJiwjz6iLC8P+YsvmkrulCQmEjZ8OMqBAylJSCDQwoLYFSvIkcmQtWxJXmAgybt2mQpYB/bsyfW0NDQ//UTiX3+R7eJC1NixlKam4vPccyaXovsDDxD51VfcuHaNhM2b0cyahXrWLDLPn6c0MxOfFi0a9Fi4CQJBb7zR4Nnnza1hmtGl2FCua6OlKzsmhrCvv8ZVEAj78ktyMzNRz59PxNSpRPz0E9l6PbF79uAmCIR8/jmahQvJCAggxdGR7NhYlJaWZIaEoBw+3BTrpVm6lKQLF6pAl9LSkpysLJIuXEC/Zw+x+/YRf/QoyhEjcBcEfNq2rRa65J06kZuRQUD//gT07y/C3htv4Pn003g/8wzeTz3VYNehCbhqsHCZgathgOteSwvxf+2da2xT5R/HHxOiQU0IAt1eqBkxTIKZE2JkUyPZHBggvvAGyDIElOALYjCKt2BCCIZoMFEihhf6ksRAwkWEsQuwtmtp13Uru/Q5W28r7co2duvarmNs/f5ftD223TkFx3bO+PP7Jp+E7Zxfnm7jnPM9z/N7fr9skOkipsVcMl3mZcvEUgljPh9aEn3VRh0OOPfuxWBVFbyHD6OGMYRaW+H/7bc00zXm86H9vfdkTddVxsQ+kJPRKG789BM69+6Fc+9edOzaBfuWLdDNn6/Ym3Wy6nzU41HDD5DuQ5G2Nrj27UM0satTSiMWC8z5+YrmCoqmy+1Gy9at8SX2zz/HcF8fhC+/RPuePWjfvRvtn3yChuJiXN+0Cf3t7bB/9hka162D+cUXMehyoXnDBvTb7bj+zjti8r2c6RKXFwsKUM3SE/iTDeUzTddlFjdrI8PDMC9fjsaiIgwHArj23HNpbYwUNVzJHK6UpPnKykoyXAoZrgdlhisJmS5iWswZ0xUKTTFdrW+/jRrG4P72W4z39SEiCLAUFKCWMfh//RXRri7oFy7ERcbQsXs3JoJBmJYuhf/oUQzV1cG6enV8ebGsDJWMof6ppzCk1eLGjz8iIghwfvEFLjKGSsbg/eEHBI4fh1Yh01XLEkuKEnW4wjYb/EePijsBSXNLow4HrKtXo4ox8IoKxDLqjQFxw9WwYoXimzPSTFd5OWoYg7WkBMM3b6Jh5UpcSJxz48QJtGzZAs/x4+jR61HFGC4yhraPP0YoEkHDqlXoPn8eXX/+KZou38mT6P7nH2nT5fXCUlQ05edNNV3WkhJUMYZqFs/P7NFq4Tt1CpfnzUNTaSmGAwGYVMirvMoY6h59NG2Gy0aGiwzXXSDTRUwLVRPpb91C14EDaN24EQDEROOm4mLcCQbR9v77qGIMlsJCAMCwTicWaNQvWYJhnQ59J0/CvX8/IoIAz/ffo5qlJ9IL27dj1OmEc/9+DNXVYbC6GvW5ueDbtuF2IADfzz/jxpEjGO3oQGNRkSK/h8sssaQoU/jU+vLLqGEMngMHphQQJamrUafz37IdS5aktTdKKmS1qmK4kteWZdUqBPv70bpjB2pZvJJ6x3ffxRPp9+9H9/nz8J85A0NeHprXr8egxwPPsWMQ9u1Dr8mEkXAY1tdfhzE/H70mE5yHD8N97BiCAwPo/vvvqSUj3n0XwaEhNL72mqzpGgmHcePECfCvvgL/+mt0X7wI/9mzML/0UrxkxMaNCIXDMC1frnj5Gu38+Wg6eFDcpUg5XGS47gUyXcS0UK1O1+OPw1ZWBvOyZTBoNGjZsAH6xFb1+oULcX3tWhhzc3GFxctL2EpLYSkoEGehLjOG+gULwCsqIOzcCVtpqbjNvbGwEM1r1qCOxWeUbKWl6Ni5E/atW1G/aJG49NH06qsQtm+HsGMHTEuXKpLoXMsYrEVFkstSEc5hfeUV1DKGa3l5kmUHSOopIgjphWkl6qSNmM0wP/+8auVHkiUjmsrKYHj6aXGZ7ipjaHrzTbTv3ImWzZuhe+IJcfmvsagIrdu2obW8HA2FhbC+8QauLV2Ky4zB+OyzaNuxAy1btqCxuBgNhYVTanwZcnPRtHYt9AsXTpklTrbPaX7rLbR8+CHaKirQ9tFHaPngA2gfe0xc9q9fsgTN69ZB9+STii0rpiXN+/2UNK+C6XqQcrgyIdNFTAu12wBdSfn31YxjmV9LvUWntgxJNWSp58q1FVG6OGotS9ThytLap5YxXJ03D/5ffpF9+IeamzGk1WJYgiGtFkGTaUpfw6TGfD7Z2GT87d5eydjJaBRBozHr2MmK9JKmxW7PGjus18suqY7fuoWh5Hky8dGuLsnY2MQERiyWrLEhq1Wy1AMARN1u9FdWiq2X6hcvxsB56V6K5hUrVK80n3z5yDQvcsVRU79/JeP4lZRjqYVW72U8ubGzFWhV0nBpU3YpdrpcsFqtuHDhAk6fPo2zZ88Ss8SZM2dw7tw5cYZrLrX2+S+Q6SKmBTW8VgbRcEmUhQhfvw5LQQFqWPyhVsUYOj/9VNq5xGJoWLECVSy+KSCTKhaf6Rjv6ZEM9x46hEsysTUsXj4j8McfkrGjDgfqHnkE1TKxlYzBtmaN9OcG0LJxo+zYyQ0RIZtNMrbvr79QnThPbmz3N99Ixk4EgzDm5Mj+zi4xBlNeHiYjEcl4x549uJQY25CTI9l6adhgwLW8PPHnUIOrxD2jnT8fzYklxU6XC4IgwGKxwGAwwGg0ErOM2WwWTYvaz8DpQqaLmBaO/n40bNokzvYQM4+4pJjZ2gcQNwzoFiyAIScHxpwcaHNyZA0EYjG0rF+Peo0GBgnqNRo0rlyJ8f5+yfDu33+HXibWoNFAr9Gg79Qpydixri6Y8/Nlx9ZpNODl5dKfG0DHrl2yY9drNLj2zDOIcC4ZO3DhAuoT58mN7TtyRDJ2IhRCU3GxbKxeo4GtpAST0ahkfNfBg9BqNGh44QUMXro05XhEEGBbswa6BQtgTPwN1UC/eDF0ixZBt3gxkQV9bm68l6LPl9bb1uFwwOl0Egqh9rPvfiHTRUyLzu5uNB86BGNpKUzEjGMsKUHr5s2ydbhid+5gfGAAE6FQGpNjY7LmZXJ0dMr5aUQisgn4sfHx7LGhkNhPcerAk5gIh7PGyhkXIL48edexZZb4Ynfu3D02o0fkv8ExTEYi2T+3zCwXAEzevh0/Z3RU9vh4f/9dP99s425vh91qhdDcTGTDZkOH0xlnDtyDiQcTMl3E9BAEdHq9cAQC6CRmHO7zQfpRTSLNrLr8fnCnM97ijJClw+1WvPMH8f8HmS6CmIPY7XaEQiFVHsKkh0sejwecc9X/zxPEwwCZLoKYgwiCgDAVOSUpIDJdBKEcgiDA5XJhYmJCvAbJdBGEiiTfhEZlcoFIpJkUmS6CUA5BEOD1ejGZkodKposgVCT5JjSWJSmeRJopkekiCOXgnOPmzZtpbcDIdBGEitjtdvj9/rQ3IRJptkSmiyCUg3OOYDCYdg2S6SIIFREEAYODg4o/fEkPp8h0EYQycM7hcrlwO6NMDZkuglAJQRDgdrsxLtOOh0SaaZHpIghl4JyjX6IANZkuglAJzjnNcpEUFZkugph9OOfweDxpuxaTItNFECrAOUd3d3dagiWJNNsi00UQswvnHA6HQ7YMEJkuglAQQRDAOYfP56NlRZLiItNFELNHsgRQZvJ8qsh0EYRCJA1XIBBIq1BMIiklMl0EMfMk7+0ul+uu3UXIdBHELCEIAgRBgN1uB+ccbrcbg4ODtKRIUk1kugji/kne2znn4nJiT0/PlJ2KUkozXZxztLe3w263EwRxH3DO0dnZCZfLBZ/Ph4GBAVpOJKkul8uFtrY21a8PgnhQSd7bnU4nvF4vent7/1NHEdF0xWIxjIyMEAQxA4RCIUQiEYyNjdHMFmnOKBwOIxgMqn59EMSDSvLeHo1Gp1XUmt39FBKJRCKRSCTS/YpMF4lEIpFIJJICItNFIpFIJBKJpID+B+UBYH08CXedAAAAAElFTkSuQmCC" alt=""></p>
+
+                
+                
+            </article>
+        
+    
+</div>
+<div class="mod mod-headline">
+	
+		
+		
+		
+			<h2>An ideal solution for everyone</h2>
+		
+	
+</div>
+
+<div class="mod mod-text">
+    
+        
+        
+            <article class="clearfix">
+                
+                    <p>No two businesses are the same. That is why we offer various options for submitting e-bills to the Federal Administration. Choose the solution that suits you best:</p>
+<h4>Invoicing using an integrated system (ERP&nbsp;</h4>
+
+                
+                
+            </article>
+        
+    
+</div>
+<div class="mod mod-accordion">
+	
+		
+
+		
+			
+				
+				
+					
+
+					<div class="collapse-box" data-auto-collapse="true" data-first-element-open="false" id="accordion1729002661543">
+						
+
+						
+							
+							
+							
+							
+
+							
+								
+								
+									<a data-toggle="collapse" class="collapsed" href="#accordion1729002661544" aria-expanded="false" aria-controls="accordion1729002661544"> Sending invoice data from your ERP system
+									</a>
+								
+							
+							<div id="accordion1729002661544" class="collapse" aria-expanded="false" role="tabpanel" aria-labelledby="accordion1729002661544">
+								
+<div class="mod mod-text">
+    
+        
+        
+            <article class="clearfix">
+                
+                    <p>The invoice data is prepared in your ERP system. The data for e-bills is generated using the subscriber numbers entered in the master data. This invoice data is sent to the service provider, which creates e-bills for you in compliance with the law, including signature, and sends them to your clients. Your clients receive the e-bills directly in their ERP or e-banking system. Please note the following steps when getting started:</p>
+<ul>
+<li>Many ERP systems are already able to generate datasets for the electronic transmission of invoices. The transmission of invoice data from your system is largely automated. You can obtain information from your ERP software manufacturer about this e-billing option.</li>
+<li>Alternatively, some service providers offer solutions that create structured e-bills from ERP-generated printer data or PDF files.</li>
+<li>Choose the service provider that suits you best. The choice will depend on the additional services you would like to use and on the providers through which e-bills can be delivered to your clients.</li>
+<li>Set up your system accordingly.</li>
+<li>Complete the client master data in your system with the subscriber number, the &quot;electronic billing address&quot;.</li>
+<li>Carry out a test with the bill recipient to ensure that all necessary information is transmitted correctly when sending the invoice electronically.</li>
+<li>Always note the invoice reference number on the e-bill. This enables the Federal Administration to process it efficiently.</li>
+<li>In the future, you can send e-bills not only to the Federal Administration in this way, but also to other clients.</li>
+</ul>
+<h4><b>Partners:</b></h4>
+<p>The Federal Administration uses the services of the following providers for this type of electronic billing:</p>
+<ul>
+<li><a href="https://www.postfinance.ch/en/business/products/invoices/digitize-invoices/e-bill-invoice-issuer.html" target="_blank" class="icon icon--after icon--external" title="">PostFinance</a></li>
+<li><a href="https://www.swisscom.ch/en/business/enterprise/offer/platforms-applications/business-process-tranformation/conextrade.html" target="_blank" class="icon icon--after icon--external" title="">Swisscom</a></li>
+</ul>
+<p>You can also submit e-bills to the Federal Administration through other service providers that have an interconnect interface with Swisscom or PostFinance. You can choose from the following:</p>
+<ul>
+<li><a href="https://www.abacus.ch/produkte/administration-vertrieb/e-business-e-commerce" target="_blank" class="icon icon--after icon--external" title="">ABACUS</a></li>
+<li><a href="http://www.io-market.com/" target="_blank" class="icon icon--after icon--external" title="">io-market</a></li>
+<li><a href="https://erechnung.pentag.ch" target="_blank" class="icon icon--after icon--external" title="">PENTAG</a></li>
+<li><a href="http://www.ntrust.ch/" target="_blank" class="icon icon--after icon--external" title="">StepCom</a></li>
+</ul>
+<p>Further information:</p>
+<p>Here is the <a href="/efv/en/home/efv/erechnung/liste-verwaltungseinheiten.html">List of administrative units</a> of the Swiss Federal Administration that are ready to receive e-bills. The&nbsp;<a href="http://www.edirectory.ch/%20t%20_blank" target="_blank" class="icon icon--after icon--external" title="">eDirectory.ch</a> list of e-billing subscribers contains the companies and organisations domiciled in Switzerland that wish to exchange invoices with their business partners electronically in a structured manner.</p>
+
+                
+                
+            </article>
+        
+    
+</div>
+
+
+    
+        
+    
+
+
+
+							</div>
+						
+
+					</div>
+				
+			
+		
+	
+</div>
+
+<div class="mod mod-text">
+    
+        
+        
+            <article class="clearfix">
+                
+                    <p>Most ERP systems already have a corresponding module that generates e-bills as a structured data file. All that remains to be done is establish a link to a service provider.</p>
+<h4>Invoice in PDF forma&nbsp;</h4>
+
+                
+                
+            </article>
+        
+    
+</div>
+<div class="mod mod-accordion">
+	
+		
+
+		
+			
+				
+				
+					
+
+					<div class="collapse-box" data-auto-collapse="true" data-first-element-open="false" id="accordion_6269244111729002661551">
+						
+
+						
+							
+							
+							
+							
+
+							
+								
+								
+									<a data-toggle="collapse" class="collapsed" href="#accordion_6269244111729002661552" aria-expanded="false" aria-controls="accordion_6269244111729002661552"> PDF invoices
+									</a>
+								
+							
+							<div id="accordion_6269244111729002661552" class="collapse" aria-expanded="false" role="tabpanel" aria-labelledby="accordion_6269244111729002661552">
+								
+<div class="mod mod-text">
+    
+        
+        
+            <article class="clearfix">
+                
+                    <p>Create a PDF file that contains all of the required invoice data. Send it to the email address provided or upload it on the service provider's portal. This service is free of charge for invoices sent to the Federal Administration. Bear the following in mind:</p>
+<h4>Via email</h4>
+<ul>
+<li> Create just one PDF file per invoice (including any payment slips and enclosures). Any digital signatures in PDF invoices will be applied and will remain valid. However, you can send the Federal Administration several PDF files in each email – max. 25MB.<br>
+</li>
+<li>Always note the invoice reference number in the PDF file. This enables the Federal Administration to process your invoice efficiently.</li>
+<li>Email the PDF invoices to the appropriate address (see&nbsp;<a href="/efv/en/home/efv/erechnung/liste-verwaltungseinheiten.html">List of administrative units</a>).</li>
+</ul>
+<h4>Via service provider</h4>
+<p><b>Important information:</b> From 30 June 2023, the Federal Administration will no longer accept PDF invoices via service providers. Starting in mid-2023, PDF invoices can be submitted solely via email.</p>
+<ul>
+<li>Procedure: Fill out the service provider's application form. For security reasons, you will receive an email to confirm your application.</li>
+<li>Log in to the portal and create a new business relationship with the desired bill recipient. The recipient must use the same service provider.</li>
+<li>To send an invoice, select your business partner and upload your PDF file. Make sure that all relevant invoice data is included in the file.</li>
+<li>Always note the invoice reference number in the PDF file. This enables the Federal Administration to process your invoice efficiently.</li>
+<li>Create just one PDF file per invoice (including any payment slips and enclosures).</li>
+</ul>
+
+                
+                
+            </article>
+        
+    
+</div>
+
+
+    
+        
+    
+
+
+
+							</div>
+						
+
+					</div>
+				
+			
+		
+	
+</div>
+
+<div class="mod mod-text">
+    
+        
+        
+            <article class="clearfix">
+                
+                    <p>You create your invoices with an Office application (e.g. Word, Excel) or with a straightforward accounting or invoicing program. Create the invoice as a PDF file and email it directly to the Federal Administration or submit it via a service provider's portal.</p>
+<h4>Entering an invoice online<br>
+</h4>
+
+                
+                
+            </article>
+        
+    
+</div>
+<div class="mod mod-accordion">
+	
+		
+
+		
+			
+				
+				
+					
+
+					<div class="collapse-box" data-auto-collapse="true" data-first-element-open="false" id="accordion_7139070641729002661560">
+						
+
+						
+							
+							
+							
+							
+
+							
+								
+								
+									<a data-toggle="collapse" class="collapsed" href="#accordion_7139070641729002661561" aria-expanded="false" aria-controls="accordion_7139070641729002661561"> Creating invoices online
+									</a>
+								
+							
+							<div id="accordion_7139070641729002661561" class="collapse" aria-expanded="false" role="tabpanel" aria-labelledby="accordion_7139070641729002661561">
+								
+<div class="mod mod-text">
+    
+        
+        
+            <article class="clearfix">
+                
+                    <p>Enter all of the required invoice data directly in your service provider's online form. The service provider will create the e-bill with a digital signature for you and send it to the recipient. If you wish, the service provider can also take care of archiving your invoices. Please note the following steps when getting started:</p>
+<ul>
+<li>Choose the service provider that suits you best. This will depend on the additional services you would like to use and on the providers through which e-bills can be delivered to your clients.</li>
+<li>Fill out the service provider's application form. For security reasons, you will receive an email to confirm your application.</li>
+<li>Log in to the portal and select the desired bill recipient.</li>
+<li>Enter the invoice in the corresponding online form and attach any enclosures.</li>
+<li>You can send the invoice you have entered at the touch of a button.</li>
+<li>Always enter the invoice reference number in the corresponding field. This enables the Federal Administration to process your invoice efficiently.</li>
+</ul>
+<h4><b>Partners:</b></h4>
+<p>The Federal Administration uses the services of the following providers for this type of electronic billing:</p>
+<ul>
+<li><a href="https://ebill.postfinance.ch/ebill-light/Account/LogIn?" target="_blank" class="icon icon--after icon--external" title="">PostFinance</a></li>
+<li><a href="https://www.swisscom.ch/en/business/enterprise/offer/platforms-applications/business-process-tranformation/conextrade.html" target="_blank" class="icon icon--after icon--external" title="">Swisscom</a></li>
+</ul>
+<p>Further information:</p>
+<p>Here is the <a href="/efv/en/home/efv/erechnung/liste-verwaltungseinheiten.html">List of administrative units</a> of the Swiss Federal Administration that are ready to receive e-bills.</p>
+<p>The&nbsp;<a href="http://www.edirectory.ch/%20t%20_blank" target="_blank" class="icon icon--after icon--external" title="">eDirectory.ch</a>&nbsp;list of e-billing subscribers contains the companies and organisations domiciled in Switzerland that wish to exchange invoices with their business partners electronically in a structured manner.</p>
+
+                
+                
+            </article>
+        
+    
+</div>
+
+
+    
+        
+    
+
+
+
+							</div>
+						
+
+					</div>
+				
+			
+		
+	
+</div>
+
+<div class="mod mod-text">
+    
+        
+        
+            <article class="clearfix">
+                
+                    <p>If you submit only a few invoices to the Federal Administration, simply enter the invoices in a service provider's web portal.</p>
+
+                
+                
+            </article>
+        
+    
+</div>
+
+
+    
+        
+    
+
+
+		
+
+
+
+
+
+
+<div class="mod mod-backtooverview">
+	
+</div>
+
+
+
+
+<div class="clearfix">
+	
+
+
+
+
+
+	
+	
+	
+		
+	
+
+
+
+
+
+
+	<p class="pull-left">
+		
+		
+
+		
+			<small>
+				<span class="text-dimmed">Last modification&nbsp;17.03.2023</span>
+			</small>
+		
+	</p>
+
+
+	
+	
+
+
+	<p class="pull-right">
+		<small>
+			
+				<a href="#" class="icon icon--before icon--power hidden-print">
+					Top of page
+				</a>
+			
+		</small>
+	</p>
+ 
+</div>
+
+
+	
+		
+
+
+	
+
+	
+<div class="mod mod-socialshare">
+	
+
+	<div class="social-sharing" aria-labelledby="social_share">
+		<label id="social_share" class="sr-only">Social share</label>
+		
+		
+		
+
+		
+
+		
+	</div>
+</div>
+
+	
+	
+
+	
+
+            </div>
+            <div class="col-md-4">
+                
+
+
+<div class="context-column">
+	
+		
+			<a name="context-sidebar"></a>
+						
+		
+
+
+
+
+
+	
+		
+		
+			<div class="mod mod-contactbox">
+				
+					
+						
+					
+					
+				
+			</div>
+		
+	
+
+
+	
+	
+		
+
+
+
+	<div class="mod mod-basket">
+		<aside class="cart">
+			<h4>
+				Shopping cart
+			</h4>
+			<ul class="list-unstyled order-list js-order-list">
+			</ul>
+			
+		</aside>
+		<script type="text/template" id="order-list-template">
+			{{ for(var i=0,item;i<data.length;i++) {
+				index = i+1; item = data[i];
+			}}
+				<li class="clearfix" id="{{= item.id }}">
+					<span class="pull-left">{{= item.quantity }}x {{= item.productTitle }}</span>
+					<a class="storage-delete pull-right" href="#">
+						<span class="icon icon--after icon--trash"></span>
+					</a>
+					<input type="hidden" name="order_{{= index }}_productTitle" value="{{= item.productTitle }}" />
+					<input type="hidden" name="order_{{= index }}_quantity" value="{{= item.quantity }}" />
+					<input type="hidden" name="order_{{= index }}_productId" value="{{= item.productId }}" />
+					<input type="text" name="genericKeyValueParameter" value="{{= item.productTitle + "##" }}{{= item.quantity }}x" />
+				</li>
+			{{ } }}
+		</script>
+	</div>
+
+	
+	
+	
+
+	
+
+
+    
+        
+    
+
+
+
+</div>
+
+            </div>
+        </div>
+    </div>
+
+</div>
+
+		</div>
+	
+
+<!-- end: main -->
+
+
+    <span class="visible-print">https://www.efv.admin.ch/content/efv/en/home/efv/erechnung/e-rechnung-zustellen.html</span>
+
+    
+<footer role="contentinfo">
+	<h2 class="sr-only">Footer</h2>
+
+  
+
+  
+	<a name="context-sidebar"></a>
+  
+
+  
+  
+
+  	
+
+    
+        
+            <div class="container-fluid footer-service">
+                <h3>Federal Finance Administration FFA</h3>
+                <nav>
+                    <ul>
+                        
+                        
+                            <li><a href="/efv/en/home.html" title="Homepage" aria-label="Homepage">Homepage</a></li>
+                        
+                            <li><a href="/efv/en/home/efv/kontakt.html" target="_self" title="Contact" aria-label="Contact">Contact</a></li>
+                        
+                            <li><a href="https://www.efv.admin.ch/efv/en/home/efv/stellenangebote.html" target="_blank" aria-label="Jobs" class="icon icon--after icon--external" title="">Jobs</a></li>
+                        
+                            <li><a href="https://www.efv.admin.ch/efv/en/home/aktuell/nsb-news_list.html?dyn_organization=603" target="_blank" aria-label="News" class="icon icon--after icon--external" title="">News</a></li>
+                        
+                            <li><a href="https://eportal.admin.ch" target="_blank" aria-label="e-Portal: Services" class="icon icon--after icon--external" title="">e-Portal: Services</a></li>
+                        
+                    </ul>
+                </nav>
+            </div>
+        
+    
+
+
+
+	
+
+    	
+			
+			
+				
+					
+<div class="site-map">
+	<h2 class="sr-only">Footer</h2>
+
+	<a href="#site-map" data-target="#site-map" data-toggle="collapse" class="site-map-toggle collapsed">Sitemap</a>
+
+	<div class="container-fluid" id="site-map">
+		<div class="col-sm-6 col-md-3">
+			
+
+
+<div class="mod mod-linklist">
+	
+	
+
+
+
+	
+		
+		
+			
+				
+					
+						
+					
+					
+				
+
+				
+					
+					
+						<h3>Latest news</h3>
+					
+				
+
+			
+			
+			
+				
+				
+					<ul class="list-unstyled">
+						
+							<li>
+								
+									
+										<a href="/efv/en/home/aktuell/nsb-news_list.html" title="Press releases" aria-label="Press releases" data-skipextcss="true">Press releases</a>
+									
+									
+								
+							</li>
+						
+							<li>
+								
+									
+										<a href="/efv/en/home/aktuell/brennpunkt.html" target="_self" title="In focus" aria-label="In focus" data-skipextcss="true">In focus</a>
+									
+									
+								
+							</li>
+						
+							<li>
+								
+									
+										<a href="/efv/en/home/aktuell/a.html" title="Archive" aria-label="Archive" data-skipextcss="true">Archive</a>
+									
+									
+								
+							</li>
+						
+					</ul>
+				
+			
+			
+		
+	
+
+
+
+	
+</div>
+
+		</div>
+		<div class="col-sm-6 col-md-3">
+			
+
+
+<div class="mod mod-linklist">
+	
+	
+
+
+
+	
+		
+		
+			
+				
+					
+						
+					
+					
+				
+
+				
+					
+					
+						<h3>Topics</h3>
+					
+				
+
+			
+			
+			
+				
+				
+					<ul class="list-unstyled">
+						
+							<li>
+								
+									
+										<a href="/efv/en/home/themen/finanzpolitik_grundlagen.html" title="Financial policy, foundations" aria-label="Financial policy, foundations" data-skipextcss="true">Financial policy, foundations</a>
+									
+									
+								
+							</li>
+						
+							<li>
+								
+									
+										<a href="/efv/en/home/themen/finanzstatistik.html" title="Financial statistics" aria-label="Financial statistics" data-skipextcss="true">Financial statistics</a>
+									
+									
+								
+							</li>
+						
+							<li>
+								
+									
+										<a href="/efv/en/home/themen/finanzausgleich.html" title="Fiscal Equalization" aria-label="Fiscal Equalization" data-skipextcss="true">Fiscal Equalization</a>
+									
+									
+								
+							</li>
+						
+							<li>
+								
+									
+										<a href="/efv/en/home/themen/mittelbeschaff_verm_schuldenverw.html" title="Funding, asset and liability management" aria-label="Funding, asset and liability management" data-skipextcss="true">Funding, asset and liability management</a>
+									
+									
+								
+							</li>
+						
+							<li>
+								
+									
+										<a href="/efv/en/home/themen/waehrung_gewinnaussch_int.html" title="Monetary and currency system" aria-label="Monetary and currency system" data-skipextcss="true">Monetary and currency system</a>
+									
+									
+								
+							</li>
+						
+							<li>
+								
+									
+										<a href="/efv/en/home/themen/projekte.html" title="Projects" aria-label="Projects" data-skipextcss="true">Projects</a>
+									
+									
+								
+							</li>
+						
+							<li>
+								
+									
+										<a href="/efv/en/home/themen/publikationen.html" title="Publications" aria-label="Publications" data-skipextcss="true">Publications</a>
+									
+									
+								
+							</li>
+						
+					</ul>
+				
+			
+			
+		
+	
+
+
+
+	
+</div>
+
+		</div>
+		<div class="col-sm-6 col-md-3">
+			
+
+
+<div class="mod mod-linklist">
+	
+	
+
+
+
+	
+		
+		
+			
+				
+					
+						
+					
+					
+				
+
+				
+					
+					
+						<h3>Financial reports</h3>
+					
+				
+
+			
+			
+			
+				
+				
+					<ul class="list-unstyled">
+						
+							<li>
+								
+									
+										<a href="/efv/en/home/finanzberichterstattung/bundeshaushalt_ueb.html" title="Federal finances at a glance" aria-label="Federal finances at a glance" data-skipextcss="true">Federal finances at a glance</a>
+									
+									
+								
+							</li>
+						
+							<li>
+								
+									
+										<a href="/efv/en/home/finanzberichterstattung/finanzberichte.html" title="Financial reports" aria-label="Financial reports" data-skipextcss="true">Financial reports</a>
+									
+									
+								
+							</li>
+						
+							<li>
+								
+									
+										<a href="/efv/en/home/finanzberichterstattung/daten.html" title="Data" aria-label="Data" data-skipextcss="true">Data</a>
+									
+									
+								
+							</li>
+						
+					</ul>
+				
+			
+			
+		
+	
+
+
+
+	
+</div>
+
+		</div>
+		<div class="col-sm-6 col-md-3">
+			
+
+
+<div class="mod mod-linklist">
+	
+	
+
+
+
+	
+		
+		
+			
+				
+					
+						
+					
+					
+				
+
+				
+					
+					
+						<h3>The FFA</h3>
+					
+				
+
+			
+			
+			
+				
+				
+					<ul class="list-unstyled">
+						
+							<li>
+								
+									
+										<a href="/efv/en/home/efv/auftrag.html" title="Task" aria-label="Task" data-skipextcss="true">Task</a>
+									
+									
+								
+							</li>
+						
+							<li>
+								
+									
+										<a href="/efv/en/home/efv/erechnung.html" title="E-bill" aria-label="E-bill" data-skipextcss="true">E-bill</a>
+									
+									
+								
+							</li>
+						
+							<li>
+								
+									
+										<a href="/efv/en/home/efv/organisation.html" title="Organisation" aria-label="Organisation" data-skipextcss="true">Organisation</a>
+									
+									
+								
+							</li>
+						
+							<li>
+								
+									
+										<a href="/efv/en/home/efv/kontakt.html" title="Contact" aria-label="Contact" data-skipextcss="true">Contact</a>
+									
+									
+								
+							</li>
+						
+							<li>
+								
+									
+										<a href="/efv/en/home/efv/stellenangebote.html" title="Jobs" aria-label="Jobs" data-skipextcss="true">Jobs</a>
+									
+									
+								
+							</li>
+						
+					</ul>
+				
+			
+			
+		
+	
+
+
+
+	
+</div>
+
+		</div>
+		<div class="col-sm-6 col-md-3">
+			
+
+
+<div class="mod mod-linklist">
+	
+	
+
+
+
+	
+		
+		
+			
+			
+			
+				
+					
+				
+				
+			
+			
+		
+	
+
+
+
+	
+</div>
+
+		</div>
+		<div class="col-sm-6 col-md-3">
+			
+
+
+<div class="mod mod-linklist">
+	
+	
+
+
+
+	
+		
+		
+			
+			
+			
+				
+					
+				
+				
+			
+			
+		
+	
+
+
+
+	
+</div>
+
+		</div>
+		<div class="col-sm-6 col-md-3">
+			
+
+
+<div class="mod mod-linklist">
+	
+	
+
+
+
+	
+		
+		
+			
+			
+			
+				
+					
+				
+				
+			
+			
+		
+	
+
+
+
+	
+</div>
+
+		</div>
+		<div class="col-sm-6 col-md-3">
+			
+
+
+<div class="mod mod-linklist">
+	
+	
+
+
+
+	
+		
+		
+			
+			
+			
+				
+					
+				
+				
+			
+			
+		
+	
+
+
+
+	
+</div>
+
+		</div>
+	</div>
+</div>
+				
+			
+		
+    
+
+
+  	<div class="container-fluid">
+  		
+	
+
+
+	
+		
+			
+				<h3>Stay informed</h3>
+			
+
+			<nav class="links-social" aria-labelledby="social_media">
+				<label id="social_media" class="sr-only">Social media links</label>
+				<ul>
+					
+						<li><a href="https://www.linkedin.com/company/72285581/admin/" class="icon icon--before  icon icon--before fa fa-linkedin" target="_blank" aria-label="LinkedIn" title="">LinkedIn</a></li>
+					
+				</ul>
+			</nav>
+		
+		
+	
+
+
+
+		
+	
+
+<div class="mod mod-cobranding">
+    
+        
+            
+        
+        
+    
+</div>
+
+
+
+
+  		<!-- begin: logo phone -->
+		
+			
+			
+
+	
+		
+<div class="mod mod-logo">
+	
+	
+		
+			<hr class="footer-line visible-xs">
+			<img src="/efv/en/_jcr_content/logo/image.imagespooler.png/1675236487282/logo.png" class="visible-xs" alt="Federal Finance Administration FFA"/>
+		
+		
+	
+	
+</div>
+	
+	
+
+
+			
+		
+	 	<!-- end: logo phone -->
+  	</div>
+
+    
+
+<div class="footer-address">
+	
+
+	<span class="hidden-xs">Federal Finance Administration FFA</span>
+
+
+	
+
+	
+		
+			<nav class="pull-right">
+				<ul>
+					
+						<li><a href="https://www.admin.ch/gov/en/start/terms-and-conditions.html" target="_blank" aria-label="Legal framework" title="">Legal framework</a></li>
+					
+				</ul>
+			</nav>
+		
+		
+	
+
+
+</div>
+
+
+  
+  
+
+</footer>        
+
+
+    <div class="modal" id="nav_modal_rnd">
+        <!-- modal -->
+    </div>
+
+</div>
+<!-- end: container -->
+
+
+
+<script src="/etc.clientlibs/clientlibs/granite/jquery/granite/csrf.min.js"></script>
+<script src="/etc/clientlibs/granite/jquery/granite/csrf.min.js"></script>
+
+
+
+	<script type="text/javascript" src="/etc/designs/core/frontend/modules.js"></script>
+
+
+
+
+
+	
+
+
+
+
+
+	<!-- bdefU5HMDNklWRGRlqwtWhXP6Fey6I8DNJek98mCy4j8pwzCtODg3j7jkFNWiuO5ZmsLxi1SzhQBr4UpeHMTCBBDFmcTExERO7x1lgaKSAi1mxXjuG8a8Smmdtb4uvheO1FP9BHmDV4EZAEanqmq6HHPBcLMtzdKV1myRRtn1DwXNfTnuDZGjtWC935jQ5BCStC6q9An6cDNZgKKasX4svPKE1imrhL8lhhF1ytM4WvoWLIfF8a7jz21dL4UxDuQRjIV1H8G76Q6PMeshOpsFMTrHFThEogfOKsZPxaJdPFt6CiFdcsSC5mPnWPaOlDzZZcA8d1IwP6w8XJkiGaBccu4DZTdCqZheD6sDrSVs1eNh6ys0vRWzoRFfQTq6lEWJp9paoveFZnIWmHGDXF2RKbGvXEI5AeFKUttwEKqnPPKXpcZYHug6PXnvS6ar3WzVpfX8FCIsP83inlXZ1MKG0ZzBBTVSeRlMLtRlua0NVDdJLgyfYJ6A8jgaVW8j9VQNAdxjSfROvkzLgSQjmDgL4dDQcvbfNyoIDpOw3lofOyiayovy3GXkwj0wEwbBB684qaWtzLEsYviqxny08pdvU0oCJC5ElLBbyjIhHzLXwOwbbAZQkPTc1BEJhHVmR45zQ5r7JWdnbh3vW0cQTfjP3TE3emkxL5utyKdrg4MxzqD75J0x96okijEEbKuE60hRXuKL06WkONzLaC1eESZsd0h4MbYXDbc0nysl2uV5VnDCEr0PSZ17WtQZ6FE0DojgFhIRvb2qMxGNb2EPf4SHT3BtqNHssqdEWBsmHZX1TBvkUUZQwbXo3KoFKf3AKd4kBkfAeEUfZjxXqRMecKCJajvOPywedDpOGxoSXPJOVN1x7dOERMqfkURHQiE89i1U7W8TooDBAhI3RbM51mp0ZyFD4zzVPlSuLcp4UnOK72Asi5Tppz2cVeJ27jjdWeWT070DVXAfidNGEFRWlr3oKoMbYyrCnHrvEhwCGFuWoZkhvFEYqeRbtbl96fhBXWgCg6wV5nCumufMlMKigjsIaIzgpNHkGby35Igg4Dq3xIUOpTOcIpOswZMaJQ0SdRYgHM4fhX3uORNCuUzmppWFyusfSGDnimnFHCTH8Y0a5VV5j1oxpCZXsSTOysuOISBoNN0ljlEL7bqWTH0v8HLNFyu4LmYxujtuYdt1GoynjNpyOpy768CvmYlPh7gzzbKIZ7GPCwH0niEFMNXe9lLuXC8lVcv3i463dsXv9jA7CuOMc6ATjF3n5Da64mUF -->
+
+
+
+
+
+ 
+	
+
+
+
+
+	<!-- Matomo -->
+<script type="text/javascript">
+  var _paq = window._paq || [];
+  /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="https://analytics.bit.admin.ch/";
+    _paq.push(['setTrackerUrl', u+'matomo.php']);
+    _paq.push(['setSiteId', '96']);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<!-- End Matomo Code -->
+
+
+
+
+
+</body>
+
+    
+
+</html>

@@ -17,7 +17,7 @@ NEWSPIDER_MODULE = "crawler.spiders"
 #USER_AGENT = "crawler (+http://www.yourdomain.com)"
 
 # Obey robots.txt rules
-ROBOTSTXT_OBEY = False
+ROBOTSTXT_OBEY = True
 
 # Configure maximum concurrent requests performed by Scrapy (default: 16)
 #CONCURRENT_REQUESTS = 32
@@ -69,7 +69,7 @@ ITEM_PIPELINES = {
      'crawler.pipelines.ParentsPipeline': 150,
      'crawler.pipelines.DuplicatesPipeline': 200,
      'crawler.pipelines.MetadataPipeline': 300,
-     'crawler.pipelines.DownloadContentPipeline': 400
+     #'crawler.pipelines.DownloadContentPipeline': 400
 }
 
 # Enable and configure the AutoThrottle extension (disabled by default)
@@ -97,4 +97,11 @@ ITEM_PIPELINES = {
 REQUEST_FINGERPRINTER_IMPLEMENTATION = "2.7"
 TWISTED_REACTOR = "twisted.internet.asyncioreactor.AsyncioSelectorReactor"
 FEED_EXPORT_ENCODING = "utf-8"
+HTTPERROR_ALLOW_ALL = True
 
+DEPTH_LIMIT = 2
+DOWNLOAD_DELAY = 1.0
+LOG_LEVEL = 'WARNING'
+LOG_FILE = 'crawler.log'
+LOG_STDOUT = False
+CLOSESPIDER_PAGECOUNT = 50
