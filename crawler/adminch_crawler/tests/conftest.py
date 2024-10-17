@@ -1,8 +1,8 @@
 import json
 
 import pytest
+from adminch_crawler.config import METADATA_DIR, PARENTS_DIR
 
-from adminch_crawler.config import PARENTS_DIR, METADATA_DIR
 
 @pytest.fixture(scope="session")
 def load_metadata():
