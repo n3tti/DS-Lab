@@ -67,6 +67,7 @@ ITEM_PIPELINES = {
      'crawler.pipelines.FilterURLPipeline': 50,
      'crawler.pipelines.IDAssignmentPipeline': 100,
      'crawler.pipelines.ParentsPipeline': 150,
+     'crawler.pipelines.HashContentPipeline' : 170,
      'crawler.pipelines.DuplicatesPipeline': 200,
      'crawler.pipelines.MetadataPipeline': 300,
      #'crawler.pipelines.DownloadContentPipeline': 400
@@ -105,3 +106,4 @@ LOG_LEVEL = 'WARNING'
 LOG_FILE = 'crawler.log'
 LOG_STDOUT = False
 CLOSESPIDER_PAGECOUNT = 50
+LOG_APPEND = False

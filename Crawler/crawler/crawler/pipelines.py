@@ -8,25 +8,23 @@ import logging
 from itemadapter import ItemAdapter
 from scrapy.exceptions import DropItem
 from scrapy import logformatter
-
-import csv
+from simhash import Simhash
 import uuid
 import json
 import os
-import shutil
-import pdb
-
+import json
 
 
 class FilterURLPipeline():
     
     def __init__(self):
-        self.allowed_content_type = ["text/html", "application/pdf", "image/png"]
+        self.allowed_content_type = ["text/html"]
 
     def process_item(self, item, spider):
         if item["status"] != 200 or item["content_type"] is None:
             raise DropItem()
-        elif not item["content_type"].split(";")[0] in self.allowed_content_type: 
+        elif not item["content_type"].split(";")[0] in self.allowed_content_type:
+            logging.getLogger(spider.name).error("Unallowed content type.")
             raise DropItem()
         else :
             return item
@@ -96,11 +94,24 @@ class ParentsPipeline:
         return item
 
 
+
+class HashContentPipeline:
+
+    def process_item(self, item, spider):
+        if item["content"] is not None:
+            item["hash"] = Simhash(item["content"]).value
+        else:
+            item["hash"] = None
+            logging.getLogger(spider.name).error("No content for that page.")
+        return item
+
+
 class DuplicatesPipeline:
     def process_item(self, item, spider):
         ## TODO, maybe with the hash thing -> compare the hash of item["body"]
         # the problem here is to determine which one of the duplicates to keep (as both duplicates can have different id's)
         return item
+    
     
 class MetadataPipeline:
     def __init__(self):
@@ -116,33 +127,24 @@ class MetadataPipeline:
         self.file.close()
 
     def process_item(self, item, spider):
-
-        import json
-        # TODO: @saschas version of metadata saving, check for merging @emma
-        '''keys_to_save = ["id", "depth", "url", "content_type", "content_length", "content_encoding", "last_modified",
-                        "date", "cousin_urls", "title", "content", "description", "keywords", "pdf_links"]
-
+        keys_to_save = ["id", "depth", "url", "lang", "content_type", "content_length", "content_encoding", "last_modified",
+                        "date", "hash", "cousin_urls", "title", "content", "description", "keywords", "pdf_links"]
         dic = {}
         for key in keys_to_save:
             if key in item:
                 dic[key] = item[key]
             else:
-                self.logger.warning(f"Key '{key}' not found in item")
+                self.logger.warning(f"Key '{key}' not found in item.")
                 dic[key] = None
 
-        line = json.dumps(dic) + "\n"
-        '''
-
-        dic = {"id": item["id"], "depth" : item["depth"], "url" : item["url"],"lang": item["lang"], "type" : item["content_type"], "length" : item["content_length"], \
-               "encoding" : item["content_encoding"], "last_modified" : item["last_modified"], "date" : item["date"], "cousin_urls" : item["cousin_urls"]}
         line = json.dumps(dic)
         if self.isFirst:
             self.isFirst = False
         else:
             line = ",\n" + line
-            
         self.file.write(line)
         return item
+    
   
     
 class DownloadContentPipeline:

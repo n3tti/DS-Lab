@@ -2,8 +2,8 @@ from scrapy.spiders import CrawlSpider, Rule
 from scrapy.linkextractors import LinkExtractor
 from crawler.items import PageItem
 from urllib.parse import urljoin
-
 import pdb
+import re
 
 class CrawlingSpider(CrawlSpider):
     name = "mycrawler"
@@ -49,8 +49,10 @@ class CrawlingSpider(CrawlSpider):
         item["content_body"] = response.body
 
         item["content"] = ' '.join(response.css('p::text').getall())
-
+    
         item["lang"] = response.xpath("//html/@lang").get()
+
+        item["hash"] = None
 
         alternate_links = response.xpath('//link[@rel="alternate"]')
         languages_dict = {}
