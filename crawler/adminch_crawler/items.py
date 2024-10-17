@@ -19,7 +19,6 @@ class PageItem(scrapy.Item):
     date = scrapy.Field()
     lang = scrapy.Field()
 
-
     cousin_urls = scrapy.Field()
     child_urls = scrapy.Field()
 
@@ -27,9 +26,8 @@ class PageItem(scrapy.Item):
     content_body = scrapy.Field()
     hash = scrapy.Field()
     content = scrapy.Field()
-    
+
     pdf_links = scrapy.Field()
 
     description = scrapy.Field()
     keywords = scrapy.Field()
-

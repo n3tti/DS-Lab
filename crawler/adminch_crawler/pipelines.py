@@ -2,24 +2,29 @@
 #
 # Don't forget to add your pipeline to the ITEM_PIPELINES setting
 # See: https://docs.scrapy.org/en/latest/topics/item-pipeline.html
+import csv
+import json
 import logging
+import os
+import uuid
+
+from adminch_crawler.config import (
+    APPLICATION_DIR,
+    IMAGE_DIR,
+    METADATA_DIR,
+    PARENTS_DIR,
+    TEXT_DIR,
+)
 
 # useful for handling different item types with a single interface
 from itemadapter import ItemAdapter
-from scrapy.exceptions import DropItem
 from scrapy import logformatter
+from scrapy.exceptions import DropItem
 from simhash import Simhash
 
-from adminch_crawler.config import PARENTS_DIR, METADATA_DIR, TEXT_DIR, IMAGE_DIR, APPLICATION_DIR
 
-import csv
-import uuid
-import json
-import os
-import json
+class FilterURLPipeline:
 
-class FilterURLPipeline():
-    
     def __init__(self):
         self.allowed_content_type = ["text/html"]
 
@@ -29,7 +34,7 @@ class FilterURLPipeline():
         elif not item["content_type"].split(";")[0] in self.allowed_content_type:
             logging.getLogger(spider.name).error("Unallowed content type.")
             raise DropItem()
-        else :
+        else:
             return item
 
 
@@ -52,7 +57,7 @@ class IDAssignmentPipeline:
                 self.seen_urls[child_url] = id
             else:
                 item["child_urls"][child_url] = self.seen_urls[child_url]
-        
+
         for lang, cousin_url in item["cousin_urls"].items():
             if cousin_url not in self.seen_urls.keys():
                 id = self.get_next_id()
@@ -62,27 +67,28 @@ class IDAssignmentPipeline:
                 item["cousin_urls"][lang] = self.seen_urls[cousin_url]
 
         return item
-    
+
     def get_next_id(self):
-        return str(uuid.uuid1())  
+        return str(uuid.uuid1())
+
 
 class ParentsPipeline:
     def __init__(self):
         self.parents = {}
-    
+
     def open_spider(self, spider):
-        self.file = open(PARENTS_DIR, 'w')
+        self.file = open(PARENTS_DIR, "w")
 
     def close_spider(self, spider):
         self.file.write("[\n")
         first = True
         for child_id, parents_set in self.parents.items():
-            dic = {"id" : child_id, "parents" : list(parents_set)}
+            dic = {"id": child_id, "parents": list(parents_set)}
             line = json.dumps(dic)
             if first:
                 first = False
             else:
-                line = ",\n" + line 
+                line = ",\n" + line
             self.file.write(line)
         self.file.write("\n]")
         self.file.close()
@@ -93,9 +99,8 @@ class ParentsPipeline:
                 self.parents[child_id] = set()
                 self.parents[child_id].add(item["id"])
             else:
-                self.parents[child_id].add(item["id"])      
+                self.parents[child_id].add(item["id"])
         return item
-
 
 
 class HashContentPipeline:
@@ -114,14 +119,14 @@ class DuplicatesPipeline:
         ## TODO, maybe with the hash thing -> compare the hash of item["body"]
         # the problem here is to determine which one of the duplicates to keep (as both duplicates can have different id's)
         return item
-    
-    
+
+
 class MetadataPipeline:
     def __init__(self):
         self.logger = logging.getLogger(__name__)
 
     def open_spider(self, spider):
-        self.file = open(METADATA_DIR, 'w')
+        self.file = open(METADATA_DIR, "w")
         self.file.write("[\n")
         self.isFirst = True
 
@@ -130,8 +135,24 @@ class MetadataPipeline:
         self.file.close()
 
     def process_item(self, item, spider):
-        keys_to_save = ["id", "depth", "url", "lang", "content_type", "content_length", "content_encoding", "last_modified",
-                        "date", "hash", "cousin_urls", "title", "content", "description", "keywords", "pdf_links"]
+        keys_to_save = [
+            "id",
+            "depth",
+            "url",
+            "lang",
+            "content_type",
+            "content_length",
+            "content_encoding",
+            "last_modified",
+            "date",
+            "hash",
+            "cousin_urls",
+            "title",
+            "content",
+            "description",
+            "keywords",
+            "pdf_links",
+        ]
         dic = {}
         for key in keys_to_save:
             if key in item:
@@ -147,9 +168,8 @@ class MetadataPipeline:
             line = ",\n" + line
         self.file.write(line)
         return item
-    
-  
-    
+
+
 class DownloadContentPipeline:
     def __init__(self):
         self.folders = [TEXT_DIR, IMAGE_DIR, APPLICATION_DIR]
@@ -164,7 +184,6 @@ class DownloadContentPipeline:
 
         return item
 
-
     def open_spider(self, spider):
         self.clean_folders()
 
@@ -175,7 +194,7 @@ class DownloadContentPipeline:
                     file_path = os.path.join(path, filename)
                     try:
                         if os.path.isfile(file_path) or os.path.islink(file_path):
-                            os.unlink(file_path) 
+                            os.unlink(file_path)
                     except Exception as e:
                         print(f"Failed to delete {file_path}. Reason: {e}")
             else:
