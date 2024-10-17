@@ -2,3 +2,4 @@ scrapy
 crawler
 pytest
 icecream
+simhash

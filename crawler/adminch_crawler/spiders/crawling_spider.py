@@ -1,6 +1,6 @@
 from scrapy.spiders import CrawlSpider, Rule
 from scrapy.linkextractors import LinkExtractor
-from crawler.items import PageItem
+from adminch_crawler.items import PageItem
 from urllib.parse import urljoin
 import pdb
 import re
