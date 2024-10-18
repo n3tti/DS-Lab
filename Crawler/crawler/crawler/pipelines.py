@@ -64,7 +64,9 @@ class IDAssignmentPipeline:
         return item
     
     def get_next_id(self):
-        return str(uuid.uuid1())  
+        return str(uuid.uuid1())
+
+
 
 class ParentsPipeline:
     def __init__(self):
@@ -105,7 +107,7 @@ class HashContentPipeline:
             item["hash"] = Simhash(item["content"]).value
         else:
             item["hash"] = None
-            logging.getLogger(spider.name).error("No content for that page.")
+            logging.getLogger(__name__).error("No content for that page.")
         return item
 
 
@@ -163,7 +165,6 @@ class DownloadContentPipeline:
                 file.write(item["content_body"])
 
         return item
-
 
     def open_spider(self, spider):
         self.clean_folders()
