@@ -36,7 +36,7 @@ class CrawlingSpider(CrawlSpider):
         # items that are obtained further below
         item["child_urls"] = {}
         item["cousin_urls"] = {}
-        item["pdf_links"] = []
+        item["pdf_links"] = {}
 
         # metadata
         item["content_type"] = (
@@ -86,6 +86,6 @@ class CrawlingSpider(CrawlSpider):
 
             # get pdf links of this page
             if full_url.lower().endswith(".pdf"):
-                item["pdf_links"].append(full_url)
+                item["pdf_links"][full_url] = None
 
         yield item

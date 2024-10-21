@@ -67,6 +67,7 @@ ITEM_PIPELINES = {
     "adminch_crawler.pipelines.FilterURLPipeline": 50,
     "adminch_crawler.pipelines.IDAssignmentPipeline": 100,
     "adminch_crawler.pipelines.ParentsPipeline": 150,
+    "adminch_crawler.pipelines.PDFPipeline": 160,
     "adminch_crawler.pipelines.HashContentPipeline": 170,
     "adminch_crawler.pipelines.DuplicatesPipeline": 200,
     "adminch_crawler.pipelines.MetadataPipeline": 300,

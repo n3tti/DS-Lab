@@ -8,12 +8,17 @@ import logging
 import os
 import uuid
 
+
 from adminch_crawler.config import (
     APPLICATION_DIR,
     IMAGE_DIR,
     METADATA_DIR,
     PARENTS_DIR,
     TEXT_DIR,
+    JOBDIR,
+    SAVE_IDS_FILE,
+    SAVE_LAST_ID_FILE,
+    PDF_FILE
 )
 
 # useful for handling different item types with a single interface
@@ -22,6 +27,31 @@ from scrapy import logformatter
 from scrapy.exceptions import DropItem
 from simhash import Simhash
 
+
+class ResummablePipeline(ABSTRACT):
+    def __intit__(self):
+        self.files = {}
+
+    def is_resuming(self, spider):
+        spider.crawler.settings.get('JOBDIR') and os.path.exists(spider.crawler.settings.get('JOBDIR'))
+
+    def open_file(self, file, append):
+        if append:
+            self.files[file] = open(file, "a")
+        else:
+            self.files[file] = open(file, "w")
+
+    def load_data(self, file):
+        return json.load(self.files[file])
+
+    def save_data(self, file, data):
+        self.files[file].write(data)
+    
+    def close_files(self):
+        for file in self.files:
+            file.close()
+
+#-------------------------------------------------
 
 class FilterURLPipeline:
 
@@ -38,73 +68,106 @@ class FilterURLPipeline:
             return item
 
 
-class IDAssignmentPipeline:
+class IDAssignmentPipeline(ResummablePipeline):
     def __init__(self):
         self.seen_urls = {}
-
+        self.url_dics = ["cousin_urls", "pdf_links", "child_urls"]
+        self.current_id = 0
+        
     def process_item(self, item, spider):
-        if item["url"] not in self.seen_urls.keys():
+        if item["url"] is None:
+            logging.getLogger(spider.name).error("None URL")
+            raise DropItem()
+        
+        if not item["url"]:
             id = self.get_next_id()
             item["id"] = id
             self.seen_urls[item["url"]] = id
         else:
             item["id"] = self.seen_urls[item["url"]]
 
-        for child_url in item["child_urls"].keys():
-            if child_url not in self.seen_urls.keys():
-                id = self.get_next_id()
-                item["child_urls"][child_url] = id
-                self.seen_urls[child_url] = id
-            else:
-                item["child_urls"][child_url] = self.seen_urls[child_url]
-
-        for lang, cousin_url in item["cousin_urls"].items():
-            if cousin_url not in self.seen_urls.keys():
-                id = self.get_next_id()
-                item["cousin_urls"][lang] = id
-                self.seen_urls[cousin_url] = id
-            else:
-                item["cousin_urls"][lang] = self.seen_urls[cousin_url]
-
+        for url_dic in self.url_dics:
+            for url, none_id in item[url_dic].items():
+                if not self.seen_urls[url]:
+                    id = self.get_next_id()
+                    self.seen_urls[url] = id
+                    item[url_dic][url] = id
+                else :
+                    item[url_dic][url] = self.seen_urls[url]
         return item
-
+    
     def get_next_id(self):
-        return str(uuid.uuid1())
-
-
-class ParentsPipeline:
-    def __init__(self):
-        self.parents = {}
-
+        self.current_id += 1
+        return self.current_id
+    
     def open_spider(self, spider):
-        self.file = open(PARENTS_DIR, "w")
+        if self.is_resuming(spider):
+            self.open_file(SAVE_IDS_FILE, True)
+            self.open_file(SAVE_LAST_ID_FILE, False)
+            self.seen_urls = self.load_data(SAVE_IDS_FILE)
+            self.current_id = self.load_data(SAVE_LAST_ID_FILE)["last_id"]
+        else:
+            self.open_file(SAVE_IDS_FILE, False)
+            self.open_file(SAVE_LAST_ID_FILE, False)
 
     def close_spider(self, spider):
-        self.file.write("[\n")
-        first = True
-        for child_id, parents_set in self.parents.items():
-            dic = {"id": child_id, "parents": list(parents_set)}
-            line = json.dumps(dic)
-            if first:
-                first = False
-            else:
-                line = ",\n" + line
-            self.file.write(line)
-        self.file.write("\n]")
-        self.file.close()
+        self.save_data(SAVE_IDS_FILE, json.dumps(self.seen_urls))
+        self.save_data(SAVE_LAST_ID_FILE, json.dumps({"last_id" : self.current_id}))
+        self.close_files()
+        
+
+  
+    # def process_item(self, item, spider):
+    #     if item["url"] not in self.seen_urls.keys():
+    #         id = self.get_next_id()
+    #         item["id"] = id
+    #         self.seen_urls[item["url"]] = id
+    #     else:
+    #         item["id"] = self.seen_urls[item["url"]]
+
+    #     for child_url in item["child_urls"].keys():
+    #         if child_url not in self.seen_urls.keys():
+    #             id = self.get_next_id()
+    #             item["child_urls"][child_url] = id
+    #             self.seen_urls[child_url] = id
+    #         else:
+    #             item["child_urls"][child_url] = self.seen_urls[child_url]
+
+    #     for lang, cousin_url in item["cousin_urls"].items():
+    #         if cousin_url not in self.seen_urls.keys():
+    #             id = self.get_next_id()
+    #             item["cousin_urls"][lang] = id
+    #             self.seen_urls[cousin_url] = id
+    #         else:
+    #             item["cousin_urls"][lang] = self.seen_urls[cousin_url]
+
+    #     return item
+
+
+
+class PDFPipeline(ResummablePipeline):
+        
+    def open_spider(self, spider):
+        self.resumed = self.is_resuming(spider)
+        if self.resumed:
+            self.open_file(PDF_FILE, True)
+        else:
+            self.open_file(PDF_FILE, False)
+
+    def close_spider(self):
+        self.close_files()
 
     def process_item(self, item, spider):
-        for child_id in item["child_urls"].values():
-            if child_id not in self.parents.keys():
-                self.parents[child_id] = set()
-                self.parents[child_id].add(item["id"])
-            else:
-                self.parents[child_id].add(item["id"])
+        for pdf_url, id in item["pdf_urls"].items():
+            dic = {"id" : id, "url" : pdf_url, "lang" : item["lang"], "parent" : item["id"]}
+            line = json.dumps(dic)
+            self.save_data(line + "\n")
+            self.seen_pdfs.add(id)
         return item
+
 
 
 class HashContentPipeline:
-
     def process_item(self, item, spider):
         if item["content"] is not None:
             item["hash"] = Simhash(item["content"]).value
@@ -114,25 +177,38 @@ class HashContentPipeline:
         return item
 
 
-class DuplicatesPipeline:
+
+class ParentsPipeline(ResummablePipeline):
+
+    def open_spider(self, spider):
+        if self.is_resuming():
+            self.open_file(PARENTS_DIR, True)
+        else:
+            self.open_file(PARENTS_DIR, False)
+
+    def close_spider(self, spider):
+        self.close_files()
+
     def process_item(self, item, spider):
-        ## TODO, maybe with the hash thing -> compare the hash of item["body"]
-        # the problem here is to determine which one of the duplicates to keep (as both duplicates can have different id's)
+        for child_id in item["child_urls"].values():
+            dic = {"id": child_id, "parent": item["id"]}
+            line = json.dumps(dic )
+            self.save_data(PARENTS_DIR, line + '\n')
         return item
 
 
-class MetadataPipeline:
+class MetadataPipeline(ResummablePipeline):
     def __init__(self):
         self.logger = logging.getLogger(__name__)
 
     def open_spider(self, spider):
-        self.file = open(METADATA_DIR, "w")
-        self.file.write("[\n")
-        self.isFirst = True
+        if self.is_resuming():
+            self.open_file(METADATA_DIR, True)
+        else:
+            self.open_file(METADATA_DIR, False)
 
     def close_spider(self, spider):
-        self.file.write("\n]")
-        self.file.close()
+        self.close_files()
 
     def process_item(self, item, spider):
         keys_to_save = [
@@ -162,40 +238,36 @@ class MetadataPipeline:
                 dic[key] = None
 
         line = json.dumps(dic)
-        if self.isFirst:
-            self.isFirst = False
-        else:
-            line = ",\n" + line
-        self.file.write(line)
+        self.save_data( METADATA_DIR, line + '\n')
         return item
 
 
-class DownloadContentPipeline:
-    def __init__(self):
-        self.folders = [TEXT_DIR, IMAGE_DIR, APPLICATION_DIR]
-        self.content_types = ["text/html", "application/pdf", "image/png"]
+# class DownloadContentPipeline:
+#     def __init__(self):
+#         self.folders = [TEXT_DIR, IMAGE_DIR, APPLICATION_DIR]
+#         self.content_types = ["text/html", "application/pdf", "image/png"]
 
-    def process_item(self, item, spider):
-        content_type = item["content_type"].split(";")[0]
+#     def process_item(self, item, spider):
+#         content_type = item["content_type"].split(";")[0]
 
-        if content_type == "text/html":
-            with open(TEXT_DIR + f"{item['id']}.bin", "wb") as file:
-                file.write(item["content_body"])
+#         if content_type == "text/html":
+#             with open(TEXT_DIR + f"{item['id']}.bin", "wb") as file:
+#                 file.write(item["content_body"])
 
-        return item
+#         return item
 
-    def open_spider(self, spider):
-        self.clean_folders()
+#     def open_spider(self, spider):
+#         self.clean_folders()
 
-    def clean_folders(self):
-        for path in self.folders:
-            if os.path.exists(path):
-                for filename in os.listdir(path):
-                    file_path = os.path.join(path, filename)
-                    try:
-                        if os.path.isfile(file_path) or os.path.islink(file_path):
-                            os.unlink(file_path)
-                    except Exception as e:
-                        print(f"Failed to delete {file_path}. Reason: {e}")
-            else:
-                os.makedirs(path)
+#     def clean_folders(self):
+#         for path in self.folders:
+#             if os.path.exists(path):
+#                 for filename in os.listdir(path):
+#                     file_path = os.path.join(path, filename)
+#                     try:
+#                         if os.path.isfile(file_path) or os.path.islink(file_path):
+#                             os.unlink(file_path)
+#                     except Exception as e:
+#                         print(f"Failed to delete {file_path}. Reason: {e}")
+#             else:
+#                 os.makedirs(path)
