@@ -13,7 +13,7 @@ TEXT_DIR = DATA_DIR + "text/html/"
 IMAGE_DIR = DATA_DIR + "image/png/"
 APPLICATION_DIR = DATA_DIR + "application/pdf/"
 
-PERSISTANCE_BASE = BASE_DIR + "/adminch_crawler/persistance/"
+PERSISTANCE_BASE = BASE_DIR + "/persistance/"
 JOBDIR = PERSISTANCE_BASE + "/jobdir/"
 SAVE_IDS_FILE = PERSISTANCE_BASE + "pipelines_states/seen_ids.json"
 SAVE_LAST_ID_FILE = PERSISTANCE_BASE + "pipelines_states/last_id.json"

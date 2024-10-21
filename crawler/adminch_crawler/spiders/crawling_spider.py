@@ -8,7 +8,7 @@ from scrapy.spiders import CrawlSpider, Rule
 
 
 class CrawlingSpider(CrawlSpider):
-    name = "mycrawler"
+    name = "my2crawler"
     allowed_domains = ["admin.ch"]
     start_urls = ["https://www.admin.ch/"]
 
@@ -60,7 +60,7 @@ class CrawlingSpider(CrawlSpider):
         item["description"] = response.css('meta[name="description"]::attr(content)').get()
         item["keywords"] = response.css('meta[name="keywords"]::attr(content)').get()
 
-        item["content_body"] = response.body
+        #item["content_body"] = response.body
 
         item["content"] = " ".join(response.css("p::text").getall())
 
@@ -78,14 +78,17 @@ class CrawlingSpider(CrawlSpider):
         item["cousin_urls"] = languages_dict
 
         for link in response.css("a::attr(href)").getall():
-            full_url = urljoin(response.url, link)
-
-            # get child and cousin urls
-            if link not in item["cousin_urls"].keys() and link != response.url:
-                item["child_urls"][full_url] = None
+            full_url = urljoin(response.url, link)            
 
             # get pdf links of this page
             if full_url.lower().endswith(".pdf"):
                 item["pdf_links"][full_url] = None
+            
+        for link in response.css("a::attr(href)").getall():
+            full_url = urljoin(response.url, link)
+             
+            # get child and cousin urls
+            if link not in item["cousin_urls"].keys() and link not in item["pdf_links"].keys() and link != response.url:
+                item["child_urls"][full_url] = None
 
         yield item

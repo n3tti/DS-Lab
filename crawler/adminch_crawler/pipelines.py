@@ -7,6 +7,8 @@ import json
 import logging
 import os
 import uuid
+from abc import ABC
+
 
 
 from adminch_crawler.config import (
@@ -28,8 +30,8 @@ from scrapy.exceptions import DropItem
 from simhash import Simhash
 
 
-class ResummablePipeline(ABSTRACT):
-    def __intit__(self):
+class ResummablePipeline(ABC):
+    def __init__(self):
         self.files = {}
 
     def is_resuming(self, spider):
@@ -48,12 +50,12 @@ class ResummablePipeline(ABSTRACT):
         self.files[file].write(data)
     
     def close_files(self):
-        for file in self.files:
+        for file_name, file in self.files.items():
             file.close()
 
 #-------------------------------------------------
 
-class FilterURLPipeline:
+class FilterURLPipeline():
 
     def __init__(self):
         self.allowed_content_type = ["text/html"]
@@ -69,9 +71,11 @@ class FilterURLPipeline:
 
 
 class IDAssignmentPipeline(ResummablePipeline):
+
     def __init__(self):
+        super().__init__()
         self.seen_urls = {}
-        self.url_dics = ["cousin_urls", "pdf_links", "child_urls"]
+        self.url_dics = ["pdf_links", "child_urls"]
         self.current_id = 0
         
     def process_item(self, item, spider):
@@ -79,7 +83,7 @@ class IDAssignmentPipeline(ResummablePipeline):
             logging.getLogger(spider.name).error("None URL")
             raise DropItem()
         
-        if not item["url"]:
+        if item["url"] not in self.seen_urls.keys() :
             id = self.get_next_id()
             item["id"] = id
             self.seen_urls[item["url"]] = id
@@ -87,13 +91,22 @@ class IDAssignmentPipeline(ResummablePipeline):
             item["id"] = self.seen_urls[item["url"]]
 
         for url_dic in self.url_dics:
-            for url, none_id in item[url_dic].items():
-                if not self.seen_urls[url]:
+            for url in item[url_dic].keys():
+                if url not in self.seen_urls.keys():
                     id = self.get_next_id()
                     self.seen_urls[url] = id
                     item[url_dic][url] = id
                 else :
                     item[url_dic][url] = self.seen_urls[url]
+        
+        for lang, url in item["cousin_urls"].items():
+            if url not in self.seen_urls.keys():
+                id = self.get_next_id()
+                self.seen_urls[url] = id
+                item["cousin_urls"][lang] = id
+            else :
+                item["cousin_urls"][lang] = self.seen_urls[url]
+        
         return item
     
     def get_next_id(self):
@@ -146,6 +159,8 @@ class IDAssignmentPipeline(ResummablePipeline):
 
 
 class PDFPipeline(ResummablePipeline):
+    def __init__(self):
+        super().__init__()
         
     def open_spider(self, spider):
         self.resumed = self.is_resuming(spider)
@@ -154,15 +169,14 @@ class PDFPipeline(ResummablePipeline):
         else:
             self.open_file(PDF_FILE, False)
 
-    def close_spider(self):
+    def close_spider(self, spider):
         self.close_files()
 
     def process_item(self, item, spider):
-        for pdf_url, id in item["pdf_urls"].items():
+        for pdf_url, id in item["pdf_links"].items():
             dic = {"id" : id, "url" : pdf_url, "lang" : item["lang"], "parent" : item["id"]}
             line = json.dumps(dic)
-            self.save_data(line + "\n")
-            self.seen_pdfs.add(id)
+            self.save_data(PDF_FILE, line + "\n")
         return item
 
 
@@ -179,9 +193,11 @@ class HashContentPipeline:
 
 
 class ParentsPipeline(ResummablePipeline):
+    def __init__(self):
+        super().__init__()
 
     def open_spider(self, spider):
-        if self.is_resuming():
+        if self.is_resuming(spider):
             self.open_file(PARENTS_DIR, True)
         else:
             self.open_file(PARENTS_DIR, False)
@@ -199,10 +215,11 @@ class ParentsPipeline(ResummablePipeline):
 
 class MetadataPipeline(ResummablePipeline):
     def __init__(self):
+        super().__init__()
         self.logger = logging.getLogger(__name__)
 
     def open_spider(self, spider):
-        if self.is_resuming():
+        if self.is_resuming(spider):
             self.open_file(METADATA_DIR, True)
         else:
             self.open_file(METADATA_DIR, False)
