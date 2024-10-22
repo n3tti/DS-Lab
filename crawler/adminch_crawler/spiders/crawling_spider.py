@@ -1,5 +1,7 @@
 import pdb
+import os
 import re
+import glob
 from urllib.parse import urljoin
 
 from adminch_crawler.items import PageItem
@@ -8,10 +10,15 @@ from scrapy.spiders import CrawlSpider, Rule
 
 
 class CrawlingSpider(CrawlSpider):
+
     name = "my2crawler"
     allowed_domains = ["admin.ch"]
     start_urls = ["https://www.admin.ch/"]
 
+    def __init__(self, restart='False', *a, **kw):
+        super().__init__(*a, **kw)
+        self.is_resuming = not (restart.lower() == 'true')
+        
     rules = (
         Rule(
             LinkExtractor(
@@ -22,6 +29,12 @@ class CrawlingSpider(CrawlSpider):
             follow=True,
         ),
     )
+
+    def is_resumingaf(self):
+        self.logger.error("resuming?")
+        self.logger.error("ouipui acces ok")
+        self.logger.error(self.is_resuming)
+        return self.is_resuming
 
     def parse_item(self, response):
 

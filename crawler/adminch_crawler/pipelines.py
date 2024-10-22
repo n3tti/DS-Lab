@@ -35,8 +35,8 @@ class ResummablePipeline(ABC):
         self.files = {}
 
     def is_resuming(self, spider):
-        spider.crawler.settings.get('JOBDIR') and os.path.exists(spider.crawler.settings.get('JOBDIR'))
-
+        return spider.is_resumingaf()
+    
     def open_file(self, file, append):
         if append:
             self.files[file] = open(file, "a")
@@ -115,7 +115,8 @@ class IDAssignmentPipeline(ResummablePipeline):
     
     def open_spider(self, spider):
         if self.is_resuming(spider):
-            self.open_file(SAVE_IDS_FILE, True)
+            logging.getLogger(spider.name).error("RESUMING")
+            self.open_file(SAVE_IDS_FILE, False)
             self.open_file(SAVE_LAST_ID_FILE, False)
             self.seen_urls = self.load_data(SAVE_IDS_FILE)
             self.current_id = self.load_data(SAVE_LAST_ID_FILE)["last_id"]
@@ -163,8 +164,7 @@ class PDFPipeline(ResummablePipeline):
         super().__init__()
         
     def open_spider(self, spider):
-        self.resumed = self.is_resuming(spider)
-        if self.resumed:
+        if self.is_resuming(spider):
             self.open_file(PDF_FILE, True)
         else:
             self.open_file(PDF_FILE, False)
@@ -208,7 +208,7 @@ class ParentsPipeline(ResummablePipeline):
     def process_item(self, item, spider):
         for child_id in item["child_urls"].values():
             dic = {"id": child_id, "parent": item["id"]}
-            line = json.dumps(dic )
+            line = json.dumps(dic)
             self.save_data(PARENTS_DIR, line + '\n')
         return item
 
