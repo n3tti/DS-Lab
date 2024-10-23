@@ -35,16 +35,20 @@ class ResummablePipeline(ABC):
         self.files = {}
 
     def is_resuming(self, spider):
-        return spider.is_resumingaf()
+        return spider.is_resuming()
     
     def open_file(self, file, append):
         if append:
             self.files[file] = open(file, "a")
         else:
             self.files[file] = open(file, "w")
+        
 
     def load_data(self, file):
-        return json.load(self.files[file])
+        f = open(file, "r") 
+        data = json.load(f)
+        f.close()
+        return data
 
     def save_data(self, file, data):
         self.files[file].write(data)
@@ -115,16 +119,13 @@ class IDAssignmentPipeline(ResummablePipeline):
     
     def open_spider(self, spider):
         if self.is_resuming(spider):
-            logging.getLogger(spider.name).error("RESUMING")
-            self.open_file(SAVE_IDS_FILE, False)
-            self.open_file(SAVE_LAST_ID_FILE, False)
             self.seen_urls = self.load_data(SAVE_IDS_FILE)
             self.current_id = self.load_data(SAVE_LAST_ID_FILE)["last_id"]
-        else:
-            self.open_file(SAVE_IDS_FILE, False)
-            self.open_file(SAVE_LAST_ID_FILE, False)
+
 
     def close_spider(self, spider):
+        self.open_file(SAVE_IDS_FILE, False)
+        self.open_file(SAVE_LAST_ID_FILE, False)
         self.save_data(SAVE_IDS_FILE, json.dumps(self.seen_urls))
         self.save_data(SAVE_LAST_ID_FILE, json.dumps({"last_id" : self.current_id}))
         self.close_files()

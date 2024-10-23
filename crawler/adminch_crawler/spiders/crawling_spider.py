@@ -17,7 +17,7 @@ class CrawlingSpider(CrawlSpider):
 
     def __init__(self, restart='False', *a, **kw):
         super().__init__(*a, **kw)
-        self.is_resuming = not (restart.lower() == 'true')
+        self.is_resuming_var = not (restart.lower() == 'true')
         
     rules = (
         Rule(
@@ -30,11 +30,8 @@ class CrawlingSpider(CrawlSpider):
         ),
     )
 
-    def is_resumingaf(self):
-        self.logger.error("resuming?")
-        self.logger.error("ouipui acces ok")
-        self.logger.error(self.is_resuming)
-        return self.is_resuming
+    def is_resuming(self):
+        return self.is_resuming_var
 
     def parse_item(self, response):
 
