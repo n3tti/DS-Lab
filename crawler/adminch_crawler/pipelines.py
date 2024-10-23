@@ -152,6 +152,7 @@ class MetadataPipeline:
             "description",
             "keywords",
             "pdf_links",
+            "embedded_images"
         ]
         dic = {}
         for key in keys_to_save:
@@ -199,3 +200,12 @@ class DownloadContentPipeline:
                         print(f"Failed to delete {file_path}. Reason: {e}")
             else:
                 os.makedirs(path)
+
+class ContentPipeline:
+    def process_item(self, item, spider):
+        # Clean and validate content
+        if item.get('content'):
+            # Remove excessive newlines and spaces
+            item['content'] = '\n'.join(line.strip() for line in item['content'].split('\n') if line.strip())
+
+        return item

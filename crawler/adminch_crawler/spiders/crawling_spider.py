@@ -7,6 +7,7 @@ from scrapy.linkextractors import LinkExtractor
 from scrapy.spiders import CrawlSpider, Rule
 
 
+
 class CrawlingSpider(CrawlSpider):
     name = "mycrawler"
     allowed_domains = ["admin.ch"]
@@ -24,7 +25,6 @@ class CrawlingSpider(CrawlSpider):
     )
 
     def parse_item(self, response):
-
         item = PageItem()
 
         # about webrequest
@@ -56,17 +56,20 @@ class CrawlingSpider(CrawlSpider):
             response.headers.get("Last-Modified").decode("utf-8") if response.headers.get("Last-Modified") else None
         )
         item["date"] = response.headers.get("Date").decode("utf-8") if response.headers.get("Date") else None
-        item["title"] = response.headers.get("Title").decode("utf-8") if response.headers.get("Title") else None
         item["description"] = response.css('meta[name="description"]::attr(content)').get()
         item["keywords"] = response.css('meta[name="keywords"]::attr(content)').get()
 
         item["content_body"] = response.body
 
-        item["content"] = " ".join(response.css("p::text").getall())
+        item["content"] = self.format_content_with_markdown(response)
+
+        item["embedded_images"] = self.extract_images(response)
 
         item["lang"] = response.xpath("//html/@lang").get()
 
         item["hash"] = None
+
+        item["title"] = self.get_title(response)
 
         alternate_links = response.xpath('//link[@rel="alternate"]')
         languages_dict = {}
@@ -89,3 +92,56 @@ class CrawlingSpider(CrawlSpider):
                 item["pdf_links"].append(full_url)
 
         yield item
+
+    # handle embedded images
+    def extract_images(self, response):
+        """Extract embedded images from content"""
+        images = []
+        for img in response.css("img"):
+            src = img.attrib.get('src')
+            if src:
+                full_url = urljoin(response.url, src)
+                alt = img.attrib.get('alt', '')
+                images.append({
+                    'url': full_url,
+                    'alt': alt,
+                })
+        return images
+
+    # extract title from multiple sources
+    def get_title(self, response):
+        """Extract title from multiple possible sources"""
+        title = response.headers.get("Title", b"").decode("utf-8") or \
+                response.css("title::text").get() or \
+                response.css("h1::text").get() or \
+                ""
+        return title.strip()
+
+    # format content with markdown
+    def format_content_with_markdown(self, response):
+
+        """Format content with markdown, preserving the original order of elements"""
+        content_parts = []
+
+        # Select all headers and paragraphs in order of appearance
+        for element in response.css("h1, h2, h3, h4, h5, h6, p"):
+            try:
+                # Get the element name (h1, h2, p, etc.)
+                tag_name = element.root.tag
+
+                # Handle headers
+                if tag_name.startswith('h'):
+                    level = int(tag_name[1])  # get number from h1, h2, etc.
+                else:
+                    level = 0
+
+                text = element.css("::text").get()
+                if text:
+                    text = text.strip()
+                    content_parts.append(f"{'#' * level} {text}\n\n")
+
+            except Exception as e:
+                print(e)
+                pdb.set_trace()
+
+        return "".join(content_parts)

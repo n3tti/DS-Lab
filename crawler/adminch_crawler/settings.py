@@ -17,7 +17,7 @@ NEWSPIDER_MODULE = "adminch_crawler.spiders"
 # USER_AGENT = "adminch_crawler (+http://www.yourdomain.com)"
 
 # Obey robots.txt rules
-ROBOTSTXT_OBEY = True
+ROBOTSTXT_OBEY = False
 
 # Configure maximum concurrent requests performed by Scrapy (default: 16)
 # CONCURRENT_REQUESTS = 32
@@ -67,10 +67,11 @@ ITEM_PIPELINES = {
     "adminch_crawler.pipelines.FilterURLPipeline": 50,
     "adminch_crawler.pipelines.IDAssignmentPipeline": 100,
     "adminch_crawler.pipelines.ParentsPipeline": 150,
+    "adminch_crawler.pipelines.ContentPipeline": 160,
     "adminch_crawler.pipelines.HashContentPipeline": 170,
     "adminch_crawler.pipelines.DuplicatesPipeline": 200,
     "adminch_crawler.pipelines.MetadataPipeline": 300,
-    #'adminch_crawler.pipelines.DownloadContentPipeline': 400
+    'adminch_crawler.pipelines.DownloadContentPipeline': 400
 }
 
 # Enable and configure the AutoThrottle extension (disabled by default)
@@ -101,9 +102,16 @@ FEED_EXPORT_ENCODING = "utf-8"
 HTTPERROR_ALLOW_ALL = True
 
 DEPTH_LIMIT = 2
-DOWNLOAD_DELAY = 1.0
+DOWNLOAD_DELAY = 0.1
 LOG_LEVEL = "INFO"
-# LOG_FILE = 'crawler.log'
-# LOG_STDOUT = False
+
+SAVE_LOG = False
+if SAVE_LOG:
+    LOG_FILE = 'crawler.log'
+    LOG_STDOUT = False
 CLOSESPIDER_PAGECOUNT = 50
 LOG_APPEND = False
+
+
+
+USER_AGENT = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36'
