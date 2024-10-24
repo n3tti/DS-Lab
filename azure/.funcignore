@@ -1,0 +1,32 @@
+.git
+.gitignore
+.idea/
+.pytest_cache/
+.vscode/
+**/__pycache__/
+**/*.pyc
+venv/
+
+# IDE specific
+*.iml
+workspace.xml
+misc.xml
+modules.xml
+vcs.xml
+DS-Lab.iml
+
+# Keep crawler code but exclude logs and cache
+crawler/crawler.log
+
+# Development files
+Makefile
+Procfile
+README.md
+
+# Keep these important files:
+# - crawler/adminch_crawler/
+# - scrapy.cfg
+# - requirements.txt
+# - azure/function_app.py
+# - azure/host.json
+# - azure/local.settings.json

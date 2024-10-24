@@ -7,6 +7,8 @@ import json
 import logging
 import os
 import uuid
+import pdb
+import hashlib
 
 from adminch_crawler.config import (
     APPLICATION_DIR,
@@ -32,7 +34,7 @@ class FilterURLPipeline:
         if item["status"] != 200 or item["content_type"] is None:
             raise DropItem()
         elif not item["content_type"].split(";")[0] in self.allowed_content_type:
-            logging.getLogger(spider.name).error("Unallowed content type.")
+            logging.getLogger(spider.name).error(f"Unallowed content type. \n ContentType: {item['content_type']} \n url: {item['url']}")
             raise DropItem()
         else:
             return item
@@ -105,12 +107,20 @@ class ParentsPipeline:
 
 class HashContentPipeline:
 
+    def hash_text(self, text):
+        # Create a SHA-256 hash of the input text
+        return hashlib.sha256(text.encode()).hexdigest()
+
     def process_item(self, item, spider):
-        if item["content"] is not None:
-            item["hash"] = Simhash(item["content"]).value
-        else:
-            item["hash"] = None
-            logging.getLogger(spider.name).error("No content for that page.")
+        try:
+            if item["content"] is not None:
+                item["hash"] = self.hash_text(item["content"])
+            else:
+                item["hash"] = None
+                logging.getLogger(spider.name).error(f"No content for that page.\n Url: {item['url']}")
+        except Exception as e:
+            print(e)
+            pdb.set_trace()
         return item
 
 

@@ -6,3 +6,6 @@ icecream==2.1.3
 black==24.8.0
 isort==5.13.2
 flake8==7.1.1
+
+azure-functions
+gitpython

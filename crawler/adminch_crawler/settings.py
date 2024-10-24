@@ -50,17 +50,18 @@ ROBOTSTXT_OBEY = False
 
 # Enable or disable downloader middlewares
 # See https://docs.scrapy.org/en/latest/topics/downloader-middleware.html
-USER_AGENTS = [
-    "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36",
-    "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.0.3 Safari/605.1.15",
-    "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.150 Safari/537.36",
-    "Mozilla/5.0 (iPhone; CPU iPhone OS 13_2_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.3 Mobile/15E148 Safari/604.1"
-    # Add more user agents as needed
-]
+# USER_AGENTS = [
+#     "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36",
+#     "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.0.3 Safari/605.1.15",
+#     "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.150 Safari/537.36",
+#     "Mozilla/5.0 (iPhone; CPU iPhone OS 13_2_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.3 Mobile/15E148 Safari/604.1"
+#     # Add more user agents as needed
+# ]
 
-DOWNLOADER_MIDDLEWARES = {
-    'adminch_crawler.middlewares.RotateUserAgentMiddleware': 40,
-}
+DOWNLOADER_MIDDLEWARES.update({
+    'scrapy_fake_useragent.middleware.RandomUserAgentMiddleware': 40,
+})
+
 
 
 # Enable or disable extensions
@@ -76,10 +77,10 @@ ITEM_PIPELINES = {
     "adminch_crawler.pipelines.FilterURLPipeline": 50,
     "adminch_crawler.pipelines.IDAssignmentPipeline": 100,
     "adminch_crawler.pipelines.ParentsPipeline": 150,
-    "adminch_crawler.pipelines.ContentPipeline": 160,
-    "adminch_crawler.pipelines.HashContentPipeline": 170,
-    "adminch_crawler.pipelines.DuplicatesPipeline": 200,
-    "adminch_crawler.pipelines.MetadataPipeline": 300,
+    #"adminch_crawler.pipelines.ContentPipeline": 160,
+    #"adminch_crawler.pipelines.HashContentPipeline": 170,
+    #"adminch_crawler.pipelines.DuplicatesPipeline": 200,
+    #"adminch_crawler.pipelines.MetadataPipeline": 300,
     'adminch_crawler.pipelines.DownloadContentPipeline': 400
 }
 
@@ -112,9 +113,9 @@ HTTPERROR_ALLOW_ALL = True
 
 DEPTH_LIMIT = 2
 DOWNLOAD_DELAY = 0.1
-LOG_LEVEL = "INFO"
+LOG_LEVEL = "ERROR"
 
-SAVE_LOG = True
+SAVE_LOG = False
 if SAVE_LOG:
     LOG_FILE = 'crawler.log'
     LOG_STDOUT = False
