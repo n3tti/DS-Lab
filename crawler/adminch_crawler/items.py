@@ -18,16 +18,19 @@ class PageItem(scrapy.Item):
     last_modified = scrapy.Field()
     date = scrapy.Field()
     lang = scrapy.Field()
+    title = scrapy.Field()
 
     cousin_urls = scrapy.Field()
     child_urls = scrapy.Field()
 
-    title = scrapy.Field()
     content_body = scrapy.Field()
     hash = scrapy.Field()
     content = scrapy.Field()
 
     pdf_links = scrapy.Field()
+    embedded_images = scrapy.Field()
+    img_alt = scrapy.Field()
 
     description = scrapy.Field()
     keywords = scrapy.Field()
+

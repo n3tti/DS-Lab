@@ -7,7 +7,7 @@ DATA_DIR = os.path.dirname(os.path.dirname(BASE_DIR)) + "/data/"
 PARENTS_DIR = DATA_DIR + "parents.json"
 METADATA_DIR = DATA_DIR + "metadata.json"
 PDF_FILE = DATA_DIR + "pdf.json"
-
+IMAGE_FILE = DATA_DIR + "image.json"
 
 TEXT_DIR = DATA_DIR + "text/html/"
 IMAGE_DIR = DATA_DIR + "image/png/"

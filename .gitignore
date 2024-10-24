@@ -176,3 +176,4 @@ cython_debug/
 *.xml
 *.json
 
+/data/text/

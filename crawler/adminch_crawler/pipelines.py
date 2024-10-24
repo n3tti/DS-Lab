@@ -20,7 +20,8 @@ from adminch_crawler.config import (
     JOBDIR,
     SAVE_IDS_FILE,
     SAVE_LAST_ID_FILE,
-    PDF_FILE
+    PDF_FILE,
+    IMAGE_FILE
 )
 
 # useful for handling different item types with a single interface
@@ -79,7 +80,7 @@ class IDAssignmentPipeline(ResummablePipeline):
     def __init__(self):
         super().__init__()
         self.seen_urls = {}
-        self.url_dics = ["pdf_links", "child_urls"]
+        self.url_dics = ["embedded_images", "pdf_links", "child_urls"]
         self.current_id = 0
         
     def process_item(self, item, spider):
@@ -180,7 +181,41 @@ class PDFPipeline(ResummablePipeline):
             self.save_data(PDF_FILE, line + "\n")
         return item
 
+class ContentPipeline:
+    def process_item(self, item, spider):
+        # Clean and validate content
+        if item.get('content'):
+            # Remove excessive newlines and spaces
+            item['content'] = '\n'.join(line.strip() for line in item['content'].split('\n') if line.strip())
+        return item
 
+class ImagePipeline(ResummablePipeline):
+    def __init__(self):
+        super().__init__()
+        
+    def open_spider(self, spider):
+        if self.is_resuming(spider):
+            self.open_file(IMAGE_FILE, True)
+        else:
+            self.open_file(IMAGE_FILE, False)
+
+    def close_spider(self, spider):
+        self.close_files()
+
+    def process_item(self, item, spider):
+        for img_url, id in item["embedded_images"].items():
+            dic = {"id" : id, "url" : img_url, "alt" : item["img_alt"][img_url], "parent" : item["id"]}
+            line = json.dumps(dic)
+            self.save_data(IMAGE_FILE, line + "\n")
+        return item
+
+class ContentPipeline:
+    def process_item(self, item, spider):
+        # Clean and validate content
+        if item.get('content'):
+            # Remove excessive newlines and spaces
+            item['content'] = '\n'.join(line.strip() for line in item['content'].split('\n') if line.strip())
+        return item
 
 class HashContentPipeline:
     def process_item(self, item, spider):
@@ -246,6 +281,7 @@ class MetadataPipeline(ResummablePipeline):
             "description",
             "keywords",
             "pdf_links",
+            "embedded_images"
         ]
         dic = {}
         for key in keys_to_save:
@@ -274,18 +310,19 @@ class MetadataPipeline(ResummablePipeline):
 
 #         return item
 
-#     def open_spider(self, spider):
-#         self.clean_folders()
+    # def open_spider(self, spider):
+    #     self.clean_folders()
 
-#     def clean_folders(self):
-#         for path in self.folders:
-#             if os.path.exists(path):
-#                 for filename in os.listdir(path):
-#                     file_path = os.path.join(path, filename)
-#                     try:
-#                         if os.path.isfile(file_path) or os.path.islink(file_path):
-#                             os.unlink(file_path)
-#                     except Exception as e:
-#                         print(f"Failed to delete {file_path}. Reason: {e}")
-#             else:
-#                 os.makedirs(path)
+    # def clean_folders(self):
+    #     for path in self.folders:
+    #         if os.path.exists(path):
+    #             for filename in os.listdir(path):
+    #                 file_path = os.path.join(path, filename)
+    #                 try:
+    #                     if os.path.isfile(file_path) or os.path.islink(file_path):
+    #                         os.unlink(file_path)
+    #                 except Exception as e:
+    #                     print(f"Failed to delete {file_path}. Reason: {e}")
+    #         else:
+    #             os.makedirs(path)
+
