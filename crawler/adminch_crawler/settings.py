@@ -115,7 +115,7 @@ DEPTH_LIMIT = 3
 LOG_LEVEL = "WARNING"
 JOBDIR = "./adminch_crawler/persistance/jobdir/"
 DOWNLOAD_DELAY = 0.1
-SAVE_LOG = True
+SAVE_LOG = False
 if SAVE_LOG:
     LOG_FILE = 'crawler.log'
     LOG_STDOUT = False
