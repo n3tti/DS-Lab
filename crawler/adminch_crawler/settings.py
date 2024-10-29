@@ -59,7 +59,7 @@ USER_AGENTS = [
 ]
 
 DOWNLOADER_MIDDLEWARES = {
-    'adminch_crawler.middlewares.RotateUserAgentMiddleware': 40,
+    'adminch_crawler.middlewares.RotateUserAgentMiddleware': 40
 }
 
 
@@ -77,10 +77,10 @@ ITEM_PIPELINES = {
     "adminch_crawler.pipelines.IDAssignmentPipeline": 200,
     "adminch_crawler.pipelines.ParentsPipeline": 300,
     "adminch_crawler.pipelines.PDFPipeline": 400,
-    "adminch_crawler.pipelines.ImagePipeline" : 500,
+    "adminch_crawler.pipelines.ImagePipeline": 500,
     "adminch_crawler.pipelines.ContentPipeline": 600,
     "adminch_crawler.pipelines.HashContentPipeline": 700,
-    "adminch_crawler.pipelines.MetadataPipeline": 800
+    "adminch_crawler.pipelines.MetadataPipeline": 800,
     #'adminch_crawler.pipelines.DownloadContentPipeline': 400
 }
 
@@ -115,7 +115,7 @@ DEPTH_LIMIT = 3
 LOG_LEVEL = "WARNING"
 JOBDIR = "./adminch_crawler/persistance/jobdir/"
 DOWNLOAD_DELAY = 0.1
-SAVE_LOG = False
+SAVE_LOG = True
 if SAVE_LOG:
     LOG_FILE = 'crawler.log'
     LOG_STDOUT = False

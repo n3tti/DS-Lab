@@ -2,7 +2,7 @@
 
 # Hardcoded server details
 SERVER_USER="azureuser"
-SERVER_HOST="20.82.4.210"
+SERVER_HOST="20.82.5.165"
 REMOTE_PATH="/tmp/biep"
 COMMAND_TO_RUN="make start"
 
@@ -11,8 +11,8 @@ LOCAL_PATH="$(pwd)"
 
 # Create remote directory and copy files
 echo "Connecting to server and copying files..."
-ssh "$SERVER_USER@$SERVER_HOST" -i "azure" "mkdir -p $REMOTE_PATH"
-rsync -avz --progress "$LOCAL_PATH/" "$SERVER_USER@$SERVER_HOST:$REMOTE_PATH/"
+ssh "$SERVER_USER@$SERVER_HOST" -i "~/.ssh/azure" "mkdir -p $REMOTE_PATH"
+rsync -avz -e "ssh -i ~/.ssh/azure" --progress "$LOCAL_PATH/" "$SERVER_USER@$SERVER_HOST:$REMOTE_PATH/"
 
 # Execute command
 echo "Running command..."

@@ -7,7 +7,8 @@
 from itemadapter import ItemAdapter, is_item
 from scrapy import signals
 import random
-
+from fake_useragent import UserAgent
+from scrapy.downloadermiddlewares.useragent import UserAgentMiddleware
 
 class CrawlerSpiderMiddleware:
     # Not all methods need to be defined. If a method is not defined,
@@ -62,7 +63,7 @@ class CrawlerDownloaderMiddleware:
     # passed objects.
 
     @classmethod
-    def from_crawler(cls, crawler):
+    def from_crawler(self, cls, crawler):
         # This method is used by Scrapy to create your spiders.
         s = cls()
         crawler.signals.connect(s.spider_opened, signal=signals.spider_opened)
@@ -114,3 +115,6 @@ class RotateUserAgentMiddleware:
     def process_request(self, request, spider):
         user_agent = random.choice(self.user_agents)
         request.headers.setdefault('User-Agent', user_agent)
+
+
+

@@ -69,7 +69,7 @@ class FilterURLPipeline():
         if item["status"] != 200 or item["content_type"] is None:
             raise DropItem()
         elif not item["content_type"].split(";")[0] in self.allowed_content_type:
-            logging.getLogger(spider.name).error("Unallowed content type.")
+            logging.getLogger(spider.name).error(f"Unallowed content type. \n Content Type: {item["content_type"]}")
             raise DropItem()
         else:
             return item
@@ -181,13 +181,7 @@ class PDFPipeline(ResummablePipeline):
             self.save_data(PDF_FILE, line + "\n")
         return item
 
-class ContentPipeline:
-    def process_item(self, item, spider):
-        # Clean and validate content
-        if item.get('content'):
-            # Remove excessive newlines and spaces
-            item['content'] = '\n'.join(line.strip() for line in item['content'].split('\n') if line.strip())
-        return item
+
 
 class ImagePipeline(ResummablePipeline):
     def __init__(self):
