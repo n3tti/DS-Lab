@@ -34,3 +34,13 @@ class PageItem(scrapy.Item):
     description = scrapy.Field()
     keywords = scrapy.Field()
 
+    def __repr__(self):
+        return repr(
+            {
+                "id": self["id"],
+                "status": self["status"],
+                "depth": self["depth"],
+                "url": self["url"],
+                "content_type": self["content_type"],
+            }
+        )

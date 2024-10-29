@@ -81,6 +81,7 @@ def test_lang_consistency(load_metadata):
             if id in lang_by_id:
                 assert lang_by_id[id] == lang, "Cousin language and item language do not match."
 
+
 # more test to do
 # check consistency of metadata
 # a second test file will be necessary for tests after post processing
