@@ -62,7 +62,8 @@ class CrawlingSpider(CrawlSpider):
             item["description"] = response.css('meta[name="description"]::attr(content)').get()
             item["keywords"] = response.css('meta[name="keywords"]::attr(content)').get()
         except Exception as e:
-            logger.error(f'Failed to extract "description" and/or "keywords": {str(e)}')
+            exception_type = type(e).__name__
+            logger.error(f'Failed to extract "description" and/or "keywords": {exception_type} - {str(e)}')
             return None
 
         item["content_body"] = response.body
