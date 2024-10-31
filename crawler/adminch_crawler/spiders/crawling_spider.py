@@ -1,18 +1,17 @@
 import glob
+import logging
 import os
 import pdb
 import re
 from urllib.parse import urljoin
 
 from adminch_crawler.items import PageItem
+from scrapy.http import TextResponse
 from scrapy.linkextractors import LinkExtractor
 from scrapy.spiders import CrawlSpider, Rule
-from scrapy.http import TextResponse
-
-import logging
-
 
 logger = logging.getLogger(__name__.split(".")[-1])
+
 
 class CrawlingSpider(CrawlSpider):
 
@@ -53,22 +52,10 @@ class CrawlingSpider(CrawlSpider):
         item["pdf_links"] = {}
 
         # metadata
-        item["content_type"] = (
-            response.headers.get("Content-Type", b"").decode("utf-8") if response.headers.get("Content-Type") else None
-        )
-        item["content_length"] = (
-            int(response.headers.get("Content-Length").decode("utf-8"))
-            if response.headers.get("Content-Length")
-            else None
-        )
-        item["content_encoding"] = (
-            response.headers.get("Content-Encoding", b"").decode("utf-8")
-            if response.headers.get("Content-Encoding")
-            else None
-        )
-        item["last_modified"] = (
-            response.headers.get("Last-Modified").decode("utf-8") if response.headers.get("Last-Modified") else None
-        )
+        item["content_type"] = response.headers.get("Content-Type", b"").decode("utf-8") if response.headers.get("Content-Type") else None
+        item["content_length"] = int(response.headers.get("Content-Length").decode("utf-8")) if response.headers.get("Content-Length") else None
+        item["content_encoding"] = response.headers.get("Content-Encoding", b"").decode("utf-8") if response.headers.get("Content-Encoding") else None
+        item["last_modified"] = response.headers.get("Last-Modified").decode("utf-8") if response.headers.get("Last-Modified") else None
         item["date"] = response.headers.get("Date").decode("utf-8") if response.headers.get("Date") else None
 
         try:
@@ -132,12 +119,7 @@ class CrawlingSpider(CrawlSpider):
     # extract title from multiple sources
     def get_title(self, response):
         """Extract title from multiple possible sources"""
-        title = (
-            response.headers.get("Title", b"").decode("utf-8")
-            or response.css("title::text").get()
-            or response.css("h1::text").get()
-            or ""
-        )
+        title = response.headers.get("Title", b"").decode("utf-8") or response.css("title::text").get() or response.css("h1::text").get() or ""
         return title.strip()
 
     # format content with markdown

@@ -36,9 +36,7 @@ def test_unique_urls(load_metadata):
 def test_unique_languages(load_metadata):
     data = load_metadata
     for item in data:
-        assert len(item["cousin_urls"].keys()) == len(
-            set(item["cousin_urls"].keys())
-        ), "A language appears more than once."
+        assert len(item["cousin_urls"].keys()) == len(set(item["cousin_urls"].keys())), "A language appears more than once."
 
 
 # Each cousin ID is referenced in Metadata and the lanuguage is known
