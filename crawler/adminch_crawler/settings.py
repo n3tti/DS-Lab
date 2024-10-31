@@ -136,8 +136,8 @@ HTTPERROR_ALLOW_ALL = True
 
 LOG_LEVEL = "INFO"
 JOBDIR = "./adminch_crawler/persistance/jobdir/"
-SAVE_LOG = False
+SAVE_LOG = True
 if SAVE_LOG:
     LOG_FILE = "crawler.log"
-    LOG_STDOUT = False
+    # LOG_STDOUT = False
 LOG_APPEND = False
