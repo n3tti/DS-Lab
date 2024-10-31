@@ -7,7 +7,12 @@ from urllib.parse import urljoin
 from adminch_crawler.items import PageItem
 from scrapy.linkextractors import LinkExtractor
 from scrapy.spiders import CrawlSpider, Rule
+from scrapy.http import TextResponse
 
+import logging
+
+
+logger = logging.getLogger(__name__.split(".")[-1])
 
 class CrawlingSpider(CrawlSpider):
 
@@ -66,9 +71,12 @@ class CrawlingSpider(CrawlSpider):
         )
         item["date"] = response.headers.get("Date").decode("utf-8") if response.headers.get("Date") else None
 
-        if hasattr(response, "css"):
+        try:
             item["description"] = response.css('meta[name="description"]::attr(content)').get()
             item["keywords"] = response.css('meta[name="keywords"]::attr(content)').get()
+        except Exception as e:
+            logger.error(f'Failed to extract "description" and/or "keywords": {str(e)}')
+            return None
 
         item["content_body"] = response.body
 
