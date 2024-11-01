@@ -176,4 +176,11 @@ cython_debug/
 *.xml
 *.json
 
+
 /data/text/
+
+/crawler/adminch_crawler/persistance/jobdir/*
+!/crawler/adminch_crawler/persistance/jobdir/.gitkeep
+
+/crawler/adminch_crawler/persistance/pipelines_states/*
+!/crawler/adminch_crawler/persistance/pipelines_states/.gitkeep

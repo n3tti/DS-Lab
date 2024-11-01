@@ -14,14 +14,14 @@ from abc import ABC
 from adminch_crawler.config import (
     APPLICATION_DIR,
     IMAGE_DIR,
+    IMAGE_FILE,
+    JOBDIR,
     METADATA_DIR,
     PARENTS_DIR,
-    TEXT_DIR,
-    JOBDIR,
+    PDF_FILE,
     SAVE_IDS_FILE,
     SAVE_LAST_ID_FILE,
-    PDF_FILE,
-    IMAGE_FILE
+    TEXT_DIR,
 )
 
 # useful for handling different item types with a single interface
@@ -37,40 +37,42 @@ class ResummablePipeline(ABC):
 
     def is_resuming(self, spider):
         return spider.is_resuming()
-    
+
     def open_file(self, file, append):
         if append:
             self.files[file] = open(file, "a")
         else:
             self.files[file] = open(file, "w")
-        
 
     def load_data(self, file):
-        f = open(file, "r") 
+        f = open(file, "r")
         data = json.load(f)
         f.close()
         return data
 
     def save_data(self, file, data):
         self.files[file].write(data)
-    
+
     def close_files(self):
         for file_name, file in self.files.items():
             file.close()
 
-#-------------------------------------------------
 
-class FilterURLPipeline():
+# -------------------------------------------------
+
+
+class FilterURLPipeline:
 
     def __init__(self):
         self.allowed_content_type = ["text/html"]
 
     def process_item(self, item, spider):
-        if item["status"] != 200 or item["content_type"] is None:
-            raise DropItem()
+        if item["status"] != 200:
+            raise DropItem(f"HTTP Status: {item['status']}.")
+        elif item["content_type"] is None:
+            raise DropItem(f"Content_type is None.")
         elif not item["content_type"].split(";")[0] in self.allowed_content_type:
-            logging.getLogger(spider.name).error(f"Unallowed content type. \n Content Type: {item["content_type"]}")
-            raise DropItem()
+            raise DropItem(f"Content type \"{item['content_type'].split(';')[0]}\" is not allowed.")
         else:
             return item
 
@@ -82,13 +84,13 @@ class IDAssignmentPipeline(ResummablePipeline):
         self.seen_urls = {}
         self.url_dics = ["embedded_images", "pdf_links", "child_urls"]
         self.current_id = 0
-        
+
     def process_item(self, item, spider):
         if item["url"] is None:
             logging.getLogger(spider.name).error("None URL")
             raise DropItem()
-        
-        if item["url"] not in self.seen_urls.keys() :
+
+        if item["url"] not in self.seen_urls.keys():
             id = self.get_next_id()
             item["id"] = id
             self.seen_urls[item["url"]] = id
@@ -101,38 +103,35 @@ class IDAssignmentPipeline(ResummablePipeline):
                     id = self.get_next_id()
                     self.seen_urls[url] = id
                     item[url_dic][url] = id
-                else :
+                else:
                     item[url_dic][url] = self.seen_urls[url]
-        
+
         for lang, url in item["cousin_urls"].items():
             if url not in self.seen_urls.keys():
                 id = self.get_next_id()
                 self.seen_urls[url] = id
                 item["cousin_urls"][lang] = id
-            else :
+            else:
                 item["cousin_urls"][lang] = self.seen_urls[url]
-        
+
         return item
-    
+
     def get_next_id(self):
         self.current_id += 1
         return self.current_id
-    
+
     def open_spider(self, spider):
         if self.is_resuming(spider):
             self.seen_urls = self.load_data(SAVE_IDS_FILE)
             self.current_id = self.load_data(SAVE_LAST_ID_FILE)["last_id"]
 
-
     def close_spider(self, spider):
         self.open_file(SAVE_IDS_FILE, False)
         self.open_file(SAVE_LAST_ID_FILE, False)
         self.save_data(SAVE_IDS_FILE, json.dumps(self.seen_urls))
-        self.save_data(SAVE_LAST_ID_FILE, json.dumps({"last_id" : self.current_id}))
+        self.save_data(SAVE_LAST_ID_FILE, json.dumps({"last_id": self.current_id}))
         self.close_files()
-        
 
-  
     # def process_item(self, item, spider):
     #     if item["url"] not in self.seen_urls.keys():
     #         id = self.get_next_id()
@@ -160,11 +159,10 @@ class IDAssignmentPipeline(ResummablePipeline):
     #     return item
 
 
-
 class PDFPipeline(ResummablePipeline):
     def __init__(self):
         super().__init__()
-        
+
     def open_spider(self, spider):
         if self.is_resuming(spider):
             self.open_file(PDF_FILE, True)
@@ -176,17 +174,25 @@ class PDFPipeline(ResummablePipeline):
 
     def process_item(self, item, spider):
         for pdf_url, id in item["pdf_links"].items():
-            dic = {"id" : id, "url" : pdf_url, "lang" : item["lang"], "parent" : item["id"]}
+            dic = {"id": id, "url": pdf_url, "lang": item["lang"], "parent": item["id"]}
             line = json.dumps(dic)
             self.save_data(PDF_FILE, line + "\n")
         return item
 
 
+class ContentPipeline:
+    def process_item(self, item, spider):
+        # Clean and validate content
+        if item.get("content"):
+            # Remove excessive newlines and spaces
+            item["content"] = "\n".join(line.strip() for line in item["content"].split("\n") if line.strip())
+        return item
+
 
 class ImagePipeline(ResummablePipeline):
     def __init__(self):
         super().__init__()
-        
+
     def open_spider(self, spider):
         if self.is_resuming(spider):
             self.open_file(IMAGE_FILE, True)
@@ -198,18 +204,20 @@ class ImagePipeline(ResummablePipeline):
 
     def process_item(self, item, spider):
         for img_url, id in item["embedded_images"].items():
-            dic = {"id" : id, "url" : img_url, "alt" : item["img_alt"][img_url], "parent" : item["id"]}
+            dic = {"id": id, "url": img_url, "alt": item["img_alt"][img_url], "parent": item["id"]}
             line = json.dumps(dic)
             self.save_data(IMAGE_FILE, line + "\n")
         return item
 
+
 class ContentPipeline:
     def process_item(self, item, spider):
         # Clean and validate content
-        if item.get('content'):
+        if item.get("content"):
             # Remove excessive newlines and spaces
-            item['content'] = '\n'.join(line.strip() for line in item['content'].split('\n') if line.strip())
+            item["content"] = "\n".join(line.strip() for line in item["content"].split("\n") if line.strip())
         return item
+
 
 class HashContentPipeline:
     def process_item(self, item, spider):
@@ -219,7 +227,6 @@ class HashContentPipeline:
             item["hash"] = None
             logging.getLogger(spider.name).error("No content for that page.")
         return item
-
 
 
 class ParentsPipeline(ResummablePipeline):
@@ -239,7 +246,7 @@ class ParentsPipeline(ResummablePipeline):
         for child_id in item["child_urls"].values():
             dic = {"id": child_id, "parent": item["id"]}
             line = json.dumps(dic)
-            self.save_data(PARENTS_DIR, line + '\n')
+            self.save_data(PARENTS_DIR, line + "\n")
         return item
 
 
@@ -275,7 +282,7 @@ class MetadataPipeline(ResummablePipeline):
             "description",
             "keywords",
             "pdf_links",
-            "embedded_images"
+            "embedded_images",
         ]
         dic = {}
         for key in keys_to_save:
@@ -286,37 +293,36 @@ class MetadataPipeline(ResummablePipeline):
                 dic[key] = None
 
         line = json.dumps(dic)
-        self.save_data( METADATA_DIR, line + '\n')
+        self.save_data(METADATA_DIR, line + "\n")
         return item
 
 
-# class DownloadContentPipeline:
-#     def __init__(self):
-#         self.folders = [TEXT_DIR, IMAGE_DIR, APPLICATION_DIR]
-#         self.content_types = ["text/html", "application/pdf", "image/png"]
+class DownloadContentPipeline:
+    def __init__(self):
+        self.folders = [TEXT_DIR, IMAGE_DIR, APPLICATION_DIR]
+        self.content_types = ["text/html", "application/pdf", "image/png"]
 
-#     def process_item(self, item, spider):
-#         content_type = item["content_type"].split(";")[0]
+    def process_item(self, item, spider):
+        content_type = item["content_type"].split(";")[0]
 
-#         if content_type == "text/html":
-#             with open(TEXT_DIR + f"{item['id']}.bin", "wb") as file:
-#                 file.write(item["content_body"])
+        if content_type == "text/html":
+            with open(TEXT_DIR + f"{item['id']}.bin", "wb") as file:
+                file.write(item["content_body"])
 
-#         return item
+        return item
 
-    # def open_spider(self, spider):
-    #     self.clean_folders()
+    def open_spider(self, spider):
+        self.clean_folders()
 
-    # def clean_folders(self):
-    #     for path in self.folders:
-    #         if os.path.exists(path):
-    #             for filename in os.listdir(path):
-    #                 file_path = os.path.join(path, filename)
-    #                 try:
-    #                     if os.path.isfile(file_path) or os.path.islink(file_path):
-    #                         os.unlink(file_path)
-    #                 except Exception as e:
-    #                     print(f"Failed to delete {file_path}. Reason: {e}")
-    #         else:
-    #             os.makedirs(path)
-
+    def clean_folders(self):
+        for path in self.folders:
+            if os.path.exists(path):
+                for filename in os.listdir(path):
+                    file_path = os.path.join(path, filename)
+                    try:
+                        if os.path.isfile(file_path) or os.path.islink(file_path):
+                            os.unlink(file_path)
+                    except Exception as e:
+                        print(f"Failed to delete {file_path}. Reason: {e}")
+            else:
+                os.makedirs(path)

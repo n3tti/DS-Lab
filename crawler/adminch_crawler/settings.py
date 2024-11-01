@@ -14,7 +14,25 @@ NEWSPIDER_MODULE = "adminch_crawler.spiders"
 
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
-USER_AGENT = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.0.3 Safari/605.1.15"
+USER_AGENT = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36"
+DEFAULT_REQUEST_HEADERS = {
+    "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7",
+    "accept-encoding": "gzip, deflate, br, zstd",
+    "accept-language": "en-US,en;q=0.9",
+    "cache-control": "no-cache",
+    "dnt": "1",
+    "pragma": "no-cache",
+    "priority": "u=0, i",
+    "sec-ch-ua": '"Chromium";v="130", "Google Chrome";v="130", "Not?A_Brand";v="99"',
+    "sec-ch-ua-mobile": "?0",
+    "sec-ch-ua-platform": "Windows",
+    "sec-fetch-dest": "document",
+    "sec-fetch-mode": "navigate",
+    "sec-fetch-site": "none",
+    "sec-fetch-user": "?1",
+    "upgrade-insecure-requests": "1",
+    "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36",
+}
 
 # Obey robots.txt rules
 ROBOTSTXT_OBEY = False
@@ -86,7 +104,7 @@ ITEM_PIPELINES = {
     "adminch_crawler.pipelines.ContentPipeline": 600,
     "adminch_crawler.pipelines.HashContentPipeline": 700,
     "adminch_crawler.pipelines.MetadataPipeline": 800,
-    #'adminch_crawler.pipelines.DownloadContentPipeline': 400
+    "adminch_crawler.pipelines.DownloadContentPipeline": 400,
 }
 
 # Enable and configure the AutoThrottle extension (disabled by default)
@@ -120,15 +138,12 @@ TWISTED_REACTOR = "twisted.internet.asyncioreactor.AsyncioSelectorReactor"
 FEED_EXPORT_ENCODING = "utf-8"
 HTTPERROR_ALLOW_ALL = True
 
-#DEPTH_LIMIT = 3
-LOG_LEVEL = "WARNING"
+LOG_LEVEL = "INFO"
 JOBDIR = "./adminch_crawler/persistance/jobdir/"
-DOWNLOAD_DELAY = 0.1
 SAVE_LOG = True
 if SAVE_LOG:
-    LOG_FILE = 'crawler.log'
-    LOG_STDOUT = False
-CLOSESPIDER_PAGECOUNT = 50000
+    LOG_FILE = "crawler.log"
+    # LOG_STDOUT = False
 LOG_APPEND = False
 
 

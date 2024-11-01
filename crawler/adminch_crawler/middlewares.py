@@ -3,11 +3,12 @@
 # See documentation in:
 # https://docs.scrapy.org/en/latest/topics/spider-middleware.html
 
+import random
+
 # useful for handling different item types with a single interface
 from itemadapter import ItemAdapter, is_item
 from scrapy import signals
-import random
-from scrapy.downloadermiddlewares.useragent import UserAgentMiddleware
+
 
 class CrawlerSpiderMiddleware:
     # Not all methods need to be defined. If a method is not defined,
@@ -62,7 +63,7 @@ class CrawlerDownloaderMiddleware:
     # passed objects.
 
     @classmethod
-    def from_crawler(self, cls, crawler):
+    def from_crawler(cls, crawler):
         # This method is used by Scrapy to create your spiders.
         s = cls()
         crawler.signals.connect(s.spider_opened, signal=signals.spider_opened)
@@ -102,6 +103,7 @@ class CrawlerDownloaderMiddleware:
     def spider_opened(self, spider):
         spider.logger.info("Spider opened: %s" % spider.name)
 
+
 class RotateUserAgentMiddleware:
     # switches agent when blocked
     def __init__(self, user_agents):
@@ -109,11 +111,8 @@ class RotateUserAgentMiddleware:
 
     @classmethod
     def from_crawler(cls, crawler):
-        return cls(crawler.settings.get('USER_AGENTS'))
+        return cls(crawler.settings.get("USER_AGENTS"))
 
     def process_request(self, request, spider):
         user_agent = random.choice(self.user_agents)
-        request.headers.setdefault('User-Agent', user_agent)
-
-
-
+        request.headers.setdefault("User-Agent", user_agent)

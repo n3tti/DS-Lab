@@ -36,9 +36,7 @@ def test_unique_urls(load_metadata):
 def test_unique_languages(load_metadata):
     data = load_metadata
     for item in data:
-        assert len(item["cousin_urls"].keys()) == len(
-            set(item["cousin_urls"].keys())
-        ), "A language appears more than once."
+        assert len(item["cousin_urls"].keys()) == len(set(item["cousin_urls"].keys())), "A language appears more than once."
 
 
 # Each cousin ID is referenced in Metadata and the lanuguage is known
@@ -80,6 +78,7 @@ def test_lang_consistency(load_metadata):
         for lang, id in item["cousin_urls"]:
             if id in lang_by_id:
                 assert lang_by_id[id] == lang, "Cousin language and item language do not match."
+
 
 # more test to do
 # check consistency of metadata
