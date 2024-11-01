@@ -9,6 +9,8 @@ import os
 import uuid
 from abc import ABC
 
+
+
 from adminch_crawler.config import (
     APPLICATION_DIR,
     IMAGE_DIR,
