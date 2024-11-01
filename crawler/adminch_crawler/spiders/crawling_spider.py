@@ -1,13 +1,16 @@
-import pdb
-import os
-import re
 import glob
+import logging
+import os
+import pdb
+import re
 from urllib.parse import urljoin
 
 from adminch_crawler.items import PageItem
+from scrapy.http import TextResponse
 from scrapy.linkextractors import LinkExtractor
 from scrapy.spiders import CrawlSpider, Rule
 
+logger = logging.getLogger(__name__.split(".")[-1])
 
 
 class CrawlingSpider(CrawlSpider):
@@ -16,10 +19,10 @@ class CrawlingSpider(CrawlSpider):
     allowed_domains = ["admin.ch"]
     start_urls = ["https://www.admin.ch/"]
 
-    def __init__(self, restart='False', *a, **kw):
+    def __init__(self, restart="False", *a, **kw):
         super().__init__(*a, **kw)
-        self.is_resuming_var = not (restart.lower() == 'true')
-        
+        self.is_resuming_var = not (restart.lower() == "true")
+
     rules = (
         Rule(
             LinkExtractor(
@@ -49,27 +52,21 @@ class CrawlingSpider(CrawlSpider):
         item["pdf_links"] = {}
 
         # metadata
-        item["content_type"] = (
-            response.headers.get("Content-Type", b"").decode("utf-8") if response.headers.get("Content-Type") else None
-        )
-        item["content_length"] = (
-            int(response.headers.get("Content-Length").decode("utf-8"))
-            if response.headers.get("Content-Length")
-            else None
-        )
-        item["content_encoding"] = (
-            response.headers.get("Content-Encoding", b"").decode("utf-8")
-            if response.headers.get("Content-Encoding")
-            else None
-        )
-        item["last_modified"] = (
-            response.headers.get("Last-Modified").decode("utf-8") if response.headers.get("Last-Modified") else None
-        )
+        item["content_type"] = response.headers.get("Content-Type", b"").decode("utf-8") if response.headers.get("Content-Type") else None
+        item["content_length"] = int(response.headers.get("Content-Length").decode("utf-8")) if response.headers.get("Content-Length") else None
+        item["content_encoding"] = response.headers.get("Content-Encoding", b"").decode("utf-8") if response.headers.get("Content-Encoding") else None
+        item["last_modified"] = response.headers.get("Last-Modified").decode("utf-8") if response.headers.get("Last-Modified") else None
         item["date"] = response.headers.get("Date").decode("utf-8") if response.headers.get("Date") else None
-        item["description"] = response.css('meta[name="description"]::attr(content)').get()
-        item["keywords"] = response.css('meta[name="keywords"]::attr(content)').get()
 
-        #item["content_body"] = response.body
+        try:
+            item["description"] = response.css('meta[name="description"]::attr(content)').get()
+            item["keywords"] = response.css('meta[name="keywords"]::attr(content)').get()
+        except Exception as e:
+            exception_type = type(e).__name__
+            logger.error(f'Failed to extract "description" and/or "keywords": {exception_type} - {str(e)}')
+            return None
+
+        item["content_body"] = response.body
 
         item["content"] = self.format_content_with_markdown(response)
 
@@ -91,15 +88,15 @@ class CrawlingSpider(CrawlSpider):
         item["cousin_urls"] = languages_dict
 
         for link in response.css("a::attr(href)").getall():
-            full_url = urljoin(response.url, link)            
+            full_url = urljoin(response.url, link)
 
             # get pdf links of this page
             if full_url.lower().endswith(".pdf"):
                 item["pdf_links"][full_url] = None
-            
+
         for link in response.css("a::attr(href)").getall():
             full_url = urljoin(response.url, link)
-             
+
             # get child and cousin urls
             if link not in item["cousin_urls"].keys() and link not in item["pdf_links"].keys() and link != response.url:
                 item["child_urls"][full_url] = None
@@ -112,10 +109,10 @@ class CrawlingSpider(CrawlSpider):
         images = {}
         img_alt = {}
         for img in response.css("img"):
-            src = img.attrib.get('src')
+            src = img.attrib.get("src")
             if src:
                 full_url = urljoin(response.url, src)
-                alt = img.attrib.get('alt', '')
+                alt = img.attrib.get("alt", "")
                 images[full_url] = None
                 img_alt[full_url] = alt
         return images, img_alt
@@ -123,15 +120,11 @@ class CrawlingSpider(CrawlSpider):
     # extract title from multiple sources
     def get_title(self, response):
         """Extract title from multiple possible sources"""
-        title = response.headers.get("Title", b"").decode("utf-8") or \
-                response.css("title::text").get() or \
-                response.css("h1::text").get() or \
-                ""
+        title = response.headers.get("Title", b"").decode("utf-8") or response.css("title::text").get() or response.css("h1::text").get() or ""
         return title.strip()
 
     # format content with markdown
     def format_content_with_markdown(self, response):
-
         """Format content with markdown, preserving the original order of elements"""
         content_parts = []
 
@@ -142,7 +135,7 @@ class CrawlingSpider(CrawlSpider):
                 tag_name = element.root.tag
 
                 # Handle headers
-                if tag_name.startswith('h'):
+                if tag_name.startswith("h"):
                     level = int(tag_name[1])  # get number from h1, h2, etc.
                 else:
                     level = 0

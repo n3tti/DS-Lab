@@ -1,0 +1,9 @@
+services:
+  admincrawler:
+    build:
+      context: ../
+      dockerfile: deployments/Dockerfile
+    restart: unless-stopped
+    volumes:
+      - ../:/app
+    working_dir: /app
