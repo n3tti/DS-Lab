@@ -7,7 +7,6 @@
 from itemadapter import ItemAdapter, is_item
 from scrapy import signals
 import random
-from fake_useragent import UserAgent
 from scrapy.downloadermiddlewares.useragent import UserAgentMiddleware
 
 class CrawlerSpiderMiddleware:
