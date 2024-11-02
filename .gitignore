@@ -184,3 +184,12 @@ cython_debug/
 
 /crawler/adminch_crawler/persistance/pipelines_states/*
 !/crawler/adminch_crawler/persistance/pipelines_states/.gitkeep
+
+
+/slurm_log/
+
+
+# apptainer images
+*.sif
+# apptainer build trigger
+.apptainer_build_trigger*
