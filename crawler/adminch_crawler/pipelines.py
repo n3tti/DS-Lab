@@ -67,6 +67,7 @@ class FilterURLPipeline:
         self.allowed_content_type = ["text/html"]
 
     def process_item(self, item, spider):
+        logging.getLogger(spider.name).info(f"Processing url: {item}")
         if item["status"] != 200:
             raise DropItem(f"HTTP Status: {item['status']}.")
         elif item["content_type"] is None:
@@ -297,32 +298,32 @@ class MetadataPipeline(ResummablePipeline):
         return item
 
 
-class DownloadContentPipeline:
-    def __init__(self):
-        self.folders = [TEXT_DIR, IMAGE_DIR, APPLICATION_DIR]
-        self.content_types = ["text/html", "application/pdf", "image/png"]
+# class DownloadContentPipeline:
+#     def __init__(self):
+#         self.folders = [TEXT_DIR, IMAGE_DIR, APPLICATION_DIR]
+#         self.content_types = ["text/html", "application/pdf", "image/png"]
 
-    def process_item(self, item, spider):
-        content_type = item["content_type"].split(";")[0]
+#     def process_item(self, item, spider):
+#         content_type = item["content_type"].split(";")[0]
 
-        if content_type == "text/html":
-            with open(TEXT_DIR + f"{item['id']}.bin", "wb") as file:
-                file.write(item["content_body"])
+#         if content_type == "text/html":
+#             with open(TEXT_DIR + f"{item['id']}.bin", "wb") as file:
+#                 file.write(item["content_body"])
 
-        return item
+#         return item
 
-    def open_spider(self, spider):
-        self.clean_folders()
+#     def open_spider(self, spider):
+#         self.clean_folders()
 
-    def clean_folders(self):
-        for path in self.folders:
-            if os.path.exists(path):
-                for filename in os.listdir(path):
-                    file_path = os.path.join(path, filename)
-                    try:
-                        if os.path.isfile(file_path) or os.path.islink(file_path):
-                            os.unlink(file_path)
-                    except Exception as e:
-                        print(f"Failed to delete {file_path}. Reason: {e}")
-            else:
-                os.makedirs(path)
+#     def clean_folders(self):
+#         for path in self.folders:
+#             if os.path.exists(path):
+#                 for filename in os.listdir(path):
+#                     file_path = os.path.join(path, filename)
+#                     try:
+#                         if os.path.isfile(file_path) or os.path.islink(file_path):
+#                             os.unlink(file_path)
+#                     except Exception as e:
+#                         print(f"Failed to delete {file_path}. Reason: {e}")
+#             else:
+#                 os.makedirs(path)

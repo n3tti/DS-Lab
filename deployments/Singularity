@@ -1,0 +1,16 @@
+Bootstrap: docker
+From: python:3.11
+
+%environment
+    export PATH=/app:$PATH
+
+%files
+    requirements.txt /app/requirements.txt
+
+%post
+    mkdir -p /app
+    cd /app
+    pip install --no-cache-dir --upgrade -r /app/requirements.txt
+
+%runscript
+    make start
