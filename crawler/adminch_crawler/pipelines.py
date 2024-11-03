@@ -284,6 +284,7 @@ class MetadataPipeline(ResummablePipeline):
             "keywords",
             "pdf_links",
             "embedded_images",
+            "status"
         ]
         dic = {}
         for key in keys_to_save:
