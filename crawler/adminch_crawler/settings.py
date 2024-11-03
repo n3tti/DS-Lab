@@ -97,6 +97,7 @@ DOWNLOADER_MIDDLEWARES = {
 
 ITEM_PIPELINES = {
     "adminch_crawler.pipelines.FilterURLPipeline": 100,
+    "adminch_crawler.pipelines.NtfyPipeline": 101,
     "adminch_crawler.pipelines.IDAssignmentPipeline": 200,
     "adminch_crawler.pipelines.ParentsPipeline": 300,
     "adminch_crawler.pipelines.PDFPipeline": 400,
@@ -140,7 +141,7 @@ HTTPERROR_ALLOW_ALL = True
 
 LOG_LEVEL = "INFO"
 JOBDIR = "./adminch_crawler/persistance/jobdir/"
-SAVE_LOG = True
+SAVE_LOG = False
 if SAVE_LOG:
     LOG_FILE = "crawler.log"
     # LOG_STDOUT = False

@@ -34,6 +34,8 @@ class PageItem(scrapy.Item):
     description = scrapy.Field()
     keywords = scrapy.Field()
 
+    error = scrapy.Field()
+
     def __repr__(self):
         return repr(
             {

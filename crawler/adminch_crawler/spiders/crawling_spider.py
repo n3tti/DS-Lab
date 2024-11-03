@@ -38,6 +38,7 @@ class CrawlingSpider(CrawlSpider):
         return self.is_resuming_var
 
     def parse_item(self, response):
+
         item = PageItem()
 
         # about webrequest
@@ -103,6 +104,7 @@ class CrawlingSpider(CrawlSpider):
 
         yield item
 
+
     # handle embedded images
     def extract_images(self, response):
         """Extract embedded images from content"""
@@ -130,23 +132,19 @@ class CrawlingSpider(CrawlSpider):
 
         # Select all headers and paragraphs in order of appearance
         for element in response.css("h1, h2, h3, h4, h5, h6, p"):
-            try:
-                # Get the element name (h1, h2, p, etc.)
-                tag_name = element.root.tag
 
-                # Handle headers
-                if tag_name.startswith("h"):
-                    level = int(tag_name[1])  # get number from h1, h2, etc.
-                else:
-                    level = 0
+            # Get the element name (h1, h2, p, etc.)
+            tag_name = element.root.tag
 
-                text = element.css("::text").get()
-                if text:
-                    text = text.strip()
-                    content_parts.append(f"{'#' * level} {text}\n\n")
+            # Handle headers
+            if tag_name.startswith("h"):
+                level = int(tag_name[1])  # get number from h1, h2, etc.
+            else:
+                level = 0
 
-            except Exception as e:
-                print(e)
-                pdb.set_trace()
+            text = element.css("::text").get()
+            if text:
+                text = text.strip()
+                content_parts.append(f"{'#' * level} {text}\n\n")
 
         return "".join(content_parts)

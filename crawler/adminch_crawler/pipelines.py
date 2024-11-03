@@ -8,6 +8,7 @@ import logging
 import os
 import uuid
 from abc import ABC
+import requests
 
 
 
@@ -249,11 +250,34 @@ class ParentsPipeline(ResummablePipeline):
             self.save_data(PARENTS_DIR, line + "\n")
         return item
 
+class NtfyPipeline(ResummablePipeline):
+    def __init__(self):
+        super().__init__()
+        self.topic = "ntfy.sh/dslab"
+
+    def process_item(self, item, spider):
+        current_value = int(os.getenv('count', '0'))  # Default to 0 if not set
+        current_value = current_value + 1
+        ntfy = int(os.getenv('ntfy', '1'))
+        if current_value > 1:
+            os.environ['count'] = "0"
+            self.send_notification(f"Voila the next 10k * {ntfy}")
+            os.environ['ntfy'] = str(ntfy + 1)
+        else:
+            os.environ['count'] = str(current_value)
+    def send_notification(self, message):
+        url = f"https://ntfy.sh/{self.topic}"
+        requests.post(url, data=message.encode('utf-8'))
+
+
+
 
 class MetadataPipeline(ResummablePipeline):
+
     def __init__(self):
         super().__init__()
         self.logger = logging.getLogger(__name__)
+        self.i = 0
 
     def open_spider(self, spider):
         if self.is_resuming(spider):
