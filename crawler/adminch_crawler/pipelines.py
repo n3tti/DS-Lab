@@ -68,9 +68,9 @@ class FilterURLPipeline:
 
     def process_item(self, item, spider):
         logging.getLogger(spider.name).info(f"Processing url: {item}")
-        if item["status"] != 200:
-            raise DropItem(f"HTTP Status: {item['status']}.")
-        elif item["content_type"] is None:
+        #if item["status"] != 200:
+        #    raise DropItem(f"HTTP Status: {item['status']}.")
+        if item["content_type"] is None:
             raise DropItem(f"Content_type is None.")
         elif not item["content_type"].split(";")[0] in self.allowed_content_type:
             raise DropItem(f"Content type \"{item['content_type'].split(';')[0]}\" is not allowed.")
@@ -90,6 +90,9 @@ class IDAssignmentPipeline(ResummablePipeline):
         if item["url"] is None:
             logging.getLogger(spider.name).error("None URL")
             raise DropItem()
+
+        if item["status"] != 200:
+            return item
 
         if item["url"] not in self.seen_urls.keys():
             id = self.get_next_id()

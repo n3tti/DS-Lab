@@ -99,7 +99,7 @@ ITEM_PIPELINES = {
     "adminch_crawler.pipelines.PDFPipeline": 400,
     "adminch_crawler.pipelines.ImagePipeline": 500,
     "adminch_crawler.pipelines.ContentPipeline": 600,
-    "adminch_crawler.pipelines.HashContentPipeline": 700,
+    #"adminch_crawler.pipelines.HashContentPipeline": 700,
     "adminch_crawler.pipelines.MetadataPipeline": 800,
     # "adminch_crawler.pipelines.DownloadContentPipeline": 400,
 }
@@ -135,7 +135,7 @@ TWISTED_REACTOR = "twisted.internet.asyncioreactor.AsyncioSelectorReactor"
 FEED_EXPORT_ENCODING = "utf-8"
 HTTPERROR_ALLOW_ALL = True
 
-DEPTH_LIMIT = 7
+DEPTH_LIMIT = 2
 
 LOG_LEVEL = "ERROR"
 JOBDIR = "./adminch_crawler/persistance/jobdir/"
