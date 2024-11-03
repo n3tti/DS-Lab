@@ -181,15 +181,6 @@ class PDFPipeline(ResummablePipeline):
         return item
 
 
-class ContentPipeline:
-    def process_item(self, item, spider):
-        # Clean and validate content
-        if item.get("content"):
-            # Remove excessive newlines and spaces
-            item["content"] = "\n".join(line.strip() for line in item["content"].split("\n") if line.strip())
-        return item
-
-
 class ImagePipeline(ResummablePipeline):
     def __init__(self):
         super().__init__()
