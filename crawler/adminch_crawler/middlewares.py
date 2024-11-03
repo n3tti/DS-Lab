@@ -8,6 +8,8 @@ import random
 # useful for handling different item types with a single interface
 from itemadapter import ItemAdapter, is_item
 from scrapy import signals
+from fake_useragent import UserAgent
+
 
 
 class CrawlerSpiderMiddleware:
@@ -105,14 +107,9 @@ class CrawlerDownloaderMiddleware:
 
 
 class RotateUserAgentMiddleware:
-    # switches agent when blocked
-    def __init__(self, user_agents):
-        self.user_agents = user_agents
-
-    @classmethod
-    def from_crawler(cls, crawler):
-        return cls(crawler.settings.get("USER_AGENTS"))
 
     def process_request(self, request, spider):
-        user_agent = random.choice(self.user_agents)
-        request.headers.setdefault("User-Agent", user_agent)
+        ua = UserAgent()
+        agent = ua.random
+        spider.logger.info("User-Agent: %s" % agent)
+        request.headers.setdefault("User-Agent", agent)

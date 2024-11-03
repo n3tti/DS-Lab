@@ -77,7 +77,7 @@ ROBOTSTXT_OBEY = False
 # ]
 
 DOWNLOADER_MIDDLEWARES = {
-    # 'adminch_crawler.middlewares.RotateUserAgentMiddleware': 40,
+    'adminch_crawler.middlewares.RotateUserAgentMiddleware': 40,
     # 'myproject.middlewares.CustomLoggingMiddleware': 543,
     # "scrapy.spidermiddlewares.depth.DepthMiddleware": 900,
 }
@@ -137,6 +137,6 @@ HTTPERROR_ALLOW_ALL = True
 
 DEPTH_LIMIT = 7
 
-LOG_LEVEL = "INFO"
+LOG_LEVEL = "ERROR"
 JOBDIR = "./adminch_crawler/persistance/jobdir/"
 LOG_STDOUT = True
