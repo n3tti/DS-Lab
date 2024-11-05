@@ -6,6 +6,7 @@
 #     https://docs.scrapy.org/en/latest/topics/settings.html
 #     https://docs.scrapy.org/en/latest/topics/downloader-middleware.html
 #     https://docs.scrapy.org/en/latest/topics/spider-middleware.html
+from fake_useragent import UserAgent
 
 BOT_NAME = "adminch_crawler"
 
@@ -14,7 +15,7 @@ NEWSPIDER_MODULE = "adminch_crawler.spiders"
 
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
-USER_AGENT = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36"
+USER_AGENT = UserAgent().random
 DEFAULT_REQUEST_HEADERS = {
     "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7",
     "accept-encoding": "gzip, deflate, br, zstd",
@@ -140,3 +141,7 @@ DEPTH_LIMIT = 2
 LOG_LEVEL = "ERROR"
 JOBDIR = "./adminch_crawler/persistance/jobdir/"
 LOG_STDOUT = True
+
+
+
+# rsync -av --exclude 'venv' --exclude '.git' --exclude '.idea' --exclude 'slurm_log' "/Users/saschatran/Desktop/Uni gits/DS-Lab" sas@192.168.178.75:
