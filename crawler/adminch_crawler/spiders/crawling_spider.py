@@ -64,7 +64,8 @@ class CrawlingSpider(CrawlSpider):
         except Exception as e:
             exception_type = type(e).__name__
             logger.error(f'Failed to extract "description" and/or "keywords": {exception_type} - {str(e)}')
-            return None
+            item["description"] = None
+            item["keywords"] = None
 
         item["content_body"] = response.body
 
