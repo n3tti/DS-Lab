@@ -1,3 +1,5 @@
+from app.config import JOBDIR
+
 # Scrapy settings for adminch_crawler project
 #
 # For simplicity, this file contains only settings considered important or
@@ -9,8 +11,8 @@
 
 BOT_NAME = "adminch_crawler"
 
-SPIDER_MODULES = ["adminch_crawler.spiders"]
-NEWSPIDER_MODULE = "adminch_crawler.spiders"
+SPIDER_MODULES = ["app.adminch_crawler.spiders"]
+NEWSPIDER_MODULE = "app.adminch_crawler.spiders"
 
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
@@ -93,14 +95,14 @@ DOWNLOADER_MIDDLEWARES = {
 # See https://docs.scrapy.org/en/latest/topics/item-pipeline.html
 
 ITEM_PIPELINES = {
-    "adminch_crawler.pipelines.FilterURLPipeline": 100,
-    "adminch_crawler.pipelines.IDAssignmentPipeline": 200,
-    "adminch_crawler.pipelines.ParentsPipeline": 300,
-    "adminch_crawler.pipelines.PDFPipeline": 400,
-    "adminch_crawler.pipelines.ImagePipeline": 500,
-    "adminch_crawler.pipelines.ContentPipeline": 600,
-    "adminch_crawler.pipelines.HashContentPipeline": 700,
-    "adminch_crawler.pipelines.MetadataPipeline": 800,
+    "app.adminch_crawler.pipelines.FilterURLPipeline": 100,
+    "app.adminch_crawler.pipelines.IDAssignmentPipeline": 200,
+    "app.adminch_crawler.pipelines.ParentsPipeline": 300,
+    "app.adminch_crawler.pipelines.PDFPipeline": 400,
+    "app.adminch_crawler.pipelines.ImagePipeline": 500,
+    "app.adminch_crawler.pipelines.ContentPipeline": 600,
+    "app.adminch_crawler.pipelines.HashContentPipeline": 700,
+    "app.adminch_crawler.pipelines.MetadataPipeline": 800,
     # "adminch_crawler.pipelines.DownloadContentPipeline": 400,
 }
 
@@ -136,7 +138,8 @@ FEED_EXPORT_ENCODING = "utf-8"
 HTTPERROR_ALLOW_ALL = True
 
 DEPTH_LIMIT = 7
+DEPTH_PRIORITY = 2
 
 LOG_LEVEL = "INFO"
-JOBDIR = "./adminch_crawler/persistance/jobdir/"
+# JOBDIR = JOBDIR
 LOG_STDOUT = True

@@ -11,7 +11,7 @@ from abc import ABC
 
 
 
-from adminch_crawler.config import (
+from app.config import (
     APPLICATION_DIR,
     IMAGE_DIR,
     IMAGE_FILE,
@@ -127,10 +127,10 @@ class IDAssignmentPipeline(ResummablePipeline):
             self.current_id = self.load_data(SAVE_LAST_ID_FILE)["last_id"]
 
     def close_spider(self, spider):
-        self.open_file(SAVE_IDS_FILE, False)
-        self.open_file(SAVE_LAST_ID_FILE, False)
-        self.save_data(SAVE_IDS_FILE, json.dumps(self.seen_urls))
-        self.save_data(SAVE_LAST_ID_FILE, json.dumps({"last_id": self.current_id}))
+        # self.open_file(SAVE_IDS_FILE, False)
+        # self.open_file(SAVE_LAST_ID_FILE, False)
+        # self.save_data(SAVE_IDS_FILE, json.dumps(self.seen_urls))
+        # self.save_data(SAVE_LAST_ID_FILE, json.dumps({"last_id": self.current_id}))
         self.close_files()
 
     # def process_item(self, item, spider):
