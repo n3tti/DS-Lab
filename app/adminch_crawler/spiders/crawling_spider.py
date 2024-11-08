@@ -5,7 +5,7 @@ import pdb
 import re
 from urllib.parse import urljoin
 
-from adminch_crawler.items import PageItem
+from app.adminch_crawler.items import PageItem
 from scrapy.http import TextResponse
 from scrapy.linkextractors import LinkExtractor
 from scrapy.spiders import CrawlSpider, Rule
@@ -21,7 +21,7 @@ class CrawlingSpider(CrawlSpider):
 
     def __init__(self, restart="False", *a, **kw):
         super().__init__(*a, **kw)
-        self.is_resuming_var = not (restart.lower() == "true")
+        self.is_resuming_var = False
 
     rules = (
         Rule(
