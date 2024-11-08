@@ -1,12 +1,15 @@
-from sqlalchemy import Column, Integer, String
-from sqlalchemy.ext.declarative import declarative_base
+from sqlmodel import SQLModel, Field
 
 
-Base = declarative_base()
+class BaseModel(SQLModel):
+    class Config:
+        from_attributes = True
 
-class User(Base):
-    __tablename__ = 'users'
 
-    id = Column(Integer, primary_key=True, index=True)
-    name = Column(String, index=True)
-    email = Column(String, unique=True, index=True)
+class User(BaseModel, table=True):  # 'table=True' makes this a database table
+    id: int = Field(default=None, primary_key=True)  # Primary key
+    name: str = Field(index=True)  # Indexed column
+    email: str = Field(unique=True)  # Unique constraint
+
+    # This column will not be indexed or have a unique constraint
+    age: int = Field(default=0)

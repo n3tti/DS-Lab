@@ -8,7 +8,9 @@ import os
 import shutil
 
 
-from app.repository.models import Base
+from sqlmodel import SQLModel
+from app.repository.models import BaseModel
+
 
 
 DATABASE_URL = os.getenv('DATABASE_URL', 'sqlite:///data/example.db')
@@ -29,7 +31,7 @@ config.set_main_option('sqlalchemy.url', DATABASE_URL)
 # for 'autogenerate' support
 # from myapp import mymodel
 # target_metadata = mymodel.Base.metadata
-target_metadata = Base.metadata
+target_metadata = SQLModel.metadata
 
 # other values from the config, defined by the needs of env.py,
 # can be acquired:
