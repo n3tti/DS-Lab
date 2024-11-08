@@ -6,7 +6,7 @@ lint:
 	black . && isort . && flake8 .
 
 start:
-	rm -rf app/adminch_crawler/persistance/jobdir*; \
+	rm -rf persistence/*; \
 	python -m app.main
 
 resume:
