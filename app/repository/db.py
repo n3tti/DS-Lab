@@ -21,8 +21,8 @@ class Database:
         self.session.commit()
         return new_user
 
-    def get_user(self, username):
-        return self.db.query(User).filter(User.name == username).first()
+    def get_user(self, name):
+        return self.session.query(User).filter(User.name == name).first()
 
 
     def create_item(self, description):
