@@ -27,7 +27,7 @@ class CrawlingSpider(CrawlSpider):
         Rule(
             LinkExtractor(
                 allow_domains=allowed_domains,
-                allow=r".*\.html?$|.*/$|.*(?<!\.)\w+$",
+                allow=r".*\.html?.*",
             ),
             callback="parse_item",
             follow=True,
@@ -60,11 +60,11 @@ class CrawlingSpider(CrawlSpider):
 
         try:
             item["description"] = response.css('meta[name="description"]::attr(content)').get()
-            item["keywords"] = response.css('meta[name="keywords"]::attr(content)').get()
-        except Exception as e:
-            exception_type = type(e).__name__
-            logger.error(f'Failed to extract "description" and/or "keywords": {exception_type} - {str(e)}')
+        except Exception:
             item["description"] = None
+        try:
+            item["keywords"] = response.css('meta[name="keywords"]::attr(content)').get()
+        except Exception:
             item["keywords"] = None
 
         item["content_body"] = response.body
@@ -73,7 +73,14 @@ class CrawlingSpider(CrawlSpider):
 
         item["embedded_images"], item["img_alt"] = self.extract_images(response)
 
-        item["lang"] = response.xpath("//html/@lang").get()
+        lang = response.xpath("//html/@lang").get()
+
+        if not lang:
+            # Try meta tag if html lang is not found
+            lang = response.xpath(
+                "//meta[@http-equiv='content-language']/@content | //meta[@property='og:locale']/@content").get()
+
+        item["lang"] = lang
 
         item["hash"] = None
 
@@ -147,7 +154,7 @@ class CrawlingSpider(CrawlSpider):
                     content_parts.append(f"{'#' * level} {text}\n\n")
 
             except Exception as e:
-                print(e)
-                pdb.set_trace()
+                logger.error(f"{e} \n url: {item["url"]}, element: {element}")
+
 
         return "".join(content_parts)
