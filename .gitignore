@@ -196,3 +196,4 @@ cython_debug/
 
 # SQLite db
 *.db
+*.db.backup

@@ -5,6 +5,13 @@ from sqlalchemy import pool
 
 from alembic import context
 import os
+import shutil
+
+
+from app.repository.models import Base
+
+
+DATABASE_URL = os.getenv('DATABASE_URL', 'sqlite:///data/example.db')
 
 # this is the Alembic Config object, which provides
 # access to the values within the .ini file in use.
@@ -16,18 +23,31 @@ if config.config_file_name is not None:
     fileConfig(config.config_file_name)
 
 
-config.set_main_option('sqlalchemy.url', os.getenv('DATABASE_URL', 'sqlite:///data/example.db'))
+config.set_main_option('sqlalchemy.url', DATABASE_URL)
 
 # add your model's MetaData object here
 # for 'autogenerate' support
 # from myapp import mymodel
 # target_metadata = mymodel.Base.metadata
-target_metadata = None
+target_metadata = Base.metadata
 
 # other values from the config, defined by the needs of env.py,
 # can be acquired:
 # my_important_option = config.get_main_option("my_important_option")
 # ... etc.
+
+
+def create_backup():
+    db_path = DATABASE_URL.split('///')[-1]
+    backup_path = f"{db_path}.backup"
+
+    if os.path.exists(db_path):
+        shutil.copyfile(db_path, backup_path)
+        print(f"Backup created at {backup_path}")
+    else:
+        print(f"Database file {db_path} not found. No backup created.")
+
+create_backup()
 
 
 def run_migrations_offline() -> None:
