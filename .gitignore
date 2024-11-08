@@ -197,3 +197,6 @@ cython_debug/
 # SQLite db
 *.db
 *.db.backup
+
+# Scrapy's JOBDIR & Persistence folder
+*persistence/
