@@ -15,7 +15,7 @@ from app.config import (
     APPLICATION_DIR,
     IMAGE_DIR,
     IMAGE_FILE,
-    JOBDIR,
+    # JOBDIR,
     METADATA_DIR,
     PARENTS_DIR,
     PDF_FILE,

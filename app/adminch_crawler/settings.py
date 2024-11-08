@@ -79,6 +79,8 @@ ROBOTSTXT_OBEY = False
 # ]
 
 DOWNLOADER_MIDDLEWARES = {
+    # 'scrapy.downloadermiddlewares.httpcache.HttpCacheMiddleware': 585,
+    'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware': 590,
     # 'adminch_crawler.middlewares.RotateUserAgentMiddleware': 40,
     # 'myproject.middlewares.CustomLoggingMiddleware': 543,
     # "scrapy.spidermiddlewares.depth.DepthMiddleware": 900,
@@ -123,12 +125,12 @@ AUTOTHROTTLE_START_DELAY = 0.01
 AUTOTHROTTLE_MAX_DELAY = 40
 AUTOTHROTTLE_TARGET_CONCURRENCY = 64
 
-# Enable and configure HTTP caching (disabled by default)
-# See https://docs.scrapy.org/en/latest/topics/downloader-middleware.html#httpcache-middleware-settings
+# # Enable and configure HTTP caching (disabled by default)
+# # See https://docs.scrapy.org/en/latest/topics/downloader-middleware.html#httpcache-middleware-settings
 # HTTPCACHE_ENABLED = True
-# HTTPCACHE_EXPIRATION_SECS = 0
+# # HTTPCACHE_EXPIRATION_SECS = 0
 # HTTPCACHE_DIR = "httpcache"
-# HTTPCACHE_IGNORE_HTTP_CODES = []
+# # HTTPCACHE_IGNORE_HTTP_CODES = []
 # HTTPCACHE_STORAGE = "scrapy.extensions.httpcache.FilesystemCacheStorage"
 
 # Set settings whose default value is deprecated to a future-proof value

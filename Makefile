@@ -6,7 +6,8 @@ lint:
 	black . && isort . && flake8 .
 
 start:
-	rm -rf crawler/adminch_crawler/persistance/jobdir* && cd crawler && scrapy crawl my2crawler -a restart=$(RESTART)
+	rm -rf app/adminch_crawler/persistance/jobdir*; \
+	python -m app.main
 
 resume:
 	cd crawler && scrapy crawl my2crawler -a restart=True
