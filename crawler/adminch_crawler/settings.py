@@ -100,7 +100,7 @@ ITEM_PIPELINES = {
     "adminch_crawler.pipelines.PDFPipeline": 400,
     "adminch_crawler.pipelines.ImagePipeline": 500,
     "adminch_crawler.pipelines.ContentPipeline": 600,
-    "adminch_crawler.pipelines.HashContentPipeline": 700,
+    #"adminch_crawler.pipelines.HashContentPipeline": 700,
     "adminch_crawler.pipelines.MetadataPipeline": 800,
     # "adminch_crawler.pipelines.DownloadContentPipeline": 400,
 }
