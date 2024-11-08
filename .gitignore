@@ -193,3 +193,6 @@ cython_debug/
 *.sif
 # apptainer build trigger
 .apptainer_build_trigger*
+
+# SQLite db
+*.db
