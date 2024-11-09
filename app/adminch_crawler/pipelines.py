@@ -382,7 +382,8 @@ class MetadataPipeline:
 class CompletedStoragePipeline:
     def process_item(self, scraped_page: ScrapedPage, spider: Spider) -> ScrapedPage:
         # SAVE EVERYTHING TO DB HERE POTENTIALLY?
-
+        # For example PDFs is another table, BUT the ScrapedPage is successfully processed only when PDF are safely saved to DB. I.e. one of the mandatory conditions is to save PDFs.
+        # PARENT-CHILDs table too? I think
 
         # ###################################### PDFPipeline HERE
         # for url in scraped_page.pdf_links_dict.keys():
