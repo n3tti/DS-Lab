@@ -279,73 +279,73 @@ class ParentsPipeline:
         return item
 
 
-class MetadataPipeline:
-    def __init__(self):
-        super().__init__()
-        self.logger = logging.getLogger(__name__)
+# class MetadataPipeline:
+#     def __init__(self):
+#         super().__init__()
+#         self.logger = logging.getLogger(__name__)
 
-    # def open_spider(self, spider):
-    #     if self.is_resuming(spider):
-    #         self.open_file(METADATA_DIR, True)
-    #     else:
-    #         self.open_file(METADATA_DIR, False)
+#     # def open_spider(self, spider):
+#     #     if self.is_resuming(spider):
+#     #         self.open_file(METADATA_DIR, True)
+#     #     else:
+#     #         self.open_file(METADATA_DIR, False)
 
-    # def close_spider(self, spider):
-    #     self.close_files()
+#     # def close_spider(self, spider):
+#     #     self.close_files()
 
-    def process_item(self, scraped_page: ScrapedPage, spider: Spider) -> ScrapedPage:
-        # keys_to_save = [
-        #     "id",
-        #     "depth",
-        #     "url",
-        #     "lang",
-        #     "content_type",
-        #     "content_length",
-        #     "content_encoding",
-        #     "last_modified",
-        #     "date",
-        #     "hash",
-        #     "cousin_urls",
-        #     "title",
-        #     "content",
-        #     "description",
-        #     "keywords",
-        #     "pdf_links",
-        #     "embedded_images",
-        # ]
-        keys_to_save = [
-            # "id",
-            # "depth",
-            # "url",
-            "response_content_type",
-            "response_content_length",
-            "response_content_encoding",
-            "response_last_modified",
-            "response_date",
-            # "cousin_urls",
-            "response_metadata_lang",
-            "response_metadata_title",
-            "response_metadata_content",
-            "response_metadata_description",
-            "response_metadata_keywords",
-            "response_metadata_content_hash",
-            # "pdf_links",
-            # "embedded_images",
-        ]
-        dic = {}
-        for key in keys_to_save:
-            # for fild in scraped_page
-            # if hasattr(scraped_page, key):
-            dic[key] = getattr(scraped_page, key)
-            # if key in item:
-            #     dic[key] = item[key]
-            # else:
-            #     self.logger.warning(f"Key '{key}' not found in item.")
-            #     dic[key] = None
+#     def process_item(self, scraped_page: ScrapedPage, spider: Spider) -> ScrapedPage:
+#         # keys_to_save = [
+#         #     "id",
+#         #     "depth",
+#         #     "url",
+#         #     "lang",
+#         #     "content_type",
+#         #     "content_length",
+#         #     "content_encoding",
+#         #     "last_modified",
+#         #     "date",
+#         #     "hash",
+#         #     "cousin_urls",
+#         #     "title",
+#         #     "content",
+#         #     "description",
+#         #     "keywords",
+#         #     "pdf_links",
+#         #     "embedded_images",
+#         # ]
+#         keys_to_save = [
+#             # "id",
+#             # "depth",
+#             # "url",
+#             "response_content_type",
+#             "response_content_length",
+#             "response_content_encoding",
+#             "response_last_modified",
+#             "response_date",
+#             # "cousin_urls",
+#             "response_metadata_lang",
+#             "response_metadata_title",
+#             "response_metadata_content",
+#             "response_metadata_description",
+#             "response_metadata_keywords",
+#             "response_metadata_content_hash",
+#             # "pdf_links",
+#             # "embedded_images",
+#         ]
+#         dic = {}
+#         for key in keys_to_save:
+#             # for fild in scraped_page
+#             # if hasattr(scraped_page, key):
+#             dic[key] = getattr(scraped_page, key)
+#             # if key in item:
+#             #     dic[key] = item[key]
+#             # else:
+#             #     self.logger.warning(f"Key '{key}' not found in item.")
+#             #     dic[key] = None
 
-        line = json.dumps(dic)
-        # self.save_data(METADATA_DIR, line + "\n")
-        return scraped_page
+#         line = json.dumps(dic)
+#         # self.save_data(METADATA_DIR, line + "\n")
+#         return scraped_page
 
 
 # class DownloadContentPipeline:
