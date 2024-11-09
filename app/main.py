@@ -1,4 +1,3 @@
-# main.py
 import scrapy
 from scrapy.crawler import CrawlerProcess
 from app.adminch_crawler.spiders.crawling_spider import CrawlingSpider
