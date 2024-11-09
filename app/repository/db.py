@@ -7,9 +7,8 @@ from contextlib import contextmanager
 
 from typing import Any
 
+from app.repository.db import DATABASE_URL
 
-
-DATABASE_URL = os.getenv('DATABASE_URL', 'sqlite:///data/example.db')
 
 engine = create_engine(DATABASE_URL, echo=False, future=True)
 session_factory = sessionmaker(autocommit=False, autoflush=False, bind=engine)

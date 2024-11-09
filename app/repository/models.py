@@ -28,7 +28,7 @@ class ScrapedPage(SQLModel, table=True):
     url: str = Field(index=True, unique=True)
     status: StatusEnum = Field(default=StatusEnum.DISCOVERED)
     text: Optional[str] = Field(default=None)
-    # body: Optional[bytes] = Field(default=None, sa_column_kwargs={'type_': LargeBinary})
+    body: Optional[bytes] = Field(default=None, sa_type=LargeBinary())
     created_at: datetime = Field(sa_column=Column(DateTime(timezone=True), server_default=func.now()))
     updated_at: datetime = Field(sa_column=Column(DateTime(timezone=True), onupdate=func.now()))
 
