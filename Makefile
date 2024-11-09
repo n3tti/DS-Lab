@@ -9,6 +9,13 @@ start:
 	rm -rf persistence/*; \
 	python -m app.main
 
+alembic:
+	rm -rf data/*.db; \
+	rm -rf data/*.db*; \
+	rm -rf migrations/versions/*.py; \
+	alembic revision --autogenerate -m "Create scraped_page table"; \
+	alembic upgrade head
+
 resume:
 	cd crawler && scrapy crawl my2crawler -a restart=True
 

@@ -1,5 +1,5 @@
 from enum import Enum
-from sqlmodel import SQLModel, Field
+from sqlmodel import SQLModel, Field, JSON
 from sqlalchemy import LargeBinary, Column, DateTime
 from sqlalchemy.sql import func
 from typing import Optional
@@ -26,23 +26,29 @@ class StatusEnum(str, Enum):
 class ScrapedPage(SQLModel, table=True):
     __tablename__ = 'scraped_page'
 
-    id: int = Field(default=None, primary_key=True)
+    id: int = Field(primary_key=True)
     url: str = Field(index=True, unique=True)
     status: StatusEnum = Field(default=StatusEnum.DISCOVERED)  # Application-specific status
 
-    response_status_code: Optional[int] = Field(default=None, description="HTTP status code of the response")
+    cousin_urls: dict[str, str | None] = Field(default_factory=dict, sa_column=Column(JSON), description="Dictionary of cousin URLs")
+    pdf_links: dict[str, str | None] = Field(default_factory=dict, sa_column=Column(JSON), description="Dictionary of PDF links")
+    child_urls: dict[str, str | None] = Field(default_factory=dict, sa_column=Column(JSON), description="Dictionary of child URLs")
+
+
+
+    response_status_code: int | None = Field(default=None, description="HTTP status code of the response")
 
     # metadata
-    response_content_type: Optional[str] = Field(default=None, description="Content type of the HTTP response")
+    response_content_type: str | None = Field(default=None, description="Content type of the HTTP response")
 
 
 
-    response_text: Optional[str] = Field(default=None, description="Text portion of the HTTP response")
-    response_body: Optional[bytes] = Field(default=None, sa_type=LargeBinary(), description="Binary body of the HTTP response")
+    response_text: str | None = Field(default=None, description="Text portion of the HTTP response")
+    response_body: bytes | None = Field(default=None, sa_type=LargeBinary(), description="Binary body of the HTTP response")
 
 
     created_at: datetime = Field(sa_column=Column(DateTime(timezone=True), server_default=func.now()))
-    updated_at: Optional[datetime] = Field(default=None, sa_column=Column(DateTime(timezone=True), onupdate=func.now()))
+    updated_at: datetime | None = Field(default=None, sa_column=Column(DateTime(timezone=True), onupdate=func.now()))
 
 
     def __str__(self):

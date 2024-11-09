@@ -70,15 +70,15 @@ class DiscoveredStoragePipeline:
     def process_item(self, scraped_page: ScrapedPage, spider: Spider) -> ScrapedPage:
         existing_page = db.get_scraped_page(url=scraped_page.url)
 
-        if existing_page:
-            if existing_page.status == StatusEnum.COMPLETED:
-                raise DropItem(f"url: '{scraped_page.url}' is already COMPLETED.")
+        if existing_page is None:
+            return db.create_scraped_page(scraped_page.dict())
 
-            db.update_scraped_page_status(url=scraped_page.url, status=StatusEnum.REVISITED)
+        elif existing_page.status == StatusEnum.COMPLETED:
+            raise DropItem(f"url: '{scraped_page.url}' is already COMPLETED.")
 
-            return existing_page
+        db.update_scraped_page_status(url=scraped_page.url, status=StatusEnum.REVISITED)
 
-        return db.create_scraped_page(scraped_page.dict())
+        return existing_page
 
 
 class FilterURLPipeline:
@@ -90,7 +90,7 @@ class FilterURLPipeline:
         logging.getLogger(spider.name).info(f"Processing url: {scraped_page}")
 
         if scraped_page.response_status_code != 200:
-            raise DropItem(f"HTTP Status: {scraped_page.response_status_code}.")
+            raise DropItem(f"HTTP Status: {scraped_page.response_status_code}: {scraped_page}.")
         elif scraped_page.response_content_type is None:
             raise DropItem(f"Content_type is None.")
         elif not scraped_page.response_content_type.split(";")[0] in self.allowed_content_type:
@@ -103,82 +103,85 @@ class IDAssignmentPipeline:
 
     def __init__(self):
         super().__init__()
-        self.seen_urls = {}
+        # self.seen_urls = {}
+        # self.url_dics = ["pdf_links", "child_urls"]
         self.url_dics = ["embedded_images", "pdf_links", "child_urls"]
         self.current_id = 0
 
-    def process_item(self, item, spider):
-        if item["url"] is None:
-            logging.getLogger(spider.name).error("None URL")
-            raise DropItem()
+    def process_item(self, scraped_page: ScrapedPage, spider: Spider) -> ScrapedPage:
+        # if scraped_page.url is None:
+        #     logging.getLogger(spider.name).error("None URL")
+        #     raise DropItem()
 
-        if item["url"] not in self.seen_urls.keys():
-            id = self.get_next_id()
-            item["id"] = id
-            self.seen_urls[item["url"]] = id
-        else:
-            item["id"] = self.seen_urls[item["url"]]
+        # if scraped_page.url not in self.seen_urls.keys():
+            # id = self.get_next_id()
+            # scraped_page.id = id
+            # self.seen_urls[scraped_page.url] = id
+        # else:
+            # scraped_page.id = self.seen_urls[scraped_page.url]
 
         for url_dic in self.url_dics:
-            for url in item[url_dic].keys():
-                if url not in self.seen_urls.keys():
-                    id = self.get_next_id()
-                    self.seen_urls[url] = id
-                    item[url_dic][url] = id
+            for url in getattr(scraped_page, url_dic, {}).keys():
+                existing_page = db.get_scraped_page(url=url)
+
+                if existing_page is None:
+                    new_page = db.create_scraped_page({"url": url})
+                    getattr(scraped_page, url_dic)[url] = new_page.id
                 else:
-                    item[url_dic][url] = self.seen_urls[url]
+                    getattr(scraped_page, url_dic)[url] = existing_page.url
 
-        for lang, url in item["cousin_urls"].items():
-            if url not in self.seen_urls.keys():
-                id = self.get_next_id()
-                self.seen_urls[url] = id
-                item["cousin_urls"][lang] = id
+        for lang, url in scraped_page.cousin_urls.items():
+            existing_page = db.get_scraped_page(url=url)
+
+            if existing_page is None:
+                new_page = db.create_scraped_page({"url": url})
+                scraped_page.cousin_urls[lang] = new_page.id
             else:
-                item["cousin_urls"][lang] = self.seen_urls[url]
+                scraped_page.cousin_urls[lang] = existing_page.url
 
-        return item
+        return scraped_page
 
-    def get_next_id(self):
-        self.current_id += 1
-        return self.current_id
+    # # def get_next_id(self):
+    # #     self.current_id += 1
+    # #     return self.current_id
 
-    def open_spider(self, spider):
-        if self.is_resuming(spider):
-            self.seen_urls = self.load_data(SAVE_IDS_FILE)
-            self.current_id = self.load_data(SAVE_LAST_ID_FILE)["last_id"]
+    # # def open_spider(self, spider):
+    # #     if self.is_resuming(spider):
+    # #         self.seen_urls = self.load_data(SAVE_IDS_FILE)
+    # #         self.current_id = self.load_data(SAVE_LAST_ID_FILE)["last_id"]
 
-    def close_spider(self, spider):
-        # self.open_file(SAVE_IDS_FILE, False)
-        # self.open_file(SAVE_LAST_ID_FILE, False)
-        # self.save_data(SAVE_IDS_FILE, json.dumps(self.seen_urls))
-        # self.save_data(SAVE_LAST_ID_FILE, json.dumps({"last_id": self.current_id}))
-        self.close_files()
+    # def close_spider(self, spider):
+    #     # self.open_file(SAVE_IDS_FILE, False)
+    #     # self.open_file(SAVE_LAST_ID_FILE, False)
+    #     # self.save_data(SAVE_IDS_FILE, json.dumps(self.seen_urls))
+    #     # self.save_data(SAVE_LAST_ID_FILE, json.dumps({"last_id": self.current_id}))
+    #     self.close_files()
 
-    # def process_item(self, item, spider):
-    #     if item["url"] not in self.seen_urls.keys():
-    #         id = self.get_next_id()
-    #         item["id"] = id
-    #         self.seen_urls[item["url"]] = id
-    #     else:
-    #         item["id"] = self.seen_urls[item["url"]]
+    # # def process_item(self, item, spider):
+    # #     if item["url"] not in self.seen_urls.keys():
+    # #         id = self.get_next_id()
+    # #         item["id"] = id
+    # #         self.seen_urls[item["url"]] = id
+    # #     else:
+    # #         item["id"] = self.seen_urls[item["url"]]
 
-    #     for child_url in item["child_urls"].keys():
-    #         if child_url not in self.seen_urls.keys():
-    #             id = self.get_next_id()
-    #             item["child_urls"][child_url] = id
-    #             self.seen_urls[child_url] = id
-    #         else:
-    #             item["child_urls"][child_url] = self.seen_urls[child_url]
+    # #     for child_url in item["child_urls"].keys():
+    # #         if child_url not in self.seen_urls.keys():
+    # #             id = self.get_next_id()
+    # #             item["child_urls"][child_url] = id
+    # #             self.seen_urls[child_url] = id
+    # #         else:
+    # #             item["child_urls"][child_url] = self.seen_urls[child_url]
 
-    #     for lang, cousin_url in item["cousin_urls"].items():
-    #         if cousin_url not in self.seen_urls.keys():
-    #             id = self.get_next_id()
-    #             item["cousin_urls"][lang] = id
-    #             self.seen_urls[cousin_url] = id
-    #         else:
-    #             item["cousin_urls"][lang] = self.seen_urls[cousin_url]
+    # #     for lang, cousin_url in item["cousin_urls"].items():
+    # #         if cousin_url not in self.seen_urls.keys():
+    # #             id = self.get_next_id()
+    # #             item["cousin_urls"][lang] = id
+    # #             self.seen_urls[cousin_url] = id
+    # #         else:
+    # #             item["cousin_urls"][lang] = self.seen_urls[cousin_url]
 
-    #     return item
+    # #     return item
 
 
 class PDFPipeline:

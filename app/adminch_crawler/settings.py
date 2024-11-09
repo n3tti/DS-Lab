@@ -99,7 +99,7 @@ DOWNLOADER_MIDDLEWARES = {
 ITEM_PIPELINES = {
     "app.adminch_crawler.pipelines.DiscoveredStoragePipeline": 0,
     "app.adminch_crawler.pipelines.FilterURLPipeline": 100,
-    # "app.adminch_crawler.pipelines.IDAssignmentPipeline": 200,
+    "app.adminch_crawler.pipelines.IDAssignmentPipeline": 200,
     # "app.adminch_crawler.pipelines.ParentsPipeline": 300,
     # "app.adminch_crawler.pipelines.PDFPipeline": 400,
     # "app.adminch_crawler.pipelines.ImagePipeline": 500,
@@ -107,6 +107,8 @@ ITEM_PIPELINES = {
     # "app.adminch_crawler.pipelines.HashContentPipeline": 700,
     # "app.adminch_crawler.pipelines.MetadataPipeline": 800,
     # "adminch_crawler.pipelines.DownloadContentPipeline": 400,
+
+    "app.adminch_crawler.pipelines.TEMPPipeline": 1000,
 }
 
 # Enable and configure the AutoThrottle extension (disabled by default)
@@ -145,6 +147,7 @@ HTTPERROR_ALLOW_ALL = True
 DEPTH_LIMIT = 7
 DEPTH_PRIORITY = 2
 
-LOG_LEVEL = "DEBUG"
+LOG_LEVEL = "INFO"
+# LOG_LEVEL = "ERROR"
 # JOBDIR = JOBDIR
 LOG_STDOUT = True

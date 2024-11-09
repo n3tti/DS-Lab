@@ -37,16 +37,19 @@ class Database:
     def create_scraped_page(self, scraped_page_data: dict[str, Any]):
         with session_scope() as session:
             scraped_page = ScrapedPage(**scraped_page_data)
+            obj_id = scraped_page.id
+
             session.add(scraped_page)
             session.commit()
-            return scraped_page
+
+            scraped_page_data['id'] = scraped_page.id
+            return ScrapedPage(**scraped_page_data)
 
     def update_scraped_page_status(self, url: str, status: StatusEnum):
         with session_scope() as session:
             scraped_page_obj = session.query(ScrapedPage).filter(ScrapedPage.url == url).first()
             if scraped_page_obj is None:
                 return None
-
             scraped_page_obj.status = status
             session.commit()
 
@@ -55,6 +58,7 @@ class Database:
             scraped_page_obj = session.query(ScrapedPage).filter(ScrapedPage.url == url).first()
             if scraped_page_obj is None:
                 return None
+
             return ScrapedPage.parse_obj(scraped_page_obj)
 
 

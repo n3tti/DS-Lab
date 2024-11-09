@@ -41,14 +41,62 @@ class CrawlingSpider(CrawlSpider):
 
     def parse_item(self, response):
 
+        item = PageItem()
+
+
+        #####################################################
+        item["cousin_urls"] = {}
+        alternate_links = response.xpath('//link[@rel="alternate"]')
+        languages_dict = {}
+        for link in alternate_links:
+            lang = link.xpath("@lang").get()
+            href = link.xpath("@href").get()
+            if lang and href:
+                languages_dict[lang] = response.urljoin(href)
+        item["cousin_urls"] = languages_dict
+
+
+        #####################################################
+        item["pdf_links"] = {}
+        for link in response.css("a::attr(href)").getall():
+            full_url = urljoin(response.url, link)
+
+            # get pdf links of this page
+            if full_url.lower().endswith(".pdf"):
+                item["pdf_links"][full_url] = None
+
+
+        # #####################################################
+        item["child_urls"] = {}
+        for link in response.css("a::attr(href)").getall():
+            full_url = urljoin(response.url, link)
+
+            # get child and cousin urls
+            # TBD: can't it be just `full_url.lower().endswith(".pdf")` <-> `link not in item["pdf_links"].keys()` ?
+            if link not in item["cousin_urls"].keys() and link not in item["pdf_links"].keys() and link != response.url:
+                item["child_urls"][full_url] = None
+
+
+
+
+
+
+
+
+
+
         scraped_page = ScrapedPage(
             url=response.url,
 
             response_status_code=response.status,
             # item["depth"] = response.meta["depth"]
+            cousin_urls=item["cousin_urls"],
+            pdf_links=item["pdf_links"],
+            child_urls=item["child_urls"],
+
 
             # metadata
-            response_content_type = response.headers.get("Content-Type", b"").decode("utf-8") if response.headers.get("Content-Type") else None,
+            response_content_type = response.headers.get("Content-Type", b"").decode("utf-8"),# if response.headers.get("Content-Type") else None,
             # item["content_length"] = int(response.headers.get("Content-Length").decode("utf-8")) if response.headers.get("Content-Length") else None,
             # item["content_encoding"] = response.headers.get("Content-Encoding", b"").decode("utf-8") if response.headers.get("Content-Encoding") else None,
             # item["last_modified"] = response.headers.get("Last-Modified").decode("utf-8") if response.headers.get("Last-Modified") else None,
@@ -63,21 +111,13 @@ class CrawlingSpider(CrawlSpider):
             # response_text=response.text,
             # response_body=response.body,
 
+
+
         )
 
 
 
-    #     # items that are obtained further below
-    #     item["child_urls"] = {}
-    #     item["cousin_urls"] = {}
-    #     item["pdf_links"] = {}
-
-    #     # metadata
-    #     item["content_type"] = response.headers.get("Content-Type", b"").decode("utf-8") if response.headers.get("Content-Type") else None
-    #     item["content_length"] = int(response.headers.get("Content-Length").decode("utf-8")) if response.headers.get("Content-Length") else None
-    #     item["content_encoding"] = response.headers.get("Content-Encoding", b"").decode("utf-8") if response.headers.get("Content-Encoding") else None
-    #     item["last_modified"] = response.headers.get("Last-Modified").decode("utf-8") if response.headers.get("Last-Modified") else None
-    #     item["date"] = response.headers.get("Date").decode("utf-8") if response.headers.get("Date") else None
+    #     # metadata -> MOVED
 
     #     try:
     #         item["description"] = response.css('meta[name="description"]::attr(content)').get()
@@ -99,30 +139,16 @@ class CrawlingSpider(CrawlSpider):
 
     #     item["title"] = self.get_title(response)
 
-    #     alternate_links = response.xpath('//link[@rel="alternate"]')
-    #     languages_dict = {}
-    #     for link in alternate_links:
-    #         lang = link.xpath("@lang").get()
-    #         href = link.xpath("@href").get()
-    #         if lang and href:
-    #             languages_dict[lang] = response.urljoin(href)
-    #     item["cousin_urls"] = languages_dict
 
-    #     for link in response.css("a::attr(href)").getall():
-    #         full_url = urljoin(response.url, link)
 
-    #         # get pdf links of this page
-    #         if full_url.lower().endswith(".pdf"):
-    #             item["pdf_links"][full_url] = None
 
-    #     for link in response.css("a::attr(href)").getall():
-    #         full_url = urljoin(response.url, link)
-
-    #         # get child and cousin urls
-    #         if link not in item["cousin_urls"].keys() and link not in item["pdf_links"].keys() and link != response.url:
-    #             item["child_urls"][full_url] = None
 
         # yield item
+
+
+        # for _ in range(10):
+        #     print(item["child_urls"])
+
         yield scraped_page
 
     # # handle embedded images
