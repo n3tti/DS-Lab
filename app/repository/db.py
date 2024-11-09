@@ -59,29 +59,4 @@ class Database:
             return ScrapedPage.parse_obj(scraped_page_obj)
 
 
-    # def create_user(self, name, email):
-    #     new_user = User(name=name, email=email)
-    #     self.session.add(new_user)
-    #     self.session.commit()
-    #     return new_user
-
-    # def get_user(self, name):
-    #     return self.session.query(User).filter(User.name == name).first()
-
-
-    # def create_item(self, description):
-    #     new_item = Item(description=description)
-    #     self.session.add(new_item)
-    #     self.session.commit()
-    #     return new_item
-
-    # def update_url(self, url_id, new_url):
-    #     url = self.session.query(URL).filter(URL.id == url_id).first()
-    #     if url:
-    #         url.url = new_url
-    #         self.session.commit()
-    #         return url
-    #     return None
-
-
 db = Database()
