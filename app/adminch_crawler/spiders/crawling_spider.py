@@ -98,6 +98,7 @@ class CrawlingSpider(CrawlSpider):
 
         scraped_page = ScrapedPage(
             url=response.url,
+            depth=response.meta["depth"],
 
             response_status_code=response.status,
             # item["depth"] = response.meta["depth"]

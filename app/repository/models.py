@@ -31,6 +31,7 @@ class ScrapedPage(SQLModel, table=True):
     id: int = Field(primary_key=True)
     url: str = Field(index=True, unique=True)
     status: StatusEnum = Field(default=StatusEnum.DISCOVERED)
+    depth: int = Field()
 
     pdf_links: list["PDFLink"] = Relationship(back_populates="scraped_pages")
 

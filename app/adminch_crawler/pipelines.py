@@ -369,10 +369,10 @@ class CompletedStoragePipeline:
         # for img_url, img_id in scraped_page.embedded_images_dict.items():
         #     dic = {"id": img_id, "url": img_url, "alt": scraped_page.img_alt, "parent": scraped_page.id}
 
-        # ContentPipeline HERE
-        if scraped_page.content_formatted_with_markdown:
-            scraped_page.content_formatted_with_markdown = "\n".join(line.strip() for line in scraped_page.content_formatted_with_markdown.split("\n") if line.strip())
-            print("content_formatted_with_markdown", scraped_page.content_formatted_with_markdown)
+        # # ContentPipeline HERE
+        # if scraped_page.content_formatted_with_markdown:
+        #     scraped_page.content_formatted_with_markdown = "\n".join(line.strip() for line in scraped_page.content_formatted_with_markdown.split("\n") if line.strip())
+        #     print("content_formatted_with_markdown", scraped_page.content_formatted_with_markdown)
 
         return scraped_page
 
