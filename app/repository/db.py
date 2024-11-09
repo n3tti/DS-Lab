@@ -34,7 +34,7 @@ class DatabaseException(Exception):
 
 
 class Database:
-    def create_scraped_page(self, scraped_page_data: dict[str, Any]):
+    def create_scraped_page(self, scraped_page_data: dict[str, Any]) -> ScrapedPage:
         with session_scope() as session:
             scraped_page = ScrapedPage(**scraped_page_data)
             obj_id = scraped_page.id
@@ -60,6 +60,21 @@ class Database:
                 return None
 
             return ScrapedPage.parse_obj(scraped_page_obj)
+
+    def create_pdf_link(self, pdf_link_data: dict[str, Any]):
+        """
+        Creates a new PDFLink in the database.
+
+        :param pdf_link_data: Dictionary containing the necessary data to create a PDFLink.
+        :return: The created PDFLink object or None if the operation fails.
+        """
+        with session_scope() as session:
+            # Create a new PDFLink object from the provided data
+            pdf_link = PDFLink(**pdf_link_data)
+            session.add(pdf_link)
+            session.commit()
+
+            return PDFLink.parse_obj(pdf_link)
 
 
 db = Database()

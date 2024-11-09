@@ -1,9 +1,11 @@
 from enum import Enum
-from sqlmodel import SQLModel, Field, JSON
-from sqlalchemy import LargeBinary, Column, DateTime
+from sqlmodel import SQLModel, Field, JSON, Relationship
+from sqlalchemy import LargeBinary, Column, DateTime, CHAR
 from sqlalchemy.sql import func
 from typing import Optional
 from datetime import datetime
+from pydantic import PrivateAttr
+
 
 
 class BaseModel(SQLModel):
@@ -24,15 +26,16 @@ class StatusEnum(str, Enum):
 
 
 class ScrapedPage(SQLModel, table=True):
-    __tablename__ = 'scraped_page'
+    __tablename__ = 'scraped_pages'
 
     id: int = Field(primary_key=True)
     url: str = Field(index=True, unique=True)
     status: StatusEnum = Field(default=StatusEnum.DISCOVERED)  # Application-specific status
 
-    cousin_urls: dict[str, str | None] = Field(default_factory=dict, sa_column=Column(JSON), description="Dictionary of cousin URLs")
-    pdf_links: dict[str, str | None] = Field(default_factory=dict, sa_column=Column(JSON), description="Dictionary of PDF links")
-    child_urls: dict[str, str | None] = Field(default_factory=dict, sa_column=Column(JSON), description="Dictionary of child URLs")
+    _cousin_urls_dict: dict[str, str]#PrivateAttr()#Field(default_factory=dict, repr=False)#{}#PrivateAttr()#default_factory=dict)
+    _pdf_links_dict: dict[str, str]#PrivateAttr()#Field(default_factory=dict, repr=False)#{}#PrivateAttr()#default_factory=dict)
+    _child_urls_dict: dict[str, str]#PrivateAttr()#Field(default_factory=dict, repr=False)#{}#PrivateAttr()#default_factory=dict)
+    pdf_links: list["PDFLink"] = Relationship(back_populates="scraped_pages")
 
 
 
@@ -44,7 +47,7 @@ class ScrapedPage(SQLModel, table=True):
 
 
     response_text: str | None = Field(default=None, description="Text portion of the HTTP response")
-    response_body: bytes | None = Field(default=None, sa_type=LargeBinary(), description="Binary body of the HTTP response")
+    response_content_body: bytes | None = Field(default=None, sa_type=LargeBinary(), description="Binary body of the HTTP response")
 
 
     created_at: datetime = Field(sa_column=Column(DateTime(timezone=True), server_default=func.now()))
@@ -54,3 +57,47 @@ class ScrapedPage(SQLModel, table=True):
     def __str__(self):
         model_dict = self.dict(include={"id", "url", "status"})
         return str(model_dict)
+
+    @property
+    def cousin_urls_dict(self) -> dict[str, str]:
+        return self._cousin_urls_dict
+
+    @cousin_urls_dict.setter
+    def cousin_urls_dict(self, value: dict[str, str]):
+        self._cousin_urls_dict = value
+
+    @property
+    def pdf_links_dict(self) -> dict[str, str]:
+        return self._pdf_links_dict
+
+    @pdf_links_dict.setter
+    def pdf_links_dict(self, value: dict[str, str]):
+        self._pdf_links_dict = value
+
+    @property
+    def child_urls_dict(self) -> dict[str, str]:
+        return self._child_urls_dict
+
+    @child_urls_dict.setter
+    def child_urls_dict(self, value: dict[str, str]):
+        self._child_urls_dict = value
+
+    # class Config:
+    #     populate_by_name = True
+
+
+
+class PDFLink(SQLModel, table=True):
+    __tablename__ = 'pdf_links'
+    id: int = Field(primary_key=True)
+    url: str = Field(index=True)
+    lang: str = Field(sa_column=CHAR(2))
+
+    scraped_page_id: int = Field(default=None, foreign_key="scraped_pages.id")
+    scraped_pages: "ScrapedPage" = Relationship(back_populates="pdf_links")
+
+    created_at: datetime = Field(default_factory=datetime.utcnow)
+    updated_at: datetime = Field(default_factory=datetime.utcnow)
+
+    def __str__(self):
+        return f"PDFLink(id={self.id}, url={self.url}, lang={self.lang}, scraped_page_id={self.scraped_page_id})"

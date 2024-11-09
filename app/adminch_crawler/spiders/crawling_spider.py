@@ -12,6 +12,9 @@ from scrapy.spiders import CrawlSpider, Rule
 
 from app.repository.models import ScrapedPage
 
+import scrapy
+
+
 logger = logging.getLogger(__name__.split(".")[-1])
 
 
@@ -41,11 +44,12 @@ class CrawlingSpider(CrawlSpider):
 
     def parse_item(self, response):
 
-        item = PageItem()
+        # item = PageItem()
+        # item = scrapy.Item()
 
 
         #####################################################
-        item["cousin_urls"] = {}
+        cousin_urls_dict = {}
         alternate_links = response.xpath('//link[@rel="alternate"]')
         languages_dict = {}
         for link in alternate_links:
@@ -53,28 +57,28 @@ class CrawlingSpider(CrawlSpider):
             href = link.xpath("@href").get()
             if lang and href:
                 languages_dict[lang] = response.urljoin(href)
-        item["cousin_urls"] = languages_dict
+        cousin_urls_dict = languages_dict
 
 
         #####################################################
-        item["pdf_links"] = {}
+        pdf_links_dict = {}
         for link in response.css("a::attr(href)").getall():
             full_url = urljoin(response.url, link)
 
             # get pdf links of this page
             if full_url.lower().endswith(".pdf"):
-                item["pdf_links"][full_url] = None
+                pdf_links_dict[full_url] = None
 
 
         # #####################################################
-        item["child_urls"] = {}
+        child_urls_dict = {}
         for link in response.css("a::attr(href)").getall():
             full_url = urljoin(response.url, link)
 
             # get child and cousin urls
-            # TBD: can't it be just `full_url.lower().endswith(".pdf")` <-> `link not in item["pdf_links"].keys()` ?
-            if link not in item["cousin_urls"].keys() and link not in item["pdf_links"].keys() and link != response.url:
-                item["child_urls"][full_url] = None
+            # TBD: can't it be just `full_url.lower().endswith(".pdf")` <-> `link not in pdf_links_dict.keys()` ?
+            if link not in cousin_urls_dict.keys() and link not in pdf_links_dict.keys() and link != response.url:
+                child_urls_dict[full_url] = None
 
 
 
@@ -82,6 +86,8 @@ class CrawlingSpider(CrawlSpider):
 
 
 
+        for i in range(10):
+            pdf_links_dict[i] = f"my_url{100*i}"
 
 
 
@@ -90,9 +96,7 @@ class CrawlingSpider(CrawlSpider):
 
             response_status_code=response.status,
             # item["depth"] = response.meta["depth"]
-            cousin_urls=item["cousin_urls"],
-            pdf_links=item["pdf_links"],
-            child_urls=item["child_urls"],
+
 
 
             # metadata
@@ -114,6 +118,12 @@ class CrawlingSpider(CrawlSpider):
 
 
         )
+        scraped_page.cousin_urls_dict = cousin_urls_dict
+        scraped_page.pdf_links_dict = pdf_links_dict
+        scraped_page.child_urls_dict = child_urls_dict
+
+
+
 
 
 
@@ -147,7 +157,7 @@ class CrawlingSpider(CrawlSpider):
 
 
         # for _ in range(10):
-        #     print(item["child_urls"])
+        #     print(child_urls_dict)
 
         yield scraped_page
 

@@ -71,22 +71,25 @@ class DiscoveredStoragePipeline:
         existing_page = db.get_scraped_page(url=scraped_page.url)
 
         if existing_page is None:
-            return db.create_scraped_page(scraped_page.dict())
+            created_page = db.create_scraped_page(scraped_page.dict())
+            scraped_page.id = created_page.id  # set id to the scraped object
+            return scraped_page
 
         elif existing_page.status == StatusEnum.COMPLETED:
             raise DropItem(f"url: '{scraped_page.url}' is already COMPLETED.")
+        else:
+            db.update_scraped_page_status(url=scraped_page.url, status=StatusEnum.REVISITED)
 
-        db.update_scraped_page_status(url=scraped_page.url, status=StatusEnum.REVISITED)
-
-        return existing_page
+            scraped_page.id = existing_page.id  # set id to the scraped object
+            return scraped_page
 
 
 class FilterURLPipeline:
-
     def __init__(self):
         self.allowed_content_type = ["text/html"]
 
     def process_item(self, scraped_page: ScrapedPage, spider: Spider) -> ScrapedPage:
+
         logging.getLogger(spider.name).info(f"Processing url: {scraped_page}")
 
         if scraped_page.response_status_code != 200:
@@ -184,25 +187,32 @@ class IDAssignmentPipeline:
     # #     return item
 
 
-class PDFPipeline:
-    def __init__(self):
-        super().__init__()
+# class PDFPipeline:
 
-    def open_spider(self, spider):
-        if self.is_resuming(spider):
-            self.open_file(PDF_FILE, True)
-        else:
-            self.open_file(PDF_FILE, False)
+#     # def open_spider(self, spider):
+#     #     if self.is_resuming(spider):
+#     #         self.open_file(PDF_FILE, True)
+#     #     else:
+#             # self.open_file(PDF_FILE, False)
 
-    def close_spider(self, spider):
-        self.close_files()
+#     # def close_spider(self, spider):
+#     #     self.close_files()
 
-    def process_item(self, item, spider):
-        for pdf_url, id in item["pdf_links"].items():
-            dic = {"id": id, "url": pdf_url, "lang": item["lang"], "parent": item["id"]}
-            line = json.dumps(dic)
-            self.save_data(PDF_FILE, line + "\n")
-        return item
+#     def process_item(self, scraped_page: ScrapedPage, spider: Spider) -> ScrapedPage:
+#         for pdf_url in scraped_page.pdf_links_dict.keys():
+#             print("pdf_url", pdf_url)
+#         # for pdf_url, id in item["pdf_links"].items():
+#             # CREATE A NEW OJBECT IN DB HERE
+#             # new_pdf_link = db.create_pdf_link({
+#             #     "url": pdf_url,
+#             #     "lang": pdf_url["lang"],
+#             #     "scraped_page_id": scraped_page.id,  # assuming the scraped page with ID 1 already exists in your database
+#             # })
+#             # print(new_pdf_link)
+#             # dic = {"id": id, "url": pdf_url, "lang": item["lang"], "parent": item["id"]}
+#             # line = json.dumps(dic)
+#             # self.save_data(PDF_FILE, line + "\n")
+#         return scraped_page
 
 
 class ContentPipeline:
@@ -353,8 +363,18 @@ class MetadataPipeline:
 #                 os.makedirs(path)
 
 
-class TEMPPipeline:
+class CompletedStoragePipeline:
+    def process_item(self, scraped_page: ScrapedPage, spider: Spider) -> ScrapedPage:
+        # SAVE EVERYTHING TO DB HERE POTENTIALLY?
+        for pdf_url in scraped_page.pdf_links_dict.keys():
+            print("pdf_url", pdf_url)
+
+        return scraped_page
+
+
+class TEMPPipeline: ## TEMP Final Pipeline
     def process_item(self, scraped_page: ScrapedPage, spider: Spider) -> ScrapedPage:
         db.update_scraped_page_status(url=scraped_page.url, status=StatusEnum.TEMPCOMPLETED)
 
         return scraped_page
+
