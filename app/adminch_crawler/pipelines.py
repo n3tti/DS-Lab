@@ -239,13 +239,13 @@ class IDAssignmentPipeline:
 #         return scraped_page
 
 
-class ContentPipeline:
-    def process_item(self, item, spider):
-        # Clean and validate content
-        if item.get("content"):
-            # Remove excessive newlines and spaces
-            item["content"] = "\n".join(line.strip() for line in item["content"].split("\n") if line.strip())
-        return item
+# class ContentPipeline:
+#     def process_item(self, scraped_page: ScrapedPage, spider: Spider) -> ScrapedPage:
+#         # Clean and validate content
+#         if scraped_page.content_formatted_with_markdown:
+#             scraped_page.content_formatted_with_markdown = "\n".join(line.strip() for line in scraped_page.content_formatted_with_markdown.split("\n") if line.strip())
+#             print("content_formatted_with_markdown", scraped_page.content_formatted_with_markdown)
+#         return scraped_page
 
 
 class HashContentPipeline:
@@ -361,14 +361,18 @@ class CompletedStoragePipeline:
     def process_item(self, scraped_page: ScrapedPage, spider: Spider) -> ScrapedPage:
         # SAVE EVERYTHING TO DB HERE POTENTIALLY?
 
-        # # PDFs HERE
+        # # PDFPipeline HERE
         # for url in scraped_page.pdf_links_dict.keys():
         #     print("pdf_url", url)
 
-        # # IMAGEs HERE
-        for img_url, img_id in scraped_page.embedded_images_dict.items():
-            dic = {"id": img_id, "url": img_url, "alt": scraped_page.img_alt, "parent": scraped_page.id}
-            print("my DIC", dic)
+        # # ImagePipeline HERE
+        # for img_url, img_id in scraped_page.embedded_images_dict.items():
+        #     dic = {"id": img_id, "url": img_url, "alt": scraped_page.img_alt, "parent": scraped_page.id}
+
+        # ContentPipeline HERE
+        if scraped_page.content_formatted_with_markdown:
+            scraped_page.content_formatted_with_markdown = "\n".join(line.strip() for line in scraped_page.content_formatted_with_markdown.split("\n") if line.strip())
+            print("content_formatted_with_markdown", scraped_page.content_formatted_with_markdown)
 
         return scraped_page
 

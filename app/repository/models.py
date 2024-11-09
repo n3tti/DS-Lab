@@ -41,6 +41,7 @@ class ScrapedPage(SQLModel, table=True):
     _embedded_images_dict: dict[str, str]
 
     _img_alt: str | None = None
+    _content_formatted_with_markdown: str | None = None
 
 
 
@@ -102,6 +103,14 @@ class ScrapedPage(SQLModel, table=True):
     @img_alt.setter
     def img_alt(self, value: dict[str, str]):
         self._img_alt = value
+
+    @property
+    def content_formatted_with_markdown(self):
+        return self._content_formatted_with_markdown
+
+    @content_formatted_with_markdown.setter
+    def content_formatted_with_markdown(self, value: dict[str, str]):
+        self._content_formatted_with_markdown = value
 
 
     # class Config:
