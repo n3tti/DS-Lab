@@ -34,7 +34,8 @@ class ScrapedPage(SQLModel, table=True):
     response_body: Optional[bytes] = Field(default=None, sa_type=LargeBinary(), description="Binary body of the HTTP response")
 
     created_at: datetime = Field(sa_column=Column(DateTime(timezone=True), server_default=func.now()))
-    updated_at: datetime = Field(sa_column=Column(DateTime(timezone=True), onupdate=func.now()))
+    updated_at: Optional[datetime] = Field(default=None, sa_column=Column(DateTime(timezone=True), onupdate=func.now()))
+
 
     def __str__(self):
         model_dict = self.dict(include={"id", "url", "status"})

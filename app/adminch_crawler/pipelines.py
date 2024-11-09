@@ -73,7 +73,7 @@ class DiscoveredStoragePipeline:
 
             if existing_page:
                 if existing_page.status == StatusEnum.COMPLETED:
-                    raise DropItem(f"URL: '{scraped_page.url}' is already COMPLETED.")
+                    raise DropItem(f"url: '{scraped_page.url}' is already COMPLETED.")
                 
                 db.update_scraped_page_status(url=scraped_page.url, status=StatusEnum.REVISITED)
             else:
@@ -92,7 +92,7 @@ class FilterURLPipeline:
         self.allowed_content_type = ["text/html"]
 
     def process_item(self, scraped_page: ScrapedPage, spider: Spider) -> ScrapedPage:
-        logging.getLogger(spider.name).info(f"Processing url: {item}")
+        logging.getLogger(spider.name).info(f"Processing url: {scraped_page}")
 
         if scraped_page.status != 200:
             raise DropItem(f"HTTP Status: {scraped_page.status}.")

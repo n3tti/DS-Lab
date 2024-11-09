@@ -7,7 +7,7 @@ from contextlib import contextmanager
 
 from typing import Any
 
-from app.repository.db import DATABASE_URL
+from app.config import DATABASE_URL
 
 
 engine = create_engine(DATABASE_URL, echo=False, future=True)
