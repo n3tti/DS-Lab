@@ -55,20 +55,17 @@ class CrawlingSpider(CrawlSpider):
             # item["date"] = response.headers.get("Date").decode("utf-8") if response.headers.get("Date") else None,
 
 
+
+
+
+
+
             # response_text=response.text,
             # response_body=response.body,
 
         )
-        yield scraped_page
 
 
-    #     item = PageItem()
-
-    #     # about webrequest
-    #     item["id"] = None
-    #     item["status"] = response.status
-    #     item["depth"] = response.meta["depth"]
-    #     item["url"] = response.url
 
     #     # items that are obtained further below
     #     item["child_urls"] = {}
@@ -125,7 +122,8 @@ class CrawlingSpider(CrawlSpider):
     #         if link not in item["cousin_urls"].keys() and link not in item["pdf_links"].keys() and link != response.url:
     #             item["child_urls"][full_url] = None
 
-    #     yield item
+        # yield item
+        yield scraped_page
 
     # # handle embedded images
     # def extract_images(self, response):
