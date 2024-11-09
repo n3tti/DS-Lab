@@ -284,46 +284,68 @@ class MetadataPipeline:
         super().__init__()
         self.logger = logging.getLogger(__name__)
 
-    def open_spider(self, spider):
-        if self.is_resuming(spider):
-            self.open_file(METADATA_DIR, True)
-        else:
-            self.open_file(METADATA_DIR, False)
+    # def open_spider(self, spider):
+    #     if self.is_resuming(spider):
+    #         self.open_file(METADATA_DIR, True)
+    #     else:
+    #         self.open_file(METADATA_DIR, False)
 
-    def close_spider(self, spider):
-        self.close_files()
+    # def close_spider(self, spider):
+    #     self.close_files()
 
-    def process_item(self, item, spider):
+    def process_item(self, scraped_page: ScrapedPage, spider: Spider) -> ScrapedPage:
+        # keys_to_save = [
+        #     "id",
+        #     "depth",
+        #     "url",
+        #     "lang",
+        #     "content_type",
+        #     "content_length",
+        #     "content_encoding",
+        #     "last_modified",
+        #     "date",
+        #     "hash",
+        #     "cousin_urls",
+        #     "title",
+        #     "content",
+        #     "description",
+        #     "keywords",
+        #     "pdf_links",
+        #     "embedded_images",
+        # ]
         keys_to_save = [
-            "id",
-            "depth",
-            "url",
-            "lang",
-            "content_type",
-            "content_length",
-            "content_encoding",
-            "last_modified",
-            "date",
-            "hash",
-            "cousin_urls",
-            "title",
-            "content",
-            "description",
-            "keywords",
-            "pdf_links",
-            "embedded_images",
+            # "id",
+            # "depth",
+            # "url",
+            "response_content_type",
+            "response_content_length",
+            "response_content_encoding",
+            "response_last_modified",
+            "response_date",
+            # "cousin_urls",
+            "response_metadata_lang",
+            "response_metadata_title",
+            "response_metadata_content",
+            "response_metadata_description",
+            "response_metadata_keywords",
+            "response_metadata_content_hash",
+            # "pdf_links",
+            # "embedded_images",
         ]
         dic = {}
         for key in keys_to_save:
-            if key in item:
-                dic[key] = item[key]
-            else:
-                self.logger.warning(f"Key '{key}' not found in item.")
-                dic[key] = None
+            # for fild in scraped_page
+            # if hasattr(scraped_page, key):
+            dic[key] = getattr(scraped_page, key)
+            # if key in item:
+            #     dic[key] = item[key]
+            # else:
+            #     self.logger.warning(f"Key '{key}' not found in item.")
+            #     dic[key] = None
 
         line = json.dumps(dic)
-        self.save_data(METADATA_DIR, line + "\n")
-        return item
+        # self.save_data(METADATA_DIR, line + "\n")
+        return scraped_page
 
 
 # class DownloadContentPipeline:
@@ -361,18 +383,49 @@ class CompletedStoragePipeline:
     def process_item(self, scraped_page: ScrapedPage, spider: Spider) -> ScrapedPage:
         # SAVE EVERYTHING TO DB HERE POTENTIALLY?
 
-        # # PDFPipeline HERE
+
+        # ###################################### PDFPipeline HERE
         # for url in scraped_page.pdf_links_dict.keys():
         #     print("pdf_url", url)
 
-        # # ImagePipeline HERE
+
+        # ###################################### ImagePipeline HERE
         # for img_url, img_id in scraped_page.embedded_images_dict.items():
         #     dic = {"id": img_id, "url": img_url, "alt": scraped_page.img_alt, "parent": scraped_page.id}
 
-        # # ContentPipeline HERE
+
+        # ###################################### ContentPipeline HERE
         # if scraped_page.content_formatted_with_markdown:
         #     scraped_page.content_formatted_with_markdown = "\n".join(line.strip() for line in scraped_page.content_formatted_with_markdown.split("\n") if line.strip())
         #     print("content_formatted_with_markdown", scraped_page.content_formatted_with_markdown)
+
+
+        # ###################################### MetadataPipeline HERE
+        # keys_to_save = [
+        #     # "id",
+        #     # "depth",
+        #     # "url",
+        #     "response_content_type",
+        #     "response_content_length",
+        #     "response_content_encoding",
+        #     "response_last_modified",
+        #     "response_date",
+        #     # "cousin_urls",
+        #     "response_metadata_lang",
+        #     "response_metadata_title",
+        #     "response_metadata_content",
+        #     "response_metadata_description",
+        #     "response_metadata_keywords",
+        #     "response_metadata_content_hash",
+        #     # "pdf_links",
+        #     # "embedded_images",
+        # ]
+        # dic = {}
+        # for key in keys_to_save:
+        #     dic[key] = getattr(scraped_page, key)
+        # print(dic)
+
+
 
         return scraped_page
 

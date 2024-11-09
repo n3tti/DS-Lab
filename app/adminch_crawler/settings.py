@@ -105,7 +105,7 @@ ITEM_PIPELINES = {
 # # # # # # # # # # # # "app.adminch_crawler.pipelines.ImagePipeline": 500,
 # # # # # # # # # # # # "app.adminch_crawler.pipelines.ContentPipeline": 600,
     # "app.adminch_crawler.pipelines.HashContentPipeline": 700,
-    # "app.adminch_crawler.pipelines.MetadataPipeline": 800,
+# # # # # # # # # # # # "app.adminch_crawler.pipelines.MetadataPipeline": 800,
     # "adminch_crawler.pipelines.DownloadContentPipeline": 400,
 
     "app.adminch_crawler.pipelines.CompletedStoragePipeline": 1000,

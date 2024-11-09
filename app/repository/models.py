@@ -4,7 +4,7 @@ from sqlalchemy import LargeBinary, Column, DateTime, CHAR
 from sqlalchemy.sql import func
 from typing import Optional
 from datetime import datetime
-from pydantic import PrivateAttr
+from pydantic import PrivateAttr, HttpUrl
 
 
 
@@ -36,25 +36,39 @@ class ScrapedPage(SQLModel, table=True):
     pdf_links: list["PDFLink"] = Relationship(back_populates="scraped_pages")
 
     # TODO: CHANGE TO SETS
-    _cousin_urls_dict: dict[str, str]#PrivateAttr()#Field(default_factory=dict, repr=False)#{}#PrivateAttr()#default_factory=dict)
-    _pdf_links_dict: dict[str, str]#PrivateAttr()#Field(default_factory=dict, repr=False)#{}#PrivateAttr()#default_factory=dict)
-    _child_urls_dict: dict[str, str]#PrivateAttr()#Field(default_factory=dict, repr=False)#{}#PrivateAttr()#default_factory=dict)
-    _embedded_images_dict: dict[str, str]
+    _cousin_urls_dict: dict[HttpUrl, str]#PrivateAttr()#Field(default_factory=dict, repr=False)#{}#PrivateAttr()#default_factory=dict)
+    _pdf_links_dict: dict[HttpUrl, str]#PrivateAttr()#Field(default_factory=dict, repr=False)#{}#PrivateAttr()#default_factory=dict)
+    _child_urls_dict: dict[HttpUrl, str]#PrivateAttr()#Field(default_factory=dict, repr=False)#{}#PrivateAttr()#default_factory=dict)
+    _embedded_images_dict: dict[HttpUrl, str]
 
     _img_alt: str | None = None
     _content_formatted_with_markdown: str | None = None
 
 
 
+
     response_status_code: int | None = Field(default=None, description="HTTP status code of the response")
-
-    # metadata
-    response_content_type: str | None = Field(default=None, description="Content type of the HTTP response")
-
-
-
     response_text: str | None = Field(default=None, description="Text portion of the HTTP response")
-    response_content_body: bytes | None = Field(default=None, sa_type=LargeBinary(), description="Binary body of the HTTP response")
+    response_body: bytes | None = Field(default=None, sa_type=LargeBinary(), description="Binary body of the HTTP response")
+
+    response_content_type: str | None = Field(default=None, description="MIME type of the content")
+    response_content_length: int | None = Field(default=None, description="Length of the response content in bytes")
+    response_content_encoding: str | None = Field(default=None, description="Encoding of the response content")
+    response_last_modified: str | None = Field(default=None, description="Last modified date of the response")
+    response_date: str | None = Field(default=None, description="Date of the response")
+
+    response_metadata_lang: str | None = Field(default=None, description="Language of the content derived from the HTML tag")
+    response_metadata_title: str | None = Field(default=None, description="Title of the content")
+    response_metadata_content: str | None = Field(default=None, description="Actual content (body)")
+    response_metadata_description: str | None = Field(default=None, description="Description of the content")
+    response_metadata_keywords: list[str] = Field(default_factory=list, sa_column=Column(JSON), description="Keywords associated with the content")
+    response_metadata_content_hash: str | None = Field(default=None, description="Hash of the response content")
+
+    # response_metadata_cousin_urls: Dict[str, HttpUrl] = {}  # URLs related to the response
+    # response_metadata_pdf_links: list[HttpUrl] = []    # PDF links found in the content
+    # response_metadata_embedded_images: list[HttpUrl] = []  # Images embedded in the content
+
+
 
 
     created_at: datetime = Field(sa_column=Column(DateTime(timezone=True), server_default=func.now()))
