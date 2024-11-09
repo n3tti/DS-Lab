@@ -26,9 +26,13 @@ class ScrapedPage(SQLModel, table=True):
 
     id: int = Field(default=None, primary_key=True)
     url: str = Field(index=True, unique=True)
-    status: StatusEnum = Field(default=StatusEnum.DISCOVERED)
-    text: Optional[str] = Field(default=None)
-    body: Optional[bytes] = Field(default=None, sa_type=LargeBinary())
+    status: StatusEnum = Field(default=StatusEnum.DISCOVERED)  # Application-specific status
+
+    response_status_code: Optional[int] = Field(default=None, description="HTTP status code of the response")
+    response_content_type: Optional[str] = Field(default=None, description="Content type of the HTTP response")
+    response_text: Optional[str] = Field(default=None, description="Text portion of the HTTP response")
+    response_body: Optional[bytes] = Field(default=None, sa_type=LargeBinary(), description="Binary body of the HTTP response")
+
     created_at: datetime = Field(sa_column=Column(DateTime(timezone=True), server_default=func.now()))
     updated_at: datetime = Field(sa_column=Column(DateTime(timezone=True), onupdate=func.now()))
 

@@ -33,6 +33,8 @@ from simhash import Simhash
 from app.repository.models import ScrapedPage, StatusEnum
 from app.repository.db import db
 
+from scrapy import Spider
+
 
 # class ResummablePipeline(ABC):
 #     def __init__(self):
@@ -65,7 +67,7 @@ from app.repository.db import db
 
 
 class DiscoveredStoragePipeline:
-    def process_item(self, scraped_page: ScrapedPage, spider) -> ScrapedPage:
+    def process_item(self, scraped_page: ScrapedPage, spider: Spider) -> ScrapedPage:
         try:
             existing_page = db.get_scraped_page(url=scraped_page.url)
 
@@ -89,16 +91,17 @@ class FilterURLPipeline:
     def __init__(self):
         self.allowed_content_type = ["text/html"]
 
-    def process_item(self, item, spider):
+    def process_item(self, scraped_page: ScrapedPage, spider: Spider) -> ScrapedPage:
         logging.getLogger(spider.name).info(f"Processing url: {item}")
-        if item["status"] != 200:
-            raise DropItem(f"HTTP Status: {item['status']}.")
-        elif item["content_type"] is None:
+
+        if scraped_page.status != 200:
+            raise DropItem(f"HTTP Status: {scraped_page.status}.")
+        elif scraped_page.content_type is None:
             raise DropItem(f"Content_type is None.")
-        elif not item["content_type"].split(";")[0] in self.allowed_content_type:
-            raise DropItem(f"Content type \"{item['content_type'].split(';')[0]}\" is not allowed.")
-        else:
-            return item
+        elif not scraped_page.content_type.split(";")[0] in self.allowed_content_type:
+            raise DropItem(f"Content type \"{scraped_page.content_type.split(';')[0]}\" is not allowed.")
+
+        return scraped_page
 
 
 class IDAssignmentPipeline:
