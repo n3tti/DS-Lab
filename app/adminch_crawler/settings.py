@@ -100,7 +100,7 @@ ITEM_PIPELINES = {
     "app.adminch_crawler.pipelines.DiscoveredStoragePipeline": 0,
     "app.adminch_crawler.pipelines.FilterURLPipeline": 100,
     # "app.adminch_crawler.pipelines.IDAssignmentPipeline": 200,
-    # "app.adminch_crawler.pipelines.ParentsPipeline": 300,
+    # ???????????????????????????????????????????????????????????# "app.adminch_crawler.pipelines.ParentsPipeline": 300,
     # # # # # #"app.adminch_crawler.pipelines.PDFPipeline": 400,
     # "app.adminch_crawler.pipelines.ImagePipeline": 500,
     # "app.adminch_crawler.pipelines.ContentPipeline": 600,

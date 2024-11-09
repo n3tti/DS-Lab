@@ -215,34 +215,28 @@ class IDAssignmentPipeline:
 #         return scraped_page
 
 
-class ContentPipeline:
-    def process_item(self, item, spider):
-        # Clean and validate content
-        if item.get("content"):
-            # Remove excessive newlines and spaces
-            item["content"] = "\n".join(line.strip() for line in item["content"].split("\n") if line.strip())
-        return item
 
+# class ImagePipeline:
+#     def __init__(self):
+#         super().__init__()
 
-class ImagePipeline:
-    def __init__(self):
-        super().__init__()
+#     # def open_spider(self, spider):
+#     #     if self.is_resuming(spider):
+#     #         self.open_file(IMAGE_FILE, True)
+#     #     else:
+#     #         self.open_file(IMAGE_FILE, False)
 
-    def open_spider(self, spider):
-        if self.is_resuming(spider):
-            self.open_file(IMAGE_FILE, True)
-        else:
-            self.open_file(IMAGE_FILE, False)
+#     # def close_spider(self, spider):
+#     #     self.close_files()
 
-    def close_spider(self, spider):
-        self.close_files()
-
-    def process_item(self, item, spider):
-        for img_url, id in item["embedded_images"].items():
-            dic = {"id": id, "url": img_url, "alt": item["img_alt"][img_url], "parent": item["id"]}
-            line = json.dumps(dic)
-            self.save_data(IMAGE_FILE, line + "\n")
-        return item
+#     def process_item(self, scraped_page: ScrapedPage, spider: Spider) -> ScrapedPage:
+#         # for img_url, id in item["embedded_images"].items():
+#         for img_url, img_id in scraped_page.embedded_images_dict.items():
+#             dic = {"id": img_id, "url": img_url, "alt": scraped_page.img_alt, "parent": scraped_page.id}
+#             print("my DIC", dic)
+#             # line = json.dumps(dic)
+#             # self.save_data(IMAGE_FILE, line + "\n")
+#         return scraped_page
 
 
 class ContentPipeline:
@@ -366,8 +360,15 @@ class MetadataPipeline:
 class CompletedStoragePipeline:
     def process_item(self, scraped_page: ScrapedPage, spider: Spider) -> ScrapedPage:
         # SAVE EVERYTHING TO DB HERE POTENTIALLY?
-        for pdf_url in scraped_page.pdf_links_dict.keys():
-            print("pdf_url", pdf_url)
+
+        # # PDFs HERE
+        # for url in scraped_page.pdf_links_dict.keys():
+        #     print("pdf_url", url)
+
+        # # IMAGEs HERE
+        for img_url, img_id in scraped_page.embedded_images_dict.items():
+            dic = {"id": img_id, "url": img_url, "alt": scraped_page.img_alt, "parent": scraped_page.id}
+            print("my DIC", dic)
 
         return scraped_page
 

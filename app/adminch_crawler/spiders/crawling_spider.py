@@ -70,7 +70,7 @@ class CrawlingSpider(CrawlSpider):
                 pdf_links_dict[full_url] = None
 
 
-        # #####################################################
+        #####################################################
         child_urls_dict = {}
         for link in response.css("a::attr(href)").getall():
             full_url = urljoin(response.url, link)
@@ -80,6 +80,8 @@ class CrawlingSpider(CrawlSpider):
             if link not in cousin_urls_dict.keys() and link not in pdf_links_dict.keys() and link != response.url:
                 child_urls_dict[full_url] = None
 
+        #####################################################
+        embedded_images_dict, img_alt = self.extract_images(response)
 
 
 
@@ -87,7 +89,7 @@ class CrawlingSpider(CrawlSpider):
 
 
         for i in range(10):
-            pdf_links_dict[i] = f"my_url{100*i}"
+            embedded_images_dict[i] = f"my_url{100*i}"
 
 
 
@@ -121,6 +123,8 @@ class CrawlingSpider(CrawlSpider):
         scraped_page.cousin_urls_dict = cousin_urls_dict
         scraped_page.pdf_links_dict = pdf_links_dict
         scraped_page.child_urls_dict = child_urls_dict
+        scraped_page.embedded_images_dict = embedded_images_dict
+        scraped_page.img_alt = img_alt
 
 
 
@@ -141,7 +145,7 @@ class CrawlingSpider(CrawlSpider):
 
     #     item["content"] = self.format_content_with_markdown(response)
 
-    #     item["embedded_images"], item["img_alt"] = self.extract_images(response)
+    ################     item["embedded_images"], item["img_alt"] = self.extract_images(response)
 
     #     item["lang"] = response.xpath("//html/@lang").get()
 
@@ -161,19 +165,19 @@ class CrawlingSpider(CrawlSpider):
 
         yield scraped_page
 
-    # # handle embedded images
-    # def extract_images(self, response):
-    #     """Extract embedded images from content"""
-    #     images = {}
-    #     img_alt = {}
-    #     for img in response.css("img"):
-    #         src = img.attrib.get("src")
-    #         if src:
-    #             full_url = urljoin(response.url, src)
-    #             alt = img.attrib.get("alt", "")
-    #             images[full_url] = None
-    #             img_alt[full_url] = alt
-    #     return images, img_alt
+    # handle embedded images
+    def extract_images(self, response):
+        """Extract embedded images from content"""
+        images = {}
+        img_alt = {}
+        for img in response.css("img"):
+            src = img.attrib.get("src")
+            if src:
+                full_url = urljoin(response.url, src)
+                alt = img.attrib.get("alt", "")
+                images[full_url] = None
+                img_alt[full_url] = alt
+        return images, img_alt
 
     # # extract title from multiple sources
     # def get_title(self, response):

@@ -30,12 +30,17 @@ class ScrapedPage(SQLModel, table=True):
 
     id: int = Field(primary_key=True)
     url: str = Field(index=True, unique=True)
-    status: StatusEnum = Field(default=StatusEnum.DISCOVERED)  # Application-specific status
+    status: StatusEnum = Field(default=StatusEnum.DISCOVERED)
 
+    pdf_links: list["PDFLink"] = Relationship(back_populates="scraped_pages")
+
+    # TODO: CHANGE TO SETS
     _cousin_urls_dict: dict[str, str]#PrivateAttr()#Field(default_factory=dict, repr=False)#{}#PrivateAttr()#default_factory=dict)
     _pdf_links_dict: dict[str, str]#PrivateAttr()#Field(default_factory=dict, repr=False)#{}#PrivateAttr()#default_factory=dict)
     _child_urls_dict: dict[str, str]#PrivateAttr()#Field(default_factory=dict, repr=False)#{}#PrivateAttr()#default_factory=dict)
-    pdf_links: list["PDFLink"] = Relationship(back_populates="scraped_pages")
+    _embedded_images_dict: dict[str, str]
+
+    _img_alt: str | None = None
 
 
 
@@ -59,7 +64,7 @@ class ScrapedPage(SQLModel, table=True):
         return str(model_dict)
 
     @property
-    def cousin_urls_dict(self) -> dict[str, str]:
+    def cousin_urls_dict(self):
         return self._cousin_urls_dict
 
     @cousin_urls_dict.setter
@@ -67,7 +72,7 @@ class ScrapedPage(SQLModel, table=True):
         self._cousin_urls_dict = value
 
     @property
-    def pdf_links_dict(self) -> dict[str, str]:
+    def pdf_links_dict(self):
         return self._pdf_links_dict
 
     @pdf_links_dict.setter
@@ -75,12 +80,29 @@ class ScrapedPage(SQLModel, table=True):
         self._pdf_links_dict = value
 
     @property
-    def child_urls_dict(self) -> dict[str, str]:
+    def child_urls_dict(self):
         return self._child_urls_dict
 
     @child_urls_dict.setter
     def child_urls_dict(self, value: dict[str, str]):
         self._child_urls_dict = value
+
+    @property
+    def embedded_images_dict(self):
+        return self._embedded_images_dict
+
+    @embedded_images_dict.setter
+    def embedded_images_dict(self, value: dict[str, str]):
+        self._embedded_images_dict = value
+
+    @property
+    def img_alt(self):
+        return self._img_alt
+
+    @img_alt.setter
+    def img_alt(self, value: dict[str, str]):
+        self._img_alt = value
+
 
     # class Config:
     #     populate_by_name = True
