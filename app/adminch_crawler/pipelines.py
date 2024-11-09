@@ -258,25 +258,27 @@ class HashContentPipeline:
         return item
 
 
-class ParentsPipeline:
-    def __init__(self):
-        super().__init__()
+# class ParentsPipeline:
+#     # def __init__(self):
+#     #     super().__init__()
 
-    def open_spider(self, spider):
-        if self.is_resuming(spider):
-            self.open_file(PARENTS_DIR, True)
-        else:
-            self.open_file(PARENTS_DIR, False)
+#     # def open_spider(self, spider):
+#     #     if self.is_resuming(spider):
+#     #         self.open_file(PARENTS_DIR, True)
+#     #     else:
+#     #         self.open_file(PARENTS_DIR, False)
 
-    def close_spider(self, spider):
-        self.close_files()
+#     # def close_spider(self, spider):
+#     #     self.close_files()
 
-    def process_item(self, item, spider):
-        for child_id in item["child_urls"].values():
-            dic = {"id": child_id, "parent": item["id"]}
-            line = json.dumps(dic)
-            self.save_data(PARENTS_DIR, line + "\n")
-        return item
+#     def process_item(self, scraped_page: ScrapedPage, spider: Spider) -> ScrapedPage:
+#         for url in scraped_page.child_urls_dict:
+#         # for child_id in item["child_urls"].values():
+#             dic = {"url": url, "id": "ID_12334", "parent": scraped_page.id}
+#             print(dic)
+#             # line = json.dumps(dic)
+#             # self.save_data(PARENTS_DIR, line + "\n")
+#         return scraped_page
 
 
 # class MetadataPipeline:
@@ -383,7 +385,7 @@ class CompletedStoragePipeline:
     def process_item(self, scraped_page: ScrapedPage, spider: Spider) -> ScrapedPage:
         # SAVE EVERYTHING TO DB HERE POTENTIALLY?
         # For example PDFs is another table, BUT the ScrapedPage is successfully processed only when PDF are safely saved to DB. I.e. one of the mandatory conditions is to save PDFs.
-        # PARENT-CHILDs table too? I think
+        # PARENT-CHILDs table too? I think. They should be implemented with a CURSOR.
 
         # ###################################### PDFPipeline HERE
         # for url in scraped_page.pdf_links_dict.keys():
@@ -426,6 +428,9 @@ class CompletedStoragePipeline:
         #     dic[key] = getattr(scraped_page, key)
         # print(dic)
 
+        for url in scraped_page.child_urls_dict:
+            dic = {"child_id": "ID_12334", "parent": scraped_page.id, "url": url}
+            print(dic)
 
 
         return scraped_page

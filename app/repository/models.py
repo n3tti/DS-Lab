@@ -40,7 +40,6 @@ class ScrapedPage(SQLModel, table=True):
     _pdf_links_dict: dict[HttpUrl, str]#PrivateAttr()#Field(default_factory=dict, repr=False)#{}#PrivateAttr()#default_factory=dict)
     _child_urls_dict: dict[HttpUrl, str]#PrivateAttr()#Field(default_factory=dict, repr=False)#{}#PrivateAttr()#default_factory=dict)
     _embedded_images_dict: dict[HttpUrl, str]
-
     _img_alt: str | None = None
     _content_formatted_with_markdown: str | None = None
 
