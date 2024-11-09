@@ -43,8 +43,21 @@ class CrawlingSpider(CrawlSpider):
 
         scraped_page = ScrapedPage(
             url=response.url,
-            # text=response.text,
-            # body=response.body,
+
+            response_status_code=response.status,
+            # item["depth"] = response.meta["depth"]
+
+            # metadata
+            response_content_type = response.headers.get("Content-Type", b"").decode("utf-8") if response.headers.get("Content-Type") else None,
+            # item["content_length"] = int(response.headers.get("Content-Length").decode("utf-8")) if response.headers.get("Content-Length") else None,
+            # item["content_encoding"] = response.headers.get("Content-Encoding", b"").decode("utf-8") if response.headers.get("Content-Encoding") else None,
+            # item["last_modified"] = response.headers.get("Last-Modified").decode("utf-8") if response.headers.get("Last-Modified") else None,
+            # item["date"] = response.headers.get("Date").decode("utf-8") if response.headers.get("Date") else None,
+
+
+            # response_text=response.text,
+            # response_body=response.body,
+
         )
         yield scraped_page
 

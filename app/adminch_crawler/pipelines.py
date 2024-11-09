@@ -68,22 +68,17 @@ from scrapy import Spider
 
 class DiscoveredStoragePipeline:
     def process_item(self, scraped_page: ScrapedPage, spider: Spider) -> ScrapedPage:
-        try:
-            existing_page = db.get_scraped_page(url=scraped_page.url)
+        existing_page = db.get_scraped_page(url=scraped_page.url)
 
-            if existing_page:
-                if existing_page.status == StatusEnum.COMPLETED:
-                    raise DropItem(f"url: '{scraped_page.url}' is already COMPLETED.")
-                
-                db.update_scraped_page_status(url=scraped_page.url, status=StatusEnum.REVISITED)
-            else:
-                db.create_scraped_page(scraped_page.dict())
+        if existing_page:
+            if existing_page.status == StatusEnum.COMPLETED:
+                raise DropItem(f"url: '{scraped_page.url}' is already COMPLETED.")
 
-        except Exception as e:
-            logging.error(f"Failed to process scraped_page due to: {str(e)}", exc_info=True)
-            raise
+            db.update_scraped_page_status(url=scraped_page.url, status=StatusEnum.REVISITED)
 
-        return scraped_page
+            return existing_page
+
+        return db.create_scraped_page(scraped_page.dict())
 
 
 class FilterURLPipeline:
@@ -94,12 +89,12 @@ class FilterURLPipeline:
     def process_item(self, scraped_page: ScrapedPage, spider: Spider) -> ScrapedPage:
         logging.getLogger(spider.name).info(f"Processing url: {scraped_page}")
 
-        if scraped_page.status != 200:
-            raise DropItem(f"HTTP Status: {scraped_page.status}.")
-        elif scraped_page.content_type is None:
+        if scraped_page.response_status_code != 200:
+            raise DropItem(f"HTTP Status: {scraped_page.response_status_code}.")
+        elif scraped_page.response_content_type is None:
             raise DropItem(f"Content_type is None.")
-        elif not scraped_page.content_type.split(";")[0] in self.allowed_content_type:
-            raise DropItem(f"Content type \"{scraped_page.content_type.split(';')[0]}\" is not allowed.")
+        elif not scraped_page.response_content_type.split(";")[0] in self.allowed_content_type:
+            raise DropItem(f"Content type \"{scraped_page.response_content_type.split(';')[0]}\" is not allowed.")
 
         return scraped_page
 
@@ -353,3 +348,10 @@ class MetadataPipeline:
 #                         print(f"Failed to delete {file_path}. Reason: {e}")
 #             else:
 #                 os.makedirs(path)
+
+
+class TEMPPipeline:
+    def process_item(self, scraped_page: ScrapedPage, spider: Spider) -> ScrapedPage:
+        db.update_scraped_page_status(url=scraped_page.url, status=StatusEnum.TEMPCOMPLETED)
+
+        return scraped_page
