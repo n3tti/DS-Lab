@@ -18,21 +18,21 @@ NEWSPIDER_MODULE = "app.adminch_crawler.spiders"
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
 USER_AGENT = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36"
 DEFAULT_REQUEST_HEADERS = {
-    "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7",
-    "accept-encoding": "gzip, deflate, br, zstd",
-    "accept-language": "en-US,en;q=0.9",
-    "cache-control": "no-cache",
-    "dnt": "1",
-    "pragma": "no-cache",
-    "priority": "u=0, i",
-    "sec-ch-ua": '"Chromium";v="130", "Google Chrome";v="130", "Not?A_Brand";v="99"',
-    "sec-ch-ua-mobile": "?0",
-    "sec-ch-ua-platform": "Windows",
-    "sec-fetch-dest": "document",
-    "sec-fetch-mode": "navigate",
-    "sec-fetch-site": "none",
-    "sec-fetch-user": "?1",
-    "upgrade-insecure-requests": "1",
+    # "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7",
+    # "accept-encoding": "gzip, deflate, br, zstd",
+    # "accept-language": "en-US,en;q=0.9",
+    # "cache-control": "no-cache",
+    # "dnt": "1",
+    # "pragma": "no-cache",
+    # "priority": "u=0, i",
+    # "sec-ch-ua": '"Chromium";v="130", "Google Chrome";v="130", "Not?A_Brand";v="99"',
+    # "sec-ch-ua-mobile": "?0",
+    # "sec-ch-ua-platform": "Windows",
+    # "sec-fetch-dest": "document",
+    # "sec-fetch-mode": "navigate",
+    # "sec-fetch-site": "none",
+    # "sec-fetch-user": "?1",
+    # "upgrade-insecure-requests": "1",
     "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36",
 }
 
@@ -97,14 +97,15 @@ DOWNLOADER_MIDDLEWARES = {
 # See https://docs.scrapy.org/en/latest/topics/item-pipeline.html
 
 ITEM_PIPELINES = {
-    "app.adminch_crawler.pipelines.FilterURLPipeline": 100,
-    "app.adminch_crawler.pipelines.IDAssignmentPipeline": 200,
-    "app.adminch_crawler.pipelines.ParentsPipeline": 300,
-    "app.adminch_crawler.pipelines.PDFPipeline": 400,
-    "app.adminch_crawler.pipelines.ImagePipeline": 500,
-    "app.adminch_crawler.pipelines.ContentPipeline": 600,
-    "app.adminch_crawler.pipelines.HashContentPipeline": 700,
-    "app.adminch_crawler.pipelines.MetadataPipeline": 800,
+    "app.adminch_crawler.pipelines.DiscoveredStoragePipeline": 0,
+    # "app.adminch_crawler.pipelines.FilterURLPipeline": 100,
+    # "app.adminch_crawler.pipelines.IDAssignmentPipeline": 200,
+    # "app.adminch_crawler.pipelines.ParentsPipeline": 300,
+    # "app.adminch_crawler.pipelines.PDFPipeline": 400,
+    # "app.adminch_crawler.pipelines.ImagePipeline": 500,
+    # "app.adminch_crawler.pipelines.ContentPipeline": 600,
+    # "app.adminch_crawler.pipelines.HashContentPipeline": 700,
+    # "app.adminch_crawler.pipelines.MetadataPipeline": 800,
     # "adminch_crawler.pipelines.DownloadContentPipeline": 400,
 }
 
@@ -120,10 +121,12 @@ ITEM_PIPELINES = {
 # AUTOTHROTTLE_TARGET_CONCURRENCY = 1.0
 # Enable showing throttling stats for every response received:
 # AUTOTHROTTLE_DEBUG = False
-AUTOTHROTTLE_ENABLED = True
-AUTOTHROTTLE_START_DELAY = 0.01
-AUTOTHROTTLE_MAX_DELAY = 40
-AUTOTHROTTLE_TARGET_CONCURRENCY = 64
+# AUTOTHROTTLE_ENABLED = True
+# AUTOTHROTTLE_START_DELAY = 2
+# AUTOTHROTTLE_MAX_DELAY = 40
+# AUTOTHROTTLE_TARGET_CONCURRENCY = 64
+
+DOWNLOAD_DELAY = 1
 
 # # Enable and configure HTTP caching (disabled by default)
 # # See https://docs.scrapy.org/en/latest/topics/downloader-middleware.html#httpcache-middleware-settings
@@ -142,6 +145,6 @@ HTTPERROR_ALLOW_ALL = True
 DEPTH_LIMIT = 7
 DEPTH_PRIORITY = 2
 
-LOG_LEVEL = "INFO"
+LOG_LEVEL = "DEBUG"
 # JOBDIR = JOBDIR
 LOG_STDOUT = True

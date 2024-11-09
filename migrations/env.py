@@ -10,6 +10,7 @@ import shutil
 
 from sqlmodel import SQLModel
 from app.repository.models import BaseModel
+from datetime import datetime
 
 
 
@@ -41,7 +42,7 @@ target_metadata = SQLModel.metadata
 
 def create_backup():
     db_path = DATABASE_URL.split('///')[-1]
-    backup_path = f"{db_path}.backup"
+    backup_path = f"{db_path}.{datetime.now().strftime('%Y-%m-%dT%H_%M_%S.%f')}.backup"
 
     if os.path.exists(db_path):
         shutil.copyfile(db_path, backup_path)

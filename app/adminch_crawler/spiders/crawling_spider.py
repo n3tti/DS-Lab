@@ -10,6 +10,8 @@ from scrapy.http import TextResponse
 from scrapy.linkextractors import LinkExtractor
 from scrapy.spiders import CrawlSpider, Rule
 
+from app.repository.models import ScrapedPage
+
 logger = logging.getLogger(__name__.split(".")[-1])
 
 
@@ -38,115 +40,124 @@ class CrawlingSpider(CrawlSpider):
         return self.is_resuming_var
 
     def parse_item(self, response):
-        item = PageItem()
 
-        # about webrequest
-        item["id"] = None
-        item["status"] = response.status
-        item["depth"] = response.meta["depth"]
-        item["url"] = response.url
+        scraped_page = ScrapedPage(
+            url=response.url,
+            # text=response.text,
+            # body=response.body,
+        )
+        yield scraped_page
 
-        # items that are obtained further below
-        item["child_urls"] = {}
-        item["cousin_urls"] = {}
-        item["pdf_links"] = {}
 
-        # metadata
-        item["content_type"] = response.headers.get("Content-Type", b"").decode("utf-8") if response.headers.get("Content-Type") else None
-        item["content_length"] = int(response.headers.get("Content-Length").decode("utf-8")) if response.headers.get("Content-Length") else None
-        item["content_encoding"] = response.headers.get("Content-Encoding", b"").decode("utf-8") if response.headers.get("Content-Encoding") else None
-        item["last_modified"] = response.headers.get("Last-Modified").decode("utf-8") if response.headers.get("Last-Modified") else None
-        item["date"] = response.headers.get("Date").decode("utf-8") if response.headers.get("Date") else None
+    #     item = PageItem()
 
-        try:
-            item["description"] = response.css('meta[name="description"]::attr(content)').get()
-            item["keywords"] = response.css('meta[name="keywords"]::attr(content)').get()
-        except Exception as e:
-            exception_type = type(e).__name__
-            logger.error(f'Failed to extract "description" and/or "keywords": {exception_type} - {str(e)}')
-            return None
+    #     # about webrequest
+    #     item["id"] = None
+    #     item["status"] = response.status
+    #     item["depth"] = response.meta["depth"]
+    #     item["url"] = response.url
 
-        item["content_body"] = response.body
+    #     # items that are obtained further below
+    #     item["child_urls"] = {}
+    #     item["cousin_urls"] = {}
+    #     item["pdf_links"] = {}
 
-        item["content"] = self.format_content_with_markdown(response)
+    #     # metadata
+    #     item["content_type"] = response.headers.get("Content-Type", b"").decode("utf-8") if response.headers.get("Content-Type") else None
+    #     item["content_length"] = int(response.headers.get("Content-Length").decode("utf-8")) if response.headers.get("Content-Length") else None
+    #     item["content_encoding"] = response.headers.get("Content-Encoding", b"").decode("utf-8") if response.headers.get("Content-Encoding") else None
+    #     item["last_modified"] = response.headers.get("Last-Modified").decode("utf-8") if response.headers.get("Last-Modified") else None
+    #     item["date"] = response.headers.get("Date").decode("utf-8") if response.headers.get("Date") else None
 
-        item["embedded_images"], item["img_alt"] = self.extract_images(response)
+    #     try:
+    #         item["description"] = response.css('meta[name="description"]::attr(content)').get()
+    #         item["keywords"] = response.css('meta[name="keywords"]::attr(content)').get()
+    #     except Exception as e:
+    #         exception_type = type(e).__name__
+    #         logger.error(f'Failed to extract "description" and/or "keywords": {exception_type} - {str(e)}')
+    #         return None
 
-        item["lang"] = response.xpath("//html/@lang").get()
+    #     item["content_body"] = response.body
 
-        item["hash"] = None
+    #     item["content"] = self.format_content_with_markdown(response)
 
-        item["title"] = self.get_title(response)
+    #     item["embedded_images"], item["img_alt"] = self.extract_images(response)
 
-        alternate_links = response.xpath('//link[@rel="alternate"]')
-        languages_dict = {}
-        for link in alternate_links:
-            lang = link.xpath("@lang").get()
-            href = link.xpath("@href").get()
-            if lang and href:
-                languages_dict[lang] = response.urljoin(href)
-        item["cousin_urls"] = languages_dict
+    #     item["lang"] = response.xpath("//html/@lang").get()
 
-        for link in response.css("a::attr(href)").getall():
-            full_url = urljoin(response.url, link)
+    #     item["hash"] = None
 
-            # get pdf links of this page
-            if full_url.lower().endswith(".pdf"):
-                item["pdf_links"][full_url] = None
+    #     item["title"] = self.get_title(response)
 
-        for link in response.css("a::attr(href)").getall():
-            full_url = urljoin(response.url, link)
+    #     alternate_links = response.xpath('//link[@rel="alternate"]')
+    #     languages_dict = {}
+    #     for link in alternate_links:
+    #         lang = link.xpath("@lang").get()
+    #         href = link.xpath("@href").get()
+    #         if lang and href:
+    #             languages_dict[lang] = response.urljoin(href)
+    #     item["cousin_urls"] = languages_dict
 
-            # get child and cousin urls
-            if link not in item["cousin_urls"].keys() and link not in item["pdf_links"].keys() and link != response.url:
-                item["child_urls"][full_url] = None
+    #     for link in response.css("a::attr(href)").getall():
+    #         full_url = urljoin(response.url, link)
 
-        yield item
+    #         # get pdf links of this page
+    #         if full_url.lower().endswith(".pdf"):
+    #             item["pdf_links"][full_url] = None
 
-    # handle embedded images
-    def extract_images(self, response):
-        """Extract embedded images from content"""
-        images = {}
-        img_alt = {}
-        for img in response.css("img"):
-            src = img.attrib.get("src")
-            if src:
-                full_url = urljoin(response.url, src)
-                alt = img.attrib.get("alt", "")
-                images[full_url] = None
-                img_alt[full_url] = alt
-        return images, img_alt
+    #     for link in response.css("a::attr(href)").getall():
+    #         full_url = urljoin(response.url, link)
 
-    # extract title from multiple sources
-    def get_title(self, response):
-        """Extract title from multiple possible sources"""
-        title = response.headers.get("Title", b"").decode("utf-8") or response.css("title::text").get() or response.css("h1::text").get() or ""
-        return title.strip()
+    #         # get child and cousin urls
+    #         if link not in item["cousin_urls"].keys() and link not in item["pdf_links"].keys() and link != response.url:
+    #             item["child_urls"][full_url] = None
 
-    # format content with markdown
-    def format_content_with_markdown(self, response):
-        """Format content with markdown, preserving the original order of elements"""
-        content_parts = []
+    #     yield item
 
-        # Select all headers and paragraphs in order of appearance
-        for element in response.css("h1, h2, h3, h4, h5, h6, p"):
-            try:
-                # Get the element name (h1, h2, p, etc.)
-                tag_name = element.root.tag
+    # # handle embedded images
+    # def extract_images(self, response):
+    #     """Extract embedded images from content"""
+    #     images = {}
+    #     img_alt = {}
+    #     for img in response.css("img"):
+    #         src = img.attrib.get("src")
+    #         if src:
+    #             full_url = urljoin(response.url, src)
+    #             alt = img.attrib.get("alt", "")
+    #             images[full_url] = None
+    #             img_alt[full_url] = alt
+    #     return images, img_alt
 
-                # Handle headers
-                if tag_name.startswith("h"):
-                    level = int(tag_name[1])  # get number from h1, h2, etc.
-                else:
-                    level = 0
+    # # extract title from multiple sources
+    # def get_title(self, response):
+    #     """Extract title from multiple possible sources"""
+    #     title = response.headers.get("Title", b"").decode("utf-8") or response.css("title::text").get() or response.css("h1::text").get() or ""
+    #     return title.strip()
 
-                text = element.css("::text").get()
-                if text:
-                    text = text.strip()
-                    content_parts.append(f"{'#' * level} {text}\n\n")
+    # # format content with markdown
+    # def format_content_with_markdown(self, response):
+    #     """Format content with markdown, preserving the original order of elements"""
+    #     content_parts = []
 
-            except Exception as e:
-                print(e)
-                pdb.set_trace()
+    #     # Select all headers and paragraphs in order of appearance
+    #     for element in response.css("h1, h2, h3, h4, h5, h6, p"):
+    #         try:
+    #             # Get the element name (h1, h2, p, etc.)
+    #             tag_name = element.root.tag
 
-        return "".join(content_parts)
+    #             # Handle headers
+    #             if tag_name.startswith("h"):
+    #                 level = int(tag_name[1])  # get number from h1, h2, etc.
+    #             else:
+    #                 level = 0
+
+    #             text = element.css("::text").get()
+    #             if text:
+    #                 text = text.strip()
+    #                 content_parts.append(f"{'#' * level} {text}\n\n")
+
+    #         except Exception as e:
+    #             print(e)
+    #             pdb.set_trace()
+
+    #     return "".join(content_parts)

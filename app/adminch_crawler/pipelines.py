@@ -30,35 +30,58 @@ from scrapy import logformatter
 from scrapy.exceptions import DropItem
 from simhash import Simhash
 
+from app.repository.models import ScrapedPage, StatusEnum
+from app.repository.db import db
 
-class ResummablePipeline(ABC):
-    def __init__(self):
-        self.files = {}
 
-    def is_resuming(self, spider):
-        return spider.is_resuming()
+# class ResummablePipeline(ABC):
+#     def __init__(self):
+#         self.files = {}
 
-    def open_file(self, file, append):
-        if append:
-            self.files[file] = open(file, "a")
-        else:
-            self.files[file] = open(file, "w")
+#     def is_resuming(self, spider):
+#         return spider.is_resuming()
 
-    def load_data(self, file):
-        f = open(file, "r")
-        data = json.load(f)
-        f.close()
-        return data
+#     def open_file(self, file, append):
+#         if append:
+#             self.files[file] = open(file, "a")
+#         else:
+#             self.files[file] = open(file, "w")
 
-    def save_data(self, file, data):
-        self.files[file].write(data)
+#     def load_data(self, file):
+#         f = open(file, "r")
+#         data = json.load(f)
+#         f.close()
+#         return data
 
-    def close_files(self):
-        for file_name, file in self.files.items():
-            file.close()
+#     def save_data(self, file, data):
+#         self.files[file].write(data)
+
+#     def close_files(self):
+#         for file_name, file in self.files.items():
+#             file.close()
 
 
 # -------------------------------------------------
+
+
+class DiscoveredStoragePipeline:
+    def process_item(self, scraped_page: ScrapedPage, spider) -> ScrapedPage:
+        try:
+            existing_page = db.get_scraped_page(url=scraped_page.url)
+
+            if existing_page:
+                if existing_page.status == StatusEnum.COMPLETED:
+                    raise DropItem(f"URL: '{scraped_page.url}' is already COMPLETED.")
+                
+                db.update_scraped_page_status(url=scraped_page.url, status=StatusEnum.REVISITED)
+            else:
+                db.create_scraped_page(scraped_page.dict())
+
+        except Exception as e:
+            logging.error(f"Failed to process scraped_page due to: {str(e)}", exc_info=True)
+            raise
+
+        return scraped_page
 
 
 class FilterURLPipeline:
@@ -78,7 +101,7 @@ class FilterURLPipeline:
             return item
 
 
-class IDAssignmentPipeline(ResummablePipeline):
+class IDAssignmentPipeline:
 
     def __init__(self):
         super().__init__()
@@ -160,7 +183,7 @@ class IDAssignmentPipeline(ResummablePipeline):
     #     return item
 
 
-class PDFPipeline(ResummablePipeline):
+class PDFPipeline:
     def __init__(self):
         super().__init__()
 
@@ -190,7 +213,7 @@ class ContentPipeline:
         return item
 
 
-class ImagePipeline(ResummablePipeline):
+class ImagePipeline:
     def __init__(self):
         super().__init__()
 
@@ -230,7 +253,7 @@ class HashContentPipeline:
         return item
 
 
-class ParentsPipeline(ResummablePipeline):
+class ParentsPipeline:
     def __init__(self):
         super().__init__()
 
@@ -251,7 +274,7 @@ class ParentsPipeline(ResummablePipeline):
         return item
 
 
-class MetadataPipeline(ResummablePipeline):
+class MetadataPipeline:
     def __init__(self):
         super().__init__()
         self.logger = logging.getLogger(__name__)

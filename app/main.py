@@ -6,7 +6,6 @@ from scrapy.utils.project import get_project_settings
 
 
 if __name__ == "__main__":
-    # print(get_project_settings().__dict__)
     process = CrawlerProcess(get_project_settings())
     process.crawl(CrawlingSpider)
     process.start()
