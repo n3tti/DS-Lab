@@ -93,22 +93,20 @@ class HashContentPipeline:
 
 class CompletedStoragePipeline:
     def process_item(self, scraped_page: ScrapedPage, spider: Spider) -> ScrapedPage:
-        # SAVE EVERYTHING TO DB HERE POTENTIALLY?
-        # For example PDFs is another table, BUT the ScrapedPage is successfully processed only when PDF are safely saved to DB. I.e. one of the mandatory conditions is to save PDFs.
-        # PARENT-CHILDs table too? I think. They should be implemented with a CURSOR.
+        # Save everything to db here
 
-        # ###################################### PDFPipeline HERE
+        # TODO: ###################################### PDFPipeline HERE
         # for url in scraped_page.pdf_links_dict.keys():
 
-        # ###################################### ImagePipeline HERE
+        # TODO: ###################################### ImagePipeline HERE
         # for img_url, img_id in scraped_page.embedded_images_dict.items():
         #     dic = {"id": img_id, "url": img_url, "alt": scraped_page.img_alt, "parent": scraped_page.id}
 
-        # ###################################### ContentPipeline HERE -- ContentPipeline is used by HashPipeline!!!!
+        # TODO: ###################################### ContentPipeline HERE -- ContentPipeline is used by HashPipeline!!!!
         # if scraped_page.content_formatted_with_markdown:
         #     scraped_page.content_formatted_with_markdown = "\n".join(line.strip() for line in scraped_page.content_formatted_with_markdown.split("\n") if line.strip())
 
-        # ###################################### MetadataPipeline HERE
+        # TODO: ###################################### MetadataPipeline HERE
         # keys_to_save = [
         #     # "id",
         #     # "depth",
@@ -135,7 +133,6 @@ class CompletedStoragePipeline:
         # for url in scraped_page.child_urls_dict:
         #     dic = {"child_id": "ID_12334", "parent": scraped_page.id, "url": url}
 
-        # WRITE EVERYTHING HERE I THINK:
         db.create_pdf_and_child_parent_links_and_update_status(
             scraped_page_id=scraped_page.id, pdf_urls=scraped_page.pdf_urls, child_urls=scraped_page.child_urls
         )
@@ -143,8 +140,8 @@ class CompletedStoragePipeline:
         return scraped_page
 
 
-class TEMPPipeline:  ## TEMP Final Pipeline
-    def process_item(self, scraped_page: ScrapedPage, spider: Spider) -> ScrapedPage:
-        db.update_scraped_page_status(scraped_page_id=scraped_page.id, status=StatusEnum.TEMPCOMPLETED)
+# class TEMPPipeline:  ## TEMP Final Pipeline
+#     def process_item(self, scraped_page: ScrapedPage, spider: Spider) -> ScrapedPage:
+#         db.update_scraped_page_status(scraped_page_id=scraped_page.id, status=StatusEnum.TEMPCOMPLETED)
 
-        return scraped_page
+#         return scraped_page

@@ -24,7 +24,7 @@ class StatusEnum(str, Enum):
     DISCOVERED = "Discovered"
     REVISITED = "Revisited"
 
-    TEMPCOMPLETED = "TempCompleted"
+    # TEMPCOMPLETED = "TempCompleted"
 
 
 class ScrapedPage(BaseModel, table=True):
@@ -60,7 +60,7 @@ class ScrapedPage(BaseModel, table=True):
     response_metadata_title: str | None = Field(default=None, description="Title of the content")
     # response_metadata_content: str | None = Field(default=None, description="Actual content (body)")
     response_metadata_description: str | None = Field(default=None, description="Description of the content")
-    response_metadata_keywords: list[str] = Field(default_factory=list, sa_column=Column(JSON), description="Keywords associated with the content")
+    response_metadata_keywords: str | None = Field(default=None, sa_column=Column(JSON), description="Keywords associated with the content")
     response_metadata_content_hash: str | None = Field(default=None, description="Hash of the response content")
 
     created_at: datetime = Field(sa_column=Column(DateTime(timezone=True), server_default=func.now()))
@@ -147,7 +147,7 @@ class PDFLink(BaseModel, table=True):
 
     url: str = Field(index=True)
     lang: str | None = Field(sa_column=CHAR(2))
-    scraped_page_id: int = Field(default=None, foreign_key="scraped_pages.id")
+    scraped_page_id: int = Field(foreign_key="scraped_pages.id")
 
     scraped_page: "ScrapedPage" = Relationship(back_populates="pdf_link")
 
@@ -164,7 +164,7 @@ class ChildParentLink(BaseModel, table=True):
 
     id: int = Field(primary_key=True)
 
-    parent_id: int = Field(default=None, foreign_key="scraped_pages.id", description="scraped_page.id")
+    parent_id: int = Field(foreign_key="scraped_pages.id", description="scraped_page.id")
     child_url: str = Field(index=True)
 
     parent_link: "ScrapedPage" = Relationship(back_populates="child_link")
