@@ -1,18 +1,23 @@
 import json
 
 import pytest
-from adminch_crawler.config import METADATA_DIR, PARENTS_DIR
+from app.config import METADATA_DIR, PARENTS_DIR
+from factory.fuzzy import FuzzyText
+from pydantic_factories import Ignore, ModelFactory
+from pydantic_factories.plugins.pytest_plugin import register_fixture
+from unittest.mock import Mock
+from unittest.mock import patch, create_autospec
+from app.repository.models import ScrapedPage
+from scrapy.spiders import Spider
+from app.repository.db import Database
 
-# dont forget to load with difff library now that json not formatted
+
+@register_fixture
+class ScrapedPageFactory(ModelFactory):
+    __model__ = ScrapedPage
 
 
-@pytest.fixture(scope="session")
-def load_metadata():
-    with open(METADATA_DIR, "r") as f:
-        return json.load(f)
+@pytest.fixture
+def mock_spider():
+    return Spider(name='test_spider')
 
-
-@pytest.fixture(scope="session")
-def load_parents():
-    with open(PARENTS_DIR, "r") as f:
-        return json.load(f)
