@@ -8,6 +8,8 @@ from app.adminch_crawler.pipelines import FilterURLPipeline
 from app.repository.models import ScrapedPage, StatusEnum
 from app.tests.conftest import ScrapedPageFactory
 
+from pydantic import ValidationError
+
 
 # @pytest.mark.skip
 @patch("app.adminch_crawler.pipelines.db")
@@ -53,6 +55,5 @@ def test_decode_utf8_validator():
     page = ScrapedPage(response_content_type=input_value)
     assert page.response_content_type == "text/html"
 
-    # with pytest.raises(ValidationError):
-    page = ScrapedPage(response_content_type=123)
-    assert isinstance(page.response_content_type, str)
+    with pytest.raises(ValidationError):
+        page = ScrapedPage(response_content_type=123)

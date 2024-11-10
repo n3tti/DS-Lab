@@ -70,8 +70,8 @@ class ScrapedPage(BaseModel, table=True):
         model_dict = self.model_dump(include={"id", "url", "status"})
         return f"{type(self).__name__}({model_dict})"
 
-    @classmethod
     @field_validator("response_content_type", "response_content_encoding", "response_last_modified", "response_date", mode="before")
+    @classmethod
     def decode_utf8(cls, v) -> str:
         if isinstance(v, bytes):
             result = v.decode("utf-8")
