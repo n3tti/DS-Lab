@@ -37,11 +37,11 @@ class ScrapedPage(SQLModel, table=True):
     pdf_link: list["PDFLink"] = Relationship(back_populates="scraped_page")
     child_link: list["ChildParentLink"] = Relationship(back_populates="parent_link")
 
-    # TODO: CHANGE TO SETS
-    _cousin_urls_dict: list[HttpUrl]#PrivateAttr()#Field(default_factory=dict, repr=False)#{}#PrivateAttr()#default_factory=dict)
-    _pdf_links_dict: list[HttpUrl]#PrivateAttr()#Field(default_factory=dict, repr=False)#{}#PrivateAttr()#default_factory=dict)
-    _child_urls_dict: list[HttpUrl]#PrivateAttr()#Field(default_factory=dict, repr=False)#{}#PrivateAttr()#default_factory=dict)
-    _embedded_images_dict: list[HttpUrl]
+    # TODO: CHANGE TO LISTS
+    _cousin_urls: list[HttpUrl]#PrivateAttr()#Field(default_factory=dict, repr=False)#{}#PrivateAttr()#default_factory=dict)
+    _pdf_links: list[HttpUrl]#PrivateAttr()#Field(default_factory=dict, repr=False)#{}#PrivateAttr()#default_factory=dict)
+    _child_urls: list[HttpUrl]#PrivateAttr()#Field(default_factory=dict, repr=False)#{}#PrivateAttr()#default_factory=dict)
+    _embedded_images: list[HttpUrl]
     _img_alt: str | None = None
     _content_formatted_with_markdown: str | None = None
 
@@ -60,7 +60,7 @@ class ScrapedPage(SQLModel, table=True):
 
     response_metadata_lang: str | None = Field(default=None, sa_column=CHAR(2), description="Language of the content derived from the HTML tag")
     response_metadata_title: str | None = Field(default=None, description="Title of the content")
-    response_metadata_content: str | None = Field(default=None, description="Actual content (body)")
+    # response_metadata_content: str | None = Field(default=None, description="Actual content (body)")
     response_metadata_description: str | None = Field(default=None, description="Description of the content")
     response_metadata_keywords: list[str] = Field(default_factory=list, sa_column=Column(JSON), description="Keywords associated with the content")
     response_metadata_content_hash: str | None = Field(default=None, description="Hash of the response content")
@@ -75,38 +75,51 @@ class ScrapedPage(SQLModel, table=True):
         model_dict = self.dict(include={"id", "url", "status"})
         return f"{type(self).__name__}({model_dict})"
 
+    @validator('response_content_type', 'response_content_encoding', 'response_last_modified', 'response_date', pre=True, always=True)
+    def decode_utf8(cls, v):
+        return v.decode('utf-8') if v is not None else None
+
+    @validator('response_content_length', pre=True, always=True)
+    def convert_length_to_int(cls, v):
+        if v is None:
+            return None
+        try:
+            return int(v.decode('utf-8'))
+        except ValueError:
+            return None
+
     # A lot of getters and setters below
     @property
     def cousin_urls_dict(self):
-        return self._cousin_urls_dict
+        return self._cousin_urls
 
     @cousin_urls_dict.setter
     def cousin_urls_dict(self, value: dict[str, str]):
-        self._cousin_urls_dict = value
+        self._cousin_urls = value
 
     @property
     def pdf_links_dict(self):
-        return self._pdf_links_dict
+        return self._pdf_links
 
     @pdf_links_dict.setter
     def pdf_links_dict(self, value: dict[str, str]):
-        self._pdf_links_dict = value
+        self._pdf_links = value
 
     @property
     def child_urls_dict(self):
-        return self._child_urls_dict
+        return self._child_urls
 
     @child_urls_dict.setter
     def child_urls_dict(self, value: dict[str, str]):
-        self._child_urls_dict = value
+        self._child_urls = value
 
     @property
     def embedded_images_dict(self):
-        return self._embedded_images_dict
+        return self._embedded_images
 
     @embedded_images_dict.setter
     def embedded_images_dict(self, value: dict[str, str]):
-        self._embedded_images_dict = value
+        self._embedded_images = value
 
     @property
     def img_alt(self):

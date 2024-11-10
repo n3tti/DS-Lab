@@ -49,7 +49,7 @@ class CrawlingSpider(CrawlSpider):
 
 
         #####################################################
-        cousin_urls_dict = {}
+        cousin_urls = {}
         alternate_links = response.xpath('//link[@rel="alternate"]')
         languages_dict = {}
         for link in alternate_links:
@@ -57,119 +57,90 @@ class CrawlingSpider(CrawlSpider):
             href = link.xpath("@href").get()
             if lang and href:
                 languages_dict[lang] = response.urljoin(href)
-        cousin_urls_dict = languages_dict
+        cousin_urls = languages_dict
 
 
         #####################################################
-        pdf_links_dict = {}
+        pdf_links = {}
         for link in response.css("a::attr(href)").getall():
             full_url = urljoin(response.url, link)
 
             # get pdf links of this page
             if full_url.lower().endswith(".pdf"):
-                pdf_links_dict[full_url] = None
+                pdf_links[full_url] = None
 
 
         #####################################################
-        child_urls_dict = {}
+        child_urls = {}
         for link in response.css("a::attr(href)").getall():
             full_url = urljoin(response.url, link)
 
             # get child and cousin urls
-            # TBD: can't it be just `full_url.lower().endswith(".pdf")` <-> `link not in pdf_links_dict.keys()` ?
-            if link not in cousin_urls_dict.keys() and link not in pdf_links_dict.keys() and link != response.url:
-                child_urls_dict[full_url] = None
+            # TBD: can't it be just `full_url.lower().endswith(".pdf")` <-> `link not in pdf_links.keys()` ?
+            if link not in cousin_urls.keys() and link not in pdf_links.keys() and link != response.url:
+                child_urls[full_url] = None
 
         #####################################################
-        embedded_images_dict, img_alt = self.extract_images(response)
+        embedded_images, img_alt = self.extract_images(response)
 
         #####################################################
         content_formatted_with_markdown = self.format_content_with_markdown(response)
 
 
+        #####################################################
+        if not lang:
+            # Try meta tag if html lang is not found
+            lang = response.xpath(
+                "//meta[@http-equiv='content-language']/@content | //meta[@property='og:locale']/@content").get()
+        item["lang"] = lang
 
 
-
-
-        for i in range(10):
-            embedded_images_dict[i] = f"my_url{100*i}"
-
+        #####################################################
+        # TODO: Change to hasattr
+        try:
+            description = response.css('meta[name="description"]::attr(content)').get()
+        except Exception:
+            description = None
+        try:
+            keywords = response.css('meta[name="keywords"]::attr(content)').get()
+        except Exception:
+            keywords = None
 
 
         scraped_page = ScrapedPage(
             url=response.url,
             depth=response.meta["depth"],
 
-            response_metadata_lang = response.xpath("//html/@lang").get(),
-
             response_status_code=response.status,
-            # item["depth"] = response.meta["depth"]
-
-
+            response_text=response.text,
+            response_body=response.body,
 
             # metadata
-            response_content_type = response.headers.get("Content-Type", b"").decode("utf-8"),# if response.headers.get("Content-Type") else None,
-            # item["content_length"] = int(response.headers.get("Content-Length").decode("utf-8")) if response.headers.get("Content-Length") else None,
-            # item["content_encoding"] = response.headers.get("Content-Encoding", b"").decode("utf-8") if response.headers.get("Content-Encoding") else None,
-            # item["last_modified"] = response.headers.get("Last-Modified").decode("utf-8") if response.headers.get("Last-Modified") else None,
-            # item["date"] = response.headers.get("Date").decode("utf-8") if response.headers.get("Date") else None,
+            # TODO: MOVE .decode into PYDANTIC VALIDATION OR NOT
+            response_content_type=response.headers.get("Content-Type"),
+            response_content_length=response.headers.get("Content-Length"),
+            response_content_encoding=response.headers.get("Content-Encoding"),
+            response_last_modified=response.headers.get("Last-Modified"),
+            response_date=response.headers.get("Date"),
 
-
-
-
-
-
-            # response_text=response.text,
-            # response_body=response.body,
-
-
+            response_metadata_lang = lang,
+            response_metadata_title = self.get_title(response),
+            response_metadata_description =  description,
+            response_metadata_keywords = keywords,
+            response_metadata_content_hash = None,
 
         )
-        scraped_page.cousin_urls_dict = cousin_urls_dict
-        scraped_page.pdf_links_dict = pdf_links_dict
-        scraped_page.child_urls_dict = child_urls_dict
-        scraped_page.embedded_images_dict = embedded_images_dict
+        scraped_page.cousin_urls = cousin_urls
+        scraped_page.pdf_links = pdf_links
+        scraped_page.child_urls = child_urls
+        scraped_page.embedded_images = embedded_images
         scraped_page.img_alt = img_alt
         scraped_page.content_formatted_with_markdown = content_formatted_with_markdown
 
 
-
-
-
-
-    #     # metadata -> MOVED
-
-    #     try:
-    #         item["description"] = response.css('meta[name="description"]::attr(content)').get()
-    #         item["keywords"] = response.css('meta[name="keywords"]::attr(content)').get()
-    #     except Exception as e:
-    #         exception_type = type(e).__name__
-    #         logger.error(f'Failed to extract "description" and/or "keywords": {exception_type} - {str(e)}')
-    #         return None
-
-    #     item["content_body"] = response.body
-
-    #     item["content"] = self.format_content_with_markdown(response)
-
-    ################     item["embedded_images"], item["img_alt"] = self.extract_images(response)
-
-    #     item["lang"] = response.xpath("//html/@lang").get()
-
-    #     item["hash"] = None
-
-    #     item["title"] = self.get_title(response)
-
-
-
-
-
-        # yield item
-
-
-        # for _ in range(10):
-        #     print(child_urls_dict)
-
         yield scraped_page
+
+
 
     # handle embedded images
     def extract_images(self, response):
@@ -185,11 +156,11 @@ class CrawlingSpider(CrawlSpider):
                 img_alt[full_url] = alt
         return images, img_alt
 
-    # # extract title from multiple sources
-    # def get_title(self, response):
-    #     """Extract title from multiple possible sources"""
-    #     title = response.headers.get("Title", b"").decode("utf-8") or response.css("title::text").get() or response.css("h1::text").get() or ""
-    #     return title.strip()
+    # extract title from multiple sources
+    def get_title(self, response):
+        """Extract title from multiple possible sources"""
+        title = response.headers.get("Title", b"").decode("utf-8") or response.css("title::text").get() or response.css("h1::text").get() or ""
+        return title.strip()
 
     # format content with markdown
     def format_content_with_markdown(self, response):
@@ -215,6 +186,6 @@ class CrawlingSpider(CrawlSpider):
 
             except Exception as e:
                 print(e)
-                pdb.set_trace()
+                logger.error(f"{e} \n url: {item["url"]}, element: {element}")
 
         return "".join(content_parts)
