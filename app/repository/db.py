@@ -71,7 +71,7 @@ class Database:
                 session.add(pdf_link)
 
             for url in child_urls:
-                child_link = ChildParentLink(child_url=url, parent_id=scraped_page.id, parent_link=scraped_page)
+                child_link = ChildParentLink(child_url=url, parent_link=scraped_page)
                 session.add(child_link)
 
             scraped_page.status = StatusEnum.COMPLETED

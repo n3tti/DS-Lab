@@ -66,9 +66,6 @@ class ScrapedPage(BaseModel, table=True):
     created_at: datetime = Field(sa_column=Column(DateTime(timezone=True), server_default=func.now()))
     updated_at: datetime | None = Field(default=None, sa_column=Column(DateTime(timezone=True), onupdate=func.now()))
 
-    def __str__(self):
-        model_dict = self.model_dump(include={"id", "url", "status"})
-        return f"{type(self).__name__}({model_dict})"
 
     @field_validator("response_content_type", "response_content_encoding", "response_last_modified", "response_date", mode="before")
     @classmethod
@@ -139,15 +136,21 @@ class ScrapedPage(BaseModel, table=True):
     def content_formatted_with_markdown(self, value: dict[str, str]):
         self._content_formatted_with_markdown = value
 
+    def __str__(self):
+        model_dict = self.model_dump(include={"id", "url", "status"})
+        return f"{type(self).__name__}({model_dict})"
+
+
 
 class PDFLink(BaseModel, table=True):
     __tablename__ = "pdf_links"
 
     id: int = Field(primary_key=True)
 
+    scraped_page_id: int = Field(foreign_key="scraped_pages.id")
     url: str = Field(index=True)
     lang: str | None = Field(sa_column=CHAR(2))
-    scraped_page_id: int = Field(foreign_key="scraped_pages.id")
+    # TODO: Add Status here "DOWNLOADED", "PROCESSED"
 
     scraped_page: "ScrapedPage" = Relationship(back_populates="pdf_link")
 
