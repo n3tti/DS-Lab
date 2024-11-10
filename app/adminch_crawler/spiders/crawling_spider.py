@@ -113,7 +113,7 @@ class CrawlingSpider(CrawlSpider):
 
             response_status_code=response.status,
             response_text=response.text,
-            response_body=response.body,
+            # response_body=response.body,
 
             # metadata
             # TODO: MOVE .decode into PYDANTIC VALIDATION OR NOT
