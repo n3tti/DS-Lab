@@ -1,18 +1,15 @@
 import json
+from unittest.mock import Mock, create_autospec, patch
 
 import pytest
-from app.config import METADATA_DIR, PARENTS_DIR
 from factory.fuzzy import FuzzyText
 from polyfactory.factories.pydantic_factory import ModelFactory
 from polyfactory.pytest_plugin import register_fixture
-
-from unittest.mock import Mock
-from unittest.mock import patch, create_autospec
-from app.repository.models import ScrapedPage
 from scrapy.spiders import Spider
+
+from app.config import METADATA_DIR, PARENTS_DIR
 from app.repository.db import Database
-
-
+from app.repository.models import ScrapedPage
 
 
 @register_fixture
@@ -22,5 +19,4 @@ class ScrapedPageFactory(ModelFactory):
 
 @pytest.fixture
 def mock_spider():
-    return Spider(name='test_spider')
-
+    return Spider(name="test_spider")

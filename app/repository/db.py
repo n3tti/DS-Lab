@@ -1,21 +1,18 @@
+import os
+from contextlib import contextmanager
+from typing import Any
+
+from pydantic import HttpUrl
 from sqlalchemy import create_engine
 from sqlalchemy.orm import scoped_session, sessionmaker
 
-from app.repository.models import ScrapedPage, StatusEnum, PDFLink, ChildParentLink
-import os
-from contextlib import contextmanager
-
-from typing import Any
-from pydantic import HttpUrl
-
 from app.config import DATABASE_URL
+from app.repository.models import ChildParentLink, PDFLink, ScrapedPage, StatusEnum
 from app.repository.utils import normalize_url
-
 
 engine = create_engine(DATABASE_URL, echo=False, future=True)
 session_factory = sessionmaker(autocommit=False, autoflush=False, bind=engine)
 Session = scoped_session(session_factory)
-
 
 
 @contextmanager
@@ -30,9 +27,8 @@ def session_scope():
     finally:
         session.close()
 
-class DatabaseException(Exception):
-    ...
 
+class DatabaseException(Exception): ...
 
 
 class Database:
@@ -43,7 +39,7 @@ class Database:
             session.flush()
 
             obj_id = new_scraped_page.id
-            scraped_page_data['id'] = obj_id
+            scraped_page_data["id"] = obj_id
             return ScrapedPage(**scraped_page_data)
 
     def update_scraped_page_status(self, scraped_page_id: int, status: StatusEnum):

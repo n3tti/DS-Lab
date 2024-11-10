@@ -1,13 +1,12 @@
-from enum import Enum
-from sqlmodel import SQLModel, Field, JSON, Relationship
-from sqlalchemy import LargeBinary, Column, DateTime, CHAR
-from sqlalchemy.sql import func
-from typing import Optional
 from datetime import datetime
-from pydantic import PrivateAttr, HttpUrl
-from pydantic import field_validator, ValidationError
-from sqlmodel._compat import SQLModelConfig
+from enum import Enum
+from typing import Optional
 
+from pydantic import HttpUrl, PrivateAttr, ValidationError, field_validator
+from sqlalchemy import CHAR, Column, DateTime, LargeBinary
+from sqlalchemy.sql import func
+from sqlmodel import JSON, Field, Relationship, SQLModel
+from sqlmodel._compat import SQLModelConfig
 
 
 class BaseModel(SQLModel):
@@ -21,6 +20,7 @@ class SQLModelValidation(BaseModel):
     """
     Helper class to allow for validation in SQLModel classes with table=True
     """
+
     model_config = SQLModelConfig(from_attributes=True, validate_assignment=True)
 
 
@@ -34,11 +34,8 @@ class StatusEnum(str, Enum):
     TEMPCOMPLETED = "TempCompleted"
 
 
-
-
-
 class ScrapedPage(SQLModelValidation, table=True):
-    __tablename__ = 'scraped_pages'
+    __tablename__ = "scraped_pages"
 
     id: int = Field(primary_key=True)
 
@@ -73,35 +70,32 @@ class ScrapedPage(SQLModelValidation, table=True):
     response_metadata_keywords: list[str] = Field(default_factory=list, sa_column=Column(JSON), description="Keywords associated with the content")
     response_metadata_content_hash: str | None = Field(default=None, description="Hash of the response content")
 
-
-
     created_at: datetime = Field(sa_column=Column(DateTime(timezone=True), server_default=func.now()))
     updated_at: datetime | None = Field(default=None, sa_column=Column(DateTime(timezone=True), onupdate=func.now()))
-
 
     def __str__(self):
         model_dict = self.model_dump(include={"id", "url", "status"})
         return f"{type(self).__name__}({model_dict})"
 
     @classmethod
-    @field_validator('response_content_type', 'response_content_encoding', 'response_last_modified', 'response_date', mode="before")
+    @field_validator("response_content_type", "response_content_encoding", "response_last_modified", "response_date", mode="before")
     def decode_utf8(cls, v) -> str:
         if isinstance(v, bytes):
-            result = v.decode('utf-8')
+            result = v.decode("utf-8")
             return result
         return v
 
-    @field_validator('response_content_length', mode="before")
+    @field_validator("response_content_length", mode="before")
     @classmethod
     def convert_length_to_int(cls, v) -> str:
         if isinstance(v, bytes):
             try:
-                return int(v.decode('utf-8'))
+                return int(v.decode("utf-8"))
             except ValueError:
                 pass
         elif isinstance(v, int):
             return v
-        return None 
+        return None
 
     # A lot of getters and setters below
     @property
@@ -153,9 +147,8 @@ class ScrapedPage(SQLModelValidation, table=True):
         self._content_formatted_with_markdown = value
 
 
-
 class PDFLink(SQLModelValidation, table=True):
-    __tablename__ = 'pdf_links'
+    __tablename__ = "pdf_links"
 
     id: int = Field(primary_key=True)
 
@@ -174,7 +167,7 @@ class PDFLink(SQLModelValidation, table=True):
 
 
 class ChildParentLink(SQLModelValidation, table=True):
-    __tablename__ = 'child_parent_links'
+    __tablename__ = "child_parent_links"
 
     id: int = Field(primary_key=True)
 

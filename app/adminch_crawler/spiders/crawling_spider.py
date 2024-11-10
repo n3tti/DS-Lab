@@ -5,15 +5,13 @@ import pdb
 import re
 from urllib.parse import urljoin
 
-from app.adminch_crawler.items import PageItem
+import scrapy
 from scrapy.http import TextResponse
 from scrapy.linkextractors import LinkExtractor
 from scrapy.spiders import CrawlSpider, Rule
 
+from app.adminch_crawler.items import PageItem
 from app.repository.models import ScrapedPage
-
-import scrapy
-
 
 logger = logging.getLogger(__name__.split(".")[-1])
 
@@ -44,7 +42,6 @@ class CrawlingSpider(CrawlSpider):
 
     def parse_item(self, response):
 
-
         #####################################################
         cousin_urls_dict = {}
         alternate_links = response.xpath('//link[@rel="alternate"]')
@@ -56,7 +53,6 @@ class CrawlingSpider(CrawlSpider):
                 languages_dict[lang] = response.urljoin(href)
         cousin_urls_dict = languages_dict
 
-
         #####################################################
         pdf_urls = []
         for link in response.css("a::attr(href)").getall():
@@ -65,7 +61,6 @@ class CrawlingSpider(CrawlSpider):
             # get pdf links of this page
             if full_url.lower().endswith(".pdf"):
                 pdf_urls.append(full_url)
-
 
         #####################################################
         child_urls = []
@@ -83,14 +78,11 @@ class CrawlingSpider(CrawlSpider):
         #####################################################
         content_formatted_with_markdown = self.format_content_with_markdown(response)
 
-
         #####################################################
         lang = response.xpath("//html/@lang").get()
         if not lang:
             # Try meta tag if html lang is not found
-            lang = response.xpath(
-                "//meta[@http-equiv='content-language']/@content | //meta[@property='og:locale']/@content").get()
-
+            lang = response.xpath("//meta[@http-equiv='content-language']/@content | //meta[@property='og:locale']/@content").get()
 
         #####################################################
         # TODO: Change to hasattr
@@ -103,15 +95,12 @@ class CrawlingSpider(CrawlSpider):
         except Exception:
             keywords = None
 
-
         scraped_page = ScrapedPage(
             url=response.url,
             depth=response.meta["depth"],
-
             response_status_code=response.status,
             response_text=response.text,
             # response_body=response.body,
-
             # metadata
             # TODO: MOVE .decode into PYDANTIC VALIDATION OR NOT
             response_content_type=response.headers.get("Content-Type"),
@@ -119,13 +108,11 @@ class CrawlingSpider(CrawlSpider):
             response_content_encoding=response.headers.get("Content-Encoding"),
             response_last_modified=response.headers.get("Last-Modified"),
             response_date=response.headers.get("Date"),
-
-            response_metadata_lang = lang,
-            response_metadata_title = self.get_title(response),
-            response_metadata_description =  description,
-            response_metadata_keywords = keywords,
-            response_metadata_content_hash = None,
-
+            response_metadata_lang=lang,
+            response_metadata_title=self.get_title(response),
+            response_metadata_description=description,
+            response_metadata_keywords=keywords,
+            response_metadata_content_hash=None,
         )
         scraped_page.cousin_urls_dict = cousin_urls_dict
         scraped_page.pdf_urls = pdf_urls
@@ -134,10 +121,7 @@ class CrawlingSpider(CrawlSpider):
         scraped_page.img_alt_dict = img_alt_dict
         scraped_page.content_formatted_with_markdown = content_formatted_with_markdown
 
-
         yield scraped_page
-
-
 
     # handle embedded images
     def extract_images(self, response):

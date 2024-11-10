@@ -1,21 +1,16 @@
+import os
+import shutil
+from datetime import datetime
 from logging.config import fileConfig
-
-from sqlalchemy import engine_from_config
-from sqlalchemy import pool
 
 from alembic import context, runtime
 from alembic.migration import MigrationContext
-import os
-import shutil
-
-
+from sqlalchemy import engine_from_config, pool
 from sqlmodel import SQLModel
+
 from app.repository.models import BaseModel
-from datetime import datetime
 
-
-
-DATABASE_URL = os.getenv('DATABASE_URL', 'sqlite:///data/example.db')
+DATABASE_URL = os.getenv("DATABASE_URL", "sqlite:///data/example.db")
 
 # this is the Alembic Config object, which provides
 # access to the values within the .ini file in use.
@@ -27,7 +22,7 @@ if config.config_file_name is not None:
     fileConfig(config.config_file_name)
 
 
-config.set_main_option('sqlalchemy.url', DATABASE_URL)
+config.set_main_option("sqlalchemy.url", DATABASE_URL)
 
 # add your model's MetaData object here
 # for 'autogenerate' support
@@ -41,11 +36,8 @@ target_metadata = SQLModel.metadata
 # ... etc.
 
 
-
-
-
 def create_backup(revision_id: str | None):
-    db_path = DATABASE_URL.split('///')[-1]
+    db_path = DATABASE_URL.split("///")[-1]
 
     backup_path = f"{db_path}.{revision_id}.{datetime.now().strftime('%Y-%m-%dT%H_%M_%S.%f')}.backup"
 
@@ -97,9 +89,7 @@ def run_migrations_online() -> None:
     )
 
     with connectable.connect() as connection:
-        context.configure(
-            connection=connection, target_metadata=target_metadata
-        )
+        context.configure(connection=connection, target_metadata=target_metadata)
 
         with context.begin_transaction():
             context.run_migrations()

@@ -9,13 +9,16 @@ import os
 import uuid
 from abc import ABC
 
+# useful for handling different item types with a single interface
+from itemadapter import ItemAdapter
+from scrapy import Spider, logformatter
+from scrapy.exceptions import DropItem
+from simhash import Simhash
 
-
-from app.config import (
+from app.config import (  # JOBDIR,
     APPLICATION_DIR,
     IMAGE_DIR,
     IMAGE_FILE,
-    # JOBDIR,
     METADATA_DIR,
     PARENTS_DIR,
     PDF_FILE,
@@ -23,18 +26,8 @@ from app.config import (
     SAVE_LAST_ID_FILE,
     TEXT_DIR,
 )
-
-# useful for handling different item types with a single interface
-from itemadapter import ItemAdapter
-from scrapy import logformatter
-from scrapy.exceptions import DropItem
-from simhash import Simhash
-
-from app.repository.models import ScrapedPage, StatusEnum
 from app.repository.db import db
-
-from scrapy import Spider
-
+from app.repository.models import ScrapedPage, StatusEnum
 
 # class ResummablePipeline(ABC):
 #     def __init__(self):
@@ -80,7 +73,6 @@ class DiscoveredStoragePipeline:
         else:
             db.update_scraped_page_status(scraped_page_id=scraped_page.id, status=StatusEnum.REVISITED)
 
-
             scraped_page.id = existing_page.id  # set id to the scraped object
             return scraped_page
 
@@ -121,11 +113,11 @@ class IDAssignmentPipeline:
         #     raise DropItem()
 
         # if scraped_page.url not in self.seen_urls.keys():
-            # id = self.get_next_id()
-            # scraped_page.id = id
-            # self.seen_urls[scraped_page.url] = id
+        # id = self.get_next_id()
+        # scraped_page.id = id
+        # self.seen_urls[scraped_page.url] = id
         # else:
-            # scraped_page.id = self.seen_urls[scraped_page.url]
+        # scraped_page.id = self.seen_urls[scraped_page.url]
 
         for url_dic in self.url_dics:
             for url in getattr(scraped_page, url_dic, {}).keys():
@@ -215,7 +207,6 @@ class IDAssignmentPipeline:
 #             # line = json.dumps(dic)
 #             # self.save_data(PDF_FILE, line + "\n")
 #         return scraped_page
-
 
 
 # class ImagePipeline:
@@ -388,16 +379,13 @@ class CompletedStoragePipeline:
         # ###################################### PDFPipeline HERE
         # for url in scraped_page.pdf_links_dict.keys():
 
-
         # ###################################### ImagePipeline HERE
         # for img_url, img_id in scraped_page.embedded_images_dict.items():
         #     dic = {"id": img_id, "url": img_url, "alt": scraped_page.img_alt, "parent": scraped_page.id}
 
-
         # ###################################### ContentPipeline HERE -- ContentPipeline is used by HashPipeline!!!!
         # if scraped_page.content_formatted_with_markdown:
         #     scraped_page.content_formatted_with_markdown = "\n".join(line.strip() for line in scraped_page.content_formatted_with_markdown.split("\n") if line.strip())
-
 
         # ###################################### MetadataPipeline HERE
         # keys_to_save = [
@@ -426,16 +414,16 @@ class CompletedStoragePipeline:
         # for url in scraped_page.child_urls_dict:
         #     dic = {"child_id": "ID_12334", "parent": scraped_page.id, "url": url}
 
-
         # WRITE EVERYTHING HERE I THINK:
-        db.create_pdf_and_child_parent_links_and_update_status(scraped_page_id=scraped_page.id, pdf_urls=scraped_page.pdf_urls, child_urls=scraped_page.child_urls)
+        db.create_pdf_and_child_parent_links_and_update_status(
+            scraped_page_id=scraped_page.id, pdf_urls=scraped_page.pdf_urls, child_urls=scraped_page.child_urls
+        )
 
         return scraped_page
 
 
-class TEMPPipeline: ## TEMP Final Pipeline
+class TEMPPipeline:  ## TEMP Final Pipeline
     def process_item(self, scraped_page: ScrapedPage, spider: Spider) -> ScrapedPage:
         db.update_scraped_page_status(scraped_page_id=scraped_page.id, status=StatusEnum.TEMPCOMPLETED)
 
         return scraped_page
-

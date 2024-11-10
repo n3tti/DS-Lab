@@ -3,13 +3,15 @@
 # See documentation in:
 # https://docs.scrapy.org/en/latest/topics/items.html
 
-from enum import Enum
-from sqlmodel import SQLModel, Field, JSON, Relationship
-from sqlalchemy import LargeBinary, Column, DateTime, CHAR
-from sqlalchemy.sql import func
-from typing import Optional
 from datetime import datetime
+from enum import Enum
+from typing import Optional
+
 from pydantic import PrivateAttr
+from sqlalchemy import CHAR, Column, DateTime, LargeBinary
+from sqlalchemy.sql import func
+from sqlmodel import JSON, Field, Relationship, SQLModel
+
 from app.repository.models import StatusEnum
 
 
@@ -18,8 +20,6 @@ class PageItem(SQLModel):
     status: StatusEnum = StatusEnum.DISCOVERED
     depth: int
     # url: str
-
-
 
     response_status_code: int | None = None
     response_content_type: str | None = None
@@ -37,8 +37,8 @@ class PageItem(SQLModel):
 
     response_content_body: bytes | None = None  # content_body = scrapy.Field()
     response_text: str | None = None  # content = scrapy.Field()
-    
-    content_hash: str | None = None # hash = scrapy.Field()
+
+    content_hash: str | None = None  # hash = scrapy.Field()
 
     img_alt: str | None = None
     description: str | None = None

@@ -80,7 +80,7 @@ ROBOTSTXT_OBEY = False
 
 DOWNLOADER_MIDDLEWARES = {
     # 'scrapy.downloadermiddlewares.httpcache.HttpCacheMiddleware': 585,
-    'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware': 590,
+    "scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware": 590,
     # 'adminch_crawler.middlewares.RotateUserAgentMiddleware': 40,
     # 'myproject.middlewares.CustomLoggingMiddleware': 543,
     # "scrapy.spidermiddlewares.depth.DepthMiddleware": 900,
@@ -100,14 +100,13 @@ ITEM_PIPELINES = {
     "app.adminch_crawler.pipelines.DiscoveredStoragePipeline": 0,
     "app.adminch_crawler.pipelines.FilterURLPipeline": 100,
     # "app.adminch_crawler.pipelines.IDAssignmentPipeline": 200,
-# # # # # # # # # # # # "app.adminch_crawler.pipelines.ParentsPipeline": 300,
-# # # # # # # # # # # # "app.adminch_crawler.pipelines.PDFPipeline": 400,
-# # # # # # # # # # # # "app.adminch_crawler.pipelines.ImagePipeline": 500,
-# # # # # # # # # # # # "app.adminch_crawler.pipelines.ContentPipeline": 600,
+    # # # # # # # # # # # # "app.adminch_crawler.pipelines.ParentsPipeline": 300,
+    # # # # # # # # # # # # "app.adminch_crawler.pipelines.PDFPipeline": 400,
+    # # # # # # # # # # # # "app.adminch_crawler.pipelines.ImagePipeline": 500,
+    # # # # # # # # # # # # "app.adminch_crawler.pipelines.ContentPipeline": 600,
     # "app.adminch_crawler.pipelines.HashContentPipeline": 700,
-# # # # # # # # # # # # "app.adminch_crawler.pipelines.MetadataPipeline": 800,
+    # # # # # # # # # # # # "app.adminch_crawler.pipelines.MetadataPipeline": 800,
     # "adminch_crawler.pipelines.DownloadContentPipeline": 400,
-
     "app.adminch_crawler.pipelines.CompletedStoragePipeline": 1000,
     "app.adminch_crawler.pipelines.TEMPPipeline": 10000,
 }

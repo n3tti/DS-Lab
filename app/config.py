@@ -1,6 +1,6 @@
 import os
 
-DATABASE_URL = os.getenv('DATABASE_URL', 'sqlite:///data/example.db')
+DATABASE_URL = os.getenv("DATABASE_URL", "sqlite:///data/example.db")
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
