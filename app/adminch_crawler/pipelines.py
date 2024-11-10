@@ -94,13 +94,13 @@ class FilterURLPipeline:
         logging.getLogger(spider.name).info(f"Processing url: {scraped_page}")
 
         if scraped_page.response_status_code != 200:
-            # TODO: UPDADE DB STATUS TO FAILED
+            db.update_scraped_page_status(StatusEnum.FAILED)
             raise DropItem(f"HTTP Status: {scraped_page.response_status_code}: {scraped_page}.")
         elif scraped_page.response_content_type is None:
-            # TODO: UPDADE DB STATUS TO FAILED
+            db.update_scraped_page_status(StatusEnum.FAILED)
             raise DropItem(f"Content_type is None.")
         elif not scraped_page.response_content_type.split(";")[0] in self.allowed_content_type:
-            # TODO: UPDADE DB STATUS TO FAILED
+            db.update_scraped_page_status(StatusEnum.FAILED)
             raise DropItem(f"Content type \"{scraped_page.response_content_type.split(';')[0]}\" is not allowed.")
 
         return scraped_page

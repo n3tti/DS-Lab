@@ -79,7 +79,7 @@ class Database:
                 child_link = ChildParentLink(child_url=url, parent_link=scraped_page)
                 session.add(child_link)
 
-            scraped_page.status = StatusEnum.COMPLETED.value
+            scraped_page.status = StatusEnum.COMPLETED
 
 
 db = Database()
