@@ -38,11 +38,11 @@ class ScrapedPage(SQLModel, table=True):
     child_link: list["ChildParentLink"] = Relationship(back_populates="parent_link")
 
     # TODO: CHANGE TO LISTS
-    _cousin_urls: list[HttpUrl]#PrivateAttr()#Field(default_factory=dict, repr=False)#{}#PrivateAttr()#default_factory=dict)
+    _cousin_urls_dict: dict[str, HttpUrl]#PrivateAttr()#Field(default_factory=dict, repr=False)#{}#PrivateAttr()#default_factory=dict)
     _pdf_links: list[HttpUrl]#PrivateAttr()#Field(default_factory=dict, repr=False)#{}#PrivateAttr()#default_factory=dict)
     _child_urls: list[HttpUrl]#PrivateAttr()#Field(default_factory=dict, repr=False)#{}#PrivateAttr()#default_factory=dict)
     _embedded_images: list[HttpUrl]
-    _img_alt: str | None = None
+    _img_alt_dict: dict[HttpUrl, str]
     _content_formatted_with_markdown: str | None = None
 
 
@@ -91,43 +91,43 @@ class ScrapedPage(SQLModel, table=True):
     # A lot of getters and setters below
     @property
     def cousin_urls_dict(self):
-        return self._cousin_urls
+        return self._cousin_urls_dict
 
     @cousin_urls_dict.setter
     def cousin_urls_dict(self, value: dict[str, str]):
-        self._cousin_urls = value
+        self._cousin_urls_dict = value
 
     @property
-    def pdf_links_dict(self):
+    def pdf_links(self):
         return self._pdf_links
 
-    @pdf_links_dict.setter
-    def pdf_links_dict(self, value: dict[str, str]):
+    @pdf_links.setter
+    def pdf_links(self, value: dict[str, str]):
         self._pdf_links = value
 
     @property
-    def child_urls_dict(self):
+    def child_urls(self):
         return self._child_urls
 
-    @child_urls_dict.setter
-    def child_urls_dict(self, value: dict[str, str]):
+    @child_urls.setter
+    def child_urls(self, value: dict[str, str]):
         self._child_urls = value
 
     @property
-    def embedded_images_dict(self):
+    def embedded_images(self):
         return self._embedded_images
 
-    @embedded_images_dict.setter
-    def embedded_images_dict(self, value: dict[str, str]):
+    @embedded_images.setter
+    def embedded_images(self, value: dict[str, str]):
         self._embedded_images = value
 
     @property
-    def img_alt(self):
-        return self._img_alt
+    def img_alt_dict(self):
+        return self._img_alt_dict_dict
 
-    @img_alt.setter
-    def img_alt(self, value: dict[str, str]):
-        self._img_alt = value
+    @img_alt_dict.setter
+    def img_alt_dict(self, value: dict[str, str]):
+        self._img_alt_dict = value
 
     @property
     def content_formatted_with_markdown(self):

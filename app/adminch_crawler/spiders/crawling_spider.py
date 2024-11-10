@@ -49,7 +49,7 @@ class CrawlingSpider(CrawlSpider):
 
 
         #####################################################
-        cousin_urls = {}
+        cousin_urls_dict = {}
         alternate_links = response.xpath('//link[@rel="alternate"]')
         languages_dict = {}
         for link in alternate_links:
@@ -57,31 +57,31 @@ class CrawlingSpider(CrawlSpider):
             href = link.xpath("@href").get()
             if lang and href:
                 languages_dict[lang] = response.urljoin(href)
-        cousin_urls = languages_dict
+        cousin_urls_dict = languages_dict
 
 
         #####################################################
-        pdf_links = {}
+        pdf_links = []
         for link in response.css("a::attr(href)").getall():
             full_url = urljoin(response.url, link)
 
             # get pdf links of this page
             if full_url.lower().endswith(".pdf"):
-                pdf_links[full_url] = None
+                pdf_links.append(full_url)
 
 
         #####################################################
-        child_urls = {}
+        child_urls = []
         for link in response.css("a::attr(href)").getall():
             full_url = urljoin(response.url, link)
 
             # get child and cousin urls
             # TBD: can't it be just `full_url.lower().endswith(".pdf")` <-> `link not in pdf_links.keys()` ?
-            if link not in cousin_urls.keys() and link not in pdf_links.keys() and link != response.url:
-                child_urls[full_url] = None
+            if link not in cousin_urls_dict.keys() and link not in pdf_links.keys() and link != response.url:
+                child_urls.append(full_url)
 
         #####################################################
-        embedded_images, img_alt = self.extract_images(response)
+        embedded_images, img_alt_dict = self.extract_images(response)
 
         #####################################################
         content_formatted_with_markdown = self.format_content_with_markdown(response)
@@ -130,11 +130,11 @@ class CrawlingSpider(CrawlSpider):
             response_metadata_content_hash = None,
 
         )
-        scraped_page.cousin_urls = cousin_urls
+        scraped_page.cousin_urls_dict = cousin_urls_dict
         scraped_page.pdf_links = pdf_links
         scraped_page.child_urls = child_urls
         scraped_page.embedded_images = embedded_images
-        scraped_page.img_alt = img_alt
+        scraped_page.img_alt_dict = img_alt_dict
         scraped_page.content_formatted_with_markdown = content_formatted_with_markdown
 
 
@@ -145,16 +145,16 @@ class CrawlingSpider(CrawlSpider):
     # handle embedded images
     def extract_images(self, response):
         """Extract embedded images from content"""
-        images = {}
-        img_alt = {}
+        images = []
+        img_alt_dict = {}
         for img in response.css("img"):
             src = img.attrib.get("src")
             if src:
                 full_url = urljoin(response.url, src)
                 alt = img.attrib.get("alt", "")
-                images[full_url] = None
-                img_alt[full_url] = alt
-        return images, img_alt
+                images.append(full_url)
+                img_alt_dict[full_url] = alt
+        return images, img_alt_dict
 
     # extract title from multiple sources
     def get_title(self, response):
