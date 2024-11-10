@@ -5,6 +5,7 @@ from sqlalchemy.sql import func
 from typing import Optional
 from datetime import datetime
 from pydantic import PrivateAttr, HttpUrl
+from pydantic import BaseModel, validator, ValidationError
 
 
 
@@ -39,7 +40,7 @@ class ScrapedPage(SQLModel, table=True):
 
     # TODO: CHANGE TO LISTS
     _cousin_urls_dict: dict[str, HttpUrl]#PrivateAttr()#Field(default_factory=dict, repr=False)#{}#PrivateAttr()#default_factory=dict)
-    _pdf_url: list[HttpUrl]#PrivateAttr()#Field(default_factory=dict, repr=False)#{}#PrivateAttr()#default_factory=dict)
+    _pdf_urls: list[HttpUrl]#PrivateAttr()#Field(default_factory=dict, repr=False)#{}#PrivateAttr()#default_factory=dict)
     _child_urls: list[HttpUrl]#PrivateAttr()#Field(default_factory=dict, repr=False)#{}#PrivateAttr()#default_factory=dict)
     _embedded_images: list[HttpUrl]
     _img_alt_dict: dict[HttpUrl, str]
@@ -72,21 +73,25 @@ class ScrapedPage(SQLModel, table=True):
 
 
     def __str__(self):
-        model_dict = self.dict(include={"id", "url", "status"})
+        model_dict = self.model_dump(include={"id", "url", "status"})
         return f"{type(self).__name__}({model_dict})"
 
     @validator('response_content_type', 'response_content_encoding', 'response_last_modified', 'response_date', pre=True, always=True)
     def decode_utf8(cls, v):
-        return v.decode('utf-8') if v is not None else None
+        if isinstance(v, bytes):
+            return v.decode('utf-8')
+        return v
 
     @validator('response_content_length', pre=True, always=True)
     def convert_length_to_int(cls, v):
-        if v is None:
-            return None
-        try:
-            return int(v.decode('utf-8'))
-        except ValueError:
-            return None
+        if isinstance(v, bytes):
+            try:
+                return int(v.decode('utf-8'))
+            except ValueError:
+                pass
+        elif isinstance(v, int):
+            return v
+        return None 
 
     # A lot of getters and setters below
     @property
@@ -98,12 +103,12 @@ class ScrapedPage(SQLModel, table=True):
         self._cousin_urls_dict = value
 
     @property
-    def pdf_url(self):
-        return self._pdf_url
+    def pdf_urls(self):
+        return self._pdf_urls
 
-    @pdf_url.setter
-    def pdf_url(self, value: dict[str, str]):
-        self._pdf_url = value
+    @pdf_urls.setter
+    def pdf_urls(self, value: dict[str, str]):
+        self._pdf_urls = value
 
     @property
     def child_urls(self):
@@ -154,7 +159,7 @@ class PDFLink(SQLModel, table=True):
     updated_at: datetime | None = Field(default=None, sa_column=Column(DateTime(timezone=True), onupdate=func.now()))
 
     def __str__(self):
-        model_dict = self.dict()
+        model_dict = self.model_dump()
         return f"{type(self).__name__}({model_dict})"
 
 
@@ -172,5 +177,5 @@ class ChildParentLink(SQLModel, table=True):
     updated_at: datetime | None = Field(default=None, sa_column=Column(DateTime(timezone=True), onupdate=func.now()))
 
     def __str__(self):
-        model_dict = self.dict()
+        model_dict = self.model_dump()
         return f"{type(self).__name__}({model_dict})"

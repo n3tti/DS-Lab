@@ -61,13 +61,13 @@ class CrawlingSpider(CrawlSpider):
 
 
         #####################################################
-        pdf_links = []
+        pdf_urls = []
         for link in response.css("a::attr(href)").getall():
             full_url = urljoin(response.url, link)
 
             # get pdf links of this page
             if full_url.lower().endswith(".pdf"):
-                pdf_links.append(full_url)
+                pdf_urls.append(full_url)
 
 
         #####################################################
@@ -76,8 +76,8 @@ class CrawlingSpider(CrawlSpider):
             full_url = urljoin(response.url, link)
 
             # get child and cousin urls
-            # TBD: can't it be just `full_url.lower().endswith(".pdf")` <-> `link not in pdf_links.keys()` ?
-            if link not in cousin_urls_dict.keys() and link not in pdf_links.keys() and link != response.url:
+            # TBD: can't it be just `full_url.lower().endswith(".pdf")` <-> `link not in pdf_urls.keys()` ?
+            if link not in cousin_urls_dict.keys() and link not in pdf_urls and link != response.url:
                 child_urls.append(full_url)
 
         #####################################################
@@ -88,11 +88,11 @@ class CrawlingSpider(CrawlSpider):
 
 
         #####################################################
+        lang = response.xpath("//html/@lang").get()
         if not lang:
             # Try meta tag if html lang is not found
             lang = response.xpath(
                 "//meta[@http-equiv='content-language']/@content | //meta[@property='og:locale']/@content").get()
-        item["lang"] = lang
 
 
         #####################################################
@@ -131,7 +131,7 @@ class CrawlingSpider(CrawlSpider):
 
         )
         scraped_page.cousin_urls_dict = cousin_urls_dict
-        scraped_page.pdf_links = pdf_links
+        scraped_page.pdf_urls = pdf_urls
         scraped_page.child_urls = child_urls
         scraped_page.embedded_images = embedded_images
         scraped_page.img_alt_dict = img_alt_dict
