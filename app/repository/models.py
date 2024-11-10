@@ -38,10 +38,10 @@ class ScrapedPage(SQLModel, table=True):
     child_link: list["ChildParentLink"] = Relationship(back_populates="parent_link")
 
     # TODO: CHANGE TO SETS
-    _cousin_urls_dict: dict[HttpUrl, str]#PrivateAttr()#Field(default_factory=dict, repr=False)#{}#PrivateAttr()#default_factory=dict)
-    _pdf_links_dict: dict[HttpUrl, str]#PrivateAttr()#Field(default_factory=dict, repr=False)#{}#PrivateAttr()#default_factory=dict)
-    _child_urls_dict: dict[HttpUrl, str]#PrivateAttr()#Field(default_factory=dict, repr=False)#{}#PrivateAttr()#default_factory=dict)
-    _embedded_images_dict: dict[HttpUrl, str]
+    _cousin_urls_dict: list[HttpUrl]#PrivateAttr()#Field(default_factory=dict, repr=False)#{}#PrivateAttr()#default_factory=dict)
+    _pdf_links_dict: list[HttpUrl]#PrivateAttr()#Field(default_factory=dict, repr=False)#{}#PrivateAttr()#default_factory=dict)
+    _child_urls_dict: list[HttpUrl]#PrivateAttr()#Field(default_factory=dict, repr=False)#{}#PrivateAttr()#default_factory=dict)
+    _embedded_images_dict: list[HttpUrl]
     _img_alt: str | None = None
     _content_formatted_with_markdown: str | None = None
 
