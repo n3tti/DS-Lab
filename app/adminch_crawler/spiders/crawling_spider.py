@@ -44,9 +44,6 @@ class CrawlingSpider(CrawlSpider):
 
     def parse_item(self, response):
 
-        # item = PageItem()
-        # item = scrapy.Item()
-
 
         #####################################################
         cousin_urls_dict = {}

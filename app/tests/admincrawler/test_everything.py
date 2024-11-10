@@ -19,6 +19,7 @@ import pytest
 
 
 
+# @pytest.mark.skip
 @patch('app.adminch_crawler.pipelines.db')
 def test_scraped_page_pipeline_response_status_code_ne_200(mock_db, mock_spider: Spider,  scraped_page_factory: ScrapedPageFactory):
     scraped_page = scraped_page_factory.build(response_status_code=404)

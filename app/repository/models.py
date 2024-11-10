@@ -5,15 +5,23 @@ from sqlalchemy.sql import func
 from typing import Optional
 from datetime import datetime
 from pydantic import PrivateAttr, HttpUrl
-from pydantic import BaseModel, validator, ValidationError
+from pydantic import field_validator, ValidationError
+from sqlmodel._compat import SQLModelConfig
 
 
 
 class BaseModel(SQLModel):
-    class Config:
+    class ConfigDict:
         from_attributes = True
         use_enum_values = True
         populate_by_name = False
+
+
+class SQLModelValidation(BaseModel):
+    """
+    Helper class to allow for validation in SQLModel classes with table=True
+    """
+    model_config = SQLModelConfig(from_attributes=True, validate_assignment=True)
 
 
 class StatusEnum(str, Enum):
@@ -26,7 +34,10 @@ class StatusEnum(str, Enum):
     TEMPCOMPLETED = "TempCompleted"
 
 
-class ScrapedPage(SQLModel, table=True):
+
+
+
+class ScrapedPage(SQLModelValidation, table=True):
     __tablename__ = 'scraped_pages'
 
     id: int = Field(primary_key=True)
@@ -38,16 +49,12 @@ class ScrapedPage(SQLModel, table=True):
     pdf_link: list["PDFLink"] = Relationship(back_populates="scraped_page")
     child_link: list["ChildParentLink"] = Relationship(back_populates="parent_link")
 
-    # TODO: CHANGE TO LISTS
-    _cousin_urls_dict: dict[str, HttpUrl]#PrivateAttr()#Field(default_factory=dict, repr=False)#{}#PrivateAttr()#default_factory=dict)
-    _pdf_urls: list[HttpUrl]#PrivateAttr()#Field(default_factory=dict, repr=False)#{}#PrivateAttr()#default_factory=dict)
-    _child_urls: list[HttpUrl]#PrivateAttr()#Field(default_factory=dict, repr=False)#{}#PrivateAttr()#default_factory=dict)
-    _embedded_images: list[HttpUrl]
-    _img_alt_dict: dict[HttpUrl, str]
-    _content_formatted_with_markdown: str | None = None
-
-
-
+    _cousin_urls_dict: dict[str, HttpUrl] = PrivateAttr(default_factory=dict)
+    _pdf_urls: list[HttpUrl] = PrivateAttr(default_factory=list)
+    _child_urls: list[HttpUrl] = PrivateAttr(default_factory=list)
+    _embedded_images: list[HttpUrl] = PrivateAttr(default_factory=list)
+    _img_alt_dict: dict[HttpUrl, str] = PrivateAttr(default_factory=dict)
+    _content_formatted_with_markdown: str | None = PrivateAttr(default=None)
 
     response_status_code: int | None = Field(default=None, description="HTTP status code of the response")
     response_text: str | None = Field(default=None, description="Text portion of the HTTP response")
@@ -76,14 +83,17 @@ class ScrapedPage(SQLModel, table=True):
         model_dict = self.model_dump(include={"id", "url", "status"})
         return f"{type(self).__name__}({model_dict})"
 
-    @validator('response_content_type', 'response_content_encoding', 'response_last_modified', 'response_date', pre=True, always=True)
-    def decode_utf8(cls, v):
+    @classmethod
+    @field_validator('response_content_type', 'response_content_encoding', 'response_last_modified', 'response_date', mode="before")
+    def decode_utf8(cls, v) -> str:
         if isinstance(v, bytes):
-            return v.decode('utf-8')
+            result = v.decode('utf-8')
+            return result
         return v
 
-    @validator('response_content_length', pre=True, always=True)
-    def convert_length_to_int(cls, v):
+    @field_validator('response_content_length', mode="before")
+    @classmethod
+    def convert_length_to_int(cls, v) -> str:
         if isinstance(v, bytes):
             try:
                 return int(v.decode('utf-8'))
@@ -144,7 +154,7 @@ class ScrapedPage(SQLModel, table=True):
 
 
 
-class PDFLink(SQLModel, table=True):
+class PDFLink(SQLModelValidation, table=True):
     __tablename__ = 'pdf_links'
 
     id: int = Field(primary_key=True)
@@ -163,7 +173,7 @@ class PDFLink(SQLModel, table=True):
         return f"{type(self).__name__}({model_dict})"
 
 
-class ChildParentLink(SQLModel, table=True):
+class ChildParentLink(SQLModelValidation, table=True):
     __tablename__ = 'child_parent_links'
 
     id: int = Field(primary_key=True)
