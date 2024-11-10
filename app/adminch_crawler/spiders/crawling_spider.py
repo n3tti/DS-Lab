@@ -186,6 +186,6 @@ class CrawlingSpider(CrawlSpider):
 
             except Exception as e:
                 print(e)
-                logger.error(f"{e} \n url: {item["url"]}, element: {element}")
+                logger.error(f"{e} \n url: {response.url}, element: {element}")
 
         return "".join(content_parts)
