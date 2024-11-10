@@ -428,7 +428,7 @@ class CompletedStoragePipeline:
 
 
         # WRITE EVERYTHING HERE I THINK:
-        db.create_pdf_and_child_parent_links_and_update_status(scraped_page_id=scraped_page.id, pdf_urls=["my_pdf_url1.com", "my_pdf_url2.com"], child_urls=["my_child_url1.com", "my_child_url2.com"])
+        db.create_pdf_and_child_parent_links_and_update_status(scraped_page_id=scraped_page.id, pdf_urls=scraped_page.pdf_urls, child_urls=scraped_page.child_urls)
 
         return scraped_page
 

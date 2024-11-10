@@ -39,7 +39,7 @@ class ScrapedPage(SQLModel, table=True):
 
     # TODO: CHANGE TO LISTS
     _cousin_urls_dict: dict[str, HttpUrl]#PrivateAttr()#Field(default_factory=dict, repr=False)#{}#PrivateAttr()#default_factory=dict)
-    _pdf_links: list[HttpUrl]#PrivateAttr()#Field(default_factory=dict, repr=False)#{}#PrivateAttr()#default_factory=dict)
+    _pdf_url: list[HttpUrl]#PrivateAttr()#Field(default_factory=dict, repr=False)#{}#PrivateAttr()#default_factory=dict)
     _child_urls: list[HttpUrl]#PrivateAttr()#Field(default_factory=dict, repr=False)#{}#PrivateAttr()#default_factory=dict)
     _embedded_images: list[HttpUrl]
     _img_alt_dict: dict[HttpUrl, str]
@@ -98,12 +98,12 @@ class ScrapedPage(SQLModel, table=True):
         self._cousin_urls_dict = value
 
     @property
-    def pdf_links(self):
-        return self._pdf_links
+    def pdf_url(self):
+        return self._pdf_url
 
-    @pdf_links.setter
-    def pdf_links(self, value: dict[str, str]):
-        self._pdf_links = value
+    @pdf_url.setter
+    def pdf_url(self, value: dict[str, str]):
+        self._pdf_url = value
 
     @property
     def child_urls(self):
