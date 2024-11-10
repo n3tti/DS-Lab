@@ -71,7 +71,7 @@ class DiscoveredStoragePipeline:
         existing_page = db.get_scraped_page(url=scraped_page.url)
 
         if existing_page is None:
-            created_page = db.create_scraped_page(scraped_page.dict())
+            created_page = db.create_scraped_page(scraped_page.model_dump())
             scraped_page.id = created_page.id  # set id to the scraped object
             return scraped_page
 
@@ -94,13 +94,13 @@ class FilterURLPipeline:
         logging.getLogger(spider.name).info(f"Processing url: {scraped_page}")
 
         if scraped_page.response_status_code != 200:
-            db.update_scraped_page_status(StatusEnum.FAILED)
+            db.update_scraped_page_status(scraped_page.id, StatusEnum.FAILED)
             raise DropItem(f"HTTP Status: {scraped_page.response_status_code}: {scraped_page}.")
         elif scraped_page.response_content_type is None:
-            db.update_scraped_page_status(StatusEnum.FAILED)
-            raise DropItem(f"Content_type is None.")
+            db.update_scraped_page_status(scraped_page.id, StatusEnum.FAILED)
+            raise DropItem("Content_type is None.")
         elif not scraped_page.response_content_type.split(";")[0] in self.allowed_content_type:
-            db.update_scraped_page_status(StatusEnum.FAILED)
+            db.update_scraped_page_status(scraped_page.id, StatusEnum.FAILED)
             raise DropItem(f"Content type \"{scraped_page.response_content_type.split(';')[0]}\" is not allowed.")
 
         return scraped_page
