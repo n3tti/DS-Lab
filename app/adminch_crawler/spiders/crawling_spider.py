@@ -100,6 +100,8 @@ class CrawlingSpider(CrawlSpider):
             url=response.url,
             depth=response.meta["depth"],
 
+            response_metadata_lang = response.xpath("//html/@lang").get(),
+
             response_status_code=response.status,
             # item["depth"] = response.meta["depth"]
 
@@ -111,7 +113,6 @@ class CrawlingSpider(CrawlSpider):
             # item["content_encoding"] = response.headers.get("Content-Encoding", b"").decode("utf-8") if response.headers.get("Content-Encoding") else None,
             # item["last_modified"] = response.headers.get("Last-Modified").decode("utf-8") if response.headers.get("Last-Modified") else None,
             # item["date"] = response.headers.get("Date").decode("utf-8") if response.headers.get("Date") else None,
-
 
 
 

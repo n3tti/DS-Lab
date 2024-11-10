@@ -78,7 +78,8 @@ class DiscoveredStoragePipeline:
         elif existing_page.status == StatusEnum.COMPLETED:
             raise DropItem(f"url: '{scraped_page.url}' is already COMPLETED.")
         else:
-            db.update_scraped_page_status(url=scraped_page.url, status=StatusEnum.REVISITED)
+            db.update_scraped_page_status(scraped_page_id=scraped_page.id, status=StatusEnum.REVISITED)
+
 
             scraped_page.id = existing_page.id  # set id to the scraped object
             return scraped_page
@@ -93,10 +94,13 @@ class FilterURLPipeline:
         logging.getLogger(spider.name).info(f"Processing url: {scraped_page}")
 
         if scraped_page.response_status_code != 200:
+            # TODO: UPDADE DB STATUS TO FAILED
             raise DropItem(f"HTTP Status: {scraped_page.response_status_code}: {scraped_page}.")
         elif scraped_page.response_content_type is None:
+            # TODO: UPDADE DB STATUS TO FAILED
             raise DropItem(f"Content_type is None.")
         elif not scraped_page.response_content_type.split(";")[0] in self.allowed_content_type:
+            # TODO: UPDADE DB STATUS TO FAILED
             raise DropItem(f"Content type \"{scraped_page.response_content_type.split(';')[0]}\" is not allowed.")
 
         return scraped_page
@@ -200,7 +204,6 @@ class IDAssignmentPipeline:
 
 #     def process_item(self, scraped_page: ScrapedPage, spider: Spider) -> ScrapedPage:
 #         for pdf_url in scraped_page.pdf_links_dict.keys():
-#             print("pdf_url", pdf_url)
 #         # for pdf_url, id in item["pdf_links"].items():
 #             # CREATE A NEW OJBECT IN DB HERE
 #             # new_pdf_link = db.create_pdf_link({
@@ -208,7 +211,6 @@ class IDAssignmentPipeline:
 #             #     "lang": pdf_url["lang"],
 #             #     "scraped_page_id": scraped_page.id,  # assuming the scraped page with ID 1 already exists in your database
 #             # })
-#             # print(new_pdf_link)
 #             # dic = {"id": id, "url": pdf_url, "lang": item["lang"], "parent": item["id"]}
 #             # line = json.dumps(dic)
 #             # self.save_data(PDF_FILE, line + "\n")
@@ -233,7 +235,6 @@ class IDAssignmentPipeline:
 #         # for img_url, id in item["embedded_images"].items():
 #         for img_url, img_id in scraped_page.embedded_images_dict.items():
 #             dic = {"id": img_id, "url": img_url, "alt": scraped_page.img_alt, "parent": scraped_page.id}
-#             print("my DIC", dic)
 #             # line = json.dumps(dic)
 #             # self.save_data(IMAGE_FILE, line + "\n")
 #         return scraped_page
@@ -244,7 +245,6 @@ class IDAssignmentPipeline:
 #         # Clean and validate content
 #         if scraped_page.content_formatted_with_markdown:
 #             scraped_page.content_formatted_with_markdown = "\n".join(line.strip() for line in scraped_page.content_formatted_with_markdown.split("\n") if line.strip())
-#             print("content_formatted_with_markdown", scraped_page.content_formatted_with_markdown)
 #         return scraped_page
 
 
@@ -275,7 +275,6 @@ class HashContentPipeline:
 #         for url in scraped_page.child_urls_dict:
 #         # for child_id in item["child_urls"].values():
 #             dic = {"url": url, "id": "ID_12334", "parent": scraped_page.id}
-#             print(dic)
 #             # line = json.dumps(dic)
 #             # self.save_data(PARENTS_DIR, line + "\n")
 #         return scraped_page
@@ -376,7 +375,6 @@ class HashContentPipeline:
 #                         if os.path.isfile(file_path) or os.path.islink(file_path):
 #                             os.unlink(file_path)
 #                     except Exception as e:
-#                         print(f"Failed to delete {file_path}. Reason: {e}")
 #             else:
 #                 os.makedirs(path)
 
@@ -389,7 +387,6 @@ class CompletedStoragePipeline:
 
         # ###################################### PDFPipeline HERE
         # for url in scraped_page.pdf_links_dict.keys():
-        #     print("pdf_url", url)
 
 
         # ###################################### ImagePipeline HERE
@@ -400,7 +397,6 @@ class CompletedStoragePipeline:
         # ###################################### ContentPipeline HERE
         # if scraped_page.content_formatted_with_markdown:
         #     scraped_page.content_formatted_with_markdown = "\n".join(line.strip() for line in scraped_page.content_formatted_with_markdown.split("\n") if line.strip())
-        #     print("content_formatted_with_markdown", scraped_page.content_formatted_with_markdown)
 
 
         # ###################################### MetadataPipeline HERE
@@ -426,19 +422,20 @@ class CompletedStoragePipeline:
         # dic = {}
         # for key in keys_to_save:
         #     dic[key] = getattr(scraped_page, key)
-        # print(dic)
 
-        for url in scraped_page.child_urls_dict:
-            dic = {"child_id": "ID_12334", "parent": scraped_page.id, "url": url}
-            print(dic)
+        # for url in scraped_page.child_urls_dict:
+        #     dic = {"child_id": "ID_12334", "parent": scraped_page.id, "url": url}
 
+
+        # WRITE EVERYTHING HERE I THINK:
+        db.create_pdf_and_child_parent_links_and_update_status(scraped_page_id=scraped_page.id, pdf_urls=["my_pdf_url1.com", "my_pdf_url2.com"], child_urls=["my_child_url1.com", "my_child_url2.com"])
 
         return scraped_page
 
 
 class TEMPPipeline: ## TEMP Final Pipeline
     def process_item(self, scraped_page: ScrapedPage, spider: Spider) -> ScrapedPage:
-        db.update_scraped_page_status(url=scraped_page.url, status=StatusEnum.TEMPCOMPLETED)
+        db.update_scraped_page_status(scraped_page_id=scraped_page.id, status=StatusEnum.TEMPCOMPLETED)
 
         return scraped_page
 

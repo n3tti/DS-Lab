@@ -29,11 +29,13 @@ class ScrapedPage(SQLModel, table=True):
     __tablename__ = 'scraped_pages'
 
     id: int = Field(primary_key=True)
+
     url: str = Field(index=True, unique=True)
     status: StatusEnum = Field(default=StatusEnum.DISCOVERED)
     depth: int = Field()
 
-    pdf_links: list["PDFLink"] = Relationship(back_populates="scraped_pages")
+    pdf_link: list["PDFLink"] = Relationship(back_populates="scraped_page")
+    child_link: list["ChildParentLink"] = Relationship(back_populates="parent_link")
 
     # TODO: CHANGE TO SETS
     _cousin_urls_dict: dict[HttpUrl, str]#PrivateAttr()#Field(default_factory=dict, repr=False)#{}#PrivateAttr()#default_factory=dict)
@@ -56,17 +58,12 @@ class ScrapedPage(SQLModel, table=True):
     response_last_modified: str | None = Field(default=None, description="Last modified date of the response")
     response_date: str | None = Field(default=None, description="Date of the response")
 
-    response_metadata_lang: str | None = Field(default=None, description="Language of the content derived from the HTML tag")
+    response_metadata_lang: str | None = Field(default=None, sa_column=CHAR(2), description="Language of the content derived from the HTML tag")
     response_metadata_title: str | None = Field(default=None, description="Title of the content")
     response_metadata_content: str | None = Field(default=None, description="Actual content (body)")
     response_metadata_description: str | None = Field(default=None, description="Description of the content")
     response_metadata_keywords: list[str] = Field(default_factory=list, sa_column=Column(JSON), description="Keywords associated with the content")
     response_metadata_content_hash: str | None = Field(default=None, description="Hash of the response content")
-
-    # response_metadata_cousin_urls: Dict[str, HttpUrl] = {}  # URLs related to the response
-    # response_metadata_pdf_links: list[HttpUrl] = []    # PDF links found in the content
-    # response_metadata_embedded_images: list[HttpUrl] = []  # Images embedded in the content
-
 
 
 
@@ -76,8 +73,9 @@ class ScrapedPage(SQLModel, table=True):
 
     def __str__(self):
         model_dict = self.dict(include={"id", "url", "status"})
-        return str(model_dict)
+        return f"{type(self).__name__}({model_dict})"
 
+    # A lot of getters and setters below
     @property
     def cousin_urls_dict(self):
         return self._cousin_urls_dict
@@ -127,22 +125,39 @@ class ScrapedPage(SQLModel, table=True):
         self._content_formatted_with_markdown = value
 
 
-    # class Config:
-    #     populate_by_name = True
-
-
 
 class PDFLink(SQLModel, table=True):
     __tablename__ = 'pdf_links'
+
     id: int = Field(primary_key=True)
+
     url: str = Field(index=True)
-    lang: str = Field(sa_column=CHAR(2))
-
+    lang: str | None = Field(sa_column=CHAR(2))
     scraped_page_id: int = Field(default=None, foreign_key="scraped_pages.id")
-    scraped_pages: "ScrapedPage" = Relationship(back_populates="pdf_links")
 
-    created_at: datetime = Field(default_factory=datetime.utcnow)
-    updated_at: datetime = Field(default_factory=datetime.utcnow)
+    scraped_page: "ScrapedPage" = Relationship(back_populates="pdf_link")
+
+    created_at: datetime = Field(sa_column=Column(DateTime(timezone=True), server_default=func.now()))
+    updated_at: datetime | None = Field(default=None, sa_column=Column(DateTime(timezone=True), onupdate=func.now()))
 
     def __str__(self):
-        return f"PDFLink(id={self.id}, url={self.url}, lang={self.lang}, scraped_page_id={self.scraped_page_id})"
+        model_dict = self.dict()
+        return f"{type(self).__name__}({model_dict})"
+
+
+class ChildParentLink(SQLModel, table=True):
+    __tablename__ = 'child_parent_links'
+
+    id: int = Field(primary_key=True)
+
+    parent_id: int = Field(default=None, foreign_key="scraped_pages.id", description="scraped_page.id")
+    child_url: str = Field(index=True)
+
+    parent_link: "ScrapedPage" = Relationship(back_populates="child_link")
+
+    created_at: datetime = Field(sa_column=Column(DateTime(timezone=True), server_default=func.now()))
+    updated_at: datetime | None = Field(default=None, sa_column=Column(DateTime(timezone=True), onupdate=func.now()))
+
+    def __str__(self):
+        model_dict = self.dict()
+        return f"{type(self).__name__}({model_dict})"
