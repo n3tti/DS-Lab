@@ -6,7 +6,6 @@
 import random
 
 # useful for handling different item types with a single interface
-from itemadapter import ItemAdapter, is_item
 from scrapy import signals
 
 

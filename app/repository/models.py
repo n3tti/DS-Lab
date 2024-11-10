@@ -1,8 +1,7 @@
 from datetime import datetime
 from enum import Enum
-from typing import Optional
 
-from pydantic import HttpUrl, PrivateAttr, ValidationError, field_validator
+from pydantic import HttpUrl, PrivateAttr, field_validator
 from sqlalchemy import CHAR, Column, DateTime, LargeBinary
 from sqlalchemy.sql import func
 from sqlmodel import JSON, Field, Relationship, SQLModel
@@ -14,12 +13,6 @@ class BaseModel(SQLModel):
         from_attributes = True
         use_enum_values = True
         populate_by_name = False
-
-
-class SQLModelValidation(BaseModel):
-    """
-    Helper class to allow for validation in SQLModel classes with table=True
-    """
 
     model_config = SQLModelConfig(from_attributes=True, validate_assignment=True)
 
@@ -34,7 +27,7 @@ class StatusEnum(str, Enum):
     TEMPCOMPLETED = "TempCompleted"
 
 
-class ScrapedPage(SQLModelValidation, table=True):
+class ScrapedPage(BaseModel, table=True):
     __tablename__ = "scraped_pages"
 
     id: int = Field(primary_key=True)
@@ -147,7 +140,7 @@ class ScrapedPage(SQLModelValidation, table=True):
         self._content_formatted_with_markdown = value
 
 
-class PDFLink(SQLModelValidation, table=True):
+class PDFLink(BaseModel, table=True):
     __tablename__ = "pdf_links"
 
     id: int = Field(primary_key=True)
@@ -166,7 +159,7 @@ class PDFLink(SQLModelValidation, table=True):
         return f"{type(self).__name__}({model_dict})"
 
 
-class ChildParentLink(SQLModelValidation, table=True):
+class ChildParentLink(BaseModel, table=True):
     __tablename__ = "child_parent_links"
 
     id: int = Field(primary_key=True)

@@ -1,16 +1,9 @@
-import glob
 import logging
-import os
-import pdb
-import re
 from urllib.parse import urljoin
 
-import scrapy
-from scrapy.http import TextResponse
 from scrapy.linkextractors import LinkExtractor
 from scrapy.spiders import CrawlSpider, Rule
 
-from app.adminch_crawler.items import PageItem
 from app.repository.models import ScrapedPage
 
 logger = logging.getLogger(__name__.split(".")[-1])
@@ -101,8 +94,6 @@ class CrawlingSpider(CrawlSpider):
             response_status_code=response.status,
             response_text=response.text,
             # response_body=response.body,
-            # metadata
-            # TODO: MOVE .decode into PYDANTIC VALIDATION OR NOT
             response_content_type=response.headers.get("Content-Type"),
             response_content_length=response.headers.get("Content-Length"),
             response_content_encoding=response.headers.get("Content-Encoding"),

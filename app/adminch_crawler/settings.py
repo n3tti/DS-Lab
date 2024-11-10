@@ -1,4 +1,4 @@
-from app.config import JOBDIR
+# from app.config import JOBDIR
 
 # Scrapy settings for adminch_crawler project
 #
