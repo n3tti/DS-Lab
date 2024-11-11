@@ -17,7 +17,7 @@ class CrawlingSpider(CrawlSpider):
     start_urls = ["https://www.admin.ch/"]
 
     excluded_subdomains = [
-        'eda.admin.ch',
+        'https://www.obsan.admin.ch',
         # Add more subdomains to exclude as needed
     ]
 
