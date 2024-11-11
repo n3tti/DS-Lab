@@ -1,5 +1,6 @@
-import logging
-from urllib.parse import urljoin
+import logging, re, pdb
+from urllib.parse import urljoin, urlparse
+
 
 from scrapy.linkextractors import LinkExtractor
 from scrapy.spiders import CrawlSpider, Rule
@@ -15,23 +16,85 @@ class CrawlingSpider(CrawlSpider):
     allowed_domains = ["admin.ch"]
     start_urls = ["https://www.admin.ch/"]
 
+    excluded_subdomains = [
+        'eda.admin.ch',
+        # Add more subdomains to exclude as needed
+    ]
+
     def __init__(self, restart="False", *a, **kw):
         super().__init__(*a, **kw)
-        self.is_resuming_var = False
+        self.is_resuming_var = not (restart.lower() == "true")
+
+        # Initialize counters for excluded domain statistics
+        self.excluded_domain_counts = {domain: 0 for domain in self.excluded_subdomains}
+
+        # Set up specific logging for excluded domains
+        self.setup_excluded_domain_logging()
+
+    def setup_excluded_domain_logging(self):
+        """Setup specific logging for excluded domains"""
+        # Create a specific logger for excluded domains
+        self.excluded_logger = logging.getLogger(f"{__name__}.excluded_domains")
+
+        # Create a file handler
+        log_filename = f"excluded_domains.log"
+        fh = logging.FileHandler(log_filename)
+        fh.setLevel(logging.INFO)
+
+        # Create a formatter
+        formatter = logging.Formatter('%(asctime)s - %(message)s')
+        fh.setFormatter(formatter)
+
+        # Add the handler to the logger
+        self.excluded_logger.addHandler(fh)
+        self.excluded_logger.setLevel(logging.INFO)
+
+    def should_follow_url(self, url):
+        """Check if the URL should be followed based on subdomain rules"""
+        parsed_url = urlparse(url)
+        domain = parsed_url.netloc.lower()
+        # Check each excluded subdomain
+        for excluded in self.excluded_subdomains:
+            if domain.endswith(excluded):
+                # Log the excluded domain encounter
+                self.excluded_domain_counts[excluded] += 1
+                self.excluded_logger.info(f"Excluded URL: {url} (matches {excluded})")
+                # Log to console as well
+                logger.info(f"Skipping excluded domain: {domain} (matched {excluded})")
+
+                return False
+
+        return True
 
     rules = (
         Rule(
             LinkExtractor(
                 allow_domains=allowed_domains,
-                allow=r".*\.html?$|.*/$|.*(?<!\.)\w+$",
+                allow=r".*\.html?.*",
+                deny=([rf"https?://{re.escape(subdomain)}.*" for subdomain in excluded_subdomains]),
             ),
             callback="parse_item",
             follow=True,
+            process_request='process_request'
         ),
     )
 
+    def process_request(self, request, response):
+        """Additional URL filtering at request level"""
+        if not self.should_follow_url(request.url):
+            return None
+        return request
+
     def is_resuming(self):
         return self.is_resuming_var
+
+    def closed(self, reason):
+        """Called when the spider is closed"""
+        # Log final statistics
+        self.excluded_logger.info("\n=== Final Excluded Domain Statistics ===")
+        for domain, count in self.excluded_domain_counts.items():
+            self.excluded_logger.info(f"Domain: {domain} - Encountered {count} times")
+        logger.info("Spider closed. Check excluded_domains_[timestamp].log for detailed statistics")
 
     def parse_item(self, response):
 
