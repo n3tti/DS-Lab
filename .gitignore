@@ -201,4 +201,3 @@ cython_debug/
 # Scrapy's JOBDIR & Persistence folder
 *persistence/
 
-migrations/
