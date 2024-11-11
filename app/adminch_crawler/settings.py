@@ -1,3 +1,5 @@
+# from app.config import JOBDIR
+
 # Scrapy settings for adminch_crawler project
 #
 # For simplicity, this file contains only settings considered important or
@@ -10,8 +12,8 @@ from fake_useragent import UserAgent
 
 BOT_NAME = "adminch_crawler"
 
-SPIDER_MODULES = ["adminch_crawler.spiders"]
-NEWSPIDER_MODULE = "adminch_crawler.spiders"
+SPIDER_MODULES = ["app.adminch_crawler.spiders"]
+NEWSPIDER_MODULE = "app.adminch_crawler.spiders"
 
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
@@ -78,9 +80,9 @@ ROBOTSTXT_OBEY = False
 # ]
 
 DOWNLOADER_MIDDLEWARES = {
-    'adminch_crawler.middlewares.RotateUserAgentMiddleware': 40,
-    # 'myproject.middlewares.CustomLoggingMiddleware': 543,
-    # "scrapy.spidermiddlewares.depth.DepthMiddleware": 900,
+    'app.adminch_crawler.middlewares.RotateUserAgentMiddleware': 40,
+    # 'scrapy.downloadermiddlewares.httpcache.HttpCacheMiddleware': 585,
+    "scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware": 590,
 }
 
 
@@ -94,15 +96,18 @@ DOWNLOADER_MIDDLEWARES = {
 # See https://docs.scrapy.org/en/latest/topics/item-pipeline.html
 
 ITEM_PIPELINES = {
-    "adminch_crawler.pipelines.FilterURLPipeline": 100,
-    "adminch_crawler.pipelines.IDAssignmentPipeline": 200,
-    "adminch_crawler.pipelines.ParentsPipeline": 300,
-    "adminch_crawler.pipelines.PDFPipeline": 400,
-    "adminch_crawler.pipelines.ImagePipeline": 500,
-    "adminch_crawler.pipelines.ContentPipeline": 600,
-    "adminch_crawler.pipelines.HashContentPipeline": 700,
-    "adminch_crawler.pipelines.MetadataPipeline": 800,
+    "app.adminch_crawler.pipelines.DiscoveredStoragePipeline": 0,
+    "app.adminch_crawler.pipelines.FilterURLPipeline": 100,
+    # "app.adminch_crawler.pipelines.IDAssignmentPipeline": 200,
+    # # # # # # # # # # # # "app.adminch_crawler.pipelines.ParentsPipeline": 300,
+    # # # # # # # # # # # # "app.adminch_crawler.pipelines.PDFPipeline": 400,
+    # # # # # # # # # # # # "app.adminch_crawler.pipelines.ImagePipeline": 500,
+    # # # # # # # # # # # # "app.adminch_crawler.pipelines.ContentPipeline": 600,
+    # "app.adminch_crawler.pipelines.HashContentPipeline": 700,
+    # # # # # # # # # # # # "app.adminch_crawler.pipelines.MetadataPipeline": 800,
     # "adminch_crawler.pipelines.DownloadContentPipeline": 400,
+    "app.adminch_crawler.pipelines.CompletedStoragePipeline": 1000,
+    # "app.adminch_crawler.pipelines.TEMPPipeline": 10000,
 }
 
 # Enable and configure the AutoThrottle extension (disabled by default)
@@ -122,12 +127,12 @@ AUTOTHROTTLE_START_DELAY = 0.01
 AUTOTHROTTLE_MAX_DELAY = 40
 AUTOTHROTTLE_TARGET_CONCURRENCY = 64
 
-# Enable and configure HTTP caching (disabled by default)
-# See https://docs.scrapy.org/en/latest/topics/downloader-middleware.html#httpcache-middleware-settings
+# # Enable and configure HTTP caching (disabled by default)
+# # See https://docs.scrapy.org/en/latest/topics/downloader-middleware.html#httpcache-middleware-settings
 # HTTPCACHE_ENABLED = True
-# HTTPCACHE_EXPIRATION_SECS = 0
+# # HTTPCACHE_EXPIRATION_SECS = 0
 # HTTPCACHE_DIR = "httpcache"
-# HTTPCACHE_IGNORE_HTTP_CODES = []
+# # HTTPCACHE_IGNORE_HTTP_CODES = []
 # HTTPCACHE_STORAGE = "scrapy.extensions.httpcache.FilesystemCacheStorage"
 
 # Set settings whose default value is deprecated to a future-proof value
@@ -136,12 +141,12 @@ TWISTED_REACTOR = "twisted.internet.asyncioreactor.AsyncioSelectorReactor"
 FEED_EXPORT_ENCODING = "utf-8"
 HTTPERROR_ALLOW_ALL = True
 
-DEPTH_LIMIT = 8
+DEPTH_LIMIT = 7
+DEPTH_PRIORITY = 2
 
-LOG_LEVEL = "ERROR"
-JOBDIR = "./adminch_crawler/persistance/jobdir/"
+# LOG_LEVEL = "DEBUG"
+# LOG_LEVEL = "INFO"
+LOG_LEVEL = "WARNING"
+# LOG_LEVEL = "ERROR"
+# JOBDIR = JOBDIR
 LOG_STDOUT = True
-
-
-
-# rsync -av --exclude 'venv' --exclude '.git' --exclude '.idea' --exclude 'slurm_log' "/Users/saschatran/Desktop/Uni gits/DS-Lab" sas@192.168.178.75:

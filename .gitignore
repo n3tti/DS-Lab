@@ -179,11 +179,11 @@ cython_debug/
 
 /data/text/
 
-/crawler/adminch_crawler/persistance/jobdir/*
-!/crawler/adminch_crawler/persistance/jobdir/.gitkeep
+/app/adminch_crawler/persistance/jobdir/*
+!/app/adminch_crawler/persistance/jobdir/.gitkeep
 
-/crawler/adminch_crawler/persistance/pipelines_states/*
-!/crawler/adminch_crawler/persistance/pipelines_states/.gitkeep
+/app/adminch_crawler/persistance/pipelines_states/*
+!/app/adminch_crawler/persistance/pipelines_states/.gitkeep
 
 
 /slurm_log/
@@ -193,3 +193,11 @@ cython_debug/
 *.sif
 # apptainer build trigger
 .apptainer_build_trigger*
+
+# SQLite db
+*.db
+*.db.*.backup
+
+# Scrapy's JOBDIR & Persistence folder
+*persistence/
+
