@@ -10,7 +10,6 @@ from scrapy import signals
 from fake_useragent import UserAgent
 
 
-
 class CrawlerSpiderMiddleware:
     # Not all methods need to be defined. If a method is not defined,
     # scrapy acts as if the spider middleware does not modify the
@@ -110,5 +109,5 @@ class RotateUserAgentMiddleware:
     def process_request(self, request, spider):
         ua = UserAgent()
         agent = ua.random
-        spider.logger.info("User-Agent: %s" % agent)
+        # spider.logger.info("User-Agent: %s" % agent)
         request.headers.setdefault("User-Agent", agent)

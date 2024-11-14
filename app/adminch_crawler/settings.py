@@ -80,7 +80,7 @@ ROBOTSTXT_OBEY = False
 # ]
 
 DOWNLOADER_MIDDLEWARES = {
-    'app.adminch_crawler.middlewares.RotateUserAgentMiddleware': 40,
+    "app.adminch_crawler.middlewares.RotateUserAgentMiddleware": 40,
     # 'scrapy.downloadermiddlewares.httpcache.HttpCacheMiddleware': 585,
     "scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware": 590,
 }

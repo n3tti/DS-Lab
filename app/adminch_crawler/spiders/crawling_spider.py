@@ -4,7 +4,7 @@ from urllib.parse import urljoin
 from scrapy.linkextractors import LinkExtractor
 from scrapy.spiders import CrawlSpider, Rule
 
-from app.repository.models import ScrapedPage
+from app.repository.models import ScrapedPage, ImageLink, PDFLink, ChildParentLink
 
 logger = logging.getLogger(__name__.split(".")[-1])
 
@@ -14,10 +14,6 @@ class CrawlingSpider(CrawlSpider):
     name = "my2crawler"
     allowed_domains = ["admin.ch"]
     start_urls = ["https://www.admin.ch/"]
-
-    def __init__(self, restart="False", *a, **kw):
-        super().__init__(*a, **kw)
-        self.is_resuming_var = False
 
     rules = (
         Rule(
@@ -29,9 +25,6 @@ class CrawlingSpider(CrawlSpider):
             follow=True,
         ),
     )
-
-    def is_resuming(self):
-        return self.is_resuming_var
 
     def parse_item(self, response):
 
@@ -66,9 +59,16 @@ class CrawlingSpider(CrawlSpider):
                 child_urls.append(full_url)
 
         #####################################################
-        embedded_images, img_alt_dict = self.extract_images(response)
+        image_links = []
+        for img in response.css("img"):
+            src = img.attrib.get("src")
+            if src:
+                full_url = urljoin(response.url, src)
+                alt = img.attrib.get("alt", "")
+                image_links.append(ImageLink(url=full_url, alt=alt))
 
         #####################################################
+        # TODO: discuss if we need this, later make a migration if needed
         content_formatted_with_markdown = self.format_content_with_markdown(response)
 
         #####################################################
@@ -90,10 +90,14 @@ class CrawlingSpider(CrawlSpider):
 
         scraped_page = ScrapedPage(
             url=response.url,
+            pdf_links=[PDFLink(url=x, lang=lang) for x in pdf_urls],
+            child_links=[ChildParentLink(child_url=x) for x in child_urls],
+            image_links=image_links,
+            cousin_urls_dict=cousin_urls_dict,
             depth=response.meta["depth"],
             response_status_code=response.status,
             response_text=response.text,
-            # response_body=response.body,
+            response_body=response.body,
             response_content_type=response.headers.get("Content-Type"),
             response_content_length=response.headers.get("Content-Length"),
             response_content_encoding=response.headers.get("Content-Encoding"),
@@ -105,28 +109,11 @@ class CrawlingSpider(CrawlSpider):
             response_metadata_keywords=keywords,
             response_metadata_content_hash=None,
         )
-        scraped_page.cousin_urls_dict = cousin_urls_dict
-        scraped_page.pdf_urls = pdf_urls
-        scraped_page.child_urls = child_urls
-        scraped_page.embedded_images = embedded_images
-        scraped_page.img_alt_dict = img_alt_dict
-        scraped_page.content_formatted_with_markdown = content_formatted_with_markdown
+
+        # TODO: discuss if we need this, later make a migration if needed
+        # scraped_page.content_formatted_with_markdown = content_formatted_with_markdown
 
         yield scraped_page
-
-    # handle embedded images
-    def extract_images(self, response):
-        """Extract embedded images from content"""
-        images = []
-        img_alt_dict = {}
-        for img in response.css("img"):
-            src = img.attrib.get("src")
-            if src:
-                full_url = urljoin(response.url, src)
-                alt = img.attrib.get("alt", "")
-                images.append(full_url)
-                img_alt_dict[full_url] = alt
-        return images, img_alt_dict
 
     # extract title from multiple sources
     def get_title(self, response):
