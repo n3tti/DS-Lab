@@ -34,7 +34,6 @@ DEFAULT_REQUEST_HEADERS = {
     "sec-fetch-site": "none",
     "sec-fetch-user": "?1",
     "upgrade-insecure-requests": "1",
-    "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36",
 }
 
 # Obey robots.txt rules
@@ -80,7 +79,7 @@ ROBOTSTXT_OBEY = False
 # ]
 
 DOWNLOADER_MIDDLEWARES = {
-    "app.adminch_crawler.middlewares.RotateUserAgentMiddleware": 40,
+    'app.adminch_crawler.middlewares.RotateUserAgentMiddleware': 40,
     # 'scrapy.downloadermiddlewares.httpcache.HttpCacheMiddleware': 585,
     "scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware": 590,
 }
@@ -137,16 +136,13 @@ AUTOTHROTTLE_TARGET_CONCURRENCY = 64
 
 # Set settings whose default value is deprecated to a future-proof value
 REQUEST_FINGERPRINTER_IMPLEMENTATION = "2.7"
-TWISTED_REACTOR = "twisted.internet.asyncioreactor.AsyncioSelectorReactor"
+#TWISTED_REACTOR = "twisted.internet.asyncioreactor.AsyncioSelectorReactor"
 FEED_EXPORT_ENCODING = "utf-8"
 HTTPERROR_ALLOW_ALL = True
 
 DEPTH_LIMIT = 7
+CLOSESPIDER_PAGECOUNT = 1  # Stop crawling after 1000 pages
 DEPTH_PRIORITY = 2
-
-# Maximum number of pages to crawl
-CLOSESPIDER_PAGECOUNT = 1
-
 
 # LOG_LEVEL = "DEBUG"
 # LOG_LEVEL = "INFO"
@@ -155,25 +151,4 @@ LOG_LEVEL = "INFO"
 # JOBDIR = JOBDIR
 LOG_STDOUT = True
 
-# Playwright settings
-USE_PLAYWRIGHT = True  # Set to True when you want to use Playwright
-
-if USE_PLAYWRIGHT:
-    DOWNLOAD_HANDLERS = {
-        "http": "scrapy_playwright.handler.ScrapyPlaywrightDownloadHandler",
-        "https": "scrapy_playwright.handler.ScrapyPlaywrightDownloadHandler"
-    }
-
-    TWISTED_REACTOR = "twisted.internet.asyncioreactor.AsyncioSelectorReactor"
-
-    PLAYWRIGHT_LAUNCH_OPTIONS = {
-        "headless": True,
-        "args": [
-            "--no-sandbox",
-            "--disable-setuid-sandbox",
-            "--enable-javascript",
-        ],
-    }
-
-    PLAYWRIGHT_DEFAULT_NAVIGATION_TIMEOUT = 60000  # 60 seconds
-    DOWNLOAD_TIMEOUT = 30  # in seconds
+#
