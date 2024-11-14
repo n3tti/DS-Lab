@@ -144,9 +144,36 @@ HTTPERROR_ALLOW_ALL = True
 DEPTH_LIMIT = 7
 DEPTH_PRIORITY = 2
 
+# Maximum number of pages to crawl
+CLOSESPIDER_PAGECOUNT = 1
+
+
 # LOG_LEVEL = "DEBUG"
 # LOG_LEVEL = "INFO"
-LOG_LEVEL = "WARNING"
+LOG_LEVEL = "INFO"
 # LOG_LEVEL = "ERROR"
 # JOBDIR = JOBDIR
 LOG_STDOUT = True
+
+# Playwright settings
+USE_PLAYWRIGHT = True  # Set to True when you want to use Playwright
+
+if USE_PLAYWRIGHT:
+    DOWNLOAD_HANDLERS = {
+        "http": "scrapy_playwright.handler.ScrapyPlaywrightDownloadHandler",
+        "https": "scrapy_playwright.handler.ScrapyPlaywrightDownloadHandler"
+    }
+
+    TWISTED_REACTOR = "twisted.internet.asyncioreactor.AsyncioSelectorReactor"
+
+    PLAYWRIGHT_LAUNCH_OPTIONS = {
+        "headless": True,
+        "args": [
+            "--no-sandbox",
+            "--disable-setuid-sandbox",
+            "--enable-javascript",
+        ],
+    }
+
+    PLAYWRIGHT_DEFAULT_NAVIGATION_TIMEOUT = 60000  # 60 seconds
+    DOWNLOAD_TIMEOUT = 30  # in seconds
