@@ -38,7 +38,7 @@ docker-up:
 
 
 
-apptainer-up: deployments/Singularity
+apptainer-up: deployments/Singularity requirements.txt
 	@if [ ! deployments/_temp.built_image.sif ]; then  \
 		# echo "Initial build"; \
 		sha256sum deployments/Singularity > deployments/.apptainer_build_trigger; \
