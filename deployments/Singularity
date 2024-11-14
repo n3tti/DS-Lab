@@ -3,6 +3,7 @@ From: python:3.11
 
 %environment
     export PATH=/app:$PATH
+    export DATABASE_URL=/capstor/store/cscs/swissai/a06/users/group_06
 
 %files
     requirements.txt /app/requirements.txt

@@ -6,7 +6,6 @@ lint:
 	black . && isort . && flake8 .
 
 start:
-	rm -rf persistence/*; \
 	python -m app.main
 
 alembic:
@@ -57,7 +56,7 @@ apptainer-up: deployments/Singularity
 	fi
 	@TIMESTAMP=$$(date +%Y-%m-%dT%H.%M.%S.%6N); \
 	LOGFILE=$$(mktemp -u .XXXXXXXX).log; \
-	apptainer run --bind ./:/app --pwd /app deployments/_temp.built_image.sif > $$LOGFILE 2>&1 & \
+	apptainer run --bind ./:/app,/capstor/store/cscs/swissai/a06/users/group_06:/capstor/store/cscs/swissai/a06/users/group_06 --pwd /app deployments/_temp.built_image.sif > $$LOGFILE 2>&1 & \
 	PID=$$!; \
 	mv $$LOGFILE $$TIMESTAMP.log; \
 	echo "Logging to $$TIMESTAMP.log"
