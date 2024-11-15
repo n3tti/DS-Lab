@@ -1,5 +1,6 @@
 from datetime import datetime
 from enum import Enum
+from typing import Dict
 
 from pydantic import HttpUrl, PrivateAttr, field_validator
 from sqlalchemy import CHAR, Column, DateTime, LargeBinary
@@ -7,8 +8,8 @@ from sqlalchemy.sql import func
 from sqlalchemy.types import JSON  # Correctly import JSON from sqlalchemy.types
 from sqlmodel import Field, Relationship, SQLModel
 from sqlmodel._compat import SQLModelConfig
+
 from app.repository.utils import normalize_url
-from typing import Dict
 
 
 class BaseModel(SQLModel):

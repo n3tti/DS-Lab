@@ -6,7 +6,7 @@ from sqlalchemy import create_engine
 from sqlalchemy.orm import scoped_session, sessionmaker
 
 from app.config import DATABASE_URL
-from app.repository.models import ChildParentLink, PDFLink, ScrapedPage, PageStatusEnum
+from app.repository.models import ChildParentLink, PageStatusEnum, PDFLink, ScrapedPage
 from app.repository.utils import normalize_url
 
 engine = create_engine(DATABASE_URL, echo=False, future=True)

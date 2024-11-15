@@ -4,7 +4,7 @@ from urllib.parse import urljoin
 from scrapy.linkextractors import LinkExtractor
 from scrapy.spiders import CrawlSpider, Rule
 
-from app.repository.models import ScrapedPage, ImageLink, PDFLink, ChildParentLink
+from app.repository.models import ChildParentLink, ImageLink, PDFLink, ScrapedPage
 
 logger = logging.getLogger(__name__.split(".")[-1])
 

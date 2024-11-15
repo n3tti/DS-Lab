@@ -9,7 +9,7 @@ from scrapy.exceptions import DropItem
 from simhash import Simhash
 
 from app.repository.db import db
-from app.repository.models import ScrapedPage, PageStatusEnum, ImageLink
+from app.repository.models import ImageLink, PageStatusEnum, ScrapedPage
 
 
 class DiscoveredStoragePipeline:

@@ -1,5 +1,3 @@
-# from app.config import JOBDIR
-
 # Scrapy settings for adminch_crawler project
 #
 # For simplicity, this file contains only settings considered important or
@@ -9,6 +7,8 @@
 #     https://docs.scrapy.org/en/latest/topics/downloader-middleware.html
 #     https://docs.scrapy.org/en/latest/topics/spider-middleware.html
 from fake_useragent import UserAgent
+
+from app.config import JOBDIR
 
 BOT_NAME = "adminch_crawler"
 
