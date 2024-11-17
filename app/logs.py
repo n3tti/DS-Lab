@@ -7,6 +7,7 @@ logging.basicConfig(
     format="%(message)s",
     level=logging.INFO,
 )
+logging.disable(logging.DEBUG)
 
 def uppercase_log_level(logger, log_method, event_dict):
     if 'level' in event_dict:
@@ -29,37 +30,54 @@ shared_processors = [
 ]
 
 if sys.stderr.isatty():
-    # Pretty printing when we run in a terminal session.
-    # Automatically prints pretty tracebacks when "rich" is installed
-    processors = shared_processors + [
-        structlog.dev.ConsoleRenderer(),
-    ]
+    processors = shared_processors
+    rendering_processor = structlog.dev.ConsoleRenderer()
 else:
-    # Print JSON when we run, e.g., in a Docker container.
-    # Also print structured tracebacks.
     processors = shared_processors + [
         uppercase_log_level,
         structlog.processors.dict_tracebacks,
         structlog.processors.EventRenamer("message"),
-        structlog.processors.JSONRenderer(),
     ]
+    rendering_processor = structlog.processors.JSONRenderer()
 
 
-##################################################
+# ##################################################
 structlog.configure(
-    processors=processors,
+    processors=[
+        structlog.stdlib.filter_by_level,
+        *processors,
+        rendering_processor,
+        # structlog.stdlib.ProcessorFormatter.wrap_for_formatter,
+    ],
     context_class=dict,
     logger_factory=structlog.stdlib.LoggerFactory(),
     wrapper_class=structlog.stdlib.BoundLogger,
     cache_logger_on_first_use=True,
 )
 
-#################################################
+# #################################################
 
 
-# Adapt logging to use the same config as structlog
+# Adapt logging to use the same configuration as structlog
+
+# formatter = structlog.stdlib.ProcessorFormatter(
+#     # These run ONLY on `logging` entries that do NOT originate within
+#     # structlog.
+#     foreign_pre_chain=shared_processors,
+#     # These run on ALL entries after the pre_chain is done.
+#     processors=[
+#         # Remove _record & _from_structlog.
+#         structlog.stdlib.ProcessorFormatter.remove_processors_meta,
+#         structlog.dev.ConsoleRenderer(),
+#     ],
+# )
+
 formatter = structlog.stdlib.ProcessorFormatter(
-    processors=processors,
+    processors=[
+        *processors,
+        structlog.stdlib.ProcessorFormatter.remove_processors_meta,
+        rendering_processor,
+    ],
 )
 
 handler = logging.StreamHandler()
@@ -70,14 +88,14 @@ root_logger.addHandler(handler)
 root_logger.setLevel(logging.INFO)
 
 
-# logging.basicConfig(level=logging.ERROR, format='%(message)s')
+# # logging.basicConfig(level=logging.ERROR, format='%(message)s')
 
-##################################################
+# ##################################################
 
-# structlog.configure(
-#     wrapper_class=structlog.make_filtering_bound_logger(logging.INFO),
-# )
-##################################################
+# # structlog.configure(
+# #     wrapper_class=structlog.make_filtering_bound_logger(logging.INFO),
+# # )
+# ##################################################
 
 
 
