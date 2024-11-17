@@ -144,7 +144,6 @@ HTTPERROR_ALLOW_ALL = True
 DEPTH_PRIORITY = 1
 
 LOG_ENABLED = False
-# LOG_FORMATTER = "app.adminch_crawler.scrapy_logs.QuietLogFormatter"
 
 DEPTH_PRIORITY = 1 
 SCHEDULER_DISK_QUEUE = 'scrapy.squeues.PickleFifoDiskQueue' 
