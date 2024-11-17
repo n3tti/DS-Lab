@@ -8,7 +8,7 @@ from dotenv import load_dotenv
 load_dotenv(override=True)
 
 
-DEBUG = os.getenv("DEBUG", True)
+DEBUG = os.getenv('DEBUG', '').lower() != 'false'
 
 LOG_LEVEL = getattr(logging, os.getenv("LOG_LEVEL", "NOTSET").upper())
 
