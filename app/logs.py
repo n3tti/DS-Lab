@@ -44,7 +44,7 @@ else:
 # ##################################################
 structlog.configure(
     processors=[
-        structlog.stdlib.filter_by_level,
+        # structlog.stdlib.filter_by_level,
         *processors,
         rendering_processor,
         # structlog.stdlib.ProcessorFormatter.wrap_for_formatter,
@@ -73,8 +73,8 @@ structlog.configure(
 # )
 
 formatter = structlog.stdlib.ProcessorFormatter(
+    foreign_pre_chain=processors,
     processors=[
-        *processors,
         structlog.stdlib.ProcessorFormatter.remove_processors_meta,
         rendering_processor,
     ],
@@ -84,8 +84,11 @@ handler = logging.StreamHandler()
 # Use OUR `ProcessorFormatter` to format all `logging` entries.
 handler.setFormatter(formatter)
 root_logger = logging.getLogger()
+if (root_logger.hasHandlers()):
+    root_logger.handlers.clear()
 root_logger.addHandler(handler)
-root_logger.setLevel(logging.INFO)
+# root_logger.setLevel(logging.INFO)
+# root_logger.propagate = False
 
 
 # # logging.basicConfig(level=logging.ERROR, format='%(message)s')
