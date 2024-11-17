@@ -2,11 +2,11 @@ import logging
 import structlog
 import sys
 
-# logging.basicConfig(
-#     stream=sys.stdout,
-#     format="%(message)s",
-#     level=logging.INFO,
-# )
+logging.basicConfig(
+    stream=sys.stdout,
+    format="%(message)s",
+    level=logging.INFO,
+)
 
 def uppercase_log_level(logger, log_method, event_dict):
     if 'level' in event_dict:
@@ -17,11 +17,14 @@ def uppercase_log_level(logger, log_method, event_dict):
 shared_processors = [
     # Processors that have nothing to do with output,
     # e.g., add timestamps or log level names.
+
+    # structlog.stdlib.filter_by_level,
     structlog.stdlib.add_log_level,
     structlog.stdlib.add_logger_name,
     structlog.processors.TimeStamper(fmt="iso"),
     structlog.processors.ExceptionPrettyPrinter(),
     structlog.processors.StackInfoRenderer(),
+    structlog.processors.format_exc_info,
     structlog.contextvars.merge_contextvars,
 ]
 
@@ -41,103 +44,45 @@ else:
         structlog.processors.JSONRenderer(),
     ]
 
-# # Configure structlog with advanced processors
+
+##################################################
+structlog.configure(
+    processors=processors,
+    context_class=dict,
+    logger_factory=structlog.stdlib.LoggerFactory(),
+    wrapper_class=structlog.stdlib.BoundLogger,
+    cache_logger_on_first_use=True,
+)
+
+#################################################
+
+
+# Adapt logging to use the same config as structlog
+formatter = structlog.stdlib.ProcessorFormatter(
+    processors=processors,
+)
+
+handler = logging.StreamHandler()
+# Use OUR `ProcessorFormatter` to format all `logging` entries.
+handler.setFormatter(formatter)
+root_logger = logging.getLogger()
+root_logger.addHandler(handler)
+root_logger.setLevel(logging.INFO)
+
+
+# logging.basicConfig(level=logging.ERROR, format='%(message)s')
+
+##################################################
+
 # structlog.configure(
-#     processors=processors,
-#     logger_factory=structlog.stdlib.LoggerFactory(),
 #     wrapper_class=structlog.make_filtering_bound_logger(logging.INFO),
-#     cache_logger_on_first_use=True,
 # )
-
-# # Create a logger
-# logger = structlog.get_logger()
+##################################################
 
 
 
-
-
-
-
-
-
-# # import logging
-# # import structlog
-# # import sys
-# import os
-
-# JSON_LOGGING = os.getenv("JSON_LOGGING") == "true"
-
-
-# def event_uppercase(logger, method_name, event_dict):  # type: ignore
-#     event_dict["level"] = event_dict["level"].upper()
-#     return event_dict
-
-
-# foreign_pre_chain = [
-#     structlog.contextvars.merge_contextvars,
-#     # structlog.stdlib.filter_by_level,
-#     structlog.stdlib.add_logger_name,
-#     structlog.stdlib.add_log_level,
-# ]
-
-# shared_processors = [
-#     structlog.contextvars.merge_contextvars,
-#     # structlog.stdlib.filter_by_level,
-#     structlog.stdlib.add_logger_name,
-#     structlog.stdlib.add_log_level,
-#     structlog.stdlib.PositionalArgumentsFormatter(),
-#     structlog.processors.TimeStamper("%Y-%m-%d %H:%M:%S.%f"),
-#     structlog.processors.StackInfoRenderer(),
-#     structlog.processors.format_exc_info,
-#     structlog.processors.UnicodeDecoder(),
-# ]
-
-# structlog.configure(
-#     processors=shared_processors + [structlog.stdlib.ProcessorFormatter.wrap_for_formatter],
-#     context_class=structlog.threadlocal.wrap_dict(dict),
-#     logger_factory=structlog.stdlib.LoggerFactory(),
-#     wrapper_class=structlog.stdlib.BoundLogger,
-#     cache_logger_on_first_use=True,
-# )
-
-# logging.config.dictConfig(
-#     {
-#         "version": 1,
-#         "disable_existing_loggers": False,
-#         "root": {
-#             "level": "INFO",
-#             "handlers": ["console"] if not JSON_LOGGING else ["json"],
-#         },
-#         "formatters": {
-#             "json_formatter": {
-#                 "()": structlog.stdlib.ProcessorFormatter,
-#                 "processors": [
-#                     event_uppercase,
-#                     structlog.stdlib.ProcessorFormatter.remove_processors_meta,
-#                     structlog.processors.EventRenamer("message"),
-#                     structlog.processors.JSONRenderer(),
-#                 ],
-#                 "foreign_pre_chain": foreign_pre_chain,
-#             },
-#             "console_formatter": {
-#                 "()": structlog.stdlib.ProcessorFormatter,
-#                 "processor": structlog.dev.ConsoleRenderer(),
-#                 "foreign_pre_chain": foreign_pre_chain,
-#             },
-#         },
-#         "handlers": {
-#             "json": {
-#                 "class": "logging.StreamHandler",
-#                 "formatter": "json_formatter",
-#                 "stream": "ext://sys.stdout",
-#             },
-#             "console": {
-#                 "class": "logging.StreamHandler",
-#                 "formatter": "console_formatter",
-#             },
-#         },
-#     }
-# )
 
 
 logger = structlog.get_logger()
+
+# structlog.stdlib.filter_by_level(logger, "info", {})
