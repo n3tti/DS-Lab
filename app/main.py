@@ -10,11 +10,18 @@ import app.config
 from app.config import DEBUG
 import sys
 
+def wait_for_newrelic_startup(timeout=15):
+    start_time = time.time()
+    while not newrelic.agent.application().active:
+        if time.time() - start_time > timeout:
+            raise TimeoutError("New Relic did not start in the expected time.")
+        time.sleep(0.5)
 
 if not DEBUG:
     newrelic.agent.initialize('newrelic.ini')
     newrelic.agent.register_application()
 
+    wait_for_newrelic_startup()
 
 if __name__ == "__main__":
     process = CrawlerProcess(get_project_settings())
