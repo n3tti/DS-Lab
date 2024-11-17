@@ -6,7 +6,7 @@ from scrapy.spiders import CrawlSpider, Rule
 
 from app.repository.models import ChildParentLink, ImageLink, PDFLink, ScrapedPage
 
-logger = logging.getLogger(__name__.split(".")[-1])
+from app.logs import logger
 
 
 class CrawlingSpider(CrawlSpider):
