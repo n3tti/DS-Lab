@@ -40,7 +40,7 @@ docker-up:
 
 
 apptainer-up: deployments/Singularity requirements.txt
-	@bash _apptainer_up.sh &
+	@bash _apptainer_up.sh
 
 apptainer-list:
 	@PIDS=$$(pgrep -f 'make start' | sort -n); \
