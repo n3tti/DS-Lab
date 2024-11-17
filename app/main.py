@@ -17,8 +17,6 @@ if not DEBUG:
 
 
 if __name__ == "__main__":
-    logger.info("Application is running", iteration=1, status="OK")
-
     process = CrawlerProcess(get_project_settings())
     process.crawl(CrawlingSpider)
     process.start() 
