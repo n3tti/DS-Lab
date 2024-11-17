@@ -2,18 +2,15 @@ import logging
 import structlog
 import sys
 
-from app.config import LOG_LEVEL_DISABLE
+from app.config import LOG_LEVEL
 
-# logging.basicConfig(
-#     stream=sys.stdout,
-#     format="%(message)s",
-#     level=logging.INFO,
-# )
-# logging.disable(logging.DEBUG)
 
-log_level_disable = getattr(logging, LOG_LEVEL_DISABLE.upper())
-# Disabling so that scrapy doesn't override
-logging.disable(log_level_disable)
+def get_lower_log_level(current_level):
+    lower_level = max(current_level - 10, logging.NOTSET)  # ensure it does not go below NOTSET
+    return lower_level
+
+# Disabling logs until LOG_LEVEL so that scrapy doesn't override
+logging.disable(get_lower_log_level(LOG_LEVEL))
 
 
 def uppercase_log_level(logger, log_method, event_dict):
@@ -23,10 +20,6 @@ def uppercase_log_level(logger, log_method, event_dict):
 
 
 shared_processors = [
-    # Processors that have nothing to do with output,
-    # e.g., add timestamps or log level names.
-
-    # structlog.stdlib.filter_by_level,
     structlog.stdlib.add_log_level,
     structlog.stdlib.add_logger_name,
     structlog.processors.TimeStamper(fmt="iso"),
@@ -58,12 +51,10 @@ else:
     rendering_processor = structlog.processors.JSONRenderer()
 
 
-# ##################################################
 structlog.configure(
     processors=[
         structlog.stdlib.filter_by_level,
         *processors,
-        # rendering_processor,
         structlog.stdlib.ProcessorFormatter.wrap_for_formatter,
     ],
     context_class=dict,
@@ -71,24 +62,10 @@ structlog.configure(
     wrapper_class=structlog.stdlib.BoundLogger,
     cache_logger_on_first_use=True,
 )
-
 # #################################################
 
 
 # Adapt logging to use the same configuration as structlog
-
-# formatter = structlog.stdlib.ProcessorFormatter(
-#     # These run ONLY on `logging` entries that do NOT originate within
-#     # structlog.
-#     foreign_pre_chain=shared_processors,
-#     # These run on ALL entries after the pre_chain is done.
-#     processors=[
-#         # Remove _record & _from_structlog.
-#         structlog.stdlib.ProcessorFormatter.remove_processors_meta,
-#         structlog.dev.ConsoleRenderer(),
-#     ],
-# )
-
 formatter = structlog.stdlib.ProcessorFormatter(
     foreign_pre_chain=processors,
     processors=[
@@ -98,27 +75,10 @@ formatter = structlog.stdlib.ProcessorFormatter(
 )
 
 handler = logging.StreamHandler()
-# Use OUR `ProcessorFormatter` to format all `logging` entries.
 handler.setFormatter(formatter)
 root_logger = logging.getLogger()
 root_logger.addHandler(handler)
-root_logger.setLevel(logging.INFO)
-# root_logger.propagate = False
-
-
-# # logging.basicConfig(level=logging.ERROR, format='%(message)s')
-
-# ##################################################
-
-# # structlog.configure(
-# #     wrapper_class=structlog.make_filtering_bound_logger(logging.INFO),
-# # )
-# ##################################################
-
-
-
+root_logger.setLevel(LOG_LEVEL)
 
 
 logger = structlog.get_logger()
-
-# structlog.stdlib.filter_by_level(logger, "info", {})

@@ -1,11 +1,15 @@
 import os
 from dotenv import load_dotenv
+import logging
 
+# All environmental variables should be defined in the .env
 
 load_dotenv(override=True)
 
-LOG_LEVEL_DISABLE = os.getenv("LOG_LEVEL", "DEBUG")  # This level and lower
 
+DEBUG = os.getenv("DEBUG")
+
+LOG_LEVEL = getattr(logging, os.getenv("LOG_LEVEL", "NOTSET").upper())
 
 # NEW_RELIC_LICENSE_KEY = os.getenv("NEW_RELIC_LICENSE_KEY")
 

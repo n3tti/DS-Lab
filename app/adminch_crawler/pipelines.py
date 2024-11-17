@@ -2,7 +2,7 @@
 #
 # Don't forget to add your pipeline to the ITEM_PIPELINES setting
 # See: https://docs.scrapy.org/en/latest/topics/item-pipeline.html
-import logging
+from app.logs import logger
 
 from scrapy import Spider
 from scrapy.exceptions import DropItem
@@ -35,7 +35,7 @@ class FilterURLPipeline:
 
     def process_item(self, scraped_page: ScrapedPage, spider: Spider) -> ScrapedPage:
 
-        logging.getLogger(spider.name).info(f"Processing url: {scraped_page}")
+        logger.info(f"Processing url: {scraped_page}")
 
         if scraped_page.response_status_code != 200:
             db.update_scraped_page_status(scraped_page.id, PageStatusEnum.FAILED)
@@ -56,7 +56,7 @@ class HashContentPipeline:
             item["hash"] = Simhash(item["content"]).value
         else:
             item["hash"] = None
-            logging.getLogger(spider.name).error("No content for that page.")
+            logger.error("No content for that page.")
         return item
 
 
