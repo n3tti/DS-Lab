@@ -1,0 +1,3 @@
+PATH=$HOME/apptainer/bin:$PATH
+* * * * * /bin/bash /REPLACE_PATH/_apptainer_up.sh >> /REPLACE_PATH/_cron_out.log
+* * * * * echo "Cron is running at $(date)" >> /REPLACE_PATH/_cron_test_status.log
