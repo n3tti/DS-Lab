@@ -11,7 +11,7 @@ DEBUG = os.getenv("DEBUG")
 
 LOG_LEVEL = getattr(logging, os.getenv("LOG_LEVEL", "NOTSET").upper())
 
-# NEW_RELIC_LICENSE_KEY = os.getenv("NEW_RELIC_LICENSE_KEY")
+NEW_RELIC_LICENSE_KEY = os.getenv("NEW_RELIC_LICENSE_KEY")
 
 
 DATABASE_URL = os.getenv("DATABASE_URL", "sqlite:///data/example.db")

@@ -85,3 +85,7 @@ apptainer-kill-first:
 		echo "Killing 'make start' process with first PID $$FIRST_PID"; \
 		kill $$FIRST_PID; \
 	fi
+
+apptainer-force-kill:
+	-kill -- -$$(ps -eo pid,pgid,cmd | grep Apptainer | grep -v grep | head -n 1 | awk '{print $$2}')
+	# if nothing helps use this: pkill -f 'python -m app.main'

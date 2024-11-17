@@ -2,7 +2,7 @@ import logging
 import structlog
 import sys
 
-from app.config import LOG_LEVEL
+from app.config import LOG_LEVEL, DEBUG
 
 
 def get_lower_log_level(current_level):
