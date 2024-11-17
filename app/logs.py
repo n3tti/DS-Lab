@@ -34,16 +34,26 @@ shared_processors = [
     structlog.processors.StackInfoRenderer(),
     structlog.processors.format_exc_info,
     structlog.contextvars.merge_contextvars,
+    structlog.processors.UnicodeDecoder(),
+    structlog.processors.CallsiteParameterAdder(
+        {
+            structlog.processors.CallsiteParameter.FILENAME,
+            structlog.processors.CallsiteParameter.PATHNAME,
+            structlog.processors.CallsiteParameter.FUNC_NAME,
+            structlog.processors.CallsiteParameter.LINENO,
+        }
+    ),
 ]
 
 if sys.stderr.isatty():
-    processors = shared_processors
+    processors = shared_processors + []
     rendering_processor = structlog.dev.ConsoleRenderer()
 else:
     processors = shared_processors + [
-        uppercase_log_level,
         structlog.processors.dict_tracebacks,
         structlog.processors.EventRenamer("message"),
+
+        uppercase_log_level,
     ]
     rendering_processor = structlog.processors.JSONRenderer()
 
