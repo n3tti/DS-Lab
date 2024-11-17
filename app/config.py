@@ -8,7 +8,7 @@ from dotenv import load_dotenv
 load_dotenv(override=True)
 
 
-DEBUG = os.getenv("DEBUG")
+DEBUG = os.getenv("DEBUG", True)
 
 LOG_LEVEL = getattr(logging, os.getenv("LOG_LEVEL", "NOTSET").upper())
 
@@ -31,7 +31,7 @@ DATA_DIR = os.path.dirname(BASE_DIR) + "/data/"
 # IMAGE_DIR = DATA_DIR + "image/png/"
 # APPLICATION_DIR = DATA_DIR + "application/pdf/"
 
-PERSISTENCE_BASE = os.path.dirname(BASE_DIR) + "/persistence/"
+PERSISTENCE_BASE = os.path.dirname(BASE_DIR) + "/.persistence/"
 JOBDIR = PERSISTENCE_BASE + "jobdir/"
 # SAVE_IDS_FILE = PERSISTENCE_BASE + "pipelines_states/seen_ids.json"
 # SAVE_LAST_ID_FILE = PERSISTENCE_BASE + "pipelines_states/last_id.json"

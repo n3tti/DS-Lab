@@ -1,6 +1,5 @@
 import time
 
-import newrelic.agent
 from scrapy.crawler import CrawlerProcess
 from scrapy.utils.project import get_project_settings
 
@@ -19,6 +18,8 @@ def wait_for_newrelic_startup(timeout=15):
 
 
 if not DEBUG:
+    import newrelic.agent
+
     newrelic.agent.initialize("newrelic.ini")
     newrelic.agent.register_application()
 

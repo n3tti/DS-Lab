@@ -6,7 +6,7 @@ lint:
 	black . && isort . && flake8 .
 
 start:
-# 	rm -rf persistence
+# 	rm -rf .persistence
 	python -m app.main
 
 alembic:

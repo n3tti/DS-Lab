@@ -21,6 +21,16 @@ def uppercase_log_level(logger, log_method, event_dict):
     return event_dict
 
 
+def colorize_log_level(logger, method_name, event_dict):
+    level = event_dict.get("level", "").lower()
+    colors = {"debug": "\033[32m", "info": "\033[1;32m", "warning": "\033[33m", "error": "\033[91m", "critical": "\033[31m"}
+    reset_color = "\033[0m"
+    if level in colors:
+        event_dict["level"] = f"{colors[level]}{level.upper()}{reset_color}"
+
+    return event_dict
+
+
 shared_processors = [
     structlog.stdlib.add_log_level,
     structlog.stdlib.add_logger_name,
@@ -41,7 +51,7 @@ shared_processors = [
 ]
 
 if sys.stderr.isatty():
-    processors = shared_processors + []
+    processors = shared_processors + [colorize_log_level]
     rendering_processor = structlog.dev.ConsoleRenderer()
 else:
     processors = shared_processors + [
