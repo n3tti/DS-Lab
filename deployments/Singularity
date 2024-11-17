@@ -7,6 +7,7 @@ From: python:3.11
 
 %files
     requirements.txt /app/requirements.txt
+    .env /environment/.env
 
 %post
     mkdir -p /app
@@ -14,4 +15,5 @@ From: python:3.11
     pip install --no-cache-dir --upgrade -r /app/requirements.txt
 
 %runscript
+    source /environment/.env
     make start
