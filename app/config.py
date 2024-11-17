@@ -1,5 +1,19 @@
 import os
 
+from dotenv import load_dotenv
+
+# All environmental variables should be defined in the .env
+
+load_dotenv(override=True)
+
+
+DEBUG = os.getenv("DEBUG", "").lower() != "false"
+
+LOG_LEVEL = getattr(logging, os.getenv("LOG_LEVEL", "NOTSET").upper())
+
+NEW_RELIC_LICENSE_KEY = os.getenv("NEW_RELIC_LICENSE_KEY")
+
+
 DATABASE_URL = os.getenv("DATABASE_URL", "sqlite:///data/example.db")
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))

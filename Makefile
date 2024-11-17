@@ -1,3 +1,5 @@
+export $(shell sed 's/=.*//' .env)
+
 DOCKER_COMPOSE = docker compose -p dockercrawler -f deployments/docker-compose.yml
 JSON_FILE ?= metadata.json
 RESTART ?= True

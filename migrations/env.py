@@ -8,9 +8,8 @@ from alembic.migration import MigrationContext
 from sqlalchemy import engine_from_config, pool
 from sqlmodel import SQLModel
 
+from app.config import DATABASE_URL
 from app.repository.models import BaseModel
-
-DATABASE_URL = os.getenv("DATABASE_URL", "sqlite:///data/example.db")
 
 # this is the Alembic Config object, which provides
 # access to the values within the .ini file in use.
