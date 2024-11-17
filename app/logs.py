@@ -2,12 +2,19 @@ import logging
 import structlog
 import sys
 
+from app.config import LOG_LEVEL_DISABLE
+
 # logging.basicConfig(
 #     stream=sys.stdout,
 #     format="%(message)s",
 #     level=logging.INFO,
 # )
-logging.disable(logging.DEBUG)
+# logging.disable(logging.DEBUG)
+
+log_level_disable = getattr(logging, LOG_LEVEL_DISABLE.upper())
+# Disabling so that scrapy doesn't override
+logging.disable(log_level_disable)
+
 
 def uppercase_log_level(logger, log_method, event_dict):
     if 'level' in event_dict:
