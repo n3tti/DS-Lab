@@ -1,21 +1,23 @@
 import logging
-import structlog
 import sys
 
-from app.config import LOG_LEVEL, DEBUG
+import structlog
+
+from app.config import DEBUG, LOG_LEVEL
 
 
 def get_lower_log_level(current_level):
     lower_level = max(current_level - 10, logging.NOTSET)  # ensure it does not go below NOTSET
     return lower_level
 
+
 # Disabling logs until LOG_LEVEL so that scrapy doesn't override
 logging.disable(get_lower_log_level(LOG_LEVEL))
 
 
 def uppercase_log_level(logger, log_method, event_dict):
-    if 'level' in event_dict:
-        event_dict['level'] = event_dict['level'].upper()
+    if "level" in event_dict:
+        event_dict["level"] = event_dict["level"].upper()
     return event_dict
 
 
@@ -45,7 +47,6 @@ else:
     processors = shared_processors + [
         structlog.processors.dict_tracebacks,
         structlog.processors.EventRenamer("message"),
-
         uppercase_log_level,
     ]
     rendering_processor = structlog.processors.JSONRenderer()

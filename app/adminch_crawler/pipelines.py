@@ -2,14 +2,13 @@
 #
 # Don't forget to add your pipeline to the ITEM_PIPELINES setting
 # See: https://docs.scrapy.org/en/latest/topics/item-pipeline.html
-from app.logs import logger
-
 from scrapy import Spider
 from scrapy.exceptions import DropItem
 from simhash import Simhash
 
+from app.logs import logger
 from app.repository.db import db
-from app.repository.models import ImageLink, PageStatusEnum, ScrapedPage
+from app.repository.models import PageStatusEnum, ScrapedPage
 
 
 class DiscoveredStoragePipeline:

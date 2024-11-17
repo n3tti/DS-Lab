@@ -8,7 +8,9 @@
 #     https://docs.scrapy.org/en/latest/topics/spider-middleware.html
 from fake_useragent import UserAgent
 
-from app.config import JOBDIR  # just importing the JOBDIR here is enough for persistence
+from app.config import (
+    JOBDIR,  # just importing the JOBDIR here is enough for persistence
+)
 
 BOT_NAME = "adminch_crawler"
 
@@ -145,6 +147,7 @@ DEPTH_PRIORITY = 1
 
 LOG_ENABLED = False
 
-DEPTH_PRIORITY = 1 
-SCHEDULER_DISK_QUEUE = 'scrapy.squeues.PickleFifoDiskQueue' 
-SCHEDULER_MEMORY_QUEUE = 'scrapy.squeues.FifoMemoryQueue'
+JOBDIR = JOBDIR
+
+SCHEDULER_DISK_QUEUE = "scrapy.squeues.PickleFifoDiskQueue"
+SCHEDULER_MEMORY_QUEUE = "scrapy.squeues.FifoMemoryQueue"

@@ -1,8 +1,7 @@
 from datetime import datetime
 from enum import Enum
-from typing import Dict
 
-from pydantic import HttpUrl, PrivateAttr, field_validator
+from pydantic import field_validator  # , HttpUrl
 from sqlalchemy import CHAR, Column, DateTime, LargeBinary
 from sqlalchemy.sql import func
 from sqlalchemy.types import JSON  # Correctly import JSON from sqlalchemy.types
