@@ -70,10 +70,3 @@ html2md:
 	alembic upgrade head
 	python -c "from app.html2md import run_conversion; run_conversion()"
 
-html2md-clean:
-	rm -f data/example.db*
-	find migrations/versions -type f -name "*.py" -delete
-	alembic upgrade head
-	alembic revision --autogenerate -m "Create markdown_pages table"
-	alembic upgrade head
-	python -c "from app.html2md import run_conversion; run_conversion()"
