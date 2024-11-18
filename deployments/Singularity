@@ -3,10 +3,10 @@ From: python:3.11
 
 %environment
     export PATH=/app:$PATH
-    export DATABASE_URL=/capstor/store/cscs/swissai/a06/users/group_06
 
 %files
     requirements.txt /app/requirements.txt
+    .env /app/.env
 
 %post
     mkdir -p /app
@@ -14,4 +14,6 @@ From: python:3.11
     pip install --no-cache-dir --upgrade -r /app/requirements.txt
 
 %runscript
+    #! /bin/bash
+    source /app/.env
     make start

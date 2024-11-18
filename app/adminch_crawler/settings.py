@@ -1,5 +1,3 @@
-# from app.config import JOBDIR
-
 # Scrapy settings for adminch_crawler project
 #
 # For simplicity, this file contains only settings considered important or
@@ -9,6 +7,10 @@
 #     https://docs.scrapy.org/en/latest/topics/downloader-middleware.html
 #     https://docs.scrapy.org/en/latest/topics/spider-middleware.html
 from fake_useragent import UserAgent
+
+from app.config import (
+    JOBDIR,  # just importing the JOBDIR here is enough for persistence
+)
 
 BOT_NAME = "adminch_crawler"
 
@@ -34,6 +36,7 @@ DEFAULT_REQUEST_HEADERS = {
     "sec-fetch-site": "none",
     "sec-fetch-user": "?1",
     "upgrade-insecure-requests": "1",
+    "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36",
 }
 
 # Obey robots.txt rules
@@ -54,7 +57,7 @@ ROBOTSTXT_OBEY = False
 # COOKIES_ENABLED = False
 
 # Disable Telnet Console (enabled by default)
-# TELNETCONSOLE_ENABLED = False
+TELNETCONSOLE_ENABLED = False
 
 # Override the default request headers:
 # DEFAULT_REQUEST_HEADERS = {
@@ -79,7 +82,7 @@ ROBOTSTXT_OBEY = False
 # ]
 
 DOWNLOADER_MIDDLEWARES = {
-    'app.adminch_crawler.middlewares.RotateUserAgentMiddleware': 40,
+    "app.adminch_crawler.middlewares.RotateUserAgentMiddleware": 40,
     # 'scrapy.downloadermiddlewares.httpcache.HttpCacheMiddleware': 585,
     "scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware": 590,
 }
@@ -136,19 +139,15 @@ AUTOTHROTTLE_TARGET_CONCURRENCY = 64
 
 # Set settings whose default value is deprecated to a future-proof value
 REQUEST_FINGERPRINTER_IMPLEMENTATION = "2.7"
-#TWISTED_REACTOR = "twisted.internet.asyncioreactor.AsyncioSelectorReactor"
+TWISTED_REACTOR = "twisted.internet.asyncioreactor.AsyncioSelectorReactor"
 FEED_EXPORT_ENCODING = "utf-8"
 HTTPERROR_ALLOW_ALL = True
 
-DEPTH_LIMIT = 7
-CLOSESPIDER_PAGECOUNT = 1  # Stop crawling after 1000 pages
-DEPTH_PRIORITY = 2
+DEPTH_PRIORITY = 1
 
-# LOG_LEVEL = "DEBUG"
-# LOG_LEVEL = "INFO"
-LOG_LEVEL = "INFO"
-# LOG_LEVEL = "ERROR"
-# JOBDIR = JOBDIR
-LOG_STDOUT = True
+LOG_ENABLED = False
 
-#
+JOBDIR = JOBDIR
+
+SCHEDULER_DISK_QUEUE = "scrapy.squeues.PickleFifoDiskQueue"
+SCHEDULER_MEMORY_QUEUE = "scrapy.squeues.FifoMemoryQueue"

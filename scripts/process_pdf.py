@@ -1,2 +1,5 @@
+from app.logs import logger
+
 if __name__ == "__main__":
-    print("Processing pdfs...")
+    logger.debug("This is a debug message: Processing pdfs... 1")
+    logger.info("This is an info message: Processing pdfs... 2")

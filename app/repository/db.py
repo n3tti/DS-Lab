@@ -1,13 +1,10 @@
 from contextlib import contextmanager
-from typing import Any
 
-from pydantic import HttpUrl
 from sqlalchemy import create_engine
 from sqlalchemy.orm import scoped_session, sessionmaker
 
 from app.config import DATABASE_URL
-from app.repository.models import ChildParentLink, PDFLink, ScrapedPage, PageStatusEnum
-from app.repository.utils import normalize_url
+from app.repository.models import PageStatusEnum, ScrapedPage
 
 engine = create_engine(DATABASE_URL, echo=False, future=True)
 session_factory = sessionmaker(autocommit=False, autoflush=False, bind=engine)

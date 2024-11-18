@@ -1,14 +1,13 @@
 from unittest.mock import Mock, patch
 
 import pytest
+from pydantic import ValidationError
 from scrapy.exceptions import DropItem
 from scrapy.spiders import Spider
 
-from app.adminch_crawler.pipelines import FilterURLPipeline, CompletedStoragePipeline
-from app.repository.models import ScrapedPage, PageStatusEnum
+from app.adminch_crawler.pipelines import CompletedStoragePipeline, FilterURLPipeline
+from app.repository.models import PageStatusEnum, ScrapedPage
 from app.tests.conftest import ScrapedPageFactory
-
-from pydantic import ValidationError
 
 
 # @pytest.mark.skip

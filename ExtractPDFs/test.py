@@ -1,10 +1,11 @@
-import pymupdf
-from pprint import pprint
-import pymupdf4llm
 import json
 
 # Write the text to some file in UTF8-encoding
 import pathlib
+from pprint import pprint
+
+import pymupdf
+import pymupdf4llm
 
 
 def process_pdf(pdf_name):
