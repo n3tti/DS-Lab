@@ -5,9 +5,10 @@
 
 import random
 
+from fake_useragent import UserAgent
+
 # useful for handling different item types with a single interface
 from scrapy import signals
-from fake_useragent import UserAgent
 
 
 class CrawlerSpiderMiddleware:

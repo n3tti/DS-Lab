@@ -1,12 +1,10 @@
-import logging
 from urllib.parse import urljoin
 
 from scrapy.linkextractors import LinkExtractor
 from scrapy.spiders import CrawlSpider, Rule
 
-from app.repository.models import ScrapedPage, ImageLink, PDFLink, ChildParentLink
-
-logger = logging.getLogger(__name__.split(".")[-1])
+from app.logs import logger
+from app.repository.models import ChildParentLink, ImageLink, PDFLink, ScrapedPage
 
 
 class CrawlingSpider(CrawlSpider):

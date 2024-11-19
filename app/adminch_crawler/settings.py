@@ -1,5 +1,3 @@
-# from app.config import JOBDIR
-
 # Scrapy settings for adminch_crawler project
 #
 # For simplicity, this file contains only settings considered important or
@@ -9,6 +7,10 @@
 #     https://docs.scrapy.org/en/latest/topics/downloader-middleware.html
 #     https://docs.scrapy.org/en/latest/topics/spider-middleware.html
 from fake_useragent import UserAgent
+
+from app.config import (
+    JOBDIR,  # just importing the JOBDIR here is enough for persistence
+)
 
 BOT_NAME = "adminch_crawler"
 
@@ -55,7 +57,7 @@ ROBOTSTXT_OBEY = False
 # COOKIES_ENABLED = False
 
 # Disable Telnet Console (enabled by default)
-# TELNETCONSOLE_ENABLED = False
+TELNETCONSOLE_ENABLED = False
 
 # Override the default request headers:
 # DEFAULT_REQUEST_HEADERS = {
@@ -141,12 +143,11 @@ TWISTED_REACTOR = "twisted.internet.asyncioreactor.AsyncioSelectorReactor"
 FEED_EXPORT_ENCODING = "utf-8"
 HTTPERROR_ALLOW_ALL = True
 
-DEPTH_LIMIT = 7
-DEPTH_PRIORITY = 2
+DEPTH_PRIORITY = 1
 
-# LOG_LEVEL = "DEBUG"
-# LOG_LEVEL = "INFO"
-LOG_LEVEL = "WARNING"
-# LOG_LEVEL = "ERROR"
-# JOBDIR = JOBDIR
-LOG_STDOUT = True
+LOG_ENABLED = False
+
+JOBDIR = JOBDIR
+
+SCHEDULER_DISK_QUEUE = "scrapy.squeues.PickleFifoDiskQueue"
+SCHEDULER_MEMORY_QUEUE = "scrapy.squeues.FifoMemoryQueue"
