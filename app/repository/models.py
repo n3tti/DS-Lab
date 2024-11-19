@@ -2,7 +2,7 @@ from datetime import datetime
 from enum import Enum
 
 from pydantic import HttpUrl, PrivateAttr, field_validator
-from sqlalchemy import CHAR, Column, DateTime, LargeBinary
+from sqlalchemy import CHAR, Column, DateTime, LargeBinary, Text
 from sqlalchemy.sql import func
 from sqlalchemy.types import JSON  # Correctly import JSON from sqlalchemy.types
 from sqlmodel import Field, Relationship, SQLModel
@@ -36,6 +36,14 @@ class LinkStatusEnum(str, Enum):
     PROCESSED = "Processed"
 
     # TEMPCOMPLETED = "TempCompleted"
+
+class PDFMetadata(BaseModel):
+    title: str | None = None
+    author: str | None = None
+    subject: str | None = None
+    keywords: str | None = None
+    creationDate: str| None = None
+    modDate: str| None = None
 
 
 class ScrapedPage(BaseModel, table=True):
@@ -122,6 +130,12 @@ class PDFLink(BaseModel, table=True):
 
     created_at: datetime = Field(sa_column=Column(DateTime(timezone=True), server_default=func.now()))
     updated_at: datetime | None = Field(default=None, sa_column=Column(DateTime(timezone=True), onupdate=func.now()))
+        
+    metadata_dict: PDFMetadata |None = Field(default = None, sa_column=Column(JSON), description="Metadata extracted from the PDF")
+    referenced_links: list[str] | None = Field(default=None, sa_column=Column(JSON))
+    referenced_images: list[str] | None = Field(default=None, sa_column=Column(JSON))
+    md_text : str | None = Field(default=None, sa_column=Column(Text),description="Full md text content extracted from the PDF")
+    bin : bytes | None = Field(default=None, sa_type=LargeBinary(), description="Binary PDF")
 
     def __str__(self):
         model_dict = self.model_dump()
