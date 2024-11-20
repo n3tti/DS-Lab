@@ -7,3 +7,7 @@ rm -r .\adminch_crawler\persistance\jobdir\* (so that the spider can restart fro
 If restart=False, the crawler will resume the crawling process where it was left. You can cleanly stop the process (for it to be resumed later) with ONE ctrl-C.
 
 To run the test file run the cmd "make test".
+
+## html to md
+
+to convert the html binaries into markdown run **make html2md**

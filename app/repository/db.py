@@ -4,7 +4,7 @@ from sqlalchemy import create_engine
 from sqlalchemy.orm import scoped_session, sessionmaker
 
 from app.config import DATABASE_URL
-from app.repository.models import PageStatusEnum, ScrapedPage
+from app.repository.models import PageStatusEnum, ScrapedPage, MarkdownPage
 
 engine = create_engine(DATABASE_URL, echo=False, future=True)
 session_factory = sessionmaker(autocommit=False, autoflush=False, bind=engine)
@@ -48,6 +48,8 @@ class Database:
                 return None
 
             return scraped_page_obj.model_copy(deep=True)
+
+
 
 
 db = Database()

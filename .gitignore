@@ -202,3 +202,5 @@ cython_debug/
 *persistence/
 
 newrelic.ini
+ 
+queries/

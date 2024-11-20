@@ -75,6 +75,7 @@ class ScrapedPage(BaseModel, table=True):
     created_at: datetime = Field(sa_column=Column(DateTime(timezone=True), server_default=func.now()))
     updated_at: datetime | None = Field(default=None, sa_column=Column(DateTime(timezone=True), onupdate=func.now()))
 
+
     @field_validator("response_content_type", "response_content_encoding", "response_last_modified", "response_date", mode="before")
     @classmethod
     def decode_utf8(cls, v) -> str:
@@ -178,3 +179,13 @@ class ImageLink(BaseModel, table=True):
     @classmethod
     def _normalize_url(cls, v) -> str:
         return normalize_url(v)
+
+class MarkdownPage(BaseModel, table=True):
+    __tablename__ = "md_pages"
+
+    id: int = Field(primary_key=True)
+
+    scraped_page_id: int = Field(foreign_key="scraped_pages.id")
+
+
+    body_md: str = Field()
