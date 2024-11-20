@@ -1,5 +1,6 @@
 import logging
 import sys
+import traceback
 
 import structlog
 
@@ -85,6 +86,7 @@ formatter = structlog.stdlib.ProcessorFormatter(
     ],
 )
 
+
 handler = logging.StreamHandler()
 handler.setFormatter(formatter)
 root_logger = logging.getLogger()
@@ -93,3 +95,14 @@ root_logger.setLevel(LOG_LEVEL)
 
 
 logger = structlog.get_logger()
+
+
+def handle_exception(exc_type, exc_value, exc_traceback):
+    if issubclass(exc_type, KeyboardInterrupt):
+        sys.__excepthook__(exc_type, exc_value, exc_traceback)
+        return
+
+    logger.critical("Exception", myvalue=1, exc_type=exc_type, exc_value=exc_value, exc_traceback="".join(traceback.format_tb(exc_traceback)))
+
+
+sys.excepthook = handle_exception
