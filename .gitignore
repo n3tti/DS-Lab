@@ -204,3 +204,5 @@ cython_debug/
 newrelic.ini
  
 queries/
+
+*.DS_Store
