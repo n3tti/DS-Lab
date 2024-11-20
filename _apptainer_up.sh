@@ -1,5 +1,7 @@
 #!/bin/bash
 
+export PATH=$HOME/apptainer/bin:$PATH
+
 # Path configurations
 SINGULARITY_DEF="deployments/Singularity"
 REQUIREMENTS="requirements.txt"
@@ -34,7 +36,7 @@ echo "Container started with GID $PGID, logging to $TIMESTAMP.log"
 mv $LOGFILE "$TIMESTAMP.log"
 
 # Implement a timer to stop the process after 3 hours
-sleep 10800
+sleep 9600
 kill -- -$PGID  # Send SIGTERM to all processes in the group
 echo "Apptainer processes have been stopped after 3 hours."
 
