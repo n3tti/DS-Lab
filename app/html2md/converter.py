@@ -29,11 +29,6 @@ class HTMLToMarkdownConverter:
         print(f"converting page {page_id}")
         
         return markdown_page
-        
-  
-        
-
-
 
     def process_all_pages(self):
         """Process all HTML pages from database"""
