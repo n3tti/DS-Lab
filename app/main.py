@@ -9,7 +9,7 @@ from app.config import DEBUG
 # from app.logs import logger
 
 
-def wait_for_newrelic_startup(timeout=15):
+def wait_for_newrelic_startup(timeout=60):
     start_time = time.time()
     while not newrelic.agent.application().active:
         if time.time() - start_time > timeout:

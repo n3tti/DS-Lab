@@ -1,3 +1,2 @@
-PATH=$HOME/apptainer/bin:$PATH
-10 */3 * * * /bin/bash /capstor/store/cscs/swissai/a06/users/group_06/production/_apptainer_up.sh >> /capstor/store/cscs/swissai/a06/users/group_06/production/_cron_out.log
-10 */3 * * * echo "Cron is running at $(date)" >> /capstor/store/cscs/swissai/a06/users/group_06/production/_cron_test_status.log
+PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/users/pkoludar/apptainer/bin
+0 2-23/3 * * * cd /capstor/store/cscs/swissai/a06/users/group_06/production/ && /bin/bash ./_apptainer_up.sh >> _cron_out.log
