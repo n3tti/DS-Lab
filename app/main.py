@@ -6,7 +6,7 @@ from scrapy.utils.project import get_project_settings
 from app.adminch_crawler.spiders.crawling_spider import CrawlingSpider
 from app.config import DEBUG
 
-from app.logs import logger
+# from app.logs import logger
 
 
 def wait_for_newrelic_startup(timeout=15):
@@ -26,7 +26,6 @@ if not DEBUG:
     wait_for_newrelic_startup()
 
 if __name__ == "__main__":
-    logger.info("Starting crawler")
     process = CrawlerProcess(get_project_settings())
     process.crawl(CrawlingSpider)
     process.start()

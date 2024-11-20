@@ -62,11 +62,3 @@ apptainer-kill:
 apptainer-force-kill:
 	-kill -- -$$(ps -eo pid,pgid,cmd | grep Apptainer | grep -v grep | head -n 1 | awk '{print $$2}')
 	# if nothing helps use this: pkill -f 'python -m app.main'
-
-
-html2md:
-	alembic upgrade head
-	alembic revision --autogenerate -m "Create markdown_pages table"
-	alembic upgrade head
-	python -c "from app.html2md import run_conversion; run_conversion()"
-
