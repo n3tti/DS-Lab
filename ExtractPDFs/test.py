@@ -35,10 +35,10 @@ def process_pdf(pdf_name):
     for page_index in range(len(doc)):  # iterate over pdf pages
         page = doc[page_index]  # get the page
 
-        out = open("output.txt", "wb") # create a text output
-        text = page.get_text().encode("utf8") # get plain text (is in UTF-8)
-        out.write(text) # write text of page
-        out.write(bytes((12,))) # write page delimiter (form feed 0x0C)
+        out = open("output.txt", "wb")  # create a text output
+        text = page.get_text().encode("utf8")  # get plain text (is in UTF-8)
+        out.write(text)  # write text of page
+        out.write(bytes((12,)))  # write page delimiter (form feed 0x0C)
         out.close()
 
         image_list = page.get_images()

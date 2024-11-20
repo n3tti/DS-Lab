@@ -188,5 +188,4 @@ class MarkdownPage(BaseModel, table=True):
 
     scraped_page_id: int = Field(foreign_key="scraped_pages.id")
 
-
     body_md: str = Field()
