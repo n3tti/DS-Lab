@@ -11,6 +11,9 @@ start:
 # 	rm -rf .persistence
 	python -m app.main
 
+html2md:
+	python -c "from app.html2md import run_conversion; run_conversion()"
+
 alembic:
 	rm -rf data/*.db*; \
 # 	rm -rf migrations/versions/*.py; \

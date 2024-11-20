@@ -161,6 +161,9 @@ cython_debug/
 #  option (not recommended) you can uncomment the following to ignore the entire idea folder.
 #.idea/
 
+# Remove the auto-generated MacOS files
+*.DS_Store
+
 ### Data ###
 *.csv
 *.dat
@@ -202,3 +205,5 @@ cython_debug/
 *persistence/
 
 newrelic.ini
+
+queries/

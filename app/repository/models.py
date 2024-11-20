@@ -178,3 +178,15 @@ class ImageLink(BaseModel, table=True):
     @classmethod
     def _normalize_url(cls, v) -> str:
         return normalize_url(v)
+
+
+# TODO: Review this
+class MarkdownPage(BaseModel, table=True):
+    __tablename__ = "md_pages"
+
+    id: int = Field(primary_key=True)
+
+    scraped_page_id: int = Field(foreign_key="scraped_pages.id")
+
+
+    body_md: str = Field()
