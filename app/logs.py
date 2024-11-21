@@ -32,6 +32,14 @@ def colorize_log_level(logger, method_name, event_dict):
     return event_dict
 
 
+class ExceptionLogger(structlog.stdlib.BoundLogger):
+    def error(self, event, *args, **kwargs):
+        exc_info = sys.exc_info()
+        if exc_info and exc_info != (None, None, None):
+            kwargs["traceback"] = "".join(traceback.format_exception(*exc_info))
+        super().error(event, *args, **kwargs)
+
+
 shared_processors = [
     structlog.stdlib.add_log_level,
     structlog.stdlib.add_logger_name,
@@ -71,7 +79,7 @@ structlog.configure(
     ],
     context_class=dict,
     logger_factory=structlog.stdlib.LoggerFactory(),
-    wrapper_class=structlog.stdlib.BoundLogger,
+    wrapper_class=ExceptionLogger,
     cache_logger_on_first_use=True,
 )
 # #################################################
