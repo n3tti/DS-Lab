@@ -49,14 +49,6 @@ shared_processors = [
     structlog.processors.format_exc_info,
     structlog.contextvars.merge_contextvars,
     structlog.processors.UnicodeDecoder(),
-    structlog.processors.CallsiteParameterAdder(
-        {
-            structlog.processors.CallsiteParameter.FILENAME,
-            structlog.processors.CallsiteParameter.PATHNAME,
-            structlog.processors.CallsiteParameter.FUNC_NAME,
-            structlog.processors.CallsiteParameter.LINENO,
-        }
-    ),
 ]
 
 if sys.stderr.isatty():
@@ -110,7 +102,7 @@ def handle_exception(exc_type, exc_value, exc_traceback):
         sys.__excepthook__(exc_type, exc_value, exc_traceback)
         return
 
-    logger.critical("Exception", myvalue=1, exc_type=exc_type, exc_value=exc_value, exc_traceback="".join(traceback.format_tb(exc_traceback)))
+    logger.critical("Exception", exc_type=exc_type, exc_value=exc_value, exc_traceback="".join(traceback.format_tb(exc_traceback)))
 
 
 sys.excepthook = handle_exception

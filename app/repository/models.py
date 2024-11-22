@@ -23,9 +23,10 @@ class BaseModel(SQLModel):
 class PageStatusEnum(str, Enum):
     DISCOVERED = "Discovered"
     PROCESSING = "Processing"
-    COMPLETED = "Completed"
+    COMPLETED = "Completed"  # completed crawling but not converted
     FAILED = "Failed"
     REVISITED = "Revisited"
+    MARKDOWN_CONVERTED = "MarkdownConverted"  # goes after the status "Completed"
 
 
 class LinkStatusEnum(str, Enum):
