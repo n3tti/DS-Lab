@@ -23,10 +23,10 @@ class BaseModel(SQLModel):
 class PageStatusEnum(str, Enum):
     DISCOVERED = "Discovered"
     PROCESSING = "Processing"
-    COMPLETED = "Completed"  # completed crawling but not converted
+    COMPLETED = "Completed"  # completed crawling but not converted to Markdown
     FAILED = "Failed"
     REVISITED = "Revisited"
-    MARKDOWN_CONVERTED = "MarkdownConverted"  # goes after the status "Completed"
+    FINALIZED = "Finalized"  # goes after the status "Completed"
 
 
 class LinkStatusEnum(str, Enum):
@@ -54,11 +54,11 @@ class ScrapedPage(BaseModel, table=True):
 
     cousin_urls_dict: dict[str, str] = Field(default_factory=dict, sa_column=Column(JSON))
 
-    # _content_formatted_with_markdown: str | None = PrivateAttr(default=None)
-
     response_status_code: int | None = Field(default=None, description="HTTP status code of the response")
     response_text: str | None = Field(default=None, description="Text portion of the HTTP response")
     response_body: bytes | None = Field(default=None, sa_type=LargeBinary(), description="Binary body of the HTTP response")
+
+    content_formatted_with_markdown: str | None = Field(default=None, description="Response text converted to Markdown.")
 
     response_content_type: str | None = Field(default=None, description="MIME type of the content")
     response_content_length: int | None = Field(default=None, description="Length of the response content in bytes")
@@ -181,12 +181,12 @@ class ImageLink(BaseModel, table=True):
         return normalize_url(v)
 
 
-# TODO: Review this
-class MarkdownPage(BaseModel, table=True):
-    __tablename__ = "md_pages"
+# # TODO: Review this
+# class MarkdownPage(BaseModel, table=True):
+#     __tablename__ = "md_pages"
 
-    id: int = Field(primary_key=True)
+#     id: int = Field(primary_key=True)
 
-    scraped_page_id: int = Field(foreign_key="scraped_pages.id")
+#     scraped_page_id: int = Field(foreign_key="scraped_pages.id")
 
-    body_md: str = Field()
+#     body_md: str = Field()
