@@ -202,7 +202,7 @@ cython_debug/
 *.db.*.backup
 
 # Scrapy's JOBDIR & Persistence folder
-*persistence/
+*persistence*
 
 newrelic.ini
 

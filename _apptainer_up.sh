@@ -10,6 +10,10 @@ BUILD_TRIGGER_NEW="deployments/.apptainer_build_trigger.new"
 BUILT_IMAGE="deployments/_temp.built_image.sif"
 FORCE_REBUILD="deployments/.force_rebuild"
 
+# Create a backup of the .persistence folder with current date and time
+TIMESTAMP=$(date +%Y_%m_%d_T%H%M%S)  # Format: YYYY_MM_DD_THHMMSS
+cp -r .persistence ".persistence_backup_${TIMESTAMP}"
+
 # Generate new checksums
 sha256sum $SINGULARITY_DEF $REQUIREMENTS > $BUILD_TRIGGER_NEW
 
@@ -36,7 +40,7 @@ echo "Container started with GID $PGID, logging to $TIMESTAMP.log"
 mv $LOGFILE "$TIMESTAMP.log"
 
 # Implement a timer to stop the process after 3 hours
-sleep 9600
+sleep 14100
 kill -- -$PGID  # Send SIGTERM to all processes in the group
 echo "Apptainer processes have been stopped after 3 hours."
 

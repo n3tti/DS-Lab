@@ -1,2 +1,2 @@
 PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/users/pkoludar/apptainer/bin
-0 2-23/3 * * * cd /capstor/store/cscs/swissai/a06/users/group_06/production/ && /bin/bash ./_apptainer_up.sh >> _cron_out.log
+0 1-23/4 * * * cd /capstor/store/cscs/swissai/a06/users/group_06/production/ && /bin/bash ./_apptainer_up.sh >> _cron_out.log
