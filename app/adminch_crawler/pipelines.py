@@ -21,8 +21,8 @@ class DiscoveredStoragePipeline:
 
         elif existing_page.status == PageStatusEnum.COMPLETED:
             raise DropItem(f"url: '{scraped_page.url}' is already COMPLETED.")
-        elif existing_page.status == PageStatusEnum.FINALIZED:
-            raise DropItem(f"url: '{scraped_page.url}' is already FINALIZED.")
+        # elif existing_page.status == PageStatusEnum.FINALIZED:
+        #     raise DropItem(f"url: '{scraped_page.url}' is already FINALIZED.")
         else:
             db.update_scraped_page_status(scraped_page_id=scraped_page.id, status=PageStatusEnum.REVISITED)
 
