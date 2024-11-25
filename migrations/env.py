@@ -10,7 +10,8 @@ from sqlmodel import SQLModel
 
 from app.repository.models import BaseModel
 
-DATABASE_URL = os.getenv("DATABASE_URL", "sqlite:///data/example.db")
+DATABASE_URL = "sqlite:///C:/Users/eroma/Desktop/Master/MA3/DSL_git/DS-Lab/database/example.db" #os.getenv("DATABASE_URL", "sqlite:////C:/Users/eroma/Desktop/Master/MA3/DSL_git/DS-Lab/database/exemple.db")
+ #os.getenv("DATABASE_URL", "sqlite:///data/example.db")
 
 # this is the Alembic Config object, which provides
 # access to the values within the .ini file in use.

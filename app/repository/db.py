@@ -71,12 +71,20 @@ class Database:
             pdf = session.query(PDFLink).filter(PDFLink.id == pdf_id).first()
             if pdf is None:
                 return
-            pdf.metadata_dict = metadata
+            pdf.metadata_dict = metadata.dict()
             pdf.md_text = md
             pdf.referenced_links = links
             pdf.referenced_images = images
             pdf.status = LinkStatusEnum.PROCESSED
                
+    def load_md(self):
+        with session_scope() as session:
+            pdf = session.query(PDFLink).filter(PDFLink.status == LinkStatusEnum.PROCESSED).first()
+            if pdf is None:
+                return None
+            md_copy = pdf.model_copy(deep=True).md_text
+            return md_copy
+
     def add_image(self, img : ImageLink):
         with session_scope() as session:
             session.add(img)

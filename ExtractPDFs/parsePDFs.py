@@ -9,12 +9,12 @@ import pymupdf
 
 
 # In the db, look for pdfs that are not yet processed
-def get_unprocessed_pdf_url() -> Queue[PDFLink]:
-    queue = Queue()
+def get_unprocessed_pdf_url() -> list[PDFLink]:
+    queue = []
     pdf_obj_list = db.get_pdf_from_status([LinkStatusEnum.DISCOVERED, LinkStatusEnum.FAILED, LinkStatusEnum.DOWNLOADED]) 
     for pdf_obj in pdf_obj_list:
         # TODO update status as processing ?
-        queue.put(pdf_obj) 
+        queue.append(pdf_obj) 
     return queue
 
 def download_and_get_pdf_data(pdf : PDFLink):
@@ -24,7 +24,7 @@ def download_and_get_pdf_data(pdf : PDFLink):
         data = r.content
         doc = pymupdf.Document(stream=data)
 
-    return doc, status_code
+    return doc, r.status_code
 
 
 def parse_pdf(doc):
@@ -64,7 +64,7 @@ def parse_pdf(doc):
 if __name__ == "__main__":
 
     url_queue = get_unprocessed_pdf_url()
-    while not url_queue.qsize() == 0:
+    while not len(url_queue) == 0:
         pdf_link = url_queue.pop()
         doc, status_code = download_and_get_pdf_data(pdf_link)
         md = None
