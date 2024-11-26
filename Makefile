@@ -14,6 +14,15 @@ start:
 html2md:
 	python -c "from app.html2md import run_conversion; run_conversion()"
 
+getErrorUrls:
+	alembic revision --autogenerate -m "Add non_standard_status_codes table"; \
+	alembic upgrade head; \
+	python -c "from scripts import get_error_urls; get_error_urls()"
+
+exportMarkdown:
+	python -c "from scripts import export_markdown; export_markdown()"
+
+
 alembic:
 	rm -rf data/*.db*; \
 # 	rm -rf migrations/versions/*.py; \

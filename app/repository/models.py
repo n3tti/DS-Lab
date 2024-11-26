@@ -189,3 +189,11 @@ class MarkdownPage(BaseModel, table=True):
     scraped_page_id: int = Field(foreign_key="scraped_pages.id")
 
     body_md: str = Field()
+
+class NonStandardStatusCode(SQLModel, table=True):
+    # For now all status codes that are not 200 or 404
+    __tablename__ = "non_standard_status_codes"
+
+    id: int = Field(primary_key=True)
+    url: str = Field(index=True)
+    status_code: int

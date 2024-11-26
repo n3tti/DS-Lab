@@ -8,7 +8,7 @@ from app.repository.models import ChildParentLink, ImageLink, PDFLink, ScrapedPa
 
 
 class CrawlingSpider(CrawlSpider):
-
+    logger.error("Crawling spider initialized")
     name = "my2crawler"
     allowed_domains = ["admin.ch"]
     start_urls = ["https://www.admin.ch/"]
