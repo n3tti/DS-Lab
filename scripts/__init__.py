@@ -1,6 +1,7 @@
 from .getErrorUrls import GetErrorUrls
 from app.repository.db import db
 from .export_markdown import export_markdown_files
+import process_html_to_markdown
 
 def get_error_urls():
     get_error_urls = GetErrorUrls(db)
@@ -8,3 +9,6 @@ def get_error_urls():
 
 def export_markdown():
     export_markdown_files()
+
+def process_html_to_md():
+    process_html_to_markdown()

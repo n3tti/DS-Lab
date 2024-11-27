@@ -20,7 +20,7 @@ getErrorUrls:
 	python -c "from scripts import get_error_urls; get_error_urls()"
 
 exportMarkdown:
-	python -c "from scripts import export_markdown; export_markdown()"
+	python -c "from scripts import export_markdown; process_html_to_md()"
 
 
 alembic:

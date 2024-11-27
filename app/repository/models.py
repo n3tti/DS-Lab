@@ -181,12 +181,12 @@ class ImageLink(BaseModel, table=True):
         return normalize_url(v)
 
 
-# # TODO: Review this
-# class MarkdownPage(BaseModel, table=True):
-#     __tablename__ = "md_pages"
+# TODO: Review this
+class MarkdownPage(BaseModel, table=True):
+    __tablename__ = "md_pages"
 
-#     id: int = Field(primary_key=True)
+    id: int = Field(primary_key=True)
 
-#     scraped_page_id: int = Field(foreign_key="scraped_pages.id")
+    scraped_page_id: int = Field(foreign_key="scraped_pages.id")
 
-#     body_md: str = Field()
+    body_md: str = Field()
