@@ -151,3 +151,24 @@ JOBDIR = JOBDIR
 
 SCHEDULER_DISK_QUEUE = "scrapy.squeues.PickleFifoDiskQueue"
 SCHEDULER_MEMORY_QUEUE = "scrapy.squeues.FifoMemoryQueue"
+
+# Playwright settings
+USE_PLAYWRIGHT = True  # Set to True when you want to use Playwright
+
+if USE_PLAYWRIGHT:
+    DOWNLOAD_HANDLERS = {
+        "http": "scrapy_playwright.handler.ScrapyPlaywrightDownloadHandler",
+        "https": "scrapy_playwright.handler.ScrapyPlaywrightDownloadHandler",
+    }
+
+    PLAYWRIGHT_LAUNCH_OPTIONS = {
+        "headless": True,
+        "args": [
+            "--no-sandbox",
+            "--disable-setuid-sandbox",
+            "--enable-javascript",
+        ],
+    }
+
+    PLAYWRIGHT_DEFAULT_NAVIGATION_TIMEOUT = 60000  # 60 seconds
+    DOWNLOAD_TIMEOUT = 30  # in seconds

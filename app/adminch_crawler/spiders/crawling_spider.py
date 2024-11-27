@@ -1,7 +1,9 @@
 from urllib.parse import urljoin
 
+from scrapy.http import Request
 from scrapy.linkextractors import LinkExtractor
 from scrapy.spiders import CrawlSpider, Rule
+from scrapy_playwright.page import PageMethod
 
 from app.logs import logger
 from app.repository.models import ChildParentLink, ImageLink, PDFLink, ScrapedPage
@@ -13,6 +15,36 @@ class CrawlingSpider(CrawlSpider):
     allowed_domains = ["admin.ch"]
     start_urls = ["https://www.admin.ch/"]
 
+    def start_requests(self):
+        for url in self.start_urls:
+            yield Request(
+                url,
+                meta=dict(
+                    playwright=True,
+                    playwright_include_page=True,
+                    playwright_page_methods=[
+                        # Wait for initial load
+                        PageMethod("wait_for_selector", "body"),
+                        # Wait for JavaScript to initialize
+                        PageMethod("wait_for_timeout", 5000),
+                        # Accept any cookies/terms if needed
+                        # PageMethod("click", ".accept-button"),  # Adjust if needed
+                        # Wait for content to be available
+                        PageMethod("wait_for_load_state", "networkidle"),
+                        PageMethod("wait_for_timeout", 2000),
+                    ],
+                    errback=self.errback,
+                ),
+            )
+
+    async def errback(self, failure):
+        page = failure.request.meta["playwright_page"]
+        await page.close()
+        logger.error(f"Request failed: {failure.value}")
+
+    def parse_start_url(self, response):
+        return self.parse_item(response)
+
     rules = (
         Rule(
             LinkExtractor(
@@ -21,8 +53,22 @@ class CrawlingSpider(CrawlSpider):
             ),
             callback="parse_item",
             follow=True,
+            process_request="process_request",
         ),
     )
+
+    def process_request(self, request, spider):
+        request.meta.update(
+            playwright=True,
+            playwright_include_page=True,
+            playwright_page_methods=[
+                PageMethod("wait_for_selector", "body"),
+                PageMethod("evaluate", "window.scrollTo(0, document.body.scrollHeight)"),
+                PageMethod("wait_for_timeout", 2000),
+            ],
+            errback=self.errback,
+        )
+        return request
 
     def parse_item(self, response):
 
