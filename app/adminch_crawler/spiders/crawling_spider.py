@@ -11,7 +11,7 @@ class CrawlingSpider(CrawlSpider):
     logger.error("Crawling spider initialized")
     name = "my2crawler"
     allowed_domains = ["admin.ch"]
-    start_urls = ["https://www.admin.ch/"]
+    start_urls = ["https://www.bit.admin.ch/en/sgc-en"]
 
     rules = (
         Rule(
