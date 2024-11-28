@@ -1,8 +1,8 @@
 """Create scraped_page table
 
-Revision ID: 67e9393573f6
+Revision ID: 494a180b779d
 Revises: 
-Create Date: 2024-11-27 23:38:08.056390
+Create Date: 2024-11-28 13:21:08.879527
 
 """
 from typing import Sequence, Union
@@ -13,7 +13,7 @@ import sqlmodel
 
 
 # revision identifiers, used by Alembic.
-revision: str = '67e9393573f6'
+revision: str = '494a180b779d'
 down_revision: Union[str, None] = None
 branch_labels: Union[str, Sequence[str], None] = None
 depends_on: Union[str, Sequence[str], None] = None
@@ -24,12 +24,13 @@ def upgrade() -> None:
     op.create_table('scraped_pages',
     sa.Column('id', sa.Integer(), nullable=False),
     sa.Column('url', sqlmodel.sql.sqltypes.AutoString(), nullable=False),
-    sa.Column('status', sa.Enum('DISCOVERED', 'PROCESSING', 'COMPLETED', 'FAILED', 'REVISITED', name='pagestatusenum'), nullable=False),
+    sa.Column('status', sa.Enum('DISCOVERED', 'PROCESSING', 'COMPLETED', 'FAILED', 'REVISITED', 'FINALIZED', name='pagestatusenum'), nullable=False),
     sa.Column('depth', sa.Integer(), nullable=False),
     sa.Column('cousin_urls_dict', sa.JSON(), nullable=True),
     sa.Column('response_status_code', sa.Integer(), nullable=True),
     sa.Column('response_text', sqlmodel.sql.sqltypes.AutoString(), nullable=True),
     sa.Column('response_body', sa.LargeBinary(), nullable=True),
+    sa.Column('content_formatted_with_markdown', sqlmodel.sql.sqltypes.AutoString(), nullable=True),
     sa.Column('response_content_type', sqlmodel.sql.sqltypes.AutoString(), nullable=True),
     sa.Column('response_content_length', sa.Integer(), nullable=True),
     sa.Column('response_content_encoding', sqlmodel.sql.sqltypes.AutoString(), nullable=True),

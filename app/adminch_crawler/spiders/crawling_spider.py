@@ -11,9 +11,9 @@ from app.repository.models import ChildParentLink, ImageLink, PDFLink, ScrapedPa
 
 class CrawlingSpider(CrawlSpider):
 
-    name = "my2crawler"
+    name = "adminch_crawler"
     allowed_domains = ["admin.ch"]
-    start_urls = ["https://www.admin.ch/"]
+    start_urls = ["https://www.bit.admin.ch/en/sgc-en"]
 
     def start_requests(self):
         for url in self.start_urls:
@@ -152,10 +152,11 @@ class CrawlingSpider(CrawlSpider):
             response_metadata_description=description,
             response_metadata_keywords=keywords,
             response_metadata_content_hash=None,
+            content_formatted_with_markdown=content_formatted_with_markdown,
         )
 
         # TODO: discuss if we need this, later make a migration if needed
-        # scraped_page.content_formatted_with_markdown = content_formatted_with_markdown
+        scraped_page.content_formatted_with_markdown = content_formatted_with_markdown
 
         yield scraped_page
 

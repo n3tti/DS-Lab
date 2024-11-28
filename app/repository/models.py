@@ -26,7 +26,7 @@ class PageStatusEnum(str, Enum):
     COMPLETED = "Completed"  # completed crawling but not converted to Markdown
     FAILED = "Failed"
     REVISITED = "Revisited"
-    # FINALIZED = "Finalized"  # goes after the status "Completed"
+    FINALIZED = "Finalized"  # goes after the status "Completed"
 
 
 class LinkStatusEnum(str, Enum):
@@ -58,7 +58,7 @@ class ScrapedPage(BaseModel, table=True):
     response_text: str | None = Field(default=None, description="Text portion of the HTTP response")
     response_body: bytes | None = Field(default=None, sa_type=LargeBinary(), description="Binary body of the HTTP response")
 
-    # content_formatted_with_markdown: str | None = Field(default=None, description="Response text converted to Markdown.")
+    content_formatted_with_markdown: str | None = Field(default=None, description="Response text converted to Markdown.")
 
     response_content_type: str | None = Field(default=None, description="MIME type of the content")
     response_content_length: int | None = Field(default=None, description="Length of the response content in bytes")
@@ -96,13 +96,13 @@ class ScrapedPage(BaseModel, table=True):
             return v
         return None
 
-    # @property
-    # def content_formatted_with_markdown(self):
-    #     return self._content_formatted_with_markdown
+    @property
+    def content_formatted_with_markdown(self):
+        return self._content_formatted_with_markdown
 
-    # @content_formatted_with_markdown.setter
-    # def content_formatted_with_markdown(self, value: dict[str, str]):
-    #     self._content_formatted_with_markdown = value
+    @content_formatted_with_markdown.setter
+    def content_formatted_with_markdown(self, value: dict[str, str]):
+        self._content_formatted_with_markdown = value
 
     def __str__(self):
         model_dict = self.model_dump(include={"id", "url", "status"})
@@ -181,12 +181,12 @@ class ImageLink(BaseModel, table=True):
         return normalize_url(v)
 
 
-# # TODO: Review this
-# class MarkdownPage(BaseModel, table=True):
-#     __tablename__ = "md_pages"
+# TODO: Review this
+class MarkdownPage(BaseModel, table=True):
+    __tablename__ = "md_pages"
 
-#     id: int = Field(primary_key=True)
+    id: int = Field(primary_key=True)
 
-#     scraped_page_id: int = Field(foreign_key="scraped_pages.id")
+    scraped_page_id: int = Field(foreign_key="scraped_pages.id")
 
-#     body_md: str = Field()
+    body_md: str = Field()
