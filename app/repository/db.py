@@ -4,7 +4,7 @@ from sqlalchemy import create_engine
 from sqlalchemy.orm import scoped_session, sessionmaker
 
 from app.config import DATABASE_URL
-from app.repository.models import PageStatusEnum, ScrapedPage
+from app.repository.models import PageStatusEnum, ScrapedPage, PDFMetadata, LinkStatusEnum, PDFLink
 
 engine = create_engine(DATABASE_URL, echo=False, future=True)
 session_factory = sessionmaker(autocommit=False, autoflush=False, bind=engine)
@@ -71,5 +71,39 @@ class Database:
             scraped_page_obj.content_formatted_with_markdown = markdown_content
             scraped_page_obj.status = PageStatusEnum.FINALIZED
 
+    def update_pdf_status(self, pdf_id: int, status:LinkStatusEnum):
+        with session_scope() as session:
+            pdf_obj = session.query(PDFLink).filter(PDFLink.id == pdf_id).first()
+            if pdf_obj is None:
+                return None
+            pdf_obj.status = status
+    
+    def add_pdf_md(self, pdf_id : int, metadata: PDFMetadata, md, links, images):
+        with session_scope() as session:
+            pdf = session.query(PDFLink).filter(PDFLink.id == pdf_id).first()
+            if pdf is None:
+                return
+            if metadata == None and md == None and links == None and images== None:
+                print("PDF failed")
+                pdf.status = LinkStatusEnum.FAILED
+            else:
+                pdf.metadata_dict = metadata.dict()
+                pdf.md_text = md
+                pdf.referenced_links = links
+                pdf.referenced_images = images
+                pdf.status = LinkStatusEnum.PROCESSED
+                
+    def get_unprocessed_pdf(self, row_per_read):
+        print("Entering session scope...")
+        with session_scope() as session:
+            print("read db")
+            pdf_list = session.query(PDFLink).filter(PDFLink.status == LinkStatusEnum.DISCOVERED).limit(row_per_read).all()
+            for pdf in pdf_list:
+                print(pdf.id)
+                pdf.status = LinkStatusEnum.PROCESSING
+            if not pdf_list:
+                return []
+            return [pdf.model_copy(deep=True) for pdf in pdf_list]
+        
 
 db = Database()
