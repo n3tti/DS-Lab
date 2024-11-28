@@ -2,7 +2,7 @@ from datetime import datetime
 from enum import Enum
 
 from pydantic import field_validator  # , HttpUrl
-from sqlalchemy import CHAR, Column, DateTime, LargeBinary
+from sqlalchemy import CHAR, Column, DateTime, LargeBinary, Text
 from sqlalchemy.sql import func
 from sqlalchemy.types import JSON  # Correctly import JSON from sqlalchemy.types
 from sqlmodel import Field, Relationship, SQLModel

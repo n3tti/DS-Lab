@@ -6,6 +6,7 @@ import requests
 from app.repository.models import PDFLink, PDFMetadata
 import pymupdf4llm
 import pymupdf
+import argparse
 
 
 class Worker():
@@ -107,5 +108,11 @@ class Worker():
 
 
 if __name__ == "__main__":
-    worker = Worker("127.0.0.1", 5000)
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--manager-host", required=True, help="Hostname of the manager node")
+    parser.add_argument("--manager-port", type=int, default=5000, help="Port of the manager node")
+    args = parser.parse_args()
+
+    # Use the provided manager host and port
+    worker = Worker(args.manager_host, args.manager_port)
     worker.worker_task()
