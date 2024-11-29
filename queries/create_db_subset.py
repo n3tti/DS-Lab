@@ -1,3 +1,10 @@
+"""
+Create a subset of a database (from source to target), with a row limit for each table.
+Usefull for debuging queries and testing.
+ 
+"""
+
+
 import sqlite3
 
 def extract_subset(source_db, target_db, row_limit=1000):
