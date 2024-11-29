@@ -1,62 +1,54 @@
-from playwright.sync_api import sync_playwright
-import time
+import os
+from app.repository.models import ScrapedPage  # Adjust the model import as necessary
+from app.repository.db import Database, session_scope
+import requests  # Assuming requests is imported and has a seen attribute
+import tempfile
 
 
-#from app.repository.db import db
-#from app.repository.models import ScrapedPage, PageStatusEnum
-
-def access_url_with_retries(url, max_retries=3, delay=2):
-    with sync_playwright() as p:
-        browser = p.chromium.launch(headless=True)
-        page = browser.new_page()
+def get_urls_for_rescraping(db: Database):
+    # Connect to the database
+    with session_scope() as session:
+        # Query for pages with a <noscript> tag
+        pages = session.query(ScrapedPage).filter(ScrapedPage.response_text.contains('<noscript>')).all()
         
-        for attempt in range(max_retries):
-            try:
-                print(f"Attempt {attempt + 1} to access {url}")
-                page.goto(url)
-                # Check if the page loaded successfully
-                if page.title():
+        # Extract URLs and markdown content
+        urls_to_rescrape = []
+        for page in pages:
+            urls_to_rescrape.append({
+                'url': page.url,
+                'id': page.id  # Assuming you have access to the ID
+            })
 
-                    print(f"Successfully accessed {url}")
-                    # Save or update the page information to the database
-                    #save_or_update_page_in_db(url, page)
-                    save_html_file(page)
-                    break
-            except Exception as e:
-                print(f"Error accessing {url}: {e}")
-                if attempt < max_retries - 1:
-                    print(f"Retrying in {delay} seconds...")
-                    time.sleep(delay)
-        else:
-            print(f"Failed to access {url} after {max_retries} attempts.")
-        
-        page.close()
-        browser.close()
-
-def save_html_file(page): 
-    with open("recrawl_js.html", "w") as file:
-        file.write(page.content())
-
-def save_or_update_page_in_db(url, page):
-    existing_page = db.get_scraped_page(url=url)
+    # Save the URLs into a text file and remove IDs from requests.seen
+    with open('urls_to_rescrape.txt', 'w') as file:
+        print("saved urls")
+        for entry in urls_to_rescrape:
+            file.write(f'"{entry["url"]}",\n')
     
-    if existing_page:
-        # Update existing page
-        existing_page.response_status_code = 200  # Assuming success
-        existing_page.response_text = page.content()  # Get the page content
-        existing_page.response_content_type = page.evaluate("() => document.contentType")  # Get content type
-        db.update_scraped_page_status(existing_page.id, PageStatusEnum.REVISITED)  # Update status if needed
-    else:
-        # Create new page entry
-        new_page = ScrapedPage(
-            url=url,
-            response_status_code=200,  # Assuming success
-            response_text=page.content(),  # Get the page content
-            response_content_type=page.evaluate("() => document.contentType"),  # Get content type
-            # Add other fields as necessary
-        )
-        db.create_scraped_page(new_page)  # Save to the database
+    file_path = '/Users/saschatran/Desktop/Uni gits/DS-Lab/.persistence/jobdir/requests.seen'
 
-# Example usage
-url_to_access = "https://www.fedlex.admin.ch/eli/cc/1960/525_569_555/de"
-access_url_with_retries(url_to_access)
+
+    # Create a temporary file
+    temp_fd, temp_path = tempfile.mkstemp()
+
+    # Set of IDs to remove from the file
+    ids_to_remove = {entry['id'] for entry in urls_to_rescrape}
+
+    # Read from the original file and write to a temporary file only the IDs that should not be removed
+    with open(file_path, 'r') as file, os.fdopen(temp_fd, 'w') as temp_file:
+        for line in file:
+            line = line.strip()
+            if line not in ids_to_remove:
+                temp_file.write(f'{line}\n')
+
+    # Replace the original file with the updated one
+    os.replace(temp_path, file_path)
+
+
+
+# "Get all urls that require rescraping due to missing JavaScript rendering"
+
+# !important: adjust pipeline such that when rescraping specific urls, only the relevant new information are replaced
+# not a completely new entry
+
+# also don't forget to remove the urls in .persistence

@@ -1,8 +1,8 @@
 """Create scraped_page table
 
-Revision ID: e8500dde7f08
+Revision ID: 72fe30c6f1ea
 Revises: 
-Create Date: 2024-11-29 01:02:41.399045
+Create Date: 2024-11-29 12:03:33.038021
 
 """
 from typing import Sequence, Union
@@ -13,7 +13,7 @@ import sqlmodel
 
 
 # revision identifiers, used by Alembic.
-revision: str = 'e8500dde7f08'
+revision: str = '72fe30c6f1ea'
 down_revision: Union[str, None] = None
 branch_labels: Union[str, Sequence[str], None] = None
 depends_on: Union[str, Sequence[str], None] = None
