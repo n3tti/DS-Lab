@@ -153,7 +153,7 @@ SCHEDULER_DISK_QUEUE = "scrapy.squeues.PickleFifoDiskQueue"
 SCHEDULER_MEMORY_QUEUE = "scrapy.squeues.FifoMemoryQueue"
 
 # Playwright settings
-USE_PLAYWRIGHT = True  # Set to True when you want to use Playwright
+USE_PLAYWRIGHT = False  # Set to True when you want to use Playwright
 
 if USE_PLAYWRIGHT:
     DOWNLOAD_HANDLERS = {

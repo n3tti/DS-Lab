@@ -11,9 +11,11 @@ from app.repository.models import ChildParentLink, ImageLink, PDFLink, ScrapedPa
 
 class CrawlingSpider(CrawlSpider):
 
-    name = "my2crawler"
+    name = "adminch_crawler"
     allowed_domains = ["admin.ch"]
-    start_urls = ["https://www.admin.ch/"]
+    start_urls = ["https://www.fedlex.admin.ch/eli/cc/1960/525_569_555/de",
+                    "https://www.fedlex.admin.ch/eli/oc/2022/790/de#lvl_u1/lvl_u1/lvl_1/art_12",
+                    "https://www.fedlex.admin.ch/eli/cc/2000/57/de"]
 
     def start_requests(self):
         for url in self.start_urls:
