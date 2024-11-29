@@ -3,6 +3,8 @@ export $(shell sed 's/=.*//' .env)
 DOCKER_COMPOSE = docker compose -p dockercrawler -f deployments/docker-compose.yml
 JSON_FILE ?= metadata.json
 RESTART ?= True
+NODES ?= 1
+TASKS ?= 2
 
 lint:
 	black . && isort . && flake8 .
@@ -65,3 +67,8 @@ apptainer-kill:
 apptainer-force-kill:
 	-kill -- -$$(ps -eo pid,pgid,cmd | grep Apptainer | grep -v grep | head -n 1 | awk '{print $$2}')
 	# if nothing helps use this: pkill -f 'python -m app.main'
+
+# Submit parsePDF task to slurm
+parsePDF:
+	echo "Running manager.py with NODES=$(NODES) and TASKS=$(TASKS)"
+	sbatch --nodes=$(NODES) --ntasks=$(TASKS) test/manager.slurm

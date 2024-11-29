@@ -75,5 +75,6 @@ class Manager():
 
 
 if __name__ == "__main__":
-    manager = Manager("127.0.0.1", 5000)
+    current_node = socket.gethostname()
+    manager = Manager(current_node, 5000)
     manager.manager_task()
