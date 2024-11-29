@@ -1,7 +1,9 @@
 from playwright.sync_api import sync_playwright
 import time
-from app.repository.db import db
-from app.repository.models import ScrapedPage, PageStatusEnum
+
+
+#from app.repository.db import db
+#from app.repository.models import ScrapedPage, PageStatusEnum
 
 def access_url_with_retries(url, max_retries=3, delay=2):
     with sync_playwright() as p:
@@ -14,9 +16,11 @@ def access_url_with_retries(url, max_retries=3, delay=2):
                 page.goto(url)
                 # Check if the page loaded successfully
                 if page.title():
+
                     print(f"Successfully accessed {url}")
                     # Save or update the page information to the database
-                    save_or_update_page_in_db(url, page)
+                    #save_or_update_page_in_db(url, page)
+                    save_html_file(page)
                     break
             except Exception as e:
                 print(f"Error accessing {url}: {e}")
@@ -28,6 +32,10 @@ def access_url_with_retries(url, max_retries=3, delay=2):
         
         page.close()
         browser.close()
+
+def save_html_file(page): 
+    with open("recrawl_js.html", "w") as file:
+        file.write(page.content())
 
 def save_or_update_page_in_db(url, page):
     existing_page = db.get_scraped_page(url=url)
@@ -50,5 +58,5 @@ def save_or_update_page_in_db(url, page):
         db.create_scraped_page(new_page)  # Save to the database
 
 # Example usage
-url_to_access = "https://www.example.com"
+url_to_access = "https://www.fedlex.admin.ch/eli/cc/1960/525_569_555/de"
 access_url_with_retries(url_to_access)
