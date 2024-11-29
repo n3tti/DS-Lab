@@ -49,7 +49,7 @@ def values_counts(cursor, table_name, field, output_file):
     value_counts = cursor.fetchall()
     write(output_file, f"Counts of each unique value in the field '{field}' in table '{table_name}':\n")
     for value, count in value_counts:
-            write(output_file, f"Value: {value}, Count: {count}\n")
+            write(output_file, f"   Value: {value}, Count: {count}\n")
 
 def min_max(cursor, table_name, field, output_file):
     query = f"""
@@ -74,13 +74,13 @@ def values_dic_keys(cursor, table_name, field, output_file):
 def distinct_key_sets_count(cursor, table_name, field, output_file):
     
     query = f"""
-    SELECT json_group_array(json_each.key) AS key_set, COUNT(*) AS count
+    SELECT key_set, COUNT(*) AS count
     FROM (
-        SELECT json_each.key
+        SELECT json_group_array(json_each.key) AS key_set
         FROM {table_name}, json_each({table_name}.{field})
-        GROUP BY json_each.key
+        GROUP BY {table_name}.rowid
     ) key_groups
-    GROUP BY key_set
+    GROUP BY key_set;
     """
     cursor.execute(query)
     results = cursor.fetchall()
@@ -88,13 +88,12 @@ def distinct_key_sets_count(cursor, table_name, field, output_file):
     write(output_file, f"Distinct sets of keys and their counts in table '{table_name}':\n")
     for row in results:
         key_set, count = row
-        write(output_file, f"Keys: {key_set}, Count: {count}\n")
+        write(output_file, f"   Keys: {key_set}, Count: {count}\n")
     return results
 
 if __name__ == "__main__":
 
-    database_file = "../database/example.db"
-    table_name = "your_table_name"
+    database_file = "/capstor/store/cscs/swissai/a06/users/group_06/test/production_subset.db"
     output_file = "./stats.txt"
 
     try:
@@ -103,33 +102,33 @@ if __name__ == "__main__":
         cursor = conn.cursor()
         write(output_file, "-----------------   Data summary   -----------------\n")
 
-        #count_rows(cursor, "pdf_links", output_file)
-        #count_rows(cursor, "scraped_pages", output_file)
-        #count_rows(cursor, "image_links", output_file)
-        #count_rows(cursor, "child_parent_links", output_file)
+        count_rows(cursor, "pdf_links", output_file)
+        count_rows(cursor, "scraped_pages", output_file)
+        count_rows(cursor, "image_links", output_file)
+        count_rows(cursor, "child_parent_links", output_file)
 
-        # field_uniqueness(cursor, "scraped_pages", "url", output_file)
-        # field_uniqueness(cursor, "pdf_links", "url", output_file)
-        # field_uniqueness(cursor, "image_links", "url", output_file)
+        field_uniqueness(cursor, "scraped_pages", "url", output_file)
+        field_uniqueness(cursor, "pdf_links", "url", output_file)
+        field_uniqueness(cursor, "image_links", "url", output_file)
 
-        # list_values(cursor, "scraped_pages", "response_status_code", output_file)
-        # list_values(cursor, "scraped_pages", "response_content_type", output_file)
-        # list_values(cursor, "scraped_pages", "response_content_encoding", output_file)
-        # list_values(cursor, "scraped_pages", "response_metadata_lang", output_file)
-        # list_values(cursor, "pdf_links", "lang", output_file)
+        list_values(cursor, "scraped_pages", "response_status_code", output_file)
+        list_values(cursor, "scraped_pages", "response_content_type", output_file)
+        list_values(cursor, "scraped_pages", "response_content_encoding", output_file)
+        list_values(cursor, "scraped_pages", "response_metadata_lang", output_file)
+        list_values(cursor, "pdf_links", "lang", output_file)
 
-        # values_counts(cursor, "scraped_pages", "status", output_file)
-        # values_counts(cursor, "pdf_links", "status", output_file)
-        # values_counts(cursor, "image_links", "status", output_file)
+        values_counts(cursor, "scraped_pages", "status", output_file)
+        values_counts(cursor, "pdf_links", "status", output_file)
+        values_counts(cursor, "image_links", "status", output_file)
 
-        # values_counts(cursor, "scraped_pages", "response_metadata_lang", output_file)
+        values_counts(cursor, "scraped_pages", "response_metadata_lang", output_file)
 
-        # min_max(cursor, "scraped_pages", "depth", output_file)
-        # min_max(cursor, "scraped_pages", "response_content_length", output_file)
+        min_max(cursor, "scraped_pages", "depth", output_file)
+        min_max(cursor, "scraped_pages", "response_content_length", output_file)
 
         values_dic_keys(cursor, "scraped_pages", "cousin_urls_dict", output_file)
         
-        #distinct_key_sets_count(cursor, "scraped_pages", "cousin_urls_dict", output_file)
+        distinct_key_sets_count(cursor, "scraped_pages", "cousin_urls_dict", output_file)
 
 
 
