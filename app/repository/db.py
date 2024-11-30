@@ -4,7 +4,7 @@ from sqlalchemy import create_engine
 from sqlalchemy.orm import scoped_session, sessionmaker
 
 from app.config import DATABASE_URL
-from app.repository.models import PageStatusEnum, ScrapedPage, PDFMetadata, LinkStatusEnum, PDFLink
+from app.repository.models import PageStatusEnum, ScrapedPage, PDFMetadata, LinkStatusEnum, PDFLink, FileStorage
 
 engine = create_engine(DATABASE_URL, echo=False, future=True)
 session_factory = sessionmaker(autocommit=False, autoflush=False, bind=engine)
@@ -105,5 +105,11 @@ class Database:
                 return []
             return [pdf.model_copy(deep=True) for pdf in pdf_list]
         
+
+    def create_file_storage(self, file_storage: FileStorage) -> bool:
+        with session_scope() as session:
+            session.add(file_storage)
+            session.flush()
+            return True 
 
 db = Database()

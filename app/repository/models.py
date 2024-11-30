@@ -196,6 +196,28 @@ class ImageLink(BaseModel, table=True):
         return normalize_url(v)
 
 
+class FileStorage(BaseModel, table=True):
+    __tablename__ = "file_storage"
+
+    id: int = Field(primary_key=True)
+    link_id: int = Field(unique=True, nullable=False, description="ID of the related object (ImageLink or PDFLink)")
+    url: str = Field(nullable=False, index=True, description="Unique URL of the file")
+    extension: str = Field(nullable=False, description="File extension (e.g., pdf, jpg, etc.)")
+    filename: str = Field(nullable=False, description="Filename, hash of the url")
+
+    created_at: datetime = Field(sa_column=Column(DateTime(timezone=True), server_default=func.now()))
+    updated_at: datetime | None = Field(default=None, sa_column=Column(DateTime(timezone=True), onupdate=func.now()))
+
+    def __str__(self):
+        model_dict = self.model_dump()
+        return f"{type(self).__name__}({model_dict})"
+    
+    @field_validator("url", mode="before")
+    @classmethod
+    def _normalize_url(cls, v) -> str:
+        return normalize_url(v)
+    
+
 # # TODO: Review this
 # class MarkdownPage(BaseModel, table=True):
 #     __tablename__ = "md_pages"
