@@ -2,7 +2,7 @@
 
 This document provides examples of SQL queries applied to the dataset. 
 
-## From a page, get pages of same content with different languages
+## Given a page, get same pages in different languages.
 
 | SQL Query (Left)                     | Query Result (Right)          |
 |--------------------------------------|-------------------------------|
@@ -13,16 +13,18 @@ This document provides examples of SQL queries applied to the dataset.
 
 
 
-# From a page, get pages of same content with different languages
 
-# Get the hash distance of the content of two pages
+## Get the SimHash distance between the content of two pages.
 
-# Get pairs of pages that have a simhash distance less than thresh
+## Get pairs of pages that have a SimHash distance that is less than a certain threshold.
 
-# Get all the pages that are referenced by a page
+## Get all the pages that are referenced by a certain page.
 
-# Get all pages that reference a page
+## Get all pages that a certain page references.
 
-# From a page, get all referenced pdfs
+## Get all referenced pdfs urls from a certain page.
 
-# From a pdf, get the translated pdf in all other languages 
+## Given pdf url, get the translated pdf in all other languages available. 
+
+## Given an image url, get its binary file.
+

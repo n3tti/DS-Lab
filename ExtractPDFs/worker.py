@@ -3,7 +3,8 @@ import pickle
 import struct 
 
 import requests
-from app.repository.models import PDFLink, PDFMetadata
+from app.repository.models import PDFLink, PDFMetadata, LinkStatusEnum
+from store_files.save_file import save_downloaded_file
 import pymupdf4llm
 import pymupdf
 import argparse
@@ -46,7 +47,7 @@ class Worker():
         return self.read_data(socket)
 
 
-    def update_row(self, socket, id, metadata, md, links, images):            
+    def update_row(self, socket, id, metadata, md, links, images, dl):            
         id_serialized = pickle.dumps(id)
         metadata_serialized = pickle.dumps(metadata)
         md_serialized = pickle.dumps(md)
@@ -59,22 +60,26 @@ class Worker():
         return self.read_data(socket)
 
     def process(self, row):
+        
+        dl = False
         doc = None
         r = requests.get(row.url)
         if r.status_code == 200:
+            if row.status != LinkStatusEnum.DOWNLOADED:
+                dl = save_downloaded_file(row.id, row.url, "pdf", r.content)
             data = r.content
             doc = pymupdf.Document(stream=data)
             if doc.is_encrypted and doc.needs_pass:
-                return None, None, None, None, None
+                return None, None, None, None, None, dl
             metadata = doc.metadata
             metadata_obj = PDFMetadata(title = metadata["title"], author =  metadata["author"], \
                         subject = metadata["subject"], keywords = metadata["keywords"],\
                         creationDate = metadata["creationDate"], modDate = metadata["modDate"])
 
             md_text = pymupdf4llm.to_markdown(doc)
-            return row.id, metadata_obj, md_text, None, None
+            return row.id, metadata_obj, md_text, None, None, dl
         else:
-            return row.id, None, None, None, None
+            return row.id, None, None, None, None, dl
     
 
 
@@ -89,11 +94,10 @@ class Worker():
                 # Get unprocessed rows
                 print("Get row:")
                 rows = self.get_rows(client_socket)
-                print(rows)
                 if rows != None:
                     for row in rows:
                         print("Start processing.")
-                        id, metadata, md, links, images = self.process(row) # Process PDF
+                        id, metadata, md, links, images, dl = self.process(row) # Process PDF
                         print("End processing.")
                         print("Update row.")
                         update = self.update_row(client_socket, id, metadata, md, links, images) # Write to DB

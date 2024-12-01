@@ -9,7 +9,7 @@ from app.repository.models import FileStorage
 import hashlib
 
 
-SAVE_FILE_FOLDER = "."
+SAVE_FILE_FOLDER = "C:/Users/eroma/Desktop/Master/MA3/DSL_git/DS-Lab/samplefolder/"
 
 
 def hash_url(url: str) -> str:
