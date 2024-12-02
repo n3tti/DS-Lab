@@ -8,8 +8,9 @@ from app.repository.db import db
 from app.repository.models import FileStorage
 import hashlib
 from sqlalchemy.exc import IntegrityError
+from app.config import SAVE_DOWNLOADED_FILE
 
-SAVE_FILE_FOLDER = "/capstor/store/cscs/swissai/a06/users/group_06/test/DLFiles/"
+SAVE_FILE_FOLDER = SAVE_DOWNLOADED_FILE
 
 
 def hash_url(url: str) -> str:
