@@ -6,7 +6,7 @@ from sqlalchemy.orm import scoped_session, sessionmaker
 from app.config import DATABASE_URL
 from app.repository.models import PageStatusEnum, ScrapedPage, PDFMetadata, LinkStatusEnum, PDFLink, FileStorage
 
-engine = create_engine(DATABASE_URL, echo=False, future=True)
+engine = create_engine(DATABASE_URL, echo=False, future=True, connect_args={'timeout':30})
 session_factory = sessionmaker(autocommit=False, autoflush=False, bind=engine)
 Session = scoped_session(session_factory)
 
@@ -92,6 +92,7 @@ class Database:
                 pdf.referenced_links = links
                 pdf.referenced_images = images
                 pdf.status = LinkStatusEnum.PROCESSED
+            session.flush()
                 
     def get_unprocessed_pdf(self, row_per_read):
         with session_scope() as session:
@@ -100,6 +101,7 @@ class Database:
                 pdf.status = LinkStatusEnum.PROCESSING
             if not pdf_list:
                 return []
+            session.flush()
             return [pdf.model_copy(deep=True) for pdf in pdf_list]
         
 

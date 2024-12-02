@@ -21,6 +21,7 @@ def parsePDFs():
             if downloaded:
                 doc = pymupdf.Document(stream=response.content)
                 if doc == None or (doc.is_encrypted and doc.needs_pass):
+                    print("PDF is encrypted or empty.")
                     db.add_processed_pdf(row.id, None, None, None, None, LinkStatusEnum.DOWNLOADED)
                 else:
                     metadata = doc.metadata
@@ -30,8 +31,10 @@ def parsePDFs():
                     md_text = pymupdf4llm.to_markdown(doc)
                     db.add_processed_pdf(row.id, metadata_obj, md_text, None, None, LinkStatusEnum.PROCESSED)
             else:
+                print("PDF was downloaded, but failed to save it.")
                 db.add_processed_pdf(row.id, None, None, None, None, LinkStatusEnum.FAILED)
         else:
+            print(f"Unable to download the PDF, status = {response.status_code}.")
             db.add_processed_pdf(row.id, None, None, None, None, LinkStatusEnum.FAILED)
 
 

@@ -126,7 +126,7 @@ class PDFLink(BaseModel, table=True):
     scraped_page_id: int = Field(foreign_key="scraped_pages.id")
     url: str = Field(index=True, description="normalized url")
     lang: str | None = Field(sa_column=CHAR(10))
-    status: LinkStatusEnum = Field(default=LinkStatusEnum.DISCOVERED)
+    status: LinkStatusEnum = Field(index=True,default=LinkStatusEnum.DISCOVERED)
 
     scraped_page: "ScrapedPage" = Relationship(back_populates="pdf_links")
 
