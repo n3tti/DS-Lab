@@ -96,7 +96,7 @@ class Database:
                 
     def get_unprocessed_pdf(self, row_per_read):
         with session_scope() as session:
-            pdf_list = session.query(PDFLink).filter(or_(PDFLink.status == LinkStatusEnum.DISCOVERED, PDFLink.status == LinkStatusEnum.FAILED)).limit(row_per_read).all()
+            pdf_list = session.query(PDFLink).filter(PDFLink.status == LinkStatusEnum.DISCOVERED).limit(row_per_read).all()
             for pdf in pdf_list:
                 pdf.status = LinkStatusEnum.PROCESSING
             if not pdf_list:
@@ -113,7 +113,7 @@ class Database:
     
     def reset_processing(self):
         with session_scope() as session:
-            pdf_list = session.query(PDFLink).filter(PDFLink.status == LinkStatusEnum.PROCESSING).limit(500).all()
+            pdf_list = session.query(PDFLink).filter(or_(PDFLink.status == LinkStatusEnum.PROCESSING, PDFLink.status == LinkStatusEnum.FAILED)).limit(500).all()
             if pdf_list is None or len(pdf_list) == 0:
                 return False
             for pdf in pdf_list:
