@@ -7,9 +7,10 @@ todo
 from app.repository.db import db
 from app.repository.models import FileStorage
 import hashlib
+from sqlalchemy.exc import IntegrityError
+from app.config import SAVE_DOWNLOADED_FILE
 
-
-SAVE_FILE_FOLDER = "/capstor/store/cscs/swissai/a06/users/group_06/test/DLFiles/"
+SAVE_FILE_FOLDER = SAVE_DOWNLOADED_FILE
 
 
 def hash_url(url: str) -> str:
@@ -19,6 +20,7 @@ def hash_url(url: str) -> str:
 def save_downloaded_file(link_id, url, extension, content):
     try:   
         if not url.lower().endswith(f".{extension}"):
+            print("Extension did not match.")
             return False 
 
         hash_file = hash_url(url)
@@ -29,8 +31,14 @@ def save_downloaded_file(link_id, url, extension, content):
 
         file_storage = FileStorage(link_id=link_id, url=url, extension=extension, filename=hash_file)
         db_check = db.create_file_storage(file_storage)
+        if not db_check:
+            print("Failed to write to database.")
         return db_check 
-    except:
+    except Exception as e:
+        if isinstance(e,IntegrityError):
+            print("Did not write the PDF, because of duplicates.")
+        else:
+            print(f"Error occured : {e}.")
         return False
     
 

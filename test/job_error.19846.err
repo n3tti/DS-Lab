@@ -1,9 +1,0 @@
-/var/spool/slurmd/job19846/slurm_script: line 11: source: /users/eromanet/miniconda3_x86/envs/env/bin/python: cannot execute binary file
-/users/eromanet/miniconda3_x86/envs/env/bin/python: Error while finding module specification for 'ExtractPDFs.manager' (ModuleNotFoundError: No module named 'ExtractPDFs')
-/users/eromanet/miniconda3_x86/envs/env/bin/python: Error while finding module specification for 'ExtractPDFs.worker' (ModuleNotFoundError: No module named 'ExtractPDFs')
-/users/eromanet/miniconda3_x86/envs/env/bin/python: Error while finding module specification for 'ExtractPDFs.worker' (ModuleNotFoundError: No module named 'ExtractPDFs')
-/users/eromanet/miniconda3_x86/envs/env/bin/python: Error while finding module specification for 'ExtractPDFs.worker' (ModuleNotFoundError: No module named 'ExtractPDFs')
-srun: error: nid002300: task 0: Exited with exit code 1
-srun: error: nid002301: task 0: Exited with exit code 1
-srun: error: nid002312: task 1: Exited with exit code 1
-srun: error: nid002313: task 2: Exited with exit code 1
