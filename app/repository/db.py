@@ -1,14 +1,15 @@
 from contextlib import contextmanager
 
-from sqlalchemy import create_engine
+from sqlalchemy import create_engine, or_
 from sqlalchemy.orm import scoped_session, sessionmaker
 
 from app.config import DATABASE_URL
-from app.repository.models import PageStatusEnum, ScrapedPage
+from app.repository.models import PageStatusEnum, ScrapedPage, PDFMetadata, LinkStatusEnum, PDFLink, FileStorage
 
-engine = create_engine(DATABASE_URL, echo=False, future=True)
+engine = create_engine(DATABASE_URL, echo=False, future=True, connect_args={'timeout':30})
 session_factory = sessionmaker(autocommit=False, autoflush=False, bind=engine)
 Session = scoped_session(session_factory)
+
 
 
 @contextmanager
@@ -71,5 +72,52 @@ class Database:
             scraped_page_obj.content_formatted_with_markdown = markdown_content
             scraped_page_obj.status = PageStatusEnum.FINALIZED
 
+    def update_pdf_status(self, pdf_id: int, status:LinkStatusEnum):
+        with session_scope() as session:
+            pdf_obj = session.query(PDFLink).filter(PDFLink.id == pdf_id).first()
+            if pdf_obj is None:
+                return None
+            pdf_obj.status = status
+    
+    def add_processed_pdf(self, pdf_id : int, metadata: PDFMetadata, md, links, images, status : LinkStatusEnum):
+        with session_scope() as session:
+            pdf = session.query(PDFLink).filter(PDFLink.id == pdf_id).first()
+            if pdf is None:
+                return
+            if status == LinkStatusEnum.FAILED or status == LinkStatusEnum.DOWNLOADED:
+                pdf.status = status
+            else:
+                pdf.metadata_dict = metadata.dict()
+                pdf.md_text = md
+                pdf.referenced_links = links
+                pdf.referenced_images = images
+                pdf.status = LinkStatusEnum.PROCESSED
+            session.flush()
+                
+    def get_unprocessed_pdf(self, row_per_read):
+        with session_scope() as session:
+            pdf_list = session.query(PDFLink).filter(or_(PDFLink.status == LinkStatusEnum.DISCOVERED, PDFLink.status == LinkStatusEnum.FAILED)).limit(row_per_read).all()
+            for pdf in pdf_list:
+                pdf.status = LinkStatusEnum.PROCESSING
+            if not pdf_list:
+                return []
+            session.flush()
+            return [pdf.model_copy(deep=True) for pdf in pdf_list]
+        
+
+    def create_file_storage(self, file_storage: FileStorage) -> bool:
+        with session_scope() as session:
+            session.add(file_storage)
+            session.flush()
+            return True 
+    
+    def reset_processing(self):
+        with session_scope() as session:
+            pdf_list = session.query(PDFLink).filter(PDFLink.status == LinkStatusEnum.PROCESSING).limit(500).all()
+            if pdf_list is None or len(pdf_list) == 0:
+                return False
+            for pdf in pdf_list:
+                pdf.status = LinkStatusEnum.DISCOVERED
+            return True
 
 db = Database()

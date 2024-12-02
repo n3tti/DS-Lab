@@ -1,0 +1,45 @@
+-----------------   Data summary   -----------------
+The table 'pdf_links' has 2000 rows.
+The table 'scraped_pages' has 2000 rows.
+The table 'image_links' has 2000 rows.
+The table 'child_parent_links' has 2000 rows.
+All values in the field 'url' in table 'scraped_pages' are unique.
+The field 'url' in table 'pdf_links' has duplicate values.
+The field 'url' in table 'image_links' has duplicate values.
+All distinct values in the field 'response_status_code': [200, 404, 403]
+All distinct values in the field 'response_content_type': ['text/html;charset=utf-8', 'text/html;charset=UTF-8', 'application/rss+xml', 'text/html; charset=utf-8', 'text/html; charset=UTF-8', 'text/html', 'text/html; charset=ISO-8859-1', 'application/rss+xml;charset=UTF-8']
+All distinct values in the field 'response_content_encoding': [None]
+All distinct values in the field 'response_metadata_lang': ['de', 'fr', 'it', 'rm', 'en', None, 'de-ch', 'de-de', 'en-US', 'de-DE']
+All distinct values in the field 'lang': ['de', 'fr', 'it', 'rm', 'en', 'de-de']
+Counts of each unique value in the field 'status' in table 'scraped_pages':
+   Value: COMPLETED, Count: 1959
+   Value: FAILED, Count: 41
+Counts of each unique value in the field 'status' in table 'pdf_links':
+   Value: DISCOVERED, Count: 2000
+Counts of each unique value in the field 'status' in table 'image_links':
+   Value: DISCOVERED, Count: 2000
+Counts of each unique value in the field 'response_metadata_lang' in table 'scraped_pages':
+   Value: None, Count: 216
+   Value: de, Count: 1476
+   Value: de-DE, Count: 1
+   Value: de-ch, Count: 2
+   Value: de-de, Count: 2
+   Value: en, Count: 71
+   Value: en-US, Count: 2
+   Value: fr, Count: 103
+   Value: it, Count: 76
+   Value: rm, Count: 51
+Minimum value in 'depth' in table 'scraped_pages': 1
+Maximum value in 'depth'in table 'scraped_pages': 3
+Minimum value in 'response_content_length' in table 'scraped_pages': 398
+Maximum value in 'response_content_length'in table 'scraped_pages': 79420
+All unique keys in the field 'cousin_urls_dict' in table 'scraped_pages': ['de', 'en', 'it', 'rm', 'fr']
+Distinct sets of keys and their counts in table 'scraped_pages':
+   Keys: ["de","en","it","fr"], Count: 188
+   Keys: ["de","en","it","rm","fr"], Count: 321
+   Keys: ["de","fr"], Count: 1
+   Keys: ["de","it","fr"], Count: 168
+   Keys: ["de","it","rm","fr"], Count: 11
+   Keys: ["de"], Count: 7
+   Keys: ["en"], Count: 2
+   Keys: ["rm"], Count: 1

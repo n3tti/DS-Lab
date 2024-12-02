@@ -2,7 +2,7 @@ from datetime import datetime
 from enum import Enum
 
 from pydantic import field_validator  # , HttpUrl
-from sqlalchemy import CHAR, Column, DateTime, LargeBinary
+from sqlalchemy import CHAR, Column, DateTime, LargeBinary, Text
 from sqlalchemy.sql import func
 from sqlalchemy.types import JSON  # Correctly import JSON from sqlalchemy.types
 from sqlmodel import Field, Relationship, SQLModel
@@ -37,6 +37,15 @@ class LinkStatusEnum(str, Enum):
     PROCESSED = "Processed"
 
     # TEMPCOMPLETED = "TempCompleted"
+
+class PDFMetadata(BaseModel):
+    title: str | None = None
+    author: str | None = None
+    subject: str | None = None
+    keywords: str | None = None
+    creationDate: str| None = None
+    modDate: str| None = None
+
 
 
 class ScrapedPage(BaseModel, table=True):
@@ -117,12 +126,18 @@ class PDFLink(BaseModel, table=True):
     scraped_page_id: int = Field(foreign_key="scraped_pages.id")
     url: str = Field(index=True, description="normalized url")
     lang: str | None = Field(sa_column=CHAR(10))
-    status: LinkStatusEnum = Field(default=LinkStatusEnum.DISCOVERED)
+    status: LinkStatusEnum = Field(index=True,default=LinkStatusEnum.DISCOVERED)
 
     scraped_page: "ScrapedPage" = Relationship(back_populates="pdf_links")
 
     created_at: datetime = Field(sa_column=Column(DateTime(timezone=True), server_default=func.now()))
     updated_at: datetime | None = Field(default=None, sa_column=Column(DateTime(timezone=True), onupdate=func.now()))
+
+    metadata_dict: dict | None = Field(default=None, sa_column=Column(JSON), description="Metadata extracted from the PDF")
+    referenced_links: list[str] | None = Field(default=None, sa_column=Column(JSON))
+    referenced_images: list[str] | None = Field(default=None, sa_column=Column(JSON))
+    md_text : str | None = Field(default=None, sa_column=Column(Text),description="Full md text content extracted from the PDF")
+    bin : bytes | None = Field(default=None, sa_type=LargeBinary(), description="Binary PDF")
 
     def __str__(self):
         model_dict = self.model_dump()
@@ -180,6 +195,28 @@ class ImageLink(BaseModel, table=True):
     def _normalize_url(cls, v) -> str:
         return normalize_url(v)
 
+
+class FileStorage(BaseModel, table=True):
+    __tablename__ = "file_storage"
+
+    id: int = Field(primary_key=True)
+    link_id: int = Field(unique=True, nullable=False, description="ID of the related object (ImageLink or PDFLink)")
+    url: str = Field(nullable=False, index=True, description="Unique URL of the file")
+    extension: str = Field(nullable=False, description="File extension (e.g., pdf, jpg, etc.)")
+    filename: str = Field(nullable=False, description="Filename, hash of the url")
+
+    created_at: datetime = Field(sa_column=Column(DateTime(timezone=True), server_default=func.now()))
+    updated_at: datetime | None = Field(default=None, sa_column=Column(DateTime(timezone=True), onupdate=func.now()))
+
+    def __str__(self):
+        model_dict = self.model_dump()
+        return f"{type(self).__name__}({model_dict})"
+    
+    @field_validator("url", mode="before")
+    @classmethod
+    def _normalize_url(cls, v) -> str:
+        return normalize_url(v)
+    
 
 # # TODO: Review this
 # class MarkdownPage(BaseModel, table=True):
