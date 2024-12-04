@@ -119,5 +119,35 @@ class Database:
             for pdf in pdf_list:
                 pdf.status = LinkStatusEnum.DISCOVERED
             return True
+        
+
+    #---- SIMHASH----
+    def reset_hash(self):
+        with session_scope() as session:
+            scraped_page_list = session.query(ScrapedPage).filter(ScrapedPage.response_metadata_content_hash == '0').limit(500).all()
+            if scraped_page_list is None or len(scraped_page_list) == 0:
+                return False
+            for page in scraped_page_list:
+                page.response_metadata_content_hash = None
+            return True
+    
+    def get_none_hash(self, row_per_read):
+        with session_scope() as session:
+            scraped_page_list = session.query(ScrapedPage).filter(ScrapedPage.response_metadata_content_hash == None).limit(row_per_read).all()
+            for page in scraped_page_list:
+                page.response_metadata_content_hash = '0'
+            if not scraped_page_list:
+                return []
+            session.flush()
+            return [page.model_copy(deep=True) for page in scraped_page_list]
+    
+    def update_hash(self, id, hash):
+        with session_scope() as session:
+            page = session.query(ScrapedPage).filter(ScrapedPage.id == id).first()
+            if page is None:
+                return
+            page.response_metadata_content_hash = hash
+            session.flush()
+
 
 db = Database()
