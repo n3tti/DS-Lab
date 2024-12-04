@@ -1,5 +1,4 @@
 from app.repository.db import db
-from app.repository.db import db
 from simhash import Simhash
 import re
 
