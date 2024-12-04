@@ -3,9 +3,11 @@ Create a subset of a database (from source to target), with a row limit for each
 Usefull for debuging queries and testing.
  
 """
-
-
 import sqlite3
+
+SOURCE_DB = "/capstor/store/cscs/swissai/a06/users/group_06/test/production_copy.db"
+TARGET_DB = "/capstor/store/cscs/swissai/a06/users/group_06/test/production_subset.db"
+ROW_LIMIT = 2000
 
 def extract_subset(source_db, target_db, row_limit=1000):
     try:
@@ -55,7 +57,5 @@ def extract_subset(source_db, target_db, row_limit=1000):
         if target_conn:
             target_conn.close()
 
-source_db = "/capstor/store/cscs/swissai/a06/users/group_06/test/production_copy.db"
-target_db = "/capstor/store/cscs/swissai/a06/users/group_06/test/production_subset.db"
-
-extract_subset(source_db, target_db, row_limit=2000)
+if __name__ == "__main__":
+    extract_subset(SOURCE_DB, TARGET_DB, row_limit=ROW_LIMIT)

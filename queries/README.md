@@ -1,15 +1,14 @@
 # Query Examples on the Dataset
 
 This document provides examples of SQL queries applied to the dataset. 
+The code for each query can be found in exemple_queries.py
 
-## Given a page, get same pages in different languages.
+## Query 1: Given a page, get same pages in different languages.
 
-| SQL Query (Left)                     | Query Result (Right)          |
+| SQL Query                   | Query Result          |
 |--------------------------------------|-------------------------------|
-| ```sql                                |                               |
-| SELECT DISTINCT json_each.key         | Key1                          |
-| FROM your_table, json_each(cousin_urls_dict); | Key2                          |
-| ```                                   | Key3                          |
+|<pre>SELECT cousin_urls_dict <br> &emsp;FROM scraped_pages<br>&emsp; WHERE id == {id} <br>&emsp; LIMIT 1; <br></pre>| 
+<pre> Cousin pages of https://www.bk.admin.ch/bk/de/home.html :<br> &emsp;de : https://www.bk.admin.ch/bk/de/home.html<br> &emsp;en : https://www.bk.admin.ch/bk/en/home.html<br> &emsp;it : https://www.bk.admin.ch/bk/it/home.html<br> &emsp;rm : https://www.bk.admin.ch/bk/rm/home.html<br> &emsp;fr : https://www.bk.admin.ch/bk/fr/home.html  </pre>|
 
 
 
@@ -26,5 +25,5 @@ This document provides examples of SQL queries applied to the dataset.
 
 ## Given pdf url, get the translated pdf in all other languages available. 
 
-## Given an image url, get its binary file.
+## Given an image url, get the path of its stored binary file.
 
