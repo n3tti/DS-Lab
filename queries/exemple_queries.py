@@ -4,120 +4,19 @@ Run and outputs the results of exemple-queries provided in README.md
 """
 import sqlite3
 import json
+from queries_base import get_childs_id, get_childs_url, get_cousin_id, get_cousin_url, get_parent_id, get_pdf_md,\
+get_simhash_distance, get_stored_file_filename_from_url, get_translated_pdfs,\
+get_similar_pages, get_referenced_pdfs_from_page, get_parent_url
 
-def write(output_file, text, query_num):
+
+EXEMPLE = [1, 3, "https://www.newsd.admin.ch/newsd/message/attachments/90456.pdf", 22, "https://www.newsd.admin.ch/newsd/message/attachments/90454.pdf"]
+
+def write(output_file, list_dict, query_num):
     with open(output_file, "a") as f:
             f.write("\n")
-            f.write(f"---- Query {query_num} ----\n")
-            f.write(text)
-
-def query1(cursor, output_file):
-    #  Given a page, get the same pages in different languages.
-    
-    # Get a page for the exemple 
-    id = 1
-    id_url_query = f"SELECT url FROM scraped_pages WHERE id == {id} LIMIT 1"
-    cursor.execute(id_url_query)
-    url = cursor.fetchone()[0]
-
-    # Query
-    other_id_query = f"SELECT cousin_urls_dict FROM scraped_pages WHERE id == {id} limit 1"
-    cursor.execute(other_id_query)
-    dic_str = cursor.fetchone()[0]
-    dic = json.loads(dic_str)
-    formatted = f"Cousin pages of {url} :"
-    for key, val in dic.items():
-        formatted += f"\n    {key} : {val}"
-    write(output_file, formatted, 1)
-        
-
-def query4(cursor, output_file): 
-    # Get all the url that are referenced by a certain page.
-
-    # Get a page for the exemple 
-    id = 17
-    id_url_query = f"SELECT url FROM scraped_pages WHERE id == {id} LIMIT 1"
-    cursor.execute(id_url_query)
-    url = cursor.fetchone()[0]
-
-    # Query
-    child_id_query = f"SELECT DISTINCT(child_url) FROM child_parent_links WHERE parent_id = {id}"
-    cursor.execute(child_id_query)
-    results = cursor.fetchall()
-    formatted = f"Child urls of {url} :"
-    for row in results:
-        formatted += "\n    " + row[0]
-    write(output_file, formatted, 4)
-
-
-def query5(cursor, output_file):
-    # Get all pages that reference a certain page.
-
-    # Get a page for the exemple 
-    id = 3
-    id_url_query = f"SELECT url FROM scraped_pages WHERE id == {id} LIMIT 1"
-    cursor.execute(id_url_query)
-    url = cursor.fetchone()[0]
-
-    # Query
-    parent_id_query = f"SELECT DISTINCT(parent_id) FROM child_parent_links WHERE child_url = '{url}'"
-    cursor.execute(parent_id_query)
-    results = cursor.fetchall()
-    formatted = f"Parents urls of {url} :"
-    for row in results:
-        id_url_query = f"SELECT url FROM scraped_pages WHERE id == {row[0]} LIMIT 1"
-        cursor.execute(id_url_query)
-        url = cursor.fetchone()[0]
-        formatted += "\n    " + url
-    write(output_file, formatted, 5)
-
-def query6(cursor, output_file):
-    # Get all referenced pdfs urls from a certain page.
-
-    # Get a page for the exemple 
-    id = 22
-    id_url_query = f"SELECT url FROM scraped_pages WHERE id == {id} LIMIT 1"
-    cursor.execute(id_url_query)
-    url = cursor.fetchone()[0]
-
-    # Query
-    pdf_url_query = f"SELECT DISTINCT(url) FROM pdf_links WHERE scraped_page_id = '{id}'"
-    cursor.execute(pdf_url_query)
-    results = cursor.fetchall()
-    formatted = f"PDFs referenced by {url} :"
-    for row in results:
-            formatted += f"\n {row[0]}"
-    write(output_file, formatted, 6)
-
-def query7(cursor, output_file):
-    # Given pdf url, get the translated pdf in all other languages available. 
-
-    # Get a pdf for the exemple 
-    id = 612
-    id_url_query = f"SELECT url FROM pdf_links WHERE id == {id} LIMIT 1"
-    cursor.execute(id_url_query)
-    url = cursor.fetchone()[0]
-
-    # Query
-    scraped_page_id = f"SELECT DISTINCT(scraped_page_id) FROM pdf_links WHERE url = '{url}'"
-    cursor.execute(scraped_page_id)
-    id = cursor.fetchone()[0]
-    # get cousin pages
-    other_id_query = f"SELECT cousin_urls_dict FROM scraped_pages WHERE id == {id} limit 1"
-    cursor.execute(other_id_query)
-    dic_str = cursor.fetchone()
-    print(dic_str[0])
-    dic = json.loads(dic_str[0])
-    for key, val in dic.items():
-        q =  f"SELECT id FROM scraped_pages WHERE url == '{val}' "
-        cursor.execute(q)
-        id = cursor.fetchone()[0]
-        q =  f"SELECT DISTINCT(url) FROM pdf_links WHERE scraped_page_id == {id}"
-        cursor.execute(q)
-        pdfs = cursor.fetchall()
-        print(pdfs)
-    # implement something to match the pdf, ex, same metadata or something
-         
+            f.write(f"---- Query {query_num} ----")
+            for item in list_dict:
+                f.write("\n" + str(item))
 
 
 
@@ -131,13 +30,23 @@ if __name__ == "__main__":
         # Connect to the database
         conn = sqlite3.connect(database_file)
         cursor = conn.cursor()
+        write(output_file, get_childs_id(cursor, EXEMPLE[0]), 1)
+        write(output_file, get_childs_url(cursor, EXEMPLE[0]), 2)
+        write(output_file, get_cousin_id(cursor, EXEMPLE[0]), 3)
+        write(output_file, get_cousin_url(cursor, EXEMPLE[0]), 4)
+        write(output_file, get_parent_id(cursor, EXEMPLE[1]), 5)
+        write(output_file, get_parent_url(cursor, EXEMPLE[1]), 6)
+        write(output_file, get_pdf_md(cursor, EXEMPLE[2]), 7)
+        write(output_file, get_referenced_pdfs_from_page(cursor, EXEMPLE[3]), 8)
+        write(output_file, get_stored_file_filename_from_url(cursor, EXEMPLE[4]), 9) 
         
-        query1(cursor, output_file)
-        query4(cursor, output_file)
-        query5(cursor, output_file)
-        query6(cursor, output_file)
-        query7(cursor, output_file)
-        query8(cursor, output_file)
+        #write(output_file, get_translated_pdfs(cursor, "pdf"), 10)
+        
+        #get_simhash_distance()
+        #get_similar_pages
+
+        
+       
 
 
 

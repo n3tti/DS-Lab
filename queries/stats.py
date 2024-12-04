@@ -100,7 +100,7 @@ if __name__ == "__main__":
             # Connect to the database
         conn = sqlite3.connect(database_file)
         cursor = conn.cursor()
-        write(output_file, "-----------------   Data summary   -----------------\n")
+        write(output_file, f"--- Data summary for {database_file} ---\n")
 
         count_rows(cursor, "pdf_links", output_file)
         count_rows(cursor, "scraped_pages", output_file)
