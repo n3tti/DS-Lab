@@ -155,7 +155,7 @@ class CrawlingSpider(CrawlSpider):
         )
 
         # TODO: discuss if we need this, later make a migration if needed
-        # scraped_page.content_formatted_with_markdown = content_formatted_with_markdown
+        scraped_page.content_formatted_with_markdown = content_formatted_with_markdown
 
         yield scraped_page
 
