@@ -14,6 +14,9 @@ start:
 	python -m app.main
 
 html2md:
+	alembic upgrade head
+	alembic revision --autogenerate -m "update db"
+	alembic upgrade head
 	python -c "from app.html2md import run_conversion; run_conversion()"
 
 alembic:

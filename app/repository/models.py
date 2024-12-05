@@ -26,7 +26,7 @@ class PageStatusEnum(str, Enum):
     COMPLETED = "Completed"  # completed crawling but not converted to Markdown
     FAILED = "Failed"
     REVISITED = "Revisited"
-    # FINALIZED = "Finalized"  # goes after the status "Completed"
+    FINALIZED = "Finalized"  # goes after the status "Completed"
 
 
 class LinkStatusEnum(str, Enum):
@@ -67,7 +67,7 @@ class ScrapedPage(BaseModel, table=True):
     response_text: str | None = Field(default=None, description="Text portion of the HTTP response")
     response_body: bytes | None = Field(default=None, sa_type=LargeBinary(), description="Binary body of the HTTP response")
 
-    # content_formatted_with_markdown: str | None = Field(default=None, description="Response text converted to Markdown.")
+    content_formatted_with_markdown: str | None = Field(default=None, description="Response text converted to Markdown.")
 
     response_content_type: str | None = Field(default=None, description="MIME type of the content")
     response_content_length: int | None = Field(default=None, description="Length of the response content in bytes")

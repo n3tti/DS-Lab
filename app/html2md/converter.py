@@ -1,44 +1,43 @@
-import os
+from bs4 import BeautifulSoup
 
-from markdownify import markdownify as md
-from sqlalchemy.sql import text
-
-from app.config import DATA_DIR
-from app.repository.db import Database, session_scope
-from app.repository.models import MarkdownPage, PageStatusEnum, ScrapedPage
-
+from app.logs import logger
+from app.repository.db import db
 
 class HTMLToMarkdownConverter:
-    def __init__(self, db: Database):
-        self.db = db
 
-    def convert_html_to_markdown(self, html_content: str, page_id: int, session) -> str:
-        """Convert HTML content to Markdown and save to database"""
-        markdown_content = md(html_content)
+    def convert_to_md(self, html):
+        # Parse the HTML content with BeautifulSoup
+        soup = BeautifulSoup(html, 'html.parser')
 
-        markdown_page = session.query(MarkdownPage).filter(MarkdownPage.scraped_page_id == page_id).first()
+        content_parts = []
 
-        if markdown_page:
-            markdown_page.body_md = markdown_content
-        else:
-            markdown_page = MarkdownPage(scraped_page_id=page_id, body_md=markdown_content)
-            session.add(markdown_page)
+        # Select all headers and paragraphs in order of appearance
+        for element in soup.select("h1, h2, h3, h4, h5, h6, p"):
+            # Get the element name (h1, h2, p, etc.)
+            tag_name = element.name
 
-        print(f"converting page {page_id}")
+            # Handle headers
+            if tag_name.startswith("h"):
+                level = int(tag_name[1])  # get number from h1, h2, etc.
+            else:
+                level = 0
 
-        return markdown_page
+            text = element.get_text()
+            if text:
+                text = text.strip()
+                content_parts.append(f"{'#' * level} {text}\n\n")
+
+        return "".join(content_parts)
 
     def process_all_pages(self):
         """Process all HTML pages from database"""
-        with session_scope() as session:
-            # Query ScrapedPage records with HTML content
-            pages = session.query(ScrapedPage).all()
+        for unconverted_scraped_page_id in db.get_scraped_page_unconverted_ids():
+            logger.info(f"Converting scraped page with id: {unconverted_scraped_page_id} to MarkDown")
 
-            for page in pages:
+            unconverted_scraped_page = db.get_scraped_page_by_id(unconverted_scraped_page_id)
 
-                try:
-                    html_content = page.response_body.decode("utf-8")
+            html_content = unconverted_scraped_page.response_text
+            
+            markdown_content = self.convert_to_md(html_content)
 
-                    self.convert_html_to_markdown(html_content, page.id, session)
-                except Exception as e:
-                    print(f"Error converting page {page.id}: {str(e)}")
+            db.update_scraped_page_with_markdown_content(unconverted_scraped_page_id, markdown_content)

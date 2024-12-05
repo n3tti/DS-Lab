@@ -1,7 +1,8 @@
-import BeautifulSoup
+from bs4 import BeautifulSoup
 
 from app.logs import logger
 from app.repository.db import db
+
 
 def convert_to_md(html):
     # Parse the HTML content with BeautifulSoup

@@ -113,7 +113,7 @@ class CrawlingSpider(CrawlSpider):
 
         #####################################################
         # TODO: discuss if we need this, later make a migration if needed
-        content_formatted_with_markdown = self.format_content_with_markdown(response)
+        #content_formatted_with_markdown = self.format_content_with_markdown(response)
 
         #####################################################
         lang = response.xpath("//html/@lang").get()
@@ -155,7 +155,7 @@ class CrawlingSpider(CrawlSpider):
         )
 
         # TODO: discuss if we need this, later make a migration if needed
-        scraped_page.content_formatted_with_markdown = content_formatted_with_markdown
+        #scraped_page.content_formatted_with_markdown = content_formatted_with_markdown
 
         yield scraped_page
 

@@ -4,5 +4,5 @@ from .converter import HTMLToMarkdownConverter
 
 
 def run_conversion():
-    converter = HTMLToMarkdownConverter(db)
+    converter = HTMLToMarkdownConverter()
     converter.process_all_pages()
