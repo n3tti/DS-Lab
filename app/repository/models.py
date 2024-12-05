@@ -154,7 +154,7 @@ class ChildParentLink(BaseModel, table=True):
 
     id: int = Field(primary_key=True)
 
-    parent_id: int = Field(foreign_key="scraped_pages.id", description="scraped_page.id")  # parent_id
+    parent_id: int = Field(index=True, foreign_key="scraped_pages.id", description="scraped_page.id")  # parent_id
     child_url: str = Field(index=True)
 
     parent_link: "ScrapedPage" = Relationship(back_populates="child_links")  # the scraped_page is a parent page
@@ -178,7 +178,7 @@ class ImageLink(BaseModel, table=True):
     id: int = Field(primary_key=True)
     url: str = Field(index=True)
     alt: str | None = Field(default=None)
-    status: LinkStatusEnum = Field(default=LinkStatusEnum.DISCOVERED)
+    status: LinkStatusEnum = Field(index=True, default=LinkStatusEnum.DISCOVERED)
 
     scraped_page_id: int = Field(foreign_key="scraped_pages.id", description="Link to the parent page id")
     scraped_page: "ScrapedPage" = Relationship(back_populates="image_links")
@@ -200,7 +200,7 @@ class FileStorage(BaseModel, table=True):
     __tablename__ = "file_storage"
 
     id: int = Field(primary_key=True)
-    link_id: int = Field(unique=True, nullable=False, description="ID of the related object (ImageLink or PDFLink)")
+    link_id: int = Field(index = True, unique=True, nullable=False, description="ID of the related object (ImageLink or PDFLink)")
     url: str = Field(nullable=False, index=True, description="Unique URL of the file")
     extension: str = Field(nullable=False, description="File extension (e.g., pdf, jpg, etc.)")
     filename: str = Field(nullable=False, description="Filename, hash of the url")
