@@ -67,7 +67,7 @@ class ScrapedPage(BaseModel, table=True):
     response_text: str | None = Field(default=None, description="Text portion of the HTTP response")
     response_body: bytes | None = Field(default=None, sa_type=LargeBinary(), description="Binary body of the HTTP response")
 
-    # content_formatted_with_markdown: str | None = Field(default=None, description="Response text converted to Markdown.")
+    content_formatted_with_markdown: str | None = Field(default=None, description="Response text converted to Markdown.")
 
     response_content_type: str | None = Field(default=None, description="MIME type of the content")
     response_content_length: int | None = Field(default=None, description="Length of the response content in bytes")
@@ -137,7 +137,6 @@ class PDFLink(BaseModel, table=True):
     referenced_links: list[str] | None = Field(default=None, sa_column=Column(JSON))
     referenced_images: list[str] | None = Field(default=None, sa_column=Column(JSON))
     md_text : str | None = Field(default=None, sa_column=Column(Text),description="Full md text content extracted from the PDF")
-    bin : bytes | None = Field(default=None, sa_type=LargeBinary(), description="Binary PDF")
 
     def __str__(self):
         model_dict = self.model_dump()
