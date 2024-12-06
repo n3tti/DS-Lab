@@ -63,7 +63,7 @@ docker-compose up
 
 ## Initialize database
 
-Per default, a sqlite database is stored as [/data/example.db](./data/example.db)
+Per default, a sqlite database is stored as [/data/example.db](./data/)
 
  If there is an existing database or the path resp. name should be different, create a `.env`  file and add this line:
 
