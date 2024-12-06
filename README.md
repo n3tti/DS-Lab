@@ -6,6 +6,25 @@ My questions to all:
 - somewhere the postprocessing part needs to be mentioned
     - before crawling is technically seen not in postprocessing
 
+# Table of Contents
+- [Overview](#overview)
+- [Installation & Setup](#installation--setup)
+  - [Prerequisites](#prerequisites)
+  - [Environment Setup](#environment-setup)
+    - [Local Setup](#local-setup)
+    - [Docker Setup](#docker-setup)
+- [Usage Guide](#usage-guide)
+  - [Initialize Database](#initialize-database)
+  - [Crawler Usage](#crawler-usage)
+    - [Setup](#setup)
+    - [Crawling](#crawling)
+  - [Postprocessing](#postprocessing)
+    - [Convert HTML to Markdown](#convert-html-to-markdown)
+    - [Save Markdown to JSONL](#save-markdown-to-jsonl)
+- [Features](#features)
+  - [Existing](#existing)
+  - [Missing, Nice to Have](#missing-nice-to-have)
+
 # Overview
 
 This project is a web crawler that processes web pages from Swiss government websites. It consists of multiple components that handle crawling, data storage, and content conversion.
