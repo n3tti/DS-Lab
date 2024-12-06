@@ -134,7 +134,7 @@ If all markdown entries of the database need complete change and the change shou
 make html2md
 ```
 
-The mentioned function in this script can also be individually called. It expects an html as string as input.
+The mentioned function in this script can also be individually called. It expects an html as string as input and returns the markdown as a string.
 
 ### Save markdown to jsonl
 
