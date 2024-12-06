@@ -43,20 +43,23 @@ or using a [docker container](#docker-setup) @Petr right?
 **TODO: setup for make file**
 
 ### Local setup
-
-1. Clone the repository
+Clone the repository
 
 ```jsx
 git clone git@github.com:n3tti/DS-Lab.git
 ```
+(Preferred but not required:) Create a python virtual environment and activate it
+```
+python[VERSION] -m venv VENV_NAME
+source PATH_TO_VENV/bin/activate
+```
 
-1. Install dependencies
+Install dependencies
 
 ```jsx
 pip install -r requirements.txt
 ```
-
-1. For using playwright
+For using playwright
 
 ```makefile
 playwright install
