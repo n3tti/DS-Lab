@@ -10,14 +10,23 @@ My questions to all:
 
 This project is a web crawler that processes web pages from Swiss government websites. It consists of multiple components that handle crawling, data storage, and content conversion.
 
-```jsx
-app/
-├── adminch_crawler/
-│   └── spiders/
-├── html2md/
-├── repository/
-└── tests/
-```
+- [Overview](#overview)
+- [Installation & Setup](#installation--setup)
+  - [Prerequisites](#prerequisites)
+  - [Environment Setup](#environment-setup)
+    - [Local Setup](#local-setup)
+    - [Docker Setup](#docker-setup)
+- [Usage Guide](#usage-guide)
+  - [Initialize Database](#initialize-database)
+  - [Crawler Usage](#crawler-usage)
+    - [Setup](#setup)
+    - [Crawling](#crawling)
+  - [Postprocessing](#postprocessing)
+    - [Convert HTML to Markdown](#convert-html-to-markdown)
+    - [Save Markdown to JSONL](#save-markdown-to-jsonl)
+- [Features](#features)
+  - [Existing](#existing)
+  - [Missing, Nice to Have](#missing-nice-to-have)
 
 # Installation & Setup
 
@@ -34,20 +43,23 @@ or using a [docker container](#docker-setup) @Petr right?
 **TODO: setup for make file**
 
 ### Local setup
-
-1. Clone the repository
+Clone the repository
 
 ```jsx
 git clone git@github.com:n3tti/DS-Lab.git
 ```
+(Preferred but not required:) Create a python virtual environment and activate it
+```
+python[VERSION] -m venv VENV_NAME
+source PATH_TO_VENV/bin/activate
+```
 
-1. Install dependencies
+Install dependencies
 
 ```jsx
 pip install -r requirements.txt
 ```
-
-1. For using playwright
+For using playwright
 
 ```makefile
 playwright install
@@ -63,7 +75,7 @@ docker-compose up
 
 ## Initialize database
 
-Per default, a sqlite database is stored as [/data/example.db](./data/example.db)
+Per default, a sqlite database is stored as [/data/example.db](./data/)
 
  If there is an existing database or the path resp. name should be different, create a `.env`  file and add this line:
 
@@ -122,7 +134,7 @@ If all markdown entries of the database need complete change and the change shou
 make html2md
 ```
 
-The mentioned function in this script can also be individually called. It expects an html as string as input.
+The mentioned function in this script can also be individually called. It expects an html as string as input and returns the markdown as a string.
 
 ### Save markdown to jsonl
 
