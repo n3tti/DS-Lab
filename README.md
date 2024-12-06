@@ -6,7 +6,10 @@ My questions to all:
 - somewhere the postprocessing part needs to be mentioned
     - before crawling is technically seen not in postprocessing
 
-# Table of Contents
+# Overview
+
+This project is a web crawler that processes web pages from Swiss government websites. It consists of multiple components that handle crawling, data storage, and content conversion.
+
 - [Overview](#overview)
 - [Installation & Setup](#installation--setup)
   - [Prerequisites](#prerequisites)
@@ -24,19 +27,6 @@ My questions to all:
 - [Features](#features)
   - [Existing](#existing)
   - [Missing, Nice to Have](#missing-nice-to-have)
-
-# Overview
-
-This project is a web crawler that processes web pages from Swiss government websites. It consists of multiple components that handle crawling, data storage, and content conversion.
-
-```jsx
-app/
-├── adminch_crawler/
-│   └── spiders/
-├── html2md/
-├── repository/
-└── tests/
-```
 
 # Installation & Setup
 
