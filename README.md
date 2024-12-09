@@ -65,7 +65,7 @@ For using playwright
 playwright install
 ```
 
-\*In case it's not enough to only run `playwright install`, Playwright will produce errors and might require installation of the following libs (within the Apptainer it should be possible to run it without `sudo`):
+\*In case it's not enough to only run `playwright install`, Playwright will produce errors and might require installation of the following libs (within the Apptainer it should be possible to run it without having system-wide sudo access):
 ```bash
 sudo apt-get install libnss3 \
     libnspr4 \
@@ -82,6 +82,11 @@ docker-compose up
 ```
 
 # Usage Guide
+
+## First things first
+
+Create a copy of the file called `.env.example`. Set a preferred `LOG_LEVEL` there as well as other parameters (for example if intended for usage and not for developing: set the `DEBUG=false`).
+
 
 ## Initialize database
 
