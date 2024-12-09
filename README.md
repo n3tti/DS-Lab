@@ -87,6 +87,12 @@ docker-compose up
 
 Create a copy of the file called `.env.example`. Set a preferred `LOG_LEVEL` there as well as other parameters (for example if intended for usage and not for developing: set the `DEBUG=false`).
 
+### Newrelic for Observability
+
+Potentially register a new **newrelic** account to have logs stored on newrelic.com for easier monitoring. Add a `NEW_RELIC_LICENSE_KEY` to the `.env` file. Pay attention that setting this `NEW_RELIC_LICENSE_KEY` ENV in the `.env` file works only coupled with containerized environment now, and it's loaded before the python program is launched.
+
+It is not enough for it to work with a virtual environment of python (i.e. the one created with `python -m venv <name-of-environment>`) since the module **dotenv** loads the ENVs after the **newrelic** is initialized. For **newrelic** to work with the virtual environment of python put the `NEW_RELIC_LICENSE_KEY` into the `newrelic.ini` file (be careful not to push it to github or other platforms).
+
 
 ## Initialize database
 
