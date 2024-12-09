@@ -50,7 +50,7 @@ git clone git@github.com:n3tti/DS-Lab.git
 ```
 (Preferred but not required:) Create a python virtual environment and activate it
 ```
-python[VERSION] -m venv VENV_NAME
+python -m venv VENV_NAME
 source PATH_TO_VENV/bin/activate
 ```
 
@@ -61,8 +61,18 @@ pip install -r requirements.txt
 ```
 For using playwright
 
-```makefile
+```bash
 playwright install
+```
+
+\*In case it's not enought playwright will produce errors and might require installation of these (within the Apptainer it should be possible to run it without `sudo`):
+```bash
+sudo apt-get install libnss3 \
+    libnspr4 \
+    libatk1.0-0 \
+    libatk-bridge2.0-0 \
+    libatspi2.0-0 \
+    libgbm1
 ```
 
 ### Docker setup
@@ -80,7 +90,7 @@ Per default, a sqlite database is stored as [/data/example.db](./data/)
  If there is an existing database or the path resp. name should be different, create a `.env`  file and add this line:
 
 ```makefile
-DATABASE_URL=sqlite://PATH_TO_DB/DB_NAME
+DATABASE_URL=sqlite:///PATH_TO_DB/DB_NAME
 ```
 
 For initializing a new database, you can use the following command:
