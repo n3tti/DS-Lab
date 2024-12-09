@@ -15,7 +15,7 @@ LOG_LEVEL = getattr(logging, os.getenv("LOG_LEVEL", "NOTSET").upper())
 NEW_RELIC_LICENSE_KEY = os.getenv("NEW_RELIC_LICENSE_KEY")
 
 
-DATABASE_URL = os.getenv("DATABASE_URL", "sqlite:////capstor/store/cscs/swissai/a06/users/group_06/test/production_subset.db")
+DATABASE_URL = os.getenv("DATABASE_URL", "sqlite:///data/example.db")
 SAVE_DOWNLOADED_FILE = "/capstor/store/cscs/swissai/a06/users/group_06/test/DLFiles/"
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
