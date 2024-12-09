@@ -65,7 +65,7 @@ For using playwright
 playwright install
 ```
 
-\*In case it's not enought playwright will produce errors and might require installation of these (within the Apptainer it should be possible to run it without `sudo`):
+\*In case it's not enough to only run `playwright install`, Playwright will produce errors and might require installation of the following libs (within the Apptainer it should be possible to run it without `sudo`):
 ```bash
 sudo apt-get install libnss3 \
     libnspr4 \
