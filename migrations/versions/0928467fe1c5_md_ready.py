@@ -40,7 +40,6 @@ def upgrade() -> None:
     op.add_column('pdf_links', sa.Column('referenced_images', sa.JSON(), nullable=True))
     op.add_column('pdf_links', sa.Column('md_text', sa.Text(), nullable=True))
     op.create_index(op.f('ix_pdf_links_status'), 'pdf_links', ['status'], unique=False)
-    op.add_column('scraped_pages', sa.Column('content_formatted_with_markdown', sqlmodel.sql.sqltypes.AutoString(), nullable=True))
     # ### end Alembic commands ###
 
 

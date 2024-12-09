@@ -58,9 +58,10 @@ class Database:
 
             return scraped_page_obj.model_copy(deep=True)
 
-    def get_scraped_page_unconverted_ids(self):
+    # TODO: change here: don't get by status, but just if the field is not empty
+    def get_scraped_page_unconverted_to_md_ids(self):
         with session_scope() as session:
-            query = session.query(ScrapedPage.id).filter(ScrapedPage.status != PageStatusEnum.FINALIZED).order_by(ScrapedPage.id).yield_per(1000)
+            query = session.query(ScrapedPage.id).filter(ScrapedPage.content_formatted_with_markdown.is_(None)).order_by(ScrapedPage.id).yield_per(1000)
             for (page_id,) in query:
                 yield page_id
 
@@ -70,7 +71,7 @@ class Database:
             if scraped_page_obj is None:
                 return None
             scraped_page_obj.content_formatted_with_markdown = markdown_content
-            scraped_page_obj.status = PageStatusEnum.FINALIZED
+            # scraped_page_obj.status = PageStatusEnum.FINALIZED
 
     def update_pdf_status(self, pdf_id: int, status:LinkStatusEnum):
         with session_scope() as session:
