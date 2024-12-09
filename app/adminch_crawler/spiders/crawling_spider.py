@@ -5,6 +5,8 @@ from scrapy.linkextractors import LinkExtractor
 from scrapy.spiders import CrawlSpider, Rule
 from scrapy_playwright.page import PageMethod
 
+import html2text
+
 from app.logs import logger
 from app.repository.models import ChildParentLink, ImageLink, PDFLink, ScrapedPage
 
@@ -112,8 +114,12 @@ class CrawlingSpider(CrawlSpider):
                 image_links.append(ImageLink(url=full_url, alt=alt))
 
         #####################################################
-        # TODO: discuss if we need this, later make a migration if needed
-        content_formatted_with_markdown = self.format_content_with_markdown(response)
+        converter = html2text.HTML2Text()
+        converter.ignore_links = True    # Include links in the output
+        converter.ignore_images = True   # Include image placeholders
+        converter.ignore_tables = False   # Include tablese
+        converter.protect_links = True    # Prevent splitting of links
+        content_formatted_with_markdown = converter.handle(response.text)
 
         #####################################################
         lang = response.xpath("//html/@lang").get()
@@ -152,6 +158,8 @@ class CrawlingSpider(CrawlSpider):
             response_metadata_description=description,
             response_metadata_keywords=keywords,
             response_metadata_content_hash=None,
+
+            content_formatted_with_markdown=content_formatted_with_markdown,
         )
 
         # TODO: discuss if we need this, later make a migration if needed
