@@ -157,7 +157,7 @@ USE_PLAYWRIGHT = True  # Set to True when you want to use Playwright
 
 if USE_PLAYWRIGHT:
     DOWNLOAD_HANDLERS = {
-        "http": "scrapy_playwright.handler.ScrapyPlaywrightDownloadHandler",
+        # "http": "scrapy_playwright.handler.ScrapyPlaywrightDownloadHandler",
         "https": "scrapy_playwright.handler.ScrapyPlaywrightDownloadHandler",
     }
 
