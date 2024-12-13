@@ -12,7 +12,7 @@ def get_lower_log_level(current_level):
     return lower_level
 
 
-# Disabling logs until LOG_LEVEL so that scrapy doesn't override
+# Disabling logs levels up to LOG_LEVEL so that scrapy doesn't override
 logging.disable(get_lower_log_level(LOG_LEVEL))
 
 
