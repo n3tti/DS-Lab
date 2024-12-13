@@ -106,6 +106,21 @@ DATABASE_URL=sqlite:///PATH_TO_DB/DB_NAME
 
 For initializing a new database, you can use the following command:
 
+**EXAMPLE ON HOW TO USE ALEMBIC** TODO: CHANGE IT SO SOMETHING SENSIBLE LATER
+```
+alembic:
+	rm -rf data/*.db*; \
+# 	rm -rf migrations/versions/*.py; \
+# 	alembic revision --autogenerate -m "Create scraped_page table"; \
+	alembic upgrade head
+
+alembic-from-scratch:
+	rm -rf data/*.db*; \
+	rm -rf migrations/versions/*.py; \
+	alembic revision --autogenerate -m "Create scraped_page table"; \
+	alembic upgrade head
+```
+
 ```makefile
 make alembic-from-scratch
 ```
