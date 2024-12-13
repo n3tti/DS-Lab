@@ -93,10 +93,12 @@ docker-compose up
 Create a copy of the file called `.env.example`. Set a preferred `LOG_LEVEL` there as well as other parameters (for example if intended for usage and not for developing: set the `DEBUG=false`).
 
 ### Newrelic for Observability
+<details>
+	<summary>TL;DR: Newrelic notes</summary>
+	<p class="has-line-data" data-line-start="0" data-line-end="1">Potentially register a new <strong>newrelic</strong> account to have logs stored on <a href="http://newrelic.com">newrelic.com</a> for easier monitoring. Add a <code>NEW_RELIC_LICENSE_KEY</code> to the <code>.env</code> file. Pay attention that setting this <code>NEW_RELIC_LICENSE_KEY</code> ENV in the <code>.env</code> file works only coupled with containerized environment now, and it’s loaded before the python program is launched.</p>
+<p class="has-line-data" data-line-start="2" data-line-end="3">It is not enough for it to work with a virtual environment of python (i.e. the one created with <code>python -m venv &lt;name-of-environment&gt;</code>) since the module <strong>dotenv</strong> loads the ENVs after the <strong>newrelic</strong> is initialized. For <strong>newrelic</strong> to work with the virtual environment of python put the <code>NEW_RELIC_LICENSE_KEY</code> into the <code>newrelic.ini</code> file (be careful not to push it to github or other platforms).</p>
+</details>
 
-Potentially register a new **newrelic** account to have logs stored on newrelic.com for easier monitoring. Add a `NEW_RELIC_LICENSE_KEY` to the `.env` file. Pay attention that setting this `NEW_RELIC_LICENSE_KEY` ENV in the `.env` file works only coupled with containerized environment now, and it's loaded before the python program is launched.
-
-It is not enough for it to work with a virtual environment of python (i.e. the one created with `python -m venv <name-of-environment>`) since the module **dotenv** loads the ENVs after the **newrelic** is initialized. For **newrelic** to work with the virtual environment of python put the `NEW_RELIC_LICENSE_KEY` into the `newrelic.ini` file (be careful not to push it to github or other platforms).
 
 
 ## Initialize database
