@@ -172,31 +172,3 @@ class CrawlingSpider(CrawlSpider):
         """Extract title from multiple possible sources"""
         title = response.headers.get("Title", b"").decode("utf-8") or response.css("title::text").get() or response.css("h1::text").get() or ""
         return title.strip()
-
-    # format content with markdown
-    def format_content_with_markdown(self, response):
-        """Format content with markdown, preserving the original order of elements"""
-        content_parts = []
-
-        # Select all headers and paragraphs in order of appearance
-        for element in response.css("h1, h2, h3, h4, h5, h6, p"):
-            try:
-                # Get the element name (h1, h2, p, etc.)
-                tag_name = element.root.tag
-
-                # Handle headers
-                if tag_name.startswith("h"):
-                    level = int(tag_name[1])  # get number from h1, h2, etc.
-                else:
-                    level = 0
-
-                text = element.css("::text").get()
-                if text:
-                    text = text.strip()
-                    content_parts.append(f"{'#' * level} {text}\n\n")
-
-            except Exception as e:
-                print(e)
-                logger.error(f"{e} \n url: {response.url}, element: {element}")
-
-        return "".join(content_parts)
