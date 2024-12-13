@@ -45,8 +45,8 @@ or using a [docker container](#docker-setup) @Petr right?
 **TODO: setup for make file**
 
 ### Local setup
+<!--
 Clone the repository
-
 ```jsx
 git clone git@github.com:n3tti/DS-Lab.git
 ```
@@ -55,7 +55,7 @@ git clone git@github.com:n3tti/DS-Lab.git
 python -m venv VENV_NAME
 source PATH_TO_VENV/bin/activate
 ```
-
+-->
 Install dependencies
 
 ```jsx
@@ -67,15 +67,18 @@ For using playwright
 playwright install
 ```
 
-\*In case it's not enough to only run `playwright install`, Playwright will produce errors and might require installation of the following libs (within the Apptainer it should be possible to run it without having system-wide sudo access):
-```bash
+<details>
+	<summary>TL;DR: In case <code>playwright install</code> is not enough</summary>
+	Playwright will produce errors and might require installation of the following libs (within the Apptainer it should be possible to run it without having system-wide sudo access):
+	<pre><code class="language-bash">
 sudo apt-get install libnss3 \
     libnspr4 \
     libatk1.0-0 \
     libatk-bridge2.0-0 \
     libatspi2.0-0 \
     libgbm1
-```
+	</code></pre>
+</details>
 
 ### Docker setup
 
