@@ -6,6 +6,8 @@ My questions to all:
 - somewhere the postprocessing part needs to be mentioned
     - before crawling is technically seen not in postprocessing
 
+From Petr: I think we should make this README as short as possible, and maybe leave all the clarifications under TL;DR
+
 # Overview
 
 This project is a web crawler that processes web pages from Swiss government websites. It consists of multiple components that handle crawling, data storage, and content conversion.
