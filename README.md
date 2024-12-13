@@ -157,6 +157,7 @@ Note that if the crawler should be completely restarted anew, the [.persistence]
 
 ## Postprocessing
 
+<!--
 ### Convert html to markdown
 
 #### Before crawling
@@ -173,7 +174,7 @@ make html2md
 ```
 
 The mentioned function in this script can also be individually called. It expects an html as string as input and returns the markdown as a string.
-
+-->
 ### Save markdown to jsonl
 
 There is a script that saves the markdown content into a jsonl file. Currently, only the id and the markdown are saved. (see [postProcessing/jsonl/md2jsonl.py](./postProcessing/jsonl/md2jsonl.py))
