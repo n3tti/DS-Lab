@@ -24,7 +24,7 @@ def process_range(db_path, table_name, field, start_id, end_id):
     cursor = conn.cursor()
 
     # Query the range
-    cursor.execute(f"SELECT {field} FROM {table_name} WHERE ((id >= ? AND id <= ?) AND status = 'PROCESSED')", (start_id, end_id))
+    cursor.execute(f"SELECT {field} FROM {table_name} WHERE ((id >= ? AND id <= ?) AND content_formatted_with_markdown IS NOT NULL)", (start_id, end_id))
     print("exec")
     rows = cursor.fetchall()
     wcount = {}
@@ -41,8 +41,8 @@ def process_range(db_path, table_name, field, start_id, end_id):
 
 def main():
     db_path = "/capstor/store/cscs/swissai/a06/users/group_06/production/data/production_copy_to_parse2.db"
-    table_name = "pdf_links"
-    field = "md_text"
+    table_name = "scraped_pages"
+    field = "content_formatted_with_markdown"
     num_processes = 80
 
     print("getting min and max")
