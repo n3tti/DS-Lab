@@ -12,8 +12,8 @@ bar_width = 0.35
 x = np.arange(len(languages))
 
 plt.figure(figsize=(10, 6))
-plt.bar(x - bar_width / 2, counts1, width=bar_width, color='#3358ff', label='HTML')
-plt.bar(x + bar_width / 2, counts2, width=bar_width, color='#5fcaff', label='PDF')
+plt.bar(x - bar_width / 2, counts1, width=bar_width, color='#fc288f', label='HTML')
+plt.bar(x + bar_width / 2, counts2, width=bar_width, color='#3512ff', label='PDF')
 
 plt.xlabel("Languages")
 plt.ylabel("Counts")
