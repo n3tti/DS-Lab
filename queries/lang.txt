@@ -1,0 +1,2 @@
+Lang for table scraped_pages: {'EN': 81606, 'DE': 171841, 'FR': 230900, 'IT': 198512, 'RM': 728, 'Other': 4787, 'Unknown': 274771}
+Lang for table pdf_links: {'EN': 53788, 'DE': 199991, 'FR': 428609, 'IT': 245291, 'RM': 532, 'Other': 3508, 'Unknown': 35512}
