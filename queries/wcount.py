@@ -8,7 +8,7 @@ def count(text):
         return 0
     cleaned_text = re.sub(r'[^a-zA-Z\s]', '', text)
     words = cleaned_text.split()
-    return round(len(words) / 100) * 100
+    return min(round(len(words) / 500) * 500, 20000)
 
 def get_min_max_id(db_path, table_name):
     conn = sqlite3.connect(db_path)
@@ -24,7 +24,8 @@ def process_range(db_path, table_name, field, start_id, end_id):
     cursor = conn.cursor()
 
     # Query the range
-    cursor.execute(f"SELECT {field} FROM {table_name} WHERE id >= ? AND id <= ? AND status = PROCESSED", (start_id, end_id))
+    cursor.execute(f"SELECT {field} FROM {table_name} WHERE ((id >= ? AND id <= ?) AND status = 'PROCESSED')", (start_id, end_id))
+    print("exec")
     rows = cursor.fetchall()
     wcount = {}
 
@@ -39,13 +40,13 @@ def process_range(db_path, table_name, field, start_id, end_id):
 
 
 def main():
-    db_path = "/capstor/store/cscs/swissai/a06/users/group_06/production/data/production_copy_to_stats.db"
+    db_path = "/capstor/store/cscs/swissai/a06/users/group_06/production/data/production_copy_to_parse2.db"
     table_name = "pdf_links"
     field = "md_text"
-    num_processes = 20
+    num_processes = 80
 
     print("getting min and max")
-    min_id, max_id = 1, 100 #get_min_max_id(db_path, table_name)
+    min_id, max_id = get_min_max_id(db_path, table_name)
     range_size = (max_id - min_id + 1) // num_processes
     print("found min max")
     ranges = [(min_id + i * range_size, min_id + (i + 1) * range_size - 1) for i in range(num_processes)]
