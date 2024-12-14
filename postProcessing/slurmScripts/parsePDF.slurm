@@ -8,8 +8,6 @@
 #SBATCH --error=parse_pdf.err         # Error file
 
 
-source /users/eromanet/miniconda3_x86/etc/profile.d/conda.sh
-conda activate env
 
 srun --ntasks=50 --nodes=1 python -m ExtractPDFs.parsePDFs &
 

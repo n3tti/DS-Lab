@@ -97,7 +97,6 @@ if __name__ == "__main__":
     output_file = "./stats.txt"
 
     try:
-            # Connect to the database
         conn = sqlite3.connect(database_file)
         cursor = conn.cursor()
         write(output_file, f"--- Data summary for {database_file} ---\n")
