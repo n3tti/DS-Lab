@@ -58,7 +58,7 @@ class Database:
 
             return scraped_page_obj.model_copy(deep=True)
 
-    # TODO: change here: don't get by status, but just if the field is not empty
+    #---- Convert to MD ----
     def get_scraped_page_unconverted_to_md_ids(self):
         with session_scope() as session:
             query = session.query(ScrapedPage.id).filter(ScrapedPage.content_formatted_with_markdown.is_(None)).order_by(ScrapedPage.id).yield_per(1000)
@@ -73,6 +73,7 @@ class Database:
             scraped_page_obj.content_formatted_with_markdown = markdown_content
             # scraped_page_obj.status = PageStatusEnum.FINALIZED
 
+    #---- PDF processing ----
     def update_pdf_status(self, pdf_id: int, status:LinkStatusEnum):
         with session_scope() as session:
             pdf_obj = session.query(PDFLink).filter(PDFLink.id == pdf_id).first()
@@ -105,13 +106,6 @@ class Database:
             session.flush()
             return [pdf.model_copy(deep=True) for pdf in pdf_list]
         
-
-    def create_file_storage(self, file_storage: FileStorage) -> bool:
-        with session_scope() as session:
-            session.add(file_storage)
-            session.flush()
-            return True 
-    
     def reset_processing(self):
         with session_scope() as session:
             pdf_list = session.query(PDFLink).filter(or_(PDFLink.status == LinkStatusEnum.PROCESSING, PDFLink.status == LinkStatusEnum.FAILED)).limit(500).all()
@@ -120,9 +114,15 @@ class Database:
             for pdf in pdf_list:
                 pdf.status = LinkStatusEnum.DISCOVERED
             return True
-        
+    
+    #---- File downloading ----
+    def create_file_storage(self, file_storage: FileStorage) -> bool:
+        with session_scope() as session:
+            session.add(file_storage)
+            session.flush()
+            return True 
 
-    #---- SIMHASH----
+    #---- SIMHASH ----
     def reset_hash(self):
         with session_scope() as session:
             scraped_page_list = session.query(ScrapedPage).filter(ScrapedPage.response_metadata_content_hash == '0').limit(500).all()
@@ -140,7 +140,7 @@ class Database:
             if not scraped_page_list:
                 return []
             session.flush()
-            return [(page.id, page.content_formatted_with_markdown) for page in scraped_page_list]
+            return [page.model_copy(deep=True) for page in scraped_page_list]
     
     def update_hash(self, id, hash):
         with session_scope() as session:

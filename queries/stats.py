@@ -1,3 +1,7 @@
+'''
+Simple statistical resume of the data. Previously ran on a subset of the database.
+'''
+
 import sqlite3
 
 def write(output_file, text):
@@ -93,7 +97,7 @@ def distinct_key_sets_count(cursor, table_name, field, output_file):
 
 if __name__ == "__main__":
 
-    database_file = "/capstor/store/cscs/swissai/a06/users/group_06/test/production_subset.db"
+    database_file = "..."
     output_file = "./stats.txt"
 
     try:

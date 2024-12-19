@@ -1,10 +1,9 @@
 '''
-
-todo
-
+Save a downloaded a file fom url, add its filename to the database. Filename correspond to the hash of the url.
 '''
 
 from app.repository.db import db
+
 from app.repository.models import FileStorage
 import hashlib
 from sqlalchemy.exc import IntegrityError

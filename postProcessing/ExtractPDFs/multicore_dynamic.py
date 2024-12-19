@@ -101,20 +101,18 @@ def parsePDFs():
     def row_generator():
         """Generator to fetch and yield rows in chunks."""
         while True:
-            rows = querydb(1, [ROW_PER_READ])  # Fetch rows from the database
+            rows = querydb(1, [ROW_PER_READ])  
             if not rows:
                 break
             for row in rows:
                 yield row
 
-    # Number of worker processes
     num_processes = 40
 
-    # Use Pool and imap_unordered for dynamic assignment
     with Pool(processes=num_processes) as pool:
         # Dynamically feed rows to workers
         for _ in pool.imap_unordered(process_pdf, row_generator()):
-            pass  # imap_unordered processes items dynamically
+            pass 
 
 if __name__ == "__main__":
     #while True:

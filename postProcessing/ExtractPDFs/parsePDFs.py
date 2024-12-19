@@ -14,8 +14,8 @@ ROW_PER_READ = 50
 def validate_url(url):
     parsed = urlparse(url)
     if not parsed.scheme:  # If no scheme is provided
-        url = "https://" + url  # Default to https
-    elif parsed.scheme not in ["http", "https"]:  # If an invalid scheme exists
+        url = "https://" + url  
+    elif parsed.scheme not in ["http", "https"]:  
         url = url.replace(parsed.scheme, "https", 1)
     return url
 

@@ -5,8 +5,8 @@ Usefull for debuging queries and testing.
 """
 import sqlite3
 
-SOURCE_DB = "/capstor/store/cscs/swissai/a06/users/group_06/test/production_copy.db"
-TARGET_DB = "/capstor/store/cscs/swissai/a06/users/group_06/test/production_subset.db"
+SOURCE_DB = "..."
+TARGET_DB = "..."
 ROW_LIMIT = 2000
 
 def extract_subset(source_db, target_db, row_limit=1000):

@@ -1,3 +1,7 @@
+'''
+Simple word count query, runs in parallel on suset of rows for better performance.
+'''
+
 import sqlite3
 from multiprocessing import Pool, cpu_count
 import re
@@ -40,7 +44,7 @@ def process_range(db_path, table_name, field, start_id, end_id):
 
 
 def main():
-    db_path = "/capstor/store/cscs/swissai/a06/users/group_06/production/data/production_copy_to_parse2.db"
+    db_path = "..."
     table_name = "scraped_pages"
     field = "content_formatted_with_markdown"
     num_processes = 80
