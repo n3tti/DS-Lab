@@ -17,6 +17,7 @@ class CrawlingSpider(CrawlSpider):
     allowed_domains = ["admin.ch"]
     start_urls = ["https://www.admin.ch/"]
 
+    ############################### Code for Playwright ##############################
     def start_requests(self):
         for url in self.start_urls:
             yield Request(
@@ -46,6 +47,7 @@ class CrawlingSpider(CrawlSpider):
 
     def parse_start_url(self, response):
         return self.parse_item(response)
+    ############################### End of code for Playwright" ##############################
 
     rules = (
         Rule(
