@@ -13,36 +13,36 @@ From Petr: I think we should make this README as short as possible, and maybe le
 This project is a web crawler that processes web pages from Swiss government websites. It consists of multiple components that handle crawling, data storage, and content conversion.
 
 - [Overview](#overview)
-- [Installation & Setup](#installation--setup)
+- [Installation \& Setup](#installation--setup)
   - [Prerequisites](#prerequisites)
   - [Environment Setup](#environment-setup)
-    - [Local Setup](#local-setup)
-    - [Docker Setup](#docker-setup)
+    - [Local setup](#local-setup)
+    - [Docker setup](#docker-setup)
 - [Usage Guide](#usage-guide)
-  - [Initialize Database](#initialize-database)
-  - [Crawler Usage](#crawler-usage)
+  - [First things first](#first-things-first)
+    - [Newrelic for Observability](#newrelic-for-observability)
+  - [Initialize database](#initialize-database)
+  - [Crawler usage](#crawler-usage)
     - [Setup](#setup)
     - [Crawling](#crawling)
   - [Postprocessing](#postprocessing)
-    - [Convert HTML to Markdown](#convert-html-to-markdown)
-    - [Save Markdown to JSONL](#save-markdown-to-jsonl)
+    - [Save markdown to jsonl](#save-markdown-to-jsonl)
 - [Features](#features)
-  - [Existing](#existing)
-  - [Missing, Nice to Have](#missing-nice-to-have)
+  - [existing](#existing)
+  - [missing, nice to have](#missing-nice-to-have)
 
 # Installation & Setup
 
 ## Prerequisites
 
-- Python 3.x
+- Python 3.11.10
 
 ## Environment Setup
 
 For setting up the environment [locally](#local-setup)
 
-or using a [docker container](#docker-setup) @Petr right?
+or using a [docker container](#docker-setup)
 
-**TODO: setup for make file**
 
 ### Local setup
 <!--
@@ -113,7 +113,7 @@ DATABASE_URL=sqlite:///PATH_TO_DB/DB_NAME
 
 For initializing a new database, you can use the following command:
 
-**EXAMPLE ON HOW TO USE ALEMBIC** TODO: CHANGE IT SO SOMETHING SENSIBLE LATER
+**EXAMPLE ON HOW TO USE ALEMBIC**
 ```
 alembic:
 	rm -rf data/*.db*; \

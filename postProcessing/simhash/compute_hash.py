@@ -1,8 +1,6 @@
 from app.repository.db import db
 from simhash import Simhash
 import re
-import requests
-from app.repository.models import PDFLink, PDFMetadata, LinkStatusEnum
 from app.repository.db import db
 from urllib.parse import urlparse
 from multiprocessing import Pool, cpu_count, Value, Lock
@@ -31,6 +29,7 @@ def compute_simhash(rows):
         if not (text == None or len(text) == 0):
             hash = get_hash(text)
         querydb(2, [row.id, hash])
+        print("Done.")
 
 def retry_on_exception(max_retries=5, delay=0.1):
     def decorator(func):
