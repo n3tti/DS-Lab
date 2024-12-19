@@ -6,7 +6,7 @@ from urllib.parse import urlparse
 from multiprocessing import Pool, cpu_count, Value, Lock
 import time
 
-ROW_PER_READ = 100
+ROW_PER_READ = 500
 NGRAMS = 3
 
 
@@ -22,14 +22,13 @@ def get_features(s):
 def get_hash(text):
     return str(Simhash(get_features(text)).value)
 
-def compute_simhash(rows):
-    for row in rows:
-        hash = '1'
-        text = row.content_formatted_with_markdown
-        if not (text == None or len(text) == 0):
-            hash = get_hash(text)
-        querydb(2, [row.id, hash])
-        print("Done.")
+def compute_simhash(row):
+    hash = '1'
+    text = row[1]
+    if not (text == None or len(text) == 0):
+        hash = get_hash(text)
+    querydb(2, [row[0], hash])
+    print("Done.")
 
 def retry_on_exception(max_retries=5, delay=0.1):
     def decorator(func):
@@ -57,10 +56,10 @@ def sim():
     rows = querydb(1, [ROW_PER_READ])
     print("fetched")
     # Use a multiprocessing Pool to process PDFs in parallel
-    with Pool(processes=50) as pool:
+    with Pool(processes=80) as pool:
         pool.map(compute_simhash, rows)
 
 
 if __name__ == "__main__":
-    for i in range(100):
+    for i in range(2000):
         sim()

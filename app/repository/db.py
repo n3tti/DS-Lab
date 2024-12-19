@@ -140,7 +140,7 @@ class Database:
             if not scraped_page_list:
                 return []
             session.flush()
-            return [page.model_copy(deep=True) for page in scraped_page_list]
+            return [(page.id, page.content_formatted_with_markdown) for page in scraped_page_list]
     
     def update_hash(self, id, hash):
         with session_scope() as session:
