@@ -27,9 +27,9 @@ This project is a web crawler that processes web pages from Swiss government web
     - [Crawling](#crawling)
   - [Postprocessing](#postprocessing)
     - [Save markdown to jsonl](#save-markdown-to-jsonl)
+    - [Convert pdf text and tables to markdown](#convert-pdf-text-and-tables-to-markdown)
+    - [Get SimHash on md text](#get-simhash-on-md-text)
 - [Features](#features)
-  - [existing](#existing)
-  - [missing, nice to have](#missing-nice-to-have)
 
 # Installation & Setup
 
@@ -190,12 +190,16 @@ This can be run:
 make extract-md
 ```
 
-# Features
+### Convert pdf text and tables to markdown
 
-## existing
+Run the python script parsePDFs.py (see[/postProcessing/ExtractPDFs/parsePDFs.py](./postProcessing/ExtractPDFs/parsePDFs.py)) or multicore.py in the same folder.
+
+### Get SimHash on md text
+Run the python script compute_hash.py (see[/postProcessing/simhash/compute_hash.py](./postProcessing/simhash/compute_hash.py)).
+
+# Features
 
 - crawler can start from whatever url is given. (see [setup](#setup))
 - specific domains can be allowed (resp. excluded)
-- crawler can
+- see all additional crawler setting in [/app/config.py](./app/config.py)
 
-## missing, nice to have
