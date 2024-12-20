@@ -93,7 +93,8 @@ sudo apt-get install libnss3 \
 
 ## First things first
 
-Create a copy of the file called `.env.example`. Set a preferred `LOG_LEVEL` there as well as other parameters (for example if intended for usage and not for developing: set the `DEBUG=false`).
+Create a copy of the file called `.env.example`.
+*If needed: set a preferred `LOG_LEVEL` there, as well as other parameters (for example if intended **not for developing**: set the `DEBUG=false`).
 
 ### Newrelic for Observability
 <details>
@@ -124,7 +125,7 @@ alembic upgrade head
 
 *Example on how to create a migration having a model defined up in the `app/repository/models.py`
 ```
-alembic revision --autogenerate -m "Create scraped_page table"; \
+alembic revision --autogenerate -m "Create scraped_page table"
 ```
 
 There is a command that deletes the database in the `data/` folder and creates a new one. Convenient for debugging:
@@ -162,24 +163,6 @@ Note that if the crawler should be completely restarted anew, the [.persistence]
 
 ## Postprocessing
 
-<!--
-### Convert html to markdown
-
-#### Before crawling
-
-If a specific markdown format is required before starting the crawler, change the function
-`format_content_with_markdown` which can be found in [app/adminch_crawler/spiders/crawling_spider.py](./app/adminch_crawler/spiders/crawling_spider.py).
-
-#### After crawling
-
-If all markdown entries of the database need complete change and the change should be written into the database, adjust the function `convert_to_md` in [app/html2md/converter.py](./app/html2md/converter.py) and run the following make command:
-
-```makefile
-make html2md
-```
-
-The mentioned function in this script can also be individually called. It expects an html as string as input and returns the markdown as a string.
--->
 ### Save markdown to jsonl
 
 There is a script that saves the markdown content into a jsonl file. Currently, only the id and the markdown are saved. (see [postProcessing/jsonl/md2jsonl.py](./postProcessing/jsonl/md2jsonl.py))
