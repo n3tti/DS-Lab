@@ -75,7 +75,7 @@ class CrawlingSpider(CrawlSpider):
         return request
 
     def parse_item(self, response):
-
+        ############ Code to extract properties from a response #############
         #####################################################
         cousin_urls_dict = {}
         alternate_links = response.xpath('//link[@rel="alternate"]')
@@ -139,7 +139,9 @@ class CrawlingSpider(CrawlSpider):
             keywords = response.css('meta[name="keywords"]::attr(content)').get()
         except Exception:
             keywords = None
+        ############ End of code to extract properties from a response #############
 
+        ########## Preparing a type-annotated instance to be written to the database:
         scraped_page = ScrapedPage(
             url=response.url,
             pdf_links=[PDFLink(url=x, lang=lang) for x in pdf_urls],
@@ -163,9 +165,6 @@ class CrawlingSpider(CrawlSpider):
 
             content_formatted_with_markdown=content_formatted_with_markdown,
         )
-
-        # TODO: discuss if we need this, later make a migration if needed
-        # scraped_page.content_formatted_with_markdown = content_formatted_with_markdown
 
         yield scraped_page
 
