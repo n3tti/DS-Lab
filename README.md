@@ -93,7 +93,7 @@ sudo apt-get install libnss3 \
 
 ## First things first
 
-Create a copy of the file called `.env.example`.
+Create a copy of the file called `.env.example` and name it `.env`<br>
 *If needed: set a preferred `LOG_LEVEL` there, as well as other parameters (for example if intended **not for developing**: set the `DEBUG=false`).
 
 ### Newrelic for Observability
