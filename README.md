@@ -23,6 +23,14 @@ This project is a web crawler that processes web pages from Swiss government web
 
 # Installation & Setup
 
+## Short introduction to the Folder structure
+- The code for the **Scrapy crawler** is contained within the `app/` directory
+- The code for the **deployments (with Docker or Apptainer)** is contained within the `deployments/` directory
+- The code for the **migrations (with Alembic)** is contained within the `migrations/` directory
+- The code for **post-processing of PDFs** is contained within the `postProcessing/` directory
+- The **queries examples** are contained within the `queries/` directory
+- *_The `scripts/` directory is work-in-progress, and is not important at the current state of the project_
+
 ## The easy way:
 
 ### Launch Docker
