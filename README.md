@@ -23,18 +23,28 @@ This project is a web crawler that processes web pages from Swiss government web
 
 # Installation & Setup
 
-## Prerequisites
+## The easy way:
+
+### Launch Docker
+
+```docker
+make docker-up
+```
+
+## The harder way:
+
+### Prerequisites
 
 - Python 3.11.10
 
-## Environment Setup
+### Environment Setup
 
 For setting up the environment [locally](#local-setup)
 
 or using a [docker container](#docker-setup)
 
 
-### Local setup
+#### Local setup
 <!--
 Clone the repository
 ```jsx
@@ -70,11 +80,6 @@ sudo apt-get install libnss3 \
 	</code></pre>
 </details>
 
-### Docker setup
-
-```docker
-docker-compose up
-```
 
 # Usage Guide
 
