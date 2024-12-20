@@ -11,6 +11,7 @@ from app.repository.db import db
 from app.repository.models import PageStatusEnum, ScrapedPage
 
 
+# Save a scraped page with a status "Discovered" and pass it further. If the scraped page is already in the database with a status "Completed" stop its processing
 class DiscoveredStoragePipeline:
     def process_item(self, scraped_page: ScrapedPage, spider: Spider) -> ScrapedPage:
         existing_page = db.get_scraped_page(url=scraped_page.url)
@@ -28,6 +29,7 @@ class DiscoveredStoragePipeline:
             return scraped_page
 
 
+# If the scraped page has a wrong content type, or has non 200 code, change its status to "Failed" in the database, pass it further if it's successful
 class FilterURLPipeline:
     def __init__(self):
         self.allowed_content_type = ["text/html"]
@@ -49,6 +51,7 @@ class FilterURLPipeline:
         return scraped_page
 
 
+# If the scraped page is successful save it with a status "Completed"
 class CompletedStoragePipeline:
     def process_item(self, scraped_page: ScrapedPage, spider: Spider) -> ScrapedPage:
         db.update_scraped_page_status(scraped_page_id=scraped_page.id, status=PageStatusEnum.COMPLETED)
