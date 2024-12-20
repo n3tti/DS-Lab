@@ -93,7 +93,7 @@ Create a copy of the file called `.env.example`. Set a preferred `LOG_LEVEL` the
 
 ## Initialize database
 
-Per default, a sqlite database is stored as [/data/example.db](./data/)
+Per default, a sqlite database is stored as [data/example.db](./data/)
 
  If there is an existing database or the path resp. name should be different, create a `.env`  file and add this line:
 
