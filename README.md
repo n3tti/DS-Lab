@@ -182,14 +182,14 @@ make extract-md
 
 ### Convert pdf text and tables to markdown
 
-Run the python script parsePDFs.py (see[/postProcessing/ExtractPDFs/parsePDFs.py](./postProcessing/ExtractPDFs/parsePDFs.py)) or multicore.py in the same folder.
+Run the python script parsePDFs.py (see[postProcessing/ExtractPDFs/parsePDFs.py](./postProcessing/ExtractPDFs/parsePDFs.py)) or multicore.py in the same folder.
 
 ### Get SimHash on md text
-Run the python script compute_hash.py (see[/postProcessing/simhash/compute_hash.py](./postProcessing/simhash/compute_hash.py)).
+Run the python script compute_hash.py (see[postProcessing/simhash/compute_hash.py](./postProcessing/simhash/compute_hash.py)).
 
 # Features
 
 - crawler can start from whatever url is given. (see [setup](#setup))
 - specific domains can be allowed (resp. excluded)
-- see all additional crawler setting in [/app/config.py](./app/config.py)
+- see all additional crawler setting in [app/config.py](./app/config.py)
 
