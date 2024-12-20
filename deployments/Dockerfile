@@ -8,4 +8,6 @@ RUN pip install --no-cache-dir --upgrade -r /app/requirements.txt
 
 RUN playwright install
 
+RUN playwright install-deps
+
 CMD ["make", "start"]
