@@ -26,7 +26,6 @@ class PageStatusEnum(str, Enum):
     COMPLETED = "Completed"  # completed crawling but not converted to Markdown
     FAILED = "Failed"
     REVISITED = "Revisited"
-    FINALIZED = "Finalized"  # goes after the status "Completed"
 
 
 class LinkStatusEnum(str, Enum):
