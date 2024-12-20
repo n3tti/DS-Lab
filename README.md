@@ -31,7 +31,7 @@ This project is a web crawler that processes web pages from Swiss government web
 - The **queries examples** are contained within the `queries/` directory
 - *_The `scripts/` directory is work-in-progress, and is not important at the current state of the project_
 
-## The easy way:
+## Installation: the easy way
 
 ### Launch Docker
 
@@ -39,7 +39,7 @@ This project is a web crawler that processes web pages from Swiss government web
 make docker-up
 ```
 
-## The harder way:
+## Installation: the harder way:
 
 ### Prerequisites
 
