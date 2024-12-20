@@ -117,9 +117,9 @@ class CrawlingSpider(CrawlSpider):
 
         #####################################################
         converter = html2text.HTML2Text()
-        converter.ignore_links = True    # Include links in the output
-        converter.ignore_images = True   # Include image placeholders
-        converter.ignore_tables = False   # Include tablese
+        converter.ignore_links = True    # Wheter to include links in the output
+        converter.ignore_images = True   # Wheter to include image placeholders
+        converter.ignore_tables = False   # Wheter to include tables
         converter.protect_links = True    # Prevent splitting of links
         content_formatted_with_markdown = converter.handle(response.text)
 
