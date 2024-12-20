@@ -71,7 +71,6 @@ class Database:
             if scraped_page_obj is None:
                 return None
             scraped_page_obj.content_formatted_with_markdown = markdown_content
-            # scraped_page_obj.status = PageStatusEnum.FINALIZED
 
     #---- PDF processing ----
     def update_pdf_status(self, pdf_id: int, status:LinkStatusEnum):
