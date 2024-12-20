@@ -117,20 +117,17 @@ DATABASE_URL=sqlite:///PATH_TO_DB/DB_NAME
 For initializing a new database, you can use the following command:
 
 **EXAMPLE ON HOW TO USE ALEMBIC**
+Create a database if it doesn't exist; and update it to the highest migration.
 ```
-alembic:
-	rm -rf data/*.db*; \
-# 	rm -rf migrations/versions/*.py; \
-# 	alembic revision --autogenerate -m "Create scraped_page table"; \
-	alembic upgrade head
-
-alembic-from-scratch:
-	rm -rf data/*.db*; \
-	rm -rf migrations/versions/*.py; \
-	alembic revision --autogenerate -m "Create scraped_page table"; \
-	alembic upgrade head
+alembic upgrade head
 ```
 
+*Example on how to create a migration having a model defined up in the `app/repository/models.py`
+```
+alembic revision --autogenerate -m "Create scraped_page table"; \
+```
+
+There is a command that deletes the database in the `data/` folder and creates a new one. Convenient for debugging:
 ```makefile
 make alembic-from-scratch
 ```
