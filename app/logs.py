@@ -7,6 +7,9 @@ import structlog
 from app.config import DEBUG, LOG_LEVEL
 
 
+# Most of the code in this module is from the structlog documentation
+
+
 def get_lower_log_level(current_level):
     lower_level = max(current_level - 10, logging.NOTSET)  # ensure it does not go below NOTSET
     return lower_level
