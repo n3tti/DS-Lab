@@ -21,8 +21,6 @@ class DiscoveredStoragePipeline:
 
         elif existing_page.status == PageStatusEnum.COMPLETED:
             raise DropItem(f"url: '{scraped_page.url}' is already COMPLETED.")
-        # elif existing_page.status == PageStatusEnum.FINALIZED:
-        #     raise DropItem(f"url: '{scraped_page.url}' is already FINALIZED.")
         else:
             db.update_scraped_page_status(scraped_page_id=scraped_page.id, status=PageStatusEnum.REVISITED)
 
@@ -51,55 +49,8 @@ class FilterURLPipeline:
         return scraped_page
 
 
-class HashContentPipeline:
-    def process_item(self, item, spider):
-        if item["content"] is not None:
-            item["hash"] = Simhash(item["content"]).value
-        else:
-            item["hash"] = None
-            logger.error("No content for that page.")
-        return item
-
-
-# class DownloadContentPipeline:
-#     def __init__(self):
-#         self.folders = [TEXT_DIR, IMAGE_DIR, APPLICATION_DIR]
-#         self.content_types = ["text/html", "application/pdf", "image/png"]
-
-#     def process_item(self, item, spider):
-#         content_type = item["content_type"].split(";")[0]
-
-#         if content_type == "text/html":
-#             with open(TEXT_DIR + f"{item['id']}.bin", "wb") as file:
-#                 file.write(item["content_body"])
-
-#         return item
-
-#     def open_spider(self, spider):
-#         self.clean_folders()
-
-#     def clean_folders(self):
-#         for path in self.folders:
-#             if os.path.exists(path):
-#                 for filename in os.listdir(path):
-#                     file_path = os.path.join(path, filename)
-#                     try:
-#                         if os.path.isfile(file_path) or os.path.islink(file_path):
-#                             os.unlink(file_path)
-#                     except Exception as e:
-#             else:
-#                 os.makedirs(path)
-
-
 class CompletedStoragePipeline:
     def process_item(self, scraped_page: ScrapedPage, spider: Spider) -> ScrapedPage:
         db.update_scraped_page_status(scraped_page_id=scraped_page.id, status=PageStatusEnum.COMPLETED)
 
         return scraped_page
-
-
-# class TEMPPipeline:  ## TEMP Final Pipeline
-#     def process_item(self, scraped_page: ScrapedPage, spider: Spider) -> ScrapedPage:
-#         db.update_scraped_page_status(scraped_page_id=scraped_page.id, status=PageStatusEnum.TEMPCOMPLETED)
-
-#         return scraped_page

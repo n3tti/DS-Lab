@@ -4,14 +4,14 @@ from enum import Enum
 from pydantic import field_validator  # , HttpUrl
 from sqlalchemy import CHAR, Column, DateTime, LargeBinary, Text
 from sqlalchemy.sql import func
-from sqlalchemy.types import JSON  # Correctly import JSON from sqlalchemy.types
+from sqlalchemy.types import JSON
 from sqlmodel import Field, Relationship, SQLModel
 from sqlmodel._compat import SQLModelConfig
 
 from app.repository.utils import normalize_url
 
 
-class BaseModel(SQLModel):
+class BaseModel(SQLModel):  # The class for SQLModel to work with validators: github.com /fastapi/sqlmodel/issues/52
     class ConfigDict:
         from_attributes = True
         use_enum_values = True
@@ -23,7 +23,7 @@ class BaseModel(SQLModel):
 class PageStatusEnum(str, Enum):
     DISCOVERED = "Discovered"
     PROCESSING = "Processing"
-    COMPLETED = "Completed"  # completed crawling but not converted to Markdown
+    COMPLETED = "Completed"
     FAILED = "Failed"
     REVISITED = "Revisited"
 
@@ -35,7 +35,6 @@ class LinkStatusEnum(str, Enum):
     DOWNLOADED = "Downloaded"
     PROCESSED = "Processed"
 
-    # TEMPCOMPLETED = "TempCompleted"
 
 class PDFMetadata(BaseModel):
     title: str | None = None
@@ -103,14 +102,6 @@ class ScrapedPage(BaseModel, table=True):
         elif isinstance(v, int):
             return v
         return None
-
-    # @property
-    # def content_formatted_with_markdown(self):
-    #     return self._content_formatted_with_markdown
-
-    # @content_formatted_with_markdown.setter
-    # def content_formatted_with_markdown(self, value: dict[str, str]):
-    #     self._content_formatted_with_markdown = value
 
     def __str__(self):
         model_dict = self.model_dump(include={"id", "url", "status"})
@@ -209,19 +200,8 @@ class FileStorage(BaseModel, table=True):
     def __str__(self):
         model_dict = self.model_dump()
         return f"{type(self).__name__}({model_dict})"
-    
+
     @field_validator("url", mode="before")
     @classmethod
     def _normalize_url(cls, v) -> str:
         return normalize_url(v)
-    
-
-# # TODO: Review this
-# class MarkdownPage(BaseModel, table=True):
-#     __tablename__ = "md_pages"
-
-#     id: int = Field(primary_key=True)
-
-#     scraped_page_id: int = Field(foreign_key="scraped_pages.id")
-
-#     body_md: str = Field()
